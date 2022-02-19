@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing;
 
 namespace _4RTools
 {
@@ -14,9 +11,13 @@ namespace _4RTools
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+            // Application app = new Application();
+            // app.IsMdiContainer = true;
+
+            Forms.Container app = new Forms.Container();
+            System.Windows.Forms.Application.Run(app);
         }
     }
 }
