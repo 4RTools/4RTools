@@ -33,9 +33,13 @@ namespace _4RTools
             Model.Client client = new Model.Client(processCB.SelectedItem.ToString());
             Model.ClientSingleton.Instance(client);
 
+            new Model.Autopot(Keys.F1, 80, 50, Keys.F2, 90, 50);
 
-
-            Console.WriteLine(Model.ClientSingleton.GetClient().HpLabel());
        }
+
+        private void HPValue_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

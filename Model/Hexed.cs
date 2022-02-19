@@ -31,7 +31,7 @@ namespace _4RTools.Model
 
     public class Client
     {
-        private Process process;
+        public Process process { get; }
         private Utils.ProcessMemoryReader PMR { get; set; }
         private int clientVersion { get; set; }
         private int currentHPBaseAddress { get; set; }
@@ -128,7 +128,7 @@ namespace _4RTools.Model
             List<Client> result = new List<Client>();
 
             result.Add(new Client(21012014, 0x00E8E434));
-            result.Add(new Client(21012014, 0x00AAEAD));
+            result.Add(new Client(20180602, 0x00AAAAAA));
             result.Add(new Client(21012014, 0x00AAEAD));
             result.Add(new Client(21012014, 0x00AAEAD));
             result.Add(new Client(21012014, 0x00AAEAD));
