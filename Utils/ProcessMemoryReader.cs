@@ -77,12 +77,12 @@ namespace _4RTools.Utils
         }
         public void OpenProcess()
         {
-            ProcessMemoryReader.MemoryApi.ProcessAccessType dwDesiredAccess = ProcessMemoryReader.MemoryApi.ProcessAccessType.PROCESS_VM_OPERATION | ProcessMemoryReader.MemoryApi.ProcessAccessType.PROCESS_VM_READ | ProcessMemoryReader.MemoryApi.ProcessAccessType.PROCESS_VM_WRITE;
-            this.m_hProcess = ProcessMemoryReader.MemoryApi.OpenProcess((uint)dwDesiredAccess, 1, (uint)this.m_ReadProcess.Id);
+            MemoryApi.ProcessAccessType dwDesiredAccess = MemoryApi.ProcessAccessType.PROCESS_VM_OPERATION | MemoryApi.ProcessAccessType.PROCESS_VM_READ | MemoryApi.ProcessAccessType.PROCESS_VM_WRITE;
+            this.m_hProcess = MemoryApi.OpenProcess((uint)dwDesiredAccess, 1, (uint)this.m_ReadProcess.Id);
         }
         public void CloseHandle()
         {
-            int num = ProcessMemoryReader.MemoryApi.CloseHandle(this.m_hProcess);
+            int num = MemoryApi.CloseHandle(this.m_hProcess);
             if (num == 0)
             {
                 throw new Exception("CloseHandle failed");
@@ -92,7 +92,7 @@ namespace _4RTools.Utils
         {
             byte[] array = new byte[bytesToRead];
             IntPtr intPtr;
-            ProcessMemoryReader.MemoryApi.ReadProcessMemory(this.m_hProcess, MemoryAddress, array, bytesToRead, out intPtr);
+            MemoryApi.ReadProcessMemory(this.m_hProcess, MemoryAddress, array, bytesToRead, out intPtr);
             bytesRead = intPtr.ToInt32();
             return array;
         }
@@ -106,11 +106,11 @@ namespace _4RTools.Utils
 
         public void Alloc(out int Addr, int Size)
         {
-            Addr = ProcessMemoryReader.MemoryApi.VirtualAllocEx(m_hProcess, IntPtr.Zero, Size, ProcessMemoryReader.MemoryApi.AllocType.Commit, ProcessMemoryReader.MemoryApi.Protect.ExecuteReadWrite);
+            Addr = MemoryApi.VirtualAllocEx(m_hProcess, IntPtr.Zero, Size, MemoryApi.AllocType.Commit, MemoryApi.Protect.ExecuteReadWrite);
         }
         public bool Dealloc(int Addr)
         {
-            return ProcessMemoryReader.MemoryApi.VirtualFreeEx(m_hProcess, (IntPtr)Addr, 0, ProcessMemoryReader.MemoryApi.FreeType.Release);
+            return MemoryApi.VirtualFreeEx(m_hProcess, (IntPtr)Addr, 0, MemoryApi.FreeType.Release);
         }
     }
 }
