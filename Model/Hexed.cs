@@ -16,11 +16,7 @@ namespace _4RTools.Model
 
         public static ClientSingleton Instance(Client client)
         {
-            if(_instance == null)
-            {
-                _instance = new ClientSingleton(client);
-            }
-            return _instance;
+            return new ClientSingleton(client);
         }
 
         public static Client GetClient()
@@ -103,22 +99,22 @@ namespace _4RTools.Model
             return string.Format("{0} / {1}", ReadCurrentSp(), ReadMaxSp());
         }
 
-        private uint ReadCurrentHp()
+        public uint ReadCurrentHp()
         {
             return ReadMemory(this.currentHPBaseAddress);
         }
 
-        private uint ReadCurrentSp()
+        public uint ReadCurrentSp()
         {
             return ReadMemory(this.currentHPBaseAddress + 8);
         }
 
-        private uint ReadMaxHp()
+        public uint ReadMaxHp()
         {
             return ReadMemory(this.currentHPBaseAddress + 4);
         }
 
-        private uint ReadMaxSp()
+        public uint ReadMaxSp()
         {
             return ReadMemory(this.currentHPBaseAddress + 12);
         }

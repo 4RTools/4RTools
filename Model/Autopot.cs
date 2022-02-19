@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Threading;
 using System.Runtime.InteropServices;
+using System.ComponentModel;
 
 namespace _4RTools.Model
 {
@@ -12,36 +13,39 @@ namespace _4RTools.Model
         [DllImport("user32.dll", SetLastError = true)]
         private static extern bool PostMessage(IntPtr hWnd, int Msg, Keys wParam, int lParam);
 
-        private Client roClient = ClientSingleton.GetClient();
+        [DefaultValue(Keys.None)]
+        public Keys hpKey { get; set; }
+        public int hpPercent { get; set; }
+        public int delay { get; set; }
 
-        private Keys hpKey;
-        private int hpPercent;
-        private int hpDelay;
-
-
-        private Keys spKey;
-        private int spPercent;
-        private int spDelay;
+        public Keys spKey { get; set; }
+        public int spPercent { get; set; }
 
         private Thread autopotThread;
 
+        public Autopot()
+        {
 
-        public Autopot(Keys hpKey, int hpPercent, int hpDelay, Keys spKey, int spPercent, int spDelay)
+        }
+
+        public Autopot(Keys hpKey, int hpPercent, int delay, Keys spKey, int spPercent)
         {
             this.hpKey = hpKey;
             this.hpPercent = hpPercent;
-            this.hpDelay = hpDelay;
+            this.delay = delay;
 
             this.spKey = spKey;
             this.spPercent = spPercent;
-            this.spDelay = spDelay;
-
-
-            Start();
         }
 
         public void Start()
         {
+            if (this.autopotThread != null)
+            {
+                this.autopotThread.Abort();
+            }
+
+            Client roClient = ClientSingleton.GetClient();
             //TODO - DO NOT CREATE A NEW THREAD WHEN PROCESS CHANGE.
             Thread apThread = new Thread(() =>
             {
@@ -62,16 +66,15 @@ namespace _4RTools.Model
                                 potSp();
                             }
                         }
-                        Thread.Sleep(this.hpDelay);
                     }
 
                     // check sp
                     if (roClient.IsSpBelow(spPercent))
                     {
                         potSp();
-                        Thread.Sleep(this.spDelay);
                     }
-                    
+
+                    Thread.Sleep(this.delay);
                 }
             });
 
@@ -82,19 +85,14 @@ namespace _4RTools.Model
 
         private void potSp()
         {
-            PostMessage(roClient.process.MainWindowHandle, 0x100, this.spKey, 0); // keydown
-            PostMessage(roClient.process.MainWindowHandle, 0x101, this.spKey, 0); // keyup
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x100, this.spKey, 0); // keydown
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x101, this.spKey, 0); // keyup
         }
 
         private void potHp()
         {
-            PostMessage(roClient.process.MainWindowHandle, 0x100, this.hpKey, 0); // keydown
-            PostMessage(roClient.process.MainWindowHandle, 0x101, this.hpKey, 0); // keyup
-        }
-
-        public void Stop()
-        {
-            autopotThread.Abort();
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x100, this.hpKey, 0); // keydown
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x101, this.hpKey, 0); // keyup
         }
     }
 }
