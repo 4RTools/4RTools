@@ -21,7 +21,7 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 - [ ] Song Macro
 - [ ] Switch Macro
 - [ ] Manage Profiles
-- [ ] ON/OFF Button (with shortcut key)
+- [x] ON/OFF Button (with shortcut key)
 
 ## Collaborators
 <a href="https://github.com/4RTools/4RTools/graphs/contributors">
