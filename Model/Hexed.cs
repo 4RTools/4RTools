@@ -7,7 +7,6 @@ namespace _4RTools.Model
 {
     public sealed class ClientSingleton
     {
-        private static ClientSingleton _instance;
         private static Client client;
         private ClientSingleton(Client client)
         {

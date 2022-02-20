@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutopotForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSPpct = new System.Windows.Forms.TextBox();
+            this.txtHPpct = new System.Windows.Forms.TextBox();
+            this.txtAutopotDelay = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbSPKey = new System.Windows.Forms.ComboBox();
@@ -37,12 +43,6 @@
             this.progressBarSP = new System.Windows.Forms.ProgressBar();
             this.progressBarHP = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtAutopotDelay = new System.Windows.Forms.TextBox();
-            this.txtHPpct = new System.Windows.Forms.TextBox();
-            this.txtSPpct = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +69,57 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(346, 161);
             this.panel1.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(256, 139);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Autopot - BETA";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(185, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(15, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "%";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(185, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(15, 13);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "%";
+            // 
+            // txtSPpct
+            // 
+            this.txtSPpct.Location = new System.Drawing.Point(144, 69);
+            this.txtSPpct.Name = "txtSPpct";
+            this.txtSPpct.Size = new System.Drawing.Size(36, 20);
+            this.txtSPpct.TabIndex = 24;
+            this.txtSPpct.TextChanged += new System.EventHandler(this.txtSPpct_TextChanged);
+            // 
+            // txtHPpct
+            // 
+            this.txtHPpct.Location = new System.Drawing.Point(143, 40);
+            this.txtHPpct.Name = "txtHPpct";
+            this.txtHPpct.Size = new System.Drawing.Size(37, 20);
+            this.txtHPpct.TabIndex = 23;
+            this.txtHPpct.TextChanged += new System.EventHandler(this.txtHPpct_TextChanged);
+            // 
+            // txtAutopotDelay
+            // 
+            this.txtAutopotDelay.Location = new System.Drawing.Point(46, 105);
+            this.txtAutopotDelay.Name = "txtAutopotDelay";
+            this.txtAutopotDelay.Size = new System.Drawing.Size(40, 20);
+            this.txtAutopotDelay.TabIndex = 22;
+            this.txtAutopotDelay.TextChanged += new System.EventHandler(this.txtAutopotDelay_TextChanged);
             // 
             // pictureBox2
             // 
@@ -131,62 +182,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(140, 106);
+            this.label1.Location = new System.Drawing.Point(92, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 15;
             this.label1.Text = "Delay (ms)";
-            // 
-            // txtAutopotDelay
-            // 
-            this.txtAutopotDelay.Location = new System.Drawing.Point(46, 105);
-            this.txtAutopotDelay.Name = "txtAutopotDelay";
-            this.txtAutopotDelay.Size = new System.Drawing.Size(91, 20);
-            this.txtAutopotDelay.TabIndex = 22;
-            this.txtAutopotDelay.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtHPpct
-            // 
-            this.txtHPpct.Location = new System.Drawing.Point(143, 40);
-            this.txtHPpct.Name = "txtHPpct";
-            this.txtHPpct.Size = new System.Drawing.Size(37, 20);
-            this.txtHPpct.TabIndex = 23;
-            this.txtHPpct.TextChanged += new System.EventHandler(this.txtHPpct_TextChanged);
-            // 
-            // txtSPpct
-            // 
-            this.txtSPpct.Location = new System.Drawing.Point(144, 69);
-            this.txtSPpct.Name = "txtSPpct";
-            this.txtSPpct.Size = new System.Drawing.Size(36, 20);
-            this.txtSPpct.TabIndex = 24;
-            this.txtSPpct.TextChanged += new System.EventHandler(this.txtSPpct_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(185, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(15, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "%";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "%";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(256, 139);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Autopot - BETA";
             // 
             // AutopotForm
             // 

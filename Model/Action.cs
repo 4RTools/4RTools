@@ -3,5 +3,6 @@
     internal interface Action
     {
         void Start();
+        void Stop();
     }
 }

@@ -14,7 +14,6 @@ namespace _4RTools.Forms
             InitializeComponent();
             this.cbHPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
             this.cbSPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
-
             this.autopot = new Model.Autopot();
 
             // loadProfile
@@ -38,9 +37,16 @@ namespace _4RTools.Forms
 
                 this.progressBarSP.Maximum = (int)Model.ClientSingleton.GetClient().ReadMaxSp();
                 this.progressBarSP.Value = (int)Model.ClientSingleton.GetClient().ReadCurrentSp();
+
+                this.txtAutopotDelay.Text = this.autopot.delay.ToString();
+            }else if((subject as Subject).Message.code == MessageCode.TURN_OFF)
+            {
+                this.autopot.Stop();
+            }
+            else if ((subject as Subject).Message.code == MessageCode.TURN_ON)
+            {
                 this.autopot.Start();
             }
-            
         }
 
         private void InitializeApplicationForm()
@@ -68,7 +74,7 @@ namespace _4RTools.Forms
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtAutopotDelay_TextChanged(object sender, EventArgs e)
         {
             try
             {

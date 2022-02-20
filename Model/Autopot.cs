@@ -16,10 +16,10 @@ namespace _4RTools.Model
         [DefaultValue(Keys.None)]
         public Keys hpKey { get; set; }
         public int hpPercent { get; set; }
-        public int delay { get; set; }
-
+        [DefaultValue(Keys.None)]
         public Keys spKey { get; set; }
         public int spPercent { get; set; }
+        public int delay { get; set; } = 15;
 
         private Thread autopotThread;
 
@@ -40,59 +40,65 @@ namespace _4RTools.Model
 
         public void Start()
         {
-            if (this.autopotThread != null)
-            {
-                this.autopotThread.Abort();
-            }
-
+            Stop();
             Client roClient = ClientSingleton.GetClient();
-            //TODO - DO NOT CREATE A NEW THREAD WHEN PROCESS CHANGE.
-            Thread apThread = new Thread(() =>
+            if(roClient != null)
             {
-                uint hp_pot_count = 0;
-                while (true)
+                Thread apThread = new Thread(() =>
                 {
-                    // check hp first
-                    if (roClient.IsHpBelow(hpPercent))
+                    uint hp_pot_count = 0;
+                    while (true)
                     {
-                        potHp();
-                        hp_pot_count++;
-
-                        if (hp_pot_count == 3)
+                        // check hp first
+                        if (roClient.IsHpBelow(hpPercent))
                         {
-                            hp_pot_count = 0;
-                            if (roClient.IsSpBelow(spPercent))
+                            potHp();
+                            hp_pot_count++;
+
+                            if (hp_pot_count == 3)
                             {
-                                potSp();
+                                hp_pot_count = 0;
+                                if (roClient.IsSpBelow(spPercent))
+                                {
+                                    potSp();
+                                }
                             }
                         }
+
+                        // check sp
+                        if (roClient.IsSpBelow(spPercent))
+                        {
+                            potSp();
+                        }
+
+                        Thread.Sleep(this.delay);
                     }
+                });
 
-                    // check sp
-                    if (roClient.IsSpBelow(spPercent))
-                    {
-                        potSp();
-                    }
-
-                    Thread.Sleep(this.delay);
-                }
-            });
-
-            this.autopotThread = apThread;
-            apThread.SetApartmentState(ApartmentState.STA); //NÃO FAÇO IDEIA, TEM Q VER Q DIABO É ISSO
-            apThread.Start();
+                this.autopotThread = apThread;
+                apThread.SetApartmentState(ApartmentState.STA);
+                apThread.Start();
+            }
         }
 
         private void potSp()
         {
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x100, this.spKey, 0); // keydown
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x101, this.spKey, 0); // keyup
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.spKey, 0); // keydown
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.spKey, 0); // keyup
         }
 
         private void potHp()
         {
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x100, this.hpKey, 0); // keydown
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, 0x101, this.hpKey, 0); // keyup
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.hpKey, 0); // keydown
+            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.hpKey, 0); // keyup
+        }
+
+        public void Stop()
+        {
+            if (this.autopotThread != null)
+            {
+                this.autopotThread.Abort();
+            }
         }
     }
 }

@@ -20,12 +20,14 @@ namespace _4RTools.Utils
 
     public enum MessageCode { 
         PROCESS_CHANGED,
-        PROFILE_CHANGED
+        PROFILE_CHANGED,
+        TURN_ON,
+        TURN_OFF,
     }
 
     public class Message
     {
-        public MessageCode code { get; set; }
+        public MessageCode code { get; }
         public object data { get; set; }
         public Message() { }
 
@@ -55,6 +57,7 @@ namespace _4RTools.Utils
         public void Notify(Message message)
         {
             Console.WriteLine("Subject: Notifying observers...");
+            this.Message = message;
             foreach (var observer in _observers)
             {
                 observer.Update(this);
