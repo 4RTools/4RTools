@@ -16,8 +16,9 @@ If you have found a bug or want to request a feature, feel free to open an issue
 This project was created using Visual Studio 2022, just open `4RTools.sln` in Visual Studio and you'll able to run and generate your own releases.
 
 ## Features
-- [ ] Autopot / Autobuff
-- [ ] Spammer
+- [x] Autopot
+- [ ] Autobuff
+- [x] Spammer
 - [ ] Song Macro
 - [ ] Switch Macro
 - [ ] Manage Profiles
