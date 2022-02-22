@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Runtime.InteropServices;
+using _4RTools.Utils;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -9,9 +9,6 @@ namespace _4RTools.Model
 
     internal class Autopot : Action
     {
-        // PINVOKES
-        [DllImport("user32.dll", SetLastError = true)]
-        private static extern bool PostMessage(IntPtr hWnd, int Msg, Keys wParam, int lParam);
 
         [DefaultValue(Keys.None)]
         public Keys hpKey { get; set; }
@@ -83,14 +80,14 @@ namespace _4RTools.Model
 
         private void potSp()
         {
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.spKey, 0); // keydown
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.spKey, 0); // keyup
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.spKey, 0); // keydown
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.spKey, 0); // keyup
         }
 
         private void potHp()
         {
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.hpKey, 0); // keydown
-            PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.hpKey, 0); // keyup
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.hpKey, 0); // keydown
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.hpKey, 0); // keyup
         }
 
         public void Stop()

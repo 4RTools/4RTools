@@ -21,7 +21,7 @@ namespace _4RTools.Forms
             this.autopot.hpPercent = 99;
             this.autopot.delay = 10;
 
-            this.autopot.spKey = Keys.F3;
+            this.autopot.spKey = Keys.F1;
             this.autopot.spPercent = 70;
 
             this.InitializeApplicationForm();
@@ -103,6 +103,41 @@ namespace _4RTools.Forms
                 this.autopot.spPercent = Int16.Parse(this.txtSPpct.Text);
             }catch (Exception ex) { }
             
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBarSP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBarHP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

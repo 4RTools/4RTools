@@ -13,6 +13,9 @@ namespace _4RTools.Forms
         public Container()
         {
             InitializeComponent();
+            this.tabLayout.Text = "Autobuff";
+            this.tabPage2.Text = "Skill Spammer";
+
             Text = Utils.Config.ReadSetting("Name") + " - " + Utils.Config.ReadSetting("Version");
             Utils.KeyboardHook.Enable();
             Utils.KeyboardHook.Add(Keys.End, new Utils.KeyboardHook.KeyPressed(this.onPressEnd)); //Toggle System (ON-OFF)
@@ -23,6 +26,7 @@ namespace _4RTools.Forms
 
             //Paint Children Forms Below
             SetAutopotWindow();
+            SetAHKWindow();
         }
 
 
@@ -33,6 +37,29 @@ namespace _4RTools.Forms
             frm.Location = new Point(0,65);
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        public void SetAHKWindow()
+        {
+            AHKForm frm = new AHKForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPage2, frm) ;
+        }
+
+        public void addform(TabPage tp, Form f)
+        {
+
+            if (!tp.Controls.Contains(f))
+            {
+                tp.Controls.Add(f);
+                f.Dock = DockStyle.Fill;
+                f.Show();
+                Refresh();
+            }
+            Refresh();
         }
 
         private void SetBackGroundColorOfMDIForm()

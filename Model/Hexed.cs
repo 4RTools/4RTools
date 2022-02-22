@@ -56,7 +56,8 @@ namespace _4RTools.Model
 
                         foreach (Client client in clients)
                         {
-                            if (ReadMemory(client.currentHPBaseAddress) > 0)
+                            uint hpBaseValue = ReadMemory(client.currentHPBaseAddress); ;
+                            if (hpBaseValue > 0 && hpBaseValue < 50000)
                             {
                                 this.clientVersion = client.clientVersion;
                                 this.currentHPBaseAddress = client.currentHPBaseAddress;
@@ -77,6 +78,15 @@ namespace _4RTools.Model
         private uint ReadMemory(int address)
         {
             return BitConverter.ToUInt32(PMR.ReadProcessMemory((IntPtr)address, 4u, out _num), 0);
+        }
+        public void WriteMemory(int address, uint intToWrite)
+        {
+            PMR.WriteProcessMemory((IntPtr)address, BitConverter.GetBytes(intToWrite), out _num);
+        }
+
+        public void WriteMemory(int address, byte[] bytesToWrite)
+        {
+            PMR.WriteProcessMemory((IntPtr)address, bytesToWrite, out _num);
         }
 
         public bool IsHpBelow(int percent)
@@ -124,7 +134,7 @@ namespace _4RTools.Model
             List<Client> result = new List<Client>();
 
             result.Add(new Client(21012014, 0x00E8E434));
-            result.Add(new Client(20180602, 0x00AAAAAA));
+            result.Add(new Client(20180602, 0x0101A700));
             result.Add(new Client(21012014, 0x00AAEAD));
             result.Add(new Client(21012014, 0x00AAEAD));
             result.Add(new Client(21012014, 0x00AAEAD));
