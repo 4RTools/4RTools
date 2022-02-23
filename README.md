@@ -21,7 +21,7 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 - [x] Spammer
 - [ ] Song Macro
 - [ ] Switch Macro
-- [ ] Manage Profiles
+- [x] Manage Profiles
 - [x] ON/OFF Button (with shortcut key)
 
 ## Collaborators
