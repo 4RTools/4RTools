@@ -8,6 +8,7 @@ namespace _4RTools.Utils
         public static Dictionary<string, Keys> getDict()
         {
             Dictionary<string, Keys> dictionary = new Dictionary<string, Keys>();
+            dictionary.Add("None", Keys.None);
             dictionary.Add("F1", Keys.F1);
             dictionary.Add("F2", Keys.F2);
             dictionary.Add("F3", Keys.F3);

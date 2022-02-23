@@ -17,11 +17,12 @@ namespace _4RTools.Forms
             this.autopot = new Model.Autopot();
 
             // loadProfile
-            this.autopot.hpKey = Keys.F2;
-            this.autopot.hpPercent = 99;
+            // HP
             this.autopot.delay = 10;
-
-            this.autopot.spKey = Keys.F1;
+            this.autopot.hpKey = Keys.None;
+            this.autopot.hpPercent = 99;
+            // SP
+            this.autopot.spKey = Keys.None;
             this.autopot.spPercent = 70;
 
             this.InitializeApplicationForm();
@@ -29,23 +30,14 @@ namespace _4RTools.Forms
 
         public void Update(ISubject subject)
         {
-
-            if ((subject as Subject).Message.code == MessageCode.PROCESS_CHANGED)
+            switch ((subject as Subject).Message.code)
             {
-                this.progressBarHP.Maximum = (int)Model.ClientSingleton.GetClient().ReadMaxHp();
-                this.progressBarHP.Value = (int)Model.ClientSingleton.GetClient().ReadCurrentHp();
-
-                this.progressBarSP.Maximum = (int)Model.ClientSingleton.GetClient().ReadMaxSp();
-                this.progressBarSP.Value = (int)Model.ClientSingleton.GetClient().ReadCurrentSp();
-
-                this.txtAutopotDelay.Text = this.autopot.delay.ToString();
-            }else if((subject as Subject).Message.code == MessageCode.TURN_OFF)
-            {
-                this.autopot.Stop();
-            }
-            else if ((subject as Subject).Message.code == MessageCode.TURN_ON)
-            {
-                this.autopot.Start();
+                case MessageCode.TURN_OFF:
+                    this.autopot.Stop();
+                    break;
+                case MessageCode.TURN_ON:
+                    this.autopot.Start();
+                    break;
             }
         }
 
@@ -80,10 +72,7 @@ namespace _4RTools.Forms
             {
                 this.autopot.delay = Int16.Parse(this.txtAutopotDelay.Text);
             }
-            catch
-            {
-
-            }
+            catch (Exception) { }
         }
 
         private void txtHPpct_TextChanged(object sender, EventArgs e)
@@ -92,7 +81,7 @@ namespace _4RTools.Forms
             {
                 this.autopot.hpPercent = Int16.Parse(this.txtHPpct.Text);
             }
-            catch (Exception ex) { }
+            catch (Exception) { }
             
         }
 
@@ -101,43 +90,8 @@ namespace _4RTools.Forms
             try
             {
                 this.autopot.spPercent = Int16.Parse(this.txtSPpct.Text);
-            }catch (Exception ex) { }
+            }catch (Exception) { }
             
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBarSP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBarHP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

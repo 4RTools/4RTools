@@ -27,16 +27,20 @@ namespace _4RTools.Model
 
         public Autopot(Keys hpKey, int hpPercent, int delay, Keys spKey, int spPercent)
         {
-            this.hpKey = hpKey;
-            this.hpPercent = hpPercent;
             this.delay = delay;
 
+            // HP
+            this.hpKey = hpKey;
+            this.hpPercent = hpPercent;
+
+            // SP
             this.spKey = spKey;
             this.spPercent = spPercent;
         }
 
         public void Start()
         {
+            Console.WriteLine("Autopot: Start");
             Stop();
             Client roClient = ClientSingleton.GetClient();
             if(roClient != null)
@@ -92,6 +96,7 @@ namespace _4RTools.Model
 
         public void Stop()
         {
+            Console.WriteLine("Autopot: Stop");
             if (this.autopotThread != null)
             {
                 this.autopotThread.Abort();
