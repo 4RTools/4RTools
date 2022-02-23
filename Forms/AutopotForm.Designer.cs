@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutopotForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSPpct = new System.Windows.Forms.RichTextBox();
-            this.txtHPpct = new System.Windows.Forms.RichTextBox();
+            this.txtSPpct = new System.Windows.Forms.NumericUpDown();
+            this.txtHPpct = new System.Windows.Forms.NumericUpDown();
             this.labelSP = new System.Windows.Forms.Label();
             this.labelHP = new System.Windows.Forms.Label();
             this.txtAutopotDelay = new System.Windows.Forms.TextBox();
@@ -41,6 +41,8 @@
             this.cbHPKey = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSPpct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,26 +68,27 @@
             // 
             // txtSPpct
             // 
-            this.txtSPpct.Location = new System.Drawing.Point(110, 54);
+            this.txtSPpct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtSPpct.Location = new System.Drawing.Point(107, 50);
             this.txtSPpct.Name = "txtSPpct";
-            this.txtSPpct.Size = new System.Drawing.Size(43, 21);
-            this.txtSPpct.TabIndex = 28;
-            this.txtSPpct.Text = "";
+            this.txtSPpct.Size = new System.Drawing.Size(44, 23);
+            this.txtSPpct.TabIndex = 30;
+            this.txtSPpct.ValueChanged += new System.EventHandler(this.txtSPpctTextChanged);
             // 
             // txtHPpct
             // 
-            this.txtHPpct.Location = new System.Drawing.Point(110, 20);
+            this.txtHPpct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtHPpct.Location = new System.Drawing.Point(107, 19);
             this.txtHPpct.Name = "txtHPpct";
-            this.txtHPpct.Size = new System.Drawing.Size(43, 21);
-            this.txtHPpct.TabIndex = 27;
-            this.txtHPpct.Text = "";
-            this.txtHPpct.TextChanged += new System.EventHandler(this.txtSPpct_TextChanged);
+            this.txtHPpct.Size = new System.Drawing.Size(44, 23);
+            this.txtHPpct.TabIndex = 29;
+            this.txtHPpct.ValueChanged += new System.EventHandler(this.txtHPpctTextChanged);
             // 
             // labelSP
             // 
             this.labelSP.AutoSize = true;
             this.labelSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelSP.Location = new System.Drawing.Point(152, 55);
+            this.labelSP.Location = new System.Drawing.Point(151, 56);
             this.labelSP.Name = "labelSP";
             this.labelSP.Size = new System.Drawing.Size(20, 17);
             this.labelSP.TabIndex = 26;
@@ -107,7 +110,7 @@
             this.txtAutopotDelay.Name = "txtAutopotDelay";
             this.txtAutopotDelay.Size = new System.Drawing.Size(40, 20);
             this.txtAutopotDelay.TabIndex = 22;
-            this.txtAutopotDelay.TextChanged += new System.EventHandler(this.txtAutopotDelay_TextChanged);
+            this.txtAutopotDelay.TextChanged += new System.EventHandler(this.txtAutopotDelayTextChanged);
             // 
             // pictureBox2
             // 
@@ -131,23 +134,23 @@
             // 
             this.cbSPKey.DisplayMember = "Key";
             this.cbSPKey.FormattingEnabled = true;
-            this.cbSPKey.Location = new System.Drawing.Point(43, 54);
+            this.cbSPKey.Location = new System.Drawing.Point(40, 54);
             this.cbSPKey.Name = "cbSPKey";
             this.cbSPKey.Size = new System.Drawing.Size(61, 21);
             this.cbSPKey.TabIndex = 19;
             this.cbSPKey.ValueMember = "Value";
-            this.cbSPKey.SelectedIndexChanged += new System.EventHandler(this.cbSPKey_SelectedIndexChanged);
+            this.cbSPKey.SelectedIndexChanged += new System.EventHandler(this.cbSPKeySelectedIndexChanged);
             // 
             // cbHPKey
             // 
             this.cbHPKey.DisplayMember = "Key";
             this.cbHPKey.FormattingEnabled = true;
-            this.cbHPKey.Location = new System.Drawing.Point(43, 20);
+            this.cbHPKey.Location = new System.Drawing.Point(40, 20);
             this.cbHPKey.Name = "cbHPKey";
             this.cbHPKey.Size = new System.Drawing.Size(61, 21);
             this.cbHPKey.TabIndex = 18;
             this.cbHPKey.ValueMember = "Value";
-            this.cbHPKey.SelectedIndexChanged += new System.EventHandler(this.cbHPKey_SelectedIndexChanged);
+            this.cbHPKey.SelectedIndexChanged += new System.EventHandler(this.cbHPKeySelectedIndexChanged);
             // 
             // label1
             // 
@@ -172,6 +175,8 @@
             this.Text = "AutopotForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSPpct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -189,7 +194,7 @@
         private System.Windows.Forms.TextBox txtAutopotDelay;
         private System.Windows.Forms.Label labelSP;
         private System.Windows.Forms.Label labelHP;
-        private System.Windows.Forms.RichTextBox txtSPpct;
-        private System.Windows.Forms.RichTextBox txtHPpct;
+        private System.Windows.Forms.NumericUpDown txtSPpct;
+        private System.Windows.Forms.NumericUpDown txtHPpct;
     }
 }

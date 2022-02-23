@@ -49,7 +49,7 @@ namespace _4RTools.Forms
         }
 
         //UPDATE HP HOTKEY
-        private void cbHPKey_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbHPKeySelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.autopot != null)
             {
@@ -59,7 +59,7 @@ namespace _4RTools.Forms
         }
 
         //UPDATE SP HOTKEY
-        private void cbSPKey_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbSPKeySelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.autopot != null)
             {
@@ -67,7 +67,7 @@ namespace _4RTools.Forms
             }
         }
 
-        private void txtAutopotDelay_TextChanged(object sender, EventArgs e)
+        private void txtAutopotDelayTextChanged(object sender, EventArgs e)
         {
             try
             {
@@ -76,7 +76,7 @@ namespace _4RTools.Forms
             catch (Exception) { }
         }
 
-        private void txtHPpct_TextChanged(object sender, EventArgs e)
+        private void txtHPpctTextChanged(object sender, EventArgs e)
         {
             try
             {
@@ -86,7 +86,7 @@ namespace _4RTools.Forms
 
         }
 
-        private void txtSPpct_TextChanged(object sender, EventArgs e)
+        private void txtSPpctTextChanged(object sender, EventArgs e)
         {
             try
             {
