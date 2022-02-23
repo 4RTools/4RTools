@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutopotForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtSPpct = new System.Windows.Forms.RichTextBox();
+            this.txtHPpct = new System.Windows.Forms.RichTextBox();
+            this.labelSP = new System.Windows.Forms.Label();
+            this.labelHP = new System.Windows.Forms.Label();
             this.txtAutopotDelay = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbSPKey = new System.Windows.Forms.ComboBox();
             this.cbHPKey = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtHPpct = new System.Windows.Forms.RichTextBox();
-            this.txtSPpct = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,8 +50,8 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtSPpct);
             this.panel1.Controls.Add(this.txtHPpct);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.labelSP);
+            this.panel1.Controls.Add(this.labelHP);
             this.panel1.Controls.Add(this.txtAutopotDelay);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -64,25 +64,42 @@
             this.panel1.Size = new System.Drawing.Size(186, 119);
             this.panel1.TabIndex = 1;
             // 
-            // label3
+            // txtSPpct
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(152, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 17);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "%";
+            this.txtSPpct.Location = new System.Drawing.Point(110, 54);
+            this.txtSPpct.Name = "txtSPpct";
+            this.txtSPpct.Size = new System.Drawing.Size(43, 21);
+            this.txtSPpct.TabIndex = 28;
+            this.txtSPpct.Text = "";
             // 
-            // label2
+            // txtHPpct
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(151, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 17);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "%";
+            this.txtHPpct.Location = new System.Drawing.Point(110, 20);
+            this.txtHPpct.Name = "txtHPpct";
+            this.txtHPpct.Size = new System.Drawing.Size(43, 21);
+            this.txtHPpct.TabIndex = 27;
+            this.txtHPpct.Text = "";
+            this.txtHPpct.TextChanged += new System.EventHandler(this.txtSPpct_TextChanged);
+            // 
+            // labelSP
+            // 
+            this.labelSP.AutoSize = true;
+            this.labelSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelSP.Location = new System.Drawing.Point(152, 55);
+            this.labelSP.Name = "labelSP";
+            this.labelSP.Size = new System.Drawing.Size(20, 17);
+            this.labelSP.TabIndex = 26;
+            this.labelSP.Text = "%";
+            // 
+            // labelHP
+            // 
+            this.labelHP.AutoSize = true;
+            this.labelHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelHP.Location = new System.Drawing.Point(151, 22);
+            this.labelHP.Name = "labelHP";
+            this.labelHP.Size = new System.Drawing.Size(20, 17);
+            this.labelHP.TabIndex = 25;
+            this.labelHP.Text = "%";
             // 
             // txtAutopotDelay
             // 
@@ -142,24 +159,8 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Delay (ms)";
             // 
-            // txtHPpct
-            // 
-            this.txtHPpct.Location = new System.Drawing.Point(110, 20);
-            this.txtHPpct.Name = "txtHPpct";
-            this.txtHPpct.Size = new System.Drawing.Size(43, 21);
-            this.txtHPpct.TabIndex = 27;
-            this.txtHPpct.Text = "";
-            //
-            // txtSPpct
-            //
-            this.txtSPpct.Location = new System.Drawing.Point(110, 54);
-            this.txtSPpct.Name = "txtSPpct";
-            this.txtSPpct.Size = new System.Drawing.Size(43, 21);
-            this.txtSPpct.TabIndex = 28;
-            this.txtSPpct.Text = "";
-            //
             // AutopotForm
-            //
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
@@ -186,8 +187,8 @@
         private System.Windows.Forms.ComboBox cbSPKey;
         private System.Windows.Forms.ComboBox cbHPKey;
         private System.Windows.Forms.TextBox txtAutopotDelay;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelSP;
+        private System.Windows.Forms.Label labelHP;
         private System.Windows.Forms.RichTextBox txtSPpct;
         private System.Windows.Forms.RichTextBox txtHPpct;
     }
