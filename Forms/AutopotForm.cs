@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using System;
 using System.Windows.Input;
+using _4RTools.Model;
 using _4RTools.Utils;
 
 namespace _4RTools.Forms
@@ -15,7 +16,7 @@ namespace _4RTools.Forms
             InitializeComponent();
             this.cbHPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
             this.cbSPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
-            this.autopot = new Model.Autopot();
+            this.autopot = new Autopot();
 
             // loadProfile
             // HP
@@ -33,6 +34,10 @@ namespace _4RTools.Forms
         {
             switch ((subject as Subject).Message.code)
             {
+                case MessageCode.PROFILE_CHANGED:
+                    this.autopot = ProfileSingleton.GetCurrent().Autopot;
+                    InitializeApplicationForm();
+                    break;
                 case MessageCode.TURN_OFF:
                     this.autopot.Stop();
                     break;
@@ -46,6 +51,9 @@ namespace _4RTools.Forms
         {
             this.cbHPKey.SelectedValue = this.autopot.hpKey;
             this.cbSPKey.SelectedValue = this.autopot.spKey;
+            this.txtHPpct.Text = this.autopot.hpPercent.ToString();
+            this.txtSPpct.Text = this.autopot.spPercent.ToString();
+            this.txtAutopotDelay.Text = this.autopot.delay.ToString();
         }
 
         //UPDATE HP HOTKEY
@@ -54,6 +62,7 @@ namespace _4RTools.Forms
             if (this.autopot != null)
             {
                 this.autopot.hpKey = (Key)this.cbHPKey.SelectedValue;
+                ProfileSingleton.SetConfiguration(this.autopot);
             }
 
         }
@@ -64,6 +73,7 @@ namespace _4RTools.Forms
             if (this.autopot != null)
             {
                 this.autopot.spKey = (Key)this.cbSPKey.SelectedValue;
+                ProfileSingleton.SetConfiguration(this.autopot);
             }
         }
 
@@ -72,6 +82,7 @@ namespace _4RTools.Forms
             try
             {
                 this.autopot.delay = Int16.Parse(this.txtAutopotDelay.Text);
+                ProfileSingleton.SetConfiguration(this.autopot);
             }
             catch (Exception) { }
         }
@@ -81,6 +92,7 @@ namespace _4RTools.Forms
             try
             {
                 this.autopot.hpPercent = Int16.Parse(this.txtHPpct.Text);
+                ProfileSingleton.SetConfiguration(this.autopot);
             }
             catch (Exception) { }
 
@@ -91,6 +103,7 @@ namespace _4RTools.Forms
             try
             {
                 this.autopot.spPercent = Int16.Parse(this.txtSPpct.Text);
+                ProfileSingleton.SetConfiguration(this.autopot);
             }
             catch (Exception) { }
 
