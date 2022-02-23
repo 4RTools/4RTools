@@ -42,7 +42,6 @@
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.profileCB = new System.Windows.Forms.ComboBox();
@@ -180,16 +179,6 @@
             this.panel2.Size = new System.Drawing.Size(32, 33);
             this.panel2.TabIndex = 11;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(15, 13);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(347, 56);
-            this.panel3.TabIndex = 12;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
@@ -225,7 +214,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.profileCB);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblLinkGithub);
@@ -261,7 +249,6 @@
         private System.Windows.Forms.LinkLabel lblLinkGithub;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ComboBox profileCB;
