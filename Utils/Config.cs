@@ -13,7 +13,7 @@ namespace _4RTools.Utils
                 string result = appSettings ?? "Not Found";
                 return result;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return " - ";
             }

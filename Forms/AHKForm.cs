@@ -63,7 +63,7 @@ namespace _4RTools.Forms
                 this.ahk.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
                 ProfileSingleton.SetConfiguration(this.ahk);
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 this.ahk.ahkDelay = 10;
             }
