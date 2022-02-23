@@ -1,8 +1,11 @@
 ﻿namespace _4RTools.Model
 {
-    internal interface Action
+    public interface Action
     {
         void Start();
         void Stop();
+        string GetConfiguration();
+
+        string GetActionName();
     }
 }

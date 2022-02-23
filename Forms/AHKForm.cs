@@ -21,9 +21,17 @@ namespace _4RTools.Forms
 
         public void Update(ISubject subject)
         {
-            if((subject as Subject).Message.code == MessageCode.PROCESS_CHANGED)
+            if((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
             {
+                FormUtils.ResetForm(this);
+                this.ahk = ProfileSingleton.GetCurrent().AHK;
 
+                foreach (string key in this.ahk.ahkEntries.Keys)
+                {
+                    ToggleCheckboxByName(key, true);
+                }
+
+                this.ahk.Start();
             }
             else if ((subject as Subject).Message.code == MessageCode.TURN_ON)
             {
@@ -36,14 +44,16 @@ namespace _4RTools.Forms
 
         private void onCheckChange(object sender, EventArgs e)
         {
-            var checkbox = (CheckBox)sender;
+            CheckBox checkbox = (CheckBox)sender;
             Key key = (Key) new KeyConverter().ConvertFromString(checkbox.Text);
 
             if (checkbox.Checked)
-                this.ahk.AddAHKEntry(key);
+                this.ahk.AddAHKEntry(checkbox.Name, key);
             else
-                this.ahk.RemoveAHKEntry(key);
-            
+                this.ahk.RemoveAHKEntry(checkbox.Name);
+
+            ProfileSingleton.SetConfiguration(this.ahk);
+
         }
 
         private void txtSpammerDelay_TextChanged(object sender, EventArgs e)
@@ -51,11 +61,25 @@ namespace _4RTools.Forms
             try
             {
                 this.ahk.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
-            }catch(Exception ex)
+                ProfileSingleton.SetConfiguration(this.ahk);
+            }
+            catch(Exception ex)
             {
                 this.ahk.ahkDelay = 10;
             }
-
         }
+
+
+        private void ToggleCheckboxByName(string Name, bool state)
+        {
+            foreach (Control c in this.Controls)
+                if (c.Name == Name)
+                {
+                    CheckBox a = (CheckBox)c;
+                    a.Checked = state;
+                }
+            ProfileSingleton.SetConfiguration(this.ahk);
+        }
+
     }
 }

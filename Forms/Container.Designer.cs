@@ -36,6 +36,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabLayout = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,7 +45,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.profileCB = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,10 +92,12 @@
             // 
             this.tabControl1.Controls.Add(this.tabLayout);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 267);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(679, 324);
+            this.tabControl1.Size = new System.Drawing.Size(679, 279);
             this.tabControl1.TabIndex = 6;
             // 
             // tabLayout
@@ -101,9 +105,9 @@
             this.tabLayout.Location = new System.Drawing.Point(4, 22);
             this.tabLayout.Name = "tabLayout";
             this.tabLayout.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLayout.Size = new System.Drawing.Size(671, 298);
+            this.tabLayout.Size = new System.Drawing.Size(671, 253);
             this.tabLayout.TabIndex = 0;
-            this.tabLayout.Text = "tabPage1";
+            this.tabLayout.Text = "Autobuff";
             this.tabLayout.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -111,10 +115,30 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(671, 199);
+            this.tabPage2.Size = new System.Drawing.Size(671, 253);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Skill Spammer";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(671, 253);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Bard / Dancer";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(671, 253);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Profiles";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // lblLinkDiscord
             // 
@@ -183,22 +207,23 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Profile";
             // 
-            // comboBox1
+            // profileCB
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(514, 48);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 21);
-            this.comboBox1.TabIndex = 14;
+            this.profileCB.FormattingEnabled = true;
+            this.profileCB.Location = new System.Drawing.Point(514, 48);
+            this.profileCB.Name = "profileCB";
+            this.profileCB.Size = new System.Drawing.Size(173, 21);
+            this.profileCB.TabIndex = 14;
+            this.profileCB.SelectedIndexChanged += new System.EventHandler(this.profileCB_SelectedIndexChanged);
             // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(703, 603);
+            this.ClientSize = new System.Drawing.Size(703, 553);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.profileCB);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -239,6 +264,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox profileCB;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }

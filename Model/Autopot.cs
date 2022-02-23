@@ -3,21 +3,21 @@ using System.ComponentModel;
 using _4RTools.Utils;
 using System.Threading;
 using System.Windows.Forms;
+using System.Windows.Input;
+using Newtonsoft.Json;
 
 namespace _4RTools.Model
 {
 
-    internal class Autopot : Action
+    public class Autopot : Action
     {
 
-        [DefaultValue(Keys.None)]
-        public Keys hpKey { get; set; }
+        public Key hpKey { get; set; }
         public int hpPercent { get; set; }
-        [DefaultValue(Keys.None)]
-        public Keys spKey { get; set; }
+        public Key spKey { get; set; }
         public int spPercent { get; set; }
         public int delay { get; set; } = 15;
-
+        private const string ACTION_NAME = "Autopot";
         private Thread autopotThread;
 
         public Autopot()
@@ -25,7 +25,7 @@ namespace _4RTools.Model
 
         }
 
-        public Autopot(Keys hpKey, int hpPercent, int delay, Keys spKey, int spPercent)
+        public Autopot(Key hpKey, int hpPercent, int delay, Key spKey, int spPercent)
         {
             this.delay = delay;
 
@@ -50,6 +50,7 @@ namespace _4RTools.Model
                     uint hp_pot_count = 0;
                     while (true)
                     {
+                        Console.WriteLine(this.hpKey.ToString()+ " - " + this.hpPercent);
                         // check hp first
                         if (roClient.IsHpBelow(hpPercent))
                         {
@@ -84,14 +85,14 @@ namespace _4RTools.Model
 
         private void potSp()
         {
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.spKey, 0); // keydown
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.spKey, 0); // keyup
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keydown
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keyup
         }
 
         private void potHp()
         {
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, this.hpKey, 0); // keydown
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, this.hpKey, 0); // keyup
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, (Keys)this.hpKey, 0); // keydown
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, (Keys)this.hpKey, 0); // keyup
         }
 
         public void Stop()
@@ -101,6 +102,16 @@ namespace _4RTools.Model
             {
                 this.autopotThread.Abort();
             }
+        }
+
+        public string GetConfiguration()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+
+        public string GetActionName()
+        {
+            return ACTION_NAME;
         }
     }
 }

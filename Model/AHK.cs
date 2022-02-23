@@ -4,14 +4,16 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Windows.Input;
 using _4RTools.Utils;
+using Newtonsoft.Json;
 
 
 namespace _4RTools.Model
 {
 
-    internal class AHK : Action
+    public class AHK : Action
     {
-        private List<Key> ahkEntries = new List<Key>();
+        public Dictionary<string,Key> ahkEntries { get; set; } = new Dictionary<string, Key>();
+        private string ACTION_NAME = "AHK";
         public int ahkDelay { get; set; }
         private Thread ahkThread;
 
@@ -26,23 +28,18 @@ namespace _4RTools.Model
                     {
                         try
                         {
-                            foreach (Key key in ahkEntries)
+                            foreach (Key key in ahkEntries.Values)
                             {
-                                if (Keyboard.IsKeyDown(key))
+                                while (Keyboard.IsKeyDown(key))
                                 {
-                                    while (Keyboard.IsKeyDown(key))
-                                    {
-                                        Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
-                                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                                        Thread.Sleep(10);
-                                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                                        Thread.Sleep(ahkDelay);
-                                    }
+                                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
+                                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                                    Thread.Sleep(1);
+                                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                                    Thread.Sleep(ahkDelay);
                                 }
-                              
                             }
-
                         }
                         catch { }
                         Thread.Sleep(ahkDelay);
@@ -54,15 +51,18 @@ namespace _4RTools.Model
                 ahkThread.Start();
             }
         }
-
-        public void AddAHKEntry(Key key)
+        
+        public void AddAHKEntry(string chkboxName,Key value)
         {
-            this.ahkEntries.Add(key);
+            if (!this.ahkEntries.ContainsKey(chkboxName)) {
+                this.ahkEntries.Add(chkboxName, value);
+            }
+               
         }
 
-        public void RemoveAHKEntry(Key key)
+        public void RemoveAHKEntry(string chkboxName)
         {
-            this.ahkEntries.Remove(key);
+            this.ahkEntries.Remove(chkboxName);
         }
 
         public void Stop()
@@ -71,7 +71,16 @@ namespace _4RTools.Model
             {
                 this.ahkThread.Abort();
             }
-            
+        }
+
+        public string GetConfiguration()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+
+        public string GetActionName()
+        {
+            return ACTION_NAME;
         }
     }
 }

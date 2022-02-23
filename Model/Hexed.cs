@@ -132,9 +132,8 @@ namespace _4RTools.Model
         private static List<Client> GetAll()
         {
             List<Client> result = new List<Client>();
-
-            result.Add(new Client(21012014, 0x00E8E434));
-            result.Add(new Client(20180602, 0x0101A700));
+            result.Add(new Client(2019, 0x00E8E434)); //Clients2019 (Tales, etc..)
+            result.Add(new Client(2018, 0x0101A700)); //Clients2018 (Portal Kafra, etc...)
             result.Add(new Client(21012014, 0x00AAEAD));
             result.Add(new Client(21012014, 0x00AAEAD));
             result.Add(new Client(21012014, 0x00AAEAD));

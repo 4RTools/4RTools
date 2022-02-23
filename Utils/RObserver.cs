@@ -21,6 +21,7 @@ namespace _4RTools.Utils
     public enum MessageCode { 
         PROCESS_CHANGED,
         PROFILE_CHANGED,
+        PROFILE_INPUT_CHANGE,
         TURN_ON,
         TURN_OFF,
     }

@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System;
+using System.Windows.Input;
 using _4RTools.Utils;
 
 namespace _4RTools.Forms
@@ -19,10 +20,10 @@ namespace _4RTools.Forms
             // loadProfile
             // HP
             this.autopot.delay = 10;
-            this.autopot.hpKey = Keys.None;
+            this.autopot.hpKey = Key.None;
             this.autopot.hpPercent = 99;
             // SP
-            this.autopot.spKey = Keys.None;
+            this.autopot.spKey = Key.None;
             this.autopot.spPercent = 70;
 
             this.InitializeApplicationForm();
@@ -50,11 +51,11 @@ namespace _4RTools.Forms
         //UPDATE HP HOTKEY
         private void cbHPKey_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(this.autopot != null)
+            if (this.autopot != null)
             {
-                this.autopot.hpKey = (Keys)this.cbHPKey.SelectedValue;
+                this.autopot.hpKey = (Key)this.cbHPKey.SelectedValue;
             }
-            
+
         }
 
         //UPDATE SP HOTKEY
@@ -62,7 +63,7 @@ namespace _4RTools.Forms
         {
             if (this.autopot != null)
             {
-                this.autopot.spKey = (Keys)this.cbSPKey.SelectedValue;
+                this.autopot.spKey = (Key)this.cbSPKey.SelectedValue;
             }
         }
 
@@ -82,7 +83,7 @@ namespace _4RTools.Forms
                 this.autopot.hpPercent = Int16.Parse(this.txtHPpct.Text);
             }
             catch (Exception) { }
-            
+
         }
 
         private void txtSPpct_TextChanged(object sender, EventArgs e)
@@ -90,8 +91,9 @@ namespace _4RTools.Forms
             try
             {
                 this.autopot.spPercent = Int16.Parse(this.txtSPpct.Text);
-            }catch (Exception) { }
-            
+            }
+            catch (Exception) { }
+
         }
     }
 }
