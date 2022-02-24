@@ -245,7 +245,7 @@ namespace _4RTools.Forms
             // 
             // btnStatusToggle
             // 
-            this.btnStatusToggle.BackColor = System.Drawing.Color.Green;
+            this.btnStatusToggle.BackColor = System.Drawing.Color.Red;
             this.btnStatusToggle.FlatAppearance.BorderSize = 0;
             this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -255,7 +255,7 @@ namespace _4RTools.Forms
             this.btnStatusToggle.Name = "btnStatusToggle";
             this.btnStatusToggle.Size = new System.Drawing.Size(88, 41);
             this.btnStatusToggle.TabIndex = 21;
-            this.btnStatusToggle.Text = "ON";
+            this.btnStatusToggle.Text = "OFF";
             this.btnStatusToggle.UseVisualStyleBackColor = false;
             this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
             // 

@@ -4,16 +4,18 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using _4RTools.Model;
+using _4RTools.Utils;
 namespace _4RTools.Forms
 {
     public partial class Container : Form
     {
 
-        private Utils.Subject subject = new Utils.Subject();
+        private Subject subject = new Subject();
         
         public Container()
         {
-            if (!Directory.Exists(Utils.Config.ReadSetting("ProfileFolder")))
+            Config.Load();
+            if (!Directory.Exists(Config.ReadSetting("ProfileFolder")))
             {
                 Directory.CreateDirectory(Utils.Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
             }
@@ -136,19 +138,19 @@ namespace _4RTools.Forms
         {
             this.toggleStatus();
         }
+
         private bool toggleStatus()
         {
             bool statusOn = this.btnStatusToggle.Text == "ON";
-            subject.Notify(new Utils.Message(statusOn ? Utils.MessageCode.TURN_ON : Utils.MessageCode.TURN_OFF, null));
 
             if (statusOn) {
                 this.btnStatusToggle.BackColor = Color.Red;
                 this.btnStatusToggle.Text = "OFF";
-                subject.Notify(new Utils.Message(Utils.MessageCode.TURN_OFF, null));
+                subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
             } else {
                 this.btnStatusToggle.BackColor = Color.Green;
                 this.btnStatusToggle.Text = "ON";
-                subject.Notify(new Utils.Message(Utils.MessageCode.TURN_ON, null));
+                subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
             }
 
             return true;

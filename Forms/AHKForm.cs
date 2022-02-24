@@ -9,14 +9,11 @@ namespace _4RTools.Forms
     public partial class AHKForm : Form, IObserver
     {
         private AHK ahk = new AHK();
-        private const int AHK_DELAY_DEFAULT_MS = 100;
 
         public AHKForm(Subject subject)
         {
             InitializeComponent();
             subject.Attach(this);
-            this.ahk.ahkDelay = AHK_DELAY_DEFAULT_MS;
-            this.txtSpammerDelay.Text = AHK_DELAY_DEFAULT_MS.ToString();
         }
 
         public void Update(ISubject subject)
@@ -30,6 +27,7 @@ namespace _4RTools.Forms
                 {
                     ToggleCheckboxByName(key, true);
                 }
+                this.txtSpammerDelay.Text = this.ahk.ahkDelay.ToString();
 
                 this.ahk.Start();
             }
