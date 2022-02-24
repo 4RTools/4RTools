@@ -17,6 +17,7 @@ namespace _4RTools.Model
         public Key spKey { get; set; }
         public int spPercent { get; set; }
         public int delay { get; set; } = 15;
+
         private const string ACTION_NAME = "Autopot";
         private Thread autopotThread;
 
@@ -40,7 +41,6 @@ namespace _4RTools.Model
 
         public void Start()
         {
-            Console.WriteLine("Autopot: Start");
             Stop();
             Client roClient = ClientSingleton.GetClient();
             if(roClient != null)
@@ -50,7 +50,6 @@ namespace _4RTools.Model
                     uint hp_pot_count = 0;
                     while (true)
                     {
-                        Console.WriteLine(this.hpKey.ToString()+ " - " + this.hpPercent);
                         // check hp first
                         if (roClient.IsHpBelow(hpPercent))
                         {
@@ -85,19 +84,18 @@ namespace _4RTools.Model
 
         private void potSp()
         {
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keydown
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keyup
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keydown
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYUP_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keyup
         }
 
         private void potHp()
         {
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYDOWN_MSG_ID, (Keys)this.hpKey, 0); // keydown
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Utils.Constants.WM_KEYUP_MSG_ID, (Keys)this.hpKey, 0); // keyup
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.hpKey.ToString()), 0); // keydown
+            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYUP_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.hpKey.ToString()), 0); // keyup
         }
 
         public void Stop()
         {
-            Console.WriteLine("Autopot: Stop");
             if (this.autopotThread != null)
             {
                 this.autopotThread.Abort();

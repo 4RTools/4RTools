@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Drawing;
-
 namespace _4RTools
 {
     internal static class Program
