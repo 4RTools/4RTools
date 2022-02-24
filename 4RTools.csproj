@@ -60,6 +60,12 @@
     <Compile Include="Forms\AHKForm.Designer.cs">
       <DependentUpon>AHKForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\StatusEffectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StatusEffectForm.Designer.cs">
+      <DependentUpon>StatusEffectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Container.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,7 @@
     </Compile>
     <Compile Include="Model\AHK.cs" />
     <Compile Include="Model\Autopot.cs" />
+    <Compile Include="Model\AutoBuff.cs" />
     <Compile Include="Model\Hexed.cs" />
     <Compile Include="Model\Action.cs" />
     <Compile Include="Model\Profile.cs" />
@@ -85,6 +92,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\BuffsList.cs" />
     <Compile Include="Utils\Config.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\FormUtils.cs" />
@@ -105,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StatusEffectForm.resx">
+      <DependentUpon>StatusEffectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

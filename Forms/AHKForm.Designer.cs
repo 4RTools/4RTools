@@ -73,10 +73,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtSpammerDelay = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -84,7 +80,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.chkS = new System.Windows.Forms.CheckBox();
             this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -586,42 +581,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Spammer Delay (MS)";
             // 
-            // panel7
-            // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label5);
-            this.panel7.Controls.Add(this.textBox3);
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Location = new System.Drawing.Point(163, 167);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(142, 69);
-            this.panel7.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(79, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "S";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(20, 35);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(56, 20);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "AutoRefresh Delay (S)";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
@@ -695,7 +654,6 @@
             this.Controls.Add(this.chkB);
             this.Controls.Add(this.chk8);
             this.Controls.Add(this.chkV);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.chkC);
             this.Controls.Add(this.chk7);
             this.Controls.Add(this.chkX);
@@ -738,8 +696,6 @@
             this.Text = "AHKForm";
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -793,10 +749,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txtSpammerDelay;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
