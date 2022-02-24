@@ -20,7 +20,7 @@ namespace _4RTools.Forms
             InitializeComponent();
             Text = Utils.Config.ReadSetting("Name") + " - " + Utils.Config.ReadSetting("Version");
             Utils.KeyboardHook.Enable();
-            Utils.KeyboardHook.Add(Keys.End, new Utils.KeyboardHook.KeyPressed(this.onPressEnd)); //Toggle System (ON-OFF)
+            Utils.KeyboardHook.Add(Keys.End, new Utils.KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
 
             //Container Configuration
             this.IsMdiContainer = true;
@@ -37,7 +37,7 @@ namespace _4RTools.Forms
         {
             AutopotForm frm = new AutopotForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0,65);
+            frm.Location = new Point(0,85);
             frm.MdiParent = this;
             frm.Show();
         }
@@ -132,14 +132,25 @@ namespace _4RTools.Forms
             }
         }
 
-        private void chckToggle_CheckedChanged(object sender, EventArgs e)
+        private void btnToggleStatusHandler(object sender, EventArgs e)
         {
-            subject.Notify(new Utils.Message(this.chckToggle.Checked ? Utils.MessageCode.TURN_ON : Utils.MessageCode.TURN_OFF, null));
+            this.toggleStatus();
         }
-
-        private bool onPressEnd()
+        private bool toggleStatus()
         {
-            this.chckToggle.Checked = !this.chckToggle.Checked;
+            bool statusOn = this.btnStatusToggle.Text == "ON";
+            subject.Notify(new Utils.Message(statusOn ? Utils.MessageCode.TURN_ON : Utils.MessageCode.TURN_OFF, null));
+
+            if (statusOn) {
+                this.btnStatusToggle.BackColor = Color.Red;
+                this.btnStatusToggle.Text = "OFF";
+                subject.Notify(new Utils.Message(Utils.MessageCode.TURN_OFF, null));
+            } else {
+                this.btnStatusToggle.BackColor = Color.Green;
+                this.btnStatusToggle.Text = "ON";
+                subject.Notify(new Utils.Message(Utils.MessageCode.TURN_ON, null));
+            }
+
             return true;
         }
 
