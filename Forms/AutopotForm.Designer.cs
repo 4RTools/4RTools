@@ -53,6 +53,7 @@
             this.txtSPpct.Name = "txtSPpct";
             this.txtSPpct.Size = new System.Drawing.Size(44, 23);
             this.txtSPpct.TabIndex = 40;
+            this.txtSPpct.ValueChanged += new System.EventHandler(this.txtSPpctTextChanged);
             // 
             // txtHPpct
             // 
@@ -61,6 +62,7 @@
             this.txtHPpct.Name = "txtHPpct";
             this.txtHPpct.Size = new System.Drawing.Size(44, 23);
             this.txtHPpct.TabIndex = 39;
+            this.txtHPpct.ValueChanged += new System.EventHandler(this.txtHPpctTextChanged);
             // 
             // labelSP
             // 
@@ -89,6 +91,7 @@
             this.txtAutopotDelay.Name = "txtAutopotDelay";
             this.txtAutopotDelay.Size = new System.Drawing.Size(44, 23);
             this.txtAutopotDelay.TabIndex = 36;
+            this.txtAutopotDelay.TextChanged += new System.EventHandler(this.txtAutopotDelayTextChanged);
             // 
             // pictureBox2
             // 
@@ -120,6 +123,7 @@
             this.cbSPKey.Size = new System.Drawing.Size(61, 24);
             this.cbSPKey.TabIndex = 33;
             this.cbSPKey.ValueMember = "Value";
+            this.cbSPKey.SelectedIndexChanged += new System.EventHandler(this.cbSPKeySelectedIndexChanged);
             // 
             // cbHPKey
             // 
@@ -131,6 +135,7 @@
             this.cbHPKey.Size = new System.Drawing.Size(61, 24);
             this.cbHPKey.TabIndex = 32;
             this.cbHPKey.ValueMember = "Value";
+            this.cbHPKey.SelectedIndexChanged += new System.EventHandler(this.cbHPKeySelectedIndexChanged);
             // 
             // label2
             // 
