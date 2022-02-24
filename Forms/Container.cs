@@ -92,6 +92,7 @@ namespace _4RTools.Forms
         {
             Client client = new Client(this.processCB.SelectedItem.ToString());
             ClientSingleton.Instance(client);
+            characterName.Text = client.ReadCharacterName();
             subject.Notify(new Utils.Message(Utils.MessageCode.PROCESS_CHANGED, null));
             
         }

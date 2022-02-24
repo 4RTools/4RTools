@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 using System.Windows.Forms;
 
 namespace _4RTools.Model
@@ -29,12 +30,14 @@ namespace _4RTools.Model
         public Process process { get; }
         private Utils.ProcessMemoryReader PMR { get; set; }
         private int clientVersion { get; set; }
+        private int currentNameAddress { get; set; }
         private int currentHPBaseAddress { get; set; }
         private int _num = 0;
 
-        private Client(int clientVersion, int currentHPBaseAddress)
+        private Client(int clientVersion, int currentHPBaseAddress, int currentNameAddress)
         {
             this.clientVersion = clientVersion;
+            this.currentNameAddress = currentNameAddress;
             this.currentHPBaseAddress = currentHPBaseAddress;
         }
 
@@ -61,6 +64,7 @@ namespace _4RTools.Model
                             {
                                 this.clientVersion = client.clientVersion;
                                 this.currentHPBaseAddress = client.currentHPBaseAddress;
+                                this.currentNameAddress = client.currentNameAddress;
                                 break;
                             };
                         }
@@ -73,6 +77,21 @@ namespace _4RTools.Model
                 MessageBox.Show(string.Format("Error while open process ! - {0}", ex.Message));
                 Environment.Exit(0);
             }
+        }
+
+        private string ReadMemoryAsString(int address)
+        {
+            byte[] bytes = PMR.ReadProcessMemory((IntPtr)address, 40u, out _num);
+            List<byte> buffer = new List<byte>(); //Need a list with dynamic size 
+            for (int i =0;i < bytes.Length;i++)
+            {
+                if (bytes[i] == 0) break; //Check Nullability based ON ASCII Table
+
+                buffer.Add(bytes[i]); //Add only bytes needed
+            }
+
+           return Encoding.Default.GetString(buffer.ToArray());
+
         }
 
         private uint ReadMemory(int address)
@@ -124,6 +143,11 @@ namespace _4RTools.Model
             return ReadMemory(this.currentHPBaseAddress + 4);
         }
 
+        public string ReadCharacterName()
+        {
+            return ReadMemoryAsString(this.currentNameAddress);
+        }
+
         public uint ReadMaxSp()
         {
             return ReadMemory(this.currentHPBaseAddress + 12);
@@ -132,13 +156,8 @@ namespace _4RTools.Model
         private static List<Client> GetAll()
         {
             List<Client> result = new List<Client>();
-            result.Add(new Client(2019, 0x00E8E434)); //Clients2019 (Tales, etc..)
-            result.Add(new Client(2018, 0x0101A700)); //Clients2018 (Portal Kafra, etc...)
-            result.Add(new Client(21012014, 0x00AAEAD));
-            result.Add(new Client(21012014, 0x00AAEAD));
-            result.Add(new Client(21012014, 0x00AAEAD));
-            result.Add(new Client(21012014, 0x00AAEAD));
-
+            result.Add(new Client(2019, 0x00E8E434, 0x00E90C00)); //Clients2019 (Tales, etc..)
+            result.Add(new Client(2018, 0x0101A700, 0x1B2E6B18)); //Clients2018 (Portal Kafra, etc...)
             return result;
         }
 

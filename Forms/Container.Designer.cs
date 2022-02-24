@@ -236,10 +236,11 @@ namespace _4RTools.Forms
             // characterName
             // 
             this.characterName.AutoSize = true;
+            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
             this.characterName.Location = new System.Drawing.Point(99, 77);
             this.characterName.Name = "characterName";
-            this.characterName.Size = new System.Drawing.Size(10, 13);
+            this.characterName.Size = new System.Drawing.Size(11, 13);
             this.characterName.TabIndex = 20;
             this.characterName.Text = "-";
             // 
