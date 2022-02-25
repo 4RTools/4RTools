@@ -92,7 +92,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\BuffsList.cs" />
+    <Compile Include="Utils\EffectStatusIDs.cs" />
     <Compile Include="Utils\Config.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\FormUtils.cs" />

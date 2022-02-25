@@ -8,6 +8,7 @@ namespace _4RTools.Forms
 {
     public partial class StatusEffectForm : Form, IObserver
     {
+        private AutoBuff autoBuffs = new AutoBuff();
 
         public StatusEffectForm(Subject subject)
         {
@@ -20,6 +21,12 @@ namespace _4RTools.Forms
 
         public void Update(ISubject subject)
         {
+            this.autoBuffs.Start();
+        }
+
+        private void statusEffectKeyIndexChanged(object sender, EventArgs e)
+        {
+            this.autoBuffs.effectStatusKey = (Key)this.cbStatusEffectKey.SelectedValue;
         }
     }
 }

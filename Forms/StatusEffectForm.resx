@@ -117,36 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhGAAYAIQVAP/z57W9scunj2twZ69/Y8O2u+PPw//xrfLj6Ou1a5OVoq+Pe//z79Pji1tzP9fX
-        10hJT/f/n7PHd4OqWf///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBF
-        Mi4wAwEBAAAh+QQBAAAVACwAAAAAGAAYAAAIzgArCBxIsKDBgwgTKlzIkKAAAQsINDQogAKFBw8kThxY
-        8WLGjRwPHMAIAWSAAAMEYCQA4SRDixQYoCTAckABiwUSWmTAM4CCAUATIODJIKdBixAgSMD4QIKECRMa
-        NEha9GjSCRabOnXAtYEEqlYhRMgKFSpXCVMhMDDIAMKECHCfljXrVK1BAErhRnDK1ynUqQYOBpCgN65T
-        r08bBEaItrBhuQ0UDm4At8FcrhMALGwq1fIErg4yN9T6GfSExQ0BPJgLQDPICq1bv55Nm2BAADs=
-</value>
-  </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhGAAYAIMMAP/zvJxNSJZvZv//wKOBcb1kVf/htnY6MujHpYJTU7qZg9Gwk////wAAAAAAAAAA
-        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAAMACwAAAAAGAAYAAAI3wAZCBxIsKDBgwgTKkTAsCGCBQsI
-        KBSIwICBAQMAALDIcIECAQgZXsSY0aKBjh5BFqxIkuTGkyg/GkQAAKNJhw0hKiCgcmBNAwoSFFAwVAHE
-        mDwLWiywgKnTBQKOetzZU6ABAk0RHMg6NABEqFSVCl1wgKhZplsV7ExK0ECCpk2JalVQdmtEtgPdvi0w
-        ty7dBW8JEEiw0i1aomTpak2QQDBhsWMP+z3QePBMvU77zm382OACzHRDl2VsGaECvW/9FkggoLRpj4xj
-        M27dOaHRnIIH156odmfsicCDCx8+PCAAOw==
-</value>
-  </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhGAAYAIQVAHh5hTs+RtLT4fvFi7W1w/3Tk1lcZvKFWejHpf/htpeYo+/w//elcf/lo3Y6MpxN
-        SP/zvP+zc96MZL1kVf///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBF
-        Mi4wAwEBAAAh+QQBAAAVACwAAAAAGAAYAAAI6gArCBxIsKDBgwgTKhQIoGGAAAsPEqAgQAABABAjChzQ
-        QABFixgdOIjYoAFFChQWLMD44MHIhA0GROi4gAABBQYCtBSJMGaEmQos3sz5YMIElwcbMJBwIGZDAzkP
-        FDX6smCDCEwhSHhqYMIBo1STYj1AQYJZCUYLoA1r8GqEAhQGnP2pFmxVghDeotwLAQICCg7WPjiYl0IE
-        CGDBFhC5lnBeCYgTT1hcFC1hrJDBmn3rYKoEhFohb/4ZYUDnCZ8Rik4w+ueAyoMTQmYtgXRp1LEVSkiQ
-        oK9fBAgk5F5Y23ZjjQIlt0TOvHnEgAA7
-</value>
-  </data>
 </root>

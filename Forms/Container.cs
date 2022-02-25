@@ -49,7 +49,7 @@ namespace _4RTools.Forms
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(225, 70);
+            form.Location = new Point(225, 75);
             form.MdiParent = this;
             form.Show();
         }
