@@ -12,19 +12,38 @@ namespace _4RTools.Forms
             InitializeComponent();
             this.container = container;
 
+            foreach (string profile in Profile.ListAll())
+            {
+                this.lbProfilesList.Items.Add(profile);
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             new Profile(this.txtProfileName.Text).Save();
+            this.txtProfileName.Text = "";
+            System.Windows.Forms.MessageBox.Show("Cool! Your profile has been created successfully. :)");
             this.container.refreshProfileList();
         }
 
         private void btnRemoveProfile_Click(object sender, EventArgs e)
         {
-            Profile.RemoveProfile(this.container.profileCB.SelectedItem.ToString());
-            this.container.profileCB.Items.RemoveAt(this.container.profileCB.SelectedIndex);
-            this.container.refreshProfileList();
+            if (this.lbProfilesList.SelectedItem == null)
+            {
+                System.Windows.Forms.MessageBox.Show("No profile found! To delete a profile, first select an option from the Profile list.");
+                return;
+            }
+
+            string selectedProfile = this.lbProfilesList.SelectedItem.ToString();
+            if (selectedProfile == "Default")
+            {
+                System.Windows.Forms.MessageBox.Show("Cannot delete a Default profile!");
+            } else
+            {
+                Profile.RemoveProfile(selectedProfile);
+                this.lbProfilesList.Items.Remove(selectedProfile);
+                this.container.refreshProfileList();
+            }
         }
     }
 }
