@@ -47,7 +47,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(83, 32);
             this.btnSave.TabIndex = 1;
-            this.btnSave.Text = "Criar";
+            this.btnSave.Text = "Create";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -56,9 +56,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(23, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Criar Novo Perfil";
+            this.label1.Text = "Create a new profile";
             // 
             // btnRemoveProfile
             // 
@@ -66,7 +66,7 @@
             this.btnRemoveProfile.Name = "btnRemoveProfile";
             this.btnRemoveProfile.Size = new System.Drawing.Size(149, 32);
             this.btnRemoveProfile.TabIndex = 3;
-            this.btnRemoveProfile.Text = "Remover Perfil Selecionado";
+            this.btnRemoveProfile.Text = "Remove Selected Profile";
             this.btnRemoveProfile.UseVisualStyleBackColor = true;
             this.btnRemoveProfile.Click += new System.EventHandler(this.btnRemoveProfile_Click);
             // 
