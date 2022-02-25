@@ -20,9 +20,9 @@ namespace _4RTools.Forms
                 Directory.CreateDirectory(Utils.Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
             }
             InitializeComponent();
-            Text = Utils.Config.ReadSetting("Name") + " - " + Utils.Config.ReadSetting("Version");
-            Utils.KeyboardHook.Enable();
-            Utils.KeyboardHook.Add(Keys.End, new Utils.KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
+            Text = Config.ReadSetting("Name") + " - " + Utils.Config.ReadSetting("Version");
+            KeyboardHook.Enable();
+            KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
 
             //Container Configuration
             this.IsMdiContainer = true;

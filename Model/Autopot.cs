@@ -53,7 +53,7 @@ namespace _4RTools.Model
                         // check hp first
                         if (roClient.IsHpBelow(hpPercent))
                         {
-                            potHp();
+                            pot(this.hpKey);
                             hp_pot_count++;
 
                             if (hp_pot_count == 3)
@@ -61,7 +61,7 @@ namespace _4RTools.Model
                                 hp_pot_count = 0;
                                 if (roClient.IsSpBelow(spPercent))
                                 {
-                                    potSp();
+                                    pot(this.spKey);
                                 }
                             }
                         }
@@ -69,7 +69,7 @@ namespace _4RTools.Model
                         // check sp
                         if (roClient.IsSpBelow(spPercent))
                         {
-                            potSp();
+                            pot(this.spKey);
                         }
 
                         Thread.Sleep(this.delay);
@@ -82,16 +82,14 @@ namespace _4RTools.Model
             }
         }
 
-        private void potSp()
+        private void pot(Key key)
         {
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keydown
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYUP_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.spKey.ToString()), 0); // keyup
-        }
-
-        private void potHp()
-        {
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.hpKey.ToString()), 0); // keydown
-            Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYUP_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.hpKey.ToString()), 0); // keyup
+            Keys k = (Keys)Enum.Parse(typeof(Keys), key.ToString());
+            if (k != Keys.None)
+            {
+                Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, k, 0); // keydown
+                Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYUP_MSG_ID, k, 0); // keyup
+            }
         }
 
         public void Stop()
