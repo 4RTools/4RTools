@@ -42,7 +42,7 @@ namespace _4RTools.Forms
             this.groupBox1.Controls.Add(this.cbStatusEffectKey);
             this.groupBox1.Controls.Add(this.lblKeyStatusEffect);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(2, 0);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(121, 64);
             this.groupBox1.TabIndex = 8;
@@ -74,7 +74,7 @@ namespace _4RTools.Forms
             // StatusEffectForm
             // 
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(125, 66);
+            this.ClientSize = new System.Drawing.Size(121, 65);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StatusEffectForm";
