@@ -90,10 +90,10 @@ namespace _4RTools.Forms
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(15, 230);
+            this.tabControl1.Location = new System.Drawing.Point(15, 239);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(473, 271);
+            this.tabControl1.Size = new System.Drawing.Size(420, 271);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage2
@@ -101,7 +101,7 @@ namespace _4RTools.Forms
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(465, 245);
+            this.tabPage2.Size = new System.Drawing.Size(412, 245);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Skill Spammer";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@ namespace _4RTools.Forms
             // lblLinkDiscord
             // 
             this.lblLinkDiscord.AutoSize = true;
-            this.lblLinkDiscord.Location = new System.Drawing.Point(298, 14);
+            this.lblLinkDiscord.Location = new System.Drawing.Point(295, 16);
             this.lblLinkDiscord.Name = "lblLinkDiscord";
             this.lblLinkDiscord.Size = new System.Drawing.Size(92, 13);
             this.lblLinkDiscord.TabIndex = 8;
@@ -140,7 +140,7 @@ namespace _4RTools.Forms
             // lblLinkGithub
             // 
             this.lblLinkGithub.AutoSize = true;
-            this.lblLinkGithub.Location = new System.Drawing.Point(146, 14);
+            this.lblLinkGithub.Location = new System.Drawing.Point(143, 16);
             this.lblLinkGithub.Name = "lblLinkGithub";
             this.lblLinkGithub.Size = new System.Drawing.Size(74, 13);
             this.lblLinkGithub.TabIndex = 9;
@@ -152,7 +152,7 @@ namespace _4RTools.Forms
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(259, 4);
+            this.panel1.Location = new System.Drawing.Point(256, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(32, 33);
             this.panel1.TabIndex = 10;
@@ -161,7 +161,7 @@ namespace _4RTools.Forms
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel2.Location = new System.Drawing.Point(107, 4);
+            this.panel2.Location = new System.Drawing.Point(104, 6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(32, 33);
             this.panel2.TabIndex = 11;
@@ -192,9 +192,9 @@ namespace _4RTools.Forms
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.lblLinkDiscord);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(0, 507);
+            this.panel3.Location = new System.Drawing.Point(-3, 514);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(497, 43);
+            this.panel3.Size = new System.Drawing.Size(465, 43);
             this.panel3.TabIndex = 16;
             // 
             // panel4
@@ -202,7 +202,7 @@ namespace _4RTools.Forms
             this.panel4.BackColor = System.Drawing.Color.Silver;
             this.panel4.Location = new System.Drawing.Point(16, 66);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(472, 1);
+            this.panel4.Size = new System.Drawing.Size(420, 1);
             this.panel4.TabIndex = 17;
             // 
             // label1
@@ -240,10 +240,10 @@ namespace _4RTools.Forms
             this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(393, 9);
+            this.btnStatusToggle.Location = new System.Drawing.Point(362, 13);
             this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
             this.btnStatusToggle.Name = "btnStatusToggle";
-            this.btnStatusToggle.Size = new System.Drawing.Size(88, 41);
+            this.btnStatusToggle.Size = new System.Drawing.Size(73, 28);
             this.btnStatusToggle.TabIndex = 21;
             this.btnStatusToggle.Text = "OFF";
             this.btnStatusToggle.UseVisualStyleBackColor = false;
@@ -252,7 +252,7 @@ namespace _4RTools.Forms
             // lblStatusToggle
             // 
             this.lblStatusToggle.AutoSize = true;
-            this.lblStatusToggle.Location = new System.Drawing.Point(391, 50);
+            this.lblStatusToggle.Location = new System.Drawing.Point(354, 44);
             this.lblStatusToggle.Name = "lblStatusToggle";
             this.lblStatusToggle.Size = new System.Drawing.Size(93, 13);
             this.lblStatusToggle.TabIndex = 22;
@@ -271,7 +271,7 @@ namespace _4RTools.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(497, 549);
+            this.ClientSize = new System.Drawing.Size(459, 558);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.lblStatusToggle);
             this.Controls.Add(this.btnStatusToggle);
