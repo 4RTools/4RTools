@@ -162,7 +162,7 @@ namespace _4RTools.Model
         {
             List<Client> result = new List<Client>();
             result.Add(new Client(2019, 0x00E8E434, 0x00E90C00)); //Clients2019 (Tales, etc..)
-            result.Add(new Client(2018, 0x0101A700, 0x1B2E6B18)); //Clients2018 (Portal Kafra, etc...)
+            result.Add(new Client(2018, 0x0101A700, 0x0101CEB0)); //Clients2018 (Portal Kafra, etc...)
             return result;
         }
 
