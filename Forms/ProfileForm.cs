@@ -14,7 +14,7 @@ namespace _4RTools.Forms
 
             foreach (string profile in Profile.ListAll())
             {
-                this.lbProfilesList.Items.Add(profile);
+                if (profile != "Default") { this.lbProfilesList.Items.Add(profile); };
             }
         }
 
