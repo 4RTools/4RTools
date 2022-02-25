@@ -21,6 +21,7 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 - [x] Manage Profiles
 - [x] ON/OFF Button (with shortcut key)
 - [x] Spammer
+- [x] Auto Refresh
 - [ ] Autobuff skills
 - [ ] Song Macro
 - [ ] Switch Macro
