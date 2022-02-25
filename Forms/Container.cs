@@ -115,7 +115,6 @@ namespace _4RTools.Forms
 
             this.refreshProcessList();
             this.refreshProfileList();
-            this.profileCB.SelectedIndex = 0;
         }
 
         public void refreshProfileList()
@@ -128,6 +127,7 @@ namespace _4RTools.Forms
             {
                 this.profileCB.Items.Add(p);
             }
+            this.profileCB.SelectedIndex = 0;
         }
 
         private void refreshProcessList()

@@ -20,24 +20,26 @@ namespace _4RTools.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            new Profile(this.txtProfileName.Text).Save();
-            this.txtProfileName.Text = "";
-            System.Windows.Forms.MessageBox.Show("Cool! Your profile has been created successfully. :)");
+            string newProfileName = this.txtProfileName.Text;
+            new Profile(newProfileName).Save();
+            this.lbProfilesList.Items.Add(newProfileName);
             this.container.refreshProfileList();
+            this.txtProfileName.Text = ""; // clear text box
+            MessageBox.Show("Cool! Your profile has been created successfully. :)");
         }
 
         private void btnRemoveProfile_Click(object sender, EventArgs e)
         {
             if (this.lbProfilesList.SelectedItem == null)
             {
-                System.Windows.Forms.MessageBox.Show("No profile found! To delete a profile, first select an option from the Profile list.");
+                MessageBox.Show("No profile found! To delete a profile, first select an option from the Profile list.");
                 return;
             }
 
             string selectedProfile = this.lbProfilesList.SelectedItem.ToString();
             if (selectedProfile == "Default")
             {
-                System.Windows.Forms.MessageBox.Show("Cannot delete a Default profile!");
+                MessageBox.Show("Cannot delete a Default profile!");
             } else
             {
                 Profile.RemoveProfile(selectedProfile);
