@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using _4RTools.Model;
 using _4RTools.Utils;
+
 namespace _4RTools.Forms
 {
     public partial class Container : Form
@@ -30,18 +31,27 @@ namespace _4RTools.Forms
 
             //Paint Children Forms Below
             SetAutopotWindow();
+            SetAutoStatusEffectWindow();
             SetAHKWindow();
             SetProfileWindow();
         }
-
 
         public void SetAutopotWindow()
         {
             AutopotForm frm = new AutopotForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0,85);
+            frm.Location = new Point(0,90);
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        public void SetAutoStatusEffectWindow()
+        {
+            StatusEffectForm form = new StatusEffectForm(subject);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Location = new Point(225, 75);
+            form.MdiParent = this;
+            form.Show();
         }
 
         public void SetAHKWindow()

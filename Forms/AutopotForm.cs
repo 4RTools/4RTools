@@ -12,8 +12,8 @@ namespace _4RTools.Forms
 
         public AutopotForm(Subject subject)
         {
-            subject.Attach(this);
             InitializeComponent();
+            subject.Attach(this);
             this.cbHPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
             this.cbSPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
             this.autopot = new Autopot();
@@ -57,7 +57,6 @@ namespace _4RTools.Forms
             this.txtAutopotDelay.Text = this.autopot.delay.ToString();
         }
 
-        //UPDATE HP HOTKEY
         private void cbHPKeySelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.autopot != null)
@@ -68,7 +67,6 @@ namespace _4RTools.Forms
 
         }
 
-        //UPDATE SP HOTKEY
         private void cbSPKeySelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.autopot != null)
