@@ -10,6 +10,9 @@ If you have found a bug or want to request a feature, feel free to open an issue
 **THIS IS A FREE TOOL, YOU CAN MAKE EVERYTHING YOU WANT UNDER MIT LICENSE. WE'ARE OPEN FOR IDEAS AND COLLABORATIONS**
 *Made from community TO community*.
 
+All feedback are welcome!
+Discord: https://discord.gg/fdS43jA8s4
+
 <img src='assets/images/ragnarok-icon.png' width='40'>
 
 ## Running the project
@@ -24,6 +27,12 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 - [ ] Autobuff skills
 - [ ] Song Macro
 - [ ] Switch Macro
+
+#### Donation
+You can now buy me a Beer!
+Donate to support our developers and contribute to the Open Source @4RTools Project.
+
+Link to donate: https://www.buymeacoffee.com/4RTools
 
 ## Collaborators
 <a href="https://github.com/4RTools/4RTools/graphs/contributors">
