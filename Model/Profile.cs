@@ -23,6 +23,7 @@ namespace _4RTools.Model
                 if((rawObject != null)){
                     profile.AHK = JsonConvert.DeserializeObject<AHK>((rawObject["AHK"]).ToString());
                     profile.Autopot = JsonConvert.DeserializeObject<Autopot>((rawObject["Autopot"]).ToString());
+                    profile.AutoBuff = JsonConvert.DeserializeObject<AutoBuff>((rawObject["AutoBuff"]).ToString());
                 }
 
                 ProfileSingleton.profile = profile;
@@ -58,6 +59,7 @@ namespace _4RTools.Model
         public string Name { get; set; }
         public AHK AHK { get; set; }
         public Autopot Autopot { get; set; }
+        public AutoBuff AutoBuff { get; set; }
 
 
         public Profile(string name)
@@ -66,6 +68,7 @@ namespace _4RTools.Model
 
             this.AHK = new AHK(); 
             this.Autopot = new Autopot();
+            this.AutoBuff = new AutoBuff();
         }
 
         public static List<string> ListAll()
@@ -102,7 +105,11 @@ namespace _4RTools.Model
             try
             {
                 File.Delete(Config.ReadSetting("ProfileFolder") + "\\" + profileName + ".json");
-                new Profile("Default").Save();
+
+                if(!ProfileExists("Default")) {
+                    new Profile("Default").Save();
+                }
+                
             }catch { }
         }
 

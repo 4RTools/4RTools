@@ -9,9 +9,9 @@ namespace _4RTools.Model
 {
     public class AutoBuff : Action
     {
-        private string ACTION_NAME = "STATUS_EFFECTS";
+        private string ACTION_NAME = "AutoBuff";
         private Thread statusEffectsThread;
-        private int autoBuffDelay { get; set; } = 1;
+        public int autoBuffDelay { get; set; } = 1;
         private int maxBuffListIndexSize { get; set; } = 40;
         public Key effectStatusKey { get; set; }
 
@@ -22,7 +22,6 @@ namespace _4RTools.Model
 
         public void Start()
         {
-            Console.WriteLine("StatusEffects: Start");
             Stop();
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
