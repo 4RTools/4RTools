@@ -17,12 +17,13 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 
 ## Features
 - [x] Autopot
-- [ ] Autobuff
-- [x] Spammer
-- [ ] Song Macro
-- [ ] Switch Macro
+- [x] Autobuff status
 - [x] Manage Profiles
 - [x] ON/OFF Button (with shortcut key)
+- [x] Spammer
+- [ ] Autobuff skills
+- [ ] Song Macro
+- [ ] Switch Macro
 
 ## Collaborators
 <a href="https://github.com/4RTools/4RTools/graphs/contributors">
