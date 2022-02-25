@@ -153,6 +153,11 @@ namespace _4RTools.Model
             return ReadMemory(this.currentHPBaseAddress + 12);
         }
 
+        public uint CurrentBuffStatusCode(int effectStatusIndex)
+        {
+            return ReadMemory(this.currentHPBaseAddress + 0x474 + effectStatusIndex * 4);
+        }
+
         private static List<Client> GetAll()
         {
             List<Client> result = new List<Client>();
