@@ -38,7 +38,7 @@ namespace _4RTools.Forms
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.cbStatusEffectKey);
             this.groupBox1.Controls.Add(this.lblKeyStatusEffect);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);

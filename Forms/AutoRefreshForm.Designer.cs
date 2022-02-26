@@ -40,7 +40,7 @@ namespace _4RTools.Forms
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.cbRefreshKey);
             this.groupBox1.Controls.Add(this.txtAutoRefreshDelay);
             this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
@@ -78,11 +78,11 @@ namespace _4RTools.Forms
             // 
             this.lblAutoRefreshKey.AutoSize = true;
             this.lblAutoRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshKey.Location = new System.Drawing.Point(7, 55);
+            this.lblAutoRefreshKey.Location = new System.Drawing.Point(53, 55);
             this.lblAutoRefreshKey.Name = "lblAutoRefreshKey";
-            this.lblAutoRefreshKey.Size = new System.Drawing.Size(73, 15);
+            this.lblAutoRefreshKey.Size = new System.Drawing.Size(27, 15);
             this.lblAutoRefreshKey.TabIndex = 1;
-            this.lblAutoRefreshKey.Text = "Refresh Key";
+            this.lblAutoRefreshKey.Text = "Key";
             // 
             // lblAutoRefreshDelay
             // 
@@ -90,9 +90,9 @@ namespace _4RTools.Forms
             this.lblAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
             this.lblAutoRefreshDelay.Location = new System.Drawing.Point(17, 25);
             this.lblAutoRefreshDelay.Name = "lblAutoRefreshDelay";
-            this.lblAutoRefreshDelay.Size = new System.Drawing.Size(63, 15);
+            this.lblAutoRefreshDelay.Size = new System.Drawing.Size(68, 15);
             this.lblAutoRefreshDelay.TabIndex = 0;
-            this.lblAutoRefreshDelay.Text = "Delay(ms)";
+            this.lblAutoRefreshDelay.Text = "Delay (sec)";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AutoRefreshForm
@@ -107,6 +107,7 @@ namespace _4RTools.Forms
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         #endregion

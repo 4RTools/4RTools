@@ -11,7 +11,7 @@ namespace _4RTools.Model
     {
         private string ACTION_NAME = "AUTO_REFRESH_BUFF";
         private Thread thread;
-        public int refreshDelay { get; set; } = 10;
+        public int refreshDelay { get; set; } = 5;
         public Key refreshKey { get; set; }
 
         public AutoRefreshBuff()
@@ -25,14 +25,15 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
+                int delay = this.refreshDelay * 1000;
                 Thread autoRefreshThread = new Thread(() =>
                 {
                     while (true)
                     {
-                        if (this.refreshKey != Key.None && this.refreshDelay > 0)
+                        if (this.refreshKey != Key.None && delay > 1000)
                         {
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.refreshKey.ToString()), 0);
-                            Thread.Sleep(this.refreshDelay);
+                            Thread.Sleep(delay);
                         }
                     }
                 });

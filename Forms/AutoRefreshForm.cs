@@ -22,7 +22,25 @@ namespace _4RTools.Forms
 
         public void Update(ISubject subject)
         {
-            this.autoRefreshBuff.Start();
+            switch ((subject as Subject).Message.code)
+            {
+                case MessageCode.PROFILE_CHANGED:
+                    InitializeApplicationForm();
+                    this.autoRefreshBuff.Start();
+                    break;
+                case MessageCode.TURN_OFF:
+                    this.autoRefreshBuff.Stop();
+                    break;
+                case MessageCode.TURN_ON:
+                    this.autoRefreshBuff.Start();
+                    break;
+            }
+        }
+
+        private void InitializeApplicationForm()
+        {
+            this.cbRefreshKey.SelectedValue = this.autoRefreshBuff.refreshKey;
+            this.txtAutoRefreshDelay.Text = this.autoRefreshBuff.refreshDelay.ToString();
         }
 
         private void autoRefreshKeyIndexChanged(object sender, EventArgs e)
