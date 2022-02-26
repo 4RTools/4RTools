@@ -35,6 +35,7 @@ namespace _4RTools.Forms
             SetAutoRefreshWindow();
             SetAHKWindow();
             SetProfileWindow();
+            SetAutobuffSkillWindow();
         }
 
         public void SetAutopotWindow()
@@ -71,7 +72,7 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPage2, frm) ;
+            addform(this.tabPageSpammer, frm) ;
         }
 
         public void SetProfileWindow()
@@ -81,7 +82,17 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPage4, frm);
+            addform(this.tabPageProfiles, frm);
+        }
+
+        public void SetAutobuffSkillWindow()
+        {
+            StuffAutoBuff frm = new StuffAutoBuff(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageAutobuffStuff, frm);
         }
 
         public void addform(TabPage tp, Form f)

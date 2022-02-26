@@ -8,7 +8,7 @@ namespace _4RTools.Forms
 {
     public partial class AutopotForm : Form, IObserver
     {
-        private Model.Autopot autopot;
+        private Autopot autopot;
 
         public AutopotForm(Subject subject)
         {
