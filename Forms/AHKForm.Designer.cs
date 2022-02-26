@@ -71,7 +71,6 @@
             this.chkW = new System.Windows.Forms.CheckBox();
             this.chkQ = new System.Windows.Forms.CheckBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtSpammerDelay = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -79,9 +78,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.chkS = new System.Windows.Forms.CheckBox();
+            this.txtSpammerDelay = new System.Windows.Forms.NumericUpDown();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.SuspendLayout();
             // 
             // chkF9
@@ -564,14 +565,6 @@
             this.panel5.Size = new System.Drawing.Size(142, 69);
             this.panel5.TabIndex = 12;
             // 
-            // txtSpammerDelay
-            // 
-            this.txtSpammerDelay.Location = new System.Drawing.Point(20, 35);
-            this.txtSpammerDelay.Name = "txtSpammerDelay";
-            this.txtSpammerDelay.Size = new System.Drawing.Size(56, 20);
-            this.txtSpammerDelay.TabIndex = 1;
-            this.txtSpammerDelay.TextChanged += new System.EventHandler(this.txtSpammerDelay_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -637,6 +630,14 @@
             this.chkS.Text = "S";
             this.chkS.UseVisualStyleBackColor = true;
             // 
+            // txtSpammerDelay
+            // 
+            this.txtSpammerDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtSpammerDelay.Location = new System.Drawing.Point(21, 28);
+            this.txtSpammerDelay.Name = "txtSpammerDelay";
+            this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
+            this.txtSpammerDelay.TabIndex = 31;
+            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -698,6 +699,7 @@
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -747,7 +749,6 @@
         private System.Windows.Forms.CheckBox chkW;
         private System.Windows.Forms.CheckBox chkQ;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtSpammerDelay;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -755,5 +756,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.CheckBox chkS;
+        private System.Windows.Forms.NumericUpDown txtSpammerDelay;
     }
 }
