@@ -86,8 +86,8 @@
     </Compile>
     <Compile Include="Model\AHK.cs" />
     <Compile Include="Model\Autopot.cs" />
-    <Compile Include="Model\AutoBuff.cs" />
-    <Compile Include="Model\AutoRefreshBuff.cs" />
+    <Compile Include="Model\AutoEffectStatus.cs" />
+    <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\Hexed.cs" />
     <Compile Include="Model\Action.cs" />
     <Compile Include="Model\Profile.cs" />

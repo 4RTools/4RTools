@@ -8,7 +8,7 @@ namespace _4RTools.Forms
 {
     public partial class AutoRefreshForm : Form, IObserver
     {
-        private AutoRefreshBuff autoRefreshBuff = new AutoRefreshBuff();
+        private AutoRefreshSpammer autoRefreshSpammer = new AutoRefreshSpammer();
 
         public AutoRefreshForm(Subject subject)
         {
@@ -25,34 +25,37 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
+                    this.autoRefreshSpammer = ProfileSingleton.GetCurrent().AutoRefreshSpammer;
                     InitializeApplicationForm();
-                    this.autoRefreshBuff.Start();
+                    this.autoRefreshSpammer.Start();
                     break;
                 case MessageCode.TURN_OFF:
-                    this.autoRefreshBuff.Stop();
+                    this.autoRefreshSpammer.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    this.autoRefreshBuff.Start();
+                    this.autoRefreshSpammer.Start();
                     break;
             }
         }
 
         private void InitializeApplicationForm()
         {
-            this.cbRefreshKey.SelectedValue = this.autoRefreshBuff.refreshKey;
-            this.txtAutoRefreshDelay.Text = this.autoRefreshBuff.refreshDelay.ToString();
+            this.cbRefreshKey.SelectedValue = this.autoRefreshSpammer.refreshKey;
+            this.txtAutoRefreshDelay.Text = this.autoRefreshSpammer.refreshDelay.ToString();
         }
 
         private void autoRefreshKeyIndexChanged(object sender, EventArgs e)
         {
-            this.autoRefreshBuff.refreshKey = (Key)this.cbRefreshKey.SelectedValue;
+            this.autoRefreshSpammer.refreshKey = (Key)this.cbRefreshKey.SelectedValue;
+            ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
         }
 
         private void txtAutoRefreshDelayTextChanged(object sender, EventArgs e)
         {
             try
             {
-                this.autoRefreshBuff.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
+                this.autoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
+                ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
             }
             catch (Exception) { }
         }

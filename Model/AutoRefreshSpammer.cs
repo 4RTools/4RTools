@@ -7,14 +7,14 @@ using _4RTools.Utils;
 
 namespace _4RTools.Model
 {
-    public class AutoRefreshBuff : Action
+    public class AutoRefreshSpammer : Action
     {
-        private string ACTION_NAME = "AUTO_REFRESH_BUFF";
+        private string ACTION_NAME = "AutoRefreshSpammer";
         private Thread thread;
         public int refreshDelay { get; set; } = 5;
         public Key refreshKey { get; set; }
 
-        public AutoRefreshBuff()
+        public AutoRefreshSpammer()
         {
 
         }
