@@ -7,15 +7,15 @@ using _4RTools.Utils;
 
 namespace _4RTools.Model
 {
-    public class AutoBuff : Action
+    public class AutoEffectStatus : Action
     {
-        private string ACTION_NAME = "AutoBuff";
+        private string ACTION_NAME = "AutoEffectStatus";
         private Thread statusEffectsThread;
-        public int autoBuffDelay { get; set; } = 1;
+        public int delay { get; set; } = 1;
         private int maxBuffListIndexSize { get; set; } = 40;
         public Key effectStatusKey { get; set; }
 
-        public AutoBuff()
+        public AutoEffectStatus()
         {
 
         }
@@ -38,7 +38,7 @@ namespace _4RTools.Model
                                 this.useStatusRecovery();
                             }
                         }
-                        Thread.Sleep(this.autoBuffDelay);
+                        Thread.Sleep(this.delay);
                     }
                 });
 

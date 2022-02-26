@@ -8,7 +8,7 @@ namespace _4RTools.Forms
 {
     public partial class StatusEffectForm : Form, IObserver
     {
-        private AutoBuff autoBuffs = new AutoBuff();
+        private AutoEffectStatus autoEffectStatus = new AutoEffectStatus();
 
         public StatusEffectForm(Subject subject)
         {
@@ -24,23 +24,23 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autoBuffs = ProfileSingleton.GetCurrent().AutoBuff;
-                    this.cbStatusEffectKey.SelectedValue = this.autoBuffs.effectStatusKey;
-                    this.autoBuffs.Start();
+                    this.autoEffectStatus = ProfileSingleton.GetCurrent().AutoEffectStatus;
+                    this.cbStatusEffectKey.SelectedValue = this.autoEffectStatus.effectStatusKey;
+                    this.autoEffectStatus.Start();
                     break;
                 case MessageCode.TURN_OFF:
-                    this.autoBuffs.Stop();
+                    this.autoEffectStatus.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    this.autoBuffs.Start();
+                    this.autoEffectStatus.Start();
                     break;
             }
         }
 
         private void statusEffectKeyIndexChanged(object sender, EventArgs e)
         {
-            this.autoBuffs.effectStatusKey = (Key)this.cbStatusEffectKey.SelectedValue;
-            ProfileSingleton.SetConfiguration(this.autoBuffs);
+            this.autoEffectStatus.effectStatusKey = (Key)this.cbStatusEffectKey.SelectedValue;
+            ProfileSingleton.SetConfiguration(this.autoEffectStatus);
         }
     }
 }

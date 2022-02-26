@@ -23,7 +23,8 @@ namespace _4RTools.Model
                 if((rawObject != null)){
                     profile.AHK = JsonConvert.DeserializeObject<AHK>((rawObject["AHK"]).ToString());
                     profile.Autopot = JsonConvert.DeserializeObject<Autopot>((rawObject["Autopot"]).ToString());
-                    profile.AutoBuff = JsonConvert.DeserializeObject<AutoBuff>((rawObject["AutoBuff"]).ToString());
+                    profile.AutoEffectStatus = JsonConvert.DeserializeObject<AutoEffectStatus>((rawObject["AutoEffectStatus"]).ToString());
+                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>((rawObject["AutoRefreshSpammer"]).ToString());
                 }
 
                 ProfileSingleton.profile = profile;
@@ -59,8 +60,8 @@ namespace _4RTools.Model
         public string Name { get; set; }
         public AHK AHK { get; set; }
         public Autopot Autopot { get; set; }
-        public AutoBuff AutoBuff { get; set; }
-
+        public AutoEffectStatus AutoEffectStatus { get; set; }
+        public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
 
         public Profile(string name)
         {
@@ -68,7 +69,8 @@ namespace _4RTools.Model
 
             this.AHK = new AHK(); 
             this.Autopot = new Autopot();
-            this.AutoBuff = new AutoBuff();
+            this.AutoEffectStatus = new AutoEffectStatus();
+            this.AutoRefreshSpammer = new AutoRefreshSpammer();
         }
 
         public static List<string> ListAll()
