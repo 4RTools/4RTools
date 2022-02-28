@@ -33,8 +33,8 @@ namespace _4RTools.Model
                         if (this.refreshKey != Key.None && delay > 1000)
                         {
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.refreshKey.ToString()), 0);
-                            Thread.Sleep(delay);
                         }
+                        Thread.Sleep(delay);
                     }
                 });
 
