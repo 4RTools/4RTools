@@ -78,11 +78,11 @@
     <Compile Include="Forms\AutoRefreshForm.Designer.cs">
       <DependentUpon>AutoRefreshForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StuffAutoBuff.cs">
+    <Compile Include="Forms\StuffAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StuffAutoBuff.Designer.cs">
-      <DependentUpon>StuffAutoBuff.cs</DependentUpon>
+    <Compile Include="Forms\StuffAutoBuffForm.Designer.cs">
+      <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StatusEffectForm.cs">
       <SubType>Form</SubType>
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\StuffAutoBuff.resx">
-      <DependentUpon>StuffAutoBuff.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\StuffAutoBuffForm.resx">
+      <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AutopotForm.resx">
       <DependentUpon>AutopotForm.cs</DependentUpon>

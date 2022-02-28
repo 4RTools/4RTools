@@ -24,7 +24,7 @@ namespace _4RTools.Model
             if(roClient != null)
             {
                 Thread ahkThread = new Thread(() => {
-                    if(ahkDelay <= 0) ahkDelay = 1;
+                    if (this.ahkDelay <= 0) this.ahkDelay = 1;
                     while (true)
                     {
                         try
