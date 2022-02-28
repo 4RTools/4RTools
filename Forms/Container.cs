@@ -87,7 +87,7 @@ namespace _4RTools.Forms
 
         public void SetAutobuffSkillWindow()
         {
-            StuffAutoBuff frm = new StuffAutoBuff(subject);
+            StuffAutoBuffForm frm = new StuffAutoBuffForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;

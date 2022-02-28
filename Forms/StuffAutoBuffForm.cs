@@ -7,10 +7,10 @@ using _4RTools.Model;
 
 namespace _4RTools.Forms
 {
-    public partial class StuffAutoBuff : Form, IObserver
+    public partial class StuffAutoBuffForm : Form, IObserver
     {
         private AutoBuff autobuff = new AutoBuff("ItemsAutoBuff");
-        public StuffAutoBuff(Subject subject)
+        public StuffAutoBuffForm(Subject subject)
         {
             InitializeComponent();
             subject.Attach(this);

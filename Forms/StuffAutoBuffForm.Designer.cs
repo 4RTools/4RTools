@@ -1,6 +1,6 @@
 ﻿namespace _4RTools.Forms
 {
-    partial class StuffAutoBuff
+    partial class StuffAutoBuffForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StuffAutoBuff));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StuffAutoBuffForm));
             this.cb241 = new System.Windows.Forms.ComboBox();
             this.cb242 = new System.Windows.Forms.ComboBox();
             this.cb243 = new System.Windows.Forms.ComboBox();
