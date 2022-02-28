@@ -11,6 +11,7 @@ namespace _4RTools.Utils
         CONFUSION = 886,
         CURSE = 884,
         HALLUCINATIONWALK = 334,
+        QUAGMIRE = 8,
 
         //BUFFS
         PROVOKE = 0,

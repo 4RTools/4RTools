@@ -77,19 +77,30 @@ namespace _4RTools.Model
             {
                 while (true)
                 {
+                    bool foundQuag = false;
                     Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
                     for (int i = 0; i <= this.maxBuffListIndexSize; i++)
                     {
                         uint currentStatus = c.CurrentBuffStatusCode(i);
                         EffectStatusIDs status = (EffectStatusIDs)currentStatus;
-                        if (buffMapping.ContainsKey((EffectStatusIDs)currentStatus)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
+                        if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                         {
                             bmClone.Remove(status);
                         }
+
+                        if(status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
+
                     }
-                    foreach (Key keysToPress in bmClone.Values)
+                    foreach (var item in bmClone)
                     {
-                        this.useStatusRecovery(keysToPress);
+                        if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI))
+                        {
+                            //NOT use Concentration neither INC_AGI Scroll when Quagmire is Found
+                        }
+                        else
+                        {
+                            this.useStatusRecovery(item.Value);
+                        }
                     }
 
                     Thread.Sleep(this.delay);
