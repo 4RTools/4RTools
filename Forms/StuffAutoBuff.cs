@@ -25,7 +25,6 @@ namespace _4RTools.Forms
                     this.autobuff = ProfileSingleton.GetCurrent().ItemsAutoBuff;
                     Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(this.autobuff.buffMapping);
                     this.updateComboValues(buffMappingClone);
-                    this.autobuff.Start();
                     break;
                 case MessageCode.TURN_OFF:
                     this.autobuff.Stop();

@@ -27,7 +27,6 @@ namespace _4RTools.Forms
                 case MessageCode.PROFILE_CHANGED:
                     this.autoRefreshSpammer = ProfileSingleton.GetCurrent().AutoRefreshSpammer;
                     InitializeApplicationForm();
-                    this.autoRefreshSpammer.Start();
                     break;
                 case MessageCode.TURN_OFF:
                     this.autoRefreshSpammer.Stop();

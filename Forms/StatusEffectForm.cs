@@ -29,7 +29,6 @@ namespace _4RTools.Forms
                         //For Status, the key is the same for each status, so don't matter which status i'm based to update combo box value.
                         this.cbStatusEffectKey.SelectedValue = autoEffectStatus.buffMapping[EffectStatusIDs.SILENCE];
                     }
-                    this.autoEffectStatus.Start();
                     break;
                 case MessageCode.TURN_OFF:
                     this.autoEffectStatus.Stop();
