@@ -51,7 +51,7 @@ namespace _4RTools.Forms
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(225, 75);
+            form.Location = new Point(225, 70);
             form.MdiParent = this;
             form.Show();
         }
@@ -60,7 +60,7 @@ namespace _4RTools.Forms
         {
             AutoRefreshForm form = new AutoRefreshForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(225, 142);
+            form.Location = new Point(225, 136);
             form.MdiParent = this;
             form.Show();
         }

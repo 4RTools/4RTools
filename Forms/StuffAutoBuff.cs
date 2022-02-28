@@ -81,9 +81,5 @@ namespace _4RTools.Forms
                 }
         }
 
-        private void StuffAutoBuff_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

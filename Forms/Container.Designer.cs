@@ -90,7 +90,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
             this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(465, 257);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 257);
             this.tabPageAutobuffStuff.TabIndex = 1;
             this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
             this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@ namespace _4RTools.Forms
             this.tabLayout.Location = new System.Drawing.Point(15, 230);
             this.tabLayout.Name = "tabLayout";
             this.tabLayout.SelectedIndex = 0;
-            this.tabLayout.Size = new System.Drawing.Size(473, 283);
+            this.tabLayout.Size = new System.Drawing.Size(432, 283);
             this.tabLayout.TabIndex = 6;
             // 
             // tabPageProfiles
@@ -271,7 +271,7 @@ namespace _4RTools.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(497, 564);
+            this.ClientSize = new System.Drawing.Size(455, 564);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.lblStatusToggle);

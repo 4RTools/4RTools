@@ -60,7 +60,7 @@ namespace _4RTools.Model
                         foreach (Client client in clients)
                         {
                             uint hpBaseValue = ReadMemory(client.currentHPBaseAddress); ;
-                            if (hpBaseValue > 0 && hpBaseValue < 50000)
+                            if (hpBaseValue > 0 && hpBaseValue < 999999)
                             {
                                 this.clientVersion = client.clientVersion;
                                 this.currentHPBaseAddress = client.currentHPBaseAddress;
