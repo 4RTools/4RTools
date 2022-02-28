@@ -54,6 +54,11 @@ namespace _4RTools.Utils
             dictionary.Add("X", Key.X);
             dictionary.Add("Y", Key.Y);
             dictionary.Add("Z", Key.Z);
+            dictionary.Add("Space", Key.Space);
+            dictionary.Add("PageDown", Key.PageDown);
+            dictionary.Add("PageUp", Key.PageUp);
+            dictionary.Add("Insert", Key.Insert);
+            dictionary.Add("Delete", Key.Delete);
             return dictionary;
         }
 

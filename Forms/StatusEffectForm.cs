@@ -8,7 +8,7 @@ namespace _4RTools.Forms
 {
     public partial class StatusEffectForm : Form, IObserver
     {
-        private AutoEffectStatus autoEffectStatus = new AutoEffectStatus();
+        private AutoBuff autoEffectStatus = new AutoBuff("StatusAutoBuff");
 
         public StatusEffectForm(Subject subject)
         {
@@ -24,9 +24,11 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autoEffectStatus = ProfileSingleton.GetCurrent().AutoEffectStatus;
-                    this.cbStatusEffectKey.SelectedValue = this.autoEffectStatus.effectStatusKey;
-                    this.autoEffectStatus.Start();
+                    this.autoEffectStatus = ProfileSingleton.GetCurrent().StatusAutoBuff;
+                    if (this.autoEffectStatus.buffMapping.Count > 0){
+                        //For Status, the key is the same for each status, so don't matter which status i'm based to update combo box value.
+                        this.cbStatusEffectKey.SelectedValue = autoEffectStatus.buffMapping[EffectStatusIDs.SILENCE];
+                    }
                     break;
                 case MessageCode.TURN_OFF:
                     this.autoEffectStatus.Stop();
@@ -39,7 +41,18 @@ namespace _4RTools.Forms
 
         private void statusEffectKeyIndexChanged(object sender, EventArgs e)
         {
-            this.autoEffectStatus.effectStatusKey = (Key)this.cbStatusEffectKey.SelectedValue;
+            Key k = (Key)this.cbStatusEffectKey.SelectedValue;
+            this.autoEffectStatus.ClearKeyMapping();
+
+            if(k != Key.None)
+            {
+                this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.POISON, k);
+                this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.SILENCE, k);
+                this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.BLIND, k);
+                this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.CONFUSION, k);
+                this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.HALLUCINATIONWALK, k);
+                this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.CURSE, k);
+            }
             ProfileSingleton.SetConfiguration(this.autoEffectStatus);
         }
     }

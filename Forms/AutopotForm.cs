@@ -8,7 +8,7 @@ namespace _4RTools.Forms
 {
     public partial class AutopotForm : Form, IObserver
     {
-        private Model.Autopot autopot;
+        private Autopot autopot;
 
         public AutopotForm(Subject subject)
         {
@@ -37,7 +37,6 @@ namespace _4RTools.Forms
                 case MessageCode.PROFILE_CHANGED:
                     this.autopot = ProfileSingleton.GetCurrent().Autopot;
                     InitializeApplicationForm();
-                    this.autopot.Start();
                     break;
                 case MessageCode.TURN_OFF:
                     this.autopot.Stop();

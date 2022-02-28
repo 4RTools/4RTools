@@ -10,6 +10,48 @@ namespace _4RTools.Utils
         BLIND = 887,
         CONFUSION = 886,
         CURSE = 884,
-        HALLUCINATIONWALK = 334
+        HALLUCINATIONWALK = 334,
+        QUAGMIRE = 8,
+
+        //BUFFS
+        PROVOKE = 0,
+        ENDURE = 1,
+        CONCENTRATION  = 3,
+        TRUESIGHT = 115,
+        CRITICALPERCENT = 295,
+
+        //ASPD POTIONS
+        CONCENTRATION_POTION = 37,
+        AWAKENING_POTION = 38,
+        BERSERK_POTION = 39,
+
+        FOOD_STR = 241,
+        FOOD_AGI = 242,
+        FOOD_VIT = 243,
+        FOOD_DEX = 244,
+        FOOD_INT = 245,
+        FOOD_LUK = 246,
+
+        REGENERATION_POTION = 292,
+
+        //Boxes
+        DROWSINESS_BOX = 151, //SONOLENCIA
+        RESENTMENT_BOX = 150, //RESSENTIMENTO
+        SUNLIGHT_BOX = 184,
+
+        //Elemental Potions
+        RESIST_PROPERTY_WATER = 908,
+        RESIST_PROPERTY_GROUND = 909,
+        RESIST_PROPERTY_FIRE = 910,
+        RESIST_PROPERTY_WIND = 911,
+
+        BOX_OF_THUNDER = 289,
+        SPEED_POT = 41,
+
+        //Scrolls
+        INC_AGI = 12,
+        BLESSING = 10,
+
+
     }
 }

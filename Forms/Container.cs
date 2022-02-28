@@ -35,6 +35,7 @@ namespace _4RTools.Forms
             SetAutoRefreshWindow();
             SetAHKWindow();
             SetProfileWindow();
+            SetAutobuffSkillWindow();
         }
 
         public void SetAutopotWindow()
@@ -50,7 +51,7 @@ namespace _4RTools.Forms
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(225, 75);
+            form.Location = new Point(225, 70);
             form.MdiParent = this;
             form.Show();
         }
@@ -59,7 +60,7 @@ namespace _4RTools.Forms
         {
             AutoRefreshForm form = new AutoRefreshForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(225, 142);
+            form.Location = new Point(225, 136);
             form.MdiParent = this;
             form.Show();
         }
@@ -71,7 +72,7 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPage2, frm) ;
+            addform(this.tabPageSpammer, frm) ;
         }
 
         public void SetProfileWindow()
@@ -81,7 +82,17 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPage4, frm);
+            addform(this.tabPageProfiles, frm);
+        }
+
+        public void SetAutobuffSkillWindow()
+        {
+            StuffAutoBuffForm frm = new StuffAutoBuffForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageAutobuffStuff, frm);
         }
 
         public void addform(TabPage tp, Form f)

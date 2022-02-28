@@ -34,9 +34,10 @@ namespace _4RTools.Forms
             this.lblProcessName = new System.Windows.Forms.Label();
             this.processCB = new System.Windows.Forms.ComboBox();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
+            this.tabPageSpammer = new System.Windows.Forms.TabPage();
+            this.tabLayout = new System.Windows.Forms.TabControl();
+            this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -51,7 +52,7 @@ namespace _4RTools.Forms
             this.btnStatusToggle = new System.Windows.Forms.Button();
             this.lblStatusToggle = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.tabControl1.SuspendLayout();
+            this.tabLayout.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,35 +85,46 @@ namespace _4RTools.Forms
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // tabControl1
+            // tabPageAutobuffStuff
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(15, 239);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(420, 271);
-            this.tabControl1.TabIndex = 6;
+            this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
+            this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 257);
+            this.tabPageAutobuffStuff.TabIndex = 1;
+            this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
+            this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageSpammer
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(412, 245);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Skill Spammer";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpammer.Name = "tabPageSpammer";
+            this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSpammer.Size = new System.Drawing.Size(465, 257);
+            this.tabPageSpammer.TabIndex = 3;
+            this.tabPageSpammer.Text = "Skill Spammer";
+            this.tabPageSpammer.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // tabLayout
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(465, 245);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Profiles";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
+            this.tabLayout.Controls.Add(this.tabPageSpammer);
+            this.tabLayout.Controls.Add(this.tabPageProfiles);
+            this.tabLayout.Location = new System.Drawing.Point(15, 230);
+            this.tabLayout.Name = "tabLayout";
+            this.tabLayout.SelectedIndex = 0;
+            this.tabLayout.Size = new System.Drawing.Size(432, 283);
+            this.tabLayout.TabIndex = 6;
+            // 
+            // tabPageProfiles
+            // 
+            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProfiles.Name = "tabPageProfiles";
+            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProfiles.Size = new System.Drawing.Size(465, 257);
+            this.tabPageProfiles.TabIndex = 4;
+            this.tabPageProfiles.Text = "Profiles";
+            this.tabPageProfiles.UseVisualStyleBackColor = true;
             // 
             // lblLinkDiscord
             // 
@@ -180,9 +192,9 @@ namespace _4RTools.Forms
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.lblLinkDiscord);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(-3, 514);
+            this.panel3.Location = new System.Drawing.Point(-1, 515);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(465, 43);
+            this.panel3.Size = new System.Drawing.Size(508, 61);
             this.panel3.TabIndex = 16;
             // 
             // panel4
@@ -259,7 +271,8 @@ namespace _4RTools.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(459, 558);
+            this.ClientSize = new System.Drawing.Size(455, 564);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.lblStatusToggle);
             this.Controls.Add(this.btnStatusToggle);
@@ -267,10 +280,9 @@ namespace _4RTools.Forms
             this.Controls.Add(this.lblCharacterName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.labelProfile);
             this.Controls.Add(this.profileCB);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabLayout);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblProcessName);
             this.Controls.Add(this.processCB);
@@ -281,7 +293,7 @@ namespace _4RTools.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4ROTools - Versão Beta";
             this.Load += new System.EventHandler(this.Container_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabLayout.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -294,15 +306,15 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Label lblProcessName;
         private System.Windows.Forms.ComboBox processCB;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl tabLayout;
+        private System.Windows.Forms.TabPage tabPageAutobuffStuff;
         private System.Windows.Forms.LinkLabel lblLinkDiscord;
         private System.Windows.Forms.LinkLabel lblLinkGithub;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelProfile;
         public System.Windows.Forms.ComboBox profileCB;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPageSpammer;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
@@ -311,5 +323,6 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Button btnStatusToggle;
         private Label lblStatusToggle;
         private Panel panel5;
+        private TabPage tabPageProfiles;
     }
 }

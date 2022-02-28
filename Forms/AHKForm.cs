@@ -28,8 +28,6 @@ namespace _4RTools.Forms
                     ToggleCheckboxByName(key, true);
                 }
                 this.txtSpammerDelay.Text = this.ahk.ahkDelay.ToString();
-
-                this.ahk.Start();
             }
             else if ((subject as Subject).Message.code == MessageCode.TURN_ON)
             {

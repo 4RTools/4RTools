@@ -47,6 +47,8 @@ namespace _4RTools.Model
             string rawProcessName = processName.Split(new string[] { ".exe - " }, StringSplitOptions.None)[0];
             int choosenPID = int.Parse(processName.Split(new string[] { ".exe - " }, StringSplitOptions.None)[1]);
             List<Client> clients = GetAll();
+            int maxPossibleHP = 999999;
+
             try
             {
                 foreach (Process process in Process.GetProcessesByName(rawProcessName))
@@ -60,7 +62,7 @@ namespace _4RTools.Model
                         foreach (Client client in clients)
                         {
                             uint hpBaseValue = ReadMemory(client.currentHPBaseAddress); ;
-                            if (hpBaseValue > 0 && hpBaseValue < 50000)
+                            if (hpBaseValue > 0 && hpBaseValue < maxPossibleHP)
                             {
                                 this.clientVersion = client.clientVersion;
                                 this.currentHPBaseAddress = client.currentHPBaseAddress;

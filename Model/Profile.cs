@@ -20,18 +20,20 @@ namespace _4RTools.Model
 
                 Profile profile = new Profile(profileName);
 
-                if((rawObject != null)){
-                    profile.AHK = JsonConvert.DeserializeObject<AHK>((rawObject["AHK"]).ToString());
-                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>((rawObject["Autopot"]).ToString());
-                    profile.AutoEffectStatus = JsonConvert.DeserializeObject<AutoEffectStatus>((rawObject["AutoEffectStatus"]).ToString());
-                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>((rawObject["AutoRefreshSpammer"]).ToString());
+                if ((rawObject != null)) {
+                    profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByProperty(rawObject, "AHK", new AHK().GetConfiguration()));
+                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "Autopot", new Autopot().GetConfiguration()));
+                    profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "StatusAutoBuff", new AutoBuff("StatusAutoBuff").GetConfiguration()));
+                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByProperty(rawObject, "AutoRefreshSpammer", new AutoRefreshSpammer().GetConfiguration()));
+                    profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "ItemsAutoBuff", new AutoBuff("ItemsAutoBuff").GetConfiguration()));
                 }
+
 
                 ProfileSingleton.profile = profile;
             }
             catch(Exception ex)
             {
-                Console.WriteLine("Error while loading profile"+ ex.Message);
+                Console.WriteLine("Error while loading profile "+ ex.Message);
             }
         }
 
@@ -60,8 +62,9 @@ namespace _4RTools.Model
         public string Name { get; set; }
         public AHK AHK { get; set; }
         public Autopot Autopot { get; set; }
-        public AutoEffectStatus AutoEffectStatus { get; set; }
         public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
+        public AutoBuff StatusAutoBuff { get; set; }
+        public AutoBuff ItemsAutoBuff { get; set; }
 
         public Profile(string name)
         {
@@ -69,11 +72,21 @@ namespace _4RTools.Model
 
             this.AHK = new AHK(); 
             this.Autopot = new Autopot();
-            this.AutoEffectStatus = new AutoEffectStatus();
             this.AutoRefreshSpammer = new AutoRefreshSpammer();
+            this.StatusAutoBuff = new AutoBuff("StatusAutoBuff");
+            this.ItemsAutoBuff = new AutoBuff("ItemsAutoBuff");
         }
 
-        public static List<string> ListAll()
+        public static object GetByProperty(dynamic obj, string property, object fallback)
+        {
+           if(obj != null && obj[property] != null) {
+                return obj[property].ToString();
+           }
+
+            return fallback;
+        }
+
+    public static List<string> ListAll()
         {
             List<string> profiles = new List<string>();
             try
