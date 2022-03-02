@@ -14,7 +14,7 @@ namespace _4RTools.Model
         public string actionName { get; set; }
         private Thread autobuffThread;
         public int delay { get; set; } = 1;
-        private int maxBuffListIndexSize { get; set; } = 40;
+        private int maxBuffListIndexSize { get; set; } = 100;
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
 
         public AutoBuff(string actionName)
@@ -34,6 +34,7 @@ namespace _4RTools.Model
                         this.autobuffThread = RestoreStatusThread(roClient);
                         break;
                     case "ItemsAutoBuff":
+                    case "SkillAutoBuff":
                         this.autobuffThread = AutoBuffThread(roClient);
                         break;
                          
@@ -51,7 +52,7 @@ namespace _4RTools.Model
             {
                 while (true)
                 {
-                    for (int i = 0; i <= this.maxBuffListIndexSize; i++)
+                    for (int i = 1; i <= this.maxBuffListIndexSize -1; i++)
                     {
                         uint currentStatus = c.CurrentBuffStatusCode(i);
                         EffectStatusIDs status = (EffectStatusIDs)currentStatus;
@@ -79,7 +80,7 @@ namespace _4RTools.Model
                 {
                     bool foundQuag = false;
                     Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
-                    for (int i = 0; i <= this.maxBuffListIndexSize; i++)
+                    for (int i = 1; i < this.maxBuffListIndexSize - 1; i++)
                     {
                         uint currentStatus = c.CurrentBuffStatusCode(i);
                         EffectStatusIDs status = (EffectStatusIDs)currentStatus;
@@ -103,7 +104,7 @@ namespace _4RTools.Model
                         }
                     }
 
-                    Thread.Sleep(this.delay);
+                    Thread.Sleep(100);
                 }
             });
             return autobuffItemThread;

@@ -53,11 +53,8 @@ namespace _4RTools.Forms
             this.btnStatusToggle = new System.Windows.Forms.Button();
             this.lblStatusToggle = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
             this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
-=======
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
->>>>>>> a098673 (feat: SkillAutobuff forms)
             this.tabLayout.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
