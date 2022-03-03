@@ -32,6 +32,7 @@ namespace _4RTools.Model
         private int clientVersion { get; set; }
         private int currentNameAddress { get; set; }
         private int currentHPBaseAddress { get; set; }
+        private int statusBufferAddress { get; set; }
         private int _num = 0;
 
         private Client(int clientVersion, int currentHPBaseAddress, int currentNameAddress)
@@ -39,6 +40,7 @@ namespace _4RTools.Model
             this.clientVersion = clientVersion;
             this.currentNameAddress = currentNameAddress;
             this.currentHPBaseAddress = currentHPBaseAddress;
+            this.statusBufferAddress = currentHPBaseAddress + 0x474;
         }
 
         public Client(string processName)
@@ -67,6 +69,7 @@ namespace _4RTools.Model
                                 this.clientVersion = client.clientVersion;
                                 this.currentHPBaseAddress = client.currentHPBaseAddress;
                                 this.currentNameAddress = client.currentNameAddress;
+                                this.statusBufferAddress = client.statusBufferAddress;
                                 break;
                             };
                         }
@@ -157,7 +160,7 @@ namespace _4RTools.Model
 
         public uint CurrentBuffStatusCode(int effectStatusIndex)
         {
-            return ReadMemory(this.currentHPBaseAddress + 0x474 + effectStatusIndex * 4);
+            return ReadMemory(this.statusBufferAddress + effectStatusIndex * 4);
         }
 
         private static List<Client> GetAll()

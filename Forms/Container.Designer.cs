@@ -36,8 +36,9 @@ namespace _4RTools.Forms
             this.processCB = new System.Windows.Forms.ComboBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
-            this.tabPageSpammer = new System.Windows.Forms.TabPage();
+            this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
             this.tabLayout = new System.Windows.Forms.TabControl();
+            this.tabPageSpammer = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
@@ -92,39 +93,50 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
             this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 257);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 271);
             this.tabPageAutobuffStuff.TabIndex = 1;
             this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
             this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
+            // 
+            // tabPageAutobuffSkill
+            // 
+            this.tabPageAutobuffSkill.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutobuffSkill.Name = "tabPageAutobuffSkill";
+            this.tabPageAutobuffSkill.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(424, 260);
+            this.tabPageAutobuffSkill.TabIndex = 3;
+            this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
+            this.tabPageAutobuffSkill.UseVisualStyleBackColor = true;
+            // 
+            // tabLayout
+            // 
+            this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
+            this.tabLayout.Controls.Add(this.tabPageAutobuffSkill);
+            this.tabLayout.Controls.Add(this.tabPageSpammer);
+            this.tabLayout.Controls.Add(this.tabPageProfiles);
+            this.tabLayout.Location = new System.Drawing.Point(15, 230);
+            this.tabLayout.Name = "tabLayout";
+            this.tabLayout.SelectedIndex = 0;
+            this.tabLayout.Size = new System.Drawing.Size(432, 297);
+            this.tabLayout.TabIndex = 6;
             // 
             // tabPageSpammer
             // 
             this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpammer.Name = "tabPageSpammer";
             this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(424, 257);
-            this.tabPageSpammer.TabIndex = 3;
+            this.tabPageSpammer.Size = new System.Drawing.Size(424, 260);
+            this.tabPageSpammer.TabIndex = 4;
             this.tabPageSpammer.Text = "Skill Spammer";
             this.tabPageSpammer.UseVisualStyleBackColor = true;
-            // 
-            // tabLayout
-            // 
-            this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
-            this.tabLayout.Controls.Add(this.tabPageSpammer);
-            this.tabLayout.Controls.Add(this.tabPageProfiles);
-            this.tabLayout.Location = new System.Drawing.Point(15, 230);
-            this.tabLayout.Name = "tabLayout";
-            this.tabLayout.SelectedIndex = 0;
-            this.tabLayout.Size = new System.Drawing.Size(432, 283);
-            this.tabLayout.TabIndex = 6;
             // 
             // tabPageProfiles
             // 
             this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
             this.tabPageProfiles.Name = "tabPageProfiles";
             this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(424, 257);
-            this.tabPageProfiles.TabIndex = 4;
+            this.tabPageProfiles.Size = new System.Drawing.Size(424, 260);
+            this.tabPageProfiles.TabIndex = 5;
             this.tabPageProfiles.Text = "Profiles";
             this.tabPageProfiles.UseVisualStyleBackColor = true;
             // 
@@ -194,7 +206,7 @@ namespace _4RTools.Forms
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.lblLinkDiscord);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(-1, 515);
+            this.panel3.Location = new System.Drawing.Point(-1, 533);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(508, 61);
             this.panel3.TabIndex = 16;
@@ -279,7 +291,7 @@ namespace _4RTools.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(455, 564);
+            this.ClientSize = new System.Drawing.Size(455, 576);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.lblStatusToggle);
@@ -323,7 +335,7 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelProfile;
         public System.Windows.Forms.ComboBox profileCB;
-        private System.Windows.Forms.TabPage tabPageSpammer;
+        private System.Windows.Forms.TabPage tabPageAutobuffSkill;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
@@ -332,6 +344,7 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Button btnStatusToggle;
         private Label lblStatusToggle;
         private Panel panel5;
+        private TabPage tabPageSpammer;
         private TabPage tabPageProfiles;
         private NotifyIcon notifyIconTray;
     }

@@ -78,6 +78,12 @@
     <Compile Include="Forms\AutoRefreshForm.Designer.cs">
       <DependentUpon>AutoRefreshForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SkillAutoBuffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SkillAutoBuffForm.Designer.cs">
+      <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StuffAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <Compile Include="Utils\RObserver.cs" />
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SkillAutoBuffForm.resx">
+      <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StuffAutoBuffForm.resx">
       <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>
