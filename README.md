@@ -26,7 +26,7 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 - [x] Spammer
 - [x] Auto Refresh Spammer
 - [x] Autobuff Stuffs
-- [ ] Autobuff skills
+- [x] Autobuff skills
 - [ ] Song Macro
 - [ ] Switch Macro
 
