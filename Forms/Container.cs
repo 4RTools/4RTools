@@ -215,5 +215,21 @@ namespace _4RTools.Forms
             ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
             subject.Notify(new Utils.Message(Utils.MessageCode.PROFILE_CHANGED, null));
         }
+
+        private void containerResize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                this.notifyIconTray.Visible = true;
+            }
+        }
+
+        private void notifyIconDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            this.notifyIconTray.Visible = false;
+        }
     }
 }

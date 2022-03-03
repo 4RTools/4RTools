@@ -30,6 +30,7 @@ namespace _4RTools.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Container));
             this.lblProcessName = new System.Windows.Forms.Label();
             this.processCB = new System.Windows.Forms.ComboBox();
@@ -52,6 +53,7 @@ namespace _4RTools.Forms
             this.btnStatusToggle = new System.Windows.Forms.Button();
             this.lblStatusToggle = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.tabLayout.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -100,7 +102,7 @@ namespace _4RTools.Forms
             this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpammer.Name = "tabPageSpammer";
             this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(465, 257);
+            this.tabPageSpammer.Size = new System.Drawing.Size(424, 257);
             this.tabPageSpammer.TabIndex = 3;
             this.tabPageSpammer.Text = "Skill Spammer";
             this.tabPageSpammer.UseVisualStyleBackColor = true;
@@ -121,7 +123,7 @@ namespace _4RTools.Forms
             this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
             this.tabPageProfiles.Name = "tabPageProfiles";
             this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(465, 257);
+            this.tabPageProfiles.Size = new System.Drawing.Size(424, 257);
             this.tabPageProfiles.TabIndex = 4;
             this.tabPageProfiles.Text = "Profiles";
             this.tabPageProfiles.UseVisualStyleBackColor = true;
@@ -266,6 +268,12 @@ namespace _4RTools.Forms
             this.panel5.Size = new System.Drawing.Size(1, 133);
             this.panel5.TabIndex = 18;
             // 
+            // notifyIconTray
+            // 
+            this.notifyIconTray.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconTray.Icon")));
+            this.notifyIconTray.Text = "4ROTools";
+            this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
+            // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,6 +301,7 @@ namespace _4RTools.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4ROTools - Versão Beta";
             this.Load += new System.EventHandler(this.Container_Load);
+            this.Resize += new System.EventHandler(this.containerResize);
             this.tabLayout.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -324,5 +333,6 @@ namespace _4RTools.Forms
         private Label lblStatusToggle;
         private Panel panel5;
         private TabPage tabPageProfiles;
+        private NotifyIcon notifyIconTray;
     }
 }
