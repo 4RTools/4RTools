@@ -72,6 +72,11 @@ namespace _4RTools.Forms
             }
         }
 
+        void removeWheelMouse(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            ((HandledMouseEventArgs)e).Handled = true;
+        }
+
         private void InitializeComboBoxes()
         {
             foreach (Control c in this.Controls)
@@ -80,6 +85,7 @@ namespace _4RTools.Forms
                     ComboBox comboBox = (ComboBox)c;
                     comboBox.DataSource = new BindingSource(KeyMap.getDict(), null);
                     comboBox.SelectedIndexChanged += new EventHandler(this.onIndexChanged);
+                    comboBox.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.removeWheelMouse);
                 }
         }
     }
