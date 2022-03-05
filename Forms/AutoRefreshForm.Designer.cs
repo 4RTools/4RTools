@@ -51,7 +51,7 @@ namespace _4RTools.Forms
             this.groupBox1.Size = new System.Drawing.Size(180, 85);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Auto-Refresh";
+            this.groupBox1.Text = "Skill Timer";
             // 
             // cbRefreshKey
             // 
