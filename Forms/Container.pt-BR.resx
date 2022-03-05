@@ -117,312 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblCharacterName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 133</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="lblLinkGithub.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 16</value>
-  </data>
-  <data name="lblLinkGithub.Text" xml:space="preserve">
-    <value>Github Project</value>
-  </data>
-  <data name="processCB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 21</value>
-  </data>
-  <data name="&gt;&gt;lblLinkDiscord.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;labelProfile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSpammer.Name" xml:space="preserve">
-    <value>tabPageSpammer</value>
-  </data>
-  <data name="lblCharacterName.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="lblCharacterName.Text" xml:space="preserve">
-    <value>Character Name:</value>
-  </data>
-  <data name="&gt;&gt;lblLinkGithub.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabLayout.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="tabLayout.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;tabLayout.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblLinkGithub.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageProfiles.Text" xml:space="preserve">
-    <value>Profiles</value>
-  </data>
-  <data name="&gt;&gt;lblStatusToggle.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblLinkDiscord.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tabPageSpammer.Text" xml:space="preserve">
-    <value>Skill Spammer</value>
-  </data>
-  <data name="&gt;&gt;profileCB.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 33</value>
-  </data>
-  <data name="processCB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 29</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffStuff.Name" xml:space="preserve">
-    <value>tabPageAutobuffStuff</value>
-  </data>
-  <data name="lblProcessName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabPageAutobuffSkill.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="languagePtBr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 33</value>
-  </data>
-  <data name="lblStatusToggle.Text" xml:space="preserve">
-    <value>Press the End key</value>
-  </data>
-  <data name="panel7.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;lblProcessName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblStatusToggle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="profileCB.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;tabPageProfiles.Name" xml:space="preserve">
-    <value>tabPageProfiles</value>
-  </data>
-  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCharacterName.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>455, 576</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabLayout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 297</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="tabPageAutobuffSkill.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="lblProcessName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 17</value>
   </data>
   <data name="lblProcessName.Text" xml:space="preserve">
-    <value>Ragnarok Client</value>
-  </data>
-  <data name="&gt;&gt;lblStatusToggle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnStatusToggle.Text" xml:space="preserve">
-    <value>OFF</value>
-  </data>
-  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;profileCB.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 33</value>
-  </data>
-  <data name="imageList1.ImageSize" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 6</value>
-  </data>
-  <data name="&gt;&gt;lblCharacterName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelProfile.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="tabPageSpammer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 271</value>
-  </data>
-  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAECcAABAnAVHxrvEAAAJPSURBVFhHrZfLq01hGIcXSkpy
-        P/gDXEaUmQxlwPSUUlIMFEYSJVIyILmNqDMyMDIyM1FMXDKWS5kpElFyCYXn2fY6vefz7n3W3mv96qm1
-        3/V+v99q7b3e9e1qRM2BzbAXzsC1Ph5b85w9nWsrTMFr+DML9tjrmtbaCHcgC2qCa/UYS0cgMx0HvUbS
-        TciM2qBnI92GzKAL9B6qi1Au+pXUmvIjqZmRajuUzX53K2EfPOrXmvAA9sByONavRcz6T++hbFwLUYfA
-        R2w/bIH1fTy25jl7ojZA6WvWDB2GsklWQ1utgczbzGm9gaxpJ7SVHpm3mT05sbIG2QZtpUfmLb1peSEU
-        Is74rnQdsgyzq7uhEOni+6+lV5ZhdvUqFGpeQNfSs8wxu/oUCjX3oWvpWeaYXX0JhZrH0LX0LHPMrj6E
-        Qs1b6Fp6ljm9gfQyFCLroCs5UbMMswduOM5CV3LLlmWYXZ0Ohch3WAptpYdeWYbZ1aZQKHkKK2BcrYJn
-        kHmL2T3FZ/QG3AqffVSOgmZN5eA5Dp+h9il5DtOahPrEVQtoB8QFP8H3/GWYB6WsXYGH0GQTY+YMxbtw
-        zwI6AHGR1BeY6RKU/RnppHVjEZt2g/IX7Kz4Ck9gIQySv5ffEH0yzEp1EOqmdxZG1CLwQmNYiRlDFV/P
-        7gPdvy0AtRjm/ztM5SM37AJ6r98mOgVxobfVuS0TMEjLYNAFnISRtAs+Qmk0bC64Cy4vQA+9xpK31Mfu
-        G9SGs92Bus81rl0CreV/gxNwHrIZUGsunAN7G0zQqvoL+HW1XPJq6MgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="lblStatusToggle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 13</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblLinkGithub.Name" xml:space="preserve">
-    <value>lblLinkGithub</value>
-  </data>
-  <data name="lblCharacterName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 77</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffSkill.Name" xml:space="preserve">
-    <value>tabPageAutobuffSkill</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
-    <value>btnRefresh</value>
-  </data>
-  <data name="lblProcessName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 17</value>
-  </data>
-  <data name="&gt;&gt;notifyIconTray.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSpammer.Parent" xml:space="preserve">
-    <value>tabLayout</value>
-  </data>
-  <data name="&gt;&gt;tabPageProfiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelProfile.Text" xml:space="preserve">
-    <value>Profile</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffSkill.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 66</value>
-  </data>
-  <data name="&gt;&gt;labelProfile.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;languagePtBr.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblLinkDiscord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 13</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 74</value>
-  </data>
-  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 28</value>
-  </data>
-  <data name="languageEn.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffStuff.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageProfiles.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Container</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="lblLinkDiscord.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 16</value>
-  </data>
-  <data name="&gt;&gt;characterName.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="languagePtBr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 6</value>
-  </data>
-  <data name="btnStatusToggle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 28</value>
-  </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;labelProfile.Name" xml:space="preserve">
-    <value>labelProfile</value>
-  </data>
-  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="btnStatusToggle.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panel3</value>
+    <value>Cliente do Ragnarok</value>
   </data>
   <data name="btnRefresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -442,53 +142,14 @@
         tlWUl45UAH4ngPwDk+N0epDqEjcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="tabPageAutobuffStuff.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="lblLinkDiscord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
   </data>
-  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
-    <value>panel3</value>
+  <data name="lblLinkDiscord.Text" xml:space="preserve">
+    <value>Acesse nosso Discord</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;btnStatusToggle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="tabPageAutobuffSkill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 271</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;lblProcessName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageAutobuffSkill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="&gt;&gt;tabPageProfiles.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btnStatusToggle.Name" xml:space="preserve">
-    <value>btnStatusToggle</value>
-  </data>
-  <data name="btnStatusToggle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="characterName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnStatusToggle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="lblLinkGithub.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tabPageProfiles.Parent" xml:space="preserve">
-    <value>tabLayout</value>
-  </data>
-  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="lblLinkGithub.Text" xml:space="preserve">
+    <value>Projeto Github</value>
   </data>
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -523,180 +184,42 @@
         1D8L5ZSSi+WUkovllJKL5RNRfwDloIYrzD5z2gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 33</value>
-  </data>
-  <data name="&gt;&gt;lblStatusToggle.Name" xml:space="preserve">
-    <value>lblStatusToggle</value>
-  </data>
-  <data name="&gt;&gt;btnStatusToggle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
-    <value>imageList1</value>
-  </data>
-  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="tabPageSpammer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="panel7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;profileCB.Name" xml:space="preserve">
-    <value>profileCB</value>
-  </data>
-  <data name="&gt;&gt;btnStatusToggle.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabPageSpammer.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblLinkDiscord.Text" xml:space="preserve">
-    <value>Join in our discord</value>
-  </data>
-  <data name="tabPageProfiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="&gt;&gt;profileCB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="characterName.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="languageEn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="&gt;&gt;languagePtBr.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffSkill.Parent" xml:space="preserve">
-    <value>tabLayout</value>
-  </data>
-  <data name="&gt;&gt;characterName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelProfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 9</value>
-  </data>
-  <data name="&gt;&gt;tabPageSpammer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="languageEn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 6</value>
-  </data>
-  <data name="profileCB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 21</value>
-  </data>
-  <data name="&gt;&gt;tabLayout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblStatusToggle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 44</value>
-  </data>
-  <data name="tabPageAutobuffStuff.Text" xml:space="preserve">
-    <value>Autobuff - Stuffs</value>
-  </data>
-  <data name="&gt;&gt;languagePtBr.Name" xml:space="preserve">
-    <value>languagePtBr</value>
-  </data>
-  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelProfile.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="characterName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 13</value>
-  </data>
-  <data name="labelProfile.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="panel7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
-        AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAECcAABAnAVHxrvEAAAJPSURBVFhHrZfLq01hGIcXSkpy
+        P/gDXEaUmQxlwPSUUlIMFEYSJVIyILmNqDMyMDIyM1FMXDKWS5kpElFyCYXn2fY6vefz7n3W3mv96qm1
+        3/V+v99q7b3e9e1qRM2BzbAXzsC1Ph5b85w9nWsrTMFr+DML9tjrmtbaCHcgC2qCa/UYS0cgMx0HvUbS
+        TciM2qBnI92GzKAL9B6qi1Au+pXUmvIjqZmRajuUzX53K2EfPOrXmvAA9sByONavRcz6T++hbFwLUYfA
+        R2w/bIH1fTy25jl7ojZA6WvWDB2GsklWQ1utgczbzGm9gaxpJ7SVHpm3mT05sbIG2QZtpUfmLb1peSEU
+        Is74rnQdsgyzq7uhEOni+6+lV5ZhdvUqFGpeQNfSs8wxu/oUCjX3oWvpWeaYXX0JhZrH0LX0LHPMrj6E
+        Qs1b6Fp6ljm9gfQyFCLroCs5UbMMswduOM5CV3LLlmWYXZ0Ohch3WAptpYdeWYbZ1aZQKHkKK2BcrYJn
+        kHmL2T3FZ/QG3AqffVSOgmZN5eA5Dp+h9il5DtOahPrEVQtoB8QFP8H3/GWYB6WsXYGH0GQTY+YMxbtw
+        zwI6AHGR1BeY6RKU/RnppHVjEZt2g/IX7Kz4Ck9gIQySv5ffEH0yzEp1EOqmdxZG1CLwQmNYiRlDFV/P
+        7gPdvy0AtRjm/ztM5SM37AJ6r98mOgVxobfVuS0TMEjLYNAFnISRtAs+Qmk0bC64Cy4vQA+9xpK31Mfu
+        G9SGs92Bus81rl0CreV/gxNwHrIZUGsunAN7G0zQqvoL+HW1XPJq6MgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;characterName.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="labelProfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 17</value>
   </data>
-  <data name="btnStatusToggle.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="labelProfile.Text" xml:space="preserve">
+    <value>Perfil</value>
   </data>
-  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 22</value>
+  <data name="lblCharacterName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
   </data>
-  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="lblCharacterName.Text" xml:space="preserve">
+    <value>Personagem:</value>
   </data>
-  <data name="lblProcessName.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="characterName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 77</value>
   </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="lblStatusToggle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 533</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>420, 1</value>
-  </data>
-  <data name="&gt;&gt;languageEn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 6</value>
-  </data>
-  <data name="&gt;&gt;processCB.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="notifyIconTray.Text" xml:space="preserve">
-    <value>4ROTools</value>
+  <data name="lblStatusToggle.Text" xml:space="preserve">
+    <value>Aperte a tecla End</value>
   </data>
   <data name="notifyIconTray.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1830,26 +1353,77 @@
         //////////////////////////////////8=
 </value>
   </data>
-  <data name="lblLinkDiscord.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="languagePtBr.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;lblStatusToggle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="languagePtBr.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="lblCharacterName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 13</value>
+  <data name="languagePtBr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 33</value>
   </data>
-  <data name="&gt;&gt;lblLinkDiscord.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="languagePtBr.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="characterName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 77</value>
+  <data name="languageEn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAA3lJREFUSEu1ldlPU1EQxu9/YmMg8V3UGCgIFMrSIjsYKYtbIkoppUBvoQXKvpig
+        LFLLvqVoDAmLUjBGja+IBjRGn2zikwZ4aQKk6TgzvaxpWLRO8iW/nJ47PfebmXuEo6Ki3BYkDysW5WFa
+        pzrR5AoL1W6jtohx3YnrYq6mKVjafvKICNPKIuQ6h90+54mOKoVweTH02ecgRlEGmBhsvTO7/Lhn2hMX
+        Wz5ZZ7KfkR4/OvAhza2b7e7a2hHA00JebjM0NU0w51xvhNZWB3NWlhXa2yaZSUtL39zg9eZIafxHRLhO
+        bGwY9yoUBkCGhvoxiI0p93HDOMQpK5jr60YlLgErHiQ2pgwWex3w88Ur74q13SilOxgpyWZNRnqN90ZB
+        K5AtyFCQ38KcmVELtK6INkBmphXy85p31/PzWtBCHXSdi4LpsyEkL0ojpfWFOsEo0+Q0uvUlPRB5RQ/X
+        suvBUNrLnJ1VB0ajHaIi9Zyw0tTHnJJsAXPVADNZNGVohs+NHawvbV3uzV+/ZVJ6QXj75pNjZ+Po6CKf
+        jnhwcJ4tIh4eckJCvJGZCr7DNtsMqBJNsLz8HQ6Fg5Ojp8G40UMntZgH+SE6aU31EHN6Wg16PsacmmIB
+        rBFzUlIVNEvFJz29UwnLhupdfdBbPM5LyiABW1As1feASmXiwpXoukEtsa64G5LUVRAfZwQ97rmKSYm1
+        2k5cr8S3EKHo/iPeu68G+yUK+O9O8p5OQRuJqb+VseVQrO3iriHWFnWy38T3Ch+yjcSFdzu4+O+eLcDa
+        x5UD2lj9uiDIQ7U0lYC9zxYRU8fU1gzzgFHHULsSazRNbAsxNUJri4OZDuenBhQuGqztkZEFPh0lH8LC
+        RkX6itzf94J7nHhw4CW/IbH9yewu9+JUU8FtF5JgPkRxUOcV20JigrhFhVQliqy01GruCmIqqlpVucfo
+        O3FysplrQ4zzw9x/OcX/H9Br+N7mv4RLwEI4DxcnUOIiUysdaq1AShScF5VBNBT7hyQQ4kHD3DzN4AWH
+        5FngAnNycorNtXUZfaB2Plb/Ksq1tb6x97GjQL80KPrU+vPyNKIc/i+eVesDI10aKLo8/kZeyiGl8x90
+        7aGDbp+Rp4rjr8ydcD2flb3Puj3xOibdg4Jj5KG9rqm5g56fJNDLIBTNiRPlQm2jtlA/UAso+s3Xin5D
+        EP4AnZHnW2MobT4AAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="&gt;&gt;processCB.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="languageEn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="languageEn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 33</value>
+  </data>
+  <data name="languageEn.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3555,214 +3129,4 @@
         ///+//////////gAAAD//////////////////3////////gAAAA=
 </value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>508, 61</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffSkill.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageAutobuffStuff.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="labelProfile.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="&gt;&gt;lblProcessName.Name" xml:space="preserve">
-    <value>lblProcessName</value>
-  </data>
-  <data name="tabPageSpammer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffStuff.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblLinkGithub.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="tabPageProfiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 271</value>
-  </data>
-  <data name="processCB.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="panel6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="panel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAA3lJREFUSEu1ldlPU1EQxu9/YmMg8V3UGCgIFMrSIjsYKYtbIkoppUBvoQXKvpig
-        LFLLvqVoDAmLUjBGja+IBjRGn2zikwZ4aQKk6TgzvaxpWLRO8iW/nJ47PfebmXuEo6Ki3BYkDysW5WFa
-        pzrR5AoL1W6jtohx3YnrYq6mKVjafvKICNPKIuQ6h90+54mOKoVweTH02ecgRlEGmBhsvTO7/Lhn2hMX
-        Wz5ZZ7KfkR4/OvAhza2b7e7a2hHA00JebjM0NU0w51xvhNZWB3NWlhXa2yaZSUtL39zg9eZIafxHRLhO
-        bGwY9yoUBkCGhvoxiI0p93HDOMQpK5jr60YlLgErHiQ2pgwWex3w88Ur74q13SilOxgpyWZNRnqN90ZB
-        K5AtyFCQ38KcmVELtK6INkBmphXy85p31/PzWtBCHXSdi4LpsyEkL0ojpfWFOsEo0+Q0uvUlPRB5RQ/X
-        suvBUNrLnJ1VB0ajHaIi9Zyw0tTHnJJsAXPVADNZNGVohs+NHawvbV3uzV+/ZVJ6QXj75pNjZ+Po6CKf
-        jnhwcJ4tIh4eckJCvJGZCr7DNtsMqBJNsLz8HQ6Fg5Ojp8G40UMntZgH+SE6aU31EHN6Wg16PsacmmIB
-        rBFzUlIVNEvFJz29UwnLhupdfdBbPM5LyiABW1As1feASmXiwpXoukEtsa64G5LUVRAfZwQ97rmKSYm1
-        2k5cr8S3EKHo/iPeu68G+yUK+O9O8p5OQRuJqb+VseVQrO3iriHWFnWy38T3Ch+yjcSFdzu4+O+eLcDa
-        x5UD2lj9uiDIQ7U0lYC9zxYRU8fU1gzzgFHHULsSazRNbAsxNUJri4OZDuenBhQuGqztkZEFPh0lH8LC
-        RkX6itzf94J7nHhw4CW/IbH9yewu9+JUU8FtF5JgPkRxUOcV20JigrhFhVQliqy01GruCmIqqlpVucfo
-        O3FysplrQ4zzw9x/OcX/H9Br+N7mv4RLwEI4DxcnUOIiUysdaq1AShScF5VBNBT7hyQQ4kHD3DzN4AWH
-        5FngAnNycorNtXUZfaB2Plb/Ksq1tb6x97GjQL80KPrU+vPyNKIc/i+eVesDI10aKLo8/kZeyiGl8x90
-        7aGDbp+Rp4rjr8ydcD2flb3Puj3xOibdg4Jj5KG9rqm5g56fJNDLIBTNiRPlQm2jtlA/UAso+s3Xin5D
-        EP4AnZHnW2MobT4AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="tabLayout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 230</value>
-  </data>
-  <data name="&gt;&gt;lblLinkDiscord.Name" xml:space="preserve">
-    <value>lblLinkDiscord</value>
-  </data>
-  <data name="&gt;&gt;characterName.Name" xml:space="preserve">
-    <value>characterName</value>
-  </data>
-  <data name="&gt;&gt;languagePtBr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;notifyIconTray.Name" xml:space="preserve">
-    <value>notifyIconTray</value>
-  </data>
-  <data name="labelProfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 6</value>
-  </data>
-  <data name="characterName.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="lblLinkDiscord.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblCharacterName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>4ROTools - Versão Beta</value>
-  </data>
-  <data name="&gt;&gt;languageEn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="characterName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="languagePtBr.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="lblProcessName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageProfiles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="&gt;&gt;languageEn.Name" xml:space="preserve">
-    <value>languageEn</value>
-  </data>
-  <data name="&gt;&gt;tabPageSpammer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblStatusToggle.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="btnStatusToggle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 13</value>
-  </data>
-  <data name="&gt;&gt;languageEn.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="profileCB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 29</value>
-  </data>
-  <data name="&gt;&gt;lblCharacterName.Name" xml:space="preserve">
-    <value>lblCharacterName</value>
-  </data>
-  <data name="&gt;&gt;lblProcessName.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="lblLinkGithub.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblProcessName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 6</value>
-  </data>
-  <data name="&gt;&gt;tabPageAutobuffStuff.Parent" xml:space="preserve">
-    <value>tabLayout</value>
-  </data>
-  <data name="lblLinkGithub.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="tabPageAutobuffSkill.Text" xml:space="preserve">
-    <value>Autobuff - Skills</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabLayout.Name" xml:space="preserve">
-    <value>tabLayout</value>
-  </data>
-  <data name="tabPageAutobuffStuff.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 77</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;processCB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;processCB.Name" xml:space="preserve">
-    <value>processCB</value>
-  </data>
-  <data name="tabPageAutobuffStuff.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 271</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="notifyIconTray.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>10, 3</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en-US</value>
-  </metadata>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>139, 3</value>
-  </metadata>
 </root>

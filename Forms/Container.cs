@@ -6,6 +6,7 @@ using System.IO;
 using _4RTools.Model;
 using _4RTools.Utils;
 using _4RTools.Properties;
+using _4RTools.Localization;
 
 namespace _4RTools.Forms
 {
@@ -245,6 +246,18 @@ namespace _4RTools.Forms
             Show();
             this.WindowState = FormWindowState.Normal;
             this.notifyIconTray.Visible = false;
+        }
+
+        private void languageEn_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage.UpdateLanguage("en-US");
+            Application.Restart();
+        }
+
+        private void languagePtBr_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage.UpdateLanguage("pt-BR");
+            Application.Restart();
         }
     }
 }

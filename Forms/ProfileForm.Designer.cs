@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             this.txtProfileName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,64 +39,43 @@
             // 
             // txtProfileName
             // 
-            this.txtProfileName.Location = new System.Drawing.Point(23, 29);
+            resources.ApplyResources(this.txtProfileName, "txtProfileName");
             this.txtProfileName.Name = "txtProfileName";
-            this.txtProfileName.Size = new System.Drawing.Size(238, 20);
-            this.txtProfileName.TabIndex = 0;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(267, 17);
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(83, 32);
-            this.btnSave.TabIndex = 1;
-            this.btnSave.Text = "Create";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 13);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Create a new profile";
             // 
             // btnRemoveProfile
             // 
-            this.btnRemoveProfile.Location = new System.Drawing.Point(267, 77);
+            resources.ApplyResources(this.btnRemoveProfile, "btnRemoveProfile");
             this.btnRemoveProfile.Name = "btnRemoveProfile";
-            this.btnRemoveProfile.Size = new System.Drawing.Size(78, 23);
-            this.btnRemoveProfile.TabIndex = 3;
-            this.btnRemoveProfile.Text = "Remove Selected Profile";
             this.btnRemoveProfile.UseVisualStyleBackColor = true;
             this.btnRemoveProfile.Click += new System.EventHandler(this.btnRemoveProfile_Click);
             // 
             // lblProfilesList
             // 
-            this.lblProfilesList.AutoSize = true;
-            this.lblProfilesList.Location = new System.Drawing.Point(23, 61);
+            resources.ApplyResources(this.lblProfilesList, "lblProfilesList");
             this.lblProfilesList.Name = "lblProfilesList";
-            this.lblProfilesList.Size = new System.Drawing.Size(55, 13);
-            this.lblProfilesList.TabIndex = 6;
-            this.lblProfilesList.Text = "Profile List";
-            this.lblProfilesList.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbProfilesList
             // 
+            resources.ApplyResources(this.lbProfilesList, "lbProfilesList");
             this.lbProfilesList.FormattingEnabled = true;
-            this.lbProfilesList.Location = new System.Drawing.Point(23, 77);
             this.lbProfilesList.Name = "lbProfilesList";
-            this.lbProfilesList.ScrollAlwaysVisible = true;
-            this.lbProfilesList.Size = new System.Drawing.Size(238, 134);
-            this.lbProfilesList.TabIndex = 8;
             // 
             // ProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 232);
             this.Controls.Add(this.lbProfilesList);
             this.Controls.Add(this.lblProfilesList);
             this.Controls.Add(this.btnRemoveProfile);
@@ -104,7 +84,6 @@
             this.Controls.Add(this.txtProfileName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ProfileForm";
-            this.Text = "ProfileForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

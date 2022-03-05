@@ -30,6 +30,7 @@ namespace _4RTools.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutoRefreshForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbRefreshKey = new System.Windows.Forms.ComboBox();
             this.txtAutoRefreshDelay = new System.Windows.Forms.TextBox();
@@ -40,70 +41,47 @@ namespace _4RTools.Forms
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.cbRefreshKey);
             this.groupBox1.Controls.Add(this.txtAutoRefreshDelay);
             this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
             this.groupBox1.Controls.Add(this.lblAutoRefreshDelay);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(0, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(180, 85);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Skill Timer";
             // 
             // cbRefreshKey
             // 
+            resources.ApplyResources(this.cbRefreshKey, "cbRefreshKey");
             this.cbRefreshKey.DisplayMember = "Key";
-            this.cbRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbRefreshKey.FormattingEnabled = true;
-            this.cbRefreshKey.Location = new System.Drawing.Point(86, 50);
             this.cbRefreshKey.Name = "cbRefreshKey";
-            this.cbRefreshKey.Size = new System.Drawing.Size(69, 24);
-            this.cbRefreshKey.TabIndex = 3;
             this.cbRefreshKey.ValueMember = "Value";
             this.cbRefreshKey.SelectedIndexChanged += new System.EventHandler(this.autoRefreshKeyIndexChanged);
             // 
             // txtAutoRefreshDelay
             // 
-            this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(84, 21);
+            resources.ApplyResources(this.txtAutoRefreshDelay, "txtAutoRefreshDelay");
             this.txtAutoRefreshDelay.Name = "txtAutoRefreshDelay";
-            this.txtAutoRefreshDelay.Size = new System.Drawing.Size(69, 23);
-            this.txtAutoRefreshDelay.TabIndex = 2;
             this.txtAutoRefreshDelay.TextChanged += new System.EventHandler(this.txtAutoRefreshDelayTextChanged);
             // 
             // lblAutoRefreshKey
             // 
-            this.lblAutoRefreshKey.AutoSize = true;
-            this.lblAutoRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshKey.Location = new System.Drawing.Point(53, 55);
+            resources.ApplyResources(this.lblAutoRefreshKey, "lblAutoRefreshKey");
             this.lblAutoRefreshKey.Name = "lblAutoRefreshKey";
-            this.lblAutoRefreshKey.Size = new System.Drawing.Size(27, 15);
-            this.lblAutoRefreshKey.TabIndex = 1;
-            this.lblAutoRefreshKey.Text = "Key";
             // 
             // lblAutoRefreshDelay
             // 
-            this.lblAutoRefreshDelay.AutoSize = true;
-            this.lblAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(17, 25);
+            resources.ApplyResources(this.lblAutoRefreshDelay, "lblAutoRefreshDelay");
             this.lblAutoRefreshDelay.Name = "lblAutoRefreshDelay";
-            this.lblAutoRefreshDelay.Size = new System.Drawing.Size(68, 15);
-            this.lblAutoRefreshDelay.TabIndex = 0;
-            this.lblAutoRefreshDelay.Text = "Delay (sec)";
-            this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AutoRefreshForm
             // 
+            resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(182, 88);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AutoRefreshForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "AutoRefreshForm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

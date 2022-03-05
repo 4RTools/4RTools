@@ -108,6 +108,7 @@
     <Compile Include="Forms\ProfileForm.Designer.cs">
       <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Localization\ChangeLanguage.cs" />
     <Compile Include="Model\AHK.cs" />
     <Compile Include="Model\Autopot.cs" />
     <Compile Include="Model\Autobuff.cs" />
@@ -135,8 +136,23 @@
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AutoRefreshForm.pt-BR.resx">
+      <DependentUpon>AutoRefreshForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Container.en-US.resx">
+      <DependentUpon>Container.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Container.pt-BR.resx">
+      <DependentUpon>Container.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProfileForm.pt-BR.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SkillAutoBuffForm.resx">
       <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StatusEffectForm.pt-BR.resx">
+      <DependentUpon>StatusEffectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StuffAutoBuffForm.resx">
       <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>
