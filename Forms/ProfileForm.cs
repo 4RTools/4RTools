@@ -25,7 +25,6 @@ namespace _4RTools.Forms
             this.lbProfilesList.Items.Add(newProfileName);
             this.container.refreshProfileList();
             this.txtProfileName.Text = ""; // clear text box
-            MessageBox.Show("Cool! Your profile has been created successfully. :)");
         }
 
         private void btnRemoveProfile_Click(object sender, EventArgs e)
