@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using _4RTools.Model;
 using _4RTools.Utils;
+using _4RTools.Properties;
 
 namespace _4RTools.Forms
 {
@@ -190,10 +191,12 @@ namespace _4RTools.Forms
             if (statusOn) {
                 this.btnStatusToggle.BackColor = Color.Red;
                 this.btnStatusToggle.Text = "OFF";
+                this.notifyIconTray.Icon = Resources.logo_4rtools_off;
                 subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
             } else {
                 this.btnStatusToggle.BackColor = Color.Green;
                 this.btnStatusToggle.Text = "ON";
+                this.notifyIconTray.Icon = Resources.logo_4rtools_on;
                 subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
             }
 

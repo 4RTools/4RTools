@@ -103,7 +103,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffSkill.Name = "tabPageAutobuffSkill";
             this.tabPageAutobuffSkill.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(424, 260);
+            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(424, 271);
             this.tabPageAutobuffSkill.TabIndex = 3;
             this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
             this.tabPageAutobuffSkill.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@ namespace _4RTools.Forms
             this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpammer.Name = "tabPageSpammer";
             this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(424, 260);
+            this.tabPageSpammer.Size = new System.Drawing.Size(424, 271);
             this.tabPageSpammer.TabIndex = 4;
             this.tabPageSpammer.Text = "Skill Spammer";
             this.tabPageSpammer.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@ namespace _4RTools.Forms
             this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
             this.tabPageProfiles.Name = "tabPageProfiles";
             this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(424, 260);
+            this.tabPageProfiles.Size = new System.Drawing.Size(424, 271);
             this.tabPageProfiles.TabIndex = 5;
             this.tabPageProfiles.Text = "Profiles";
             this.tabPageProfiles.UseVisualStyleBackColor = true;
