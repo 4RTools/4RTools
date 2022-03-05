@@ -148,6 +148,7 @@ namespace _4RTools.Forms
 
             this.refreshProcessList();
             this.refreshProfileList();
+            this.profileCB.SelectedItem = "Default";
         }
 
         public void refreshProfileList()
@@ -160,7 +161,6 @@ namespace _4RTools.Forms
             {
                 this.profileCB.Items.Add(p);
             }
-            this.profileCB.SelectedIndex = 0;
         }
 
         private void refreshProcessList()
@@ -214,12 +214,12 @@ namespace _4RTools.Forms
 
         private void lblLinkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(Utils.Config.ReadSetting("GithubLink"));
+            Process.Start(Config.ReadSetting("GithubLink"));
         }
 
         private void lblLinkDiscord_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(Utils.Config.ReadSetting("DiscordLink"));
+            Process.Start(Config.ReadSetting("DiscordLink"));
         }
 
         private void profileCB_SelectedIndexChanged(object sender, EventArgs e)
