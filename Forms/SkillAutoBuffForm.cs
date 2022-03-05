@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Collections.Generic;
 
@@ -88,5 +87,6 @@ namespace _4RTools.Forms
                     comboBox.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.removeWheelMouse);
                 }
         }
+
     }
 }
