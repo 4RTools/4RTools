@@ -250,14 +250,20 @@ namespace _4RTools.Forms
 
         private void languageEn_Click(object sender, EventArgs e)
         {
-            ChangeLanguage.UpdateLanguage("en-US");
-            Application.Restart();
+            var valueUpdated = ChangeLanguage.UpdateLanguage("en-US");
+            if (valueUpdated)
+            {
+                Application.Restart();
+            }
         }
 
         private void languagePtBr_Click(object sender, EventArgs e)
         {
-            ChangeLanguage.UpdateLanguage("pt-BR");
-            Application.Restart();
+            var valueUpdated = ChangeLanguage.UpdateLanguage("pt-BR");
+            if(valueUpdated)
+            {
+                Application.Restart();
+            }
         }
     }
 }
