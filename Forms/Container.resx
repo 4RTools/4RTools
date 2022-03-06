@@ -117,9 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblCharacterName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;panel3.Name" xml:space="preserve">
     <value>panel3</value>
@@ -128,6 +128,7 @@
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>1, 133</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
@@ -140,14 +141,14 @@
   <data name="processCB.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 21</value>
   </data>
+  <data name="tabPageAutobuffSkill.Text" xml:space="preserve">
+    <value>Autobuff - Skills</value>
+  </data>
   <data name="&gt;&gt;lblLinkDiscord.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;labelProfile.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSpammer.Name" xml:space="preserve">
-    <value>tabPageSpammer</value>
   </data>
   <data name="lblCharacterName.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -197,6 +198,9 @@
   <data name="&gt;&gt;profileCB.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="lblProcessName.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 33</value>
   </data>
@@ -209,15 +213,14 @@
   <data name="lblProcessName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabPageAutobuffSkill.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="languagePtBr.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 100</value>
   </data>
-  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 33</value>
+  <data name="labelProfile.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="lblStatusToggle.Text" xml:space="preserve">
     <value>Press the End key</value>
@@ -231,9 +234,6 @@
   <data name="lblStatusToggle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="profileCB.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
   <data name="&gt;&gt;tabPageProfiles.Name" xml:space="preserve">
     <value>tabPageProfiles</value>
   </data>
@@ -243,14 +243,17 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCharacterName.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>455, 576</value>
+  <data name="lblLinkDiscord.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -260,9 +263,6 @@
   </data>
   <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="tabPageAutobuffSkill.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -275,6 +275,9 @@
   </data>
   <data name="btnStatusToggle.Text" xml:space="preserve">
     <value>OFF</value>
+  </data>
+  <data name="btnStatusToggle.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="&gt;&gt;panel5.Name" xml:space="preserve">
     <value>panel5</value>
@@ -294,11 +297,14 @@
   <data name="&gt;&gt;lblCharacterName.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelProfile.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="tabPageProfiles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageSpammer.Size" type="System.Drawing.Size, System.Drawing">
     <value>424, 271</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 33</value>
   </data>
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -322,17 +328,11 @@
   <data name="lblStatusToggle.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblLinkGithub.Name" xml:space="preserve">
-    <value>lblLinkGithub</value>
+  <data name="lblStatusToggle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 44</value>
   </data>
   <data name="lblCharacterName.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 77</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;tabPageAutobuffSkill.Name" xml:space="preserve">
     <value>tabPageAutobuffSkill</value>
@@ -340,11 +340,14 @@
   <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
     <value>btnRefresh</value>
   </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="lblProcessName.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 17</value>
   </data>
-  <data name="&gt;&gt;notifyIconTray.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;tabPageSpammer.Parent" xml:space="preserve">
     <value>tabLayout</value>
@@ -355,9 +358,6 @@
   <data name="labelProfile.Text" xml:space="preserve">
     <value>Profile</value>
   </data>
-  <data name="&gt;&gt;tabPageAutobuffSkill.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 66</value>
   </data>
@@ -367,17 +367,11 @@
   <data name="&gt;&gt;languagePtBr.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblLinkDiscord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 13</value>
-  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 74</value>
   </data>
   <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 28</value>
-  </data>
-  <data name="languageEn.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
   </data>
   <data name="&gt;&gt;tabPageAutobuffStuff.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -403,9 +397,6 @@
   <data name="btnStatusToggle.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 28</value>
   </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
   <data name="&gt;&gt;labelProfile.Name" xml:space="preserve">
     <value>labelProfile</value>
   </data>
@@ -417,9 +408,6 @@
   </data>
   <data name="&gt;&gt;panel4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -469,6 +457,9 @@
   <data name="&gt;&gt;tabPageProfiles.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;btnStatusToggle.Name" xml:space="preserve">
     <value>btnStatusToggle</value>
   </data>
@@ -489,6 +480,9 @@
   </data>
   <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabPageAutobuffStuff.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -523,6 +517,9 @@
         1D8L5ZSSi+WUkovllJKL5RNRfwDloIYrzD5z2gAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="tabPageSpammer.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
@@ -535,11 +532,11 @@
   <data name="&gt;&gt;btnStatusToggle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
-    <value>imageList1</value>
-  </data>
   <data name="&gt;&gt;panel6.Name" xml:space="preserve">
     <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;lblProcessName.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="tabPageSpammer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -553,8 +550,8 @@
   <data name="&gt;&gt;btnStatusToggle.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tabPageSpammer.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="profileCB.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="lblLinkDiscord.Text" xml:space="preserve">
     <value>Join in our discord</value>
@@ -564,6 +561,9 @@
   </data>
   <data name="&gt;&gt;profileCB.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="characterName.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -595,9 +595,6 @@
   <data name="&gt;&gt;tabLayout.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblStatusToggle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 44</value>
-  </data>
   <data name="tabPageAutobuffStuff.Text" xml:space="preserve">
     <value>Autobuff - Stuffs</value>
   </data>
@@ -610,11 +607,11 @@
   <data name="&gt;&gt;labelProfile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="characterName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 13</value>
-  </data>
   <data name="labelProfile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;characterName.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -653,11 +650,11 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;characterName.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="btnStatusToggle.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 22</value>
@@ -665,11 +662,11 @@
   <data name="panel6.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="lblProcessName.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="lblCharacterName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1830,8 +1827,8 @@
         //////////////////////////////////8=
 </value>
   </data>
-  <data name="lblLinkDiscord.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;notifyIconTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblStatusToggle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3576,8 +3573,8 @@
   <data name="&gt;&gt;panel6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageAutobuffStuff.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPageAutobuffSkill.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblLinkGithub.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -3585,11 +3582,17 @@
   <data name="tabPageProfiles.Size" type="System.Drawing.Size, System.Drawing">
     <value>424, 271</value>
   </data>
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 6</value>
+  </data>
   <data name="processCB.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="panel6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
+  <data name="tabPageAutobuffStuff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 271</value>
+  </data>
+  <data name="&gt;&gt;lblLinkGithub.Name" xml:space="preserve">
+    <value>lblLinkGithub</value>
   </data>
   <data name="panel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3621,8 +3624,8 @@
   <data name="&gt;&gt;characterName.Name" xml:space="preserve">
     <value>characterName</value>
   </data>
-  <data name="&gt;&gt;languagePtBr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabPageSpammer.Name" xml:space="preserve">
+    <value>tabPageSpammer</value>
   </data>
   <data name="&gt;&gt;notifyIconTray.Name" xml:space="preserve">
     <value>notifyIconTray</value>
@@ -3651,8 +3654,8 @@
   <data name="&gt;&gt;languageEn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>panel3</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>455, 576</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -3678,9 +3681,6 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabPageProfiles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
   <data name="&gt;&gt;languageEn.Name" xml:space="preserve">
     <value>languageEn</value>
   </data>
@@ -3702,20 +3702,20 @@
   <data name="&gt;&gt;lblCharacterName.Name" xml:space="preserve">
     <value>lblCharacterName</value>
   </data>
-  <data name="&gt;&gt;lblProcessName.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
   </data>
   <data name="lblLinkGithub.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 13</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+  <data name="&gt;&gt;languagePtBr.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblProcessName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
-  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 6</value>
+  <data name="characterName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 13</value>
   </data>
   <data name="&gt;&gt;tabPageAutobuffStuff.Parent" xml:space="preserve">
     <value>tabLayout</value>
@@ -3723,11 +3723,11 @@
   <data name="lblLinkGithub.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="tabPageAutobuffSkill.Text" xml:space="preserve">
-    <value>Autobuff - Skills</value>
+  <data name="languageEn.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblLinkDiscord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
   </data>
   <data name="&gt;&gt;tabLayout.Name" xml:space="preserve">
     <value>tabLayout</value>
@@ -3750,8 +3750,8 @@
   <data name="&gt;&gt;processCB.Name" xml:space="preserve">
     <value>processCB</value>
   </data>
-  <data name="tabPageAutobuffStuff.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 271</value>
+  <data name="tabPageAutobuffSkill.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -3760,7 +3760,7 @@
     <value>10, 3</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en-US</value>
+    <value>pt-BR</value>
   </metadata>
   <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>139, 3</value>

@@ -168,14 +168,14 @@ namespace _4RTools.Forms
             // languagePtBr
             // 
             resources.ApplyResources(this.languagePtBr, "languagePtBr");
-            this.languagePtBr.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.languagePtBr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.languagePtBr.Name = "languagePtBr";
             this.languagePtBr.Click += new System.EventHandler(this.languagePtBr_Click);
             // 
             // languageEn
             // 
             resources.ApplyResources(this.languageEn, "languageEn");
-            this.languageEn.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.languageEn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.languageEn.Name = "languageEn";
             this.languageEn.Click += new System.EventHandler(this.languageEn_Click);
             // 
