@@ -170,12 +170,9 @@ namespace _4RTools.Forms
             {
                 this.processCB.Items.Clear();
             });
-            foreach (Process p in Process.GetProcesses())
+            foreach (Process p in ProcessFilter.GetProcesses())
             {
-                if (p.MainWindowTitle != "")
-                {
-                    this.processCB.Items.Add(string.Format("{0}.exe - {1}", p.ProcessName, p.Id));
-                }
+                this.processCB.Items.Add(string.Format("{0}.exe - {1}", p.ProcessName, p.Id));
             }
         }
 
