@@ -104,8 +104,8 @@ namespace _4RTools.Forms
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
-            frm.Show();
             addform(this.tabPageAutobuffSkill, frm);
+            frm.Show();
         }
 
         public void addform(TabPage tp, Form f)

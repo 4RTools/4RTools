@@ -71,6 +71,7 @@
             this.chkW = new System.Windows.Forms.CheckBox();
             this.chkQ = new System.Windows.Forms.CheckBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtSpammerDelay = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -78,11 +79,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.chkS = new System.Windows.Forms.CheckBox();
-            this.txtSpammerDelay = new System.Windows.Forms.NumericUpDown();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.SuspendLayout();
             // 
             // chkF9
@@ -565,14 +565,22 @@
             this.panel5.Size = new System.Drawing.Size(142, 69);
             this.panel5.TabIndex = 12;
             // 
+            // txtSpammerDelay
+            // 
+            this.txtSpammerDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtSpammerDelay.Location = new System.Drawing.Point(21, 28);
+            this.txtSpammerDelay.Name = "txtSpammerDelay";
+            this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
+            this.txtSpammerDelay.TabIndex = 31;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(17, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Spammer Delay (MS)";
+            this.label1.Text = "Spammer Delay (ms)";
             // 
             // panel1
             // 
@@ -628,15 +636,8 @@
             this.chkS.Size = new System.Drawing.Size(33, 17);
             this.chkS.TabIndex = 30;
             this.chkS.Text = "S";
+            this.chkS.CheckedChanged += new System.EventHandler(this.onCheckChange);
             this.chkS.UseVisualStyleBackColor = true;
-            // 
-            // txtSpammerDelay
-            // 
-            this.txtSpammerDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSpammerDelay.Location = new System.Drawing.Point(21, 28);
-            this.txtSpammerDelay.Name = "txtSpammerDelay";
-            this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
-            this.txtSpammerDelay.TabIndex = 31;
             // 
             // AHKForm
             // 
@@ -697,9 +698,9 @@
             this.Text = "AHKForm";
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

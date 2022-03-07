@@ -31,14 +31,14 @@ namespace _4RTools.Model
                         {
                             foreach (Key key in ahkEntries.Values)
                             {
+                                Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
                                 while (Keyboard.IsKeyDown(key))
                                 {
-                                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
                                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
                                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
                                     Thread.Sleep(1);
                                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                                    Thread.Sleep(ahkDelay);
+                                    Thread.Sleep(this.ahkDelay);
                                 }
                             }
                         }
