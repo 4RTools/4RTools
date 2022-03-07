@@ -14,7 +14,7 @@ namespace _4RTools.Model
     {
         public Dictionary<string,Key> ahkEntries { get; set; } = new Dictionary<string, Key>();
         private string ACTION_NAME = "AHK";
-        public int ahkDelay { get; set; }
+        public int ahkDelay { get; set; } = 10;
         private Thread ahkThread;
 
         public void Start()

@@ -571,6 +571,7 @@
             this.txtSpammerDelay.Location = new System.Drawing.Point(21, 28);
             this.txtSpammerDelay.Name = "txtSpammerDelay";
             this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
+            this.txtSpammerDelay.ValueChanged += new System.EventHandler(this.txtSpammerDelay_TextChanged);
             this.txtSpammerDelay.TabIndex = 31;
             // 
             // label1
