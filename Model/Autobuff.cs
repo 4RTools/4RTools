@@ -99,12 +99,15 @@ namespace _4RTools.Model
                             //NOT use Concentration, INC_AGI Scroll or TRUESIGHT when Quagmire is Found
                             // In Hercules, Quagmire removes TRUESIGHT
                         }
-                        else
+                        else 
                         {
-                            this.useStatusRecovery(item.Value);
+                            if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
+                            {
+                                this.useStatusRecovery(item.Value);
+                                Thread.Sleep(150);
+                            }
                         }
                     }
-
                     Thread.Sleep(100);
                 }
             });
