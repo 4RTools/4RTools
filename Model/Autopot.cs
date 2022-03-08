@@ -51,27 +51,29 @@ namespace _4RTools.Model
                     while (true)
                     {
                         // check hp first
-                        if (roClient.IsHpBelow(hpPercent))
+                        if(roClient.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
                         {
-                            pot(this.hpKey);
-                            hp_pot_count++;
-
-                            if (hp_pot_count == 3)
+                            if (roClient.IsHpBelow(hpPercent))
                             {
-                                hp_pot_count = 0;
-                                if (roClient.IsSpBelow(spPercent))
+                                pot(this.hpKey);
+                                hp_pot_count++;
+
+                                if (hp_pot_count == 3)
                                 {
-                                    pot(this.spKey);
+                                    hp_pot_count = 0;
+                                    if (roClient.IsSpBelow(spPercent))
+                                    {
+                                        pot(this.spKey);
+                                    }
                                 }
                             }
-                        }
 
-                        // check sp
-                        if (roClient.IsSpBelow(spPercent))
-                        {
-                            pot(this.spKey);
+                            // check sp
+                            if (roClient.IsSpBelow(spPercent))
+                            {
+                                pot(this.spKey);
+                            }
                         }
-
                         Thread.Sleep(this.delay);
                     }
                 });
