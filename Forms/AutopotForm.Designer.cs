@@ -113,6 +113,30 @@
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
+            // cbSPKey
+            // 
+            this.cbSPKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbSPKey.FormattingEnabled = true;
+            this.cbSPKey.Location = new System.Drawing.Point(39, 40);
+            this.cbSPKey.Name = "cbSPKey";
+            this.cbSPKey.Size = new System.Drawing.Size(61, 24);
+            this.cbSPKey.TabIndex = 33;
+            this.cbSPKey.DisplayMember = "Key";
+            this.cbSPKey.ValueMember = "Value";
+            this.cbSPKey.SelectedIndexChanged += new System.EventHandler(this.cbSPKeySelectedIndexChanged);
+            // 
+            // cbHPKey
+            // 
+            this.cbHPKey.DisplayMember = "Key";
+            this.cbHPKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbHPKey.FormattingEnabled = true;
+            this.cbHPKey.Location = new System.Drawing.Point(39, 11);
+            this.cbHPKey.Name = "cbHPKey";
+            this.cbHPKey.Size = new System.Drawing.Size(61, 24);
+            this.cbHPKey.TabIndex = 32;
+            this.cbHPKey.ValueMember = "Value";
+            this.cbHPKey.SelectedIndexChanged += new System.EventHandler(this.cbHPKeySelectedIndexChanged);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;

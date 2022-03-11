@@ -81,6 +81,12 @@
     <Compile Include="Forms\AutoRefreshForm.Designer.cs">
       <DependentUpon>AutoRefreshForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MacroSongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MacroSongForm.Designer.cs">
+      <DependentUpon>MacroSongForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SkillAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,7 @@
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\Hexed.cs" />
     <Compile Include="Model\Action.cs" />
+    <Compile Include="Model\Macro.cs" />
     <Compile Include="Model\Profile.cs" />
     <Compile Include="Forms\AutopotForm.cs">
       <SubType>Form</SubType>
@@ -136,6 +143,9 @@
     <Compile Include="Utils\RObserver.cs" />
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MacroSongForm.resx">
+      <DependentUpon>MacroSongForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SkillAutoBuffForm.resx">
       <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
@@ -171,6 +181,7 @@
     </Compile>
     <None Include="app.manifest" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\_4RTools.Utils.KeyMap.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -38,6 +38,7 @@ namespace _4RTools.Forms
             SetProfileWindow();
             SetAutobuffStuffWindow();
             SetAutobuffSkillWindow();
+            SetSongMacroWindow();
 
         }
 
@@ -105,6 +106,16 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             addform(this.tabPageAutobuffSkill, frm);
+            frm.Show();
+        }
+
+        public void SetSongMacroWindow()
+        {
+            MacroSongForm frm = new MacroSongForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.tabPageMacroSongs, frm);
             frm.Show();
         }
 

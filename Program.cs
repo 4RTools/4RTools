@@ -1,4 +1,5 @@
 ﻿using System;
+using _4RTools.Utils;
 namespace _4RTools
 {
     internal static class Program
@@ -11,6 +12,7 @@ namespace _4RTools
         {
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+            KeyMap.PopulateDict();
             // Application app = new Application();
             // app.IsMdiContainer = true;
 

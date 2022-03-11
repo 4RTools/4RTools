@@ -27,6 +27,7 @@ namespace _4RTools.Model
                     profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByProperty(rawObject, "AutoRefreshSpammer", new AutoRefreshSpammer().GetConfiguration()));
                     profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "ItemsAutoBuff", new AutoBuff("ItemsAutoBuff").GetConfiguration()));
                     profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "SkillAutoBuff", new AutoBuff("SkillAutoBuff").GetConfiguration()));
+                    profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByProperty(rawObject, "SongMacro", new Macro("SongMacro").GetConfiguration()));
                 }
 
 
@@ -68,6 +69,7 @@ namespace _4RTools.Model
         public AutoBuff ItemsAutoBuff { get; set; }
 
         public AutoBuff SkillAutoBuff { get; set; }
+        public Macro SongMacro { get; set;}
 
         public Profile(string name)
         {
@@ -79,6 +81,7 @@ namespace _4RTools.Model
             this.StatusAutoBuff = new AutoBuff("StatusAutoBuff");
             this.ItemsAutoBuff = new AutoBuff("ItemsAutoBuff");
             this.SkillAutoBuff = new AutoBuff("SkillAutoBuff");
+            this.SongMacro = new Macro("SongMacro");
         }
 
         public static object GetByProperty(dynamic obj, string property, object fallback)

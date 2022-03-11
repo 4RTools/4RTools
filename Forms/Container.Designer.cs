@@ -39,6 +39,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
             this.tabLayout = new System.Windows.Forms.TabControl();
             this.tabPageSpammer = new System.Windows.Forms.TabPage();
+            this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
@@ -113,6 +114,7 @@ namespace _4RTools.Forms
             this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
             this.tabLayout.Controls.Add(this.tabPageAutobuffSkill);
             this.tabLayout.Controls.Add(this.tabPageSpammer);
+            this.tabLayout.Controls.Add(this.tabPageMacroSongs);
             this.tabLayout.Controls.Add(this.tabPageProfiles);
             this.tabLayout.Location = new System.Drawing.Point(15, 246);
             this.tabLayout.Name = "tabLayout";
@@ -129,6 +131,16 @@ namespace _4RTools.Forms
             this.tabPageSpammer.TabIndex = 4;
             this.tabPageSpammer.Text = "Skill Spammer";
             this.tabPageSpammer.UseVisualStyleBackColor = true;
+            // 
+            // tabPageMacroSongs
+            // 
+            this.tabPageMacroSongs.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMacroSongs.Name = "tabPageMacroSongs";
+            this.tabPageMacroSongs.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMacroSongs.Size = new System.Drawing.Size(424, 255);
+            this.tabPageMacroSongs.TabIndex = 6;
+            this.tabPageMacroSongs.Text = "Macro Songs";
+            this.tabPageMacroSongs.UseVisualStyleBackColor = true;
             // 
             // tabPageProfiles
             // 
@@ -345,7 +357,8 @@ namespace _4RTools.Forms
         private Label lblStatusToggle;
         private Panel panel5;
         private TabPage tabPageSpammer;
-        private TabPage tabPageProfiles;
+        private TabPage tabPageMacroSongs;
         private NotifyIcon notifyIconTray;
+        private TabPage tabPageProfiles;
     }
 }
