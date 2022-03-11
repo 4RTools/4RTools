@@ -35,10 +35,10 @@ namespace _4RTools.Forms
             this.lblProcessName = new System.Windows.Forms.Label();
             this.processCB = new System.Windows.Forms.ComboBox();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
+            this.tabPageSpammer = new System.Windows.Forms.TabPage();
             this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
             this.tabLayout = new System.Windows.Forms.TabControl();
-            this.tabPageSpammer = new System.Windows.Forms.TabPage();
+            this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
@@ -89,15 +89,15 @@ namespace _4RTools.Forms
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // tabPageAutobuffStuff
+            // tabPageSpammer
             // 
-            this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
-            this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 255);
-            this.tabPageAutobuffStuff.TabIndex = 1;
-            this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
-            this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
+            this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpammer.Name = "tabPageSpammer";
+            this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSpammer.Size = new System.Drawing.Size(424, 255);
+            this.tabPageSpammer.TabIndex = 1;
+            this.tabPageSpammer.Text = "Skill Spammer";
+            this.tabPageSpammer.UseVisualStyleBackColor = true;
             // 
             // tabPageAutobuffSkill
             // 
@@ -111,9 +111,9 @@ namespace _4RTools.Forms
             // 
             // tabLayout
             // 
-            this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
-            this.tabLayout.Controls.Add(this.tabPageAutobuffSkill);
             this.tabLayout.Controls.Add(this.tabPageSpammer);
+            this.tabLayout.Controls.Add(this.tabPageAutobuffSkill);
+            this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
             this.tabLayout.Controls.Add(this.tabPageMacroSongs);
             this.tabLayout.Controls.Add(this.tabPageProfiles);
             this.tabLayout.Location = new System.Drawing.Point(15, 246);
@@ -122,15 +122,15 @@ namespace _4RTools.Forms
             this.tabLayout.Size = new System.Drawing.Size(432, 281);
             this.tabLayout.TabIndex = 6;
             // 
-            // tabPageSpammer
+            // tabPageAutobuffStuff
             // 
-            this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSpammer.Name = "tabPageSpammer";
-            this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(424, 255);
-            this.tabPageSpammer.TabIndex = 4;
-            this.tabPageSpammer.Text = "Skill Spammer";
-            this.tabPageSpammer.UseVisualStyleBackColor = true;
+            this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
+            this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 255);
+            this.tabPageAutobuffStuff.TabIndex = 4;
+            this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
+            this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
             // 
             // tabPageMacroSongs
             // 
@@ -340,7 +340,7 @@ namespace _4RTools.Forms
         private System.Windows.Forms.ComboBox processCB;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TabControl tabLayout;
-        private System.Windows.Forms.TabPage tabPageAutobuffStuff;
+        private System.Windows.Forms.TabPage tabPageSpammer;
         private System.Windows.Forms.LinkLabel lblLinkDiscord;
         private System.Windows.Forms.LinkLabel lblLinkGithub;
         private System.Windows.Forms.Panel panel1;
@@ -356,7 +356,7 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Button btnStatusToggle;
         private Label lblStatusToggle;
         private Panel panel5;
-        private TabPage tabPageSpammer;
+        private TabPage tabPageAutobuffStuff;
         private TabPage tabPageMacroSongs;
         private NotifyIcon notifyIconTray;
         private TabPage tabPageProfiles;
