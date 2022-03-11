@@ -31,17 +31,17 @@ namespace _4RTools.Forms
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbRefreshKey = new System.Windows.Forms.ComboBox();
             this.txtAutoRefreshDelay = new System.Windows.Forms.TextBox();
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
+            this.txtSkillTimerKey = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.cbRefreshKey);
+            this.groupBox1.Controls.Add(this.txtSkillTimerKey);
             this.groupBox1.Controls.Add(this.txtAutoRefreshDelay);
             this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
             this.groupBox1.Controls.Add(this.lblAutoRefreshDelay);
@@ -52,18 +52,6 @@ namespace _4RTools.Forms
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Skill Timer";
-            // 
-            // cbRefreshKey
-            // 
-            this.cbRefreshKey.DisplayMember = "Key";
-            this.cbRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbRefreshKey.FormattingEnabled = true;
-            this.cbRefreshKey.Location = new System.Drawing.Point(86, 50);
-            this.cbRefreshKey.Name = "cbRefreshKey";
-            this.cbRefreshKey.Size = new System.Drawing.Size(69, 24);
-            this.cbRefreshKey.TabIndex = 3;
-            this.cbRefreshKey.ValueMember = "Value";
-            this.cbRefreshKey.SelectedIndexChanged += new System.EventHandler(this.autoRefreshKeyIndexChanged);
             // 
             // txtAutoRefreshDelay
             // 
@@ -95,6 +83,13 @@ namespace _4RTools.Forms
             this.lblAutoRefreshDelay.Text = "Delay (sec)";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // txtSkillTimerKey
+            // 
+            this.txtSkillTimerKey.Location = new System.Drawing.Point(84, 55);
+            this.txtSkillTimerKey.Name = "txtSkillTimerKey";
+            this.txtSkillTimerKey.Size = new System.Drawing.Size(69, 23);
+            this.txtSkillTimerKey.TabIndex = 4;
+            // 
             // AutoRefreshForm
             // 
             this.BackColor = System.Drawing.Color.White;
@@ -112,9 +107,9 @@ namespace _4RTools.Forms
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cbRefreshKey;
         private System.Windows.Forms.TextBox txtAutoRefreshDelay;
         private System.Windows.Forms.Label lblAutoRefreshKey;
         private System.Windows.Forms.Label lblAutoRefreshDelay;
+        private System.Windows.Forms.TextBox txtSkillTimerKey;
     }
 }

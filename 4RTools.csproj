@@ -132,7 +132,6 @@
     <Compile Include="Utils\FormUtils.cs" />
     <Compile Include="Utils\Interop.cs" />
     <Compile Include="Utils\KeyboardHook.cs" />
-    <Compile Include="Utils\KeyMap.cs" />
     <Compile Include="Utils\ProcessMemoryReader.cs" />
     <Compile Include="Utils\RObserver.cs" />
     <EmbeddedResource Include="Forms\AHKForm.resx">

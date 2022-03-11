@@ -14,7 +14,7 @@ namespace _4RTools.Forms
         {
             InitializeComponent();
             subject.Attach(this);
-            this.InitializeComboBoxes();
+            this.ConfigureInputs();
         }
 
         public void Update(ISubject subject)
@@ -24,7 +24,7 @@ namespace _4RTools.Forms
                 case MessageCode.PROFILE_CHANGED:
                     this.autobuff = ProfileSingleton.GetCurrent().ItemsAutoBuff;
                     Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(this.autobuff.buffMapping);
-                    this.updateComboValues(buffMappingClone);
+                    this.updateInputValues(buffMappingClone);
                     break;
                 case MessageCode.TURN_OFF:
                     this.autobuff.Stop();
@@ -34,56 +34,53 @@ namespace _4RTools.Forms
                     break;
             }
         }
-
-        private void onIndexChanged(object sender, EventArgs e)
+        private void ConfigureInputs()
+        {
+            foreach (Control c in this.Controls)
+                if (c is TextBox)
+                {
+                    TextBox textBox = (TextBox)c;
+                    textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+                    textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+                    textBox.TextChanged += new EventHandler(this.onTextChange);
+                }
+        }
+        private void updateInputValues(Dictionary<EffectStatusIDs, Key> autobuffDict)
+        {
+            FormUtils.ResetForm(this);
+            foreach (EffectStatusIDs effect in autobuffDict.Keys)
+            {
+                Control[] c = this.Controls.Find("in" + (int)effect, true);
+                if (c.Length > 0)
+                {
+                    TextBox textBox = (TextBox)c[0];
+                    textBox.Text = autobuffDict[effect].ToString();
+                }
+            }
+        }
+        private void onTextChange(object sender, EventArgs e)
         {
             try
             {
-                ComboBox cb = (ComboBox)sender;
-                Key key = (Key) cb.SelectedValue;
-                EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(cb.Name.Split(new[] { "cb" }, StringSplitOptions.None)[1]);
-                if (key == Key.None)
-                {
-                    this.autobuff.RemoveKey(statusID);
-                }
-                else
-                {
-                    this.autobuff.AddKeyToBuff(statusID, key);
-                }
+                TextBox txtBox = (TextBox)sender;
+                if (txtBox.Text.ToString() != String.Empty) {
+                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                    EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
 
-                ProfileSingleton.SetConfiguration(this.autobuff);
-            }catch { }
-        }
-
-        private void updateComboValues(Dictionary<EffectStatusIDs, Key> autobuffDict)
-        {
-                FormUtils.ResetForm(this);
-                foreach (EffectStatusIDs effect in autobuffDict.Keys)
-                {
-                    Control[] c = this.Controls.Find("cb" + (int)effect, true);
-                    if (c.Length > 0)
+                    if (key == Key.Escape)
                     {
-                        ComboBox combo = (ComboBox)c[0];
-                        combo.SelectedValue = autobuffDict[effect];
-                    }   
-                }
-        }
+                        this.autobuff.RemoveKey(statusID);
+                    }
+                    else
+                    {
+                        this.autobuff.AddKeyToBuff(statusID, key);
+                    }
 
-        void removeWheelMouse(object sender, System.Windows.Forms.MouseEventArgs e)
-        {
-            ((HandledMouseEventArgs)e).Handled = true;
-        }
-        private void InitializeComboBoxes()
-        {
-            foreach (Control c in this.Controls)
-                if (c is ComboBox)
-                {
-                    ComboBox comboBox = (ComboBox)c;
-                    comboBox.DataSource = new BindingSource(KeyMap.getDict(), null);
-                    comboBox.SelectedIndexChanged += new EventHandler(this.onIndexChanged);
-                    comboBox.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.removeWheelMouse);
+                    ProfileSingleton.SetConfiguration(this.autobuff);
                 }
+                
+            }
+            catch { }
         }
-
     }
 }

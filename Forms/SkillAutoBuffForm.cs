@@ -13,9 +13,11 @@ namespace _4RTools.Forms
 
         public SkillAutoBuffForm(Subject subject)
         {
+            this.KeyPreview = true;
             InitializeComponent();
             subject.Attach(this);
-            this.InitializeComboBoxes();
+            ConfigureInputs();
+
         }
 
         public void Update(ISubject subject)
@@ -25,7 +27,7 @@ namespace _4RTools.Forms
                 case MessageCode.PROFILE_CHANGED:
                     this.autobuff = ProfileSingleton.GetCurrent().SkillAutoBuff;
                     Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(this.autobuff.buffMapping);
-                    this.updateComboValues(buffMappingClone);
+                    this.updateInputValues(buffMappingClone);
                     break;
                 case MessageCode.TURN_OFF:
                     this.autobuff.Stop();
@@ -36,57 +38,58 @@ namespace _4RTools.Forms
             }
         }
 
-        private void onIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                ComboBox cb = (ComboBox)sender;
-                Key key = (Key)cb.SelectedValue;
-                EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(cb.Name.Split(new[] { "cb" }, StringSplitOptions.None)[1]);
-                if (key == Key.None)
-                {
-                    this.autobuff.RemoveKey(statusID);
-                }
-                else
-                {
-                    this.autobuff.AddKeyToBuff(statusID, key);
-                }
+ 
 
-                ProfileSingleton.SetConfiguration(this.autobuff);
-            }
-            catch { }
+        private void ConfigureInputs()
+        {
+            foreach (Control c in this.Controls)
+                if (c is TextBox)
+                {
+                    TextBox textBox = (TextBox)c;
+                    textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+                    textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+                    textBox.TextChanged += new EventHandler(this.onTextChange);
+                }
         }
 
-        private void updateComboValues(Dictionary<EffectStatusIDs, Key> autobuffDict)
+        private void updateInputValues(Dictionary<EffectStatusIDs, Key> autobuffDict)
         {
             FormUtils.ResetForm(this);
             foreach (EffectStatusIDs effect in autobuffDict.Keys)
             {
-                Control[] c = this.Controls.Find("cb" + (int)effect, true);
+                Control[] c = this.Controls.Find("in" + (int)effect, true);
                 if (c.Length > 0)
                 {
-                    ComboBox combo = (ComboBox)c[0];
-                    combo.SelectedValue = autobuffDict[effect];
+                    TextBox textBox = (TextBox)c[0];
+                    textBox.Text = autobuffDict[effect].ToString();
                 }
             }
         }
 
-        void removeWheelMouse(object sender, System.Windows.Forms.MouseEventArgs e)
+        private void onTextChange(object sender, EventArgs e)
         {
-            ((HandledMouseEventArgs)e).Handled = true;
-        }
+            try
+            {
 
-        private void InitializeComboBoxes()
-        {
-            foreach (Control c in this.Controls)
-                if (c is ComboBox)
+                TextBox txtBox = (TextBox)sender;
+                if (txtBox.Text.ToString() != String.Empty)
                 {
-                    ComboBox comboBox = (ComboBox)c;
-                    comboBox.DataSource = new BindingSource(KeyMap.getDict(), null);
-                    comboBox.SelectedIndexChanged += new EventHandler(this.onIndexChanged);
-                    comboBox.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.removeWheelMouse);
-                }
-        }
+                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                    EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
 
+                    if (key == Key.Escape)
+                    {
+                        this.autobuff.RemoveKey(statusID);
+                    }
+                    else
+                    {
+                        this.autobuff.AddKeyToBuff(statusID, key);
+                    }
+
+                    ProfileSingleton.SetConfiguration(this.autobuff);
+                }
+            }
+            catch { }
+        }
     }
 }

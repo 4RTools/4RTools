@@ -36,10 +36,10 @@
             this.txtAutopotDelay = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbSPKey = new System.Windows.Forms.ComboBox();
-            this.cbHPKey = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtHpKey = new System.Windows.Forms.TextBox();
+            this.txtSPKey = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSPpct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -113,30 +113,6 @@
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
-            // cbSPKey
-            // 
-            this.cbSPKey.DisplayMember = "Key";
-            this.cbSPKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbSPKey.FormattingEnabled = true;
-            this.cbSPKey.Location = new System.Drawing.Point(39, 40);
-            this.cbSPKey.Name = "cbSPKey";
-            this.cbSPKey.Size = new System.Drawing.Size(61, 24);
-            this.cbSPKey.TabIndex = 33;
-            this.cbSPKey.ValueMember = "Value";
-            this.cbSPKey.SelectedIndexChanged += new System.EventHandler(this.cbSPKeySelectedIndexChanged);
-            // 
-            // cbHPKey
-            // 
-            this.cbHPKey.DisplayMember = "Key";
-            this.cbHPKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbHPKey.FormattingEnabled = true;
-            this.cbHPKey.Location = new System.Drawing.Point(39, 11);
-            this.cbHPKey.Name = "cbHPKey";
-            this.cbHPKey.Size = new System.Drawing.Size(61, 24);
-            this.cbHPKey.TabIndex = 32;
-            this.cbHPKey.ValueMember = "Value";
-            this.cbHPKey.SelectedIndexChanged += new System.EventHandler(this.cbHPKeySelectedIndexChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -157,12 +133,28 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "ms";
             // 
+            // txtHpKey
+            // 
+            this.txtHpKey.Location = new System.Drawing.Point(38, 14);
+            this.txtHpKey.Name = "txtHpKey";
+            this.txtHpKey.Size = new System.Drawing.Size(61, 20);
+            this.txtHpKey.TabIndex = 43;
+            // 
+            // txtSPKey
+            // 
+            this.txtSPKey.Location = new System.Drawing.Point(38, 43);
+            this.txtSPKey.Name = "txtSPKey";
+            this.txtSPKey.Size = new System.Drawing.Size(61, 20);
+            this.txtSPKey.TabIndex = 44;
+            // 
             // AutopotForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(177, 100);
+            this.Controls.Add(this.txtSPKey);
+            this.Controls.Add(this.txtHpKey);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSPpct);
@@ -172,8 +164,6 @@
             this.Controls.Add(this.txtAutopotDelay);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.cbSPKey);
-            this.Controls.Add(this.cbHPKey);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AutopotForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -196,9 +186,9 @@
         private System.Windows.Forms.TextBox txtAutopotDelay;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox cbSPKey;
-        private System.Windows.Forms.ComboBox cbHPKey;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtHpKey;
+        private System.Windows.Forms.TextBox txtSPKey;
     }
 }

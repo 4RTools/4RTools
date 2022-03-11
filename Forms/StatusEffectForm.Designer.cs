@@ -31,7 +31,7 @@ namespace _4RTools.Forms
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbStatusEffectKey = new System.Windows.Forms.ComboBox();
+            this.txtStatusKey = new System.Windows.Forms.TextBox();
             this.lblKeyStatusEffect = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -39,7 +39,7 @@ namespace _4RTools.Forms
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.cbStatusEffectKey);
+            this.groupBox1.Controls.Add(this.txtStatusKey);
             this.groupBox1.Controls.Add(this.lblKeyStatusEffect);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -49,17 +49,12 @@ namespace _4RTools.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Status";
             // 
-            // cbStatusEffectKey
+            // txtStatusKey
             // 
-            this.cbStatusEffectKey.DisplayMember = "Key";
-            this.cbStatusEffectKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbStatusEffectKey.FormattingEnabled = true;
-            this.cbStatusEffectKey.Location = new System.Drawing.Point(10, 22);
-            this.cbStatusEffectKey.Name = "cbStatusEffectKey";
-            this.cbStatusEffectKey.Size = new System.Drawing.Size(61, 24);
-            this.cbStatusEffectKey.TabIndex = 10;
-            this.cbStatusEffectKey.ValueMember = "Value";
-            this.cbStatusEffectKey.SelectedIndexChanged += new System.EventHandler(this.statusEffectKeyIndexChanged);
+            this.txtStatusKey.Location = new System.Drawing.Point(9, 25);
+            this.txtStatusKey.Name = "txtStatusKey";
+            this.txtStatusKey.Size = new System.Drawing.Size(62, 23);
+            this.txtStatusKey.TabIndex = 11;
             // 
             // lblKeyStatusEffect
             // 
@@ -89,6 +84,6 @@ namespace _4RTools.Forms
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblKeyStatusEffect;
-        private System.Windows.Forms.ComboBox cbStatusEffectKey;
+        private System.Windows.Forms.TextBox txtStatusKey;
     }
 }
