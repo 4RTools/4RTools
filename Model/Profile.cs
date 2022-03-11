@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using _4RTools.Utils;
+using _4RTools.Forms;
 using System.IO;
 using System;
 
@@ -27,7 +28,7 @@ namespace _4RTools.Model
                     profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByProperty(rawObject, "AutoRefreshSpammer", new AutoRefreshSpammer().GetConfiguration()));
                     profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "ItemsAutoBuff", new AutoBuff("ItemsAutoBuff").GetConfiguration()));
                     profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "SkillAutoBuff", new AutoBuff("SkillAutoBuff").GetConfiguration()));
-                    profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByProperty(rawObject, "SongMacro", new Macro("SongMacro").GetConfiguration()));
+                    profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByProperty(rawObject, "SongMacro", new Macro("SongMacro",MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS).GetConfiguration()));
                 }
 
 
@@ -81,7 +82,7 @@ namespace _4RTools.Model
             this.StatusAutoBuff = new AutoBuff("StatusAutoBuff");
             this.ItemsAutoBuff = new AutoBuff("ItemsAutoBuff");
             this.SkillAutoBuff = new AutoBuff("SkillAutoBuff");
-            this.SongMacro = new Macro("SongMacro");
+            this.SongMacro = new Macro("SongMacro",4);
         }
 
         public static object GetByProperty(dynamic obj, string property, object fallback)

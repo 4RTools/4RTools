@@ -78,16 +78,6 @@ namespace _4RTools.Forms
             ProfileSingleton.SetConfiguration(this.autopot);
         }
 
-        private void cbSPKeySelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (this.autopot != null)
-            {
-                Key key = (Key)Enum.Parse(typeof(Key), txtSPKey.Text.ToString());
-                this.autopot.spKey = key;
-                ProfileSingleton.SetConfiguration(this.autopot);
-            }
-        }
-
         private void txtAutopotDelayTextChanged(object sender, EventArgs e)
         {
             try

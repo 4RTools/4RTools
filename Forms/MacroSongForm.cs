@@ -10,16 +10,25 @@ namespace _4RTools.Forms
 {
     public partial class MacroSongForm : Form, IObserver
     {
-        private Macro songMacro = new Macro("SongMacro");
+        public static int TOTAL_MACRO_LANES_FOR_SONGS = 4;
+        private Macro songMacro;
         public MacroSongForm(Subject subject)
         {
-            
+            songMacro = new Macro("SongMacro", TOTAL_MACRO_LANES_FOR_SONGS);
             subject.Attach(this);
             InitializeComponent();
-            InitializeComboBoxes(this.panelMacro1);
-            InitializeComboBoxes(this.panelMacro2);
-            InitializeComboBoxes(this.panelMacro3);
-            InitializeComboBoxes(this.panelMacro4);
+
+            for (int i = 0; i <= TOTAL_MACRO_LANES_FOR_SONGS - 1; i++)
+            {
+                var id = i + 1;
+                Control[] c = this.Controls.Find("panelMacro" + id, true);
+                if (c.Length > 0)
+                {
+                    Panel panel = (Panel)c[0];
+                    initializeLane(panel);
+                }
+            }
+
         }
 
         public void Update(ISubject subject)
@@ -28,14 +37,14 @@ namespace _4RTools.Forms
             {
                 this.songMacro = ProfileSingleton.GetCurrent().SongMacro;
 
-                for(int i = 0; i <= this.songMacro.configs.Count - 1; i++)
+                for(int i = 0; i <= TOTAL_MACRO_LANES_FOR_SONGS - 1; i++)
                 {
                     var id = i + 1;
                     Control[] c = this.Controls.Find("panelMacro" + id, true);
                     if (c.Length > 0)
                     {
                         Panel panel = (Panel)c[0];
-                        UpdatePanelData(panel, this.songMacro.configs[i]);
+                        UpdatePanelData(panel, new MacroConfig(this.songMacro.configs[i]));
                     }
                 }
 
@@ -52,13 +61,13 @@ namespace _4RTools.Forms
 
         private void UpdatePanelData(Panel p, MacroConfig macroConfig)
         {
-   
+            FormUtils.ResetForm(p);
             //Update Trigger Macro Value
-            Control[] c = p.Controls.Find("cbTriggerMacro" + macroConfig.id, true);
+            Control[] c = p.Controls.Find("inTriggerMacro" + macroConfig.id, true);
             if (c.Length > 0)
             {
-                ComboBox combo = (ComboBox)c[0];
-                combo.SelectedValue = macroConfig.trigger;
+                TextBox textBox = (TextBox)c[0];
+                textBox.Text = macroConfig.trigger.ToString();
             }
 
             List<string> names = new List<string>(macroConfig.macroEntries.Keys);
@@ -67,8 +76,8 @@ namespace _4RTools.Forms
                 Control[] controls = p.Controls.Find(cbName, true);
                 if (controls.Length > 0)
                 {
-                    ComboBox combo = (ComboBox)controls[0];
-                    combo.SelectedValue = macroConfig.macroEntries[cbName];
+                    TextBox textBox = (TextBox)controls[0];
+                    textBox.Text = macroConfig.macroEntries[cbName].ToString();
                 }
             }
 
@@ -81,49 +90,28 @@ namespace _4RTools.Forms
             }
         }
 
-        private void onIndexChanged(object sender, EventArgs e)
+        private void onTextChange(object sender, EventArgs e)
         {
-            try
-            {
-                ComboBox cb = (ComboBox)sender;
-                Key key = (Key)cb.SelectedValue;
-                string[] parts = cb.Name.Split(new[] { "cbTriggerMacro" }, StringSplitOptions.None);
+
+            TextBox textBox = (TextBox)sender;
+            Key key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
+            string[] parts = textBox.Name.Split(new[] { "inTriggerMacro" }, StringSplitOptions.None);
                 
-                if (parts.Length > 1) //It's a MacroTrigger
-                {
-                    int id = Int16.Parse(parts[1]);
-                    MacroConfig mc = this.songMacro.configs.Find(songMacro => songMacro.id == id);
-                    //If don't found a macro config with given cbTriggerMacroID
-                    if (mc == null)
-                    {
-                        songMacro.configs.Add(new MacroConfig(id, key));
-                    }
-                    else
-                    {
-                        mc.trigger = key;
-                    }
-                }
-                else
-                {
-                    int macroID = Int16.Parse(cb.Name.Split(new[] { "mac" }, StringSplitOptions.None)[1]);
-                    MacroConfig mc = this.songMacro.configs.Find(songMacro => songMacro.id == macroID);
-                    if (mc == null)
-                    {
-                        songMacro.configs.Add(new MacroConfig(macroID, Key.None));
-                        mc = this.songMacro.configs.Find(songMacro => songMacro.id == macroID);
-                    }
-
-                    if (mc.macroEntries.ContainsKey(cb.Name))
-                    {
-                        mc.macroEntries.Remove(cb.Name);
-                    }
-
-                    if(key != Key.None)
-                    mc.macroEntries.Add(cb.Name, key);
-                }
-                ProfileSingleton.SetConfiguration(this.songMacro);
+            if (parts.Length > 1) //It's a MacroTrigger
+            {
+                int id = Int16.Parse(parts[1]);
+                MacroConfig mc = this.songMacro.configs.Find(songMacro => songMacro.id == id);
+                mc.trigger = key;
+                //If don't found a macro config with given cbTriggerMacroID
             }
-            catch { }
+            else
+            {
+                int macroID = Int16.Parse(textBox.Name.Split(new[] { "mac" }, StringSplitOptions.None)[1]);
+                MacroConfig mc = this.songMacro.configs.Find(songMacro => songMacro.id == macroID);
+                mc.macroEntries[textBox.Name] = key;
+            }
+            ProfileSingleton.SetConfiguration(this.songMacro);
+
         }
 
         private void onDelayChange(object sender, EventArgs e)
@@ -131,35 +119,23 @@ namespace _4RTools.Forms
             NumericUpDown delayInput = (NumericUpDown)sender;
             int macroID = Int16.Parse(delayInput.Name.Split(new[] { "delayMac" }, StringSplitOptions.None)[1]);
             MacroConfig mc = this.songMacro.configs.Find(songMacro => songMacro.id == macroID);
-            if (mc == null)
-            {
-                songMacro.configs.Add(new MacroConfig(macroID, Key.None));
-                mc = this.songMacro.configs.Find(songMacro => songMacro.id == macroID);
-            }
             mc.delay = Int16.Parse(delayInput.Text);
             ProfileSingleton.SetConfiguration(this.songMacro);
         }
-        void removeWheelMouse(object sender, System.Windows.Forms.MouseEventArgs e)
-        {
-            ((HandledMouseEventArgs)e).Handled = true;
-        }
 
-        public void InitializeComboBoxes(Panel p)
+        public void initializeLane(Panel p)
         {
             foreach (Control c in p.Controls)
             {
-                if (c is ComboBox)
+                if (c is TextBox)
                 {
-                    ComboBox comboBox = (ComboBox)c;
-                    comboBox.DisplayMember = "Key";
-                    comboBox.ValueMember = "Value";
-                    comboBox.DataSource = new BindingSource(KeyMap.getDict(), null);
-                    comboBox.SelectedValueChanged += new EventHandler(this.onIndexChanged);
-                    comboBox.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.removeWheelMouse);
-                    Application.DoEvents(); //add this line
+                    TextBox textBox = (TextBox)c;
+                    textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+                    textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+                    textBox.TextChanged += new EventHandler(this.onTextChange);
                 }
 
-                if(c is NumericUpDown)
+                if (c is NumericUpDown)
                 {
                     NumericUpDown numericBox = (NumericUpDown)c;
                     numericBox.ValueChanged += new EventHandler(this.onDelayChange);

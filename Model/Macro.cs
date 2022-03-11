@@ -18,6 +18,13 @@ namespace _4RTools.Model
 
         public MacroConfig() { }
 
+        public MacroConfig(MacroConfig macro)
+        {
+            this.id = macro.id;
+            this.delay = macro.delay;
+            this.trigger = macro.trigger;
+            this.macroEntries = new Dictionary<string, Key>(macro.macroEntries);
+        }
         public MacroConfig(int id, Key trigger)
         {
             this.id = id;
@@ -30,6 +37,15 @@ namespace _4RTools.Model
             this.delay = d;
             this.macroEntries = macroEntries;
         }
+
+        public MacroConfig DeepCopy()
+        {
+            MacroConfig temp = (MacroConfig)this.MemberwiseClone();
+            temp.id = this.id;
+            temp.trigger = this.trigger;
+            temp.macroEntries = this.macroEntries;
+            return temp;
+        }
     }
 
     public class Macro : Action
@@ -38,9 +54,15 @@ namespace _4RTools.Model
         private Thread macroThread;
         public List<MacroConfig> configs { get; set; } = new List<MacroConfig>();
 
-        public Macro(string macroname)
+
+        public Macro(string macroname, int macroLanes)
         {
             this.actionName = macroname;
+            for(int i = 1; i <= macroLanes; i++)
+            {
+                configs.Add(new MacroConfig(i, Key.None));
+
+            }
         }
 
         public string GetActionName()

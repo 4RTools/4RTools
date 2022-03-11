@@ -13,6 +13,7 @@ namespace _4RTools.Forms
     {
 
         private Subject subject = new Subject();
+        private String currentProfile;
         
         public Container()
         {
@@ -238,8 +239,14 @@ namespace _4RTools.Forms
 
         private void profileCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
-            subject.Notify(new Utils.Message(Utils.MessageCode.PROFILE_CHANGED, null));
+            if (this.profileCB.Text != currentProfile)
+            {
+                ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
+                subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
+                currentProfile = this.profileCB.Text.ToString();
+                Console.WriteLine("Profile Loaded:" + this.profileCB.Text.ToString());
+            }
+          
         }
 
         private void containerResize(object sender, EventArgs e)

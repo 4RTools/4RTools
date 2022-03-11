@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Input;
-
+using static System.Windows.Forms.Control;
 
 namespace _4RTools.Utils
 {
@@ -35,14 +35,14 @@ namespace _4RTools.Utils
             e.Handled = true;
         }
 
-        public static void ResetForm(Form form)
+        private static void resetForm(ControlCollection controls)
         {
-            foreach (Control control in form.Controls)
+            foreach (Control control in controls)
             {
                 if (control is TextBox)
                 {
                     TextBox textBox = (TextBox)control;
-                    textBox.Text = null;
+                    textBox.Text = Key.None.ToString();
                 }
 
                 if (control is ComboBox)
@@ -64,7 +64,16 @@ namespace _4RTools.Utils
                     listBox.ClearSelected();
                 }
             }
+        }
 
+        public static void ResetForm(Form form)
+        {
+            resetForm(form.Controls);
+        }
+
+        public static void ResetForm(Panel panel)
+        {
+            resetForm(panel.Controls);
         }
     }
 }
