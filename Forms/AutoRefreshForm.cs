@@ -16,8 +16,9 @@ namespace _4RTools.Forms
             subject.Attach(this);
 
             // Default values
-            this.cbRefreshKey.DataSource = new BindingSource(KeyMap.getDict(), null);
-            this.cbRefreshKey.SelectedValue = Key.None;
+            this.txtSkillTimerKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            this.txtSkillTimerKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            this.txtSkillTimerKey.TextChanged += new EventHandler(this.onSkillTimerKeyChange);
         }
 
         public void Update(ISubject subject)
@@ -39,15 +40,18 @@ namespace _4RTools.Forms
 
         private void InitializeApplicationForm()
         {
-            this.cbRefreshKey.SelectedValue = this.autoRefreshSpammer.refreshKey;
+            this.txtSkillTimerKey.Text = this.autoRefreshSpammer.refreshKey.ToString();
             this.txtAutoRefreshDelay.Text = this.autoRefreshSpammer.refreshDelay.ToString();
         }
 
-        private void autoRefreshKeyIndexChanged(object sender, EventArgs e)
+        private void onSkillTimerKeyChange(object sender, EventArgs e)
         {
-            this.autoRefreshSpammer.refreshKey = (Key)this.cbRefreshKey.SelectedValue;
+            Key key = (Key)Enum.Parse(typeof(Key), txtSkillTimerKey.Text.ToString());
+            this.autoRefreshSpammer.refreshKey = key;
             ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
         }
+
+
 
         private void txtAutoRefreshDelayTextChanged(object sender, EventArgs e)
         {

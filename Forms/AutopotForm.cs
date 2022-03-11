@@ -14,8 +14,6 @@ namespace _4RTools.Forms
         {
             InitializeComponent();
             subject.Attach(this);
-            this.cbHPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
-            this.cbSPKey.DataSource = new BindingSource(KeyMap.getDict(), null);
             this.autopot = new Autopot();
 
             // loadProfile
@@ -49,28 +47,43 @@ namespace _4RTools.Forms
 
         private void InitializeApplicationForm()
         {
-            this.cbHPKey.SelectedValue = this.autopot.hpKey;
-            this.cbSPKey.SelectedValue = this.autopot.spKey;
+            this.txtHpKey.Text = this.autopot.hpKey.ToString();
+            this.txtSPKey.Text = this.autopot.spKey.ToString();
             this.txtHPpct.Text = this.autopot.hpPercent.ToString();
             this.txtSPpct.Text = this.autopot.spPercent.ToString();
             this.txtAutopotDelay.Text = this.autopot.delay.ToString();
+
+
+            txtHpKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            txtHpKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            txtHpKey.TextChanged += new EventHandler(this.onHpTextChange);
+            txtSPKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            txtSPKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            txtSPKey.TextChanged += new EventHandler(this.onSpTextChange);
+
+
         }
 
-        private void cbHPKeySelectedIndexChanged(object sender, EventArgs e)
+        private void onHpTextChange(object sender, EventArgs e)
         {
-            if (this.autopot != null)
-            {
-                this.autopot.hpKey = (Key)this.cbHPKey.SelectedValue;
-                ProfileSingleton.SetConfiguration(this.autopot);
-            }
+            Key key = (Key)Enum.Parse(typeof(Key), txtHpKey.Text.ToString());
+            this.autopot.hpKey = key;
+            ProfileSingleton.SetConfiguration(this.autopot);
+        }
 
+        private void onSpTextChange(object sender, EventArgs e)
+        {
+            Key key = (Key)Enum.Parse(typeof(Key), txtSPKey.Text.ToString());
+            this.autopot.spKey = key;
+            ProfileSingleton.SetConfiguration(this.autopot);
         }
 
         private void cbSPKeySelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.autopot != null)
             {
-                this.autopot.spKey = (Key)this.cbSPKey.SelectedValue;
+                Key key = (Key)Enum.Parse(typeof(Key), txtSPKey.Text.ToString());
+                this.autopot.spKey = key;
                 ProfileSingleton.SetConfiguration(this.autopot);
             }
         }
@@ -104,7 +117,7 @@ namespace _4RTools.Forms
                 ProfileSingleton.SetConfiguration(this.autopot);
             }
             catch (Exception) { }
-
         }
+
     }
 }
