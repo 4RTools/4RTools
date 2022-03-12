@@ -45,9 +45,9 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(267, 17);
+            this.btnSave.Location = new System.Drawing.Point(267, 29);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(83, 32);
+            this.btnSave.Size = new System.Drawing.Size(78, 20);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Create";
             this.btnSave.UseVisualStyleBackColor = true;
