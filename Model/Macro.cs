@@ -30,22 +30,6 @@ namespace _4RTools.Model
             this.id = id;
             this.trigger = trigger;
         }
-
-        public MacroConfig(Key k, int d, Dictionary<string, Key> macroEntries)
-        {
-            this.trigger = k;
-            this.delay = d;
-            this.macroEntries = macroEntries;
-        }
-
-        public MacroConfig DeepCopy()
-        {
-            MacroConfig temp = (MacroConfig)this.MemberwiseClone();
-            temp.id = this.id;
-            temp.trigger = this.trigger;
-            temp.macroEntries = this.macroEntries;
-            return temp;
-        }
     }
 
     public class Macro : Action
