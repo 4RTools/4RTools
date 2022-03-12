@@ -14,13 +14,11 @@ namespace _4RTools.Model
     {
         public Dictionary<string,Key> ahkEntries { get; set; } = new Dictionary<string, Key>();
         private string ACTION_NAME = "AHK";
-        private System.Windows.Forms.Cursor cursor;
         public int ahkDelay { get; set; } = 10;
         private Thread ahkThread;
 
         public AHK()
         {
-            this.cursor = new System.Windows.Forms.Cursor(System.Windows.Forms.Cursor.Current.Handle);
         }
 
         public void Start()
