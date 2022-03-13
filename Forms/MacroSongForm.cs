@@ -44,7 +44,11 @@ namespace _4RTools.Forms
                     if (c.Length > 0)
                     {
                         Panel panel = (Panel)c[0];
-                        UpdatePanelData(panel, new MacroConfig(this.songMacro.configs[i]));
+                        try {
+                            UpdatePanelData(panel, new MacroConfig(this.songMacro.configs[i]));
+                        }
+                        catch { }
+                        
                     }
                 }
 
