@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using _4RTools.Model;
+using System.Media;
 using _4RTools.Utils;
 using _4RTools.Properties;
 
@@ -20,10 +21,10 @@ namespace _4RTools.Forms
             Config.Load();
             if (!Directory.Exists(Config.ReadSetting("ProfileFolder")))
             {
-                Directory.CreateDirectory(Utils.Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
+                Directory.CreateDirectory(Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
             }
             InitializeComponent();
-            Text = Config.ReadSetting("Name") + " - " + Utils.Config.ReadSetting("Version");
+            Text = Config.ReadSetting("Name") + " - " + Config.ReadSetting("Version");
             KeyboardHook.Enable();
             KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
 
@@ -199,17 +200,18 @@ namespace _4RTools.Forms
         private bool toggleStatus()
         {
             bool statusOn = this.btnStatusToggle.Text == "ON";
-
             if (statusOn) {
                 this.btnStatusToggle.BackColor = Color.Red;
                 this.btnStatusToggle.Text = "OFF";
                 this.notifyIconTray.Icon = Resources.logo_4rtools_off;
                 subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
+                new SoundPlayer(Resources.Speech_Off).Play();
             } else {
                 this.btnStatusToggle.BackColor = Color.Green;
                 this.btnStatusToggle.Text = "ON";
                 this.notifyIconTray.Icon = Resources.logo_4rtools_on;
                 subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
+                new SoundPlayer(Resources.Speech_On).Play();
             }
 
             return true;

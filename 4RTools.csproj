@@ -133,6 +133,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils\EffectStatusIDs.cs" />
     <Compile Include="Utils\Config.cs" />
     <Compile Include="Utils\Constants.cs" />
@@ -171,17 +176,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="app.manifest" />
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\_4RTools.Utils.KeyMap.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -197,6 +196,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-4rtools.ico" />
+    <None Include="Resources\Speech_On.wav" />
+    <None Include="Resources\Speech_Off.wav" />
     <None Include="Resources\logo_4rtools_off.ico" />
     <None Include="Resources\logo_4rtools_on.ico" />
   </ItemGroup>
