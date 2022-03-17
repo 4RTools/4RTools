@@ -35,7 +35,6 @@ namespace _4RTools.Forms
             //Paint Children Forms Below
             SetAutopotWindow();
             SetAutoStatusEffectWindow();
-            SetAutoRefreshWindow();
             SetAHKWindow();
             SetProfileWindow();
             SetAutobuffStuffWindow();
@@ -48,7 +47,7 @@ namespace _4RTools.Forms
         {
             AutopotForm frm = new AutopotForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0,90);
+            frm.Location = new Point(25,70);
             frm.MdiParent = this;
             frm.Show();
         }
@@ -57,16 +56,7 @@ namespace _4RTools.Forms
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(225, 70);
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        public void SetAutoRefreshWindow()
-        {
-            AutoRefreshForm form = new AutoRefreshForm(subject);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(225, 136);
+            form.Location = new Point(50, 185);
             form.MdiParent = this;
             form.Show();
         }

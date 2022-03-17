@@ -30,60 +30,61 @@ namespace _4RTools.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatusEffectForm));
             this.txtStatusKey = new System.Windows.Forms.TextBox();
-            this.lblKeyStatusEffect = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.txtStatusKey);
-            this.groupBox1.Controls.Add(this.lblKeyStatusEffect);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(121, 64);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Status";
             // 
             // txtStatusKey
             // 
-            this.txtStatusKey.Location = new System.Drawing.Point(9, 25);
+            this.txtStatusKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtStatusKey.Location = new System.Drawing.Point(71, 9);
             this.txtStatusKey.Name = "txtStatusKey";
-            this.txtStatusKey.Size = new System.Drawing.Size(62, 23);
+            this.txtStatusKey.Size = new System.Drawing.Size(61, 23);
             this.txtStatusKey.TabIndex = 11;
             // 
-            // lblKeyStatusEffect
+            // pictureBox1
             // 
-            this.lblKeyStatusEffect.AutoSize = true;
-            this.lblKeyStatusEffect.Location = new System.Drawing.Point(77, 25);
-            this.lblKeyStatusEffect.Name = "lblKeyStatusEffect";
-            this.lblKeyStatusEffect.Size = new System.Drawing.Size(32, 17);
-            this.lblKeyStatusEffect.TabIndex = 9;
-            this.lblKeyStatusEffect.Text = "Key";
-            this.lblKeyStatusEffect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(8, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Status";
             // 
             // StatusEffectForm
             // 
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(121, 65);
-            this.Controls.Add(this.groupBox1);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(141, 39);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtStatusKey);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StatusEffectForm";
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "StatusEffect";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblKeyStatusEffect;
         private System.Windows.Forms.TextBox txtStatusKey;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

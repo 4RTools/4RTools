@@ -85,7 +85,7 @@ namespace _4RTools.Model
                                 }
                             }
                         }
-                        catch (Exception e) { }
+                        catch (Exception) { }
                         Thread.Sleep(100);
                     }
                 });
