@@ -78,9 +78,13 @@ namespace _4RTools.Model
                                     for (int i = 1; i <= macro.Count;i++)//Ensure to execute keys in Order
                                     {
                                         Key macroKey = macro["in" + i + "mac" + mc.id];
-                                        Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.ToString());
-                                        Thread.Sleep(mc.delay);
-                                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                                        if(macroKey != Key.None)
+                                        {
+                                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.ToString());
+                                            Thread.Sleep(mc.delay);
+                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                                        }
+
                                     }
                                 }
                             }
