@@ -52,12 +52,14 @@ namespace _4RTools.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.lblCharacterName = new System.Windows.Forms.Label();
             this.characterName = new System.Windows.Forms.Label();
-            this.btnStatusToggle = new System.Windows.Forms.Button();
-            this.lblStatusToggle = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
+            this.lblStatusToggle = new System.Windows.Forms.Label();
+            this.btnStatusToggle = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabLayout.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblProcessName
@@ -73,16 +75,16 @@ namespace _4RTools.Forms
             // processCB
             // 
             this.processCB.FormattingEnabled = true;
-            this.processCB.Location = new System.Drawing.Point(16, 29);
+            this.processCB.Location = new System.Drawing.Point(17, 29);
             this.processCB.Name = "processCB";
-            this.processCB.Size = new System.Drawing.Size(150, 21);
+            this.processCB.Size = new System.Drawing.Size(181, 21);
             this.processCB.TabIndex = 2;
             this.processCB.SelectedIndexChanged += new System.EventHandler(this.processCB_SelectedIndexChanged);
             // 
             // btnRefresh
             // 
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(165, 28);
+            this.btnRefresh.Location = new System.Drawing.Point(197, 28);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(19, 22);
             this.btnRefresh.TabIndex = 5;
@@ -196,7 +198,7 @@ namespace _4RTools.Forms
             // 
             this.labelProfile.AutoSize = true;
             this.labelProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelProfile.Location = new System.Drawing.Point(198, 9);
+            this.labelProfile.Location = new System.Drawing.Point(252, 9);
             this.labelProfile.Name = "labelProfile";
             this.labelProfile.Size = new System.Drawing.Size(48, 17);
             this.labelProfile.TabIndex = 15;
@@ -205,9 +207,9 @@ namespace _4RTools.Forms
             // profileCB
             // 
             this.profileCB.FormattingEnabled = true;
-            this.profileCB.Location = new System.Drawing.Point(201, 29);
+            this.profileCB.Location = new System.Drawing.Point(256, 29);
             this.profileCB.Name = "profileCB";
-            this.profileCB.Size = new System.Drawing.Size(150, 21);
+            this.profileCB.Size = new System.Drawing.Size(181, 21);
             this.profileCB.TabIndex = 14;
             this.profileCB.SelectedIndexChanged += new System.EventHandler(this.profileCB_SelectedIndexChanged);
             // 
@@ -242,7 +244,7 @@ namespace _4RTools.Forms
             // lblCharacterName
             // 
             this.lblCharacterName.AutoSize = true;
-            this.lblCharacterName.Location = new System.Drawing.Point(12, 77);
+            this.lblCharacterName.Location = new System.Drawing.Point(262, 88);
             this.lblCharacterName.Name = "lblCharacterName";
             this.lblCharacterName.Size = new System.Drawing.Size(87, 13);
             this.lblCharacterName.TabIndex = 19;
@@ -253,41 +255,16 @@ namespace _4RTools.Forms
             this.characterName.AutoSize = true;
             this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.characterName.Location = new System.Drawing.Point(99, 77);
+            this.characterName.Location = new System.Drawing.Point(262, 101);
             this.characterName.Name = "characterName";
-            this.characterName.Size = new System.Drawing.Size(11, 13);
+            this.characterName.Size = new System.Drawing.Size(19, 13);
             this.characterName.TabIndex = 20;
-            this.characterName.Text = "-";
-            // 
-            // btnStatusToggle
-            // 
-            this.btnStatusToggle.BackColor = System.Drawing.Color.Red;
-            this.btnStatusToggle.FlatAppearance.BorderSize = 0;
-            this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(362, 13);
-            this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
-            this.btnStatusToggle.Name = "btnStatusToggle";
-            this.btnStatusToggle.Size = new System.Drawing.Size(73, 28);
-            this.btnStatusToggle.TabIndex = 21;
-            this.btnStatusToggle.Text = "OFF";
-            this.btnStatusToggle.UseVisualStyleBackColor = false;
-            this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
-            // 
-            // lblStatusToggle
-            // 
-            this.lblStatusToggle.AutoSize = true;
-            this.lblStatusToggle.Location = new System.Drawing.Point(354, 44);
-            this.lblStatusToggle.Name = "lblStatusToggle";
-            this.lblStatusToggle.Size = new System.Drawing.Size(93, 13);
-            this.lblStatusToggle.TabIndex = 22;
-            this.lblStatusToggle.Text = "Press the End key";
+            this.characterName.Text = "- -";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(201, 77);
+            this.panel5.Location = new System.Drawing.Point(255, 79);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1, 161);
             this.panel5.TabIndex = 18;
@@ -298,16 +275,51 @@ namespace _4RTools.Forms
             this.notifyIconTray.Text = "4ROTools";
             this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
             // 
+            // lblStatusToggle
+            // 
+            this.lblStatusToggle.AutoSize = true;
+            this.lblStatusToggle.Location = new System.Drawing.Point(43, 70);
+            this.lblStatusToggle.Name = "lblStatusToggle";
+            this.lblStatusToggle.Size = new System.Drawing.Size(93, 13);
+            this.lblStatusToggle.TabIndex = 22;
+            this.lblStatusToggle.Text = "Press the End key";
+            // 
+            // btnStatusToggle
+            // 
+            this.btnStatusToggle.BackColor = System.Drawing.Color.Red;
+            this.btnStatusToggle.FlatAppearance.BorderSize = 0;
+            this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnStatusToggle.Location = new System.Drawing.Point(50, 36);
+            this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
+            this.btnStatusToggle.Name = "btnStatusToggle";
+            this.btnStatusToggle.Size = new System.Drawing.Size(73, 28);
+            this.btnStatusToggle.TabIndex = 21;
+            this.btnStatusToggle.Text = "OFF";
+            this.btnStatusToggle.UseVisualStyleBackColor = false;
+            this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnStatusToggle);
+            this.groupBox1.Controls.Add(this.lblStatusToggle);
+            this.groupBox1.Location = new System.Drawing.Point(265, 117);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(178, 105);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Current Status";
+            // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(455, 576);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.lblStatusToggle);
-            this.Controls.Add(this.btnStatusToggle);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.lblCharacterName);
             this.Controls.Add(this.label1);
@@ -329,6 +341,8 @@ namespace _4RTools.Forms
             this.tabLayout.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,12 +367,13 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCharacterName;
         private System.Windows.Forms.Label characterName;
-        private System.Windows.Forms.Button btnStatusToggle;
-        private Label lblStatusToggle;
         private Panel panel5;
         private TabPage tabPageAutobuffStuff;
         private TabPage tabPageMacroSongs;
         private NotifyIcon notifyIconTray;
         private TabPage tabPageProfiles;
+        private Label lblStatusToggle;
+        private Button btnStatusToggle;
+        private GroupBox groupBox1;
     }
 }
