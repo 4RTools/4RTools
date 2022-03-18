@@ -166,7 +166,7 @@
       <DependentUpon>StatusEffectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -187,6 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-4rtools.ico" />
+    <None Include="Resources\Yggdrasil.bmp" />
     <None Include="Resources\Speech_On.wav" />
     <None Include="Resources\Speech_Off.wav" />
     <None Include="Resources\logo_4rtools_off.ico" />
