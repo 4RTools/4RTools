@@ -33,8 +33,8 @@
             this.labelSP = new System.Windows.Forms.Label();
             this.labelHP = new System.Windows.Forms.Label();
             this.txtAutopotDelay = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBoxSP = new System.Windows.Forms.PictureBox();
+            this.picBoxHP = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHpKey = new System.Windows.Forms.TextBox();
@@ -43,8 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtSPpct = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSPpct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,25 +86,25 @@
             this.txtAutopotDelay.TabIndex = 36;
             this.txtAutopotDelay.TextChanged += new System.EventHandler(this.txtAutopotDelayTextChanged);
             // 
-            // pictureBox2
+            // picBoxSP
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(11, 37);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 35;
-            this.pictureBox2.TabStop = false;
+            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
+            this.picBoxSP.Location = new System.Drawing.Point(11, 37);
+            this.picBoxSP.Name = "picBoxSP";
+            this.picBoxSP.Size = new System.Drawing.Size(25, 25);
+            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBoxSP.TabIndex = 35;
+            this.picBoxSP.TabStop = false;
             // 
-            // pictureBox1
+            // picBoxHP
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
+            this.picBoxHP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxHP.Image")));
+            this.picBoxHP.Location = new System.Drawing.Point(11, 11);
+            this.picBoxHP.Name = "picBoxHP";
+            this.picBoxHP.Size = new System.Drawing.Size(25, 25);
+            this.picBoxHP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBoxHP.TabIndex = 34;
+            this.picBoxHP.TabStop = false;
             // 
             // label2
             // 
@@ -186,15 +186,15 @@
             this.Controls.Add(this.labelSP);
             this.Controls.Add(this.labelHP);
             this.Controls.Add(this.txtAutopotDelay);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picBoxSP);
+            this.Controls.Add(this.picBoxHP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AutopotForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "AutopotForm";
             ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSPpct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,8 +206,8 @@
         private System.Windows.Forms.Label labelSP;
         private System.Windows.Forms.Label labelHP;
         private System.Windows.Forms.TextBox txtAutopotDelay;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBoxSP;
+        private System.Windows.Forms.PictureBox picBoxHP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHpKey;

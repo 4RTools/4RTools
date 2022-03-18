@@ -57,9 +57,13 @@ namespace _4RTools.Forms
             this.lblStatusToggle = new System.Windows.Forms.Label();
             this.btnStatusToggle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageAutopot = new System.Windows.Forms.TabPage();
+            this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabLayout.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblProcessName
@@ -96,7 +100,7 @@ namespace _4RTools.Forms
             this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpammer.Name = "tabPageSpammer";
             this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(424, 255);
+            this.tabPageSpammer.Size = new System.Drawing.Size(424, 274);
             this.tabPageSpammer.TabIndex = 1;
             this.tabPageSpammer.Text = "Skill Spammer";
             this.tabPageSpammer.UseVisualStyleBackColor = true;
@@ -106,7 +110,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffSkill.Name = "tabPageAutobuffSkill";
             this.tabPageAutobuffSkill.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(424, 255);
+            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(424, 274);
             this.tabPageAutobuffSkill.TabIndex = 3;
             this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
             this.tabPageAutobuffSkill.UseVisualStyleBackColor = true;
@@ -118,10 +122,10 @@ namespace _4RTools.Forms
             this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
             this.tabLayout.Controls.Add(this.tabPageMacroSongs);
             this.tabLayout.Controls.Add(this.tabPageProfiles);
-            this.tabLayout.Location = new System.Drawing.Point(15, 246);
+            this.tabLayout.Location = new System.Drawing.Point(15, 274);
             this.tabLayout.Name = "tabLayout";
             this.tabLayout.SelectedIndex = 0;
-            this.tabLayout.Size = new System.Drawing.Size(432, 281);
+            this.tabLayout.Size = new System.Drawing.Size(432, 300);
             this.tabLayout.TabIndex = 6;
             // 
             // tabPageAutobuffStuff
@@ -129,7 +133,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
             this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 255);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 274);
             this.tabPageAutobuffStuff.TabIndex = 4;
             this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
             this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
@@ -139,7 +143,7 @@ namespace _4RTools.Forms
             this.tabPageMacroSongs.Location = new System.Drawing.Point(4, 22);
             this.tabPageMacroSongs.Name = "tabPageMacroSongs";
             this.tabPageMacroSongs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMacroSongs.Size = new System.Drawing.Size(424, 255);
+            this.tabPageMacroSongs.Size = new System.Drawing.Size(424, 274);
             this.tabPageMacroSongs.TabIndex = 6;
             this.tabPageMacroSongs.Text = "Macro Songs";
             this.tabPageMacroSongs.UseVisualStyleBackColor = true;
@@ -149,7 +153,7 @@ namespace _4RTools.Forms
             this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
             this.tabPageProfiles.Name = "tabPageProfiles";
             this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(424, 255);
+            this.tabPageProfiles.Size = new System.Drawing.Size(424, 274);
             this.tabPageProfiles.TabIndex = 5;
             this.tabPageProfiles.Text = "Profiles";
             this.tabPageProfiles.UseVisualStyleBackColor = true;
@@ -220,9 +224,9 @@ namespace _4RTools.Forms
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.lblLinkDiscord);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(-1, 533);
+            this.panel3.Location = new System.Drawing.Point(0, 580);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(508, 61);
+            this.panel3.Size = new System.Drawing.Size(456, 43);
             this.panel3.TabIndex = 16;
             // 
             // panel4
@@ -244,7 +248,7 @@ namespace _4RTools.Forms
             // lblCharacterName
             // 
             this.lblCharacterName.AutoSize = true;
-            this.lblCharacterName.Location = new System.Drawing.Point(262, 88);
+            this.lblCharacterName.Location = new System.Drawing.Point(266, 190);
             this.lblCharacterName.Name = "lblCharacterName";
             this.lblCharacterName.Size = new System.Drawing.Size(87, 13);
             this.lblCharacterName.TabIndex = 19;
@@ -255,7 +259,7 @@ namespace _4RTools.Forms
             this.characterName.AutoSize = true;
             this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.characterName.Location = new System.Drawing.Point(262, 101);
+            this.characterName.Location = new System.Drawing.Point(266, 203);
             this.characterName.Name = "characterName";
             this.characterName.Size = new System.Drawing.Size(19, 13);
             this.characterName.TabIndex = 20;
@@ -266,7 +270,7 @@ namespace _4RTools.Forms
             this.panel5.BackColor = System.Drawing.Color.Silver;
             this.panel5.Location = new System.Drawing.Point(255, 79);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 161);
+            this.panel5.Size = new System.Drawing.Size(1, 180);
             this.panel5.TabIndex = 18;
             // 
             // notifyIconTray
@@ -304,19 +308,51 @@ namespace _4RTools.Forms
             // 
             this.groupBox1.Controls.Add(this.btnStatusToggle);
             this.groupBox1.Controls.Add(this.lblStatusToggle);
-            this.groupBox1.Location = new System.Drawing.Point(265, 117);
+            this.groupBox1.Location = new System.Drawing.Point(265, 78);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(178, 105);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Current Status";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPageAutopot);
+            this.tabControl1.Controls.Add(this.tabPageYggAutopot);
+            this.tabControl1.Location = new System.Drawing.Point(22, 83);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(218, 127);
+            this.tabControl1.TabIndex = 25;
+            // 
+            // tabPageAutopot
+            // 
+            this.tabPageAutopot.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutopot.Name = "tabPageAutopot";
+            this.tabPageAutopot.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutopot.Size = new System.Drawing.Size(210, 101);
+            this.tabPageAutopot.TabIndex = 0;
+            this.tabPageAutopot.Text = "Autopot";
+            this.tabPageAutopot.UseVisualStyleBackColor = true;
+            this.tabPageAutopot.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // tabPageYggAutopot
+            // 
+            this.tabPageYggAutopot.Location = new System.Drawing.Point(4, 22);
+            this.tabPageYggAutopot.Name = "tabPageYggAutopot";
+            this.tabPageYggAutopot.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageYggAutopot.Size = new System.Drawing.Size(210, 101);
+            this.tabPageYggAutopot.TabIndex = 1;
+            this.tabPageYggAutopot.Text = "Yggdrasil";
+            this.tabPageYggAutopot.UseVisualStyleBackColor = true;
+            // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(455, 576);
+            this.ClientSize = new System.Drawing.Size(455, 625);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
@@ -336,6 +372,7 @@ namespace _4RTools.Forms
             this.Name = "Container";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4ROTools - Versão Beta";
+            this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Container_Load);
             this.Resize += new System.EventHandler(this.containerResize);
             this.tabLayout.ResumeLayout(false);
@@ -343,6 +380,7 @@ namespace _4RTools.Forms
             this.panel3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,5 +413,8 @@ namespace _4RTools.Forms
         private Label lblStatusToggle;
         private Button btnStatusToggle;
         private GroupBox groupBox1;
+        private TabControl tabControl1;
+        private TabPage tabPageAutopot;
+        private TabPage tabPageYggAutopot;
     }
 }

@@ -24,16 +24,18 @@ namespace _4RTools.Forms
                 Directory.CreateDirectory(Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
             }
             InitializeComponent();
-            Text = Config.ReadSetting("Name") + " - " + Config.ReadSetting("Version");
+            this.Text = Config.ReadSetting("Name") + " - " + Config.ReadSetting("Version");
             KeyboardHook.Enable();
-            KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
+            KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF
 
             //Container Configuration
             this.IsMdiContainer = true;
+            //this.TransparencyKey = Color.FromArgb(255, 220, 33, 55);
             SetBackGroundColorOfMDIForm();
 
             //Paint Children Forms Below
             SetAutopotWindow();
+            SetAutopotYggWindow();
             SetAutoStatusEffectWindow();
             SetAHKWindow();
             SetProfileWindow();
@@ -45,18 +47,25 @@ namespace _4RTools.Forms
 
         public void SetAutopotWindow()
         {
-            AutopotForm frm = new AutopotForm(subject);
+            AutopotForm frm = new AutopotForm(subject, false);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(25,70);
             frm.MdiParent = this;
             frm.Show();
+            addform(this.tabPageAutopot, frm);
         }
-
+        public void SetAutopotYggWindow()
+        {
+            AutopotForm frm = new AutopotForm(subject, true);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageYggAutopot, frm);
+        }
         public void SetAutoStatusEffectWindow()
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(50, 185);
+            form.Location = new Point(50, 220);
             form.MdiParent = this;
             form.Show();
         }
@@ -132,6 +141,7 @@ namespace _4RTools.Forms
                 {
                     ctl.BackColor = Color.White;
                 }
+
             }
         }
 
@@ -255,6 +265,11 @@ namespace _4RTools.Forms
             Show();
             this.WindowState = FormWindowState.Normal;
             this.notifyIconTray.Visible = false;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
