@@ -30,7 +30,6 @@ namespace _4RTools.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Container));
             this.lblProcessName = new System.Windows.Forms.Label();
             this.processCB = new System.Windows.Forms.ComboBox();
@@ -43,23 +42,22 @@ namespace _4RTools.Forms
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelDiscImage = new System.Windows.Forms.Panel();
+            this.panelGithubImage = new System.Windows.Forms.Panel();
             this.labelProfile = new System.Windows.Forms.Label();
             this.profileCB = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelFooter = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCharacterName = new System.Windows.Forms.Label();
             this.characterName = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
-            this.lblStatusToggle = new System.Windows.Forms.Label();
-            this.btnStatusToggle = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageAutopot = new System.Windows.Forms.TabPage();
+            this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabLayout.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.panelFooter.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblProcessName
@@ -96,7 +94,7 @@ namespace _4RTools.Forms
             this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpammer.Name = "tabPageSpammer";
             this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(424, 255);
+            this.tabPageSpammer.Size = new System.Drawing.Size(424, 274);
             this.tabPageSpammer.TabIndex = 1;
             this.tabPageSpammer.Text = "Skill Spammer";
             this.tabPageSpammer.UseVisualStyleBackColor = true;
@@ -106,7 +104,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffSkill.Name = "tabPageAutobuffSkill";
             this.tabPageAutobuffSkill.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(424, 255);
+            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(424, 274);
             this.tabPageAutobuffSkill.TabIndex = 3;
             this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
             this.tabPageAutobuffSkill.UseVisualStyleBackColor = true;
@@ -118,10 +116,10 @@ namespace _4RTools.Forms
             this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
             this.tabLayout.Controls.Add(this.tabPageMacroSongs);
             this.tabLayout.Controls.Add(this.tabPageProfiles);
-            this.tabLayout.Location = new System.Drawing.Point(15, 246);
+            this.tabLayout.Location = new System.Drawing.Point(15, 274);
             this.tabLayout.Name = "tabLayout";
             this.tabLayout.SelectedIndex = 0;
-            this.tabLayout.Size = new System.Drawing.Size(432, 281);
+            this.tabLayout.Size = new System.Drawing.Size(432, 300);
             this.tabLayout.TabIndex = 6;
             // 
             // tabPageAutobuffStuff
@@ -129,7 +127,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
             this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 255);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(424, 274);
             this.tabPageAutobuffStuff.TabIndex = 4;
             this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
             this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
@@ -139,7 +137,7 @@ namespace _4RTools.Forms
             this.tabPageMacroSongs.Location = new System.Drawing.Point(4, 22);
             this.tabPageMacroSongs.Name = "tabPageMacroSongs";
             this.tabPageMacroSongs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMacroSongs.Size = new System.Drawing.Size(424, 255);
+            this.tabPageMacroSongs.Size = new System.Drawing.Size(424, 274);
             this.tabPageMacroSongs.TabIndex = 6;
             this.tabPageMacroSongs.Text = "Macro Songs";
             this.tabPageMacroSongs.UseVisualStyleBackColor = true;
@@ -149,7 +147,7 @@ namespace _4RTools.Forms
             this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
             this.tabPageProfiles.Name = "tabPageProfiles";
             this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(424, 255);
+            this.tabPageProfiles.Size = new System.Drawing.Size(424, 274);
             this.tabPageProfiles.TabIndex = 5;
             this.tabPageProfiles.Text = "Profiles";
             this.tabPageProfiles.UseVisualStyleBackColor = true;
@@ -176,23 +174,23 @@ namespace _4RTools.Forms
             this.lblLinkGithub.Text = "Github Project";
             this.lblLinkGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkGithub_LinkClicked);
             // 
-            // panel1
+            // panelDiscImage
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(256, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(32, 33);
-            this.panel1.TabIndex = 10;
+            this.panelDiscImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDiscImage.BackgroundImage")));
+            this.panelDiscImage.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.panelDiscImage.Location = new System.Drawing.Point(256, 6);
+            this.panelDiscImage.Name = "panelDiscImage";
+            this.panelDiscImage.Size = new System.Drawing.Size(32, 33);
+            this.panelDiscImage.TabIndex = 10;
             // 
-            // panel2
+            // panelGithubImage
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel2.Location = new System.Drawing.Point(104, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(32, 33);
-            this.panel2.TabIndex = 11;
+            this.panelGithubImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelGithubImage.BackgroundImage")));
+            this.panelGithubImage.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.panelGithubImage.Location = new System.Drawing.Point(104, 6);
+            this.panelGithubImage.Name = "panelGithubImage";
+            this.panelGithubImage.Size = new System.Drawing.Size(32, 33);
+            this.panelGithubImage.TabIndex = 11;
             // 
             // labelProfile
             // 
@@ -213,17 +211,17 @@ namespace _4RTools.Forms
             this.profileCB.TabIndex = 14;
             this.profileCB.SelectedIndexChanged += new System.EventHandler(this.profileCB_SelectedIndexChanged);
             // 
-            // panel3
+            // panelFooter
             // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.lblLinkGithub);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.lblLinkDiscord);
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(-1, 533);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(508, 61);
-            this.panel3.TabIndex = 16;
+            this.panelFooter.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelFooter.Controls.Add(this.lblLinkGithub);
+            this.panelFooter.Controls.Add(this.panelGithubImage);
+            this.panelFooter.Controls.Add(this.lblLinkDiscord);
+            this.panelFooter.Controls.Add(this.panelDiscImage);
+            this.panelFooter.Location = new System.Drawing.Point(0, 580);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Size = new System.Drawing.Size(456, 43);
+            this.panelFooter.TabIndex = 16;
             // 
             // panel4
             // 
@@ -244,7 +242,7 @@ namespace _4RTools.Forms
             // lblCharacterName
             // 
             this.lblCharacterName.AutoSize = true;
-            this.lblCharacterName.Location = new System.Drawing.Point(262, 88);
+            this.lblCharacterName.Location = new System.Drawing.Point(266, 190);
             this.lblCharacterName.Name = "lblCharacterName";
             this.lblCharacterName.Size = new System.Drawing.Size(87, 13);
             this.lblCharacterName.TabIndex = 19;
@@ -255,7 +253,7 @@ namespace _4RTools.Forms
             this.characterName.AutoSize = true;
             this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.characterName.Location = new System.Drawing.Point(262, 101);
+            this.characterName.Location = new System.Drawing.Point(266, 203);
             this.characterName.Name = "characterName";
             this.characterName.Size = new System.Drawing.Size(19, 13);
             this.characterName.TabIndex = 20;
@@ -266,59 +264,47 @@ namespace _4RTools.Forms
             this.panel5.BackColor = System.Drawing.Color.Silver;
             this.panel5.Location = new System.Drawing.Point(255, 79);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 161);
+            this.panel5.Size = new System.Drawing.Size(1, 180);
             this.panel5.TabIndex = 18;
             // 
-            // notifyIconTray
+            // tabControl1
             // 
-            this.notifyIconTray.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconTray.Icon")));
-            this.notifyIconTray.Text = "4ROTools";
-            this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
+            this.tabControl1.Controls.Add(this.tabPageAutopot);
+            this.tabControl1.Controls.Add(this.tabPageYggAutopot);
+            this.tabControl1.Location = new System.Drawing.Point(22, 83);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(218, 127);
+            this.tabControl1.TabIndex = 25;
             // 
-            // lblStatusToggle
+            // tabPageAutopot
             // 
-            this.lblStatusToggle.AutoSize = true;
-            this.lblStatusToggle.Location = new System.Drawing.Point(43, 70);
-            this.lblStatusToggle.Name = "lblStatusToggle";
-            this.lblStatusToggle.Size = new System.Drawing.Size(93, 13);
-            this.lblStatusToggle.TabIndex = 22;
-            this.lblStatusToggle.Text = "Press the End key";
+            this.tabPageAutopot.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutopot.Name = "tabPageAutopot";
+            this.tabPageAutopot.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutopot.Size = new System.Drawing.Size(210, 101);
+            this.tabPageAutopot.TabIndex = 0;
+            this.tabPageAutopot.Text = "Autopot";
+            this.tabPageAutopot.UseVisualStyleBackColor = true;
             // 
-            // btnStatusToggle
+            // tabPageYggAutopot
             // 
-            this.btnStatusToggle.BackColor = System.Drawing.Color.Red;
-            this.btnStatusToggle.FlatAppearance.BorderSize = 0;
-            this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(50, 36);
-            this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
-            this.btnStatusToggle.Name = "btnStatusToggle";
-            this.btnStatusToggle.Size = new System.Drawing.Size(73, 28);
-            this.btnStatusToggle.TabIndex = 21;
-            this.btnStatusToggle.Text = "OFF";
-            this.btnStatusToggle.UseVisualStyleBackColor = false;
-            this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnStatusToggle);
-            this.groupBox1.Controls.Add(this.lblStatusToggle);
-            this.groupBox1.Location = new System.Drawing.Point(265, 117);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 105);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Current Status";
+            this.tabPageYggAutopot.Location = new System.Drawing.Point(4, 22);
+            this.tabPageYggAutopot.Name = "tabPageYggAutopot";
+            this.tabPageYggAutopot.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageYggAutopot.Size = new System.Drawing.Size(210, 101);
+            this.tabPageYggAutopot.TabIndex = 1;
+            this.tabPageYggAutopot.Text = "Yggdrasil";
+            this.tabPageYggAutopot.UseVisualStyleBackColor = true;
             // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(455, 576);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(455, 625);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.lblCharacterName);
@@ -336,13 +322,12 @@ namespace _4RTools.Forms
             this.Name = "Container";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4ROTools - Versão Beta";
+            this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Container_Load);
-            this.Resize += new System.EventHandler(this.containerResize);
             this.tabLayout.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panelFooter.ResumeLayout(false);
+            this.panelFooter.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,12 +342,12 @@ namespace _4RTools.Forms
         private System.Windows.Forms.TabPage tabPageSpammer;
         private System.Windows.Forms.LinkLabel lblLinkDiscord;
         private System.Windows.Forms.LinkLabel lblLinkGithub;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelDiscImage;
+        private System.Windows.Forms.Panel panelGithubImage;
         private System.Windows.Forms.Label labelProfile;
         public System.Windows.Forms.ComboBox profileCB;
         private System.Windows.Forms.TabPage tabPageAutobuffSkill;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCharacterName;
@@ -370,10 +355,9 @@ namespace _4RTools.Forms
         private Panel panel5;
         private TabPage tabPageAutobuffStuff;
         private TabPage tabPageMacroSongs;
-        private NotifyIcon notifyIconTray;
         private TabPage tabPageProfiles;
-        private Label lblStatusToggle;
-        private Button btnStatusToggle;
-        private GroupBox groupBox1;
+        private TabControl tabControl1;
+        private TabPage tabPageAutopot;
+        private TabPage tabPageYggAutopot;
     }
 }

@@ -9,12 +9,20 @@ namespace _4RTools.Forms
     public partial class AutopotForm : Form, IObserver
     {
         private Autopot autopot;
+        private bool isYgg;
 
-        public AutopotForm(Subject subject)
+        public AutopotForm(Subject subject, bool isYgg)
         {
             InitializeComponent();
+            if (isYgg)
+            {
+                this.picBoxHP.Image = Properties.Resources.Yggdrasil;
+                this.picBoxSP.Image = Properties.Resources.Yggdrasil;
+            }
             subject.Attach(this);
-            this.autopot = new Autopot();
+            string actionName = isYgg ? "AutopotYgg" : "Autopot";
+            this.autopot = new Autopot(actionName);
+            this.isYgg = isYgg;
 
             // loadProfile
             // HP
@@ -33,7 +41,7 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autopot = ProfileSingleton.GetCurrent().Autopot;
+                    this.autopot = this.isYgg ? ProfileSingleton.GetCurrent().AutopotYgg : ProfileSingleton.GetCurrent().Autopot;
                     InitializeApplicationForm();
                     break;
                 case MessageCode.TURN_OFF:

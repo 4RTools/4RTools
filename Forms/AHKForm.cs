@@ -20,7 +20,7 @@ namespace _4RTools.Forms
             this.txtSkillTimerKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             this.txtSkillTimerKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.txtSkillTimerKey.TextChanged += new EventHandler(this.onSkillTimerKeyChange);
-            this.txtAutoRefreshDelay.TextChanged += new EventHandler(this.txtAutoRefreshDelayTextChanged);
+            this.txtAutoRefreshDelay.ValueChanged += new EventHandler(this.txtAutoRefreshDelayTextChanged);
         }
 
         public void Update(ISubject subject)
@@ -98,8 +98,14 @@ namespace _4RTools.Forms
 
         private void txtAutoRefreshDelayTextChanged(object sender, EventArgs e)
         {
-            this.autoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
-            ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
+            try
+            {
+                this.autoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
+                ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
+            }
+            catch (Exception)
+            {
+            }
         }
     }
 }
