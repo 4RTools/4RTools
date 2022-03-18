@@ -23,7 +23,8 @@ namespace _4RTools.Model
 
                 if ((rawObject != null)) {
                     profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByProperty(rawObject, "AHK", new AHK().GetConfiguration()));
-                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "Autopot", new Autopot().GetConfiguration()));
+                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "Autopot", new Autopot("Autopot").GetConfiguration()));
+                    profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "AutopotYgg", new Autopot("AutopotYgg").GetConfiguration()));
                     profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "StatusAutoBuff", new AutoBuff("StatusAutoBuff").GetConfiguration()));
                     profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByProperty(rawObject, "AutoRefreshSpammer", new AutoRefreshSpammer().GetConfiguration()));
                     profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "ItemsAutoBuff", new AutoBuff("ItemsAutoBuff").GetConfiguration()));
@@ -65,10 +66,10 @@ namespace _4RTools.Model
         public string Name { get; set; }
         public AHK AHK { get; set; }
         public Autopot Autopot { get; set; }
+        public Autopot AutopotYgg { get; set; }
         public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
         public AutoBuff StatusAutoBuff { get; set; }
         public AutoBuff ItemsAutoBuff { get; set; }
-
         public AutoBuff SkillAutoBuff { get; set; }
         public Macro SongMacro { get; set;}
 
@@ -77,7 +78,8 @@ namespace _4RTools.Model
             this.Name = name;
 
             this.AHK = new AHK(); 
-            this.Autopot = new Autopot();
+            this.Autopot = new Autopot("Autopot");
+            this.AutopotYgg = new Autopot("AutopotYgg");
             this.AutoRefreshSpammer = new AutoRefreshSpammer();
             this.StatusAutoBuff = new AutoBuff("StatusAutoBuff");
             this.ItemsAutoBuff = new AutoBuff("ItemsAutoBuff");

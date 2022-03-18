@@ -17,13 +17,16 @@ namespace _4RTools.Model
         public Key spKey { get; set; }
         public int spPercent { get; set; }
         public int delay { get; set; } = 15;
+        public int delayYgg { get; set; } = 50;
 
-        private const string ACTION_NAME = "Autopot";
+        public string actionName { get; set; }
         private Thread autopotThread;
 
-        public Autopot()
-        {
+        public Autopot() { }
 
+        public Autopot(string actionName)
+        {
+            this.actionName = actionName;
         }
 
         public Autopot(Key hpKey, int hpPercent, int delay, Key spKey, int spPercent)
@@ -71,6 +74,8 @@ namespace _4RTools.Model
                         {
                             pot(this.spKey);
                         }
+
+
                         Thread.Sleep(this.delay);
                     }
                 });
@@ -106,7 +111,7 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return ACTION_NAME;
+            return actionName;
         }
     }
 }
