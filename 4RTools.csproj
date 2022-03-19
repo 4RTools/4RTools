@@ -111,10 +111,17 @@
     <Compile Include="Forms\ProfileForm.Designer.cs">
       <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ToggleApplicationStateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToggleApplicationStateForm.Designer.cs">
+      <DependentUpon>ToggleApplicationStateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\AHK.cs" />
     <Compile Include="Model\Autopot.cs" />
     <Compile Include="Model\Autobuff.cs" />
     <Compile Include="Model\AutoRefreshSpammer.cs" />
+    <Compile Include="Model\UserPreferences.cs" />
     <Compile Include="Model\Hexed.cs" />
     <Compile Include="Model\Action.cs" />
     <Compile Include="Model\Macro.cs" />
@@ -164,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StatusEffectForm.resx">
       <DependentUpon>StatusEffectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToggleApplicationStateForm.resx">
+      <DependentUpon>ToggleApplicationStateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
