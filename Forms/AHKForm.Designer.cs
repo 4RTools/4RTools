@@ -82,15 +82,16 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtSkillTimerKey = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtAutoRefreshDelay = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtAutoRefreshDelay = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).BeginInit();
             this.SuspendLayout();
             // 
             // chkF9
@@ -669,9 +670,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.txtAutoRefreshDelay);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtSkillTimerKey);
-            this.groupBox1.Controls.Add(this.txtAutoRefreshDelay);
             this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
             this.groupBox1.Controls.Add(this.lblAutoRefreshDelay);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -682,13 +683,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Skill Timer";
             // 
-            // txtAutoRefreshDelay
+            // label2
             // 
-            this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(58, 23);
-            this.txtAutoRefreshDelay.Name = "txtAutoRefreshDelay";
-            this.txtAutoRefreshDelay.Size = new System.Drawing.Size(61, 23);
-            this.txtAutoRefreshDelay.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            this.label2.Location = new System.Drawing.Point(119, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "sec";
             // 
             // lblAutoRefreshKey
             // 
@@ -704,22 +707,25 @@
             // 
             this.lblAutoRefreshDelay.AutoSize = true;
             this.lblAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(17, 27);
+            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(17, 28);
             this.lblAutoRefreshDelay.Name = "lblAutoRefreshDelay";
             this.lblAutoRefreshDelay.Size = new System.Drawing.Size(38, 15);
             this.lblAutoRefreshDelay.TabIndex = 0;
             this.lblAutoRefreshDelay.Text = "Delay";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // txtAutoRefreshDelay
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label2.Location = new System.Drawing.Point(119, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "sec";
+            this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(58, 24);
+            this.txtAutoRefreshDelay.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.txtAutoRefreshDelay.Name = "txtAutoRefreshDelay";
+            this.txtAutoRefreshDelay.Size = new System.Drawing.Size(61, 23);
+            this.txtAutoRefreshDelay.TabIndex = 34;
             // 
             // AHKForm
             // 
@@ -787,6 +793,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -847,9 +854,9 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txtSkillTimerKey;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtAutoRefreshDelay;
         private System.Windows.Forms.Label lblAutoRefreshKey;
         private System.Windows.Forms.Label lblAutoRefreshDelay;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
     }
 }
