@@ -30,7 +30,6 @@ namespace _4RTools.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Container));
             this.lblProcessName = new System.Windows.Forms.Label();
             this.processCB = new System.Windows.Forms.ComboBox();
@@ -53,7 +52,6 @@ namespace _4RTools.Forms
             this.lblCharacterName = new System.Windows.Forms.Label();
             this.characterName = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.lblStatusToggle = new System.Windows.Forms.Label();
             this.btnStatusToggle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -273,38 +271,36 @@ namespace _4RTools.Forms
             this.panel5.Size = new System.Drawing.Size(1, 180);
             this.panel5.TabIndex = 18;
             // 
-            // notifyIconTray
+            // panel1
             // 
-            this.notifyIconTray.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconTray.Icon")));
-            this.notifyIconTray.Text = "4ROTools";
-            this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.panel1.Location = new System.Drawing.Point(256, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(32, 33);
+            this.panel1.TabIndex = 10;
             // 
-            // lblStatusToggle
+            // lblLinkDiscord
             // 
-            this.lblStatusToggle.AutoSize = true;
-            this.lblStatusToggle.Location = new System.Drawing.Point(43, 70);
-            this.lblStatusToggle.Name = "lblStatusToggle";
-            this.lblStatusToggle.Size = new System.Drawing.Size(93, 13);
-            this.lblStatusToggle.TabIndex = 22;
-            this.lblStatusToggle.Text = "Press the End key";
+            this.lblLinkDiscord.AutoSize = true;
+            this.lblLinkDiscord.Location = new System.Drawing.Point(295, 16);
+            this.lblLinkDiscord.Name = "lblLinkDiscord";
+            this.lblLinkDiscord.Size = new System.Drawing.Size(92, 13);
+            this.lblLinkDiscord.TabIndex = 8;
+            this.lblLinkDiscord.TabStop = true;
+            this.lblLinkDiscord.Text = "Join in our discord";
+            this.lblLinkDiscord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkDiscord_LinkClicked);
             // 
-            // btnStatusToggle
+            // panel2
             // 
-            this.btnStatusToggle.BackColor = System.Drawing.Color.Red;
-            this.btnStatusToggle.FlatAppearance.BorderSize = 0;
-            this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(50, 36);
-            this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
-            this.btnStatusToggle.Name = "btnStatusToggle";
-            this.btnStatusToggle.Size = new System.Drawing.Size(73, 28);
-            this.btnStatusToggle.TabIndex = 21;
-            this.btnStatusToggle.Text = "OFF";
-            this.btnStatusToggle.UseVisualStyleBackColor = false;
-            this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.panel2.Location = new System.Drawing.Point(104, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(32, 33);
+            this.panel2.TabIndex = 11;
             // 
-            // groupBox1
+            // lblLinkGithub
             // 
             this.groupBox1.Controls.Add(this.btnStatusToggle);
             this.groupBox1.Controls.Add(this.lblStatusToggle);
@@ -373,7 +369,6 @@ namespace _4RTools.Forms
             this.Text = "4ROTools - Versão Beta";
             this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Container_Load);
-            this.Resize += new System.EventHandler(this.containerResize);
             this.tabLayout.ResumeLayout(false);
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
@@ -407,7 +402,6 @@ namespace _4RTools.Forms
         private Panel panel5;
         private TabPage tabPageAutobuffStuff;
         private TabPage tabPageMacroSongs;
-        private NotifyIcon notifyIconTray;
         private TabPage tabPageProfiles;
         private Label lblStatusToggle;
         private Button btnStatusToggle;

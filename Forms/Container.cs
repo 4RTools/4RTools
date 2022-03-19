@@ -4,9 +4,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using _4RTools.Model;
-using System.Media;
 using _4RTools.Utils;
-using _4RTools.Properties;
 
 namespace _4RTools.Forms
 {
@@ -24,15 +22,14 @@ namespace _4RTools.Forms
                 Directory.CreateDirectory(Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
             }
             InitializeComponent();
-            this.Text = Config.ReadSetting("Name") + " - " + Config.ReadSetting("Version");
-            KeyboardHook.Enable();
-            KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF
+            this.Text = Config.ReadSetting("Name") + " - " + Config.ReadSetting("Version"); // Window title
 
             //Container Configuration
             this.IsMdiContainer = true;
             SetBackGroundColorOfMDIForm();
 
             //Paint Children Forms Below
+            SetToggleApplicationStateWindow();
             SetAutopotWindow();
             SetAutopotYggWindow();
             SetAutoStatusEffectWindow();
@@ -42,6 +39,15 @@ namespace _4RTools.Forms
             SetAutobuffSkillWindow();
             SetSongMacroWindow();
 
+        }
+
+        public void SetToggleApplicationStateWindow ()
+        {
+            ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(250, 60);
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         public void SetAutopotWindow()
@@ -191,31 +197,6 @@ namespace _4RTools.Forms
             }
         }
 
-        private void btnToggleStatusHandler(object sender, EventArgs e)
-        {
-            this.toggleStatus();
-        }
-
-        private bool toggleStatus()
-        {
-            bool statusOn = this.btnStatusToggle.Text == "ON";
-            if (statusOn) {
-                this.btnStatusToggle.BackColor = Color.Red;
-                this.btnStatusToggle.Text = "OFF";
-                this.notifyIconTray.Icon = Resources.logo_4rtools_off;
-                subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
-                new SoundPlayer(Resources.Speech_Off).Play();
-            } else {
-                this.btnStatusToggle.BackColor = Color.Green;
-                this.btnStatusToggle.Text = "ON";
-                this.notifyIconTray.Icon = Resources.logo_4rtools_on;
-                subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
-                new SoundPlayer(Resources.Speech_On).Play();
-            }
-
-            return true;
-        }
-
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             this.refreshProcessList();
@@ -245,25 +226,8 @@ namespace _4RTools.Forms
                 ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
                 subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
                 currentProfile = this.profileCB.Text.ToString();
-                Console.WriteLine("Profile Loaded:" + this.profileCB.Text.ToString());
             }
           
-        }
-
-        private void containerResize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                Hide();
-                this.notifyIconTray.Visible = true;
-            }
-        }
-
-        private void notifyIconDoubleClick(object sender, MouseEventArgs e)
-        {
-            Show();
-            this.WindowState = FormWindowState.Normal;
-            this.notifyIconTray.Visible = false;
         }
     }
 }
