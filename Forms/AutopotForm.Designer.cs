@@ -174,6 +174,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.ClientSize = new System.Drawing.Size(198, 100);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -188,9 +190,7 @@
             this.Controls.Add(this.txtAutopotDelay);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AutopotForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "AutopotForm";
             ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
