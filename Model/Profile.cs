@@ -22,6 +22,7 @@ namespace _4RTools.Model
                 Profile profile = new Profile(profileName);
 
                 if ((rawObject != null)) {
+                    profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByProperty(rawObject, "UserPreferences", new UserPreferences().GetConfiguration()));
                     profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByProperty(rawObject, "AHK", new AHK().GetConfiguration()));
                     profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "Autopot", new Autopot().GetConfiguration()));
                     profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "StatusAutoBuff", new AutoBuff("StatusAutoBuff").GetConfiguration()));
@@ -63,6 +64,7 @@ namespace _4RTools.Model
     public class Profile
     {
         public string Name { get; set; }
+        public UserPreferences UserPreferences { get; set; }
         public AHK AHK { get; set; }
         public Autopot Autopot { get; set; }
         public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
@@ -76,6 +78,7 @@ namespace _4RTools.Model
         {
             this.Name = name;
 
+            this.UserPreferences = new UserPreferences();
             this.AHK = new AHK(); 
             this.Autopot = new Autopot();
             this.AutoRefreshSpammer = new AutoRefreshSpammer();
