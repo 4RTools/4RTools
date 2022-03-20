@@ -334,7 +334,6 @@ namespace _4RTools.Forms
             this.tabPageAutopot.TabIndex = 0;
             this.tabPageAutopot.Text = "Autopot";
             this.tabPageAutopot.UseVisualStyleBackColor = true;
-            this.tabPageAutopot.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPageYggAutopot
             // 

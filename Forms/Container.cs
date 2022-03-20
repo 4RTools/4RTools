@@ -265,10 +265,5 @@ namespace _4RTools.Forms
             this.WindowState = FormWindowState.Normal;
             this.notifyIconTray.Visible = false;
         }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
