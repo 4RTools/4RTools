@@ -16,13 +16,18 @@ namespace _4RTools.Utils
             {
                 TextBox textBox = (TextBox)sender;
                 Key thisk = (Key)Enum.Parse(typeof(Key), e.KeyCode.ToString());
-                if (thisk != Key.Escape)
+
+                switch (thisk)
                 {
-                    textBox.Text = e.KeyCode.ToString();
-                }
-                else
-                {
-                    textBox.Text = Key.None.ToString();
+                    case Key.Escape:
+                        textBox.Text = Key.None.ToString();
+                        break;
+                    case Key.Back:
+                        textBox.Text = Key.None.ToString();
+                        break;
+                    default:
+                        textBox.Text = e.KeyCode.ToString();
+                        break;
                 }
 
                 e.Handled = true;
