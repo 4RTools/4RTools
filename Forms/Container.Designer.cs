@@ -43,11 +43,11 @@ namespace _4RTools.Forms
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelDiscImage = new System.Windows.Forms.Panel();
+            this.panelGithubImage = new System.Windows.Forms.Panel();
             this.labelProfile = new System.Windows.Forms.Label();
             this.profileCB = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelFooter = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCharacterName = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@ namespace _4RTools.Forms
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabLayout.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelFooter.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -180,23 +180,23 @@ namespace _4RTools.Forms
             this.lblLinkGithub.Text = "Github Project";
             this.lblLinkGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkGithub_LinkClicked);
             // 
-            // panel1
+            // panelDiscImage
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(256, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(32, 33);
-            this.panel1.TabIndex = 10;
+            this.panelDiscImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDiscImage.BackgroundImage")));
+            this.panelDiscImage.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.panelDiscImage.Location = new System.Drawing.Point(256, 6);
+            this.panelDiscImage.Name = "panelDiscImage";
+            this.panelDiscImage.Size = new System.Drawing.Size(32, 33);
+            this.panelDiscImage.TabIndex = 10;
             // 
-            // panel2
+            // panelGithubImage
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel2.Location = new System.Drawing.Point(104, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(32, 33);
-            this.panel2.TabIndex = 11;
+            this.panelGithubImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelGithubImage.BackgroundImage")));
+            this.panelGithubImage.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.panelGithubImage.Location = new System.Drawing.Point(104, 6);
+            this.panelGithubImage.Name = "panelGithubImage";
+            this.panelGithubImage.Size = new System.Drawing.Size(32, 33);
+            this.panelGithubImage.TabIndex = 11;
             // 
             // labelProfile
             // 
@@ -217,17 +217,17 @@ namespace _4RTools.Forms
             this.profileCB.TabIndex = 14;
             this.profileCB.SelectedIndexChanged += new System.EventHandler(this.profileCB_SelectedIndexChanged);
             // 
-            // panel3
+            // panelFooter
             // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.lblLinkGithub);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.lblLinkDiscord);
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(0, 580);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(456, 43);
-            this.panel3.TabIndex = 16;
+            this.panelFooter.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelFooter.Controls.Add(this.lblLinkGithub);
+            this.panelFooter.Controls.Add(this.panelGithubImage);
+            this.panelFooter.Controls.Add(this.lblLinkDiscord);
+            this.panelFooter.Controls.Add(this.panelDiscImage);
+            this.panelFooter.Location = new System.Drawing.Point(0, 580);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Size = new System.Drawing.Size(456, 43);
+            this.panelFooter.TabIndex = 16;
             // 
             // panel4
             // 
@@ -353,7 +353,7 @@ namespace _4RTools.Forms
             this.ClientSize = new System.Drawing.Size(455, 625);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.lblCharacterName);
@@ -375,8 +375,8 @@ namespace _4RTools.Forms
             this.Load += new System.EventHandler(this.Container_Load);
             this.Resize += new System.EventHandler(this.containerResize);
             this.tabLayout.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelFooter.ResumeLayout(false);
+            this.panelFooter.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -394,12 +394,12 @@ namespace _4RTools.Forms
         private System.Windows.Forms.TabPage tabPageSpammer;
         private System.Windows.Forms.LinkLabel lblLinkDiscord;
         private System.Windows.Forms.LinkLabel lblLinkGithub;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelDiscImage;
+        private System.Windows.Forms.Panel panelGithubImage;
         private System.Windows.Forms.Label labelProfile;
         public System.Windows.Forms.ComboBox profileCB;
         private System.Windows.Forms.TabPage tabPageAutobuffSkill;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCharacterName;
