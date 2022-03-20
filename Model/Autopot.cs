@@ -111,7 +111,7 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return actionName;
+            return actionName != null ? actionName : "Autopot";
         }
     }
 }
