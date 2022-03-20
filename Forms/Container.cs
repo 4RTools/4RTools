@@ -30,7 +30,6 @@ namespace _4RTools.Forms
 
             //Container Configuration
             this.IsMdiContainer = true;
-            //this.TransparencyKey = Color.FromArgb(255, 220, 33, 55);
             SetBackGroundColorOfMDIForm();
 
             //Paint Children Forms Below
