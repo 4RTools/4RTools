@@ -29,6 +29,12 @@ namespace _4RTools.Forms
 
         public void Update(ISubject subject)
         {
+            if ((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
+            {
+                FormUtils.ResetForm(this);
+                this.userPreferences = ProfileSingleton.GetCurrent().UserPreferences;
+                this.txtStatusToggleKey.Text = this.userPreferences.toggleStateKey.ToString();
+            }
         }
 
         private void btnToggleStatusHandler(object sender, EventArgs e) { this.toggleStatus(); }
