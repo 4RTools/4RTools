@@ -11,7 +11,7 @@ If you have found a bug or want to request a feature, feel free to open an issue
 *Made from community TO community*.
 
 All feedback are welcome!
-Discord: https://discord.gg/fdS43jA8s4
+Discord: https://discord.gg/HRWvG5ut
 
 <img src='assets/images/ragnarok-icon.png' width='40'>
 
