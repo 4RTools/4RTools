@@ -52,15 +52,11 @@ namespace _4RTools.Forms
             this.lblCharacterName = new System.Windows.Forms.Label();
             this.characterName = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblStatusToggle = new System.Windows.Forms.Label();
-            this.btnStatusToggle = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabLayout.SuspendLayout();
             this.panelFooter.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -271,46 +267,6 @@ namespace _4RTools.Forms
             this.panel5.Size = new System.Drawing.Size(1, 180);
             this.panel5.TabIndex = 18;
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(256, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(32, 33);
-            this.panel1.TabIndex = 10;
-            // 
-            // lblLinkDiscord
-            // 
-            this.lblLinkDiscord.AutoSize = true;
-            this.lblLinkDiscord.Location = new System.Drawing.Point(295, 16);
-            this.lblLinkDiscord.Name = "lblLinkDiscord";
-            this.lblLinkDiscord.Size = new System.Drawing.Size(92, 13);
-            this.lblLinkDiscord.TabIndex = 8;
-            this.lblLinkDiscord.TabStop = true;
-            this.lblLinkDiscord.Text = "Join in our discord";
-            this.lblLinkDiscord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkDiscord_LinkClicked);
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel2.Location = new System.Drawing.Point(104, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(32, 33);
-            this.panel2.TabIndex = 11;
-            // 
-            // lblLinkGithub
-            // 
-            this.groupBox1.Controls.Add(this.btnStatusToggle);
-            this.groupBox1.Controls.Add(this.lblStatusToggle);
-            this.groupBox1.Location = new System.Drawing.Point(265, 78);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 105);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Current Status";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPageAutopot);
@@ -348,7 +304,6 @@ namespace _4RTools.Forms
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(455, 625);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.characterName);
@@ -372,8 +327,6 @@ namespace _4RTools.Forms
             this.tabLayout.ResumeLayout(false);
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -403,9 +356,6 @@ namespace _4RTools.Forms
         private TabPage tabPageAutobuffStuff;
         private TabPage tabPageMacroSongs;
         private TabPage tabPageProfiles;
-        private Label lblStatusToggle;
-        private Button btnStatusToggle;
-        private GroupBox groupBox1;
         private TabControl tabControl1;
         private TabPage tabPageAutopot;
         private TabPage tabPageYggAutopot;

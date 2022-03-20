@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
+using System.Media;
 using _4RTools.Properties;
 
 namespace _4RTools.Forms
@@ -56,6 +57,7 @@ namespace _4RTools.Forms
                 this.btnStatusToggle.Text = "OFF";
                 this.notifyIconTray.Icon = Resources.logo_4rtools_off;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
+                new SoundPlayer(Resources.Speech_Off).Play();
             }
             else
             {
@@ -63,6 +65,7 @@ namespace _4RTools.Forms
                 this.btnStatusToggle.Text = "ON";
                 this.notifyIconTray.Icon = Resources.logo_4rtools_on;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
+                new SoundPlayer(Resources.Speech_On).Play();
             }
 
             return true;
