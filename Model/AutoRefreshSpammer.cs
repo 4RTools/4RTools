@@ -25,12 +25,15 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                int delay = this.refreshDelay * 1000;
+                const int defaultDelayInSeconds = 1000;
+                int delayInSeconds = this.refreshDelay * 1000;
+                int delay = delayInSeconds == 0 ? defaultDelayInSeconds : delayInSeconds;
+
                 Thread autoRefreshThread = new Thread(() =>
                 {
                     while (true)
                     {
-                        if (this.refreshKey != Key.None && delay > 1000)
+                        if (this.refreshKey != Key.None)
                         {
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.refreshKey.ToString()), 0);
                         }
