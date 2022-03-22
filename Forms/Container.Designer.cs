@@ -324,6 +324,7 @@ namespace _4RTools.Forms
             this.Text = "4ROTools - Versão Beta";
             this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Container_Load);
+            this.Resize += new System.EventHandler(this.containerResize);
             this.tabLayout.ResumeLayout(false);
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();

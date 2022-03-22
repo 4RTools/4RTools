@@ -24,6 +24,7 @@ namespace _4RTools.Utils
         PROFILE_INPUT_CHANGE,
         TURN_ON,
         TURN_OFF,
+        CLICK_ICON_TRAY
     }
 
     public class Message

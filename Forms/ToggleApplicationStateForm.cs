@@ -76,5 +76,10 @@ namespace _4RTools.Forms
 
             return true;
         }
+
+        private void notifyIconDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.subject.Notify(new Utils.Message(MessageCode.CLICK_ICON_TRAY, null));
+        }
     }
 }
