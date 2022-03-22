@@ -82,10 +82,11 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtSkillTimerKey = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtAutoRefreshDelay = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
-            this.txtAutoRefreshDelay = new System.Windows.Forms.NumericUpDown();
+            this.chkMouseFlick = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -634,7 +635,7 @@
             // 
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtSpammerDelay);
-            this.groupBox2.Location = new System.Drawing.Point(10, 169);
+            this.groupBox2.Location = new System.Drawing.Point(10, 162);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(119, 61);
             this.groupBox2.TabIndex = 32;
@@ -654,9 +655,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(160, 169);
+            this.panel5.Location = new System.Drawing.Point(187, 167);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 73);
+            this.panel5.Size = new System.Drawing.Size(1, 78);
             this.panel5.TabIndex = 27;
             // 
             // txtSkillTimerKey
@@ -676,12 +677,25 @@
             this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
             this.groupBox1.Controls.Add(this.lblAutoRefreshDelay);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.groupBox1.Location = new System.Drawing.Point(187, 161);
+            this.groupBox1.Location = new System.Drawing.Point(235, 161);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(161, 87);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Skill Timer";
+            // 
+            // txtAutoRefreshDelay
+            // 
+            this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(58, 24);
+            this.txtAutoRefreshDelay.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.txtAutoRefreshDelay.Name = "txtAutoRefreshDelay";
+            this.txtAutoRefreshDelay.Size = new System.Drawing.Size(61, 23);
+            this.txtAutoRefreshDelay.TabIndex = 34;
             // 
             // label2
             // 
@@ -714,25 +728,24 @@
             this.lblAutoRefreshDelay.Text = "Delay";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtAutoRefreshDelay
+            // chkMouseFlick
             // 
-            this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(58, 24);
-            this.txtAutoRefreshDelay.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtAutoRefreshDelay.Name = "txtAutoRefreshDelay";
-            this.txtAutoRefreshDelay.Size = new System.Drawing.Size(61, 23);
-            this.txtAutoRefreshDelay.TabIndex = 34;
+            this.chkMouseFlick.AutoSize = true;
+            this.chkMouseFlick.Location = new System.Drawing.Point(27, 232);
+            this.chkMouseFlick.Name = "chkMouseFlick";
+            this.chkMouseFlick.Size = new System.Drawing.Size(83, 17);
+            this.chkMouseFlick.TabIndex = 34;
+            this.chkMouseFlick.Text = "Mouse Flick";
+            this.chkMouseFlick.UseVisualStyleBackColor = true;
+            this.chkMouseFlick.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(406, 250);
+            this.ClientSize = new System.Drawing.Size(406, 267);
+            this.Controls.Add(this.chkMouseFlick);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.groupBox2);
@@ -858,5 +871,6 @@
         private System.Windows.Forms.Label lblAutoRefreshDelay;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
+        private System.Windows.Forms.CheckBox chkMouseFlick;
     }
 }
