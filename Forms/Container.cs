@@ -13,7 +13,7 @@ namespace _4RTools.Forms
 
         private Subject subject = new Subject();
         private String currentProfile;
-        
+
         public Container()
         {
             Config.Load();
@@ -43,7 +43,7 @@ namespace _4RTools.Forms
 
         }
 
-        public void SetToggleApplicationStateWindow ()
+        public void SetToggleApplicationStateWindow()
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
@@ -84,7 +84,7 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageSpammer, frm) ;
+            addform(this.tabPageSpammer, frm);
         }
 
         public void SetProfileWindow()
@@ -158,12 +158,12 @@ namespace _4RTools.Forms
             ClientSingleton.Instance(client);
             characterName.Text = client.ReadCharacterName();
             subject.Notify(new Utils.Message(Utils.MessageCode.PROCESS_CHANGED, null));
-            
         }
 
         private void Container_Load(object sender, EventArgs e)
         {
-            if (!Profile.ProfileExists("Default")) {
+            if (!Profile.ProfileExists("Default"))
+            {
                 new Profile("Default").Save();
             }
 
@@ -229,7 +229,7 @@ namespace _4RTools.Forms
                 subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
                 currentProfile = this.profileCB.Text.ToString();
             }
-          
+
         }
 
         public void Update(ISubject subject)
@@ -243,7 +243,16 @@ namespace _4RTools.Forms
                         characterName.Text = ClientSingleton.GetClient().ReadCharacterName();
                     }
                     break;
+                case MessageCode.CLICK_ICON_TRAY:
+                    this.Show();
+                    this.WindowState = FormWindowState.Normal;
+                    break;
             }
+        }
+
+        private void containerResize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized) { this.Hide(); }
         }
     }
 }
