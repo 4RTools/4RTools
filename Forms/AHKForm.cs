@@ -35,6 +35,7 @@ namespace _4RTools.Forms
                 {
                     ToggleCheckboxByName(key, true);
                 }
+                ToggleCheckboxByName(this.chkMouseFlick.Name, this.ahk.mouseFlick);
                 this.txtSpammerDelay.Text = this.ahk.ahkDelay.ToString();
                 this.txtSkillTimerKey.Text = this.autoRefreshSpammer.refreshKey.ToString();
                 this.txtAutoRefreshDelay.Text = this.autoRefreshSpammer.refreshDelay.ToString();
@@ -53,12 +54,20 @@ namespace _4RTools.Forms
         private void onCheckChange(object sender, EventArgs e)
         {
             CheckBox checkbox = (CheckBox)sender;
-            Key key = (Key) new KeyConverter().ConvertFromString(checkbox.Text);
 
-            if (checkbox.Checked)
-                this.ahk.AddAHKEntry(checkbox.Name, key);
+            if(checkbox.Text == "Mouse Flick")
+            {
+                this.ahk.mouseFlick = checkbox.Checked;
+            }
             else
-                this.ahk.RemoveAHKEntry(checkbox.Name);
+            {
+                Key key = (Key)new KeyConverter().ConvertFromString(checkbox.Text);
+                if (checkbox.Checked)
+                    this.ahk.AddAHKEntry(checkbox.Name, key);
+                else
+                    this.ahk.RemoveAHKEntry(checkbox.Name);
+
+            }
 
             ProfileSingleton.SetConfiguration(this.ahk);
 
