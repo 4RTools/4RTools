@@ -19,10 +19,7 @@ namespace _4RTools.Utils
 
                 switch (thisk)
                 {
-                    case Key.Escape:
-                        textBox.Text = Key.None.ToString();
-                        break;
-                    case Key.Back:
+                    case Key.Escape: case Key.Back:
                         textBox.Text = Key.None.ToString();
                         break;
                     default:
