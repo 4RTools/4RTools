@@ -8,7 +8,7 @@ using _4RTools.Utils;
 
 namespace _4RTools.Forms
 {
-    public partial class Container : Form
+    public partial class Container : Form, IObserver
     {
 
         private Subject subject = new Subject();
@@ -17,6 +17,8 @@ namespace _4RTools.Forms
         public Container()
         {
             Config.Load();
+            this.subject.Attach(this);
+
             if (!Directory.Exists(Config.ReadSetting("ProfileFolder")))
             {
                 Directory.CreateDirectory(Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
@@ -228,6 +230,20 @@ namespace _4RTools.Forms
                 currentProfile = this.profileCB.Text.ToString();
             }
           
+        }
+
+        public void Update(ISubject subject)
+        {
+            switch ((subject as Subject).Message.code)
+            {
+                case MessageCode.TURN_ON: case MessageCode.PROFILE_CHANGED:
+                    Client client = ClientSingleton.GetClient();
+                    if (client != null)
+                    {
+                        characterName.Text = ClientSingleton.GetClient().ReadCharacterName();
+                    }
+                    break;
+            }
         }
     }
 }
