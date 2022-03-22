@@ -34,6 +34,7 @@ namespace _4RTools.Forms
                     break;
             }
         }
+
         private void ConfigureInputs()
         {
             foreach (Control c in this.Controls)
@@ -66,16 +67,7 @@ namespace _4RTools.Forms
                 if (txtBox.Text.ToString() != String.Empty) {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-
-                    if (key == Key.Escape)
-                    {
-                        this.autobuff.RemoveKey(statusID);
-                    }
-                    else
-                    {
-                        this.autobuff.AddKeyToBuff(statusID, key);
-                    }
-
+                    this.autobuff.AddKeyToBuff(statusID, key);
                     ProfileSingleton.SetConfiguration(this.autobuff);
                 }
                 

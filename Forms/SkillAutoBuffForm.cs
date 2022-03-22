@@ -76,23 +76,7 @@ namespace _4RTools.Forms
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-
-                    switch (key)
-                    {
-                        case Key.Escape:
-                            this.autobuff.RemoveKey(statusID);
-                            break;
-                        case Key.Back:
-                            this.autobuff.RemoveKey(statusID);
-                            break;
-                        case Key.None:
-                            this.autobuff.RemoveKey(statusID);
-                            break;
-                        default:
-                            this.autobuff.AddKeyToBuff(statusID, key);
-                            break;
-                    }
-
+                    this.autobuff.AddKeyToBuff(statusID, key);
                     ProfileSingleton.SetConfiguration(this.autobuff);
                 }
             }

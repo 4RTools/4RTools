@@ -116,16 +116,14 @@ namespace _4RTools.Model
 
         public void AddKeyToBuff(EffectStatusIDs status, Key key)
         {
-            if (buffMapping.ContainsKey(status))
+            if (this.IsValidKey(key))
             {
-               this.RemoveKey(status);
+                if (buffMapping.ContainsKey(status))
+                {
+                    buffMapping.Remove(status);
+                }
+                buffMapping.Add(status, key);
             }
-            buffMapping.Add(status, key);
-        }
-
-        public void RemoveKey(EffectStatusIDs status)
-        {
-            buffMapping.Remove(status);
         }
 
         public void ClearKeyMapping()
@@ -155,6 +153,11 @@ namespace _4RTools.Model
         {
             if(key != Key.None)
                 Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), key.ToString()), 0);
+        }
+
+        private bool IsValidKey(Key key)
+        {
+            return (key != Key.Back && key != Key.Escape && key != Key.None);
         }
     }
 }
