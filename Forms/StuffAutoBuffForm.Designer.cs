@@ -68,7 +68,7 @@
             this.in184 = new System.Windows.Forms.TextBox();
             this.in3 = new System.Windows.Forms.TextBox();
             this.in910 = new System.Windows.Forms.TextBox();
-            this.int908 = new System.Windows.Forms.TextBox();
+            this.in908 = new System.Windows.Forms.TextBox();
             this.in909 = new System.Windows.Forms.TextBox();
             this.in911 = new System.Windows.Forms.TextBox();
             this.in37 = new System.Windows.Forms.TextBox();
@@ -491,12 +491,12 @@
             this.in910.Size = new System.Drawing.Size(55, 20);
             this.in910.TabIndex = 159;
             // 
-            // int908
+            // in908
             // 
-            this.int908.Location = new System.Drawing.Point(191, 156);
-            this.int908.Name = "int908";
-            this.int908.Size = new System.Drawing.Size(55, 20);
-            this.int908.TabIndex = 160;
+            this.in908.Location = new System.Drawing.Point(191, 156);
+            this.in908.Name = "in908";
+            this.in908.Size = new System.Drawing.Size(55, 20);
+            this.in908.TabIndex = 160;
             // 
             // in909
             // 
@@ -584,7 +584,7 @@
             this.Controls.Add(this.in37);
             this.Controls.Add(this.in911);
             this.Controls.Add(this.in909);
-            this.Controls.Add(this.int908);
+            this.Controls.Add(this.in908);
             this.Controls.Add(this.in910);
             this.Controls.Add(this.in3);
             this.Controls.Add(this.in184);
@@ -693,7 +693,7 @@
         private System.Windows.Forms.TextBox in184;
         private System.Windows.Forms.TextBox in3;
         private System.Windows.Forms.TextBox in910;
-        private System.Windows.Forms.TextBox int908;
+        private System.Windows.Forms.TextBox in908;
         private System.Windows.Forms.TextBox in909;
         private System.Windows.Forms.TextBox in911;
         private System.Windows.Forms.TextBox in37;
