@@ -13,7 +13,7 @@ namespace _4RTools.Utils
             configs.Add("ProfileFolder", "Profile\\");
             configs.Add("GithubLink", "https://github.com/4RTools/4Rtools");
             configs.Add("DiscordLink", "https://discord.gg/AtZ2fJVtBz");
-            configs.Add("Version", "1.5.1");
+            configs.Add("Version", "1.5.2");
         }
 
         public static string ReadSetting(string key)
