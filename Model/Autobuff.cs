@@ -104,7 +104,7 @@ namespace _4RTools.Model
                             if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
                             {
                                 this.useStatusRecovery(item.Value);
-                                Thread.Sleep(150);
+                                Thread.Sleep(10);
                             }
                         }
                     }
@@ -116,12 +116,13 @@ namespace _4RTools.Model
 
         public void AddKeyToBuff(EffectStatusIDs status, Key key)
         {
+            if (buffMapping.ContainsKey(status))
+            {
+                buffMapping.Remove(status);
+            }
+
             if (this.IsValidKey(key))
             {
-                if (buffMapping.ContainsKey(status))
-                {
-                    buffMapping.Remove(status);
-                }
                 buffMapping.Add(status, key);
             }
         }
