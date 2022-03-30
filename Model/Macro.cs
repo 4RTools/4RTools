@@ -18,6 +18,12 @@ namespace _4RTools.Model
 
         public MacroConfig() { }
 
+        public MacroConfig(int id)
+        {
+            this.id = id;
+            this.macroEntries = new Dictionary<string, Key>();
+        }
+
         public MacroConfig(MacroConfig macro)
         {
             this.id = macro.id;
@@ -47,6 +53,16 @@ namespace _4RTools.Model
                 configs.Add(new MacroConfig(i, Key.None));
 
             }
+        }
+
+        public void ResetMacro(int macroId)
+        {
+            try
+            {
+                configs[macroId - 1] = new MacroConfig(macroId);
+            }
+            catch (Exception) { }
+            
         }
 
         public string GetActionName()
