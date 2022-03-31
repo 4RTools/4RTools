@@ -21,6 +21,7 @@ namespace _4RTools.Utils
         PROFILE_INPUT_CHANGE,
         TURN_ON,
         TURN_OFF,
+        SHUTDOWN_APPLICATION,
         CLICK_ICON_TRAY
     }
 
