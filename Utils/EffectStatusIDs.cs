@@ -10,8 +10,8 @@ namespace _4RTools.Utils
         BLIND = 887,
         CONFUSION = 886,
         CURSE = 884,
-        HALLUCINATIONWALK = 334,
         QUAGMIRE = 8,
+        HALLUCINATION = 34, // Also known as Illusion
 
         //BUFFS
         PROVOKE = 0,
