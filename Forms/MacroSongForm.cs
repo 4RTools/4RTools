@@ -37,19 +37,13 @@ namespace _4RTools.Forms
             {
                 this.songMacro = ProfileSingleton.GetCurrent().SongMacro;
 
-                for(int i = 0; i <= TOTAL_MACRO_LANES_FOR_SONGS - 1; i++)
+                for(int i = 1; i <= TOTAL_MACRO_LANES_FOR_SONGS; i++)
                 {
-                    var id = i + 1;
-                    Control[] c = this.Controls.Find("panelMacro" + id, true);
-                    if (c.Length > 0)
+                    try
                     {
-                        Panel panel = (Panel)c[0];
-                        try {
-                            UpdatePanelData(panel, new MacroConfig(this.songMacro.configs[i]));
-                        }
-                        catch { }
-                        
+                        UpdatePanelData(i);
                     }
+                    catch { }
                 }
 
             }
@@ -63,9 +57,12 @@ namespace _4RTools.Forms
             }
         }
 
-        private void UpdatePanelData(Panel p, MacroConfig macroConfig)
+        private void UpdatePanelData(int id)
         {
+            Panel p = (Panel)this.Controls.Find("panelMacro" + id, true)[0];
+            MacroConfig macroConfig = new MacroConfig(this.songMacro.configs[id - 1]);
             FormUtils.ResetForm(p);
+
             //Update Trigger Macro Value
             Control[] c = p.Controls.Find("inTriggerMacro" + macroConfig.id, true);
             if (c.Length > 0)
@@ -127,6 +124,15 @@ namespace _4RTools.Forms
             ProfileSingleton.SetConfiguration(this.songMacro);
         }
 
+        private void onReset(object sender, EventArgs e)
+        {
+            Button delayInput = (Button)sender;
+            int btnResetID = Int16.Parse(delayInput.Name.Split(new[] { "btnResMac" }, StringSplitOptions.None)[1]);
+            this.songMacro.ResetMacro(btnResetID);
+            ProfileSingleton.SetConfiguration(this.songMacro);
+            this.UpdatePanelData(btnResetID);
+        }
+
         public void initializeLane(Panel p)
         {
             foreach (Control c in p.Controls)
@@ -144,8 +150,18 @@ namespace _4RTools.Forms
                     NumericUpDown numericBox = (NumericUpDown)c;
                     numericBox.ValueChanged += new EventHandler(this.onDelayChange);
                 }
+
+                if(c is Button)
+                {
+                    Button resetButton = (Button)c;
+                    resetButton.Click += new EventHandler(this.onReset);
+                }
             }
         }
 
+        private void MacroSongForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
