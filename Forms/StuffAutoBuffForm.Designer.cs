@@ -55,6 +55,7 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.picBoxAbrasive = new System.Windows.Forms.PictureBox();
             this.in241 = new System.Windows.Forms.TextBox();
             this.in242 = new System.Windows.Forms.TextBox();
             this.in243 = new System.Windows.Forms.TextBox();
@@ -79,6 +80,7 @@
             this.in12 = new System.Windows.Forms.TextBox();
             this.in10 = new System.Windows.Forms.TextBox();
             this.in292 = new System.Windows.Forms.TextBox();
+            this.in295 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -103,6 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAbrasive)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -400,6 +403,18 @@
             this.pictureBox24.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox24, "INT Food");
             // 
+            // picBoxAbrasive
+            // 
+            this.picBoxAbrasive.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBoxAbrasive.BackgroundImage")));
+            this.picBoxAbrasive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picBoxAbrasive.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBoxAbrasive.Location = new System.Drawing.Point(27, 235);
+            this.picBoxAbrasive.Name = "picBoxAbrasive";
+            this.picBoxAbrasive.Size = new System.Drawing.Size(36, 26);
+            this.picBoxAbrasive.TabIndex = 171;
+            this.picBoxAbrasive.TabStop = false;
+            this.toolTip1.SetToolTip(this.picBoxAbrasive, "Abrasive");
+            // 
             // in241
             // 
             this.in241.Location = new System.Drawing.Point(67, 14);
@@ -568,12 +583,21 @@
             this.in292.Size = new System.Drawing.Size(55, 20);
             this.in292.TabIndex = 170;
             // 
+            // in295
+            // 
+            this.in295.Location = new System.Drawing.Point(67, 237);
+            this.in295.Name = "in295";
+            this.in295.Size = new System.Drawing.Size(55, 20);
+            this.in295.TabIndex = 172;
+            // 
             // StuffAutoBuffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(398, 252);
+            this.ClientSize = new System.Drawing.Size(398, 270);
+            this.Controls.Add(this.in295);
+            this.Controls.Add(this.picBoxAbrasive);
             this.Controls.Add(this.in292);
             this.Controls.Add(this.in10);
             this.Controls.Add(this.in12);
@@ -649,6 +673,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAbrasive)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -704,5 +729,7 @@
         private System.Windows.Forms.TextBox in12;
         private System.Windows.Forms.TextBox in10;
         private System.Windows.Forms.TextBox in292;
+        private System.Windows.Forms.TextBox in295;
+        private System.Windows.Forms.PictureBox picBoxAbrasive;
     }
 }

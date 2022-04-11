@@ -18,7 +18,6 @@ namespace _4RTools.Utils
         ENDURE = 1,
         CONCENTRATION  = 3,
         TRUESIGHT = 115,
-        CRITICALPERCENT = 295,
         GLORIA = 21,
         MAGNIFICAT = 20,
         ANGELUS = 9,
@@ -68,6 +67,8 @@ namespace _4RTools.Utils
 
         REGENERATION_POTION = 292,
 
+        CRITICALPERCENT = 295, // Abrasive
+
         //Boxes
         DROWSINESS_BOX = 151, //SONOLENCIA
         RESENTMENT_BOX = 150, //RESSENTIMENTO
@@ -85,7 +86,5 @@ namespace _4RTools.Utils
         //Scrolls
         INC_AGI = 12,
         BLESSING = 10,
-
-
     }
 }
