@@ -17,78 +17,62 @@ namespace _4RTools.Forms
             songMacro = new Macro("SongMacro", TOTAL_MACRO_LANES_FOR_SONGS);
             subject.Attach(this);
             InitializeComponent();
-
-            for (int i = 1; i <= TOTAL_MACRO_LANES_FOR_SONGS; i++)
-            {
-                var id = i + 1;
-                Control[] c = this.Controls.Find("panelMacro" + id, true);
-                if (c.Length > 0)
-                {
-                    Panel panel = (Panel)c[0];
-                    initializeLane(panel);
-                }
-            }
-
+            configureMacroLanes();
         }
 
-        public void Update(ISubject subject)
-        {
-            if ((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
+        public void Update(ISubject subject) 
+        { 
+            switch((subject as Subject).Message.code)
             {
-                this.songMacro = ProfileSingleton.GetCurrent().SongMacro;
+                case MessageCode.PROFILE_CHANGED:
+                    this.songMacro = ProfileSingleton.GetCurrent().SongMacro;
+                    updateUi();
+                    break;
+                case MessageCode.TURN_ON:
+                    this.songMacro.Start();
+                    break;
+                case MessageCode.TURN_OFF:
+                    this.songMacro.Stop();
+                    break;
+            }
 
-                for(int i = 1; i <= TOTAL_MACRO_LANES_FOR_SONGS; i++)
-                {
-                    try
-                    {
-                        UpdatePanelData(i);
-                    }
-                    catch { }
-                }
-
-            }
-            else if ((subject as Subject).Message.code == MessageCode.TURN_ON)
-            {
-                this.songMacro.Start();
-            }
-            else if ((subject as Subject).Message.code == MessageCode.TURN_OFF)
-            {
-                this.songMacro.Stop();
-            }
         }
 
         private void UpdatePanelData(int id)
         {
-            Panel p = (Panel)this.Controls.Find("panelMacro" + id, true)[0];
-            MacroConfig macroConfig = new MacroConfig(this.songMacro.configs[id - 1]);
-            FormUtils.ResetForm(p);
-
-            //Update Trigger Macro Value
-            Control[] c = p.Controls.Find("inTriggerMacro" + macroConfig.id, true);
-            if (c.Length > 0)
+            try
             {
-                TextBox textBox = (TextBox)c[0];
-                textBox.Text = macroConfig.trigger.ToString();
-            }
+                Panel p = (Panel)this.Controls.Find("panelMacro" + id, true)[0];
+                MacroConfig macroConfig = new MacroConfig(this.songMacro.configs[id - 1]);
+                FormUtils.ResetForm(p);
 
-            List<string> names = new List<string>(macroConfig.macroEntries.Keys);
-            foreach (string cbName in names)
-            {
-                Control[] controls = p.Controls.Find(cbName, true);
-                if (controls.Length > 0)
+                //Update Trigger Macro Value
+                Control[] c = p.Controls.Find("inTriggerMacro" + macroConfig.id, true);
+                if (c.Length > 0)
                 {
-                    TextBox textBox = (TextBox)controls[0];
-                    textBox.Text = macroConfig.macroEntries[cbName].ToString();
+                    TextBox textBox = (TextBox)c[0];
+                    textBox.Text = macroConfig.trigger.ToString();
                 }
-            }
 
-            //Update Delay Macro Value
-            Control[] d = p.Controls.Find("delayMac" + macroConfig.id, true);
-            if(d.Length > 0)
-            {
-                NumericUpDown delayInput = (NumericUpDown)d[0];
-                delayInput.Value = macroConfig.delay;
-            }
+                List<string> names = new List<string>(macroConfig.macroEntries.Keys);
+                foreach (string cbName in names)
+                {
+                    Control[] controls = p.Controls.Find(cbName, true);
+                    if (controls.Length > 0)
+                    {
+                        TextBox textBox = (TextBox)controls[0];
+                        textBox.Text = macroConfig.macroEntries[cbName].ToString();
+                    }
+                }
+
+                //Update Delay Macro Value
+                Control[] d = p.Controls.Find("delayMac" + macroConfig.id, true);
+                if (d.Length > 0)
+                {
+                    NumericUpDown delayInput = (NumericUpDown)d[0];
+                    delayInput.Value = macroConfig.delay;
+                }
+            }catch { }
         }
 
         private void onTextChange(object sender, EventArgs e)
@@ -133,29 +117,46 @@ namespace _4RTools.Forms
             this.UpdatePanelData(btnResetID);
         }
 
-        public void initializeLane(Panel p)
-        {
-            foreach (Control c in p.Controls)
-            {
-                if (c is TextBox)
-                {
-                    TextBox textBox = (TextBox)c;
-                    textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-                    textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-                    textBox.TextChanged += new EventHandler(this.onTextChange);
-                }
 
-                if(c is Button)
-                {
-                    Button resetButton = (Button)c;
-                    resetButton.Click += new EventHandler(this.onReset);
-                }
+        private void updateUi()
+        {
+            for (int i = 1; i <= TOTAL_MACRO_LANES_FOR_SONGS; i++)
+            {
+                UpdatePanelData(i);
             }
         }
 
-        private void MacroSongForm_Load(object sender, EventArgs e)
+        private void configureMacroLanes()
         {
+            for (int i = 1; i <= TOTAL_MACRO_LANES_FOR_SONGS; i++)
+            {
+                initializeLane(i);
+            }
+        }
 
+        private void initializeLane(int id)
+        {
+            try
+            {
+                Panel p = (Panel)this.Controls.Find("panelMacro" + id, true)[0];
+                foreach (Control c in p.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        TextBox textBox = (TextBox)c;
+                        textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+                        textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+                        textBox.TextChanged += new EventHandler(this.onTextChange);
+                    }
+
+                    if (c is Button)
+                    {
+                        Button resetButton = (Button)c;
+                        resetButton.Click += new EventHandler(this.onReset);
+                    }
+                }
+            }catch { }
+           
         }
     }
 }

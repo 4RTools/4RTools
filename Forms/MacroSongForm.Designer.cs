@@ -2040,7 +2040,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MacroSongForm";
             this.Text = "MacroSongForm";
-            this.Load += new System.EventHandler(this.MacroSongForm_Load);
             this.panelMacro1.ResumeLayout(false);
             this.panelMacro1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.delayMac1)).EndInit();
