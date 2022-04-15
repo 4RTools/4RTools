@@ -13,33 +13,25 @@ namespace _4RTools.Model
 
         public static void Load(string profileName)
         {
-            try
-            {
-                string jsonFileName = Config.ReadSetting("ProfileFolder") + profileName + ".json";
-                string json = File.ReadAllText(jsonFileName);
-                dynamic rawObject = JsonConvert.DeserializeObject(json);
+            string jsonFileName = Config.ReadSetting("ProfileFolder") + profileName + ".json";
+            string json = File.ReadAllText(jsonFileName);
+            dynamic rawObject = JsonConvert.DeserializeObject(json);
 
-                Profile profile = new Profile(profileName);
+            Profile profile = new Profile(profileName);
 
-                if ((rawObject != null)) {
-                    profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByProperty(rawObject, "UserPreferences", new UserPreferences().GetConfiguration()));
-                    profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByProperty(rawObject, "AHK", new AHK().GetConfiguration()));
-                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "Autopot", new Autopot("Autopot").GetConfiguration()));
-                    profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "AutopotYgg", new Autopot("AutopotYgg").GetConfiguration()));
-                    profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "StatusAutoBuff", new AutoBuff("StatusAutoBuff").GetConfiguration()));
-                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByProperty(rawObject, "AutoRefreshSpammer", new AutoRefreshSpammer().GetConfiguration()));
-                    profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "ItemsAutoBuff", new AutoBuff("ItemsAutoBuff").GetConfiguration()));
-                    profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "SkillAutoBuff", new AutoBuff("SkillAutoBuff").GetConfiguration()));
-                    profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByProperty(rawObject, "SongMacro", new Macro("SongMacro",MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS).GetConfiguration()));
-                }
-
-
-                ProfileSingleton.profile = profile;
+            if ((rawObject != null)) {
+                profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByProperty(rawObject, "UserPreferences", new UserPreferences().GetConfiguration()));
+                profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByProperty(rawObject, "AHK", new AHK().GetConfiguration()));
+                profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "Autopot", new Autopot("Autopot").GetConfiguration()));
+                profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "AutopotYgg", new Autopot("AutopotYgg").GetConfiguration()));
+                profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "StatusAutoBuff", new AutoBuff("StatusAutoBuff").GetConfiguration()));
+                profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByProperty(rawObject, "AutoRefreshSpammer", new AutoRefreshSpammer().GetConfiguration()));
+                profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "ItemsAutoBuff", new AutoBuff("ItemsAutoBuff").GetConfiguration()));
+                profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "SkillAutoBuff", new AutoBuff("SkillAutoBuff").GetConfiguration()));
+                profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByProperty(rawObject, "SongMacro", new Macro("SongMacro",MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS).GetConfiguration()));
             }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Error while loading profile "+ ex.Message);
-            }
+            ProfileSingleton.profile = profile;
+            
         }
 
         public static void SetConfiguration(Action action)

@@ -231,9 +231,15 @@ namespace _4RTools.Forms
         {
             if (this.profileCB.Text != currentProfile)
             {
-                ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
-                subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
-                currentProfile = this.profileCB.Text.ToString();
+                try
+                {
+                    ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
+                    subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
+                    currentProfile = this.profileCB.Text.ToString();
+                }catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
         }
