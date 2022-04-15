@@ -206,9 +206,15 @@ namespace _4RTools.Forms
 
         protected override void OnClosed(EventArgs e)
         {
-            Utils.KeyboardHook.Disable();
-            subject.Notify(new Utils.Message(Utils.MessageCode.TURN_OFF, null));
+            ShutdownApplication();
             base.OnClosed(e);
+        }
+
+        private void ShutdownApplication()
+        {
+            KeyboardHook.Disable();
+            subject.Notify(new Utils.Message(Utils.MessageCode.TURN_OFF, null));
+            Application.Exit();
         }
 
         private void lblLinkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -246,6 +252,9 @@ namespace _4RTools.Forms
                 case MessageCode.CLICK_ICON_TRAY:
                     this.Show();
                     this.WindowState = FormWindowState.Normal;
+                    break;
+                case MessageCode.SHUTDOWN_APPLICATION:
+                    this.ShutdownApplication();
                     break;
             }
         }

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MacroSongForm));
             this.panelMacro1 = new System.Windows.Forms.Panel();
+            this.btnResMac1 = new System.Windows.Forms.Button();
             this.in20mac1 = new System.Windows.Forms.TextBox();
             this.in19mac1 = new System.Windows.Forms.TextBox();
             this.in18mac1 = new System.Windows.Forms.TextBox();
@@ -77,6 +78,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panelMacro2 = new System.Windows.Forms.Panel();
+            this.btnResMac2 = new System.Windows.Forms.Button();
             this.in20mac2 = new System.Windows.Forms.TextBox();
             this.inTriggerMacro2 = new System.Windows.Forms.TextBox();
             this.in19mac2 = new System.Windows.Forms.TextBox();
@@ -361,6 +363,15 @@
             this.panelMacro1.Size = new System.Drawing.Size(388, 117);
             this.panelMacro1.TabIndex = 21;
             // 
+            // btnResMac1
+            // 
+            this.btnResMac1.Location = new System.Drawing.Point(32, 69);
+            this.btnResMac1.Name = "btnResMac1";
+            this.btnResMac1.Size = new System.Drawing.Size(62, 23);
+            this.btnResMac1.TabIndex = 210;
+            this.btnResMac1.Text = "Reset";
+            this.btnResMac1.UseVisualStyleBackColor = true;
+            // 
             // in20mac1
             // 
             this.in20mac1.Location = new System.Drawing.Point(1402, 34);
@@ -391,7 +402,7 @@
             // 
             // in16mac1
             // 
-            this.in16mac1.Location = new System.Drawing.Point(1135, 27);
+            this.in16mac1.Location = new System.Drawing.Point(1135, 34);
             this.in16mac1.Name = "in16mac1";
             this.in16mac1.Size = new System.Drawing.Size(47, 20);
             this.in16mac1.TabIndex = 85;
@@ -781,6 +792,15 @@
             this.panelMacro2.Size = new System.Drawing.Size(388, 117);
             this.panelMacro2.TabIndex = 68;
             // 
+            // btnResMac2
+            // 
+            this.btnResMac2.Location = new System.Drawing.Point(32, 72);
+            this.btnResMac2.Name = "btnResMac2";
+            this.btnResMac2.Size = new System.Drawing.Size(62, 23);
+            this.btnResMac2.TabIndex = 209;
+            this.btnResMac2.Text = "Reset";
+            this.btnResMac2.UseVisualStyleBackColor = true;
+            // 
             // in20mac2
             // 
             this.in20mac2.Location = new System.Drawing.Point(1401, 37);
@@ -1131,7 +1151,7 @@
             // pictureBox22
             // 
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(1250, 27);
+            this.pictureBox22.Location = new System.Drawing.Point(1250, 37);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(14, 21);
             this.pictureBox22.TabIndex = 106;
@@ -1260,7 +1280,7 @@
             // 
             // in17mac3
             // 
-            this.in17mac3.Location = new System.Drawing.Point(1199, 27);
+            this.in17mac3.Location = new System.Drawing.Point(1199, 40);
             this.in17mac3.Name = "in17mac3";
             this.in17mac3.Size = new System.Drawing.Size(47, 20);
             this.in17mac3.TabIndex = 164;

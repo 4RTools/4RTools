@@ -12,6 +12,9 @@ namespace _4RTools.Forms
     {
         private UserPreferences userPreferences = new UserPreferences();
         private Subject subject;
+        private System.Windows.Forms.ContextMenu contextMenu;
+        private System.Windows.Forms.MenuItem menuItem;
+
         public ToggleApplicationStateForm(Subject subject)
         {
             InitializeComponent();
@@ -25,6 +28,24 @@ namespace _4RTools.Forms
             this.txtStatusToggleKey.KeyDown += new KeyEventHandler(FormUtils.OnKeyDown);
             this.txtStatusToggleKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.txtStatusToggleKey.TextChanged += new EventHandler(this.onStatusToggleKeyChange);
+
+            InitializeContextualMenu();
+        }
+
+        private void InitializeContextualMenu()
+        {
+            this.contextMenu = new ContextMenu();
+            this.menuItem = new MenuItem();
+
+            this.contextMenu.MenuItems.AddRange(
+                    new MenuItem[] { this.menuItem });
+
+
+            this.menuItem.Index = 0;
+            this.menuItem.Text = "Close";
+            this.menuItem.Click += new System.EventHandler(this.notifyShutdownApplication);
+
+            this.notifyIconTray.ContextMenu = this.contextMenu;
         }
 
         public void Update(ISubject subject)
@@ -80,6 +101,12 @@ namespace _4RTools.Forms
         private void notifyIconDoubleClick(object sender, MouseEventArgs e)
         {
             this.subject.Notify(new Utils.Message(MessageCode.CLICK_ICON_TRAY, null));
+        }
+
+        private void notifyShutdownApplication(object Sender, EventArgs e)
+        {
+            // Close the form, which closes the application.
+            this.subject.Notify(new Utils.Message(MessageCode.SHUTDOWN_APPLICATION, null));
         }
     }
 }
