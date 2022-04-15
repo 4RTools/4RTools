@@ -18,7 +18,7 @@ namespace _4RTools.Forms
             subject.Attach(this);
             InitializeComponent();
 
-            for (int i = 0; i <= TOTAL_MACRO_LANES_FOR_SONGS - 1; i++)
+            for (int i = 1; i <= TOTAL_MACRO_LANES_FOR_SONGS; i++)
             {
                 var id = i + 1;
                 Control[] c = this.Controls.Find("panelMacro" + id, true);
@@ -120,7 +120,7 @@ namespace _4RTools.Forms
             NumericUpDown delayInput = (NumericUpDown)sender;
             int macroID = Int16.Parse(delayInput.Name.Split(new[] { "delayMac" }, StringSplitOptions.None)[1]);
             MacroConfig mc = this.songMacro.configs.Find(songMacro => songMacro.id == macroID);
-            mc.delay = Int16.Parse(delayInput.Text);
+            mc.delay = decimal.ToInt16(delayInput.Value);
             ProfileSingleton.SetConfiguration(this.songMacro);
         }
 
@@ -143,12 +143,6 @@ namespace _4RTools.Forms
                     textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
                     textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
                     textBox.TextChanged += new EventHandler(this.onTextChange);
-                }
-
-                if (c is NumericUpDown)
-                {
-                    NumericUpDown numericBox = (NumericUpDown)c;
-                    numericBox.ValueChanged += new EventHandler(this.onDelayChange);
                 }
 
                 if(c is Button)

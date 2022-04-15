@@ -219,8 +219,6 @@
             this.in1mac4 = new System.Windows.Forms.TextBox();
             this.in10mac4 = new System.Windows.Forms.TextBox();
             this.keyMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnResMac2 = new System.Windows.Forms.Button();
-            this.btnResMac1 = new System.Windows.Forms.Button();
             this.panelMacro1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.delayMac1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -530,6 +528,7 @@
             this.delayMac1.Name = "delayMac1";
             this.delayMac1.Size = new System.Drawing.Size(47, 20);
             this.delayMac1.TabIndex = 68;
+            this.delayMac1.ValueChanged += new System.EventHandler(this.onDelayChange);
             // 
             // pictureBox18
             // 
@@ -833,6 +832,7 @@
             this.delayMac2.Name = "delayMac2";
             this.delayMac2.Size = new System.Drawing.Size(47, 20);
             this.delayMac2.TabIndex = 69;
+            this.delayMac2.ValueChanged += new System.EventHandler(this.onDelayChange);
             // 
             // in18mac2
             // 
@@ -1262,6 +1262,7 @@
             this.delayMac3.Name = "delayMac3";
             this.delayMac3.Size = new System.Drawing.Size(47, 20);
             this.delayMac3.TabIndex = 70;
+            this.delayMac3.ValueChanged += new System.EventHandler(this.onDelayChange);
             // 
             // in18mac3
             // 
@@ -1691,6 +1692,7 @@
             this.delayMac4.Name = "delayMac4";
             this.delayMac4.Size = new System.Drawing.Size(47, 20);
             this.delayMac4.TabIndex = 71;
+            this.delayMac4.ValueChanged += new System.EventHandler(this.onDelayChange);
             // 
             // in18mac4
             // 
@@ -2023,24 +2025,6 @@
             this.in10mac4.Name = "in10mac4";
             this.in10mac4.Size = new System.Drawing.Size(47, 20);
             this.in10mac4.TabIndex = 196;
-            // 
-            // btnResMac2
-            // 
-            this.btnResMac2.Location = new System.Drawing.Point(32, 72);
-            this.btnResMac2.Name = "btnResMac2";
-            this.btnResMac2.Size = new System.Drawing.Size(62, 23);
-            this.btnResMac2.TabIndex = 209;
-            this.btnResMac2.Text = "Reset";
-            this.btnResMac2.UseVisualStyleBackColor = true;
-            // 
-            // btnResMac1
-            // 
-            this.btnResMac1.Location = new System.Drawing.Point(32, 69);
-            this.btnResMac1.Name = "btnResMac1";
-            this.btnResMac1.Size = new System.Drawing.Size(62, 23);
-            this.btnResMac1.TabIndex = 210;
-            this.btnResMac1.Text = "Reset";
-            this.btnResMac1.UseVisualStyleBackColor = true;
             // 
             // MacroSongForm
             // 
