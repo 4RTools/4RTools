@@ -34,17 +34,20 @@ namespace _4RTools.Model
                     {
                         try
                         {
-                            foreach (Key key in ahkEntries.Values)
-                            {
-                                Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
-                                while (Keyboard.IsKeyDown(key))
+                                foreach (Key key in ahkEntries.Values)
                                 {
-                                    if(mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X - 1, System.Windows.Forms.Cursor.Position.Y - 1);
-                                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                                    Thread.Sleep(1);
-                                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                                    if(mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X + 1, System.Windows.Forms.Cursor.Position.Y + 1);
+                                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
+                                    while (Keyboard.IsKeyDown(key))
+                                    {
+                                        if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
+                                        {
+                                            if (mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X - 1, System.Windows.Forms.Cursor.Position.Y - 1);
+                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                                            Thread.Sleep(1);
+                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                                            if (mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X + 1, System.Windows.Forms.Cursor.Position.Y + 1);
+                                        }
                                     Thread.Sleep(this.ahkDelay);
                                 }
                             }
