@@ -77,22 +77,33 @@ namespace _4RTools.Forms
         private bool toggleStatus()
         {
             bool isOn = this.btnStatusToggle.Text == "ON";
-            Console.WriteLine("toggleStatus" + isOn);
             if (isOn)
             {
                 this.btnStatusToggle.BackColor = Color.Red;
                 this.btnStatusToggle.Text = "OFF";
                 this.notifyIconTray.Icon = Resources.logo_4rtools_off;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
+                this.lblStatusToggle.Text = "Press the key to start!";
                 new SoundPlayer(Resources.Speech_Off).Play();
             }
             else
             {
-                this.btnStatusToggle.BackColor = Color.Green;
-                this.btnStatusToggle.Text = "ON";
-                this.notifyIconTray.Icon = Resources.logo_4rtools_on;
-                this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
-                new SoundPlayer(Resources.Speech_On).Play();
+                Client client = ClientSingleton.GetClient();
+                if (client != null)
+                {
+                    this.btnStatusToggle.BackColor = Color.Green;
+                    this.btnStatusToggle.Text = "ON";
+                    this.notifyIconTray.Icon = Resources.logo_4rtools_on;
+                    this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
+                    this.lblStatusToggle.Text = "Press the key to stop!";
+                    this.lblStatusToggle.ForeColor = Color.Black;
+                    new SoundPlayer(Resources.Speech_On).Play();
+                } else
+                {
+                    this.lblStatusToggle.Text = "Please select a valid Ragnarok Client!";
+                    this.lblStatusToggle.ForeColor = Color.Red;
+                }
+                
             }
 
             return true;

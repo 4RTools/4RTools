@@ -45,7 +45,7 @@
             this.groupBox1.Controls.Add(this.lblStatusToggle);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 105);
+            this.groupBox1.Size = new System.Drawing.Size(178, 114);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Current Status";
@@ -77,12 +77,15 @@
             // 
             // lblStatusToggle
             // 
+            this.lblStatusToggle.AllowDrop = true;
             this.lblStatusToggle.AutoSize = true;
             this.lblStatusToggle.Location = new System.Drawing.Point(35, 80);
+            this.lblStatusToggle.MaximumSize = new System.Drawing.Size(109, 30);
             this.lblStatusToggle.Name = "lblStatusToggle";
             this.lblStatusToggle.Size = new System.Drawing.Size(109, 13);
             this.lblStatusToggle.TabIndex = 22;
             this.lblStatusToggle.Text = "Press the key to start!";
+            this.lblStatusToggle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // notifyIconTray
             // 
