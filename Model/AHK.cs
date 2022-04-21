@@ -16,7 +16,7 @@ namespace _4RTools.Model
         private string ACTION_NAME = "AHK";
         public int ahkDelay { get; set; } = 10;
         public bool mouseFlick { get; set; } = false;
-        private Thread ahkThread;
+        private _4RThread thread;
 
         public AHK()
         {
@@ -24,45 +24,38 @@ namespace _4RTools.Model
 
         public void Start()
         {
-            Stop();
             Client roClient = ClientSingleton.GetClient();
             if(roClient != null)
             {
-                Thread ahkThread = new Thread(() => {
-                    if (this.ahkDelay <= 0) this.ahkDelay = 1;
-                    while (true)
-                    {
-                        try
-                        {
-                                foreach (Key key in ahkEntries.Values)
-                                {
-                                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
-                                    while (Keyboard.IsKeyDown(key))
-                                    {
-                                        if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
-                                        {
-                                            if (mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X - 1, System.Windows.Forms.Cursor.Position.Y - 1);
-                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                                            Thread.Sleep(1);
-                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                                            if (mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X + 1, System.Windows.Forms.Cursor.Position.Y + 1);
-                                        }
-                                    Thread.Sleep(this.ahkDelay);
-                                }
-                            }
-                        }
-                        catch { }
-                        Thread.Sleep(ahkDelay);
-                    }
-                });
-
-                this.ahkThread = ahkThread;
-                ahkThread.SetApartmentState(ApartmentState.STA);
-                ahkThread.Start();
+                if (this.ahkDelay <= 0) this.ahkDelay = 1; //TODO -> This is really necessary? NumberInput already do this for us.
+                this.thread = new _4RThread(_ => AHKThreadExecution(roClient));
+                _4RThread.Start(this.thread);
             }
         }
+
+        private int AHKThreadExecution(Client roClient)
+        {
+            foreach (Key key in ahkEntries.Values)
+            {
+                Keys thisk = (Keys)Enum.Parse(typeof(Keys), key.ToString());
+                while (Keyboard.IsKeyDown(key))
+                {
+                    if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
+                    {
+                        if (mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X - 1, System.Windows.Forms.Cursor.Position.Y - 1);
+                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                        Thread.Sleep(1);
+                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                        if (mouseFlick) System.Windows.Forms.Cursor.Position = new System.Drawing.Point(System.Windows.Forms.Cursor.Position.X + 1, System.Windows.Forms.Cursor.Position.Y + 1);
+                    }
+                    Thread.Sleep(this.ahkDelay);
+                }
+            }
+            return 0;
+        }
         
+
         public void AddAHKEntry(string chkboxName,Key value)
         {
             if (!this.ahkEntries.ContainsKey(chkboxName)) {
@@ -78,10 +71,7 @@ namespace _4RTools.Model
 
         public void Stop()
         {
-            if(this.ahkThread != null && this.ahkThread.IsAlive)
-            {
-                this.ahkThread.Abort();
-            }
+            _4RThread.Stop(this.thread);
         }
 
         public string GetConfiguration()
