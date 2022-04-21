@@ -77,7 +77,6 @@ namespace _4RTools.Forms
         private bool toggleStatus()
         {
             bool isOn = this.btnStatusToggle.Text == "ON";
-            Console.WriteLine("toggleStatus" + isOn);
             if (isOn)
             {
                 this.btnStatusToggle.BackColor = Color.Red;
