@@ -51,6 +51,7 @@ namespace _4RTools.Forms
             this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.SILENCE, k);
             this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.BLIND, k);
             this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.CONFUSION, k);
+            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.HALLUCINATIONWALK, k);
             this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.HALLUCINATION, k);
             this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.CURSE, k);
 
