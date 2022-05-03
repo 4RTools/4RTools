@@ -20,7 +20,7 @@ namespace _4RTools.Model
         public int delayYgg { get; set; } = 50;
 
         public string actionName { get; set; }
-        private Thread autopotThread;
+        private _4RThread thread;
 
         public Autopot() { }
 
@@ -48,42 +48,37 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if(roClient != null)
             {
-                Thread apThread = new Thread(() =>
-                {
-                    uint hp_pot_count = 0;
-                    while (true)
-                    {
-                        // check hp first
-                        if (roClient.IsHpBelow(hpPercent))
-                        {
-                            pot(this.hpKey);
-                            hp_pot_count++;
-
-                            if (hp_pot_count == 3)
-                            {
-                                hp_pot_count = 0;
-                                if (roClient.IsSpBelow(spPercent))
-                                {
-                                    pot(this.spKey);
-                                }
-                            }
-                        }
-
-                        // check sp
-                        if (roClient.IsSpBelow(spPercent))
-                        {
-                            pot(this.spKey);
-                        }
-
-
-                        Thread.Sleep(this.delay);
-                    }
-                });
-
-                this.autopotThread = apThread;
-                apThread.SetApartmentState(ApartmentState.STA);
-                apThread.Start();
+                int hpPotCount = 0;
+                this.thread = new _4RThread(_ => AutopotThreadExecution(roClient, hpPotCount));
+                _4RThread.Start(this.thread);
             }
+        }
+
+        private int AutopotThreadExecution(Client roClient, int hpPotCount)
+        {
+            // check hp first
+            if (roClient.IsHpBelow(hpPercent))
+            {
+                pot(this.hpKey);
+                hpPotCount++;
+
+                if (hpPotCount == 3)
+                {
+                    hpPotCount = 0;
+                    if (roClient.IsSpBelow(spPercent))
+                    {
+                        pot(this.spKey);
+                    }
+                }
+            }
+            // check sp
+            if (roClient.IsSpBelow(spPercent))
+            {
+                pot(this.spKey);
+            }
+
+            Thread.Sleep(this.delay);
+            return 0;
         }
 
         private void pot(Key key)
@@ -98,10 +93,7 @@ namespace _4RTools.Model
 
         public void Stop()
         {
-            if (this.autopotThread != null)
-            {
-                this.autopotThread.Abort();
-            }
+            _4RThread.Stop(this.thread);
         }
 
         public string GetConfiguration()

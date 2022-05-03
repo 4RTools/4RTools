@@ -12,7 +12,7 @@ namespace _4RTools.Model
     public class AutoBuff : Action
     {
         public string actionName { get; set; }
-        private Thread autobuffThread;
+        private _4RThread thread;
         public int delay { get; set; } = 1;
         private int maxBuffListIndexSize { get; set; } = 100;
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
@@ -31,86 +31,82 @@ namespace _4RTools.Model
                 switch (this.actionName)
                 {
                     case "StatusAutoBuff":
-                        this.autobuffThread = RestoreStatusThread(roClient);
+                        this.thread = RestoreStatusThread(roClient);
                         break;
                     case "ItemsAutoBuff":
                     case "SkillAutoBuff":
-                        this.autobuffThread = AutoBuffThread(roClient);
+                        this.thread = AutoBuffThread(roClient);
                         break;
                          
                 }
-                
-                autobuffThread.SetApartmentState(ApartmentState.STA);
-                autobuffThread.Start();
+                _4RThread.Start(this.thread);
             }
         }
 
-        public Thread RestoreStatusThread(Client c)
+        public _4RThread RestoreStatusThread(Client c)
         {
             Client roClient = ClientSingleton.GetClient();
-            Thread statusEffectsThread = new Thread(() =>
+            _4RThread statusEffectsThread = new _4RThread(_ =>
             {
-                while (true)
+                for (int i = 1; i <= this.maxBuffListIndexSize -1; i++)
                 {
-                    for (int i = 1; i <= this.maxBuffListIndexSize -1; i++)
+                    uint currentStatus = c.CurrentBuffStatusCode(i);
+                    EffectStatusIDs status = (EffectStatusIDs)currentStatus;
+                    if (buffMapping.ContainsKey((EffectStatusIDs)currentStatus)) //IF FOR REMOVE STATUS - CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                     {
-                        uint currentStatus = c.CurrentBuffStatusCode(i);
-                        EffectStatusIDs status = (EffectStatusIDs)currentStatus;
-                        if (buffMapping.ContainsKey((EffectStatusIDs)currentStatus)) //IF FOR REMOVE STATUS - CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
+                        //IF CONTAINS CURRENT STATUS ON DICT
+                        Key key = buffMapping[(EffectStatusIDs)currentStatus];
+                        if (Enum.IsDefined(typeof(EffectStatusIDs), currentStatus))
                         {
-                            //IF CONTAINS CURRENT STATUS ON DICT
-                            Key key = buffMapping[(EffectStatusIDs)currentStatus];
-                            if (Enum.IsDefined(typeof(EffectStatusIDs), currentStatus))
-                            {
-                                this.useStatusRecovery(key);
-                            }
+                            this.useStatusRecovery(key);
                         }
                     }
-                    Thread.Sleep(this.delay);
                 }
+                Thread.Sleep(this.delay);
+                return 0;
             });
+
             return statusEffectsThread;
         }
 
-        public Thread AutoBuffThread(Client c)
+        public _4RThread AutoBuffThread(Client c)
         {
-            Thread autobuffItemThread = new Thread(() =>
+            _4RThread autobuffItemThread = new _4RThread(_ =>
             {
-                while (true)
+                bool foundQuag = false;
+                Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
+                for (int i = 1; i < this.maxBuffListIndexSize - 1; i++)
                 {
-                    bool foundQuag = false;
-                    Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
-                    for (int i = 1; i < this.maxBuffListIndexSize - 1; i++)
+                    uint currentStatus = c.CurrentBuffStatusCode(i);
+                    EffectStatusIDs status = (EffectStatusIDs)currentStatus;
+                    if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                     {
-                        uint currentStatus = c.CurrentBuffStatusCode(i);
-                        EffectStatusIDs status = (EffectStatusIDs)currentStatus;
-                        if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
-                        {
-                            bmClone.Remove(status);
-                        }
-
-                        if(status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
-
+                        bmClone.Remove(status);
                     }
-                    foreach (var item in bmClone)
-                    {
-                        if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT ))
-                        {
-                            //NOT use Concentration, INC_AGI Scroll or TRUESIGHT when Quagmire is Found
-                            // In Hercules, Quagmire removes TRUESIGHT
-                        }
-                        else 
-                        {
-                            if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
-                            {
-                                this.useStatusRecovery(item.Value);
-                                Thread.Sleep(10);
-                            }
-                        }
-                    }
-                    Thread.Sleep(100);
+
+                    if(status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
+
                 }
+                foreach (var item in bmClone)
+                {
+                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT ))
+                    {
+                        //NOT use Concentration, INC_AGI Scroll or TRUESIGHT when Quagmire is Found
+                        // In Hercules, Quagmire removes TRUESIGHT
+                    }
+                    else 
+                    {
+                        if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
+                        {
+                            this.useStatusRecovery(item.Value);
+                            Thread.Sleep(10);
+                        }
+                    }
+                }
+                Thread.Sleep(100);
+                return 0;
             });
+
             return autobuffItemThread;
         }
 
@@ -126,7 +122,6 @@ namespace _4RTools.Model
                 buffMapping.Add(status, key);
             }
         }
-
         public void ClearKeyMapping()
         {
             buffMapping.Clear();
@@ -134,10 +129,7 @@ namespace _4RTools.Model
 
         public void Stop()
         {
-            if (this.autobuffThread != null && this.autobuffThread.IsAlive)
-            {
-                this.autobuffThread.Abort();
-            }
+            _4RThread.Stop(this.thread);
         }
 
         public string GetConfiguration()

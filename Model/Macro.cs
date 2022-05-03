@@ -16,8 +16,8 @@ namespace _4RTools.Model
         public int delay { get; set; } = 50;
         public Dictionary<string,Key> macroEntries { get; set; } = new Dictionary<string, Key>();
 
-        public MacroConfig() { }
 
+        public MacroConfig() { }
         public MacroConfig(int id)
         {
             this.id = id;
@@ -41,7 +41,7 @@ namespace _4RTools.Model
     public class Macro : Action
     {
         public string actionName { get; set; }
-        private Thread macroThread;
+        private _4RThread thread;
         public List<MacroConfig> configs { get; set; } = new List<MacroConfig>();
 
 
@@ -75,53 +75,44 @@ namespace _4RTools.Model
             return JsonConvert.SerializeObject(this);
         }
 
+        private int MacroExecutionThread(Client roClient)
+        {
+            foreach (MacroConfig mc in this.configs)
+            {
+                if (mc.trigger != Key.None && Keyboard.IsKeyDown(mc.trigger))
+                {
+                    Dictionary<string, Key> macro = mc.macroEntries;
+                    for (int i = 1; i <= macro.Count; i++)//Ensure to execute keys in Order
+                    {
+                        Key macroKey = macro["in" + i + "mac" + mc.id];
+                        if (macroKey != Key.None)
+                        {
+                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.ToString());
+                            Thread.Sleep(mc.delay);
+                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                        }
+
+                    }
+                }
+            }
+            Thread.Sleep(100);
+            return 0;
+        }
+
         public void Start()
         {
             Stop();
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                Thread macroThread = new Thread(() => {
-                    while (true)
-                    {
-                        try
-                        {
-                            foreach(MacroConfig mc in this.configs)
-                            {
-                                if (mc.trigger != Key.None && Keyboard.IsKeyDown(mc.trigger))
-                                {
-                                    Dictionary<string,Key> macro = mc.macroEntries;
-                                    for (int i = 1; i <= macro.Count;i++)//Ensure to execute keys in Order
-                                    {
-                                        Key macroKey = macro["in" + i + "mac" + mc.id];
-                                        if(macroKey != Key.None)
-                                        {
-                                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.ToString());
-                                            Thread.Sleep(mc.delay);
-                                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                                        }
-
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception) { }
-                        Thread.Sleep(100);
-                    }
-                });
-
-                this.macroThread = macroThread;
-                macroThread.SetApartmentState(ApartmentState.STA);
-                macroThread.Start();
+                this.thread = new _4RThread((_) => MacroExecutionThread(roClient));
+                _4RThread.Start(this.thread);
             }
         }
 
         public void Stop()
         {
-            if (this.macroThread != null && this.macroThread.IsAlive)
-            {
-                this.macroThread.Abort();
-            }
+            _4RThread.Stop(this.thread);
         }
     }
 }
