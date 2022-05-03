@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
@@ -14,6 +15,7 @@ namespace _4RTools.Forms
         public AHKForm(Subject subject)
         {
             InitializeComponent();
+            InitializeCheckAsThreeState();
             subject.Attach(this);
 
             // Default values
@@ -25,29 +27,32 @@ namespace _4RTools.Forms
 
         public void Update(ISubject subject)
         {
-            if((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
+            switch ((subject as Subject).Message.code)
             {
-                FormUtils.ResetForm(this);
-                this.ahk = ProfileSingleton.GetCurrent().AHK;
-                this.autoRefreshSpammer = ProfileSingleton.GetCurrent().AutoRefreshSpammer;
+                case MessageCode.PROFILE_CHANGED:
+                    FormUtils.ResetForm(this);
+                    this.ahk = ProfileSingleton.GetCurrent().AHK;
+                    this.autoRefreshSpammer = ProfileSingleton.GetCurrent().AutoRefreshSpammer;
+                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(this.ahk.ahkEntries);
 
-                foreach (string key in this.ahk.ahkEntries.Keys)
-                {
-                    ToggleCheckboxByName(key, true);
-                }
-                ToggleCheckboxByName(this.chkMouseFlick.Name, this.ahk.mouseFlick);
-                this.txtSpammerDelay.Text = this.ahk.ahkDelay.ToString();
-                this.txtSkillTimerKey.Text = this.autoRefreshSpammer.refreshKey.ToString();
-                this.txtAutoRefreshDelay.Text = this.autoRefreshSpammer.refreshDelay.ToString();
-            }
-            else if ((subject as Subject).Message.code == MessageCode.TURN_ON)
-            {
-                this.ahk.Start();
-                this.autoRefreshSpammer.Start();
-            } else if ((subject as Subject).Message.code == MessageCode.TURN_OFF)
-            {
-                this.ahk.Stop();
-                this.autoRefreshSpammer.Stop();
+                    foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
+                    {
+                        ToggleCheckboxByName(config.Key, config.Value.clickActive);
+                    }
+
+                    ToggleCheckboxByName(this.mouseFlick.Name, this.ahk.mouseFlick);
+                    this.txtSpammerDelay.Text = this.ahk.ahkDelay.ToString();
+                    this.txtSkillTimerKey.Text = this.autoRefreshSpammer.refreshKey.ToString();
+                    this.txtAutoRefreshDelay.Text = this.autoRefreshSpammer.refreshDelay.ToString();
+                    break;
+                case MessageCode.TURN_ON:
+                    this.ahk.Start();
+                    this.autoRefreshSpammer.Start();
+                    break;
+                case MessageCode.TURN_OFF:
+                    this.ahk.Stop();
+                    this.autoRefreshSpammer.Stop();
+                    break;
             }
         }
 
@@ -62,15 +67,16 @@ namespace _4RTools.Forms
             else
             {
                 Key key = (Key)new KeyConverter().ConvertFromString(checkbox.Text);
-                if (checkbox.Checked)
-                    this.ahk.AddAHKEntry(checkbox.Name, key);
+                bool haveMouseClick = checkbox.CheckState == CheckState.Checked ? true : false;
+
+                if (checkbox.CheckState == CheckState.Checked || checkbox.CheckState == CheckState.Indeterminate)
+                    this.ahk.AddAHKEntry(checkbox.Name, new KeyConfig(key, haveMouseClick));
                 else
                     this.ahk.RemoveAHKEntry(checkbox.Name);
 
             }
 
             ProfileSingleton.SetConfiguration(this.ahk);
-
         }
 
         private void txtSpammerDelay_TextChanged(object sender, EventArgs e)
@@ -80,22 +86,19 @@ namespace _4RTools.Forms
                 this.ahk.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
                 ProfileSingleton.SetConfiguration(this.ahk);
             }
-            catch(Exception)
-            {
-                this.ahk.ahkDelay = 10;
-            }
+            catch{ }
         }
 
 
         private void ToggleCheckboxByName(string Name, bool state)
         {
-            foreach (Control c in this.Controls)
-                if (c.Name == Name)
-                {
-                    CheckBox a = (CheckBox)c;
-                    a.Checked = state;
-                }
-            ProfileSingleton.SetConfiguration(this.ahk);
+            try
+            {
+                CheckBox checkBox = (CheckBox)this.Controls.Find(Name, true)[0];
+                checkBox.CheckState = state ? CheckState.Checked : CheckState.Indeterminate;
+                ProfileSingleton.SetConfiguration(this.ahk);
+            }
+            catch { }
         }
 
         private void onSkillTimerKeyChange(object sender, EventArgs e)
@@ -112,9 +115,27 @@ namespace _4RTools.Forms
                 this.autoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
                 ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
             }
-            catch (Exception)
-            {
-            }
+            catch { }
+        }
+
+        private void InitializeCheckAsThreeState()
+        {
+            foreach (Control c in this.Controls)
+                if (c is CheckBox)
+                {
+                    CheckBox check = (CheckBox)c;
+                    if((check.Name.Split(new[] { "chk" }, StringSplitOptions.None).Length == 2)){
+                        check.ThreeState = true;
+                    };
+
+                    if(check.Enabled)
+                        check.CheckStateChanged += onCheckChange;
+                }
+        }
+
+        private void noclicksample_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
