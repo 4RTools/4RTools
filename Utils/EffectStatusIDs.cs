@@ -54,6 +54,12 @@ namespace _4RTools.Utils
         AURA_NINJA = 208,
         PEEL_CHANGE = 206,
 
+        //ELEMENTAL CONVERTERS
+        PROPERTYFIRE = 90,
+        PROPERTYWATER = 91,
+        PROPERTYWIND = 92,
+        PROPERTYGROUND = 93,
+
         //ASPD POTIONS
         CONCENTRATION_POTION = 37,
         AWAKENING_POTION = 38,
