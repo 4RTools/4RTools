@@ -8,7 +8,7 @@ namespace _4RTools.Forms
 {
     public partial class StatusEffectForm : Form, IObserver
     {
-        private AutoBuff autoEffectStatus = new AutoBuff("StatusAutoBuff");
+        private AutoBuff autoEffectStatus = new AutoBuff(AutoBuff.ACTION_NAME_STATUS_AUTOBUFF);
 
         public StatusEffectForm(Subject subject)
         {

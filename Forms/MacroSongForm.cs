@@ -14,7 +14,7 @@ namespace _4RTools.Forms
         private Macro songMacro;
         public MacroSongForm(Subject subject)
         {
-            songMacro = new Macro("SongMacro", TOTAL_MACRO_LANES_FOR_SONGS);
+            songMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO, TOTAL_MACRO_LANES_FOR_SONGS);
             subject.Attach(this);
             InitializeComponent();
             configureMacroLanes();

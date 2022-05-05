@@ -13,25 +13,31 @@ namespace _4RTools.Model
 
         public static void Load(string profileName)
         {
-            string jsonFileName = Config.ReadSetting("ProfileFolder") + profileName + ".json";
-            string json = File.ReadAllText(jsonFileName);
-            dynamic rawObject = JsonConvert.DeserializeObject(json);
+            try
+            {
+                string jsonFileName = Config.ReadSetting("ProfileFolder") + profileName + ".json";
+                string json = File.ReadAllText(jsonFileName);
+                dynamic rawObject = JsonConvert.DeserializeObject(json);
 
-            Profile profile = new Profile(profileName);
+                Profile profile = new Profile(profileName);
 
-            if ((rawObject != null)) {
-                profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByProperty(rawObject, "UserPreferences", new UserPreferences().GetConfiguration()));
-                profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByProperty(rawObject, "AHK", new AHK().GetConfiguration()));
-                profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "Autopot", new Autopot("Autopot").GetConfiguration()));
-                profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByProperty(rawObject, "AutopotYgg", new Autopot("AutopotYgg").GetConfiguration()));
-                profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "StatusAutoBuff", new AutoBuff("StatusAutoBuff").GetConfiguration()));
-                profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByProperty(rawObject, "AutoRefreshSpammer", new AutoRefreshSpammer().GetConfiguration()));
-                profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "ItemsAutoBuff", new AutoBuff("ItemsAutoBuff").GetConfiguration()));
-                profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByProperty(rawObject, "SkillAutoBuff", new AutoBuff("SkillAutoBuff").GetConfiguration()));
-                profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByProperty(rawObject, "SongMacro", new Macro("SongMacro",MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS).GetConfiguration()));
+                if ((rawObject != null))
+                {
+                    profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByAction(rawObject, new UserPreferences()));
+                    profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByAction(rawObject, new AHK()));
+                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, new Autopot(Autopot.ACTION_NAME_AUTOPOT)));
+                    profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, new Autopot(Autopot.ACTION_NAME_AUTOPOT_YGG)));
+                    profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_STATUS_AUTOBUFF)));
+                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByAction(rawObject, new AutoRefreshSpammer()));
+                    profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_ITEM_AUTOBUFF)));
+                    profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF)));
+                    profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, new Macro(Macro.ACTION_NAME_SONG_MACRO, MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS)));
+                }
+                ProfileSingleton.profile = profile;
             }
-            ProfileSingleton.profile = profile;
-            
+            catch (Exception e) {
+                throw new Exception("Houve um problema ao carregar o perfil. Delete a pasta Profiles e tente novamente.");   
+            }
         }
 
         public static void SetConfiguration(Action action)
@@ -73,22 +79,22 @@ namespace _4RTools.Model
 
             this.UserPreferences = new UserPreferences();
             this.AHK = new AHK(); 
-            this.Autopot = new Autopot("Autopot");
-            this.AutopotYgg = new Autopot("AutopotYgg");
+            this.Autopot = new Autopot(Autopot.ACTION_NAME_AUTOPOT);
+            this.AutopotYgg = new Autopot(Autopot.ACTION_NAME_AUTOPOT_YGG);
             this.AutoRefreshSpammer = new AutoRefreshSpammer();
-            this.StatusAutoBuff = new AutoBuff("StatusAutoBuff");
-            this.ItemsAutoBuff = new AutoBuff("ItemsAutoBuff");
-            this.SkillAutoBuff = new AutoBuff("SkillAutoBuff");
-            this.SongMacro = new Macro("SongMacro",4);
+            this.StatusAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_STATUS_AUTOBUFF);
+            this.ItemsAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_ITEM_AUTOBUFF);
+            this.SkillAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF);
+            this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);
         }
 
-        public static object GetByProperty(dynamic obj, string property, object fallback)
+        public static object GetByAction(dynamic obj, Action action)
         {
-           if(obj != null && obj[property] != null) {
-                return obj[property].ToString();
+           if(obj != null && obj[action.GetActionName()] != null) {
+                return obj[action.GetActionName()].ToString();
            }
 
-            return fallback;
+            return action.GetConfiguration();
         }
 
     public static List<string> ListAll()

@@ -11,6 +11,10 @@ namespace _4RTools.Model
 
     public class AutoBuff : Action
     {
+        public static string ACTION_NAME_STATUS_AUTOBUFF = "StatusAutoBuff";
+        public static string ACTION_NAME_ITEM_AUTOBUFF = "ItemsAutoBuff";
+        public static string ACTION_NAME_SKILL_AUTOBUFF = "SkillAutoBuff";
+
         public string actionName { get; set; }
         private _4RThread thread;
         public int delay { get; set; } = 1;
@@ -28,17 +32,12 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                switch (this.actionName)
-                {
-                    case "StatusAutoBuff":
-                        this.thread = RestoreStatusThread(roClient);
-                        break;
-                    case "ItemsAutoBuff":
-                    case "SkillAutoBuff":
-                        this.thread = AutoBuffThread(roClient);
-                        break;
-                         
-                }
+
+                if(this.actionName == ACTION_NAME_STATUS_AUTOBUFF)
+                    this.thread = RestoreStatusThread(roClient);
+                else
+                    this.thread = AutoBuffThread(roClient);
+
                 _4RThread.Start(this.thread);
             }
         }

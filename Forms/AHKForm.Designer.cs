@@ -86,7 +86,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
-            this.chkMouseFlick = new System.Windows.Forms.CheckBox();
+            this.mouseFlick = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -105,7 +105,6 @@
             this.chkF9.TabIndex = 9;
             this.chkF9.Text = "F9";
             this.chkF9.UseVisualStyleBackColor = true;
-            this.chkF9.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF8
             // 
@@ -117,7 +116,6 @@
             this.chkF8.TabIndex = 8;
             this.chkF8.Text = "F8";
             this.chkF8.UseVisualStyleBackColor = true;
-            this.chkF8.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF7
             // 
@@ -128,7 +126,6 @@
             this.chkF7.TabIndex = 7;
             this.chkF7.Text = "F7";
             this.chkF7.UseVisualStyleBackColor = true;
-            this.chkF7.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF6
             // 
@@ -139,7 +136,6 @@
             this.chkF6.TabIndex = 6;
             this.chkF6.Text = "F6";
             this.chkF6.UseVisualStyleBackColor = true;
-            this.chkF6.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF5
             // 
@@ -150,7 +146,6 @@
             this.chkF5.TabIndex = 5;
             this.chkF5.Text = "F5";
             this.chkF5.UseVisualStyleBackColor = true;
-            this.chkF5.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF4
             // 
@@ -161,7 +156,6 @@
             this.chkF4.TabIndex = 4;
             this.chkF4.Text = "F4";
             this.chkF4.UseVisualStyleBackColor = true;
-            this.chkF4.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF3
             // 
@@ -172,7 +166,6 @@
             this.chkF3.TabIndex = 3;
             this.chkF3.Text = "F3";
             this.chkF3.UseVisualStyleBackColor = true;
-            this.chkF3.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF2
             // 
@@ -183,7 +176,6 @@
             this.chkF2.TabIndex = 2;
             this.chkF2.Text = "F2";
             this.chkF2.UseVisualStyleBackColor = true;
-            this.chkF2.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF1
             // 
@@ -194,7 +186,6 @@
             this.chkF1.TabIndex = 1;
             this.chkF1.Text = "F1";
             this.chkF1.UseVisualStyleBackColor = true;
-            this.chkF1.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk9
             // 
@@ -206,7 +197,6 @@
             this.chk9.TabIndex = 9;
             this.chk9.Text = "9";
             this.chk9.UseVisualStyleBackColor = true;
-            this.chk9.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk8
             // 
@@ -218,7 +208,6 @@
             this.chk8.TabIndex = 8;
             this.chk8.Text = "8";
             this.chk8.UseVisualStyleBackColor = true;
-            this.chk8.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk7
             // 
@@ -229,7 +218,6 @@
             this.chk7.TabIndex = 7;
             this.chk7.Text = "7";
             this.chk7.UseVisualStyleBackColor = true;
-            this.chk7.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk6
             // 
@@ -240,7 +228,6 @@
             this.chk6.TabIndex = 6;
             this.chk6.Text = "6";
             this.chk6.UseVisualStyleBackColor = true;
-            this.chk6.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk5
             // 
@@ -251,7 +238,6 @@
             this.chk5.TabIndex = 5;
             this.chk5.Text = "5";
             this.chk5.UseVisualStyleBackColor = true;
-            this.chk5.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk4
             // 
@@ -262,7 +248,6 @@
             this.chk4.TabIndex = 4;
             this.chk4.Text = "4";
             this.chk4.UseVisualStyleBackColor = true;
-            this.chk4.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk3
             // 
@@ -273,7 +258,6 @@
             this.chk3.TabIndex = 3;
             this.chk3.Text = "3";
             this.chk3.UseVisualStyleBackColor = true;
-            this.chk3.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk2
             // 
@@ -284,7 +268,6 @@
             this.chk2.TabIndex = 2;
             this.chk2.Text = "2";
             this.chk2.UseVisualStyleBackColor = true;
-            this.chk2.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chk1
             // 
@@ -295,7 +278,6 @@
             this.chk1.TabIndex = 1;
             this.chk1.Text = "1";
             this.chk1.UseVisualStyleBackColor = true;
-            this.chk1.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkM
             // 
@@ -307,7 +289,6 @@
             this.chkM.TabIndex = 25;
             this.chkM.Text = "M";
             this.chkM.UseVisualStyleBackColor = true;
-            this.chkM.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkN
             // 
@@ -318,7 +299,6 @@
             this.chkN.TabIndex = 24;
             this.chkN.Text = "N";
             this.chkN.UseVisualStyleBackColor = true;
-            this.chkN.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkB
             // 
@@ -329,7 +309,6 @@
             this.chkB.TabIndex = 23;
             this.chkB.Text = "B";
             this.chkB.UseVisualStyleBackColor = true;
-            this.chkB.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkV
             // 
@@ -340,7 +319,6 @@
             this.chkV.TabIndex = 22;
             this.chkV.Text = "V";
             this.chkV.UseVisualStyleBackColor = true;
-            this.chkV.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkC
             // 
@@ -351,7 +329,6 @@
             this.chkC.TabIndex = 21;
             this.chkC.Text = "C";
             this.chkC.UseVisualStyleBackColor = true;
-            this.chkC.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkX
             // 
@@ -362,7 +339,6 @@
             this.chkX.TabIndex = 20;
             this.chkX.Text = "X";
             this.chkX.UseVisualStyleBackColor = true;
-            this.chkX.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkZ
             // 
@@ -373,7 +349,6 @@
             this.chkZ.TabIndex = 19;
             this.chkZ.Text = "Z";
             this.chkZ.UseVisualStyleBackColor = true;
-            this.chkZ.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkL
             // 
@@ -385,7 +360,6 @@
             this.chkL.TabIndex = 17;
             this.chkL.Text = "L";
             this.chkL.UseVisualStyleBackColor = true;
-            this.chkL.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkK
             // 
@@ -396,7 +370,6 @@
             this.chkK.TabIndex = 16;
             this.chkK.Text = "K";
             this.chkK.UseVisualStyleBackColor = true;
-            this.chkK.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkJ
             // 
@@ -407,7 +380,6 @@
             this.chkJ.TabIndex = 15;
             this.chkJ.Text = "J";
             this.chkJ.UseVisualStyleBackColor = true;
-            this.chkJ.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkH
             // 
@@ -418,7 +390,6 @@
             this.chkH.TabIndex = 14;
             this.chkH.Text = "H";
             this.chkH.UseVisualStyleBackColor = true;
-            this.chkH.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkG
             // 
@@ -429,7 +400,6 @@
             this.chkG.TabIndex = 13;
             this.chkG.Text = "G";
             this.chkG.UseVisualStyleBackColor = true;
-            this.chkG.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkF
             // 
@@ -440,7 +410,6 @@
             this.chkF.TabIndex = 12;
             this.chkF.Text = "F";
             this.chkF.UseVisualStyleBackColor = true;
-            this.chkF.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkD
             // 
@@ -451,7 +420,6 @@
             this.chkD.TabIndex = 11;
             this.chkD.Text = "D";
             this.chkD.UseVisualStyleBackColor = true;
-            this.chkD.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkA
             // 
@@ -462,7 +430,6 @@
             this.chkA.TabIndex = 10;
             this.chkA.Text = "A";
             this.chkA.UseVisualStyleBackColor = true;
-            this.chkA.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkO
             // 
@@ -474,7 +441,6 @@
             this.chkO.TabIndex = 9;
             this.chkO.Text = "O";
             this.chkO.UseVisualStyleBackColor = true;
-            this.chkO.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkI
             // 
@@ -486,7 +452,6 @@
             this.chkI.TabIndex = 8;
             this.chkI.Text = "I";
             this.chkI.UseVisualStyleBackColor = true;
-            this.chkI.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkU
             // 
@@ -497,7 +462,6 @@
             this.chkU.TabIndex = 7;
             this.chkU.Text = "U";
             this.chkU.UseVisualStyleBackColor = true;
-            this.chkU.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkY
             // 
@@ -508,7 +472,6 @@
             this.chkY.TabIndex = 6;
             this.chkY.Text = "Y";
             this.chkY.UseVisualStyleBackColor = true;
-            this.chkY.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkT
             // 
@@ -519,7 +482,6 @@
             this.chkT.TabIndex = 5;
             this.chkT.Text = "T";
             this.chkT.UseVisualStyleBackColor = true;
-            this.chkT.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkR
             // 
@@ -530,7 +492,6 @@
             this.chkR.TabIndex = 4;
             this.chkR.Text = "R";
             this.chkR.UseVisualStyleBackColor = true;
-            this.chkR.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkE
             // 
@@ -541,7 +502,6 @@
             this.chkE.TabIndex = 3;
             this.chkE.Text = "E";
             this.chkE.UseVisualStyleBackColor = true;
-            this.chkE.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkW
             // 
@@ -552,7 +512,6 @@
             this.chkW.TabIndex = 2;
             this.chkW.Text = "W";
             this.chkW.UseVisualStyleBackColor = true;
-            this.chkW.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // chkQ
             // 
@@ -563,7 +522,6 @@
             this.chkQ.TabIndex = 1;
             this.chkQ.Text = "Q";
             this.chkQ.UseVisualStyleBackColor = true;
-            this.chkQ.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // txtSpammerDelay
             // 
@@ -629,13 +587,12 @@
             this.chkS.TabIndex = 30;
             this.chkS.Text = "S";
             this.chkS.UseVisualStyleBackColor = true;
-            this.chkS.CheckedChanged += new System.EventHandler(this.onCheckChange);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtSpammerDelay);
-            this.groupBox2.Location = new System.Drawing.Point(10, 162);
+            this.groupBox2.Location = new System.Drawing.Point(10, 168);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(119, 61);
             this.groupBox2.TabIndex = 32;
@@ -655,7 +612,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(187, 167);
+            this.panel5.Location = new System.Drawing.Point(187, 173);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1, 78);
             this.panel5.TabIndex = 27;
@@ -677,7 +634,7 @@
             this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
             this.groupBox1.Controls.Add(this.lblAutoRefreshDelay);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.groupBox1.Location = new System.Drawing.Point(235, 161);
+            this.groupBox1.Location = new System.Drawing.Point(235, 167);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(161, 87);
             this.groupBox1.TabIndex = 33;
@@ -728,24 +685,23 @@
             this.lblAutoRefreshDelay.Text = "Delay";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // chkMouseFlick
+            // mouseFlick
             // 
-            this.chkMouseFlick.AutoSize = true;
-            this.chkMouseFlick.Location = new System.Drawing.Point(27, 232);
-            this.chkMouseFlick.Name = "chkMouseFlick";
-            this.chkMouseFlick.Size = new System.Drawing.Size(83, 17);
-            this.chkMouseFlick.TabIndex = 34;
-            this.chkMouseFlick.Text = "Mouse Flick";
-            this.chkMouseFlick.UseVisualStyleBackColor = true;
-            this.chkMouseFlick.CheckedChanged += new System.EventHandler(this.onCheckChange);
+            this.mouseFlick.AutoSize = true;
+            this.mouseFlick.Location = new System.Drawing.Point(27, 238);
+            this.mouseFlick.Name = "mouseFlick";
+            this.mouseFlick.Size = new System.Drawing.Size(83, 17);
+            this.mouseFlick.TabIndex = 34;
+            this.mouseFlick.Text = "Mouse Flick";
+            this.mouseFlick.UseVisualStyleBackColor = true;
             // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(406, 267);
-            this.Controls.Add(this.chkMouseFlick);
+            this.ClientSize = new System.Drawing.Size(406, 270);
+            this.Controls.Add(this.mouseFlick);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.groupBox2);
@@ -871,6 +827,6 @@
         private System.Windows.Forms.Label lblAutoRefreshDelay;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
-        private System.Windows.Forms.CheckBox chkMouseFlick;
+        private System.Windows.Forms.CheckBox mouseFlick;
     }
 }

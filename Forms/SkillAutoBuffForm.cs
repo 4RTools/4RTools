@@ -9,7 +9,7 @@ namespace _4RTools.Forms
 {
     public partial class SkillAutoBuffForm : Form, IObserver
     {
-        private AutoBuff autobuff = new AutoBuff("SkillAutoBuff");
+        private AutoBuff autobuff = new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF);
 
         public SkillAutoBuffForm(Subject subject)
         {

@@ -20,7 +20,7 @@ namespace _4RTools.Forms
                 this.picBoxSP.Image = Properties.Resources.Yggdrasil;
             }
             subject.Attach(this);
-            string actionName = isYgg ? "AutopotYgg" : "Autopot";
+            string actionName = isYgg ? Autopot.ACTION_NAME_AUTOPOT_YGG : Autopot.ACTION_NAME_AUTOPOT;
             this.autopot = new Autopot(actionName);
             this.isYgg = isYgg;
 

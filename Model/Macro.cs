@@ -40,10 +40,12 @@ namespace _4RTools.Model
 
     public class Macro : Action
     {
+
+        public static string ACTION_NAME_SONG_MACRO = "SongMacro";
+
         public string actionName { get; set; }
         private _4RThread thread;
         public List<MacroConfig> configs { get; set; } = new List<MacroConfig>();
-
 
         public Macro(string macroname, int macroLanes)
         {

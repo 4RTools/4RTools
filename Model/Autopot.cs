@@ -12,6 +12,9 @@ namespace _4RTools.Model
     public class Autopot : Action
     {
 
+        public static string ACTION_NAME_AUTOPOT = "Autopot";
+        public static string ACTION_NAME_AUTOPOT_YGG = "AutopotYgg";
+
         public Key hpKey { get; set; }
         public int hpPercent { get; set; }
         public Key spKey { get; set; }
@@ -23,7 +26,6 @@ namespace _4RTools.Model
         private _4RThread thread;
 
         public Autopot() { }
-
         public Autopot(string actionName)
         {
             this.actionName = actionName;
@@ -103,7 +105,7 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return actionName != null ? actionName : "Autopot";
+            return this.actionName;
         }
     }
 }
