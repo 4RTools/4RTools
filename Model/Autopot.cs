@@ -105,7 +105,7 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return this.actionName;
+            return this.actionName != null ? this.actionName : ACTION_NAME_AUTOPOT;
         }
     }
 }
