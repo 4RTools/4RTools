@@ -47,6 +47,8 @@ namespace _4RTools.Forms
             this.labelProfile = new System.Windows.Forms.Label();
             this.profileCB = new System.Windows.Forms.ComboBox();
             this.panelFooter = new System.Windows.Forms.Panel();
+            this.websiteLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCharacterName = new System.Windows.Forms.Label();
@@ -155,7 +157,7 @@ namespace _4RTools.Forms
             // lblLinkDiscord
             // 
             this.lblLinkDiscord.AutoSize = true;
-            this.lblLinkDiscord.Location = new System.Drawing.Point(295, 16);
+            this.lblLinkDiscord.Location = new System.Drawing.Point(344, 16);
             this.lblLinkDiscord.Name = "lblLinkDiscord";
             this.lblLinkDiscord.Size = new System.Drawing.Size(92, 13);
             this.lblLinkDiscord.TabIndex = 8;
@@ -166,7 +168,7 @@ namespace _4RTools.Forms
             // lblLinkGithub
             // 
             this.lblLinkGithub.AutoSize = true;
-            this.lblLinkGithub.Location = new System.Drawing.Point(143, 16);
+            this.lblLinkGithub.Location = new System.Drawing.Point(70, 16);
             this.lblLinkGithub.Name = "lblLinkGithub";
             this.lblLinkGithub.Size = new System.Drawing.Size(74, 13);
             this.lblLinkGithub.TabIndex = 9;
@@ -178,7 +180,7 @@ namespace _4RTools.Forms
             // 
             this.panelDiscImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDiscImage.BackgroundImage")));
             this.panelDiscImage.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panelDiscImage.Location = new System.Drawing.Point(256, 6);
+            this.panelDiscImage.Location = new System.Drawing.Point(305, 6);
             this.panelDiscImage.Name = "panelDiscImage";
             this.panelDiscImage.Size = new System.Drawing.Size(32, 33);
             this.panelDiscImage.TabIndex = 10;
@@ -187,10 +189,11 @@ namespace _4RTools.Forms
             // 
             this.panelGithubImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelGithubImage.BackgroundImage")));
             this.panelGithubImage.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panelGithubImage.Location = new System.Drawing.Point(104, 6);
+            this.panelGithubImage.Location = new System.Drawing.Point(31, 6);
             this.panelGithubImage.Name = "panelGithubImage";
             this.panelGithubImage.Size = new System.Drawing.Size(32, 33);
             this.panelGithubImage.TabIndex = 11;
+            this.panelGithubImage.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGithubImage_Paint);
             // 
             // labelProfile
             // 
@@ -214,6 +217,8 @@ namespace _4RTools.Forms
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelFooter.Controls.Add(this.websiteLinkLabel);
+            this.panelFooter.Controls.Add(this.panel1);
             this.panelFooter.Controls.Add(this.lblLinkGithub);
             this.panelFooter.Controls.Add(this.panelGithubImage);
             this.panelFooter.Controls.Add(this.lblLinkDiscord);
@@ -222,6 +227,26 @@ namespace _4RTools.Forms
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Size = new System.Drawing.Size(456, 43);
             this.panelFooter.TabIndex = 16;
+            // 
+            // websiteLinkLabel
+            // 
+            this.websiteLinkLabel.AutoSize = true;
+            this.websiteLinkLabel.Location = new System.Drawing.Point(195, 15);
+            this.websiteLinkLabel.Name = "websiteLinkLabel";
+            this.websiteLinkLabel.Size = new System.Drawing.Size(91, 13);
+            this.websiteLinkLabel.TabIndex = 12;
+            this.websiteLinkLabel.TabStop = true;
+            this.websiteLinkLabel.Text = "WebSite 4RTools";
+            this.websiteLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.websiteLinkLabel_LinkClicked);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.panel1.Location = new System.Drawing.Point(158, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(32, 33);
+            this.panel1.TabIndex = 13;
             // 
             // panel4
             // 
@@ -360,5 +385,7 @@ namespace _4RTools.Forms
         private TabControl tabControl1;
         private TabPage tabPageAutopot;
         private TabPage tabPageYggAutopot;
+        private LinkLabel websiteLinkLabel;
+        private Panel panel1;
     }
 }

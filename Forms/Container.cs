@@ -227,6 +227,11 @@ namespace _4RTools.Forms
             Process.Start(Config.ReadSetting("DiscordLink"));
         }
 
+        private void websiteLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(Config.ReadSetting("4RWebsite"));
+        }
+
         private void profileCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.profileCB.Text != currentProfile)
@@ -269,5 +274,12 @@ namespace _4RTools.Forms
         {
             if (this.WindowState == FormWindowState.Minimized) { this.Hide(); }
         }
+
+        private void panelGithubImage_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
     }
 }

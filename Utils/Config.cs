@@ -11,6 +11,7 @@ namespace _4RTools.Utils
         {
             configs.Add("Name", "4RTools");
             configs.Add("ProfileFolder", "Profile\\");
+            configs.Add("4RWebsite", "https://www.4rtools.com.br");
             configs.Add("GithubLink", "https://github.com/4RTools/4Rtools");
             configs.Add("DiscordLink", "https://discord.gg/AtZ2fJVtBz");
             configs.Add("Version", "1.5.6");
