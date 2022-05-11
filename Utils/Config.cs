@@ -14,7 +14,7 @@ namespace _4RTools.Utils
             configs.Add("4RWebsite", "https://www.4rtools.com.br");
             configs.Add("GithubLink", "https://github.com/4RTools/4Rtools");
             configs.Add("DiscordLink", "https://discord.gg/AtZ2fJVtBz");
-            configs.Add("Version", "1.5.6");
+            configs.Add("Version", "1.6.0");
         }
 
         public static string ReadSetting(string key)
