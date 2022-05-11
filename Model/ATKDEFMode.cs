@@ -21,7 +21,7 @@ namespace _4RTools.Model
         public static string ACTION_NAME_ATKDEF = "ATKDEFMode";
         private _4RThread thread;
         public int ahkDelay { get; set; } = 10;
-        public Key keySpammer { get; set; } = Key.None;
+        public Key keySpammer { get; set; }
         public Dictionary<string,Key> defKeys { get; set; } = new Dictionary<string,Key>();
         public Dictionary<string,Key> atkKeys { get; set; } = new Dictionary<string, Key>();
 
@@ -48,7 +48,7 @@ namespace _4RTools.Model
         private int AHKThreadExecution(Client roClient)
         {
             Keys thisk = toKeys(keySpammer);
-            if (Keyboard.IsKeyDown(keySpammer))
+            if (this.keySpammer != Key.None && Keyboard.IsKeyDown(this.keySpammer))
             {
                 foreach (Key key in atkKeys.Values)
                 {
