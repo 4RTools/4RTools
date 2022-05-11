@@ -76,6 +76,12 @@
     <Compile Include="Forms\AHKForm.Designer.cs">
       <DependentUpon>AHKForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ATKDEFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ATKDEFForm.Designer.cs">
+      <DependentUpon>ATKDEFForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MacroSongForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,7 @@
       <DependentUpon>ToggleApplicationStateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\AHK.cs" />
+    <Compile Include="Model\ATKDEFMode.cs" />
     <Compile Include="Model\Autopot.cs" />
     <Compile Include="Model\Autobuff.cs" />
     <Compile Include="Model\AutoRefreshSpammer.cs" />
@@ -151,6 +158,9 @@
     <Compile Include="Utils\_4RThread.cs" />
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ATKDEFForm.resx">
+      <DependentUpon>ATKDEFForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MacroSongForm.resx">
       <DependentUpon>MacroSongForm.cs</DependentUpon>

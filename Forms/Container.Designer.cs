@@ -36,10 +36,10 @@ namespace _4RTools.Forms
             this.btnRefresh = new System.Windows.Forms.Button();
             this.tabPageSpammer = new System.Windows.Forms.TabPage();
             this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
-            this.tabLayout = new System.Windows.Forms.TabControl();
+            this.atkDefMode = new System.Windows.Forms.TabControl();
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
-            this.tabPageProfiles = new System.Windows.Forms.TabPage();
+            this.atkDef = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
             this.panelDiscImage = new System.Windows.Forms.Panel();
@@ -57,7 +57,8 @@ namespace _4RTools.Forms
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
-            this.tabLayout.SuspendLayout();
+            this.tabPageProfiles = new System.Windows.Forms.TabPage();
+            this.atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -111,18 +112,19 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
             this.tabPageAutobuffSkill.UseVisualStyleBackColor = true;
             // 
-            // tabLayout
+            // atkDefMode
             // 
-            this.tabLayout.Controls.Add(this.tabPageSpammer);
-            this.tabLayout.Controls.Add(this.tabPageAutobuffSkill);
-            this.tabLayout.Controls.Add(this.tabPageAutobuffStuff);
-            this.tabLayout.Controls.Add(this.tabPageMacroSongs);
-            this.tabLayout.Controls.Add(this.tabPageProfiles);
-            this.tabLayout.Location = new System.Drawing.Point(15, 274);
-            this.tabLayout.Name = "tabLayout";
-            this.tabLayout.SelectedIndex = 0;
-            this.tabLayout.Size = new System.Drawing.Size(432, 300);
-            this.tabLayout.TabIndex = 6;
+            this.atkDefMode.Controls.Add(this.tabPageSpammer);
+            this.atkDefMode.Controls.Add(this.tabPageAutobuffSkill);
+            this.atkDefMode.Controls.Add(this.tabPageAutobuffStuff);
+            this.atkDefMode.Controls.Add(this.tabPageMacroSongs);
+            this.atkDefMode.Controls.Add(this.atkDef);
+            this.atkDefMode.Controls.Add(this.tabPageProfiles);
+            this.atkDefMode.Location = new System.Drawing.Point(15, 274);
+            this.atkDefMode.Name = "atkDefMode";
+            this.atkDefMode.SelectedIndex = 0;
+            this.atkDefMode.Size = new System.Drawing.Size(432, 300);
+            this.atkDefMode.TabIndex = 6;
             // 
             // tabPageAutobuffStuff
             // 
@@ -144,15 +146,15 @@ namespace _4RTools.Forms
             this.tabPageMacroSongs.Text = "Macro Songs";
             this.tabPageMacroSongs.UseVisualStyleBackColor = true;
             // 
-            // tabPageProfiles
+            // atkDef
             // 
-            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProfiles.Name = "tabPageProfiles";
-            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(424, 274);
-            this.tabPageProfiles.TabIndex = 5;
-            this.tabPageProfiles.Text = "Profiles";
-            this.tabPageProfiles.UseVisualStyleBackColor = true;
+            this.atkDef.Location = new System.Drawing.Point(4, 22);
+            this.atkDef.Name = "atkDef";
+            this.atkDef.Padding = new System.Windows.Forms.Padding(3);
+            this.atkDef.Size = new System.Drawing.Size(424, 274);
+            this.atkDef.TabIndex = 5;
+            this.atkDef.Text = "ATK x DEF Mode";
+            this.atkDef.UseVisualStyleBackColor = true;
             // 
             // lblLinkDiscord
             // 
@@ -322,6 +324,16 @@ namespace _4RTools.Forms
             this.tabPageYggAutopot.Text = "Yggdrasil";
             this.tabPageYggAutopot.UseVisualStyleBackColor = true;
             // 
+            // tabPageProfiles
+            // 
+            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProfiles.Name = "tabPageProfiles";
+            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProfiles.Size = new System.Drawing.Size(424, 274);
+            this.tabPageProfiles.TabIndex = 7;
+            this.tabPageProfiles.Text = "Profiles";
+            this.tabPageProfiles.UseVisualStyleBackColor = true;
+            // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,7 +349,7 @@ namespace _4RTools.Forms
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.labelProfile);
             this.Controls.Add(this.profileCB);
-            this.Controls.Add(this.tabLayout);
+            this.Controls.Add(this.atkDefMode);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblProcessName);
             this.Controls.Add(this.processCB);
@@ -350,7 +362,7 @@ namespace _4RTools.Forms
             this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Container_Load);
             this.Resize += new System.EventHandler(this.containerResize);
-            this.tabLayout.ResumeLayout(false);
+            this.atkDefMode.ResumeLayout(false);
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -364,7 +376,7 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Label lblProcessName;
         private System.Windows.Forms.ComboBox processCB;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.TabControl tabLayout;
+        private System.Windows.Forms.TabControl atkDefMode;
         private System.Windows.Forms.TabPage tabPageSpammer;
         private System.Windows.Forms.LinkLabel lblLinkDiscord;
         private System.Windows.Forms.LinkLabel lblLinkGithub;
@@ -381,11 +393,12 @@ namespace _4RTools.Forms
         private Panel panel5;
         private TabPage tabPageAutobuffStuff;
         private TabPage tabPageMacroSongs;
-        private TabPage tabPageProfiles;
+        private TabPage atkDef;
         private TabControl tabControl1;
         private TabPage tabPageAutopot;
         private TabPage tabPageYggAutopot;
         private LinkLabel websiteLinkLabel;
         private Panel panel1;
+        private TabPage tabPageProfiles;
     }
 }
