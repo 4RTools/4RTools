@@ -49,14 +49,17 @@ namespace _4RTools.Forms
                     try
                     {
                         TextBox tb = (TextBox)control;
-                        ATKDEFEnum mode = (ATKDEFEnum)Int16.Parse(tb.Tag.ToString());
-                        if (mode == ATKDEFEnum.DEF)
+                        if (!tb.Tag.ToString().Equals("spammerKey"))
                         {
-                            tb.Text = defKeys.ContainsKey(tb.Name) ? defKeys[tb.Name].ToString() : Keys.None.ToString();
-                        }
-                        else
-                        {
-                            tb.Text = atkKeys.ContainsKey(tb.Name) ? atkKeys[tb.Name].ToString() : Keys.None.ToString();
+                            ATKDEFEnum mode = (ATKDEFEnum)Int16.Parse(tb.Tag.ToString());
+                            if (mode == ATKDEFEnum.DEF)
+                            {
+                                tb.Text = defKeys.ContainsKey(tb.Name) ? defKeys[tb.Name].ToString() : Keys.None.ToString();
+                            }
+                            else
+                            {
+                                tb.Text = atkKeys.ContainsKey(tb.Name) ? atkKeys[tb.Name].ToString() : Keys.None.ToString();
+                            }
                         }
                     }
                     catch(Exception e) { }
