@@ -32,6 +32,7 @@ namespace _4RTools.Model
                     profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_ITEM_AUTOBUFF)));
                     profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF)));
                     profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, new Macro(Macro.ACTION_NAME_SONG_MACRO, MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS)));
+                    profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, new ATKDEFMode()));
                 }
                 ProfileSingleton.profile = profile;
             }
@@ -73,6 +74,8 @@ namespace _4RTools.Model
         public AutoBuff SkillAutoBuff { get; set; }
         public Macro SongMacro { get; set;}
 
+        public ATKDEFMode AtkDefMode { get; set; }
+
         public Profile(string name)
         {
             this.Name = name;
@@ -86,6 +89,7 @@ namespace _4RTools.Model
             this.ItemsAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_ITEM_AUTOBUFF);
             this.SkillAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF);
             this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);
+            this.AtkDefMode = new ATKDEFMode();
         }
 
         public static object GetByAction(dynamic obj, Action action)

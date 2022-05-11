@@ -40,6 +40,7 @@ namespace _4RTools.Forms
             SetAutobuffStuffWindow();
             SetAutobuffSkillWindow();
             SetSongMacroWindow();
+            SetATKDEFWindow();
 
         }
 
@@ -124,6 +125,16 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             addform(this.tabPageMacroSongs, frm);
+            frm.Show();
+        }
+
+        public void SetATKDEFWindow()
+        {
+            ATKDEFForm frm = new ATKDEFForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.atkDef, frm);
             frm.Show();
         }
 
