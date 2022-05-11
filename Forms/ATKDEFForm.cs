@@ -41,14 +41,26 @@ namespace _4RTools.Forms
             Dictionary<string, Key> atkKeys = new Dictionary<string, Key>(this.atkDefMode.atkKeys);
             Dictionary<string, Key> defKeys = new Dictionary<string, Key>(this.atkDefMode.defKeys);
 
-            foreach (KeyValuePair<string, Key> data in atkKeys)
-            {
-                this.Controls.Find(data.Key, true)[0].Text = data.Value.ToString();
-            }
 
-            foreach (KeyValuePair<string, Key> data in defKeys)
+            foreach(Control control in this.panelSwitch.Controls)
             {
-                this.Controls.Find(data.Key, true)[0].Text = data.Value.ToString();
+                if(control is TextBox)
+                {
+                    try
+                    {
+                        TextBox tb = (TextBox)control;
+                        ATKDEFEnum mode = (ATKDEFEnum)Int16.Parse(tb.Tag.ToString());
+                        if (mode == ATKDEFEnum.DEF)
+                        {
+                            tb.Text = defKeys.ContainsKey(tb.Name) ? defKeys[tb.Name].ToString() : Keys.None.ToString();
+                        }
+                        else
+                        {
+                            tb.Text = atkKeys.ContainsKey(tb.Name) ? atkKeys[tb.Name].ToString() : Keys.None.ToString();
+                        }
+                    }
+                    catch(Exception e) { }
+                }
             }
         }
 
