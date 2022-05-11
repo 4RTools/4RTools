@@ -63,9 +63,9 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap arrodown {
+        public static System.Drawing.Bitmap arrowdown {
             get {
-                object obj = ResourceManager.GetObject("arrodown", resourceCulture);
+                object obj = ResourceManager.GetObject("arrowdown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

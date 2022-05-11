@@ -41,7 +41,7 @@ namespace _4RTools.Forms
             SetAutobuffSkillWindow();
             SetSongMacroWindow();
             SetATKDEFWindow();
-
+            SetMacroSwitchWindow();
         }
 
         public void SetToggleApplicationStateWindow()
@@ -135,6 +135,16 @@ namespace _4RTools.Forms
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             addform(this.atkDef, frm);
+            frm.Show();
+        }
+
+        public void SetMacroSwitchWindow()
+        {
+            MacroSwitchForm frm = new MacroSwitchForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.tabMacroSwitch, frm);
             frm.Show();
         }
 
@@ -285,12 +295,5 @@ namespace _4RTools.Forms
         {
             if (this.WindowState == FormWindowState.Minimized) { this.Hide(); }
         }
-
-        private void panelGithubImage_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
     }
 }

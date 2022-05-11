@@ -40,6 +40,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.atkDef = new System.Windows.Forms.TabPage();
+            this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
             this.panelDiscImage = new System.Windows.Forms.Panel();
@@ -57,7 +58,7 @@ namespace _4RTools.Forms
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
-            this.tabPageProfiles = new System.Windows.Forms.TabPage();
+            this.tabMacroSwitch = new System.Windows.Forms.TabPage();
             this.atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -119,6 +120,7 @@ namespace _4RTools.Forms
             this.atkDefMode.Controls.Add(this.tabPageAutobuffStuff);
             this.atkDefMode.Controls.Add(this.tabPageMacroSongs);
             this.atkDefMode.Controls.Add(this.atkDef);
+            this.atkDefMode.Controls.Add(this.tabMacroSwitch);
             this.atkDefMode.Controls.Add(this.tabPageProfiles);
             this.atkDefMode.Location = new System.Drawing.Point(15, 274);
             this.atkDefMode.Name = "atkDefMode";
@@ -155,6 +157,16 @@ namespace _4RTools.Forms
             this.atkDef.TabIndex = 5;
             this.atkDef.Text = "ATK x DEF Mode";
             this.atkDef.UseVisualStyleBackColor = true;
+            // 
+            // tabPageProfiles
+            // 
+            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProfiles.Name = "tabPageProfiles";
+            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProfiles.Size = new System.Drawing.Size(424, 274);
+            this.tabPageProfiles.TabIndex = 7;
+            this.tabPageProfiles.Text = "Profiles";
+            this.tabPageProfiles.UseVisualStyleBackColor = true;
             // 
             // lblLinkDiscord
             // 
@@ -195,7 +207,6 @@ namespace _4RTools.Forms
             this.panelGithubImage.Name = "panelGithubImage";
             this.panelGithubImage.Size = new System.Drawing.Size(32, 33);
             this.panelGithubImage.TabIndex = 11;
-            this.panelGithubImage.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGithubImage_Paint);
             // 
             // labelProfile
             // 
@@ -324,15 +335,15 @@ namespace _4RTools.Forms
             this.tabPageYggAutopot.Text = "Yggdrasil";
             this.tabPageYggAutopot.UseVisualStyleBackColor = true;
             // 
-            // tabPageProfiles
+            // tabMacroSwitch
             // 
-            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProfiles.Name = "tabPageProfiles";
-            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(424, 274);
-            this.tabPageProfiles.TabIndex = 7;
-            this.tabPageProfiles.Text = "Profiles";
-            this.tabPageProfiles.UseVisualStyleBackColor = true;
+            this.tabMacroSwitch.Location = new System.Drawing.Point(4, 22);
+            this.tabMacroSwitch.Name = "tabMacroSwitch";
+            this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMacroSwitch.Size = new System.Drawing.Size(424, 274);
+            this.tabMacroSwitch.TabIndex = 8;
+            this.tabMacroSwitch.Text = "Macro Switch";
+            this.tabMacroSwitch.UseVisualStyleBackColor = true;
             // 
             // Container
             // 
@@ -400,5 +411,6 @@ namespace _4RTools.Forms
         private LinkLabel websiteLinkLabel;
         private Panel panel1;
         private TabPage tabPageProfiles;
+        private TabPage tabMacroSwitch;
     }
 }
