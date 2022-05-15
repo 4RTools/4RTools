@@ -39,6 +39,7 @@ namespace _4RTools.Model
             this.id = macro.id;
             this.delay = macro.delay;
             this.trigger = macro.trigger;
+            this.macroEntries = macro.macroEntries;
         }
         public ChainConfig(int id, Key trigger)
         {
@@ -50,7 +51,7 @@ namespace _4RTools.Model
 
     public class Macro : Action
     {
-        public static string ACTION_NAME_SONG_MACRO = "SongMacro";
+        public static string ACTION_NAME_SONG_MACRO = "SongMacro2.0";
 
         public string actionName { get; set; }
         private _4RThread thread;
@@ -98,7 +99,7 @@ namespace _4RTools.Model
                         MacroKey macroKey = macro["in" + i + "mac" + chainConfig.id];
                         if (macroKey.key != Key.None)
                         {
-                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.ToString());
+                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.key.ToString());
                             Thread.Sleep(macroKey.delay);
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
                         }
