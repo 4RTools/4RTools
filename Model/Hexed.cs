@@ -181,6 +181,7 @@ namespace _4RTools.Model
             result.Add("MiracleRO",new Client(0x01107BEC, 0x0110A5B0));
             result.Add("PrimeRO", new Client(0x011D0A14, 0x011D33F8));
             result.Add("NR_RO_4TH+", new Client(0x011D0A14, 0x011C9684));
+            result.Add("Ragnarok", new Client(0x011D0A14, 0x011D33F8)); //RagnaHistory
 
             return result;
         }
