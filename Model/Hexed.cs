@@ -29,15 +29,13 @@ namespace _4RTools.Model
     {
         public Process process { get; }
         private Utils.ProcessMemoryReader PMR { get; set; }
-        private int clientVersion { get; set; }
         private int currentNameAddress { get; set; }
         private int currentHPBaseAddress { get; set; }
         private int statusBufferAddress { get; set; }
         private int _num = 0;
 
-        private Client(int clientVersion, int currentHPBaseAddress, int currentNameAddress)
+        private Client(int currentHPBaseAddress, int currentNameAddress)
         {
-            this.clientVersion = clientVersion;
             this.currentNameAddress = currentNameAddress;
             this.currentHPBaseAddress = currentHPBaseAddress;
             this.statusBufferAddress = currentHPBaseAddress + 0x474;
@@ -48,39 +46,33 @@ namespace _4RTools.Model
             PMR = new Utils.ProcessMemoryReader();
             string rawProcessName = processName.Split(new string[] { ".exe - " }, StringSplitOptions.None)[0];
             int choosenPID = int.Parse(processName.Split(new string[] { ".exe - " }, StringSplitOptions.None)[1]);
-            List<Client> clients = GetAll();
-            int maxPossibleHP = 999999;
 
-            try
+            foreach (Process process in Process.GetProcessesByName(rawProcessName))
             {
-                foreach (Process process in Process.GetProcessesByName(rawProcessName))
+                if (choosenPID == process.Id)
                 {
-                    if (choosenPID == process.Id)
+                    this.process = process;
+                    PMR.ReadProcess = process;
+                    PMR.OpenProcess();
+
+                    try
                     {
-                        this.process = process;
-                        PMR.ReadProcess = process;
-                        PMR.OpenProcess();
+                        Client c = GetClientByProcess(rawProcessName);
 
-                        foreach (Client client in clients)
-                        {
-                            uint hpBaseValue = ReadMemory(client.currentHPBaseAddress); ;
-                            if (hpBaseValue > 0 && hpBaseValue < maxPossibleHP)
-                            {
-                                this.clientVersion = client.clientVersion;
-                                this.currentHPBaseAddress = client.currentHPBaseAddress;
-                                this.currentNameAddress = client.currentNameAddress;
-                                this.statusBufferAddress = client.statusBufferAddress;
-                                break;
-                            };
-                        }
-
+                        this.currentHPBaseAddress = c.currentHPBaseAddress;
+                        this.currentNameAddress = c.currentNameAddress;
+                        this.statusBufferAddress = c.statusBufferAddress;
+                    }catch (Exception ex)
+                    {
+                        MessageBox.Show("This client is not supported. Only Spammers and macro will works.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        this.currentHPBaseAddress = 0;
+                        this.currentNameAddress = 0;
+                        this.statusBufferAddress = 0;
                     }
+                   
+                    //Do not block spammer for non supported Versions
+                       
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(string.Format("Error while open process ! - {0}", ex.Message));
-                Environment.Exit(0);
             }
         }
 
@@ -163,19 +155,33 @@ namespace _4RTools.Model
             return ReadMemory(this.statusBufferAddress + effectStatusIndex * 4);
         }
 
-        private static List<Client> GetAll()
+        public Client GetClientByProcess(string processName)
         {
-            List<Client> result = new List<Client>();
-            result.Add(new Client(2019, 0x00E8E434, 0x00E90C00)); //Clients2019 (Tales, etc..)
-            result.Add(new Client(2018, 0x0101A700, 0x0101CEB0)); //Clients2018 (Portal Kafra, etc...)
-            result.Add(new Client(2018, 0x010DCE10, 0x010DF5D8)); //Clients2018 (EasyRO)
-            result.Add(new Client(2017, 0x011D1A04, 0x011D43E8)); //Clients2017 (Ragna4TH)
-            result.Add(new Client(2017, 0x00D1CA6C, 0x00D1D288)); //Clients2017 (PowkRO, etc...)
-            result.Add(new Client(2017, 0x00E4CAF4, 0x00E4D768));
-            result.Add(new Client(2017, 0x01107BEC, 0x0110A5B0)); //MiracleRO
-            result.Add(new Client(2017, 0x00BC67E8, 0x00E4D768)); //Clients2017 (Maniacos, etc...)
-            result.Add(new Client(2016, 0x0083E1B4, 0x00E90C00)); //Clients2016 (Remember RO, etc...)
-            result.Add(new Client(2020, 0x00F4942C, 0x00F4BD70)); //Clients2020 (RoZero, etc..)
+            try
+            {
+                return GetAll()[processName];
+            }
+            catch
+            {
+                throw new KeyNotFoundException("Selected process isn't supportable ("+processName+").");
+            }
+        }
+
+
+        private static Dictionary<string, Client> GetAll()
+        {
+            Dictionary<string,Client> result = new Dictionary<string, Client>();
+
+            result.Add("rtales.bin", new Client(0x00E8E434, 0x00E90C00));
+            result.Add("RagnaRotico",new Client(0x00E4CAF4, 0x00E4D768));
+            result.Add("EasyRO", new Client(0x010DCE10, 0x010DF5D8));
+            result.Add("Jogar",new Client(0x0101A700, 0x0101CEB0)); //Portal Kafra
+            result.Add("ragna4th", new Client(0x011D1A04, 0x011D43E8));
+            result.Add("ROZero",new Client(0x00F4942C, 0x00F4BD70));
+            result.Add("MiracleRO",new Client(0x01107BEC, 0x0110A5B0));
+            result.Add("PrimeRO", new Client(0x011D0A14, 0x011D33F8));
+            result.Add("NR_RO_4TH+", new Client(0x011D0A14, 0x011C9684));
+
             return result;
         }
 
