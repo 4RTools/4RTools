@@ -39,7 +39,7 @@ namespace _4RTools.Model
             this.id = macro.id;
             this.delay = macro.delay;
             this.trigger = macro.trigger;
-            this.macroEntries = macro.macroEntries;
+            this.macroEntries = new Dictionary<string, MacroKey>(macro.macroEntries);
         }
         public ChainConfig(int id, Key trigger)
         {
