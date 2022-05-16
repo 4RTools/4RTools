@@ -22,7 +22,6 @@ namespace _4RTools.Model
 
     }
 
-
     public class AHK : Action
     {
         public Dictionary<string,KeyConfig> ahkEntries { get; set; } = new Dictionary<string, KeyConfig>();

@@ -8,51 +8,61 @@ using System.Windows.Forms;
 
 namespace _4RTools.Model
 {
+    public class MacroKey
+    {
+        public Key key { get; set; }
+        public int delay { get; set; } = 50;
 
-    public class MacroConfig
+        public MacroKey(Key key, int delay)
+        {
+            this.key = key;
+            this.delay = delay;
+        }
+    }
+
+    public class ChainConfig
     {
         public int id;
         public Key trigger { get; set; }
         public int delay { get; set; } = 50;
-        public Dictionary<string,Key> macroEntries { get; set; } = new Dictionary<string, Key>();
+        public Dictionary<string, MacroKey> macroEntries { get; set; } = new Dictionary<string, MacroKey>();
 
-
-        public MacroConfig() { }
-        public MacroConfig(int id)
+        public ChainConfig() { }
+        public ChainConfig(int id)
         {
             this.id = id;
-            this.macroEntries = new Dictionary<string, Key>();
+            this.macroEntries = new Dictionary<string, MacroKey>();
         }
 
-        public MacroConfig(MacroConfig macro)
+        public ChainConfig(ChainConfig macro)
         {
             this.id = macro.id;
             this.delay = macro.delay;
             this.trigger = macro.trigger;
-            this.macroEntries = new Dictionary<string, Key>(macro.macroEntries);
+            this.macroEntries = new Dictionary<string, MacroKey>(macro.macroEntries);
         }
-        public MacroConfig(int id, Key trigger)
+        public ChainConfig(int id, Key trigger)
         {
             this.id = id;
             this.trigger = trigger;
+            this.macroEntries = new Dictionary<string, MacroKey>();
         }
     }
 
     public class Macro : Action
     {
-
-        public static string ACTION_NAME_SONG_MACRO = "SongMacro";
+        public static string ACTION_NAME_SONG_MACRO = "SongMacro2.0";
 
         public string actionName { get; set; }
         private _4RThread thread;
-        public List<MacroConfig> configs { get; set; } = new List<MacroConfig>();
+        public List<ChainConfig> chainConfigs { get; set; } = new List<ChainConfig>();
 
         public Macro(string macroname, int macroLanes)
         {
             this.actionName = macroname;
             for(int i = 1; i <= macroLanes; i++)
             {
-                configs.Add(new MacroConfig(i, Key.None));
+                chainConfigs.Add(new ChainConfig(i, Key.None));
 
             }
         }
@@ -61,7 +71,7 @@ namespace _4RTools.Model
         {
             try
             {
-                configs[macroId - 1] = new MacroConfig(macroId);
+                chainConfigs[macroId - 1] = new ChainConfig(macroId);
             }
             catch (Exception) { }
             
@@ -79,21 +89,20 @@ namespace _4RTools.Model
 
         private int MacroExecutionThread(Client roClient)
         {
-            foreach (MacroConfig mc in this.configs)
+            foreach (ChainConfig chainConfig in this.chainConfigs)
             {
-                if (mc.trigger != Key.None && Keyboard.IsKeyDown(mc.trigger))
+                if (chainConfig.trigger != Key.None && Keyboard.IsKeyDown(chainConfig.trigger))
                 {
-                    Dictionary<string, Key> macro = mc.macroEntries;
+                    Dictionary<string, MacroKey> macro = chainConfig.macroEntries;
                     for (int i = 1; i <= macro.Count; i++)//Ensure to execute keys in Order
                     {
-                        Key macroKey = macro["in" + i + "mac" + mc.id];
-                        if (macroKey != Key.None)
+                        MacroKey macroKey = macro["in" + i + "mac" + chainConfig.id];
+                        if (macroKey.key != Key.None)
                         {
-                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.ToString());
-                            Thread.Sleep(mc.delay);
+                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.key.ToString());
+                            Thread.Sleep(macroKey.delay);
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
                         }
-
                     }
                 }
             }
