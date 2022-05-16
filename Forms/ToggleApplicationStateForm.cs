@@ -10,10 +10,9 @@ namespace _4RTools.Forms
 {
     public partial class ToggleApplicationStateForm : Form, IObserver
     {
-        private UserPreferences userPreferences = new UserPreferences();
         private Subject subject;
-        private System.Windows.Forms.ContextMenu contextMenu;
-        private System.Windows.Forms.MenuItem menuItem;
+        private ContextMenu contextMenu;
+        private MenuItem menuItem;
 
         public ToggleApplicationStateForm(Subject subject)
         {
@@ -21,10 +20,9 @@ namespace _4RTools.Forms
 
             subject.Attach(this);
             this.subject = subject;
-
             KeyboardHook.Enable();
             KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
-            this.txtStatusToggleKey.Text = userPreferences.toggleStateKey;
+            this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey;
             this.txtStatusToggleKey.KeyDown += new KeyEventHandler(FormUtils.OnKeyDown);
             this.txtStatusToggleKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.txtStatusToggleKey.TextChanged += new EventHandler(this.onStatusToggleKeyChange);
@@ -53,8 +51,7 @@ namespace _4RTools.Forms
             if ((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
             {
                 FormUtils.ResetForm(this);
-                this.userPreferences = ProfileSingleton.GetCurrent().UserPreferences;
-                this.txtStatusToggleKey.Text = this.userPreferences.toggleStateKey.ToString();
+                this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey.ToString();
             }
         }
 
@@ -62,15 +59,15 @@ namespace _4RTools.Forms
 
         private void onStatusToggleKeyChange(object sender, EventArgs e)
         {
-            if (this.txtStatusToggleKey.Text != this.userPreferences.toggleStateKey)
+            if (this.txtStatusToggleKey.Text != ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey)
             {
-                Keys previousKey = (Keys)Enum.Parse(typeof(Keys), this.userPreferences.toggleStateKey);
+                Keys previousKey = (Keys)Enum.Parse(typeof(Keys), ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey);
                 Keys newKey = (Keys)Enum.Parse(typeof(Keys), this.txtStatusToggleKey.Text);
 
                 KeyboardHook.Remove(previousKey);
                 KeyboardHook.Add(newKey, new KeyboardHook.KeyPressed(this.toggleStatus));
-                this.userPreferences.toggleStateKey = this.txtStatusToggleKey.Text;
-                ProfileSingleton.SetConfiguration(this.userPreferences);
+                ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey = this.txtStatusToggleKey.Text;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
             }
         }
 

@@ -9,7 +9,6 @@ namespace _4RTools.Forms
 {
     public partial class StuffAutoBuffForm : Form, IObserver
     {
-        private AutoBuff autobuff = new AutoBuff(AutoBuff.ACTION_NAME_ITEM_AUTOBUFF);
         public StuffAutoBuffForm(Subject subject)
         {
             InitializeComponent();
@@ -22,15 +21,14 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autobuff = ProfileSingleton.GetCurrent().ItemsAutoBuff;
-                    Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(this.autobuff.buffMapping);
+                    Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().ItemsAutoBuff.buffMapping);
                     this.updateInputValues(buffMappingClone);
                     break;
                 case MessageCode.TURN_OFF:
-                    this.autobuff.Stop();
+                    ProfileSingleton.GetCurrent().ItemsAutoBuff.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    this.autobuff.Start();
+                    ProfileSingleton.GetCurrent().ItemsAutoBuff.Start();
                     break;
             }
         }
@@ -67,8 +65,8 @@ namespace _4RTools.Forms
                 if (txtBox.Text.ToString() != String.Empty) {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    this.autobuff.AddKeyToBuff(statusID, key);
-                    ProfileSingleton.SetConfiguration(this.autobuff);
+                    ProfileSingleton.GetCurrent().ItemsAutoBuff.AddKeyToBuff(statusID, key);
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().ItemsAutoBuff);
                 }
                 
             }

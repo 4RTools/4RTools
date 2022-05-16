@@ -20,20 +20,7 @@ namespace _4RTools.Forms
                 this.picBoxSP.Image = Properties.Resources.Yggdrasil;
             }
             subject.Attach(this);
-            string actionName = isYgg ? Autopot.ACTION_NAME_AUTOPOT_YGG : Autopot.ACTION_NAME_AUTOPOT;
-            this.autopot = new Autopot(actionName);
             this.isYgg = isYgg;
-
-            // loadProfile
-            // HP
-            this.autopot.delay = 10;
-            this.autopot.hpKey = Key.None;
-            this.autopot.hpPercent = 99;
-            // SP
-            this.autopot.spKey = Key.None;
-            this.autopot.spPercent = 70;
-
-            this.InitializeApplicationForm();
         }
 
         public void Update(ISubject subject)

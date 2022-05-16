@@ -185,7 +185,7 @@ namespace _4RTools.Forms
         {
             if (!Profile.ProfileExists("Default"))
             {
-                new Profile("Default").Save();
+                ProfileSingleton.profile.Save();
             }
 
             this.refreshProcessList();
@@ -234,8 +234,8 @@ namespace _4RTools.Forms
         private void ShutdownApplication()
         {
             KeyboardHook.Disable();
-            subject.Notify(new Utils.Message(Utils.MessageCode.TURN_OFF, null));
-            Application.Exit();
+            subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
+            Environment.Exit(0);
         }
 
         private void lblLinkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

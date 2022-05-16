@@ -9,7 +9,7 @@ namespace _4RTools.Model
 {
     public class ProfileSingleton
     {
-        private static Profile profile;
+        public static Profile profile = new Profile("Default");
 
         public static void Load(string profileName)
         {
@@ -23,16 +23,16 @@ namespace _4RTools.Model
 
                 if ((rawObject != null))
                 {
-                    profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByAction(rawObject, new UserPreferences()));
-                    profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByAction(rawObject, new AHK()));
-                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, new Autopot(Autopot.ACTION_NAME_AUTOPOT)));
-                    profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, new Autopot(Autopot.ACTION_NAME_AUTOPOT_YGG)));
-                    profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_STATUS_AUTOBUFF)));
-                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByAction(rawObject, new AutoRefreshSpammer()));
-                    profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_ITEM_AUTOBUFF)));
-                    profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF)));
-                    profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, new Macro(Macro.ACTION_NAME_SONG_MACRO, MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS)));
-                    profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, new ATKDEFMode()));
+                    profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByAction(rawObject, profile.UserPreferences));
+                    profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByAction(rawObject, profile.AHK));
+                    profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.Autopot));
+                    profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.AutopotYgg));
+                    profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.StatusAutoBuff));
+                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByAction(rawObject, profile.AutoRefreshSpammer));
+                    profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.ItemsAutoBuff));
+                    profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.SkillAutoBuff));
+                    profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.SongMacro));
+                    profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                 }
                 ProfileSingleton.profile = profile;
             }

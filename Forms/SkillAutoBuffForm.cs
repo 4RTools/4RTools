@@ -9,7 +9,6 @@ namespace _4RTools.Forms
 {
     public partial class SkillAutoBuffForm : Form, IObserver
     {
-        private AutoBuff autobuff = new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF);
 
         public SkillAutoBuffForm(Subject subject)
         {
@@ -25,15 +24,14 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autobuff = ProfileSingleton.GetCurrent().SkillAutoBuff;
-                    Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(this.autobuff.buffMapping);
+                    Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().SkillAutoBuff.buffMapping);
                     this.updateInputValues(buffMappingClone);
                     break;
                 case MessageCode.TURN_OFF:
-                    this.autobuff.Stop();
+                    ProfileSingleton.GetCurrent().SkillAutoBuff.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    this.autobuff.Start();
+                    ProfileSingleton.GetCurrent().SkillAutoBuff.Start();
                     break;
             }
         }
@@ -76,8 +74,8 @@ namespace _4RTools.Forms
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    this.autobuff.AddKeyToBuff(statusID, key);
-                    ProfileSingleton.SetConfiguration(this.autobuff);
+                    ProfileSingleton.GetCurrent().SkillAutoBuff.AddKeyToBuff(statusID, key);
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().SkillAutoBuff);
                 }
             }
             catch { }

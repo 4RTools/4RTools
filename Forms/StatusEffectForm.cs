@@ -8,7 +8,6 @@ namespace _4RTools.Forms
 {
     public partial class StatusEffectForm : Form, IObserver
     {
-        private AutoBuff autoEffectStatus = new AutoBuff(AutoBuff.ACTION_NAME_STATUS_AUTOBUFF);
 
         public StatusEffectForm(Subject subject)
         {
@@ -27,18 +26,16 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autoEffectStatus = ProfileSingleton.GetCurrent().StatusAutoBuff;
-                    FormUtils.ResetForm(this);
-                    if (this.autoEffectStatus.buffMapping.Count > 0){
+                    if (ProfileSingleton.GetCurrent().StatusAutoBuff.buffMapping.Count > 0){
                         //For Status, the key is the same for each status, so don't matter which status i'm based to update combo box value.
-                        this.txtStatusKey.Text = this.autoEffectStatus.buffMapping[EffectStatusIDs.SILENCE].ToString();
+                        this.txtStatusKey.Text = ProfileSingleton.GetCurrent().StatusAutoBuff.buffMapping[EffectStatusIDs.SILENCE].ToString();
                     }
                     break;
                 case MessageCode.TURN_OFF:
-                    this.autoEffectStatus.Stop();
+                    ProfileSingleton.GetCurrent().StatusAutoBuff.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    this.autoEffectStatus.Start();
+                    ProfileSingleton.GetCurrent().StatusAutoBuff.Start();
                     break;
             }
         }
@@ -47,15 +44,15 @@ namespace _4RTools.Forms
         {
             Key k = (Key)Enum.Parse(typeof(Key), this.txtStatusKey.Text.ToString());
 
-            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.POISON, k);
-            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.SILENCE, k);
-            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.BLIND, k);
-            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.CONFUSION, k);
-            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.HALLUCINATIONWALK, k);
-            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.HALLUCINATION, k);
-            this.autoEffectStatus.AddKeyToBuff(EffectStatusIDs.CURSE, k);
+            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.POISON, k);
+            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.SILENCE, k);
+            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.BLIND, k);
+            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.CONFUSION, k);
+            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.HALLUCINATIONWALK, k);
+            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.HALLUCINATION, k);
+            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.CURSE, k);
 
-            ProfileSingleton.SetConfiguration(this.autoEffectStatus);
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusAutoBuff);
         }
     }
 }

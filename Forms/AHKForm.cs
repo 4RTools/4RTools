@@ -9,8 +9,6 @@ namespace _4RTools.Forms
 {
     public partial class AHKForm : Form, IObserver
     {
-        private AHK ahk = new AHK();
-        private AutoRefreshSpammer autoRefreshSpammer = new AutoRefreshSpammer();
 
         public AHKForm(Subject subject)
         {
@@ -31,27 +29,25 @@ namespace _4RTools.Forms
             {
                 case MessageCode.PROFILE_CHANGED:
                     FormUtils.ResetForm(this);
-                    this.ahk = ProfileSingleton.GetCurrent().AHK;
-                    this.autoRefreshSpammer = ProfileSingleton.GetCurrent().AutoRefreshSpammer;
-                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(this.ahk.ahkEntries);
+                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.ahkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
                     {
                         ToggleCheckboxByName(config.Key, config.Value.clickActive);
                     }
 
-                    ToggleCheckboxByName(this.mouseFlick.Name, this.ahk.mouseFlick);
-                    this.txtSpammerDelay.Text = this.ahk.ahkDelay.ToString();
-                    this.txtSkillTimerKey.Text = this.autoRefreshSpammer.refreshKey.ToString();
-                    this.txtAutoRefreshDelay.Text = this.autoRefreshSpammer.refreshDelay.ToString();
+                    ToggleCheckboxByName(this.mouseFlick.Name, ProfileSingleton.GetCurrent().AHK.mouseFlick);
+                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.ahkDelay.ToString();
+                    this.txtSkillTimerKey.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey.ToString();
+                    this.txtAutoRefreshDelay.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay.ToString();
                     break;
                 case MessageCode.TURN_ON:
-                    this.ahk.Start();
-                    this.autoRefreshSpammer.Start();
+                    ProfileSingleton.GetCurrent().AHK.Start();
+                    ProfileSingleton.GetCurrent().AutoRefreshSpammer.Start();
                     break;
                 case MessageCode.TURN_OFF:
-                    this.ahk.Stop();
-                    this.autoRefreshSpammer.Stop();
+                    ProfileSingleton.GetCurrent().AHK.Stop();
+                    ProfileSingleton.GetCurrent().AutoRefreshSpammer.Stop();
                     break;
             }
         }
@@ -62,7 +58,7 @@ namespace _4RTools.Forms
 
             if(checkbox.Text == "Mouse Flick")
             {
-                this.ahk.mouseFlick = checkbox.Checked;
+                ProfileSingleton.GetCurrent().AHK.mouseFlick = checkbox.Checked;
             }
             else
             {
@@ -70,21 +66,21 @@ namespace _4RTools.Forms
                 bool haveMouseClick = checkbox.CheckState == CheckState.Checked ? true : false;
 
                 if (checkbox.CheckState == CheckState.Checked || checkbox.CheckState == CheckState.Indeterminate)
-                    this.ahk.AddAHKEntry(checkbox.Name, new KeyConfig(key, haveMouseClick));
+                    ProfileSingleton.GetCurrent().AHK.AddAHKEntry(checkbox.Name, new KeyConfig(key, haveMouseClick));
                 else
-                    this.ahk.RemoveAHKEntry(checkbox.Name);
+                    ProfileSingleton.GetCurrent().AHK.RemoveAHKEntry(checkbox.Name);
 
             }
 
-            ProfileSingleton.SetConfiguration(this.ahk);
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
         }
 
         private void txtSpammerDelay_TextChanged(object sender, EventArgs e)
         {
             try
             {
-                this.ahk.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
-                ProfileSingleton.SetConfiguration(this.ahk);
+                ProfileSingleton.GetCurrent().AHK.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
             catch{ }
         }
@@ -96,7 +92,7 @@ namespace _4RTools.Forms
             {
                 CheckBox checkBox = (CheckBox)this.Controls.Find(Name, true)[0];
                 checkBox.CheckState = state ? CheckState.Checked : CheckState.Indeterminate;
-                ProfileSingleton.SetConfiguration(this.ahk);
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
             catch { }
         }
@@ -104,16 +100,16 @@ namespace _4RTools.Forms
         private void onSkillTimerKeyChange(object sender, EventArgs e)
         {
             Key key = (Key)Enum.Parse(typeof(Key), txtSkillTimerKey.Text.ToString());
-            this.autoRefreshSpammer.refreshKey = key;
-            ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
+            ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey = key;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
         }
 
         private void txtAutoRefreshDelayTextChanged(object sender, EventArgs e)
         {
             try
             {
-                this.autoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
-                ProfileSingleton.SetConfiguration(this.autoRefreshSpammer);
+                ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
             }
             catch { }
         }
