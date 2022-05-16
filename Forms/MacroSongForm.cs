@@ -102,7 +102,6 @@ namespace _4RTools.Forms
             NumericUpDown delayInput = (NumericUpDown)sender;
             int macroID = Int16.Parse(delayInput.Name.Split(new[] { "delayMac" }, StringSplitOptions.None)[1]);
             ChainConfig chainConfig = SongMacro.chainConfigs.Find(songMacro => songMacro.id == macroID);
-            Panel p = (Panel)this.Controls.Find("panelMacro" + macroID, true)[0];
 
             chainConfig.delay = decimal.ToInt16(delayInput.Value);
 
