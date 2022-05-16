@@ -30,9 +30,7 @@ namespace _4RTools.Model
         public bool mouseFlick { get; set; } = false;
         private _4RThread thread;
 
-        public AHK()
-        {
-        }
+        public AHK() { }
 
         public void Start()
         {
