@@ -21,6 +21,7 @@ namespace _4RTools.Model
         public static string ACTION_NAME_ATKDEF = "ATKDEFMode";
         private _4RThread thread;
         public int ahkDelay { get; set; } = 10;
+        public int switchDelay { get; set; } = 50;
         public Key keySpammer { get; set; }
         public Dictionary<string,Key> defKeys { get; set; } = new Dictionary<string,Key>();
         public Dictionary<string,Key> atkKeys { get; set; } = new Dictionary<string, Key>();
@@ -53,7 +54,7 @@ namespace _4RTools.Model
                 foreach (Key key in atkKeys.Values)
                 {
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, toKeys(key), 0); //Equip ATK Items
-                    Thread.Sleep(50);
+                    Thread.Sleep(this.switchDelay);
                 }
 
                 while (Keyboard.IsKeyDown(keySpammer))                

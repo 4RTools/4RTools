@@ -36,6 +36,7 @@ namespace _4RTools.Forms
         {
             this.inSpammerKey.Text = ProfileSingleton.GetCurrent().AtkDefMode.keySpammer.ToString();
             this.spammerDelay.Value = ProfileSingleton.GetCurrent().AtkDefMode.ahkDelay;
+            this.switchDelay.Value = ProfileSingleton.GetCurrent().AtkDefMode.switchDelay;
             Dictionary<string, Key> atkKeys = new Dictionary<string, Key>(ProfileSingleton.GetCurrent().AtkDefMode.atkKeys);
             Dictionary<string, Key> defKeys = new Dictionary<string, Key>(ProfileSingleton.GetCurrent().AtkDefMode.defKeys);
 
@@ -68,7 +69,17 @@ namespace _4RTools.Forms
         private void onDelayChange(object sender, EventArgs e)
         {
             NumericUpDown delayInput = (NumericUpDown)sender;
-            ProfileSingleton.GetCurrent().AtkDefMode.ahkDelay = decimal.ToInt16(delayInput.Value);
+            if(delayInput.Name == "spammerDelay")
+            {
+                //Spammer Delay Change
+                ProfileSingleton.GetCurrent().AtkDefMode.ahkDelay = decimal.ToInt16(delayInput.Value);
+            }
+            else
+            {
+                //Switch Delay Change
+                ProfileSingleton.GetCurrent().AtkDefMode.switchDelay = decimal.ToInt16(delayInput.Value);
+            }
+            
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AtkDefMode);
         }
 

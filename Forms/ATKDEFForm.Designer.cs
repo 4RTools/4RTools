@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATKDEFForm));
             this.lblDef = new System.Windows.Forms.Label();
             this.inDef1 = new System.Windows.Forms.TextBox();
@@ -57,6 +58,9 @@
             this.spammerDelay = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.panelSwitch = new System.Windows.Forms.Panel();
+            this.lblSwitchDelay = new System.Windows.Forms.Label();
+            this.switchDelay = new System.Windows.Forms.NumericUpDown();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -69,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spammerDelay)).BeginInit();
             this.panelSwitch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDef
@@ -315,10 +320,13 @@
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 26;
             this.label3.Text = "Spammer Delay";
+            this.toolTip1.SetToolTip(this.label3, "Delay for Spammer Key");
             // 
             // panelSwitch
             // 
             this.panelSwitch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSwitch.Controls.Add(this.lblSwitchDelay);
+            this.panelSwitch.Controls.Add(this.switchDelay);
             this.panelSwitch.Controls.Add(this.inAtk2);
             this.panelSwitch.Controls.Add(this.label3);
             this.panelSwitch.Controls.Add(this.lblDef);
@@ -351,6 +359,29 @@
             this.panelSwitch.Size = new System.Drawing.Size(378, 253);
             this.panelSwitch.TabIndex = 27;
             // 
+            // lblSwitchDelay
+            // 
+            this.lblSwitchDelay.AutoSize = true;
+            this.lblSwitchDelay.Location = new System.Drawing.Point(201, 49);
+            this.lblSwitchDelay.Name = "lblSwitchDelay";
+            this.lblSwitchDelay.Size = new System.Drawing.Size(69, 13);
+            this.lblSwitchDelay.TabIndex = 28;
+            this.lblSwitchDelay.Text = "Switch Delay";
+            this.toolTip1.SetToolTip(this.lblSwitchDelay, "Delay between each item change.");
+            // 
+            // switchDelay
+            // 
+            this.switchDelay.Location = new System.Drawing.Point(276, 47);
+            this.switchDelay.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.switchDelay.Name = "switchDelay";
+            this.switchDelay.Size = new System.Drawing.Size(60, 20);
+            this.switchDelay.TabIndex = 27;
+            this.switchDelay.ValueChanged += new System.EventHandler(this.onDelayChange);
+            // 
             // ATKDEFForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,6 +405,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spammerDelay)).EndInit();
             this.panelSwitch.ResumeLayout(false);
             this.panelSwitch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -408,5 +440,8 @@
         private System.Windows.Forms.NumericUpDown spammerDelay;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelSwitch;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label lblSwitchDelay;
+        private System.Windows.Forms.NumericUpDown switchDelay;
     }
 }
