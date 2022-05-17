@@ -3,7 +3,6 @@ using _4RTools.Model;
 using _4RTools.Utils;
 using System.Windows.Forms;
 using System.Collections.Generic;
-using System.Threading;
 using System.Windows.Input;
 
 namespace _4RTools.Forms
@@ -160,8 +159,7 @@ namespace _4RTools.Forms
                         resetButton.Click += new EventHandler(this.onReset);
                     }
                 }
-            }catch { }
-           
+            } catch { }
         }
     }
 }
