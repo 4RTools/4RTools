@@ -77,5 +77,10 @@ namespace _4RTools.Utils
         {
             resetForm(panel.Controls);
         }
+
+        public static void ResetForm(GroupBox group)
+        {
+            resetForm(group.Controls);
+        }
     }
 }
