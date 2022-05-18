@@ -4,6 +4,7 @@ using System.Windows.Input;
 using System.Collections.Generic;
 using _4RTools.Model;
 using _4RTools.Utils;
+using System.Text.RegularExpressions;
 
 namespace _4RTools.Forms
 {
@@ -37,20 +38,21 @@ namespace _4RTools.Forms
         {
             try
             {
-                GroupBox p = (GroupBox)this.Controls.Find("chainGroup" + id, true)[0];
+                GroupBox group = (GroupBox)this.Controls.Find("chainGroup" + id, true)[0];
                 ChainConfig chainConfig = new ChainConfig(ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs[id - 1]);
+                FormUtils.ResetForm(group);
 
                 List<string> names = new List<string>(chainConfig.macroEntries.Keys);
                 foreach (string cbName in names)
                 {
-                    Control[] controls = p.Controls.Find(cbName, true); // Keys
+                    Control[] controls = group.Controls.Find(cbName, true); // Keys
                     if (controls.Length > 0)
                     {
                         TextBox textBox = (TextBox)controls[0];
                         textBox.Text = chainConfig.macroEntries[cbName].key.ToString();
                     }
 
-                    Control[] d = p.Controls.Find($"{cbName}delay", true); // Delays
+                    Control[] d = group.Controls.Find($"{cbName}delay", true); // Delays
                     if (d.Length > 0)
                     {
                         NumericUpDown delayInput = (NumericUpDown)d[0];
@@ -65,13 +67,15 @@ namespace _4RTools.Forms
         {                 
             TextBox textBox = (TextBox)sender;
             int chainID = Int16.Parse(textBox.Parent.Name.Split(new[] { "chainGroup" }, StringSplitOptions.None)[1]);
+            GroupBox group = (GroupBox)this.Controls.Find("chainGroup" + chainID, true)[0];
             ChainConfig chainConfig = ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs.Find(config => config.id == chainID);
 
             Key key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
-            chainConfig.macroEntries[textBox.Name] = new MacroKey(key, chainConfig.delay);
+            NumericUpDown delayInput = (NumericUpDown)group.Controls.Find($"{textBox.Name}delay", true)[0];
+            chainConfig.macroEntries[textBox.Name] = new MacroKey(key, decimal.ToInt16(delayInput.Value));
 
-            bool isFirstKey = Int16.Parse(textBox.Name.Split(new[] { $"in{chainID}mac" }, StringSplitOptions.None)[1]) == 1;
-            if (isFirstKey) { chainConfig.trigger = key; }
+            bool isFirstInput = Regex.IsMatch(textBox.Name, $"in1mac{chainID}");
+            if (isFirstInput) { chainConfig.trigger = key; }
 
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().MacroSwitch);
         }
