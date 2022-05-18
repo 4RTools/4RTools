@@ -60,7 +60,7 @@ namespace _4RTools.Forms
                     }
                 }
             }
-            catch { Console.WriteLine("Error!"); };
+            catch { };
         }
 
         private void onTextChange(object sender, EventArgs e)
