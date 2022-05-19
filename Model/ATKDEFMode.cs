@@ -2,12 +2,10 @@
 using Newtonsoft.Json;
 using _4RTools.Utils;
 using System.Threading;
+using System.Drawing;
 using System.Windows.Input;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _4RTools.Model
 {
@@ -25,6 +23,7 @@ namespace _4RTools.Model
         public Key keySpammer { get; set; }
         public Dictionary<string,Key> defKeys { get; set; } = new Dictionary<string,Key>();
         public Dictionary<string,Key> atkKeys { get; set; } = new Dictionary<string, Key>();
+        private int PX_MOV = Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK;
 
         public string GetActionName()
         {
@@ -59,9 +58,12 @@ namespace _4RTools.Model
 
                 while (Keyboard.IsKeyDown(keySpammer))                
                 {
+
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - PX_MOV, System.Windows.Forms.Cursor.Position.Y - PX_MOV);
                     Thread.Sleep(1);
+                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + PX_MOV, System.Windows.Forms.Cursor.Position.Y + PX_MOV);
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
                     Thread.Sleep(this.ahkDelay);
                 }
