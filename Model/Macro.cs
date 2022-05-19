@@ -52,6 +52,7 @@ namespace _4RTools.Model
     public class Macro : Action
     {
         public static string ACTION_NAME_SONG_MACRO = "SongMacro2.0";
+        public static string ACTION_NAME_MACRO_SWITCH = "MacroSwitch";
 
         public string actionName { get; set; }
         private _4RThread thread;
