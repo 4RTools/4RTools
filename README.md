@@ -12,6 +12,7 @@ If you have found a bug or want to request a feature, feel free to open an issue
 
 All feedback are welcome!
 Discord: https://discord.gg/HRWvG5ut
+Website: https://www.4rtools.com.br/
 
 <img src='assets/images/ragnarok-icon.png' width='40'>
 
@@ -28,13 +29,7 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 - [x] Autobuff Stuffs
 - [x] Autobuff skills
 - [x] Song Macro
-- [ ] Switch Macro
-
-#### Donation
-You can now buy me a Beer!
-Donate to support our developers and contribute to the Open Source @4RTools Project.
-
-Link to donate: https://www.buymeacoffee.com/4RTools
+- [x] Macro Switch/Macro Chain
 
 #### References
 https://github.com/k1ngJ/dtAP

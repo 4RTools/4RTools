@@ -36,7 +36,6 @@ namespace _4RTools.Forms
                         ToggleCheckboxByName(config.Key, config.Value.clickActive);
                     }
 
-                    ToggleCheckboxByName(this.mouseFlick.Name, ProfileSingleton.GetCurrent().AHK.mouseFlick);
                     this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.ahkDelay.ToString();
                     this.txtSkillTimerKey.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey.ToString();
                     this.txtAutoRefreshDelay.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay.ToString();
@@ -56,21 +55,13 @@ namespace _4RTools.Forms
         {
             CheckBox checkbox = (CheckBox)sender;
 
-            if(checkbox.Text == "Mouse Flick")
-            {
-                ProfileSingleton.GetCurrent().AHK.mouseFlick = checkbox.Checked;
-            }
+            Key key = (Key)new KeyConverter().ConvertFromString(checkbox.Text);
+            bool haveMouseClick = checkbox.CheckState == CheckState.Checked ? true : false;
+
+            if (checkbox.CheckState == CheckState.Checked || checkbox.CheckState == CheckState.Indeterminate)
+                ProfileSingleton.GetCurrent().AHK.AddAHKEntry(checkbox.Name, new KeyConfig(key, haveMouseClick));
             else
-            {
-                Key key = (Key)new KeyConverter().ConvertFromString(checkbox.Text);
-                bool haveMouseClick = checkbox.CheckState == CheckState.Checked ? true : false;
-
-                if (checkbox.CheckState == CheckState.Checked || checkbox.CheckState == CheckState.Indeterminate)
-                    ProfileSingleton.GetCurrent().AHK.AddAHKEntry(checkbox.Name, new KeyConfig(key, haveMouseClick));
-                else
-                    ProfileSingleton.GetCurrent().AHK.RemoveAHKEntry(checkbox.Name);
-
-            }
+                ProfileSingleton.GetCurrent().AHK.RemoveAHKEntry(checkbox.Name);
 
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
         }

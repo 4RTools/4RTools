@@ -86,7 +86,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
-            this.mouseFlick = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -685,23 +684,12 @@
             this.lblAutoRefreshDelay.Text = "Delay";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mouseFlick
-            // 
-            this.mouseFlick.AutoSize = true;
-            this.mouseFlick.Location = new System.Drawing.Point(27, 238);
-            this.mouseFlick.Name = "mouseFlick";
-            this.mouseFlick.Size = new System.Drawing.Size(83, 17);
-            this.mouseFlick.TabIndex = 34;
-            this.mouseFlick.Text = "Mouse Flick";
-            this.mouseFlick.UseVisualStyleBackColor = true;
-            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(406, 270);
-            this.Controls.Add(this.mouseFlick);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.groupBox2);
@@ -827,6 +815,5 @@
         private System.Windows.Forms.Label lblAutoRefreshDelay;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
-        private System.Windows.Forms.CheckBox mouseFlick;
     }
 }
