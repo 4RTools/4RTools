@@ -61,7 +61,7 @@ namespace _4RTools.Forms
                             }
                         }
                     }
-                    catch(Exception e) { }
+                    catch { }
                 }
             }
         }

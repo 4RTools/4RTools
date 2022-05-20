@@ -37,7 +37,7 @@ namespace _4RTools.Model
                 }
                 ProfileSingleton.profile = profile;
             }
-            catch (Exception e) {
+            catch {
                 throw new Exception("Houve um problema ao carregar o perfil. Delete a pasta Profiles e tente novamente.");   
             }
         }

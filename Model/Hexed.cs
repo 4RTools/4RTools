@@ -68,7 +68,7 @@ namespace _4RTools.Model
                         this.currentHPBaseAddress = c.currentHPBaseAddress;
                         this.currentNameAddress = c.currentNameAddress;
                         this.statusBufferAddress = c.statusBufferAddress;
-                    }catch (Exception ex)
+                    }catch
                     {
                         MessageBox.Show("This client is not supported. Only Spammers and macro will works.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         this.currentHPBaseAddress = 0;
@@ -193,6 +193,7 @@ namespace _4RTools.Model
             clients.Add(new Client("NR_RO_4TH",0x011D0A14, 0x011C9684));
             clients.Add(new Client("Ragnarok", 0x011D0A14, 0x011D33F8)); //RagnaHistory
             clients.Add(new Client("BlueRO",0x011D1A04, 0x011D43E8));
+            clients.Add(new Client("StreetRO 2.0",0x010DCE10, 0x010D5DA8));
 
             return clients;
         }
