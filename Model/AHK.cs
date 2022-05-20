@@ -28,7 +28,7 @@ namespace _4RTools.Model
         public Dictionary<string,KeyConfig> ahkEntries { get; set; } = new Dictionary<string, KeyConfig>();
         private string ACTION_NAME = "AHK20";
         public int ahkDelay { get; set; } = 10;
-        public bool mouseFlick { get; set; } = false;
+
         private _4RThread thread;
 
 
