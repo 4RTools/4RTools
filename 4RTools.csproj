@@ -70,6 +70,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\4RTextInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\4RTextInput.Designer.cs">
+      <DependentUpon>4RTextInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AHKForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,9 @@
     <Compile Include="Utils\ProcessMemoryReader.cs" />
     <Compile Include="Utils\RObserver.cs" />
     <Compile Include="Utils\_4RThread.cs" />
+    <EmbeddedResource Include="Components\4RTextInput.resx">
+      <DependentUpon>4RTextInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>
     </EmbeddedResource>
