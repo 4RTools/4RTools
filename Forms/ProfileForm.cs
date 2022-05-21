@@ -21,6 +21,8 @@ namespace _4RTools.Forms
         private void btnSave_Click(object sender, EventArgs e)
         {
             string newProfileName = this.txtProfileName.Text;
+            if (string.IsNullOrEmpty(newProfileName)) { return; }
+
             new Profile(newProfileName).Save();
             this.lbProfilesList.Items.Add(newProfileName);
             this.container.refreshProfileList();
