@@ -43,7 +43,7 @@ namespace _4RTools.Forms
                 MessageBox.Show("Cannot delete a Default profile!");
             } else
             {
-                Profile.RemoveProfile(selectedProfile);
+                ProfileSingleton.RemoveProfile(selectedProfile);
                 this.lbProfilesList.Items.Remove(selectedProfile);
                 this.container.refreshProfileList();
             }

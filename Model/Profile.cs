@@ -57,6 +57,15 @@ namespace _4RTools.Model
             ProfileSingleton.Load(profileName);
         }
 
+        public static void RemoveProfile(string profileName)
+        {
+            try
+            {
+                if (profileName != "Default") { File.Delete(AppConfig.ProfileFolder + profileName + ".json"); }
+            }
+            catch { }
+        }
+
         public static void SetConfiguration(Action action)
         {
             if (profile != null)
