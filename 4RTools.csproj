@@ -100,6 +100,12 @@
     <Compile Include="Forms\MacroSwitchForm.Designer.cs">
       <DependentUpon>MacroSwitchForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\NewContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewContainer.Designer.cs">
+      <DependentUpon>NewContainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SkillAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MacroSwitchForm.resx">
       <DependentUpon>MacroSwitchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewContainer.resx">
+      <DependentUpon>NewContainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SkillAutoBuffForm.resx">
       <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
