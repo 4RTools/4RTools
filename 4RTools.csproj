@@ -70,6 +70,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\4RComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\4RComboBox.Designer.cs">
+      <DependentUpon>4RComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\4RTextInput.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <Compile Include="Utils\ProcessMemoryReader.cs" />
     <Compile Include="Utils\RObserver.cs" />
     <Compile Include="Utils\_4RThread.cs" />
+    <EmbeddedResource Include="Components\4RComboBox.resx">
+      <DependentUpon>4RComboBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\4RTextInput.resx">
       <DependentUpon>4RTextInput.cs</DependentUpon>
     </EmbeddedResource>

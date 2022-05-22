@@ -12,5 +12,13 @@ namespace _4RTools.Utils
 
         [DllImport("user32.dll")]
         public static extern void mouse_event(uint dwFlags, int dx, int dy, uint dwData, int dwExtraInfo);
+
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        public static extern void ReleaseCapture();
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern void SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+
+
     }
 }

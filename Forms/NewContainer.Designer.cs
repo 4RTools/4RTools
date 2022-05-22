@@ -32,16 +32,32 @@ namespace _4RTools.Forms
             System.Windows.Forms.Panel panelDividerBottom;
             System.Windows.Forms.Panel panel1;
             System.Windows.Forms.Panel panel2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewContainer));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnAutopot = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAutobuffStuff = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.btnSpammer = new System.Windows.Forms.Button();
             this.btnAutobuff = new System.Windows.Forms.Button();
-            this.btnAutobuffStuff = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnAutopot = new System.Windows.Forms.Button();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.btnMimimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this._4RComboBox2 = new _4RTools.Components._4RComboBox();
+            this._4RComboBox1 = new _4RTools.Components._4RComboBox();
             panelDividerBottom = new System.Windows.Forms.Panel();
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
+            this.panelTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDividerBottom
@@ -63,7 +79,7 @@ namespace _4RTools.Forms
             // panel2
             // 
             panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(170)))), ((int)(((byte)(147)))));
-            panel2.Location = new System.Drawing.Point(240, 60);
+            panel2.Location = new System.Drawing.Point(240, 72);
             panel2.Name = "panel2";
             panel2.Size = new System.Drawing.Size(650, 1);
             panel2.TabIndex = 2;
@@ -71,33 +87,98 @@ namespace _4RTools.Forms
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.panelMenu.Controls.Add(this.button4);
             this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.btnAutobuffStuff);
-            this.panelMenu.Controls.Add(this.btnAutobuff);
+            this.panelMenu.Controls.Add(this.button3);
             this.panelMenu.Controls.Add(this.btnSpammer);
+            this.panelMenu.Controls.Add(this.btnAutobuff);
+            this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.btnAutopot);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 561);
+            this.panelMenu.Size = new System.Drawing.Size(206, 561);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnAutopot
+            // button4
             // 
-            this.btnAutopot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.btnAutopot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAutopot.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAutopot.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.btnAutopot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutopot.Font = new System.Drawing.Font("ProFont for Powerline", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAutopot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.btnAutopot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAutopot.Location = new System.Drawing.Point(0, 98);
-            this.btnAutopot.Name = "btnAutopot";
-            this.btnAutopot.Size = new System.Drawing.Size(200, 70);
-            this.btnAutopot.TabIndex = 0;
-            this.btnAutopot.Text = "Autopot";
-            this.btnAutopot.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(1, 402);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(205, 42);
+            this.button4.TabIndex = 7;
+            this.button4.Tag = "Profiles";
+            this.button4.Text = "Profiles";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 273);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(206, 42);
+            this.button1.TabIndex = 4;
+            this.button1.Tag = "MacroSongs";
+            this.button1.Text = "Macro Songs";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnAutobuffStuff
+            // 
+            this.btnAutobuffStuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutobuffStuff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAutobuffStuff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAutobuffStuff.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutobuffStuff.FlatAppearance.BorderSize = 0;
+            this.btnAutobuffStuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutobuffStuff.Font = new System.Drawing.Font("ProFont for Powerline", 14.5F);
+            this.btnAutobuffStuff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.btnAutobuffStuff.Image = ((System.Drawing.Image)(resources.GetObject("btnAutobuffStuff.Image")));
+            this.btnAutobuffStuff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAutobuffStuff.Location = new System.Drawing.Point(0, 230);
+            this.btnAutobuffStuff.Name = "btnAutobuffStuff";
+            this.btnAutobuffStuff.Size = new System.Drawing.Size(206, 42);
+            this.btnAutobuffStuff.TabIndex = 3;
+            this.btnAutobuffStuff.Tag = "AutobuffStuff";
+            this.btnAutobuffStuff.Text = "Autobuff Stuffs";
+            this.btnAutobuffStuff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAutobuffStuff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAutobuffStuff.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(1, 359);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(205, 42);
+            this.button3.TabIndex = 6;
+            this.button3.Tag = "ATKDEF";
+            this.button3.Text = "ATK x DEF";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // btnSpammer
             // 
@@ -105,15 +186,20 @@ namespace _4RTools.Forms
             this.btnSpammer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSpammer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSpammer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnSpammer.FlatAppearance.BorderSize = 0;
             this.btnSpammer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSpammer.Font = new System.Drawing.Font("ProFont for Powerline", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSpammer.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.btnSpammer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.btnSpammer.Image = ((System.Drawing.Image)(resources.GetObject("btnSpammer.Image")));
             this.btnSpammer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSpammer.Location = new System.Drawing.Point(0, 169);
+            this.btnSpammer.Location = new System.Drawing.Point(0, 144);
             this.btnSpammer.Name = "btnSpammer";
-            this.btnSpammer.Size = new System.Drawing.Size(200, 70);
+            this.btnSpammer.Size = new System.Drawing.Size(206, 42);
             this.btnSpammer.TabIndex = 1;
+            this.btnSpammer.Tag = "Spammer";
             this.btnSpammer.Text = "Spammer";
+            this.btnSpammer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSpammer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSpammer.UseVisualStyleBackColor = false;
             // 
             // btnAutobuff
@@ -122,51 +208,168 @@ namespace _4RTools.Forms
             this.btnAutobuff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAutobuff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAutobuff.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutobuff.FlatAppearance.BorderSize = 0;
             this.btnAutobuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutobuff.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAutobuff.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.btnAutobuff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.btnAutobuff.Image = ((System.Drawing.Image)(resources.GetObject("btnAutobuff.Image")));
             this.btnAutobuff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAutobuff.Location = new System.Drawing.Point(0, 240);
+            this.btnAutobuff.Location = new System.Drawing.Point(-1, 187);
             this.btnAutobuff.Name = "btnAutobuff";
-            this.btnAutobuff.Size = new System.Drawing.Size(200, 70);
+            this.btnAutobuff.Size = new System.Drawing.Size(208, 42);
             this.btnAutobuff.TabIndex = 2;
-            this.btnAutobuff.Text = "Autobuff (Skill)";
+            this.btnAutobuff.Tag = "AutobuffSkill";
+            this.btnAutobuff.Text = "Autobuff Skill";
+            this.btnAutobuff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAutobuff.UseVisualStyleBackColor = false;
-            this.btnAutobuff.Click += new System.EventHandler(this.btnAutobuff_Click);
             // 
-            // btnAutobuffStuff
+            // button2
             // 
-            this.btnAutobuffStuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.btnAutobuffStuff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAutobuffStuff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAutobuffStuff.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.btnAutobuffStuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutobuffStuff.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAutobuffStuff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.btnAutobuffStuff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAutobuffStuff.Location = new System.Drawing.Point(0, 311);
-            this.btnAutobuffStuff.Name = "btnAutobuffStuff";
-            this.btnAutobuffStuff.Size = new System.Drawing.Size(200, 70);
-            this.btnAutobuffStuff.TabIndex = 3;
-            this.btnAutobuffStuff.Text = "Autobuff (Stuffs)";
-            this.btnAutobuffStuff.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-1, 316);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(207, 42);
+            this.button2.TabIndex = 5;
+            this.button2.Tag = "MacroSwitch";
+            this.button2.Text = "Macro Switch";
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnAutopot
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 70);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Macro Songs";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAutopot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutopot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAutopot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAutopot.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutopot.FlatAppearance.BorderSize = 0;
+            this.btnAutopot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutopot.Font = new System.Drawing.Font("ProFont for Powerline", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAutopot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.btnAutopot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAutopot.Location = new System.Drawing.Point(0, 101);
+            this.btnAutopot.Name = "btnAutopot";
+            this.btnAutopot.Size = new System.Drawing.Size(206, 42);
+            this.btnAutopot.TabIndex = 0;
+            this.btnAutopot.Tag = "Autopot";
+            this.btnAutopot.Text = "Autopot";
+            this.btnAutopot.UseVisualStyleBackColor = false;
+            // 
+            // panelTitle
+            // 
+            this.panelTitle.Controls.Add(this.btnMimimize);
+            this.panelTitle.Controls.Add(this.btnClose);
+            this.panelTitle.Controls.Add(this.lblTitle);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(206, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(728, 73);
+            this.panelTitle.TabIndex = 3;
+            this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
+            // 
+            // btnMimimize
+            // 
+            this.btnMimimize.FlatAppearance.BorderSize = 0;
+            this.btnMimimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMimimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMimimize.Image")));
+            this.btnMimimize.Location = new System.Drawing.Point(669, 0);
+            this.btnMimimize.Name = "btnMimimize";
+            this.btnMimimize.Size = new System.Drawing.Size(28, 25);
+            this.btnMimimize.TabIndex = 1;
+            this.btnMimimize.UseVisualStyleBackColor = true;
+            this.btnMimimize.Click += new System.EventHandler(this.btnMimimize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(697, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(28, 25);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(343, 34);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTitle.Size = new System.Drawing.Size(34, 13);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Teste";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Location = new System.Drawing.Point(206, 75);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(728, 435);
+            this.panelDesktop.TabIndex = 4;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(212, 524);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(27, 25);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(419, 523);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 26);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // _4RComboBox2
+            // 
+            this._4RComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this._4RComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this._4RComboBox2.BorderSize = 1;
+            this._4RComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this._4RComboBox2.ForeColor = System.Drawing.Color.DimGray;
+            this._4RComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this._4RComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this._4RComboBox2.ListTextColor = System.Drawing.Color.DimGray;
+            this._4RComboBox2.Location = new System.Drawing.Point(417, 521);
+            this._4RComboBox2.MinimumSize = new System.Drawing.Size(200, 30);
+            this._4RComboBox2.Name = "_4RComboBox2";
+            this._4RComboBox2.Padding = new System.Windows.Forms.Padding(1);
+            this._4RComboBox2.Size = new System.Drawing.Size(200, 30);
+            this._4RComboBox2.TabIndex = 8;
+            this._4RComboBox2.Texts = "     Choose Profile";
+            // 
+            // _4RComboBox1
+            // 
+            this._4RComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this._4RComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this._4RComboBox1.BorderSize = 1;
+            this._4RComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this._4RComboBox1.ForeColor = System.Drawing.Color.DimGray;
+            this._4RComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this._4RComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this._4RComboBox1.ListTextColor = System.Drawing.Color.DimGray;
+            this._4RComboBox1.Location = new System.Drawing.Point(209, 521);
+            this._4RComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
+            this._4RComboBox1.Name = "_4RComboBox1";
+            this._4RComboBox1.Padding = new System.Windows.Forms.Padding(1);
+            this._4RComboBox1.Size = new System.Drawing.Size(200, 30);
+            this._4RComboBox1.TabIndex = 0;
+            this._4RComboBox1.Texts = "     Choose Process";
             // 
             // NewContainer
             // 
@@ -174,12 +377,23 @@ namespace _4RTools.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this._4RComboBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this._4RComboBox1);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelTitle);
             this.Controls.Add(panel2);
             this.Controls.Add(panelDividerBottom);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewContainer";
+            this.Resize += new System.EventHandler(this.containerResize);
             this.panelMenu.ResumeLayout(false);
+            this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,5 +406,17 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Button btnAutobuff;
         private System.Windows.Forms.Button btnAutobuffStuff;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panelTitle;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMimimize;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private Components._4RComboBox _4RComboBox1;
+        private Components._4RComboBox _4RComboBox2;
     }
 }
