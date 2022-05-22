@@ -143,15 +143,6 @@ namespace _4RTools.Model
             catch { }
             return profiles;
         }
-
-        public static bool ProfileExists(string profileName)
-        {
-            try
-            {
-                return File.Exists(AppConfig.ProfileFolder + profileName + ".json");
-            }
-            catch { return false; }
-        }
     }
 
 }
