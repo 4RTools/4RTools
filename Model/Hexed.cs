@@ -166,7 +166,6 @@ namespace _4RTools.Model
        
             foreach(Client c in GetAll())
             {
-
                 if (c.execName == processName)
                 {
                     uint hpBaseValue = ReadMemory(c.currentHPBaseAddress);
@@ -188,7 +187,7 @@ namespace _4RTools.Model
             clients.Add(new Client("Jogar",0x0101A700, 0x0101CEB0)); //Portal Kafra
             clients.Add(new Client("ragna4th",0x011D1A04, 0x011D43E8));
             clients.Add(new Client("ROZero",0x00F4942C, 0x00F4BD70));
-            clients.Add(new Client("MiracleRO",0x01107BEC, 0x0110A5B0));
+            clients.Add(new Client("MiracleRO", 0x00E4CAF4, 0x00E4D768));
             clients.Add(new Client("PrimeRO",0x011D0A14, 0x011D33F8));
             clients.Add(new Client("NR_RO_4TH",0x011D0A14, 0x011C9684));
             clients.Add(new Client("Ragnarok", 0x011D0A14, 0x011D33F8)); //RagnaHistory
