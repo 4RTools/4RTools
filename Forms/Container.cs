@@ -16,15 +16,10 @@ namespace _4RTools.Forms
 
         public Container()
         {
-            Config.Load();
             this.subject.Attach(this);
 
-            if (!Directory.Exists(Config.ReadSetting("ProfileFolder")))
-            {
-                Directory.CreateDirectory(Config.ReadSetting("ProfileFolder")); //Create Profile Folder if don't exists.
-            }
             InitializeComponent();
-            this.Text = Config.ReadSetting("Name") + " - " + Config.ReadSetting("Version"); // Window title
+            this.Text = AppConfig.Name + " - " + AppConfig.Version; // Window title
 
             //Container Configuration
             this.IsMdiContainer = true;
@@ -183,11 +178,7 @@ namespace _4RTools.Forms
 
         private void Container_Load(object sender, EventArgs e)
         {
-            if (!Profile.ProfileExists("Default"))
-            {
-                ProfileSingleton.profile.Save();
-            }
-
+            ProfileSingleton.Create("Default");
             this.refreshProcessList();
             this.refreshProfileList();
             this.profileCB.SelectedItem = "Default";
@@ -240,17 +231,17 @@ namespace _4RTools.Forms
 
         private void lblLinkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(Config.ReadSetting("GithubLink"));
+            Process.Start(AppConfig.GithubLink);
         }
 
         private void lblLinkDiscord_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(Config.ReadSetting("DiscordLink"));
+            Process.Start(AppConfig.DiscordLink);
         }
 
         private void websiteLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(Config.ReadSetting("4RWebsite"));
+            Process.Start(AppConfig.Website);
         }
 
         private void profileCB_SelectedIndexChanged(object sender, EventArgs e)

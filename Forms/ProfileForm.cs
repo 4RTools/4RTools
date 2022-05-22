@@ -21,7 +21,9 @@ namespace _4RTools.Forms
         private void btnSave_Click(object sender, EventArgs e)
         {
             string newProfileName = this.txtProfileName.Text;
-            new Profile(newProfileName).Save();
+            if (string.IsNullOrEmpty(newProfileName)) { return; }
+
+            ProfileSingleton.Create(newProfileName);
             this.lbProfilesList.Items.Add(newProfileName);
             this.container.refreshProfileList();
             this.txtProfileName.Text = ""; // clear text box
@@ -41,7 +43,7 @@ namespace _4RTools.Forms
                 MessageBox.Show("Cannot delete a Default profile!");
             } else
             {
-                Profile.RemoveProfile(selectedProfile);
+                ProfileSingleton.Delete(selectedProfile);
                 this.lbProfilesList.Items.Remove(selectedProfile);
                 this.container.refreshProfileList();
             }
