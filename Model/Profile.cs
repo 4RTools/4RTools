@@ -15,14 +15,12 @@ namespace _4RTools.Model
         {
             try
             {
-                string jsonFileName = Config.ReadSetting("ProfileFolder") + profileName + ".json";
-                string json = File.ReadAllText(jsonFileName);
+                string json = File.ReadAllText(AppConfig.ProfileFolder + profileName + ".json");
                 dynamic rawObject = JsonConvert.DeserializeObject(json);
-
-                Profile profile = new Profile(profileName);
 
                 if ((rawObject != null))
                 {
+                    profile.Name = profileName;
                     profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByAction(rawObject, profile.UserPreferences));
                     profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByAction(rawObject, profile.AHK));
                     profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.Autopot));
@@ -35,23 +33,39 @@ namespace _4RTools.Model
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                     profile.MacroSwitch = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.MacroSwitch));
                 }
-                ProfileSingleton.profile = profile;
             }
             catch {
                 throw new Exception("Houve um problema ao carregar o perfil. Delete a pasta Profiles e tente novamente.");   
             }
         }
 
+        public static void Create(string profileName)
+        {
+            string jsonFileName = AppConfig.ProfileFolder + profileName + ".json";
+
+            if (!File.Exists(jsonFileName))
+            {
+                if (!Directory.Exists(AppConfig.ProfileFolder)) { Directory.CreateDirectory(AppConfig.ProfileFolder); }
+                FileStream fs = File.Create(jsonFileName);
+                fs.Close();
+
+                Profile profile = new Profile(profileName);
+                string output = JsonConvert.SerializeObject(profile, Formatting.Indented);
+                File.WriteAllText(jsonFileName, output);
+            }
+
+            ProfileSingleton.Load(profileName);
+        }
+
         public static void SetConfiguration(Action action)
         {
-            if(profile != null)
+            if (profile != null)
             {
-                string jsonFileName = Config.ReadSetting("ProfileFolder") + profile.Name + ".json";
-                string json = File.ReadAllText(jsonFileName);
-                dynamic jsonObj = JsonConvert.DeserializeObject(json);
+                string jsonData = File.ReadAllText(AppConfig.ProfileFolder + profile.Name + ".json");
+                dynamic jsonObj = JsonConvert.DeserializeObject(jsonData);
                 jsonObj[action.GetActionName()] = action.GetConfiguration();
                 string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
-                File.WriteAllText(jsonFileName, output);
+                File.WriteAllText(AppConfig.ProfileFolder + profile.Name + ".json", output);
             }
         }
 
@@ -59,7 +73,6 @@ namespace _4RTools.Model
         {
             return profile;
         }
-
     }
 
     public class Profile
@@ -109,7 +122,7 @@ namespace _4RTools.Model
             List<string> profiles = new List<string>();
             try
             {
-                string[] files =  Directory.GetFiles(Config.ReadSetting("ProfileFolder"));
+                string[] files =  Directory.GetFiles(AppConfig.ProfileFolder);
                 
                 foreach(string fileName in files)
                 {
@@ -122,35 +135,11 @@ namespace _4RTools.Model
             return profiles;
         }
 
-        public void Save()
-        {
-            FileStream fs = File.Create(Config.ReadSetting("ProfileFolder") + "\\" +this.Name+".json");
-            fs.Close();
-
-            string output = JsonConvert.SerializeObject(this, Formatting.Indented);
-            File.WriteAllText(Config.ReadSetting("ProfileFolder") + "\\" + this.Name+".json", output);
-
-            ProfileSingleton.Load(this.Name);
-        }
-
-        public static void RemoveProfile(string profileName)
-        {
-            try
-            {
-                File.Delete(Config.ReadSetting("ProfileFolder") + "\\" + profileName + ".json");
-
-                if(!ProfileExists("Default")) {
-                    new Profile("Default").Save();
-                }
-                
-            }catch { }
-        }
-
         public static bool ProfileExists(string profileName)
         {
             try
             {
-                return File.Exists(Config.ReadSetting("ProfileFolder") + "\\" +profileName+".json");
+                return File.Exists(AppConfig.ProfileFolder + profileName + ".json");
             }
             catch { return false; }
         }

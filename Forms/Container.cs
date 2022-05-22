@@ -178,11 +178,7 @@ namespace _4RTools.Forms
 
         private void Container_Load(object sender, EventArgs e)
         {
-            if (!Profile.ProfileExists("Default"))
-            {
-                ProfileSingleton.profile.Save();
-            }
-
+            ProfileSingleton.Create("Default");
             this.refreshProcessList();
             this.refreshProfileList();
             this.profileCB.SelectedItem = "Default";

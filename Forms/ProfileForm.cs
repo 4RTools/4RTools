@@ -23,7 +23,7 @@ namespace _4RTools.Forms
             string newProfileName = this.txtProfileName.Text;
             if (string.IsNullOrEmpty(newProfileName)) { return; }
 
-            new Profile(newProfileName).Save();
+            ProfileSingleton.Create(newProfileName);
             this.lbProfilesList.Items.Add(newProfileName);
             this.container.refreshProfileList();
             this.txtProfileName.Text = ""; // clear text box
