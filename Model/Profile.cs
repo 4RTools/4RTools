@@ -57,7 +57,7 @@ namespace _4RTools.Model
             ProfileSingleton.Load(profileName);
         }
 
-        public static void RemoveProfile(string profileName)
+        public static void Delete(string profileName)
         {
             try
             {
