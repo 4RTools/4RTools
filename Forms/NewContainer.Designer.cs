@@ -47,17 +47,25 @@ namespace _4RTools.Forms
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelControl = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this._4RComboBox2 = new _4RTools.Components._4RComboBox();
-            this._4RComboBox1 = new _4RTools.Components._4RComboBox();
+            this.appStatePanel = new System.Windows.Forms.Panel();
+            this.profileCB = new _4RTools.Components._4RComboBox();
+            this.processCB = new _4RTools.Components._4RComboBox();
+            this.pbIcon = new System.Windows.Forms.PictureBox();
+            this.lblCharacter = new System.Windows.Forms.Label();
+            this.lblCharacterName = new System.Windows.Forms.Label();
+            this.btnRefreshProcess = new System.Windows.Forms.Button();
             panelDividerBottom = new System.Windows.Forms.Panel();
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelTitle.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDividerBottom
@@ -109,7 +117,7 @@ namespace _4RTools.Forms
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(1, 402);
@@ -128,7 +136,7 @@ namespace _4RTools.Forms
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 273);
@@ -147,7 +155,7 @@ namespace _4RTools.Forms
             this.btnAutobuffStuff.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.btnAutobuffStuff.FlatAppearance.BorderSize = 0;
             this.btnAutobuffStuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutobuffStuff.Font = new System.Drawing.Font("ProFont for Powerline", 14.5F);
+            this.btnAutobuffStuff.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.btnAutobuffStuff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.btnAutobuffStuff.Image = ((System.Drawing.Image)(resources.GetObject("btnAutobuffStuff.Image")));
             this.btnAutobuffStuff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,7 +177,7 @@ namespace _4RTools.Forms
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(1, 359);
@@ -231,7 +239,7 @@ namespace _4RTools.Forms
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("ProFont for Powerline", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(-1, 316);
@@ -250,7 +258,7 @@ namespace _4RTools.Forms
             this.btnAutopot.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.btnAutopot.FlatAppearance.BorderSize = 0;
             this.btnAutopot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutopot.Font = new System.Drawing.Font("ProFont for Powerline", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAutopot.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.btnAutopot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.btnAutopot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAutopot.Location = new System.Drawing.Point(0, 101);
@@ -263,6 +271,9 @@ namespace _4RTools.Forms
             // 
             // panelTitle
             // 
+            this.panelTitle.Controls.Add(this.lblCharacterName);
+            this.panelTitle.Controls.Add(this.lblCharacter);
+            this.panelTitle.Controls.Add(this.pbIcon);
             this.panelTitle.Controls.Add(this.btnMimimize);
             this.panelTitle.Controls.Add(this.btnClose);
             this.panelTitle.Controls.Add(this.lblTitle);
@@ -275,6 +286,7 @@ namespace _4RTools.Forms
             // 
             // btnMimimize
             // 
+            this.btnMimimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMimimize.FlatAppearance.BorderSize = 0;
             this.btnMimimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMimimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMimimize.Image")));
@@ -287,6 +299,7 @@ namespace _4RTools.Forms
             // 
             // btnClose
             // 
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
@@ -299,77 +312,144 @@ namespace _4RTools.Forms
             // 
             // lblTitle
             // 
+            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(343, 34);
+            this.lblTitle.Font = new System.Drawing.Font("Lucida Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.lblTitle.Location = new System.Drawing.Point(77, 19);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblTitle.Size = new System.Drawing.Size(34, 13);
+            this.lblTitle.Size = new System.Drawing.Size(67, 23);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Teste";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.panelControl);
             this.panelDesktop.Location = new System.Drawing.Point(206, 75);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(728, 435);
             this.panelDesktop.TabIndex = 4;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // panelControl
+            // 
+            this.panelControl.Location = new System.Drawing.Point(420, 521);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(305, 30);
+            this.panelControl.TabIndex = 9;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(212, 524);
+            this.pictureBox1.Location = new System.Drawing.Point(211, 524);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(27, 25);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(419, 523);
+            this.pictureBox2.Location = new System.Drawing.Point(483, 523);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 26);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // _4RComboBox2
+            // appStatePanel
             // 
-            this._4RComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this._4RComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this._4RComboBox2.BorderSize = 1;
-            this._4RComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this._4RComboBox2.ForeColor = System.Drawing.Color.DimGray;
-            this._4RComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this._4RComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this._4RComboBox2.ListTextColor = System.Drawing.Color.DimGray;
-            this._4RComboBox2.Location = new System.Drawing.Point(417, 521);
-            this._4RComboBox2.MinimumSize = new System.Drawing.Size(200, 30);
-            this._4RComboBox2.Name = "_4RComboBox2";
-            this._4RComboBox2.Padding = new System.Windows.Forms.Padding(1);
-            this._4RComboBox2.Size = new System.Drawing.Size(200, 30);
-            this._4RComboBox2.TabIndex = 8;
-            this._4RComboBox2.Texts = "     Choose Profile";
+            this.appStatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this.appStatePanel.Location = new System.Drawing.Point(737, 521);
+            this.appStatePanel.Name = "appStatePanel";
+            this.appStatePanel.Size = new System.Drawing.Size(185, 30);
+            this.appStatePanel.TabIndex = 9;
             // 
-            // _4RComboBox1
+            // profileCB
             // 
-            this._4RComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this._4RComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this._4RComboBox1.BorderSize = 1;
-            this._4RComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this._4RComboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this._4RComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this._4RComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this._4RComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this._4RComboBox1.Location = new System.Drawing.Point(209, 521);
-            this._4RComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
-            this._4RComboBox1.Name = "_4RComboBox1";
-            this._4RComboBox1.Padding = new System.Windows.Forms.Padding(1);
-            this._4RComboBox1.Size = new System.Drawing.Size(200, 30);
-            this._4RComboBox1.TabIndex = 0;
-            this._4RComboBox1.Texts = "     Choose Process";
+            this.profileCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this.profileCB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.profileCB.BorderSize = 1;
+            this.profileCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.profileCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F);
+            this.profileCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.profileCB.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.profileCB.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.profileCB.ListTextColor = System.Drawing.Color.DimGray;
+            this.profileCB.Location = new System.Drawing.Point(508, 521);
+            this.profileCB.MinimumSize = new System.Drawing.Size(200, 30);
+            this.profileCB.Name = "profileCB";
+            this.profileCB.Padding = new System.Windows.Forms.Padding(1);
+            this.profileCB.Size = new System.Drawing.Size(200, 30);
+            this.profileCB.TabIndex = 8;
+            this.profileCB.Texts = "Choose Profile";
+            this.profileCB.OnSelectedIndexChanged += new System.EventHandler(this.onProfileChanged);
+            // 
+            // processCB
+            // 
+            this.processCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this.processCB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.processCB.BorderSize = 1;
+            this.processCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.processCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F);
+            this.processCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.processCB.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.processCB.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.processCB.ListTextColor = System.Drawing.Color.DimGray;
+            this.processCB.Location = new System.Drawing.Point(239, 521);
+            this.processCB.MinimumSize = new System.Drawing.Size(200, 30);
+            this.processCB.Name = "processCB";
+            this.processCB.Padding = new System.Windows.Forms.Padding(1);
+            this.processCB.Size = new System.Drawing.Size(200, 30);
+            this.processCB.TabIndex = 0;
+            this.processCB.Texts = "Choose Process";
+            this.processCB.OnSelectedIndexChanged += new System.EventHandler(this.onProcessChange);
+            // 
+            // pbIcon
+            // 
+            this.pbIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbIcon.Image")));
+            this.pbIcon.Location = new System.Drawing.Point(15, 12);
+            this.pbIcon.Name = "pbIcon";
+            this.pbIcon.Size = new System.Drawing.Size(60, 57);
+            this.pbIcon.TabIndex = 2;
+            this.pbIcon.TabStop = false;
+            // 
+            // lblCharacter
+            // 
+            this.lblCharacter.AutoSize = true;
+            this.lblCharacter.Font = new System.Drawing.Font("Lucida Sans", 8F, System.Drawing.FontStyle.Bold);
+            this.lblCharacter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.lblCharacter.Location = new System.Drawing.Point(80, 51);
+            this.lblCharacter.Name = "lblCharacter";
+            this.lblCharacter.Size = new System.Drawing.Size(104, 12);
+            this.lblCharacter.TabIndex = 3;
+            this.lblCharacter.Text = "Character Name:";
+            // 
+            // lblCharacterName
+            // 
+            this.lblCharacterName.AutoSize = true;
+            this.lblCharacterName.Font = new System.Drawing.Font("Lucida Sans", 8F, System.Drawing.FontStyle.Bold);
+            this.lblCharacterName.ForeColor = System.Drawing.Color.Red;
+            this.lblCharacterName.Location = new System.Drawing.Point(181, 51);
+            this.lblCharacterName.Name = "lblCharacterName";
+            this.lblCharacterName.Size = new System.Drawing.Size(84, 12);
+            this.lblCharacterName.TabIndex = 4;
+            this.lblCharacterName.Text = "Not Selected";
+            this.lblCharacterName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnRefreshProcess
+            // 
+            this.btnRefreshProcess.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.btnRefreshProcess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefreshProcess.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshProcess.Image")));
+            this.btnRefreshProcess.Location = new System.Drawing.Point(441, 521);
+            this.btnRefreshProcess.Name = "btnRefreshProcess";
+            this.btnRefreshProcess.Size = new System.Drawing.Size(30, 30);
+            this.btnRefreshProcess.TabIndex = 10;
+            this.btnRefreshProcess.UseVisualStyleBackColor = true;
+            this.btnRefreshProcess.Click += new System.EventHandler(this.btnRefreshProcess_Click);
             // 
             // NewContainer
             // 
@@ -377,10 +457,12 @@ namespace _4RTools.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.btnRefreshProcess);
+            this.Controls.Add(this.appStatePanel);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this._4RComboBox2);
+            this.Controls.Add(this.profileCB);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this._4RComboBox1);
+            this.Controls.Add(this.processCB);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(panel2);
@@ -388,12 +470,15 @@ namespace _4RTools.Forms
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewContainer";
+            this.Load += new System.EventHandler(this.NewContainer_Load);
             this.Resize += new System.EventHandler(this.containerResize);
             this.panelMenu.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
+            this.panelDesktop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -416,7 +501,13 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Button btnMimimize;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Components._4RComboBox _4RComboBox1;
-        private Components._4RComboBox _4RComboBox2;
+        private Components._4RComboBox processCB;
+        private Components._4RComboBox profileCB;
+        private System.Windows.Forms.Panel panelControl;
+        private System.Windows.Forms.Panel appStatePanel;
+        private System.Windows.Forms.Label lblCharacter;
+        private System.Windows.Forms.PictureBox pbIcon;
+        private System.Windows.Forms.Label lblCharacterName;
+        private System.Windows.Forms.Button btnRefreshProcess;
     }
 }

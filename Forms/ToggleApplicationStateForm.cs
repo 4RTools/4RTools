@@ -13,6 +13,7 @@ namespace _4RTools.Forms
         private Subject subject;
         private ContextMenu contextMenu;
         private MenuItem menuItem;
+        private bool isRunning = false;
 
         public ToggleApplicationStateForm(Subject subject)
         {
@@ -22,9 +23,7 @@ namespace _4RTools.Forms
             this.subject = subject;
             KeyboardHook.Enable();
             KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
-            this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey;
-            this.txtStatusToggleKey.KeyDown += new KeyEventHandler(FormUtils.OnKeyDown);
-            this.txtStatusToggleKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            this.txtStatusToggleKey.Value = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey;
             this.txtStatusToggleKey.TextChanged += new EventHandler(this.onStatusToggleKeyChange);
 
             InitializeContextualMenu();
@@ -50,8 +49,9 @@ namespace _4RTools.Forms
         {
             if ((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
             {
+                
                 FormUtils.ResetForm(this);
-                this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey.ToString();
+                this.txtStatusToggleKey.Value = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey.ToString();
             }
         }
 
@@ -59,48 +59,42 @@ namespace _4RTools.Forms
 
         private void onStatusToggleKeyChange(object sender, EventArgs e)
         {
-            if (this.txtStatusToggleKey.Text != ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey)
+            if (this.txtStatusToggleKey.Value != ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey)
             {
                 Keys previousKey = (Keys)Enum.Parse(typeof(Keys), ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey);
-                Keys newKey = (Keys)Enum.Parse(typeof(Keys), this.txtStatusToggleKey.Text);
+                Keys newKey = (Keys)Enum.Parse(typeof(Keys), this.txtStatusToggleKey.Value);
 
                 KeyboardHook.Remove(previousKey);
                 KeyboardHook.Add(newKey, new KeyboardHook.KeyPressed(this.toggleStatus));
-                ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey = this.txtStatusToggleKey.Text;
+                ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey = this.txtStatusToggleKey.Value;
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
             }
         }
 
         private bool toggleStatus()
         {
-            bool isOn = this.btnStatusToggle.Text == "ON";
-            if (isOn)
+            if (isRunning)
             {
-                this.btnStatusToggle.BackColor = Color.Red;
-                this.btnStatusToggle.Text = "OFF";
+                this.btnStatusToggle.Image = Resources.TurnOFF;
                 this.notifyIconTray.Icon = Resources.logo_4rtools_off;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
-                this.lblStatusToggle.Text = "Press the key to start!";
+                this.lblStatus.Text = "Stopped";
+                this.lblStatus.ForeColor = Color.FromArgb(255,0,0);
+                //this.lblStatusToggle.Text = "Press the key to start!";
                 new SoundPlayer(Resources.Speech_Off).Play();
+                isRunning = false;
             }
             else
             {
-                Client client = ClientSingleton.GetClient();
-                if (client != null)
-                {
-                    this.btnStatusToggle.BackColor = Color.Green;
-                    this.btnStatusToggle.Text = "ON";
+                    this.btnStatusToggle.Image = Resources.TurnON;
                     this.notifyIconTray.Icon = Resources.logo_4rtools_on;
                     this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
-                    this.lblStatusToggle.Text = "Press the key to stop!";
-                    this.lblStatusToggle.ForeColor = Color.Black;
+                    //this.lblStatusToggle.Text = "Press the key to stop!";
+                    //this.lblStatusToggle.ForeColor = Color.Black;
+                    this.lblStatus.Text = "Running";
+                    this.lblStatus.ForeColor = Color.LimeGreen;
                     new SoundPlayer(Resources.Speech_On).Play();
-                } else
-                {
-                    this.lblStatusToggle.Text = "Please select a valid Ragnarok Client!";
-                    this.lblStatusToggle.ForeColor = Color.Red;
-                }
-                
+                    isRunning = true;
             }
 
             return true;
@@ -115,6 +109,16 @@ namespace _4RTools.Forms
         {
             // Close the form, which closes the application.
             this.subject.Notify(new Utils.Message(MessageCode.SHUTDOWN_APPLICATION, null));
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToggleApplicationStateForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

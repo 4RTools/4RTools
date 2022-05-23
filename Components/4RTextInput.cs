@@ -6,11 +6,11 @@ using System.Windows.Input;
 
 namespace _4RTools.Components
 {
-    [DefaultEvent("_TextChanged")]
+    [DefaultEvent("TextChanged")]
     public partial class _4RTextInput : UserControl
     {
 
-        private Color borderColor = Color.MediumSlateBlue;
+        private Color borderColor = Color.FromArgb(91,55,21);
         private int borderSize = 2;
         private bool underlinedStyle = false;
         private Color borderFocusColor = Color.HotPink;
@@ -22,7 +22,7 @@ namespace _4RTools.Components
         }
 
         //Events
-        public event EventHandler _TextChanged;
+        public event EventHandler TextChanged;
 
 
         protected override void OnPaint(PaintEventArgs e)
@@ -147,9 +147,9 @@ namespace _4RTools.Components
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if(_TextChanged != null)
+            if(TextChanged != null)
             {
-                _TextChanged.Invoke(sender, e);
+                TextChanged.Invoke(sender, e);
             }
         }
 

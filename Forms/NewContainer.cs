@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Threading;
+using System.Diagnostics;
 using System.Collections.Generic;
 using _4RTools.Utils;
+using _4RTools.Model;
 
 namespace _4RTools.Forms
 {
-    public partial class NewContainer : Form
+    public partial class NewContainer : Form, IObserver
     {
 
         private Subject _subject = new Subject();
         private Button currentButton;
         private Panel leftBorderBtn;
+        private string currentProfile;
 
         private Form currentChildForm;
         private Dictionary<string, Form> forms = new Dictionary<string, Form>();
@@ -30,9 +32,10 @@ namespace _4RTools.Forms
             this.ControlBox = false;
             this.DoubleBuffered = true;
             InitializeButtonsBehaviours();
-            btnAutopot.PerformClick();
+            AttachFormToPanel("ApplicationState", this.appStatePanel);
         }
 
+        #region OnFormLoad
         private void InstantiateForms()
         {
             forms.Add("Autopot", new AutopotForm(_subject, false));
@@ -42,25 +45,47 @@ namespace _4RTools.Forms
             forms.Add("MacroSongs", new MacroSongForm(_subject));
             forms.Add("ATKDEF", new ATKDEFForm(_subject));
             forms.Add("MacroSwitch", new MacroSwitchForm(_subject));
-
+            forms.Add("ApplicationState", new ToggleApplicationStateForm(_subject));
         }
 
-
-        private void ActivateButton(object senderBtn, Color color)
+        private void NewContainer_Load(object sender, EventArgs e)
         {
-            if(senderBtn != null)
+            ProfileSingleton.Create("Default");
+            this.refreshProcessList();
+            this.refreshProfileList();
+            this.profileCB.Texts = "Default";
+        }
+
+        private void refreshProcessList()
+        {
+            this.Invoke((MethodInvoker)delegate ()
             {
-                currentButton = (Button)senderBtn;
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentButton.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                this.processCB.Items.Clear();
+            });
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.MainWindowTitle != "")
+                {
+                    this.processCB.Items.Add(string.Format("{0}.exe - {1}", p.ProcessName, p.Id));
+                }
+            }
+        }
+
+        public void refreshProfileList()
+        {
+            this.Invoke((MethodInvoker)delegate ()
+            {
+                this.profileCB.Items.Clear();
+            });
+            foreach (string p in Profile.ListAll())
+            {
+                this.profileCB.Items.Add(p);
             }
         }
 
         private void InitializeButtonsBehaviours()
         {
-            foreach(Control c in this.panelMenu.Controls)
+            foreach (Control c in this.panelMenu.Controls)
             {
                 if (c is Button)
                 {
@@ -70,30 +95,71 @@ namespace _4RTools.Forms
             }
         }
 
-        private void onClickButton(object sender, EventArgs e)
+        #endregion
+
+        #region OnUpdate
+        public void Update(ISubject subject)
         {
-            ActivateButton(sender, Color.FromArgb(255, 255, 255));
-            lblTitle.Text = ((Button)sender).Text;
-            OpenChildForm(((Button)sender).Tag.ToString());
+            switch ((subject as Subject).Message.code)
+            {
+                case MessageCode.TURN_ON:
+                case MessageCode.PROFILE_CHANGED:
+                    Client client = ClientSingleton.GetClient();
+                    if (client != null)
+                    {
+                        lblCharacterName.Text = ClientSingleton.GetClient().ReadCharacterName();
+                    }
+                    break;
+                case MessageCode.CLICK_ICON_TRAY:
+                    this.Show();
+                    this.WindowState = FormWindowState.Normal;
+                    break;
+                case MessageCode.SHUTDOWN_APPLICATION:
+                    this.ShutdownApplication();
+                    break;
+            }
         }
 
-        private void OpenChildForm(string formName)
+        #endregion
+
+        #region Handlers
+
+        private void AttachFormToPanel(string formName, Panel p)
         {
-            if(currentChildForm != null && currentChildForm == forms[formName]) { return ; }
+            if (currentChildForm != null && currentChildForm == forms[formName]) { return; }
 
             Form childForm = forms[formName];
             this.currentChildForm = childForm;
-            this.panelDesktop.Controls.Clear();
+            p.Controls.Clear();
 
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.panelDesktop.Controls.Add(childForm);
-            this.panelDesktop.Tag = childForm;
+            p.Controls.Add(childForm);
+            p.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
-        
+
+        private void ActivateButton(object senderBtn, Color color)
+        {
+            if (senderBtn != null)
+            {
+                currentButton = (Button)senderBtn;
+                leftBorderBtn.BackColor = color;
+                leftBorderBtn.Location = new Point(0, currentButton.Location.Y);
+                leftBorderBtn.Visible = true;
+                leftBorderBtn.BringToFront();
+            }
+        }
+
+        private void onClickButton(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.FromArgb(255, 255, 255));
+            lblTitle.Text = ((Button)sender).Text;
+            AttachFormToPanel(((Button)sender).Tag.ToString(), this.panelDesktop);
+        }
+
         private void panelTitle_MouseDown(object sender, MouseEventArgs e)
         {
             Interop.ReleaseCapture();
@@ -102,9 +168,7 @@ namespace _4RTools.Forms
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            KeyboardHook.Disable();
-            //_subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null)); TODO ENABLE THIS WHEN FINISH
-            Environment.Exit(0);
+            ShutdownApplication();
         }
 
         private void containerResize(object sender, EventArgs e)
@@ -117,14 +181,49 @@ namespace _4RTools.Forms
             WindowState = FormWindowState.Minimized;
         }
 
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        private void btnRefreshProcess_Click(object sender, EventArgs e)
         {
+            this.refreshProcessList();
+        }
+
+        private void onProfileChanged(object sender, EventArgs e)
+        {
+            if (this.profileCB.Texts != currentProfile)
+            {
+                try
+                {
+                    ProfileSingleton.Load(this.profileCB.Texts); //LOAD PROFILE
+                    _subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
+                    currentProfile = this.profileCB.Texts.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void onProcessChange(object sender, EventArgs e)
+        {
+            Client client = new Client(this.processCB.SelectedItem.ToString());
+            ClientSingleton.Instance(client);
+            lblCharacterName.ForeColor = Color.Green;
+            lblCharacterName.Text = client.ReadCharacterName();
+            _subject.Notify(new Utils.Message(Utils.MessageCode.PROCESS_CHANGED, null));
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        #endregion
 
+        #region OnShutdownAPP
+        private void ShutdownApplication()
+        {
+            KeyboardHook.Disable();
+            _subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
+            Environment.Exit(0);
         }
+
+        #endregion
+
     }
 }

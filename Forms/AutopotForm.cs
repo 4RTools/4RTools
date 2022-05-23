@@ -32,10 +32,10 @@ namespace _4RTools.Forms
                     InitializeApplicationForm();
                     break;
                 case MessageCode.TURN_OFF:
-                    this.autopot.Stop();
+                    ProfileSingleton.GetCurrent().Autopot.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    this.autopot.Start();
+                    ProfileSingleton.GetCurrent().Autopot.Start();
                     break;
             }
         }

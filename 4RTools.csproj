@@ -245,7 +245,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="assets\ui\turn_off32x32.png" />
+    <None Include="assets\ui\turn_on32x32.png" />
     <Content Include="logo-4rtools.ico" />
+    <None Include="Resources\TurnOff.png" />
     <None Include="Resources\arrowup.png" />
     <None Include="Resources\arrodown.png" />
     <None Include="Resources\Yggdrasil.bmp" />
