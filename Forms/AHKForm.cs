@@ -63,7 +63,7 @@ namespace _4RTools.Forms
             else
                 ProfileSingleton.GetCurrent().AHK.RemoveAHKEntry(checkbox.Name);
 
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+            ProfileSingleton.GetCurrent().AHK.Persist();
         }
 
         private void txtSpammerDelay_TextChanged(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace _4RTools.Forms
             try
             {
                 ProfileSingleton.GetCurrent().AHK.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
-                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+                ProfileSingleton.GetCurrent().AHK.Persist();
             }
             catch{ }
         }
@@ -115,12 +115,17 @@ namespace _4RTools.Forms
                         check.ThreeState = true;
                     };
 
-                    if(check.Enabled)
-                        check.CheckStateChanged += onCheckChange;
+                    if (check.Enabled) { }
+                        //check.CheckStateChanged += onCheckChange;
                 }
         }
 
         private void noclicksample_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _4RCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

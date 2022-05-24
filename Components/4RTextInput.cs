@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Input;
+using _4RTools.Model;
 
 namespace _4RTools.Components
 {
@@ -10,15 +11,16 @@ namespace _4RTools.Components
     public partial class _4RTextInput : UserControl
     {
 
-        private Color borderColor = Color.FromArgb(91,55,21);
+        private Color borderColor = ProfileSingleton.GetCurrent().Theme.Controls.TextInputBorderColor;
         private int borderSize = 2;
         private bool underlinedStyle = false;
-        private Color borderFocusColor = Color.HotPink;
+        private Color borderFocusColor = ProfileSingleton.GetCurrent().Theme.Controls.TextInputFocusBorderColor;
 
 
         public _4RTextInput()
         {
             InitializeComponent();
+            textBox1.BackColor = ProfileSingleton.GetCurrent().Theme.Controls.TextInputBackColor;
         }
 
         //Events
@@ -82,18 +84,6 @@ namespace _4RTools.Components
             }
         }
 
-
-        [Category("4R Custom Components")]
-        public override Color BackColor
-        {
-            get => base.BackColor; 
-            set
-            {
-                base.BackColor = value;
-                textBox1.BackColor = value; 
-            }
-        }
-
         [Category("4R Custom Components")]
         public override Color ForeColor
         {
@@ -126,12 +116,6 @@ namespace _4RTools.Components
             }
         }
 
-        [Category("4R Custom Components")]
-        public Color BorderColor { get => borderColor; set {
-                borderColor = value;
-                this.Invalidate();
-            } }
-        [Category("4R Custom Components")]
         public int BorderSize { get => borderSize; set {
                 borderSize = value;
                 this.Invalidate();
@@ -140,10 +124,7 @@ namespace _4RTools.Components
         public bool UnderlinedStyle { get => underlinedStyle; set {
                 underlinedStyle = value;
                 this.Invalidate();
-            } }
-
-        [Category("4R Custom Components")]
-        public Color BorderFocusColor { get => borderFocusColor; set => borderFocusColor = value; }
+        } }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

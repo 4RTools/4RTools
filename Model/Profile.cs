@@ -31,6 +31,7 @@ namespace _4RTools.Model
                     profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.SongMacro));
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                     profile.MacroSwitch = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.MacroSwitch));
+                    profile.Theme = JsonConvert.DeserializeObject<Theme>(Profile.GetByAction(rawObject, profile.Theme));
                 }
             }
             catch {
@@ -53,7 +54,7 @@ namespace _4RTools.Model
                 File.WriteAllText(jsonFileName, output);
             }
 
-            ProfileSingleton.Load(profileName);
+            Load(profileName);
         }
 
         public static void Delete(string profileName)
@@ -95,13 +96,13 @@ namespace _4RTools.Model
         public StatusRecovery StatusRecovery { get; set; }
         public Macro SongMacro { get; set;}
         public Macro MacroSwitch { get; set;}
-
         public ATKDEFMode AtkDefMode { get; set; }
+
+        public Theme Theme { get; set; }
 
         public Profile(string name)
         {
             this.Name = name;
-
             this.UserPreferences = new UserPreferences();
             this.AHK = new AHK(); 
             this.Autopot = new Autopot(Autopot.ACTION_NAME_AUTOPOT);
@@ -112,6 +113,7 @@ namespace _4RTools.Model
             this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);
             this.MacroSwitch = new Macro(Macro.ACTION_NAME_MACRO_SWITCH, MacroSwitchForm.TOTAL_MACRO_LANES);
             this.AtkDefMode = new ATKDEFMode();
+            this.Theme = new Theme();
         }
 
         public static object GetByAction(dynamic obj, Action action)

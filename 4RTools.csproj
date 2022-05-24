@@ -70,6 +70,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\4RCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\4RCheckBox.Designer.cs">
+      <DependentUpon>4RCheckBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\4RComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +172,7 @@
     <Compile Include="Model\Autobuff.cs" />
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
+    <Compile Include="Model\Theme.cs" />
     <Compile Include="Model\UserPreferences.cs" />
     <Compile Include="Model\Hexed.cs" />
     <Compile Include="Model\Action.cs" />
@@ -192,6 +199,7 @@
     <Compile Include="Utils\KeyboardHook.cs" />
     <Compile Include="Utils\ProcessMemoryReader.cs" />
     <Compile Include="Utils\RObserver.cs" />
+    <Compile Include="Utils\Theme.cs" />
     <Compile Include="Utils\_4RThread.cs" />
     <EmbeddedResource Include="Components\4RComboBox.resx">
       <DependentUpon>4RComboBox.cs</DependentUpon>
@@ -263,6 +271,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Yggdrasil.png" />
     <None Include="assets\ui\turn_off32x32.png" />
     <None Include="assets\ui\turn_on32x32.png" />
     <Content Include="logo-4rtools.ico" />

@@ -86,6 +86,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
+            this._4RCheckBox1 = new _4RTools.Components._4RCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -684,6 +685,23 @@
             this.lblAutoRefreshDelay.Text = "Delay";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // _4RCheckBox1
+            // 
+            this._4RCheckBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this._4RCheckBox1.BoxLocation_X = 0;
+            this._4RCheckBox1.BoxLocation_Y = 0;
+            this._4RCheckBox1.BoxSize = 18;
+            this._4RCheckBox1.DisplayText = "_4RCheckBox1";
+            this._4RCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this._4RCheckBox1.Location = new System.Drawing.Point(136, 211);
+            this._4RCheckBox1.Name = "_4RCheckBox1";
+            this._4RCheckBox1.Size = new System.Drawing.Size(19, 18);
+            this._4RCheckBox1.TabIndex = 34;
+            this._4RCheckBox1.Text = "_4RCheckBox1";
+            this._4RCheckBox1.TextLocation_X = 14;
+            this._4RCheckBox1.TextLocation_Y = 4;
+            this._4RCheckBox1.UseVisualStyleBackColor = true;
+            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -815,5 +833,6 @@
         private System.Windows.Forms.Label lblAutoRefreshDelay;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
+        private Components._4RCheckBox _4RCheckBox1;
     }
 }

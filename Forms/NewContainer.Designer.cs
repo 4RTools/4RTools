@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using _4RTools.Model;
 namespace _4RTools.Forms
 {
     partial class NewContainer
@@ -35,13 +36,13 @@ namespace _4RTools.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewContainer));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnProfiles = new System.Windows.Forms.Button();
+            this.btnMacroSongs = new System.Windows.Forms.Button();
             this.btnAutobuffStuff = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAtkDef = new System.Windows.Forms.Button();
             this.btnSpammer = new System.Windows.Forms.Button();
             this.btnAutobuff = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMacroSwitch = new System.Windows.Forms.Button();
             this.btnAutopot = new System.Windows.Forms.Button();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lblCharacterName = new System.Windows.Forms.Label();
@@ -93,15 +94,15 @@ namespace _4RTools.Forms
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.panelMenu.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.BackgroundColor;
             this.panelMenu.Controls.Add(this.lblVersion);
-            this.panelMenu.Controls.Add(this.button4);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnProfiles);
+            this.panelMenu.Controls.Add(this.btnMacroSongs);
             this.panelMenu.Controls.Add(this.btnAutobuffStuff);
-            this.panelMenu.Controls.Add(this.button3);
+            this.panelMenu.Controls.Add(this.btnAtkDef);
             this.panelMenu.Controls.Add(this.btnSpammer);
             this.panelMenu.Controls.Add(this.btnAutobuff);
-            this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.Controls.Add(this.btnMacroSwitch);
             this.panelMenu.Controls.Add(this.btnAutopot);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -114,62 +115,62 @@ namespace _4RTools.Forms
             this.lblVersion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Bold);
-            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this.lblVersion.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.LabelVersionColor;
             this.lblVersion.Location = new System.Drawing.Point(80, 536);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(50, 16);
             this.lblVersion.TabIndex = 8;
             this.lblVersion.Text = "label1";
-            this.lblVersion.Click += new System.EventHandler(this.lblVersion_Click);
             // 
-            // button4
+            // btnProfiles
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(1, 402);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(205, 42);
-            this.button4.TabIndex = 7;
-            this.button4.Tag = "Profiles";
-            this.button4.Text = "Profiles";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnProfiles.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnProfiles.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
+            this.btnProfiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProfiles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProfiles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnProfiles.FlatAppearance.BorderSize = 0;
+            this.btnProfiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfiles.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
+            this.btnProfiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfiles.Location = new System.Drawing.Point(1, 402);
+            this.btnProfiles.Name = "btnProfiles";
+            this.btnProfiles.Size = new System.Drawing.Size(205, 42);
+            this.btnProfiles.TabIndex = 7;
+            this.btnProfiles.Tag = "Profiles";
+            this.btnProfiles.Text = "Profiles";
+            this.btnProfiles.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnMacroSongs
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 42);
-            this.button1.TabIndex = 4;
-            this.button1.Tag = "MacroSongs";
-            this.button1.Text = "Macro Songs";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMacroSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMacroSongs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMacroSongs.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnMacroSongs.FlatAppearance.BorderSize = 0;
+            this.btnMacroSongs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMacroSongs.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
+            this.btnMacroSongs.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnMacroSongs.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
+            this.btnMacroSongs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMacroSongs.Location = new System.Drawing.Point(0, 273);
+            this.btnMacroSongs.Name = "btnMacroSongs";
+            this.btnMacroSongs.Size = new System.Drawing.Size(206, 42);
+            this.btnMacroSongs.TabIndex = 4;
+            this.btnMacroSongs.Tag = "MacroSongs";
+            this.btnMacroSongs.Text = "Macro Songs";
+            this.btnMacroSongs.UseVisualStyleBackColor = false;
+            this.btnMacroSongs.Click += new System.EventHandler(this.onClickButton);
             // 
             // btnAutobuffStuff
             // 
-            this.btnAutobuffStuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutobuffStuff.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnAutobuffStuff.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
             this.btnAutobuffStuff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAutobuffStuff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAutobuffStuff.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.btnAutobuffStuff.FlatAppearance.BorderSize = 0;
             this.btnAutobuffStuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAutobuffStuff.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.btnAutobuffStuff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.btnAutobuffStuff.Image = ((System.Drawing.Image)(resources.GetObject("btnAutobuffStuff.Image")));
             this.btnAutobuffStuff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAutobuffStuff.Location = new System.Drawing.Point(0, 230);
@@ -181,36 +182,38 @@ namespace _4RTools.Forms
             this.btnAutobuffStuff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAutobuffStuff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAutobuffStuff.UseVisualStyleBackColor = false;
+            this.btnAutobuffStuff.Click += new System.EventHandler(this.onClickButton);
             // 
-            // button3
+            // btnAtkDef
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1, 359);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(205, 42);
-            this.button3.TabIndex = 6;
-            this.button3.Tag = "ATKDEF";
-            this.button3.Text = "ATK x DEF";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAtkDef.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnAtkDef.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
+            this.btnAtkDef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAtkDef.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtkDef.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAtkDef.FlatAppearance.BorderSize = 0;
+            this.btnAtkDef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtkDef.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
+            this.btnAtkDef.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtkDef.Location = new System.Drawing.Point(1, 359);
+            this.btnAtkDef.Name = "btnAtkDef";
+            this.btnAtkDef.Size = new System.Drawing.Size(205, 42);
+            this.btnAtkDef.TabIndex = 6;
+            this.btnAtkDef.Tag = "ATKDEF";
+            this.btnAtkDef.Text = "ATK x DEF";
+            this.btnAtkDef.UseVisualStyleBackColor = false;
+            this.btnAtkDef.Click += new System.EventHandler(this.onClickButton);
             // 
             // btnSpammer
             // 
-            this.btnSpammer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnSpammer.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnSpammer.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
             this.btnSpammer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSpammer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSpammer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.btnSpammer.FlatAppearance.BorderSize = 0;
             this.btnSpammer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSpammer.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.btnSpammer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.btnSpammer.Image = ((System.Drawing.Image)(resources.GetObject("btnSpammer.Image")));
             this.btnSpammer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSpammer.Location = new System.Drawing.Point(0, 144);
@@ -222,17 +225,18 @@ namespace _4RTools.Forms
             this.btnSpammer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSpammer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSpammer.UseVisualStyleBackColor = false;
+            this.btnSpammer.Click += new System.EventHandler(this.onClickButton);
             // 
             // btnAutobuff
             // 
-            this.btnAutobuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutobuff.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnAutobuff.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
             this.btnAutobuff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAutobuff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAutobuff.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.btnAutobuff.FlatAppearance.BorderSize = 0;
             this.btnAutobuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAutobuff.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.btnAutobuff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.btnAutobuff.Image = ((System.Drawing.Image)(resources.GetObject("btnAutobuff.Image")));
             this.btnAutobuff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAutobuff.Location = new System.Drawing.Point(-1, 187);
@@ -243,36 +247,38 @@ namespace _4RTools.Forms
             this.btnAutobuff.Text = "Autobuff Skill";
             this.btnAutobuff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAutobuff.UseVisualStyleBackColor = false;
+            this.btnAutobuff.Click += new System.EventHandler(this.onClickButton);
             // 
-            // button2
+            // btnMacroSwitch
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-1, 316);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 42);
-            this.button2.TabIndex = 5;
-            this.button2.Tag = "MacroSwitch";
-            this.button2.Text = "Macro Switch";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnMacroSwitch.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnMacroSwitch.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
+            this.btnMacroSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMacroSwitch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMacroSwitch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnMacroSwitch.FlatAppearance.BorderSize = 0;
+            this.btnMacroSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMacroSwitch.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
+            this.btnMacroSwitch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMacroSwitch.Location = new System.Drawing.Point(-1, 316);
+            this.btnMacroSwitch.Name = "btnMacroSwitch";
+            this.btnMacroSwitch.Size = new System.Drawing.Size(207, 42);
+            this.btnMacroSwitch.TabIndex = 5;
+            this.btnMacroSwitch.Tag = "MacroSwitch";
+            this.btnMacroSwitch.Text = "Macro Switch";
+            this.btnMacroSwitch.UseVisualStyleBackColor = false;
+            this.btnMacroSwitch.Click += new System.EventHandler(this.onClickButton);
             // 
             // btnAutopot
             // 
-            this.btnAutopot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
+            this.btnAutopot.BackColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsBackgroundColor;
+            this.btnAutopot.ForeColor = ProfileSingleton.GetCurrent().Theme.Menu.ButtonsForegroundColor;
             this.btnAutopot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAutopot.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAutopot.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(181)))), ((int)(((byte)(97)))));
             this.btnAutopot.FlatAppearance.BorderSize = 0;
             this.btnAutopot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAutopot.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.btnAutopot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
             this.btnAutopot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAutopot.Location = new System.Drawing.Point(0, 101);
             this.btnAutopot.Name = "btnAutopot";
@@ -281,6 +287,7 @@ namespace _4RTools.Forms
             this.btnAutopot.Tag = "Autopot";
             this.btnAutopot.Text = "Autopot";
             this.btnAutopot.UseVisualStyleBackColor = false;
+            this.btnAutopot.Click += new System.EventHandler(this.onClickButton);
             // 
             // panelTitle
             // 
@@ -295,6 +302,7 @@ namespace _4RTools.Forms
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Size = new System.Drawing.Size(728, 73);
             this.panelTitle.TabIndex = 3;
+            this.panelTitle.BackColor = ProfileSingleton.GetCurrent().Theme.Header.BackgroundColor;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
             // lblCharacterName
@@ -362,7 +370,7 @@ namespace _4RTools.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Lucida Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.lblTitle.ForeColor = ProfileSingleton.GetCurrent().Theme.Header.ModuleNameColor;
             this.lblTitle.Location = new System.Drawing.Point(77, 19);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -374,10 +382,10 @@ namespace _4RTools.Forms
             // panelDesktop
             // 
             this.panelDesktop.Location = new System.Drawing.Point(206, 75);
+            this.panelDesktop.BackColor = ProfileSingleton.GetCurrent().Theme.Panels.BackgroundColor;
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(728, 435);
             this.panelDesktop.TabIndex = 4;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
             // pictureBox1
             // 
@@ -496,10 +504,10 @@ namespace _4RTools.Forms
         private System.Windows.Forms.Button btnSpammer;
         private System.Windows.Forms.Button btnAutobuff;
         private System.Windows.Forms.Button btnAutobuffStuff;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnMacroSongs;
+        private System.Windows.Forms.Button btnMacroSwitch;
+        private System.Windows.Forms.Button btnAtkDef;
+        private System.Windows.Forms.Button btnProfiles;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelDesktop;

@@ -171,8 +171,6 @@
             // txtSPKey
             // 
             this.txtSPKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this.txtSPKey.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.txtSPKey.BorderFocusColor = System.Drawing.Color.DarkGoldenrod;
             this.txtSPKey.BorderSize = 2;
             this.txtSPKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSPKey.ForeColor = System.Drawing.Color.DimGray;
@@ -188,8 +186,6 @@
             // txtHpKey
             // 
             this.txtHpKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this.txtHpKey.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.txtHpKey.BorderFocusColor = System.Drawing.Color.DarkGoldenrod;
             this.txtHpKey.BorderSize = 2;
             this.txtHpKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHpKey.ForeColor = System.Drawing.Color.DimGray;

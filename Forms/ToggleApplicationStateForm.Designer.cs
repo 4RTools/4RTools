@@ -75,8 +75,6 @@
             // txtStatusToggleKey
             // 
             this.txtStatusToggleKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this.txtStatusToggleKey.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.txtStatusToggleKey.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtStatusToggleKey.BorderSize = 2;
             this.txtStatusToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStatusToggleKey.ForeColor = System.Drawing.Color.DimGray;

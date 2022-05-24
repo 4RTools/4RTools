@@ -22,6 +22,8 @@ namespace _4RTools.Forms
 
         public NewContainer()
         {
+            ProfileSingleton.Create("Default");
+            _subject.Attach(this);
             InitializeComponent();
             InstantiateForms();
 
@@ -33,8 +35,9 @@ namespace _4RTools.Forms
             this.ControlBox = false;
             this.DoubleBuffered = true;
             lblVersion.Text = AppConfig.Version;
-            InitializeButtonsBehaviours();
             AttachFormToPanel("ApplicationState", this.appStatePanel);
+            onClickButton(this.btnAutopot, EventArgs.Empty); //Start Autopot as First View
+
         }
 
         #region OnFormLoad
@@ -52,10 +55,9 @@ namespace _4RTools.Forms
 
         private void NewContainer_Load(object sender, EventArgs e)
         {
-            ProfileSingleton.Create("Default");
             this.refreshProcessList();
             this.refreshProfileList();
-            this.profileCB.Texts = "Default";
+            this.profileCB.SelectedItem = "Default";
         }
 
         private void refreshProcessList()
@@ -85,18 +87,6 @@ namespace _4RTools.Forms
             }
         }
 
-        private void InitializeButtonsBehaviours()
-        {
-            foreach (Control c in this.panelMenu.Controls)
-            {
-                if (c is Button)
-                {
-                    Button button = (Button)c;
-                    button.Click += new EventHandler(this.onClickButton);
-                }
-            }
-        }
-
         #endregion
 
         #region OnUpdate
@@ -109,6 +99,7 @@ namespace _4RTools.Forms
                     Client client = ClientSingleton.GetClient();
                     if (client != null)
                     {
+                        lblCharacterName.ForeColor = ProfileSingleton.GetCurrent().Theme.Header.CharacterNameColor;
                         lblCharacterName.Text = ClientSingleton.GetClient().ReadCharacterName();
                     }
                     break;
@@ -157,7 +148,7 @@ namespace _4RTools.Forms
 
         private void onClickButton(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.FromArgb(255, 255, 255));
+            ActivateButton(sender, Utils.Theme.MENU_ACTIVE_BUTTON_HIGHLIGHT_COLOR);
             lblTitle.Text = ((Button)sender).Text;
             AttachFormToPanel(((Button)sender).Tag.ToString(), this.panelDesktop);
         }
@@ -226,15 +217,5 @@ namespace _4RTools.Forms
         }
 
         #endregion
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblVersion_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
