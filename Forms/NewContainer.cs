@@ -32,6 +32,7 @@ namespace _4RTools.Forms
             this.Text = String.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+            lblVersion.Text = AppConfig.Version;
             InitializeButtonsBehaviours();
             AttachFormToPanel("ApplicationState", this.appStatePanel);
         }
@@ -227,6 +228,11 @@ namespace _4RTools.Forms
         #endregion
 
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblVersion_Click(object sender, EventArgs e)
         {
 
         }

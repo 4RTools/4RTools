@@ -34,6 +34,7 @@ namespace _4RTools.Forms
             System.Windows.Forms.Panel panel2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewContainer));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAutobuffStuff = new System.Windows.Forms.Button();
@@ -50,8 +51,6 @@ namespace _4RTools.Forms
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this._4RNumericInput1 = new _4RTools.Components._4RNumericInput();
-            this.panelControl = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.appStatePanel = new System.Windows.Forms.Panel();
@@ -64,8 +63,6 @@ namespace _4RTools.Forms
             this.panelMenu.SuspendLayout();
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._4RNumericInput1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +94,7 @@ namespace _4RTools.Forms
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.panelMenu.Controls.Add(this.lblVersion);
             this.panelMenu.Controls.Add(this.button4);
             this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.btnAutobuffStuff);
@@ -110,6 +108,19 @@ namespace _4RTools.Forms
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(206, 561);
             this.panelMenu.TabIndex = 0;
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Bold);
+            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this.lblVersion.Location = new System.Drawing.Point(80, 536);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(50, 16);
+            this.lblVersion.TabIndex = 8;
+            this.lblVersion.Text = "label1";
+            this.lblVersion.Click += new System.EventHandler(this.lblVersion_Click);
             // 
             // button4
             // 
@@ -362,29 +373,11 @@ namespace _4RTools.Forms
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Controls.Add(this._4RNumericInput1);
-            this.panelDesktop.Controls.Add(this.panelControl);
             this.panelDesktop.Location = new System.Drawing.Point(206, 75);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(728, 435);
             this.panelDesktop.TabIndex = 4;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // _4RNumericInput1
-            // 
-            this._4RNumericInput1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this._4RNumericInput1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this._4RNumericInput1.Location = new System.Drawing.Point(45, 241);
-            this._4RNumericInput1.Name = "_4RNumericInput1";
-            this._4RNumericInput1.Size = new System.Drawing.Size(99, 20);
-            this._4RNumericInput1.TabIndex = 14;
-            // 
-            // panelControl
-            // 
-            this.panelControl.Location = new System.Drawing.Point(420, 521);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(305, 30);
-            this.panelControl.TabIndex = 9;
             // 
             // pictureBox1
             // 
@@ -486,11 +479,10 @@ namespace _4RTools.Forms
             this.Load += new System.EventHandler(this.NewContainer_Load);
             this.Resize += new System.EventHandler(this.containerResize);
             this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
-            this.panelDesktop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._4RNumericInput1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -517,12 +509,11 @@ namespace _4RTools.Forms
         private System.Windows.Forms.PictureBox pictureBox2;
         private Components._4RComboBox processCB;
         private Components._4RComboBox profileCB;
-        private System.Windows.Forms.Panel panelControl;
         private System.Windows.Forms.Panel appStatePanel;
         private System.Windows.Forms.Label lblCharacter;
         private System.Windows.Forms.PictureBox pbIcon;
         private System.Windows.Forms.Label lblCharacterName;
         private System.Windows.Forms.Button btnRefreshProcess;
-        private Components._4RNumericInput _4RNumericInput1;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
