@@ -9,18 +9,21 @@ namespace _4RTools.Forms
     public partial class AutopotForm : Form, IObserver
     {
         private Autopot autopot;
-        private bool isYgg;
 
-        public AutopotForm(Subject subject, bool isYgg)
+        public AutopotForm(Subject subject, Autopot autopotInstance)
         {
             InitializeComponent();
-            if (isYgg)
+            this.autopot = autopotInstance;
+            subject.Attach(this);
+
+            if (this.autopot.GetActionName().Equals(Autopot.ACTION_NAME_AUTOPOT_YGG))
             {
                 this.picBoxHP.Image = Properties.Resources.Yggdrasil;
                 this.picBoxSP.Image = Properties.Resources.Yggdrasil;
             }
-            subject.Attach(this);
-            this.isYgg = isYgg;
+
+            txtHpKey.TextChanged += new EventHandler(this.onHpTextChange);
+            txtSPKey.TextChanged += new EventHandler(this.onSpTextChange);
         }
 
         public void Update(ISubject subject)
@@ -28,7 +31,8 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autopot = this.isYgg ? ProfileSingleton.GetCurrent().AutopotYgg : ProfileSingleton.GetCurrent().Autopot;
+                    this.autopot = this.autopot.GetActionName().Equals(Autopot.ACTION_NAME_AUTOPOT) ? 
+                        ProfileSingleton.GetCurrent().Autopot : ProfileSingleton.GetCurrent().AutopotYgg;
                     InitializeApplicationForm();
                     break;
                 case MessageCode.TURN_OFF:
@@ -42,43 +46,33 @@ namespace _4RTools.Forms
 
         private void InitializeApplicationForm()
         {
-            this.txtHpKey.Text = this.autopot.hpKey.ToString();
-            this.txtSPKey.Text = this.autopot.spKey.ToString();
-            this.txtHPpct.Text = this.autopot.hpPercent.ToString();
-            this.txtSPpct.Text = this.autopot.spPercent.ToString();
-            this.txtAutopotDelay.Text = this.autopot.delay.ToString();
-
-
-            txtHpKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            txtHpKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            txtHpKey.TextChanged += new EventHandler(this.onHpTextChange);
-            txtSPKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            txtSPKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            txtSPKey.TextChanged += new EventHandler(this.onSpTextChange);
-
-
+            this.txtHpKey.Value = this.autopot.hpKey.ToString();
+            this.txtSPKey.Value = this.autopot.spKey.ToString();
+            this.txtHPpct.Value = this.autopot.hpPercent;
+            this.txtSPpct.Value = this.autopot.spPercent;
+            this.txtAutopotDelay.Value = this.autopot.delay;
         }
 
         private void onHpTextChange(object sender, EventArgs e)
         {
-            Key key = (Key)Enum.Parse(typeof(Key), txtHpKey.Text.ToString());
+            Key key = (Key)Enum.Parse(typeof(Key), txtHpKey.Value.ToString());
             this.autopot.hpKey = key;
-            ProfileSingleton.SetConfiguration(this.autopot);
+            this.autopot.Persist();
         }
 
         private void onSpTextChange(object sender, EventArgs e)
         {
-            Key key = (Key)Enum.Parse(typeof(Key), txtSPKey.Text.ToString());
+            Key key = (Key)Enum.Parse(typeof(Key), txtSPKey.Value.ToString());
             this.autopot.spKey = key;
-            ProfileSingleton.SetConfiguration(this.autopot);
+            this.autopot.Persist();
         }
 
         private void txtAutopotDelayTextChanged(object sender, EventArgs e)
         {
             try
             {
-                this.autopot.delay = Int16.Parse(this.txtAutopotDelay.Text);
-                ProfileSingleton.SetConfiguration(this.autopot);
+                this.autopot.delay = (int) this.txtAutopotDelay.Value;
+                this.autopot.Persist();
             }
             catch (Exception) { }
         }
@@ -87,8 +81,8 @@ namespace _4RTools.Forms
         {
             try
             {
-                this.autopot.hpPercent = Int16.Parse(this.txtHPpct.Text);
-                ProfileSingleton.SetConfiguration(this.autopot);
+                this.autopot.hpPercent = (int)this.txtHPpct.Value;
+                this.autopot.Persist();
             }
             catch (Exception) { }
 
@@ -98,20 +92,10 @@ namespace _4RTools.Forms
         {
             try
             {
-                this.autopot.spPercent = Int16.Parse(this.txtSPpct.Text);
-                ProfileSingleton.SetConfiguration(this.autopot);
+                this.autopot.spPercent = (int)this.txtSPpct.Value;
+                this.autopot.Persist();
             }
             catch (Exception) { }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AutopotForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

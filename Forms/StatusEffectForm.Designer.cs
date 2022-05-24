@@ -31,19 +31,11 @@ namespace _4RTools.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatusEffectForm));
-            this.txtStatusKey = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtStatusKey = new _4RTools.Components._4RTextInput();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtStatusKey
-            // 
-            this.txtStatusKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtStatusKey.Location = new System.Drawing.Point(71, 9);
-            this.txtStatusKey.Name = "txtStatusKey";
-            this.txtStatusKey.Size = new System.Drawing.Size(61, 23);
-            this.txtStatusKey.TabIndex = 11;
             // 
             // pictureBox1
             // 
@@ -64,13 +56,30 @@ namespace _4RTools.Forms
             this.label1.TabIndex = 13;
             this.label1.Text = "Status";
             // 
+            // txtStatusKey
+            // 
+            this.txtStatusKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this.txtStatusKey.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.txtStatusKey.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtStatusKey.BorderSize = 2;
+            this.txtStatusKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatusKey.ForeColor = System.Drawing.Color.DimGray;
+            this.txtStatusKey.Location = new System.Drawing.Point(70, 3);
+            this.txtStatusKey.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtStatusKey.Name = "txtStatusKey";
+            this.txtStatusKey.Padding = new System.Windows.Forms.Padding(7);
+            this.txtStatusKey.Size = new System.Drawing.Size(65, 30);
+            this.txtStatusKey.TabIndex = 14;
+            this.txtStatusKey.UnderlinedStyle = false;
+            this.txtStatusKey.Value = "";
+            // 
             // StatusEffectForm
             // 
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
             this.ClientSize = new System.Drawing.Size(141, 39);
+            this.Controls.Add(this.txtStatusKey);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtStatusKey);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StatusEffectForm";
             this.Padding = new System.Windows.Forms.Padding(10);
@@ -83,8 +92,8 @@ namespace _4RTools.Forms
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtStatusKey;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private Components._4RTextInput txtStatusKey;
     }
 }

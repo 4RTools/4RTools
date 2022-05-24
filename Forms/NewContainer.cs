@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Collections.Generic;
 using _4RTools.Utils;
 using _4RTools.Model;
+using _4RTools.FormContainers;
 
 namespace _4RTools.Forms
 {
@@ -38,7 +39,7 @@ namespace _4RTools.Forms
         #region OnFormLoad
         private void InstantiateForms()
         {
-            forms.Add("Autopot", new AutopotForm(_subject, false));
+            forms.Add("Autopot", new AutopotContainer(_subject));
             forms.Add("Spammer", new AHKForm(_subject));
             forms.Add("AutobuffStuff", new StuffAutoBuffForm(_subject));
             forms.Add("AutobuffSkill", new SkillAutoBuffForm(_subject));
@@ -225,5 +226,9 @@ namespace _4RTools.Forms
 
         #endregion
 
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

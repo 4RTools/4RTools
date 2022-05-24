@@ -76,11 +76,23 @@
     <Compile Include="Components\4RComboBox.Designer.cs">
       <DependentUpon>4RComboBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\4RNumericInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\4RNumericInput.Designer.cs">
+      <DependentUpon>4RNumericInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\4RTextInput.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Components\4RTextInput.Designer.cs">
       <DependentUpon>4RTextInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContainers\AutopotContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContainers\AutopotContainer.Designer.cs">
+      <DependentUpon>AutopotContainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AHKForm.cs">
       <SubType>Form</SubType>
@@ -184,8 +196,14 @@
     <EmbeddedResource Include="Components\4RComboBox.resx">
       <DependentUpon>4RComboBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\4RNumericInput.resx">
+      <DependentUpon>4RNumericInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\4RTextInput.resx">
       <DependentUpon>4RTextInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContainers\AutopotContainer.resx">
+      <DependentUpon>AutopotContainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>

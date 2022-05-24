@@ -5,7 +5,7 @@
         void Start();
         void Stop();
         string GetConfiguration();
-
         string GetActionName();
+        void Persist();
     }
 }

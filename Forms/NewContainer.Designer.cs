@@ -43,29 +43,31 @@ namespace _4RTools.Forms
             this.button2 = new System.Windows.Forms.Button();
             this.btnAutopot = new System.Windows.Forms.Button();
             this.panelTitle = new System.Windows.Forms.Panel();
+            this.lblCharacterName = new System.Windows.Forms.Label();
+            this.lblCharacter = new System.Windows.Forms.Label();
+            this.pbIcon = new System.Windows.Forms.PictureBox();
             this.btnMimimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this._4RNumericInput1 = new _4RTools.Components._4RNumericInput();
             this.panelControl = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.appStatePanel = new System.Windows.Forms.Panel();
+            this.btnRefreshProcess = new System.Windows.Forms.Button();
             this.profileCB = new _4RTools.Components._4RComboBox();
             this.processCB = new _4RTools.Components._4RComboBox();
-            this.pbIcon = new System.Windows.Forms.PictureBox();
-            this.lblCharacter = new System.Windows.Forms.Label();
-            this.lblCharacterName = new System.Windows.Forms.Label();
-            this.btnRefreshProcess = new System.Windows.Forms.Button();
             panelDividerBottom = new System.Windows.Forms.Panel();
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._4RNumericInput1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDividerBottom
@@ -284,6 +286,38 @@ namespace _4RTools.Forms
             this.panelTitle.TabIndex = 3;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
+            // lblCharacterName
+            // 
+            this.lblCharacterName.AutoSize = true;
+            this.lblCharacterName.Font = new System.Drawing.Font("Lucida Sans", 8F, System.Drawing.FontStyle.Bold);
+            this.lblCharacterName.ForeColor = System.Drawing.Color.Red;
+            this.lblCharacterName.Location = new System.Drawing.Point(181, 51);
+            this.lblCharacterName.Name = "lblCharacterName";
+            this.lblCharacterName.Size = new System.Drawing.Size(84, 12);
+            this.lblCharacterName.TabIndex = 4;
+            this.lblCharacterName.Text = "Not Selected";
+            this.lblCharacterName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharacter
+            // 
+            this.lblCharacter.AutoSize = true;
+            this.lblCharacter.Font = new System.Drawing.Font("Lucida Sans", 8F, System.Drawing.FontStyle.Bold);
+            this.lblCharacter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.lblCharacter.Location = new System.Drawing.Point(80, 51);
+            this.lblCharacter.Name = "lblCharacter";
+            this.lblCharacter.Size = new System.Drawing.Size(104, 12);
+            this.lblCharacter.TabIndex = 3;
+            this.lblCharacter.Text = "Character Name:";
+            // 
+            // pbIcon
+            // 
+            this.pbIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbIcon.Image")));
+            this.pbIcon.Location = new System.Drawing.Point(15, 12);
+            this.pbIcon.Name = "pbIcon";
+            this.pbIcon.Size = new System.Drawing.Size(60, 57);
+            this.pbIcon.TabIndex = 2;
+            this.pbIcon.TabStop = false;
+            // 
             // btnMimimize
             // 
             this.btnMimimize.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -328,11 +362,22 @@ namespace _4RTools.Forms
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this._4RNumericInput1);
             this.panelDesktop.Controls.Add(this.panelControl);
             this.panelDesktop.Location = new System.Drawing.Point(206, 75);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(728, 435);
             this.panelDesktop.TabIndex = 4;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // _4RNumericInput1
+            // 
+            this._4RNumericInput1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this._4RNumericInput1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this._4RNumericInput1.Location = new System.Drawing.Point(45, 241);
+            this._4RNumericInput1.Name = "_4RNumericInput1";
+            this._4RNumericInput1.Size = new System.Drawing.Size(99, 20);
+            this._4RNumericInput1.TabIndex = 14;
             // 
             // panelControl
             // 
@@ -366,6 +411,18 @@ namespace _4RTools.Forms
             this.appStatePanel.Name = "appStatePanel";
             this.appStatePanel.Size = new System.Drawing.Size(185, 30);
             this.appStatePanel.TabIndex = 9;
+            // 
+            // btnRefreshProcess
+            // 
+            this.btnRefreshProcess.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.btnRefreshProcess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefreshProcess.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshProcess.Image")));
+            this.btnRefreshProcess.Location = new System.Drawing.Point(441, 521);
+            this.btnRefreshProcess.Name = "btnRefreshProcess";
+            this.btnRefreshProcess.Size = new System.Drawing.Size(30, 30);
+            this.btnRefreshProcess.TabIndex = 10;
+            this.btnRefreshProcess.UseVisualStyleBackColor = true;
+            this.btnRefreshProcess.Click += new System.EventHandler(this.btnRefreshProcess_Click);
             // 
             // profileCB
             // 
@@ -407,50 +464,6 @@ namespace _4RTools.Forms
             this.processCB.Texts = "Choose Process";
             this.processCB.OnSelectedIndexChanged += new System.EventHandler(this.onProcessChange);
             // 
-            // pbIcon
-            // 
-            this.pbIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbIcon.Image")));
-            this.pbIcon.Location = new System.Drawing.Point(15, 12);
-            this.pbIcon.Name = "pbIcon";
-            this.pbIcon.Size = new System.Drawing.Size(60, 57);
-            this.pbIcon.TabIndex = 2;
-            this.pbIcon.TabStop = false;
-            // 
-            // lblCharacter
-            // 
-            this.lblCharacter.AutoSize = true;
-            this.lblCharacter.Font = new System.Drawing.Font("Lucida Sans", 8F, System.Drawing.FontStyle.Bold);
-            this.lblCharacter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.lblCharacter.Location = new System.Drawing.Point(80, 51);
-            this.lblCharacter.Name = "lblCharacter";
-            this.lblCharacter.Size = new System.Drawing.Size(104, 12);
-            this.lblCharacter.TabIndex = 3;
-            this.lblCharacter.Text = "Character Name:";
-            // 
-            // lblCharacterName
-            // 
-            this.lblCharacterName.AutoSize = true;
-            this.lblCharacterName.Font = new System.Drawing.Font("Lucida Sans", 8F, System.Drawing.FontStyle.Bold);
-            this.lblCharacterName.ForeColor = System.Drawing.Color.Red;
-            this.lblCharacterName.Location = new System.Drawing.Point(181, 51);
-            this.lblCharacterName.Name = "lblCharacterName";
-            this.lblCharacterName.Size = new System.Drawing.Size(84, 12);
-            this.lblCharacterName.TabIndex = 4;
-            this.lblCharacterName.Text = "Not Selected";
-            this.lblCharacterName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnRefreshProcess
-            // 
-            this.btnRefreshProcess.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.btnRefreshProcess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefreshProcess.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshProcess.Image")));
-            this.btnRefreshProcess.Location = new System.Drawing.Point(441, 521);
-            this.btnRefreshProcess.Name = "btnRefreshProcess";
-            this.btnRefreshProcess.Size = new System.Drawing.Size(30, 30);
-            this.btnRefreshProcess.TabIndex = 10;
-            this.btnRefreshProcess.UseVisualStyleBackColor = true;
-            this.btnRefreshProcess.Click += new System.EventHandler(this.btnRefreshProcess_Click);
-            // 
             // NewContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,10 +488,11 @@ namespace _4RTools.Forms
             this.panelMenu.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._4RNumericInput1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -509,5 +523,6 @@ namespace _4RTools.Forms
         private System.Windows.Forms.PictureBox pbIcon;
         private System.Windows.Forms.Label lblCharacterName;
         private System.Windows.Forms.Button btnRefreshProcess;
+        private Components._4RNumericInput _4RNumericInput1;
     }
 }

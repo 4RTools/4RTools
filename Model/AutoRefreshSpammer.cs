@@ -56,5 +56,9 @@ namespace _4RTools.Model
         {
             return ACTION_NAME;
         }
+        public void Persist()
+        {
+            ProfileSingleton.SetConfiguration(this);
+        }
     }
 }

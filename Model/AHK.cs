@@ -113,5 +113,9 @@ namespace _4RTools.Model
             return this.ACTION_NAME;
         }
 
+        public void Persist()
+        {
+            ProfileSingleton.SetConfiguration(this);
+        }
     }
 }

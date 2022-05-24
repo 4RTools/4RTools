@@ -50,19 +50,19 @@ namespace _4RTools.Forms
 
         public void SetAutopotWindow()
         {
-            AutopotForm frm = new AutopotForm(subject, false);
+        /*    AutopotForm frm = new AutopotForm(subject, false);
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageAutopot, frm);
+            addform(this.tabPageAutopot, frm);*/
         }
         public void SetAutopotYggWindow()
         {
-            AutopotForm frm = new AutopotForm(subject, true);
+            /*AutopotForm frm = new AutopotForm(subject, true);
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageYggAutopot, frm);
+            addform(this.tabPageYggAutopot, frm);*/
         }
         public void SetAutoStatusEffectWindow()
         {

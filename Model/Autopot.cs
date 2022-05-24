@@ -107,5 +107,10 @@ namespace _4RTools.Model
         {
             return this.actionName != null ? this.actionName : ACTION_NAME_AUTOPOT;
         }
+
+        public void Persist()
+        {
+            ProfileSingleton.SetConfiguration(this);
+        }
     }
 }

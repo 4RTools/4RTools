@@ -108,5 +108,10 @@ namespace _4RTools.Model
         {
             _4RThread.Stop(this.thread);
         }
+
+        public void Persist()
+        {
+            ProfileSingleton.SetConfiguration(this);
+        }
     }
 }
