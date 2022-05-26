@@ -22,6 +22,7 @@ namespace _4RTools.Model
     public sealed class InternalPanels
     {
         public Color BackgroundColor { get; set; } = ColorTranslator.FromHtml("#fcdcca");
+        public Color BorderColor { get; set; } = ColorTranslator.FromHtml("#5b3715");
     }
 
     internal class Footer { }

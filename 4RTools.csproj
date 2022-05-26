@@ -88,6 +88,12 @@
     <Compile Include="Components\4RNumericInput.Designer.cs">
       <DependentUpon>4RNumericInput.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\4RPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\4RPanel.Designer.cs">
+      <DependentUpon>4RPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\4RTextInput.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -199,13 +205,15 @@
     <Compile Include="Utils\KeyboardHook.cs" />
     <Compile Include="Utils\ProcessMemoryReader.cs" />
     <Compile Include="Utils\RObserver.cs" />
-    <Compile Include="Utils\Theme.cs" />
     <Compile Include="Utils\_4RThread.cs" />
     <EmbeddedResource Include="Components\4RComboBox.resx">
       <DependentUpon>4RComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\4RNumericInput.resx">
       <DependentUpon>4RNumericInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\4RPanel.resx">
+      <DependentUpon>4RPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\4RTextInput.resx">
       <DependentUpon>4RTextInput.cs</DependentUpon>
