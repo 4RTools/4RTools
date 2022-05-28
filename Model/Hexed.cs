@@ -194,6 +194,7 @@ namespace _4RTools.Model
             clients.Add(new Client("Ragnarok", 0x011D0A14, 0x011D33F8)); //RagnaHistory
             clients.Add(new Client("BlueRO",0x011D1A04, 0x011D43E8));
             clients.Add(new Client("StreetRO 2.0",0x010DCE10, 0x010D5DA8));
+            clients.Add(new Client("Gladius", 0x010DCE10, 0x010D5DA8));
 
             return clients;
         }
