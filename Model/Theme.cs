@@ -23,6 +23,7 @@ namespace _4RTools.Model
     {
         public Color BackgroundColor { get; set; } = ColorTranslator.FromHtml("#fcdcca");
         public Color BorderColor { get; set; } = ColorTranslator.FromHtml("#5b3715");
+
     }
 
     internal class Footer { }
@@ -32,7 +33,7 @@ namespace _4RTools.Model
         public Color TextInputBackColor { get; set; } = ColorTranslator.FromHtml("#fcdcca");
         public Color TextInputForeColor { get; set; } = ColorTranslator.FromHtml("#fcdcca");
         public Color TextInputBorderColor { get; set; } = ColorTranslator.FromHtml("#5b3715");
-        public Color TextInputFocusBorderColor { get; set; } = ColorTranslator.FromHtml("#fcdcca");
+        public Color TextInputFocusBorderColor { get; set; } = ColorTranslator.FromHtml("#ff0000");
         //End ========= TEXT INPUT
 
         //Start ========== Checkbox

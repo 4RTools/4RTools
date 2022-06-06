@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using _4RTools.Components;
 using System.Windows.Forms;
 using System.Windows.Input;
 using static System.Windows.Forms.Control;
@@ -42,6 +43,15 @@ namespace _4RTools.Utils
             e.Handled = true;
         }
 
+        public static IEnumerable<Control> GetAll(Control control, Type type)
+        {
+            var controls = control.Controls.Cast<Control>();
+
+            return controls.SelectMany(ctrl => GetAll(ctrl, type))
+                                      .Concat(controls)
+                                      .Where(c => c.GetType() == type);
+        }
+
         private static void resetForm(ControlCollection controls)
         {
             foreach (Control control in controls)
@@ -50,6 +60,12 @@ namespace _4RTools.Utils
                 {
                     TextBox textBox = (TextBox)control;
                     textBox.Text = Key.None.ToString();
+                }
+
+                if(control is _4RTextInput)
+                {
+                    _4RTextInput textBox = (_4RTextInput)control;
+                    textBox.Value = Key.None.ToString();
                 }
 
                 if (control is ComboBox)

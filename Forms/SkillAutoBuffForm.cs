@@ -4,6 +4,7 @@ using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
 using System.Collections.Generic;
+using _4RTools.Components;
 using System.Drawing;
 
 namespace _4RTools.Forms
@@ -13,7 +14,6 @@ namespace _4RTools.Forms
 
         public SkillAutoBuffForm(Subject subject)
         {
-            this.KeyPreview = true;
             InitializeComponent();
             subject.Attach(this);
             ConfigureInputs();
@@ -41,13 +41,11 @@ namespace _4RTools.Forms
 
         private void ConfigureInputs()
         {
-            foreach (Control c in this.Controls)
-                if (c is TextBox)
+            foreach (Control c in FormUtils.GetAll(this, typeof(_4RTextInput)))
+                if (c is _4RTextInput)
                 {
-                    TextBox textBox = (TextBox)c;
-                    textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-                    textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-                    textBox.TextChanged += new EventHandler(this.onTextChange);
+                    _4RTextInput textBox = (_4RTextInput)c;
+                    textBox._TextChanged += new EventHandler(this.onTextChange);
                 }
         }
 
@@ -59,8 +57,8 @@ namespace _4RTools.Forms
                 Control[] c = this.Controls.Find("in" + (int)effect, true);
                 if (c.Length > 0)
                 {
-                    TextBox textBox = (TextBox)c[0];
-                    textBox.Text = autobuffDict[effect].ToString();
+                    _4RTextInput textBox = (_4RTextInput)c[0];
+                    textBox.Value = autobuffDict[effect].ToString();
                 }
             }
         }

@@ -7,7 +7,7 @@ using _4RTools.Model;
 
 namespace _4RTools.Components
 {
-    [DefaultEvent("TextChanged")]
+    [DefaultEvent("_TextChanged")]
     public partial class _4RTextInput : UserControl
     {
 
@@ -24,7 +24,7 @@ namespace _4RTools.Components
         }
 
         //Events
-        public event EventHandler TextChanged;
+        public event EventHandler _TextChanged;
 
 
         protected override void OnPaint(PaintEventArgs e)
@@ -128,9 +128,9 @@ namespace _4RTools.Components
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if(TextChanged != null)
+            if(_TextChanged != null)
             {
-                TextChanged.Invoke(sender, e);
+                _TextChanged.Invoke(sender, e);
             }
         }
 

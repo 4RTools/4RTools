@@ -148,7 +148,7 @@ namespace _4RTools.Forms
 
         private void onClickButton(object sender, EventArgs e)
         {
-            ActivateButton(sender, Utils.Theme.MENU_ACTIVE_BUTTON_HIGHLIGHT_COLOR);
+            ActivateButton(sender, ProfileSingleton.GetCurrent().Theme.Menu.ButtonActiveHighlightColor);
             lblTitle.Text = ((Button)sender).Text;
             AttachFormToPanel(((Button)sender).Tag.ToString(), this.panelDesktop);
         }
