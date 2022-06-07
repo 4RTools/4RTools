@@ -20,7 +20,7 @@ namespace _4RTools.Components
         public _4RTextInput()
         {
             InitializeComponent();
-            textBox1.BackColor = ProfileSingleton.GetCurrent().Theme.Controls.TextInputBackColor;
+            _4RTextBox.BackColor = ProfileSingleton.GetCurrent().Theme.Controls.TextInputBackColor;
         }
 
         //Events
@@ -37,7 +37,7 @@ namespace _4RTools.Components
             {
                 penBorder.Alignment = System.Drawing.Drawing2D.PenAlignment.Inset;
 
-                if (!textBox1.Focused)
+                if (!_4RTextBox.Focused)
                 {
                     if (underlinedStyle) //Line Style
                         graph.DrawLine(penBorder, 0, this.Height - 1, this.Width, this.Height - 1);
@@ -73,14 +73,14 @@ namespace _4RTools.Components
 
         private void UpdateControlHeight()
         {
-            if (textBox1.Multiline == false)
+            if (_4RTextBox.Multiline == false)
             {
                 int txtHeight = TextRenderer.MeasureText("Text", this.Font).Height + 1;
-                textBox1.Multiline = true;
-                textBox1.MinimumSize = new Size(0, txtHeight);
-                textBox1.Multiline = false;
+                _4RTextBox.Multiline = true;
+                _4RTextBox.MinimumSize = new Size(0, txtHeight);
+                _4RTextBox.Multiline = false;
 
-                this.Height = textBox1.Height + this.Padding.Top + this.Padding.Bottom;
+                this.Height = _4RTextBox.Height + this.Padding.Top + this.Padding.Bottom;
             }
         }
 
@@ -91,7 +91,17 @@ namespace _4RTools.Components
             set
             {
                 base.ForeColor = value;
-                textBox1.ForeColor = value;
+                _4RTextBox.ForeColor = value;
+            }
+        }
+
+        [Category("4R Custom Components")]
+        public string InputName
+        {
+            get => base.Name;
+            set {
+                base.Name = value;
+                _4RTextBox.Name = value;
             }
         }
 
@@ -102,17 +112,18 @@ namespace _4RTools.Components
             set
             {
                 base.Font = value;
-                textBox1.Font = value;
+                _4RTextBox.Font = value;
             }
         }
+
 
         [Category("4R Custom Components")]
         public string Value
         {
-            get => textBox1.Text; 
+            get => _4RTextBox.Text; 
             set
             {
-                textBox1.Text = value;
+                _4RTextBox.Text = value;
             }
         }
 
@@ -165,14 +176,14 @@ namespace _4RTools.Components
                 {
                     case Key.Escape:
                     case Key.Back:
-                        textBox1.Text = Key.None.ToString();
+                        _4RTextBox.Text = Key.None.ToString();
                         break;
                     default:
-                        textBox1.Text = e.KeyCode.ToString();
+                        _4RTextBox.Text = e.KeyCode.ToString();
                         break;
                 }
-                textBox1.Enabled = false;
-                textBox1.Enabled = true;
+                _4RTextBox.Enabled = false;
+                _4RTextBox.Enabled = true;
                 this.Invalidate();
                 e.Handled = true;
             }

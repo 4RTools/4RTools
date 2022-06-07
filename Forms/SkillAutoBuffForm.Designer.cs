@@ -65,44 +65,36 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.in116 = new _4RTools.Components._4RTextInput();
+            this.in115 = new _4RTools.Components._4RTextInput();
+            this.in3 = new _4RTools.Components._4RTextInput();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.in114 = new _4RTools.Components._4RTextInput();
+            this.in120 = new _4RTools.Components._4RTextInput();
+            this.in181 = new _4RTools.Components._4RTextInput();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.in147 = new _4RTools.Components._4RTextInput();
+            this.in23 = new _4RTools.Components._4RTextInput();
+            this.in30 = new _4RTools.Components._4RTextInput();
+            this.in188 = new _4RTools.Components._4RTextInput();
+            this.in25 = new _4RTools.Components._4RTextInput();
+            this.in117 = new _4RTools.Components._4RTextInput();
+            this.in118 = new _4RTools.Components._4RTextInput();
+            this.in26 = new _4RTools.Components._4RTextInput();
+            this.in24 = new _4RTools.Components._4RTextInput();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.in21 = new _4RTools.Components._4RTextInput();
-            this.in20 = new _4RTools.Components._4RTextInput();
-            this.in9 = new _4RTools.Components._4RTextInput();
-            this.in208 = new _4RTools.Components._4RTextInput();
-            this.in206 = new _4RTools.Components._4RTextInput();
-            this.in186 = new _4RTools.Components._4RTextInput();
-            this.in65 = new _4RTools.Components._4RTextInput();
-            this.in198 = new _4RTools.Components._4RTextInput();
-            this.in31 = new _4RTools.Components._4RTextInput();
             this.in58 = new _4RTools.Components._4RTextInput();
             this.in107 = new _4RTools.Components._4RTextInput();
             this.in59 = new _4RTools.Components._4RTextInput();
@@ -114,24 +106,29 @@
             this.in132 = new _4RTools.Components._4RTextInput();
             this.in103 = new _4RTools.Components._4RTextInput();
             this.in1 = new _4RTools.Components._4RTextInput();
-            this.in147 = new _4RTools.Components._4RTextInput();
-            this.in23 = new _4RTools.Components._4RTextInput();
-            this.in30 = new _4RTools.Components._4RTextInput();
-            this.in188 = new _4RTools.Components._4RTextInput();
-            this.in25 = new _4RTools.Components._4RTextInput();
-            this.in117 = new _4RTools.Components._4RTextInput();
-            this.in118 = new _4RTools.Components._4RTextInput();
-            this.in26 = new _4RTools.Components._4RTextInput();
-            this.in24 = new _4RTools.Components._4RTextInput();
-            this.in114 = new _4RTools.Components._4RTextInput();
-            this.in120 = new _4RTools.Components._4RTextInput();
-            this.in181 = new _4RTools.Components._4RTextInput();
-            this._4RTextInput1 = new _4RTools.Components._4RTextInput();
-            this._4RTextInput2 = new _4RTools.Components._4RTextInput();
-            this._4RTextInput3 = new _4RTools.Components._4RTextInput();
-            this.in116 = new _4RTools.Components._4RTextInput();
-            this.in115 = new _4RTools.Components._4RTextInput();
-            this.in3 = new _4RTools.Components._4RTextInput();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.in186 = new _4RTools.Components._4RTextInput();
+            this.in65 = new _4RTools.Components._4RTextInput();
+            this.in198 = new _4RTools.Components._4RTextInput();
+            this.in31 = new _4RTools.Components._4RTextInput();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.in208 = new _4RTools.Components._4RTextInput();
+            this.in206 = new _4RTools.Components._4RTextInput();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.in21 = new _4RTools.Components._4RTextInput();
+            this.in20 = new _4RTools.Components._4RTextInput();
+            this.in9 = new _4RTools.Components._4RTextInput();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
@@ -166,12 +163,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -227,7 +224,7 @@
             this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox17.Location = new System.Drawing.Point(9, 76);
+            this.pictureBox17.Location = new System.Drawing.Point(9, 85);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(36, 30);
             this.pictureBox17.TabIndex = 105;
@@ -238,7 +235,7 @@
             this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
             this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox18.Location = new System.Drawing.Point(9, 108);
+            this.pictureBox18.Location = new System.Drawing.Point(9, 117);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(36, 30);
             this.pictureBox18.TabIndex = 103;
@@ -249,7 +246,7 @@
             this.pictureBox16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.BackgroundImage")));
             this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox16.Location = new System.Drawing.Point(9, 44);
+            this.pictureBox16.Location = new System.Drawing.Point(9, 53);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(36, 30);
             this.pictureBox16.TabIndex = 101;
@@ -556,10 +553,6 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.in116);
-            this.panel1.Controls.Add(this.in115);
-            this.panel1.Controls.Add(this.in3);
-            this.panel1.Controls.Add(this.pictureBox24);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox23);
             this.panel1.Controls.Add(this.pictureBox22);
@@ -568,33 +561,12 @@
             this.panel1.Size = new System.Drawing.Size(122, 156);
             this.panel1.TabIndex = 191;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
-            this.panel2.Location = new System.Drawing.Point(-1, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(137, 39);
-            this.panel2.TabIndex = 192;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans", 12.75F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(4, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Archer Skills";
-            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this._4RTextInput1);
-            this.panel3.Controls.Add(this._4RTextInput2);
-            this.panel3.Controls.Add(this._4RTextInput3);
+            this.panel3.Controls.Add(this.in116);
+            this.panel3.Controls.Add(this.in115);
+            this.panel3.Controls.Add(this.in3);
             this.panel3.Controls.Add(this.pictureBox15);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.pictureBox39);
@@ -603,6 +575,54 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(122, 156);
             this.panel3.TabIndex = 195;
+            // 
+            // in116
+            // 
+            this.in116.BackColor = System.Drawing.Color.Transparent;
+            this.in116.BorderSize = 2;
+            this.in116.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in116.ForeColor = System.Drawing.Color.DimGray;
+            this.in116.InputName = "_4RTextInput";
+            this.in116.Location = new System.Drawing.Point(53, 117);
+            this.in116.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in116.Name = "in116";
+            this.in116.Padding = new System.Windows.Forms.Padding(7);
+            this.in116.Size = new System.Drawing.Size(55, 30);
+            this.in116.TabIndex = 194;
+            this.in116.UnderlinedStyle = false;
+            this.in116.Value = "";
+            // 
+            // in115
+            // 
+            this.in115.BackColor = System.Drawing.Color.Transparent;
+            this.in115.BorderSize = 2;
+            this.in115.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in115.ForeColor = System.Drawing.Color.DimGray;
+            this.in115.InputName = "_4RTextInput";
+            this.in115.Location = new System.Drawing.Point(53, 85);
+            this.in115.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in115.Name = "in115";
+            this.in115.Padding = new System.Windows.Forms.Padding(7);
+            this.in115.Size = new System.Drawing.Size(55, 30);
+            this.in115.TabIndex = 193;
+            this.in115.UnderlinedStyle = false;
+            this.in115.Value = "";
+            // 
+            // in3
+            // 
+            this.in3.BackColor = System.Drawing.Color.Transparent;
+            this.in3.BorderSize = 2;
+            this.in3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in3.ForeColor = System.Drawing.Color.DimGray;
+            this.in3.InputName = "_4RTextInput";
+            this.in3.Location = new System.Drawing.Point(53, 53);
+            this.in3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in3.Name = "in3";
+            this.in3.Padding = new System.Windows.Forms.Padding(7);
+            this.in3.Size = new System.Drawing.Size(55, 30);
+            this.in3.TabIndex = 192;
+            this.in3.UnderlinedStyle = false;
+            this.in3.Value = "";
             // 
             // pictureBox15
             // 
@@ -658,6 +678,27 @@
             this.pictureBox40.TabIndex = 115;
             this.pictureBox40.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
+            this.panel2.Location = new System.Drawing.Point(-1, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(137, 39);
+            this.panel2.TabIndex = 192;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 12.75F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(4, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Archer Skills";
+            // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -672,6 +713,54 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(121, 156);
             this.panel6.TabIndex = 195;
+            // 
+            // in114
+            // 
+            this.in114.BackColor = System.Drawing.Color.Transparent;
+            this.in114.BorderSize = 2;
+            this.in114.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in114.ForeColor = System.Drawing.Color.DimGray;
+            this.in114.InputName = "_4RTextInput";
+            this.in114.Location = new System.Drawing.Point(48, 85);
+            this.in114.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in114.Name = "in114";
+            this.in114.Padding = new System.Windows.Forms.Padding(7);
+            this.in114.Size = new System.Drawing.Size(55, 30);
+            this.in114.TabIndex = 194;
+            this.in114.UnderlinedStyle = false;
+            this.in114.Value = "";
+            // 
+            // in120
+            // 
+            this.in120.BackColor = System.Drawing.Color.Transparent;
+            this.in120.BorderSize = 2;
+            this.in120.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in120.ForeColor = System.Drawing.Color.DimGray;
+            this.in120.InputName = "_4RTextInput";
+            this.in120.Location = new System.Drawing.Point(48, 117);
+            this.in120.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in120.Name = "in120";
+            this.in120.Padding = new System.Windows.Forms.Padding(7);
+            this.in120.Size = new System.Drawing.Size(55, 30);
+            this.in120.TabIndex = 193;
+            this.in120.UnderlinedStyle = false;
+            this.in120.Value = "";
+            // 
+            // in181
+            // 
+            this.in181.BackColor = System.Drawing.Color.Transparent;
+            this.in181.BorderSize = 2;
+            this.in181.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in181.ForeColor = System.Drawing.Color.DimGray;
+            this.in181.InputName = "_4RTextInput";
+            this.in181.Location = new System.Drawing.Point(48, 53);
+            this.in181.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in181.Name = "in181";
+            this.in181.Padding = new System.Windows.Forms.Padding(7);
+            this.in181.Size = new System.Drawing.Size(55, 30);
+            this.in181.TabIndex = 192;
+            this.in181.UnderlinedStyle = false;
+            this.in181.Value = "";
             // 
             // panel7
             // 
@@ -720,6 +809,150 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(373, 161);
             this.panel11.TabIndex = 196;
+            // 
+            // in147
+            // 
+            this.in147.BackColor = System.Drawing.Color.Transparent;
+            this.in147.BorderSize = 2;
+            this.in147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in147.ForeColor = System.Drawing.Color.DimGray;
+            this.in147.InputName = "_4RTextInput";
+            this.in147.Location = new System.Drawing.Point(283, 113);
+            this.in147.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in147.Name = "in147";
+            this.in147.Padding = new System.Windows.Forms.Padding(7);
+            this.in147.Size = new System.Drawing.Size(55, 30);
+            this.in147.TabIndex = 205;
+            this.in147.UnderlinedStyle = false;
+            this.in147.Value = "";
+            // 
+            // in23
+            // 
+            this.in23.BackColor = System.Drawing.Color.Transparent;
+            this.in23.BorderSize = 2;
+            this.in23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in23.ForeColor = System.Drawing.Color.DimGray;
+            this.in23.InputName = "_4RTextInput";
+            this.in23.Location = new System.Drawing.Point(182, 113);
+            this.in23.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in23.Name = "in23";
+            this.in23.Padding = new System.Windows.Forms.Padding(7);
+            this.in23.Size = new System.Drawing.Size(55, 30);
+            this.in23.TabIndex = 203;
+            this.in23.UnderlinedStyle = false;
+            this.in23.Value = "";
+            // 
+            // in30
+            // 
+            this.in30.BackColor = System.Drawing.Color.Transparent;
+            this.in30.BorderSize = 2;
+            this.in30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in30.ForeColor = System.Drawing.Color.DimGray;
+            this.in30.InputName = "_4RTextInput";
+            this.in30.Location = new System.Drawing.Point(80, 113);
+            this.in30.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in30.Name = "in30";
+            this.in30.Padding = new System.Windows.Forms.Padding(7);
+            this.in30.Size = new System.Drawing.Size(55, 30);
+            this.in30.TabIndex = 202;
+            this.in30.UnderlinedStyle = false;
+            this.in30.Value = "";
+            // 
+            // in188
+            // 
+            this.in188.BackColor = System.Drawing.Color.Transparent;
+            this.in188.BorderSize = 2;
+            this.in188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in188.ForeColor = System.Drawing.Color.DimGray;
+            this.in188.InputName = "_4RTextInput";
+            this.in188.Location = new System.Drawing.Point(283, 81);
+            this.in188.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in188.Name = "in188";
+            this.in188.Padding = new System.Windows.Forms.Padding(7);
+            this.in188.Size = new System.Drawing.Size(55, 30);
+            this.in188.TabIndex = 199;
+            this.in188.UnderlinedStyle = false;
+            this.in188.Value = "";
+            // 
+            // in25
+            // 
+            this.in25.BackColor = System.Drawing.Color.Transparent;
+            this.in25.BorderSize = 2;
+            this.in25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in25.ForeColor = System.Drawing.Color.DimGray;
+            this.in25.InputName = "_4RTextInput";
+            this.in25.Location = new System.Drawing.Point(283, 49);
+            this.in25.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in25.Name = "in25";
+            this.in25.Padding = new System.Windows.Forms.Padding(7);
+            this.in25.Size = new System.Drawing.Size(55, 30);
+            this.in25.TabIndex = 198;
+            this.in25.UnderlinedStyle = false;
+            this.in25.Value = "";
+            // 
+            // in117
+            // 
+            this.in117.BackColor = System.Drawing.Color.Transparent;
+            this.in117.BorderSize = 2;
+            this.in117.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in117.ForeColor = System.Drawing.Color.DimGray;
+            this.in117.InputName = "_4RTextInput";
+            this.in117.Location = new System.Drawing.Point(182, 81);
+            this.in117.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in117.Name = "in117";
+            this.in117.Padding = new System.Windows.Forms.Padding(7);
+            this.in117.Size = new System.Drawing.Size(55, 30);
+            this.in117.TabIndex = 195;
+            this.in117.UnderlinedStyle = false;
+            this.in117.Value = "";
+            // 
+            // in118
+            // 
+            this.in118.BackColor = System.Drawing.Color.Transparent;
+            this.in118.BorderSize = 2;
+            this.in118.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in118.ForeColor = System.Drawing.Color.DimGray;
+            this.in118.InputName = "_4RTextInput";
+            this.in118.Location = new System.Drawing.Point(182, 49);
+            this.in118.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in118.Name = "in118";
+            this.in118.Padding = new System.Windows.Forms.Padding(7);
+            this.in118.Size = new System.Drawing.Size(55, 30);
+            this.in118.TabIndex = 194;
+            this.in118.UnderlinedStyle = false;
+            this.in118.Value = "";
+            // 
+            // in26
+            // 
+            this.in26.BackColor = System.Drawing.Color.Transparent;
+            this.in26.BorderSize = 2;
+            this.in26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in26.ForeColor = System.Drawing.Color.DimGray;
+            this.in26.InputName = "_4RTextInput";
+            this.in26.Location = new System.Drawing.Point(80, 81);
+            this.in26.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in26.Name = "in26";
+            this.in26.Padding = new System.Windows.Forms.Padding(7);
+            this.in26.Size = new System.Drawing.Size(55, 30);
+            this.in26.TabIndex = 193;
+            this.in26.UnderlinedStyle = false;
+            this.in26.Value = "";
+            // 
+            // in24
+            // 
+            this.in24.BackColor = System.Drawing.Color.Transparent;
+            this.in24.BorderSize = 2;
+            this.in24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in24.ForeColor = System.Drawing.Color.DimGray;
+            this.in24.InputName = "_4RTextInput";
+            this.in24.Location = new System.Drawing.Point(80, 49);
+            this.in24.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in24.Name = "in24";
+            this.in24.Padding = new System.Windows.Forms.Padding(7);
+            this.in24.Size = new System.Drawing.Size(55, 30);
+            this.in24.TabIndex = 192;
+            this.in24.UnderlinedStyle = false;
+            this.in24.Value = "";
             // 
             // panel12
             // 
@@ -773,6 +1006,182 @@
             this.panel13.Size = new System.Drawing.Size(336, 191);
             this.panel13.TabIndex = 206;
             // 
+            // in58
+            // 
+            this.in58.BackColor = System.Drawing.Color.Transparent;
+            this.in58.BorderSize = 2;
+            this.in58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in58.ForeColor = System.Drawing.Color.DimGray;
+            this.in58.InputName = "in58";
+            this.in58.Location = new System.Drawing.Point(160, 149);
+            this.in58.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in58.Name = "in58";
+            this.in58.Padding = new System.Windows.Forms.Padding(7);
+            this.in58.Size = new System.Drawing.Size(55, 30);
+            this.in58.TabIndex = 209;
+            this.in58.UnderlinedStyle = false;
+            this.in58.Value = "";
+            // 
+            // in107
+            // 
+            this.in107.BackColor = System.Drawing.Color.Transparent;
+            this.in107.BorderSize = 2;
+            this.in107.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in107.ForeColor = System.Drawing.Color.DimGray;
+            this.in107.InputName = "in107";
+            this.in107.Location = new System.Drawing.Point(58, 149);
+            this.in107.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in107.Name = "in107";
+            this.in107.Padding = new System.Windows.Forms.Padding(7);
+            this.in107.Size = new System.Drawing.Size(55, 30);
+            this.in107.TabIndex = 208;
+            this.in107.UnderlinedStyle = false;
+            this.in107.Value = "";
+            // 
+            // in59
+            // 
+            this.in59.BackColor = System.Drawing.Color.Transparent;
+            this.in59.BorderSize = 2;
+            this.in59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in59.ForeColor = System.Drawing.Color.DimGray;
+            this.in59.InputName = "in59";
+            this.in59.Location = new System.Drawing.Point(261, 117);
+            this.in59.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in59.Name = "in59";
+            this.in59.Padding = new System.Windows.Forms.Padding(7);
+            this.in59.Size = new System.Drawing.Size(55, 30);
+            this.in59.TabIndex = 205;
+            this.in59.UnderlinedStyle = false;
+            this.in59.Value = "";
+            // 
+            // in2
+            // 
+            this.in2.BackColor = System.Drawing.Color.Transparent;
+            this.in2.BorderSize = 2;
+            this.in2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in2.ForeColor = System.Drawing.Color.DimGray;
+            this.in2.InputName = "in2";
+            this.in2.Location = new System.Drawing.Point(160, 117);
+            this.in2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in2.Name = "in2";
+            this.in2.Padding = new System.Windows.Forms.Padding(7);
+            this.in2.Size = new System.Drawing.Size(55, 30);
+            this.in2.TabIndex = 203;
+            this.in2.UnderlinedStyle = false;
+            this.in2.Value = "";
+            // 
+            // in105
+            // 
+            this.in105.BackColor = System.Drawing.Color.Transparent;
+            this.in105.BorderSize = 2;
+            this.in105.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in105.ForeColor = System.Drawing.Color.DimGray;
+            this.in105.InputName = "in105";
+            this.in105.Location = new System.Drawing.Point(58, 117);
+            this.in105.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in105.Name = "in105";
+            this.in105.Padding = new System.Windows.Forms.Padding(7);
+            this.in105.Size = new System.Drawing.Size(55, 30);
+            this.in105.TabIndex = 202;
+            this.in105.UnderlinedStyle = false;
+            this.in105.Value = "";
+            // 
+            // in197
+            // 
+            this.in197.BackColor = System.Drawing.Color.Transparent;
+            this.in197.BorderSize = 2;
+            this.in197.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in197.ForeColor = System.Drawing.Color.DimGray;
+            this.in197.InputName = "in197";
+            this.in197.Location = new System.Drawing.Point(261, 85);
+            this.in197.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in197.Name = "in197";
+            this.in197.Padding = new System.Windows.Forms.Padding(7);
+            this.in197.Size = new System.Drawing.Size(55, 30);
+            this.in197.TabIndex = 199;
+            this.in197.UnderlinedStyle = false;
+            this.in197.Value = "";
+            // 
+            // in62
+            // 
+            this.in62.BackColor = System.Drawing.Color.Transparent;
+            this.in62.BorderSize = 2;
+            this.in62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in62.ForeColor = System.Drawing.Color.DimGray;
+            this.in62.InputName = "in62";
+            this.in62.Location = new System.Drawing.Point(261, 53);
+            this.in62.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in62.Name = "in62";
+            this.in62.Padding = new System.Windows.Forms.Padding(7);
+            this.in62.Size = new System.Drawing.Size(55, 30);
+            this.in62.TabIndex = 198;
+            this.in62.UnderlinedStyle = false;
+            this.in62.Value = "";
+            // 
+            // in104
+            // 
+            this.in104.BackColor = System.Drawing.Color.Transparent;
+            this.in104.BorderSize = 2;
+            this.in104.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in104.ForeColor = System.Drawing.Color.DimGray;
+            this.in104.InputName = "in104";
+            this.in104.Location = new System.Drawing.Point(160, 85);
+            this.in104.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in104.Name = "in104";
+            this.in104.Padding = new System.Windows.Forms.Padding(7);
+            this.in104.Size = new System.Drawing.Size(55, 30);
+            this.in104.TabIndex = 195;
+            this.in104.UnderlinedStyle = false;
+            this.in104.Value = "";
+            // 
+            // in132
+            // 
+            this.in132.BackColor = System.Drawing.Color.Transparent;
+            this.in132.BorderSize = 2;
+            this.in132.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in132.ForeColor = System.Drawing.Color.DimGray;
+            this.in132.InputName = "in132";
+            this.in132.Location = new System.Drawing.Point(160, 53);
+            this.in132.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in132.Name = "in132";
+            this.in132.Padding = new System.Windows.Forms.Padding(7);
+            this.in132.Size = new System.Drawing.Size(55, 30);
+            this.in132.TabIndex = 194;
+            this.in132.UnderlinedStyle = false;
+            this.in132.Value = "";
+            // 
+            // in103
+            // 
+            this.in103.BackColor = System.Drawing.Color.Transparent;
+            this.in103.BorderSize = 2;
+            this.in103.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in103.ForeColor = System.Drawing.Color.DimGray;
+            this.in103.InputName = "in103";
+            this.in103.Location = new System.Drawing.Point(58, 85);
+            this.in103.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in103.Name = "in103";
+            this.in103.Padding = new System.Windows.Forms.Padding(7);
+            this.in103.Size = new System.Drawing.Size(55, 30);
+            this.in103.TabIndex = 193;
+            this.in103.UnderlinedStyle = false;
+            this.in103.Value = "";
+            // 
+            // in1
+            // 
+            this.in1.BackColor = System.Drawing.Color.Transparent;
+            this.in1.BorderSize = 2;
+            this.in1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in1.ForeColor = System.Drawing.Color.DimGray;
+            this.in1.InputName = "in1";
+            this.in1.Location = new System.Drawing.Point(58, 53);
+            this.in1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in1.Name = "in1";
+            this.in1.Padding = new System.Windows.Forms.Padding(7);
+            this.in1.Size = new System.Drawing.Size(55, 30);
+            this.in1.TabIndex = 192;
+            this.in1.UnderlinedStyle = false;
+            this.in1.Value = "";
+            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
@@ -811,6 +1220,70 @@
             this.panel15.Size = new System.Drawing.Size(213, 126);
             this.panel15.TabIndex = 196;
             // 
+            // in186
+            // 
+            this.in186.BackColor = System.Drawing.Color.Transparent;
+            this.in186.BorderSize = 2;
+            this.in186.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in186.ForeColor = System.Drawing.Color.DimGray;
+            this.in186.InputName = "_4RTextInput";
+            this.in186.Location = new System.Drawing.Point(150, 85);
+            this.in186.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in186.Name = "in186";
+            this.in186.Padding = new System.Windows.Forms.Padding(7);
+            this.in186.Size = new System.Drawing.Size(55, 30);
+            this.in186.TabIndex = 195;
+            this.in186.UnderlinedStyle = false;
+            this.in186.Value = "";
+            // 
+            // in65
+            // 
+            this.in65.BackColor = System.Drawing.Color.Transparent;
+            this.in65.BorderSize = 2;
+            this.in65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in65.ForeColor = System.Drawing.Color.DimGray;
+            this.in65.InputName = "_4RTextInput";
+            this.in65.Location = new System.Drawing.Point(150, 53);
+            this.in65.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in65.Name = "in65";
+            this.in65.Padding = new System.Windows.Forms.Padding(7);
+            this.in65.Size = new System.Drawing.Size(55, 30);
+            this.in65.TabIndex = 194;
+            this.in65.UnderlinedStyle = false;
+            this.in65.Value = "";
+            // 
+            // in198
+            // 
+            this.in198.BackColor = System.Drawing.Color.Transparent;
+            this.in198.BorderSize = 2;
+            this.in198.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in198.ForeColor = System.Drawing.Color.DimGray;
+            this.in198.InputName = "_4RTextInput";
+            this.in198.Location = new System.Drawing.Point(49, 85);
+            this.in198.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in198.Name = "in198";
+            this.in198.Padding = new System.Windows.Forms.Padding(7);
+            this.in198.Size = new System.Drawing.Size(55, 30);
+            this.in198.TabIndex = 193;
+            this.in198.UnderlinedStyle = false;
+            this.in198.Value = "";
+            // 
+            // in31
+            // 
+            this.in31.BackColor = System.Drawing.Color.Transparent;
+            this.in31.BorderSize = 2;
+            this.in31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in31.ForeColor = System.Drawing.Color.DimGray;
+            this.in31.InputName = "_4RTextInput";
+            this.in31.Location = new System.Drawing.Point(49, 53);
+            this.in31.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in31.Name = "in31";
+            this.in31.Padding = new System.Windows.Forms.Padding(7);
+            this.in31.Size = new System.Drawing.Size(55, 30);
+            this.in31.TabIndex = 192;
+            this.in31.UnderlinedStyle = false;
+            this.in31.Value = "";
+            // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(55)))), ((int)(((byte)(21)))));
@@ -844,6 +1317,38 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(117, 126);
             this.panel17.TabIndex = 197;
+            // 
+            // in208
+            // 
+            this.in208.BackColor = System.Drawing.Color.Transparent;
+            this.in208.BorderSize = 2;
+            this.in208.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in208.ForeColor = System.Drawing.Color.DimGray;
+            this.in208.InputName = "_4RTextInput";
+            this.in208.Location = new System.Drawing.Point(49, 85);
+            this.in208.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in208.Name = "in208";
+            this.in208.Padding = new System.Windows.Forms.Padding(7);
+            this.in208.Size = new System.Drawing.Size(55, 30);
+            this.in208.TabIndex = 193;
+            this.in208.UnderlinedStyle = false;
+            this.in208.Value = "";
+            // 
+            // in206
+            // 
+            this.in206.BackColor = System.Drawing.Color.Transparent;
+            this.in206.BorderSize = 2;
+            this.in206.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in206.ForeColor = System.Drawing.Color.DimGray;
+            this.in206.InputName = "_4RTextInput";
+            this.in206.Location = new System.Drawing.Point(49, 53);
+            this.in206.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.in206.Name = "in206";
+            this.in206.Padding = new System.Windows.Forms.Padding(7);
+            this.in206.Size = new System.Drawing.Size(55, 30);
+            this.in206.TabIndex = 192;
+            this.in206.UnderlinedStyle = false;
+            this.in206.Value = "";
             // 
             // panel18
             // 
@@ -941,6 +1446,7 @@
             this.in21.BorderSize = 2;
             this.in21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in21.ForeColor = System.Drawing.Color.DimGray;
+            this.in21.InputName = "_4RTextInput";
             this.in21.Location = new System.Drawing.Point(53, 51);
             this.in21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in21.Name = "in21";
@@ -956,6 +1462,7 @@
             this.in20.BorderSize = 2;
             this.in20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in20.ForeColor = System.Drawing.Color.DimGray;
+            this.in20.InputName = "_4RTextInput";
             this.in20.Location = new System.Drawing.Point(53, 83);
             this.in20.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in20.Name = "in20";
@@ -971,6 +1478,7 @@
             this.in9.BorderSize = 2;
             this.in9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in9.ForeColor = System.Drawing.Color.DimGray;
+            this.in9.InputName = "_4RTextInput";
             this.in9.Location = new System.Drawing.Point(53, 115);
             this.in9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in9.Name = "in9";
@@ -979,531 +1487,6 @@
             this.in9.TabIndex = 212;
             this.in9.UnderlinedStyle = false;
             this.in9.Value = "";
-            // 
-            // in208
-            // 
-            this.in208.BackColor = System.Drawing.Color.Transparent;
-            this.in208.BorderSize = 2;
-            this.in208.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in208.ForeColor = System.Drawing.Color.DimGray;
-            this.in208.Location = new System.Drawing.Point(49, 85);
-            this.in208.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in208.Name = "in208";
-            this.in208.Padding = new System.Windows.Forms.Padding(7);
-            this.in208.Size = new System.Drawing.Size(55, 30);
-            this.in208.TabIndex = 193;
-            this.in208.UnderlinedStyle = false;
-            this.in208.Value = "";
-            // 
-            // in206
-            // 
-            this.in206.BackColor = System.Drawing.Color.Transparent;
-            this.in206.BorderSize = 2;
-            this.in206.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in206.ForeColor = System.Drawing.Color.DimGray;
-            this.in206.Location = new System.Drawing.Point(49, 53);
-            this.in206.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in206.Name = "in206";
-            this.in206.Padding = new System.Windows.Forms.Padding(7);
-            this.in206.Size = new System.Drawing.Size(55, 30);
-            this.in206.TabIndex = 192;
-            this.in206.UnderlinedStyle = false;
-            this.in206.Value = "";
-            // 
-            // in186
-            // 
-            this.in186.BackColor = System.Drawing.Color.Transparent;
-            this.in186.BorderSize = 2;
-            this.in186.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in186.ForeColor = System.Drawing.Color.DimGray;
-            this.in186.Location = new System.Drawing.Point(150, 85);
-            this.in186.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in186.Name = "in186";
-            this.in186.Padding = new System.Windows.Forms.Padding(7);
-            this.in186.Size = new System.Drawing.Size(55, 30);
-            this.in186.TabIndex = 195;
-            this.in186.UnderlinedStyle = false;
-            this.in186.Value = "";
-            // 
-            // in65
-            // 
-            this.in65.BackColor = System.Drawing.Color.Transparent;
-            this.in65.BorderSize = 2;
-            this.in65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in65.ForeColor = System.Drawing.Color.DimGray;
-            this.in65.Location = new System.Drawing.Point(150, 53);
-            this.in65.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in65.Name = "in65";
-            this.in65.Padding = new System.Windows.Forms.Padding(7);
-            this.in65.Size = new System.Drawing.Size(55, 30);
-            this.in65.TabIndex = 194;
-            this.in65.UnderlinedStyle = false;
-            this.in65.Value = "";
-            // 
-            // in198
-            // 
-            this.in198.BackColor = System.Drawing.Color.Transparent;
-            this.in198.BorderSize = 2;
-            this.in198.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in198.ForeColor = System.Drawing.Color.DimGray;
-            this.in198.Location = new System.Drawing.Point(49, 85);
-            this.in198.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in198.Name = "in198";
-            this.in198.Padding = new System.Windows.Forms.Padding(7);
-            this.in198.Size = new System.Drawing.Size(55, 30);
-            this.in198.TabIndex = 193;
-            this.in198.UnderlinedStyle = false;
-            this.in198.Value = "";
-            // 
-            // in31
-            // 
-            this.in31.BackColor = System.Drawing.Color.Transparent;
-            this.in31.BorderSize = 2;
-            this.in31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in31.ForeColor = System.Drawing.Color.DimGray;
-            this.in31.Location = new System.Drawing.Point(49, 53);
-            this.in31.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in31.Name = "in31";
-            this.in31.Padding = new System.Windows.Forms.Padding(7);
-            this.in31.Size = new System.Drawing.Size(55, 30);
-            this.in31.TabIndex = 192;
-            this.in31.UnderlinedStyle = false;
-            this.in31.Value = "";
-            // 
-            // in58
-            // 
-            this.in58.BackColor = System.Drawing.Color.Transparent;
-            this.in58.BorderSize = 2;
-            this.in58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in58.ForeColor = System.Drawing.Color.DimGray;
-            this.in58.Location = new System.Drawing.Point(160, 149);
-            this.in58.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in58.Name = "in58";
-            this.in58.Padding = new System.Windows.Forms.Padding(7);
-            this.in58.Size = new System.Drawing.Size(55, 30);
-            this.in58.TabIndex = 209;
-            this.in58.UnderlinedStyle = false;
-            this.in58.Value = "";
-            // 
-            // in107
-            // 
-            this.in107.BackColor = System.Drawing.Color.Transparent;
-            this.in107.BorderSize = 2;
-            this.in107.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in107.ForeColor = System.Drawing.Color.DimGray;
-            this.in107.Location = new System.Drawing.Point(58, 149);
-            this.in107.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in107.Name = "in107";
-            this.in107.Padding = new System.Windows.Forms.Padding(7);
-            this.in107.Size = new System.Drawing.Size(55, 30);
-            this.in107.TabIndex = 208;
-            this.in107.UnderlinedStyle = false;
-            this.in107.Value = "";
-            // 
-            // in59
-            // 
-            this.in59.BackColor = System.Drawing.Color.Transparent;
-            this.in59.BorderSize = 2;
-            this.in59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in59.ForeColor = System.Drawing.Color.DimGray;
-            this.in59.Location = new System.Drawing.Point(261, 117);
-            this.in59.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in59.Name = "in59";
-            this.in59.Padding = new System.Windows.Forms.Padding(7);
-            this.in59.Size = new System.Drawing.Size(55, 30);
-            this.in59.TabIndex = 205;
-            this.in59.UnderlinedStyle = false;
-            this.in59.Value = "";
-            // 
-            // in2
-            // 
-            this.in2.BackColor = System.Drawing.Color.Transparent;
-            this.in2.BorderSize = 2;
-            this.in2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in2.ForeColor = System.Drawing.Color.DimGray;
-            this.in2.Location = new System.Drawing.Point(160, 117);
-            this.in2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in2.Name = "in2";
-            this.in2.Padding = new System.Windows.Forms.Padding(7);
-            this.in2.Size = new System.Drawing.Size(55, 30);
-            this.in2.TabIndex = 203;
-            this.in2.UnderlinedStyle = false;
-            this.in2.Value = "";
-            // 
-            // in105
-            // 
-            this.in105.BackColor = System.Drawing.Color.Transparent;
-            this.in105.BorderSize = 2;
-            this.in105.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in105.ForeColor = System.Drawing.Color.DimGray;
-            this.in105.Location = new System.Drawing.Point(58, 117);
-            this.in105.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in105.Name = "in105";
-            this.in105.Padding = new System.Windows.Forms.Padding(7);
-            this.in105.Size = new System.Drawing.Size(55, 30);
-            this.in105.TabIndex = 202;
-            this.in105.UnderlinedStyle = false;
-            this.in105.Value = "";
-            // 
-            // in197
-            // 
-            this.in197.BackColor = System.Drawing.Color.Transparent;
-            this.in197.BorderSize = 2;
-            this.in197.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in197.ForeColor = System.Drawing.Color.DimGray;
-            this.in197.Location = new System.Drawing.Point(261, 85);
-            this.in197.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in197.Name = "in197";
-            this.in197.Padding = new System.Windows.Forms.Padding(7);
-            this.in197.Size = new System.Drawing.Size(55, 30);
-            this.in197.TabIndex = 199;
-            this.in197.UnderlinedStyle = false;
-            this.in197.Value = "";
-            // 
-            // in62
-            // 
-            this.in62.BackColor = System.Drawing.Color.Transparent;
-            this.in62.BorderSize = 2;
-            this.in62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in62.ForeColor = System.Drawing.Color.DimGray;
-            this.in62.Location = new System.Drawing.Point(261, 53);
-            this.in62.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in62.Name = "in62";
-            this.in62.Padding = new System.Windows.Forms.Padding(7);
-            this.in62.Size = new System.Drawing.Size(55, 30);
-            this.in62.TabIndex = 198;
-            this.in62.UnderlinedStyle = false;
-            this.in62.Value = "";
-            // 
-            // in104
-            // 
-            this.in104.BackColor = System.Drawing.Color.Transparent;
-            this.in104.BorderSize = 2;
-            this.in104.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in104.ForeColor = System.Drawing.Color.DimGray;
-            this.in104.Location = new System.Drawing.Point(160, 85);
-            this.in104.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in104.Name = "in104";
-            this.in104.Padding = new System.Windows.Forms.Padding(7);
-            this.in104.Size = new System.Drawing.Size(55, 30);
-            this.in104.TabIndex = 195;
-            this.in104.UnderlinedStyle = false;
-            this.in104.Value = "";
-            // 
-            // in132
-            // 
-            this.in132.BackColor = System.Drawing.Color.Transparent;
-            this.in132.BorderSize = 2;
-            this.in132.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in132.ForeColor = System.Drawing.Color.DimGray;
-            this.in132.Location = new System.Drawing.Point(160, 53);
-            this.in132.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in132.Name = "in132";
-            this.in132.Padding = new System.Windows.Forms.Padding(7);
-            this.in132.Size = new System.Drawing.Size(55, 30);
-            this.in132.TabIndex = 194;
-            this.in132.UnderlinedStyle = false;
-            this.in132.Value = "";
-            // 
-            // in103
-            // 
-            this.in103.BackColor = System.Drawing.Color.Transparent;
-            this.in103.BorderSize = 2;
-            this.in103.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in103.ForeColor = System.Drawing.Color.DimGray;
-            this.in103.Location = new System.Drawing.Point(58, 85);
-            this.in103.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in103.Name = "in103";
-            this.in103.Padding = new System.Windows.Forms.Padding(7);
-            this.in103.Size = new System.Drawing.Size(55, 30);
-            this.in103.TabIndex = 193;
-            this.in103.UnderlinedStyle = false;
-            this.in103.Value = "";
-            // 
-            // in1
-            // 
-            this.in1.BackColor = System.Drawing.Color.Transparent;
-            this.in1.BorderSize = 2;
-            this.in1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in1.ForeColor = System.Drawing.Color.DimGray;
-            this.in1.Location = new System.Drawing.Point(58, 53);
-            this.in1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in1.Name = "in1";
-            this.in1.Padding = new System.Windows.Forms.Padding(7);
-            this.in1.Size = new System.Drawing.Size(55, 30);
-            this.in1.TabIndex = 192;
-            this.in1.UnderlinedStyle = false;
-            this.in1.Value = "";
-            // 
-            // in147
-            // 
-            this.in147.BackColor = System.Drawing.Color.Transparent;
-            this.in147.BorderSize = 2;
-            this.in147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in147.ForeColor = System.Drawing.Color.DimGray;
-            this.in147.Location = new System.Drawing.Point(283, 113);
-            this.in147.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in147.Name = "in147";
-            this.in147.Padding = new System.Windows.Forms.Padding(7);
-            this.in147.Size = new System.Drawing.Size(55, 30);
-            this.in147.TabIndex = 205;
-            this.in147.UnderlinedStyle = false;
-            this.in147.Value = "";
-            // 
-            // in23
-            // 
-            this.in23.BackColor = System.Drawing.Color.Transparent;
-            this.in23.BorderSize = 2;
-            this.in23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in23.ForeColor = System.Drawing.Color.DimGray;
-            this.in23.Location = new System.Drawing.Point(182, 113);
-            this.in23.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in23.Name = "in23";
-            this.in23.Padding = new System.Windows.Forms.Padding(7);
-            this.in23.Size = new System.Drawing.Size(55, 30);
-            this.in23.TabIndex = 203;
-            this.in23.UnderlinedStyle = false;
-            this.in23.Value = "";
-            // 
-            // in30
-            // 
-            this.in30.BackColor = System.Drawing.Color.Transparent;
-            this.in30.BorderSize = 2;
-            this.in30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in30.ForeColor = System.Drawing.Color.DimGray;
-            this.in30.Location = new System.Drawing.Point(80, 113);
-            this.in30.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in30.Name = "in30";
-            this.in30.Padding = new System.Windows.Forms.Padding(7);
-            this.in30.Size = new System.Drawing.Size(55, 30);
-            this.in30.TabIndex = 202;
-            this.in30.UnderlinedStyle = false;
-            this.in30.Value = "";
-            // 
-            // in188
-            // 
-            this.in188.BackColor = System.Drawing.Color.Transparent;
-            this.in188.BorderSize = 2;
-            this.in188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in188.ForeColor = System.Drawing.Color.DimGray;
-            this.in188.Location = new System.Drawing.Point(283, 81);
-            this.in188.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in188.Name = "in188";
-            this.in188.Padding = new System.Windows.Forms.Padding(7);
-            this.in188.Size = new System.Drawing.Size(55, 30);
-            this.in188.TabIndex = 199;
-            this.in188.UnderlinedStyle = false;
-            this.in188.Value = "";
-            // 
-            // in25
-            // 
-            this.in25.BackColor = System.Drawing.Color.Transparent;
-            this.in25.BorderSize = 2;
-            this.in25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in25.ForeColor = System.Drawing.Color.DimGray;
-            this.in25.Location = new System.Drawing.Point(283, 49);
-            this.in25.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in25.Name = "in25";
-            this.in25.Padding = new System.Windows.Forms.Padding(7);
-            this.in25.Size = new System.Drawing.Size(55, 30);
-            this.in25.TabIndex = 198;
-            this.in25.UnderlinedStyle = false;
-            this.in25.Value = "";
-            // 
-            // in117
-            // 
-            this.in117.BackColor = System.Drawing.Color.Transparent;
-            this.in117.BorderSize = 2;
-            this.in117.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in117.ForeColor = System.Drawing.Color.DimGray;
-            this.in117.Location = new System.Drawing.Point(182, 81);
-            this.in117.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in117.Name = "in117";
-            this.in117.Padding = new System.Windows.Forms.Padding(7);
-            this.in117.Size = new System.Drawing.Size(55, 30);
-            this.in117.TabIndex = 195;
-            this.in117.UnderlinedStyle = false;
-            this.in117.Value = "";
-            // 
-            // in118
-            // 
-            this.in118.BackColor = System.Drawing.Color.Transparent;
-            this.in118.BorderSize = 2;
-            this.in118.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in118.ForeColor = System.Drawing.Color.DimGray;
-            this.in118.Location = new System.Drawing.Point(182, 49);
-            this.in118.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in118.Name = "in118";
-            this.in118.Padding = new System.Windows.Forms.Padding(7);
-            this.in118.Size = new System.Drawing.Size(55, 30);
-            this.in118.TabIndex = 194;
-            this.in118.UnderlinedStyle = false;
-            this.in118.Value = "";
-            // 
-            // in26
-            // 
-            this.in26.BackColor = System.Drawing.Color.Transparent;
-            this.in26.BorderSize = 2;
-            this.in26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in26.ForeColor = System.Drawing.Color.DimGray;
-            this.in26.Location = new System.Drawing.Point(80, 81);
-            this.in26.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in26.Name = "in26";
-            this.in26.Padding = new System.Windows.Forms.Padding(7);
-            this.in26.Size = new System.Drawing.Size(55, 30);
-            this.in26.TabIndex = 193;
-            this.in26.UnderlinedStyle = false;
-            this.in26.Value = "";
-            // 
-            // in24
-            // 
-            this.in24.BackColor = System.Drawing.Color.Transparent;
-            this.in24.BorderSize = 2;
-            this.in24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in24.ForeColor = System.Drawing.Color.DimGray;
-            this.in24.Location = new System.Drawing.Point(80, 49);
-            this.in24.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in24.Name = "in24";
-            this.in24.Padding = new System.Windows.Forms.Padding(7);
-            this.in24.Size = new System.Drawing.Size(55, 30);
-            this.in24.TabIndex = 192;
-            this.in24.UnderlinedStyle = false;
-            this.in24.Value = "";
-            // 
-            // in114
-            // 
-            this.in114.BackColor = System.Drawing.Color.Transparent;
-            this.in114.BorderSize = 2;
-            this.in114.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in114.ForeColor = System.Drawing.Color.DimGray;
-            this.in114.Location = new System.Drawing.Point(48, 76);
-            this.in114.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in114.Name = "in114";
-            this.in114.Padding = new System.Windows.Forms.Padding(7);
-            this.in114.Size = new System.Drawing.Size(55, 30);
-            this.in114.TabIndex = 194;
-            this.in114.UnderlinedStyle = false;
-            this.in114.Value = "";
-            // 
-            // in120
-            // 
-            this.in120.BackColor = System.Drawing.Color.Transparent;
-            this.in120.BorderSize = 2;
-            this.in120.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in120.ForeColor = System.Drawing.Color.DimGray;
-            this.in120.Location = new System.Drawing.Point(48, 108);
-            this.in120.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in120.Name = "in120";
-            this.in120.Padding = new System.Windows.Forms.Padding(7);
-            this.in120.Size = new System.Drawing.Size(55, 30);
-            this.in120.TabIndex = 193;
-            this.in120.UnderlinedStyle = false;
-            this.in120.Value = "";
-            // 
-            // in181
-            // 
-            this.in181.BackColor = System.Drawing.Color.Transparent;
-            this.in181.BorderSize = 2;
-            this.in181.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in181.ForeColor = System.Drawing.Color.DimGray;
-            this.in181.Location = new System.Drawing.Point(48, 44);
-            this.in181.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in181.Name = "in181";
-            this.in181.Padding = new System.Windows.Forms.Padding(7);
-            this.in181.Size = new System.Drawing.Size(55, 30);
-            this.in181.TabIndex = 192;
-            this.in181.UnderlinedStyle = false;
-            this.in181.Value = "";
-            // 
-            // _4RTextInput1
-            // 
-            this._4RTextInput1.BackColor = System.Drawing.Color.Transparent;
-            this._4RTextInput1.BorderSize = 2;
-            this._4RTextInput1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._4RTextInput1.ForeColor = System.Drawing.Color.DimGray;
-            this._4RTextInput1.Location = new System.Drawing.Point(53, 117);
-            this._4RTextInput1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this._4RTextInput1.Name = "_4RTextInput1";
-            this._4RTextInput1.Padding = new System.Windows.Forms.Padding(7);
-            this._4RTextInput1.Size = new System.Drawing.Size(55, 30);
-            this._4RTextInput1.TabIndex = 194;
-            this._4RTextInput1.UnderlinedStyle = false;
-            this._4RTextInput1.Value = "";
-            // 
-            // _4RTextInput2
-            // 
-            this._4RTextInput2.BackColor = System.Drawing.Color.Transparent;
-            this._4RTextInput2.BorderSize = 2;
-            this._4RTextInput2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._4RTextInput2.ForeColor = System.Drawing.Color.DimGray;
-            this._4RTextInput2.Location = new System.Drawing.Point(53, 85);
-            this._4RTextInput2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this._4RTextInput2.Name = "_4RTextInput2";
-            this._4RTextInput2.Padding = new System.Windows.Forms.Padding(7);
-            this._4RTextInput2.Size = new System.Drawing.Size(55, 30);
-            this._4RTextInput2.TabIndex = 193;
-            this._4RTextInput2.UnderlinedStyle = false;
-            this._4RTextInput2.Value = "";
-            // 
-            // _4RTextInput3
-            // 
-            this._4RTextInput3.BackColor = System.Drawing.Color.Transparent;
-            this._4RTextInput3.BorderSize = 2;
-            this._4RTextInput3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._4RTextInput3.ForeColor = System.Drawing.Color.DimGray;
-            this._4RTextInput3.Location = new System.Drawing.Point(53, 53);
-            this._4RTextInput3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this._4RTextInput3.Name = "_4RTextInput3";
-            this._4RTextInput3.Padding = new System.Windows.Forms.Padding(7);
-            this._4RTextInput3.Size = new System.Drawing.Size(55, 30);
-            this._4RTextInput3.TabIndex = 192;
-            this._4RTextInput3.UnderlinedStyle = false;
-            this._4RTextInput3.Value = "";
-            // 
-            // in116
-            // 
-            this.in116.BackColor = System.Drawing.Color.Transparent;
-            this.in116.BorderSize = 2;
-            this.in116.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in116.ForeColor = System.Drawing.Color.DimGray;
-            this.in116.Location = new System.Drawing.Point(53, 117);
-            this.in116.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in116.Name = "in116";
-            this.in116.Padding = new System.Windows.Forms.Padding(7);
-            this.in116.Size = new System.Drawing.Size(55, 30);
-            this.in116.TabIndex = 194;
-            this.in116.UnderlinedStyle = false;
-            this.in116.Value = "";
-            // 
-            // in115
-            // 
-            this.in115.BackColor = System.Drawing.Color.Transparent;
-            this.in115.BorderSize = 2;
-            this.in115.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in115.ForeColor = System.Drawing.Color.DimGray;
-            this.in115.Location = new System.Drawing.Point(53, 85);
-            this.in115.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in115.Name = "in115";
-            this.in115.Padding = new System.Windows.Forms.Padding(7);
-            this.in115.Size = new System.Drawing.Size(55, 30);
-            this.in115.TabIndex = 193;
-            this.in115.UnderlinedStyle = false;
-            this.in115.Value = "";
-            // 
-            // in3
-            // 
-            this.in3.BackColor = System.Drawing.Color.Transparent;
-            this.in3.BorderSize = 2;
-            this.in3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in3.ForeColor = System.Drawing.Color.DimGray;
-            this.in3.Location = new System.Drawing.Point(53, 53);
-            this.in3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.in3.Name = "in3";
-            this.in3.Padding = new System.Windows.Forms.Padding(7);
-            this.in3.Size = new System.Drawing.Size(55, 30);
-            this.in3.TabIndex = 192;
-            this.in3.UnderlinedStyle = false;
-            this.in3.Value = "";
             // 
             // SkillAutoBuffForm
             // 
@@ -1556,14 +1539,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -1628,13 +1611,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private Components._4RTextInput in3;
+        private System.Windows.Forms.Panel panel3;
         private Components._4RTextInput in116;
         private Components._4RTextInput in115;
-        private System.Windows.Forms.Panel panel3;
-        private Components._4RTextInput _4RTextInput1;
-        private Components._4RTextInput _4RTextInput2;
-        private Components._4RTextInput _4RTextInput3;
+        private Components._4RTextInput in3;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;

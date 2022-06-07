@@ -46,6 +46,7 @@ namespace _4RTools.Forms
                 {
                     _4RTextInput textBox = (_4RTextInput)c;
                     textBox._TextChanged += new EventHandler(this.onTextChange);
+                    Console.WriteLine(textBox.Name);
                 }
         }
 
