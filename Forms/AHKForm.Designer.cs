@@ -87,6 +87,7 @@
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
             this._4RCheckBox1 = new _4RTools.Components._4RCheckBox();
+            this._4RCheckBox2 = new _4RTools.Components._4RCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -702,12 +703,30 @@
             this._4RCheckBox1.TextLocation_Y = 4;
             this._4RCheckBox1.UseVisualStyleBackColor = true;
             // 
+            // _4RCheckBox2
+            // 
+            this._4RCheckBox2.BoxLocation_X = 5;
+            this._4RCheckBox2.BoxLocation_Y = 4;
+            this._4RCheckBox2.BoxSize = 18;
+            this._4RCheckBox2.DisplayText = "_4RCheckBox2";
+            this._4RCheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
+            this._4RCheckBox2.Location = new System.Drawing.Point(27, 293);
+            this._4RCheckBox2.Name = "_4RCheckBox2";
+            this._4RCheckBox2.Size = new System.Drawing.Size(30, 27);
+            this._4RCheckBox2.TabIndex = 34;
+            this._4RCheckBox2.Text = "_4RCheckBox2";
+            this._4RCheckBox2.TextLocation_X = 14;
+            this._4RCheckBox2.TextLocation_Y = 4;
+            this._4RCheckBox2.ThreeState = true;
+            this._4RCheckBox2.UseVisualStyleBackColor = true;
+            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this.ClientSize = new System.Drawing.Size(406, 270);
+            this.ClientSize = new System.Drawing.Size(680, 376);
+            this.Controls.Add(this._4RCheckBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.groupBox2);
@@ -834,5 +853,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
         private Components._4RCheckBox _4RCheckBox1;
+        private Components._4RCheckBox _4RCheckBox2;
     }
 }
