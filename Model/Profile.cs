@@ -25,10 +25,9 @@ namespace _4RTools.Model
                     profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByAction(rawObject, profile.AHK));
                     profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.Autopot));
                     profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.AutopotYgg));
-                    profile.StatusAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.StatusAutoBuff));
+                    profile.StatusRecovery = JsonConvert.DeserializeObject<StatusRecovery>(Profile.GetByAction(rawObject, profile.StatusRecovery));
                     profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByAction(rawObject, profile.AutoRefreshSpammer));
-                    profile.ItemsAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.ItemsAutoBuff));
-                    profile.SkillAutoBuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.SkillAutoBuff));
+                    profile.Autobuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.Autobuff));
                     profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.SongMacro));
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                     profile.MacroSwitch = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.MacroSwitch));
@@ -92,9 +91,8 @@ namespace _4RTools.Model
         public Autopot Autopot { get; set; }
         public Autopot AutopotYgg { get; set; }
         public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
-        public AutoBuff StatusAutoBuff { get; set; }
-        public AutoBuff ItemsAutoBuff { get; set; }
-        public AutoBuff SkillAutoBuff { get; set; }
+        public AutoBuff Autobuff { get; set; }
+        public StatusRecovery StatusRecovery { get; set; }
         public Macro SongMacro { get; set;}
         public Macro MacroSwitch { get; set;}
 
@@ -109,9 +107,8 @@ namespace _4RTools.Model
             this.Autopot = new Autopot(Autopot.ACTION_NAME_AUTOPOT);
             this.AutopotYgg = new Autopot(Autopot.ACTION_NAME_AUTOPOT_YGG);
             this.AutoRefreshSpammer = new AutoRefreshSpammer();
-            this.StatusAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_STATUS_AUTOBUFF);
-            this.ItemsAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_ITEM_AUTOBUFF);
-            this.SkillAutoBuff = new AutoBuff(AutoBuff.ACTION_NAME_SKILL_AUTOBUFF);
+            this.Autobuff = new AutoBuff();
+            this.StatusRecovery = new StatusRecovery();
             this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);
             this.MacroSwitch = new Macro(Macro.ACTION_NAME_MACRO_SWITCH, MacroSwitchForm.TOTAL_MACRO_LANES);
             this.AtkDefMode = new ATKDEFMode();

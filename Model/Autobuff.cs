@@ -11,61 +11,21 @@ namespace _4RTools.Model
 
     public class AutoBuff : Action
     {
-        public static string ACTION_NAME_STATUS_AUTOBUFF = "StatusAutoBuff";
-        public static string ACTION_NAME_ITEM_AUTOBUFF = "ItemsAutoBuff";
-        public static string ACTION_NAME_SKILL_AUTOBUFF = "SkillAutoBuff";
+        public static string ACTION_NAME_AUTOBUFF = "AutoBuff";
 
-        public string actionName { get; set; }
         private _4RThread thread;
         public int delay { get; set; } = 1;
-        private int maxBuffListIndexSize { get; set; } = 100;
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
-
-        public AutoBuff(string actionName)
-        {
-            this.actionName = actionName;
-        }
 
         public void Start()
         {
             Stop();
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
-            {
-
-                if(this.actionName == ACTION_NAME_STATUS_AUTOBUFF)
-                    this.thread = RestoreStatusThread(roClient);
-                else
-                    this.thread = AutoBuffThread(roClient);
-
+            {  
+                 this.thread = AutoBuffThread(roClient);
                 _4RThread.Start(this.thread);
             }
-        }
-
-        public _4RThread RestoreStatusThread(Client c)
-        {
-            Client roClient = ClientSingleton.GetClient();
-            _4RThread statusEffectsThread = new _4RThread(_ =>
-            {
-                for (int i = 1; i <= this.maxBuffListIndexSize -1; i++)
-                {
-                    uint currentStatus = c.CurrentBuffStatusCode(i);
-                    EffectStatusIDs status = (EffectStatusIDs)currentStatus;
-                    if (buffMapping.ContainsKey((EffectStatusIDs)currentStatus)) //IF FOR REMOVE STATUS - CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
-                    {
-                        //IF CONTAINS CURRENT STATUS ON DICT
-                        Key key = buffMapping[(EffectStatusIDs)currentStatus];
-                        if (Enum.IsDefined(typeof(EffectStatusIDs), currentStatus))
-                        {
-                            this.useStatusRecovery(key);
-                        }
-                    }
-                }
-                Thread.Sleep(this.delay);
-                return 0;
-            });
-
-            return statusEffectsThread;
         }
 
         public _4RThread AutoBuffThread(Client c)
@@ -74,7 +34,7 @@ namespace _4RTools.Model
             {
                 bool foundQuag = false;
                 Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
-                for (int i = 1; i < this.maxBuffListIndexSize - 1; i++)
+                for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE - 1; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
@@ -90,16 +50,12 @@ namespace _4RTools.Model
                 {
                     if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT ))
                     {
-                        //NOT use Concentration, INC_AGI Scroll or TRUESIGHT when Quagmire is Found
-                        // In Hercules, Quagmire removes TRUESIGHT
+                        break;
                     }
-                    else 
+                    else if(c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
                     {
-                        if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
-                        {
-                            this.useStatusRecovery(item.Value);
-                            Thread.Sleep(10);
-                        }
+                        this.useAutobuff(item.Value);
+                        Thread.Sleep(10);   
                     }
                 }
                 Thread.Sleep(100);
@@ -116,7 +72,7 @@ namespace _4RTools.Model
                 buffMapping.Remove(status);
             }
 
-            if (this.IsValidKey(key))
+            if (FormUtils.IsValidKey(key))
             {
                 buffMapping.Add(status, key);
             }
@@ -138,18 +94,13 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return this.actionName;
+            return ACTION_NAME_AUTOBUFF;
         }
 
-        private void useStatusRecovery(Key key)
+        private void useAutobuff(Key key)
         {
             if((key != Key.None) && !Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
                 Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), key.ToString()), 0);
-        }
-
-        private bool IsValidKey(Key key)
-        {
-            return (key != Key.Back && key != Key.Escape && key != Key.None);
         }
     }
 }
