@@ -32,6 +32,11 @@ namespace _4RTools.Utils
             catch { }
         }
 
+        public static bool IsValidKey(Key key)
+        {
+            return (key != Key.Back && key != Key.Escape && key != Key.None);
+        }
+
         public static void OnKeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
