@@ -183,6 +183,7 @@ namespace _4RTools.Model
             clients.Add(new Client("rtales.bin", 0x00E8E434, 0x00E90C00));
             clients.Add(new Client("Jogar", 0x00E8E434, 0x00E90C00));
             clients.Add(new Client("RagnaRotico",0x00E4CAF4, 0x00E4D768));
+            clients.Add(new Client("BattleOfSEARO",0x00E4CAF4, 0x00E4D768));
             clients.Add(new Client("EasyRO",0x010DCE10, 0x010DF5D8));
             clients.Add(new Client("Jogar",0x0101A700, 0x0101CEB0)); //Portal Kafra
             clients.Add(new Client("ragna4th",0x011D1A04, 0x011D43E8));
@@ -194,7 +195,6 @@ namespace _4RTools.Model
             clients.Add(new Client("BlueRO",0x011D1A04, 0x011D43E8));
             clients.Add(new Client("StreetRO 2.0",0x010DCE10, 0x010D5DA8));
             clients.Add(new Client("Gladius", 0x010DCE10, 0x010DF5D8));
-            clients.Add(new Client("BattleOfSEARO", 0x00E4CAF4, 0x00E461A0));
 
             return clients;
         }

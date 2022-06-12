@@ -41,9 +41,9 @@ namespace _4RTools.Utils
         {
             if (_4RThread != null && _4RThread.thread.IsAlive)
             {
-                try
-                {
-                    _4RThread.thread.Suspend();
+                try { 
+                
+                    _4RThread.thread.Abort();
                 }
                 catch (Exception ex) {
                     Console.WriteLine("[4R Thread Exception] =========== We could not suspend curren thread: " + ex);

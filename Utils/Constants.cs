@@ -20,5 +20,6 @@ namespace _4RTools.Utils
 
         public const int MINIMUM_HP_TO_RECOVER = 20;
         public const int MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK = 1;
+        public const int MAX_BUFF_LIST_INDEX_SIZE = 100;
     }
 }

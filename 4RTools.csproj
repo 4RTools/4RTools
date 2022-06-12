@@ -135,6 +135,7 @@
     <Compile Include="Model\Autopot.cs" />
     <Compile Include="Model\Autobuff.cs" />
     <Compile Include="Model\AutoRefreshSpammer.cs" />
+    <Compile Include="Model\StatusRecovery.cs" />
     <Compile Include="Model\UserPreferences.cs" />
     <Compile Include="Model\Hexed.cs" />
     <Compile Include="Model\Action.cs" />

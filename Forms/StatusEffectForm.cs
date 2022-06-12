@@ -26,16 +26,16 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    if (ProfileSingleton.GetCurrent().StatusAutoBuff.buffMapping.Count > 0){
+                    if (ProfileSingleton.GetCurrent().StatusRecovery.buffMapping.Count > 0){
                         //For Status, the key is the same for each status, so don't matter which status i'm based to update combo box value.
-                        this.txtStatusKey.Text = ProfileSingleton.GetCurrent().StatusAutoBuff.buffMapping[EffectStatusIDs.SILENCE].ToString();
+                        this.txtStatusKey.Text = ProfileSingleton.GetCurrent().StatusRecovery.buffMapping[EffectStatusIDs.SILENCE].ToString();
                     }
                     break;
                 case MessageCode.TURN_OFF:
-                    ProfileSingleton.GetCurrent().StatusAutoBuff.Stop();
+                    ProfileSingleton.GetCurrent().StatusRecovery.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    ProfileSingleton.GetCurrent().StatusAutoBuff.Start();
+                    ProfileSingleton.GetCurrent().StatusRecovery.Start();
                     break;
             }
         }
@@ -44,15 +44,15 @@ namespace _4RTools.Forms
         {
             Key k = (Key)Enum.Parse(typeof(Key), this.txtStatusKey.Text.ToString());
 
-            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.POISON, k);
-            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.SILENCE, k);
-            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.BLIND, k);
-            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.CONFUSION, k);
-            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.HALLUCINATIONWALK, k);
-            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.HALLUCINATION, k);
-            ProfileSingleton.GetCurrent().StatusAutoBuff.AddKeyToBuff(EffectStatusIDs.CURSE, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.POISON, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.SILENCE, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.BLIND, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CONFUSION, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.HALLUCINATIONWALK, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.HALLUCINATION, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CURSE, k);
 
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusAutoBuff);
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
         }
     }
 }

@@ -24,14 +24,14 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().SkillAutoBuff.buffMapping);
+                    Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().Autobuff.buffMapping);
                     this.updateInputValues(buffMappingClone);
                     break;
                 case MessageCode.TURN_OFF:
-                    ProfileSingleton.GetCurrent().SkillAutoBuff.Stop();
+                    ProfileSingleton.GetCurrent().Autobuff.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    ProfileSingleton.GetCurrent().SkillAutoBuff.Start();
+                    ProfileSingleton.GetCurrent().Autobuff.Start();
                     break;
             }
         }
@@ -74,8 +74,8 @@ namespace _4RTools.Forms
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().SkillAutoBuff.AddKeyToBuff(statusID, key);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().SkillAutoBuff);
+                    ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
                 }
             }
             catch { }
