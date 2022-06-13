@@ -3,24 +3,22 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
+using _4RTools.Components;
 using System.Windows.Input;
 
 namespace _4RTools.Forms
 {
     public partial class AHKForm : Form, IObserver
     {
+        KeyConverter _keyConverter = new KeyConverter();
 
         public AHKForm(Subject subject)
         {
             InitializeComponent();
+            this.
             InitializeCheckAsThreeState();
             subject.Attach(this);
-
-            // Default values
-            this.txtSkillTimerKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            this.txtSkillTimerKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            this.txtSkillTimerKey.TextChanged += new EventHandler(this.onSkillTimerKeyChange);
-            this.txtAutoRefreshDelay.ValueChanged += new EventHandler(this.txtAutoRefreshDelayTextChanged);
+            FormUtils.AttachFormToPanel(new SkillTimerForm(subject), panelSkillTimer);
         }
 
         public void Update(ISubject subject)
@@ -37,26 +35,23 @@ namespace _4RTools.Forms
                     }
 
                     this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.ahkDelay.ToString();
-                    this.txtSkillTimerKey.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey.ToString();
-                    this.txtAutoRefreshDelay.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay.ToString();
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AHK.Start();
-                    ProfileSingleton.GetCurrent().AutoRefreshSpammer.Start();
                     break;
                 case MessageCode.TURN_OFF:
                     ProfileSingleton.GetCurrent().AHK.Stop();
-                    ProfileSingleton.GetCurrent().AutoRefreshSpammer.Stop();
                     break;
             }
         }
 
         private void onCheckChange(object sender, EventArgs e)
         {
-            CheckBox checkbox = (CheckBox)sender;
+            _4RCheckBox checkbox = (_4RCheckBox)sender;
 
-            Key key = (Key)new KeyConverter().ConvertFromString(checkbox.Text);
+            Key key = (Key) _keyConverter.ConvertFromString(checkbox.Tag.ToString()) ;
             bool haveMouseClick = checkbox.CheckState == CheckState.Checked ? true : false;
+
 
             if (checkbox.CheckState == CheckState.Checked || checkbox.CheckState == CheckState.Indeterminate)
                 ProfileSingleton.GetCurrent().AHK.AddAHKEntry(checkbox.Name, new KeyConfig(key, haveMouseClick));
@@ -88,46 +83,19 @@ namespace _4RTools.Forms
             catch { }
         }
 
-        private void onSkillTimerKeyChange(object sender, EventArgs e)
-        {
-            Key key = (Key)Enum.Parse(typeof(Key), txtSkillTimerKey.Text.ToString());
-            ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey = key;
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
-        }
-
-        private void txtAutoRefreshDelayTextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
-                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
-            }
-            catch { }
-        }
 
         private void InitializeCheckAsThreeState()
         {
-            foreach (Control c in this.Controls)
-                if (c is CheckBox)
+            foreach (_4RCheckBox check in FormUtils.GetAll(this, typeof(_4RCheckBox)))
+            {
+                if ((check.Name.Split(new[] { "chk" }, StringSplitOptions.None).Length == 2))
                 {
-                    CheckBox check = (CheckBox)c;
-                    if((check.Name.Split(new[] { "chk" }, StringSplitOptions.None).Length == 2)){
-                        check.ThreeState = true;
-                    };
+                    check.ThreeState = true;
+                };
 
-                    if (check.Enabled) { }
-                        //check.CheckStateChanged += onCheckChange;
+                if (check.Enabled)
+                    check.CheckStateChanged += onCheckChange;
                 }
-        }
-
-        private void noclicksample_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void _4RCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

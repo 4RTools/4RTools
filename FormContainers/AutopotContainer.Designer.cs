@@ -33,8 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelStatus = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this._4RCheckBox1 = new _4RTools.Components._4RCheckBox();
             this.SuspendLayout();
             // 
             // panelAutopot
@@ -75,45 +73,12 @@
             this.panelStatus.Size = new System.Drawing.Size(141, 39);
             this.panelStatus.TabIndex = 4;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(538, 309);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "F1";
-            // 
-            // _4RCheckBox1
-            // 
-            this._4RCheckBox1.BoxLocation_X = 3;
-            this._4RCheckBox1.BoxLocation_Y = 2;
-            this._4RCheckBox1.BoxSize = 20;
-            this._4RCheckBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this._4RCheckBox1.Checked = true;
-            this._4RCheckBox1.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this._4RCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._4RCheckBox1.DisplayText = "_4RCheckBox1";
-            this._4RCheckBox1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._4RCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
-            this._4RCheckBox1.Location = new System.Drawing.Point(509, 304);
-            this._4RCheckBox1.Name = "_4RCheckBox1";
-            this._4RCheckBox1.Size = new System.Drawing.Size(27, 25);
-            this._4RCheckBox1.TabIndex = 5;
-            this._4RCheckBox1.Text = "_4RCheckBox1";
-            this._4RCheckBox1.TextLocation_X = 14;
-            this._4RCheckBox1.TextLocation_Y = 4;
-            this._4RCheckBox1.ThreeState = true;
-            this._4RCheckBox1.UseVisualStyleBackColor = true;
-            // 
             // AutopotContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
             this.ClientSize = new System.Drawing.Size(728, 435);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this._4RCheckBox1);
             this.Controls.Add(this.panelStatus);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -123,7 +88,6 @@
             this.Name = "AutopotContainer";
             this.Text = "AutopotContainer";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -134,7 +98,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelStatus;
-        private System.Windows.Forms.Label label1;
-        private Components._4RCheckBox _4RCheckBox1;
     }
 }

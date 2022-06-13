@@ -26,7 +26,7 @@ namespace _4RTools.Model
                     profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.Autopot));
                     profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.AutopotYgg));
                     profile.StatusRecovery = JsonConvert.DeserializeObject<StatusRecovery>(Profile.GetByAction(rawObject, profile.StatusRecovery));
-                    profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByAction(rawObject, profile.AutoRefreshSpammer));
+                    profile.SkillTimer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByAction(rawObject, profile.SkillTimer));
                     profile.Autobuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.Autobuff));
                     profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.SongMacro));
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
@@ -91,7 +91,7 @@ namespace _4RTools.Model
         public AHK AHK { get; set; }
         public Autopot Autopot { get; set; }
         public Autopot AutopotYgg { get; set; }
-        public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
+        public AutoRefreshSpammer SkillTimer { get; set; }
         public AutoBuff Autobuff { get; set; }
         public StatusRecovery StatusRecovery { get; set; }
         public Macro SongMacro { get; set;}
@@ -107,7 +107,7 @@ namespace _4RTools.Model
             this.AHK = new AHK(); 
             this.Autopot = new Autopot(Autopot.ACTION_NAME_AUTOPOT);
             this.AutopotYgg = new Autopot(Autopot.ACTION_NAME_AUTOPOT_YGG);
-            this.AutoRefreshSpammer = new AutoRefreshSpammer();
+            this.SkillTimer = new AutoRefreshSpammer();
             this.Autobuff = new AutoBuff();
             this.StatusRecovery = new StatusRecovery();
             this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);

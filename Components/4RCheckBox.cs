@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using _4RTools.Model;
 
 namespace _4RTools.Components
 {
@@ -73,19 +74,20 @@ namespace _4RTools.Components
 
             Point p = new Point(textX, textY);
             SolidBrush frcolor = new SolidBrush(this.ForeColor);
-            SolidBrush frcolor2 = new SolidBrush(Color.FromArgb(91,55,21));
-            SolidBrush frcolor3 = new SolidBrush(Color.FromArgb(239,181,97));
+            
+            SolidBrush checkedColor = new SolidBrush(ProfileSingleton.GetCurrent().Theme.Controls.CheckBoxChecked);
+            SolidBrush inderteminateColor = new SolidBrush(ProfileSingleton.GetCurrent().Theme.Controls.CheckBoxInderteminate);
             e.Graphics.DrawString(text, this.Font, frcolor, p);
             Rectangle rc = new Rectangle(boxlocatx, boxlocaty, boxsize, boxsize);
             //drawing check box
-
+            
             if(this.CheckState == CheckState.Indeterminate)
             {
-                e.Graphics.FillRectangle(frcolor3, ClientRectangle);
+                e.Graphics.FillRectangle(inderteminateColor, ClientRectangle);
             }
             else if(this.CheckState == CheckState.Checked)
             {
-                e.Graphics.FillRectangle(frcolor2, ClientRectangle);
+                e.Graphics.FillRectangle(checkedColor, ClientRectangle);
             }
             else
             {

@@ -89,6 +89,19 @@ namespace _4RTools.Utils
             }
         }
 
+        public static void AttachFormToPanel(Form f, Panel p)
+        {
+            Form childForm = f;
+            p.Controls.Clear();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            p.Controls.Add(childForm);
+            p.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         public static void ResetForm(Form form)
         {
             resetForm(form.Controls);

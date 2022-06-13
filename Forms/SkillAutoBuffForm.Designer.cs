@@ -1357,7 +1357,7 @@
             this.panel18.Font = new System.Drawing.Font("Lucida Sans", 14.75F);
             this.panel18.Location = new System.Drawing.Point(-1, -1);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(213, 39);
+            this.panel18.Size = new System.Drawing.Size(117, 39);
             this.panel18.TabIndex = 192;
             // 
             // label9

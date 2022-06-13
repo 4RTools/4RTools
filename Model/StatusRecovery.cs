@@ -90,5 +90,9 @@ namespace _4RTools.Model
                 Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), key.ToString()), 0);
         }
 
+        public void Persist()
+        {
+            ProfileSingleton.SetConfiguration(this);
+        }
     }
 }

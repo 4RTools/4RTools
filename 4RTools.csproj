@@ -142,6 +142,12 @@
     <Compile Include="Forms\SkillAutoBuffForm.Designer.cs">
       <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SkillTimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SkillTimerForm.Designer.cs">
+      <DependentUpon>SkillTimerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StuffAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SkillAutoBuffForm.resx">
       <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SkillTimerForm.resx">
+      <DependentUpon>SkillTimerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StuffAutoBuffForm.resx">
       <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>

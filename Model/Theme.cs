@@ -38,6 +38,10 @@ namespace _4RTools.Model
 
         //Start ========== Checkbox
 
+        public Color CheckBoxChecked { get; set; } = ColorTranslator.FromHtml("#5b3715");
+        public Color CheckBoxInderteminate { get; set; } = ColorTranslator.FromHtml("#FF00FF");
+
+
         //End ========== Checkbox
     }
 
