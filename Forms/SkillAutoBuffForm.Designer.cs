@@ -582,7 +582,7 @@
             this.in116.BorderSize = 2;
             this.in116.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in116.ForeColor = System.Drawing.Color.DimGray;
-            this.in116.InputName = "_4RTextInput";
+            this.in116.InputName = "in116";
             this.in116.Location = new System.Drawing.Point(53, 117);
             this.in116.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in116.Name = "in116";
@@ -598,7 +598,7 @@
             this.in115.BorderSize = 2;
             this.in115.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in115.ForeColor = System.Drawing.Color.DimGray;
-            this.in115.InputName = "_4RTextInput";
+            this.in115.InputName = "in115";
             this.in115.Location = new System.Drawing.Point(53, 85);
             this.in115.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in115.Name = "in115";
@@ -614,7 +614,7 @@
             this.in3.BorderSize = 2;
             this.in3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in3.ForeColor = System.Drawing.Color.DimGray;
-            this.in3.InputName = "_4RTextInput";
+            this.in3.InputName = "in3";
             this.in3.Location = new System.Drawing.Point(53, 53);
             this.in3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in3.Name = "in3";
@@ -720,7 +720,7 @@
             this.in114.BorderSize = 2;
             this.in114.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in114.ForeColor = System.Drawing.Color.DimGray;
-            this.in114.InputName = "_4RTextInput";
+            this.in114.InputName = "in114";
             this.in114.Location = new System.Drawing.Point(48, 85);
             this.in114.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in114.Name = "in114";
@@ -736,7 +736,7 @@
             this.in120.BorderSize = 2;
             this.in120.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in120.ForeColor = System.Drawing.Color.DimGray;
-            this.in120.InputName = "_4RTextInput";
+            this.in120.InputName = "in120";
             this.in120.Location = new System.Drawing.Point(48, 117);
             this.in120.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in120.Name = "in120";
@@ -752,7 +752,7 @@
             this.in181.BorderSize = 2;
             this.in181.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in181.ForeColor = System.Drawing.Color.DimGray;
-            this.in181.InputName = "_4RTextInput";
+            this.in181.InputName = "in181";
             this.in181.Location = new System.Drawing.Point(48, 53);
             this.in181.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in181.Name = "in181";
@@ -816,7 +816,7 @@
             this.in147.BorderSize = 2;
             this.in147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in147.ForeColor = System.Drawing.Color.DimGray;
-            this.in147.InputName = "_4RTextInput";
+            this.in147.InputName = "in147";
             this.in147.Location = new System.Drawing.Point(283, 113);
             this.in147.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in147.Name = "in147";
@@ -832,7 +832,7 @@
             this.in23.BorderSize = 2;
             this.in23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in23.ForeColor = System.Drawing.Color.DimGray;
-            this.in23.InputName = "_4RTextInput";
+            this.in23.InputName = "in23";
             this.in23.Location = new System.Drawing.Point(182, 113);
             this.in23.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in23.Name = "in23";
@@ -848,7 +848,7 @@
             this.in30.BorderSize = 2;
             this.in30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in30.ForeColor = System.Drawing.Color.DimGray;
-            this.in30.InputName = "_4RTextInput";
+            this.in30.InputName = "in30";
             this.in30.Location = new System.Drawing.Point(80, 113);
             this.in30.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in30.Name = "in30";
@@ -864,7 +864,7 @@
             this.in188.BorderSize = 2;
             this.in188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in188.ForeColor = System.Drawing.Color.DimGray;
-            this.in188.InputName = "_4RTextInput";
+            this.in188.InputName = "in188";
             this.in188.Location = new System.Drawing.Point(283, 81);
             this.in188.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in188.Name = "in188";
@@ -880,7 +880,7 @@
             this.in25.BorderSize = 2;
             this.in25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in25.ForeColor = System.Drawing.Color.DimGray;
-            this.in25.InputName = "_4RTextInput";
+            this.in25.InputName = "in25";
             this.in25.Location = new System.Drawing.Point(283, 49);
             this.in25.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in25.Name = "in25";
@@ -896,7 +896,7 @@
             this.in117.BorderSize = 2;
             this.in117.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in117.ForeColor = System.Drawing.Color.DimGray;
-            this.in117.InputName = "_4RTextInput";
+            this.in117.InputName = "in117";
             this.in117.Location = new System.Drawing.Point(182, 81);
             this.in117.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in117.Name = "in117";
@@ -912,7 +912,7 @@
             this.in118.BorderSize = 2;
             this.in118.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in118.ForeColor = System.Drawing.Color.DimGray;
-            this.in118.InputName = "_4RTextInput";
+            this.in118.InputName = "in118";
             this.in118.Location = new System.Drawing.Point(182, 49);
             this.in118.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in118.Name = "in118";
@@ -928,7 +928,7 @@
             this.in26.BorderSize = 2;
             this.in26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in26.ForeColor = System.Drawing.Color.DimGray;
-            this.in26.InputName = "_4RTextInput";
+            this.in26.InputName = "in26";
             this.in26.Location = new System.Drawing.Point(80, 81);
             this.in26.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in26.Name = "in26";
@@ -944,7 +944,7 @@
             this.in24.BorderSize = 2;
             this.in24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in24.ForeColor = System.Drawing.Color.DimGray;
-            this.in24.InputName = "_4RTextInput";
+            this.in24.InputName = "in24";
             this.in24.Location = new System.Drawing.Point(80, 49);
             this.in24.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in24.Name = "in24";
@@ -1226,7 +1226,7 @@
             this.in186.BorderSize = 2;
             this.in186.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in186.ForeColor = System.Drawing.Color.DimGray;
-            this.in186.InputName = "_4RTextInput";
+            this.in186.InputName = "in186";
             this.in186.Location = new System.Drawing.Point(150, 85);
             this.in186.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in186.Name = "in186";
@@ -1242,7 +1242,7 @@
             this.in65.BorderSize = 2;
             this.in65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in65.ForeColor = System.Drawing.Color.DimGray;
-            this.in65.InputName = "_4RTextInput";
+            this.in65.InputName = "in65";
             this.in65.Location = new System.Drawing.Point(150, 53);
             this.in65.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in65.Name = "in65";
@@ -1258,7 +1258,7 @@
             this.in198.BorderSize = 2;
             this.in198.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in198.ForeColor = System.Drawing.Color.DimGray;
-            this.in198.InputName = "_4RTextInput";
+            this.in198.InputName = "in198";
             this.in198.Location = new System.Drawing.Point(49, 85);
             this.in198.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in198.Name = "in198";
@@ -1274,7 +1274,7 @@
             this.in31.BorderSize = 2;
             this.in31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in31.ForeColor = System.Drawing.Color.DimGray;
-            this.in31.InputName = "_4RTextInput";
+            this.in31.InputName = "in31";
             this.in31.Location = new System.Drawing.Point(49, 53);
             this.in31.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in31.Name = "in31";
@@ -1324,7 +1324,7 @@
             this.in208.BorderSize = 2;
             this.in208.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in208.ForeColor = System.Drawing.Color.DimGray;
-            this.in208.InputName = "_4RTextInput";
+            this.in208.InputName = "in208";
             this.in208.Location = new System.Drawing.Point(49, 85);
             this.in208.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in208.Name = "in208";
@@ -1340,7 +1340,7 @@
             this.in206.BorderSize = 2;
             this.in206.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in206.ForeColor = System.Drawing.Color.DimGray;
-            this.in206.InputName = "_4RTextInput";
+            this.in206.InputName = "in206";
             this.in206.Location = new System.Drawing.Point(49, 53);
             this.in206.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in206.Name = "in206";
@@ -1446,7 +1446,7 @@
             this.in21.BorderSize = 2;
             this.in21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in21.ForeColor = System.Drawing.Color.DimGray;
-            this.in21.InputName = "_4RTextInput";
+            this.in21.InputName = "in21";
             this.in21.Location = new System.Drawing.Point(53, 51);
             this.in21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in21.Name = "in21";
@@ -1462,7 +1462,7 @@
             this.in20.BorderSize = 2;
             this.in20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in20.ForeColor = System.Drawing.Color.DimGray;
-            this.in20.InputName = "_4RTextInput";
+            this.in20.InputName = "in20";
             this.in20.Location = new System.Drawing.Point(53, 83);
             this.in20.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in20.Name = "in20";
@@ -1478,7 +1478,7 @@
             this.in9.BorderSize = 2;
             this.in9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.in9.ForeColor = System.Drawing.Color.DimGray;
-            this.in9.InputName = "_4RTextInput";
+            this.in9.InputName = "in9";
             this.in9.Location = new System.Drawing.Point(53, 115);
             this.in9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.in9.Name = "in9";

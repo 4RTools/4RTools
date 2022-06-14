@@ -22,8 +22,8 @@ namespace _4RTools.Forms
                 this.picBoxSP.Image = Properties.Resources.Yggdrasil;
             }
 
-            txtHpKey.TextChanged += new EventHandler(this.onHpTextChange);
-            txtSPKey.TextChanged += new EventHandler(this.onSpTextChange);
+            txtHpKey._TextChanged += new EventHandler(this.onHpTextChange);
+            txtSPKey._TextChanged += new EventHandler(this.onSpTextChange);
         }
 
         public void Update(ISubject subject)

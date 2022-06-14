@@ -100,6 +100,7 @@
     <Compile Include="Components\4RTextInput.Designer.cs">
       <DependentUpon>4RTextInput.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContainers\AutobuffContainer.cs" />
     <Compile Include="FormContainers\AutopotContainer.cs">
       <SubType>Form</SubType>
     </Compile>

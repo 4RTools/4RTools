@@ -52,6 +52,20 @@ namespace _4RTools.Utils
                                       .Where(c => c.GetType() == type);
         }
 
+        public static Control GetByName(Control control, Type type, string name)
+        {
+            var controls = control.Controls.Cast<Control>();
+            return GetAll(control, type).Where(c => c.Name == name).FirstOrDefault();
+        }
+
+        public static void ResetTextInputInForm(Control c)
+        {
+            foreach (_4RTextInput textBox in GetAll(c, typeof(_4RTextInput)))
+            {
+                textBox.Value = Key.None.ToString(); 
+            }
+        }
+
         private static void resetForm(ControlCollection controls)
         {
             foreach (Control control in controls)

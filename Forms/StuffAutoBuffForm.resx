@@ -323,17 +323,6 @@
         gIBgzm0P4NQNurdv4BpHElc9sYHG5wkSRNC4m/cCwnWlT2cJEqtJk88jggi8ypIlxYcBAQA7
 </value>
   </data>
-  <data name="pictureBox20.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhGAAYAIQUAOuhcW5GNF90Ue1kR75DMH6UZvvLnPKFWfPInsOQev/AjICjh//7yPvFi8V6YM+F
-        XP/erO6zhY1OOdqXc////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBF
-        Mi4wAwEBAAAh+QQBAAAUACwAAAAAGAAYAAAI4QApCBxIsKDBgwgJAlj44IGEhAcXMmAAgUAEAw8hClzY
-        YCLFBhczQgTAoECCBhBSgsSokeTEAwcayAQpIQDEAwQoplRQIEKEARFqJnwwgEDKlBEE+LxoE6EEnUch
-        JPWJsanBpwWiQkDgU0IEBCILPj3qMMKBARN8NhB69YBUqRIkACBAAIBaq2IhpF3KV21YghL0TpgwAO3g
-        w2uHHiZseIKACYmdPnAsYMHiwZElD358OfNBCZMHF3DgYHAChxpBk3YwejXq1A9Wy34N24GA26Rpw27I
-        m63GgQHi1sT7u7jGgAA7
-</value>
-  </data>
   <data name="pictureBox21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhGAAYAIQUAI9MlHs5gXpBMs7M4P/0vO3t/6+nwWRed+jHpZWLp1UlGqNfqJFqY7qZg3pvjNGw
@@ -504,6 +493,17 @@
         t2tVn1v5lk32cVhcs0sPDoPIWCNXYVwz6RMGeKBZwxnnda2rGbFIghc3inZ4uOvYn5r1geN1Th9Ijl0/
         W97YepFq0Zz1nSaIlpe+QrYMLSq0kV5d2QIBKF/OvLnz5wQB7JOenPr059KZT7++Hfvygcq3VxEHj/16
         +OzZzZfXjl68egABAQA7
+</value>
+  </data>
+  <data name="pictureBox25.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhGAAYAIQUAOuhcW5GNF90Ue1kR75DMH6UZvvLnPKFWfPInsOQev/AjICjh//7yPvFi8V6YM+F
+        XP/erO6zhY1OOdqXc////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBF
+        Mi4wAwEBAAAh+QQBAAAUACwAAAAAGAAYAAAI4QApCBxIsKDBgwgJAlj44IGEhAcXMmAAgUAEAw8hClzY
+        YCLFBhczQgTAoECCBhBSgsSokeTEAwcayAQpIQDEAwQoplRQIEKEARFqJnwwgEDKlBEE+LxoE6EEnUch
+        JPWJsanBpwWiQkDgU0IEBCILPj3qMMKBARN8NhB69YBUqRIkACBAAIBaq2IhpF3KV21YghL0TpgwAO3g
+        w2uHHiZseIKACYmdPnAsYMHiwZElD358OfNBCZMHF3DgYHAChxpBk3YwejXq1A9Wy34N24GA26Rpw27I
+        m63GgQHi1sT7u7jGgAA7
 </value>
   </data>
 </root>
