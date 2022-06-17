@@ -43,7 +43,7 @@ namespace _4RTools.Utils
             {
                 try { 
                 
-                    _4RThread.thread.Abort();
+                    _4RThread.thread.Suspend();
                 }
                 catch (Exception ex) {
                     Console.WriteLine("[4R Thread Exception] =========== We could not suspend curren thread: " + ex);
