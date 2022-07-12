@@ -197,6 +197,7 @@ namespace _4RTools.Model
             clients.Add(new Client("Gladius", 0x010DCE10, 0x010DF5D8));
             clients.Add(new Client("AllureWar", 0x01144144, 0x01146A18));
             clients.Add(new Client("AngelingRO", 0x010DCE10, 0x010DF5D8));
+            clients.Add(new Client("Runa Ro", 0x00E73D3C, 0x00E749D8));
 
             return clients;
         }
