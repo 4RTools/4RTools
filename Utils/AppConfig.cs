@@ -10,6 +10,6 @@ namespace _4RTools.Utils
         public static string Website = "https://www.4rtools.com.br";
         public static string GithubLink = "https://github.com/4RTools/4Rtools";
         public static string DiscordLink = "https://discord.gg/AtZ2fJVtBz";
-        public static string Version = "v1.7.4";
+        public static string Version = "v1.7.5";
     }
 }
