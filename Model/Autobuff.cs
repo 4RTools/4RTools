@@ -32,34 +32,38 @@ namespace _4RTools.Model
         {
             _4RThread autobuffItemThread = new _4RThread(_ =>
             {
+
                 bool foundQuag = false;
                 Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
                 for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE - 1; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
+                    Console.WriteLine("Removeu ======== " + currentStatus);
                     if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                     {
                         bmClone.Remove(status);
                     }
 
-                    if(status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
-
+                    if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
                 }
+
                 foreach (var item in bmClone)
                 {
-                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT ))
+                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT))
                     {
                         break;
                     }
-                    else if(c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
+                    else if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
                     {
                         this.useAutobuff(item.Value);
-                        Thread.Sleep(10);   
+                        Thread.Sleep(300);
                     }
                 }
+
                 Thread.Sleep(100);
                 return 0;
+
             });
 
             return autobuffItemThread;

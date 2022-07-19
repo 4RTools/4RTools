@@ -82,6 +82,12 @@
     <Compile Include="Forms\ATKDEFForm.Designer.cs">
       <DependentUpon>ATKDEFForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ClientUpdaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientUpdaterForm.Designer.cs">
+      <DependentUpon>ClientUpdaterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MacroSongForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ATKDEFForm.resx">
       <DependentUpon>ATKDEFForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientUpdaterForm.resx">
+      <DependentUpon>ClientUpdaterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MacroSongForm.resx">
       <DependentUpon>MacroSongForm.cs</DependentUpon>
