@@ -39,7 +39,6 @@ namespace _4RTools.Model
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
-                    Console.WriteLine("Removeu ======== " + currentStatus);
                     if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                     {
                         bmClone.Remove(status);
@@ -57,7 +56,7 @@ namespace _4RTools.Model
                     else if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
                     {
                         this.useAutobuff(item.Value);
-                        Thread.Sleep(300);
+                        Thread.Sleep(10);
                     }
                 }
 
