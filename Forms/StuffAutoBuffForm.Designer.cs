@@ -60,6 +60,11 @@
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.in241 = new System.Windows.Forms.TextBox();
             this.in242 = new System.Windows.Forms.TextBox();
             this.in243 = new System.Windows.Forms.TextBox();
@@ -89,6 +94,33 @@
             this.in92 = new System.Windows.Forms.TextBox();
             this.in91 = new System.Windows.Forms.TextBox();
             this.in90 = new System.Windows.Forms.TextBox();
+            this.in480 = new System.Windows.Forms.TextBox();
+            this.in481 = new System.Windows.Forms.TextBox();
+            this.in484 = new System.Windows.Forms.TextBox();
+            this.in1170 = new System.Windows.Forms.TextBox();
+            this.in1171 = new System.Windows.Forms.TextBox();
+            this.in662 = new System.Windows.Forms.TextBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.in491 = new System.Windows.Forms.TextBox();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.in492 = new System.Windows.Forms.TextBox();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.in493 = new System.Windows.Forms.TextBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.in494 = new System.Windows.Forms.TextBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.in495 = new System.Windows.Forms.TextBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.in496 = new System.Windows.Forms.TextBox();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.in1154 = new System.Windows.Forms.TextBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.in319 = new System.Windows.Forms.TextBox();
+            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.in320 = new System.Windows.Forms.TextBox();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.in322 = new System.Windows.Forms.TextBox();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -118,6 +150,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -476,6 +524,66 @@
             this.pictureBox29.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox29, "Abrasive");
             // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.BackgroundImage")));
+            this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox25.Location = new System.Drawing.Point(274, 264);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox25.TabIndex = 183;
+            this.pictureBox25.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox25, "Abrasive");
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox30.BackgroundImage")));
+            this.pictureBox30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox30.Location = new System.Drawing.Point(27, 291);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox30.TabIndex = 185;
+            this.pictureBox30.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox30, "Abrasive");
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
+            this.pictureBox31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox31.Location = new System.Drawing.Point(151, 291);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox31.TabIndex = 187;
+            this.pictureBox31.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox31, "Abrasive");
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
+            this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox32.Location = new System.Drawing.Point(274, 291);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox32.TabIndex = 189;
+            this.pictureBox32.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox32, "Abrasive");
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.BackgroundImage")));
+            this.pictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox33.Location = new System.Drawing.Point(27, 319);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox33.TabIndex = 191;
+            this.pictureBox33.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox33, "Abrasive");
+            // 
             // in241
             // 
             this.in241.Location = new System.Drawing.Point(67, 14);
@@ -679,13 +787,289 @@
             this.in90.Size = new System.Drawing.Size(55, 20);
             this.in90.TabIndex = 178;
             // 
+            // in480
+            // 
+            this.in480.Location = new System.Drawing.Point(314, 266);
+            this.in480.Name = "in480";
+            this.in480.Size = new System.Drawing.Size(55, 20);
+            this.in480.TabIndex = 184;
+            // 
+            // in481
+            // 
+            this.in481.Location = new System.Drawing.Point(67, 295);
+            this.in481.Name = "in481";
+            this.in481.Size = new System.Drawing.Size(55, 20);
+            this.in481.TabIndex = 186;
+            // 
+            // in484
+            // 
+            this.in484.Location = new System.Drawing.Point(191, 295);
+            this.in484.Name = "in484";
+            this.in484.Size = new System.Drawing.Size(55, 20);
+            this.in484.TabIndex = 188;
+            // 
+            // in1170
+            // 
+            this.in1170.Location = new System.Drawing.Point(314, 295);
+            this.in1170.Name = "in1170";
+            this.in1170.Size = new System.Drawing.Size(55, 20);
+            this.in1170.TabIndex = 190;
+            // 
+            // in1171
+            // 
+            this.in1171.Location = new System.Drawing.Point(67, 321);
+            this.in1171.Name = "in1171";
+            this.in1171.Size = new System.Drawing.Size(55, 20);
+            this.in1171.TabIndex = 192;
+            // 
+            // in662
+            // 
+            this.in662.Location = new System.Drawing.Point(191, 321);
+            this.in662.Name = "in662";
+            this.in662.Size = new System.Drawing.Size(55, 20);
+            this.in662.TabIndex = 194;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox34.BackgroundImage")));
+            this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox34.Location = new System.Drawing.Point(151, 319);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox34.TabIndex = 193;
+            this.pictureBox34.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox34, "Abrasive");
+            // 
+            // in491
+            // 
+            this.in491.Location = new System.Drawing.Point(314, 321);
+            this.in491.Name = "in491";
+            this.in491.Size = new System.Drawing.Size(55, 20);
+            this.in491.TabIndex = 196;
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox35.BackgroundImage")));
+            this.pictureBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox35.Location = new System.Drawing.Point(274, 319);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox35.TabIndex = 195;
+            this.pictureBox35.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox35, "Abrasive");
+            // 
+            // in492
+            // 
+            this.in492.Location = new System.Drawing.Point(67, 351);
+            this.in492.Name = "in492";
+            this.in492.Size = new System.Drawing.Size(55, 20);
+            this.in492.TabIndex = 198;
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox36.BackgroundImage")));
+            this.pictureBox36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox36.Location = new System.Drawing.Point(27, 347);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox36.TabIndex = 197;
+            this.pictureBox36.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox36, "Abrasive");
+            // 
+            // in493
+            // 
+            this.in493.Location = new System.Drawing.Point(191, 351);
+            this.in493.Name = "in493";
+            this.in493.Size = new System.Drawing.Size(55, 20);
+            this.in493.TabIndex = 200;
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox37.BackgroundImage")));
+            this.pictureBox37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox37.Location = new System.Drawing.Point(151, 347);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox37.TabIndex = 199;
+            this.pictureBox37.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox37, "Abrasive");
+            // 
+            // in494
+            // 
+            this.in494.Location = new System.Drawing.Point(314, 351);
+            this.in494.Name = "in494";
+            this.in494.Size = new System.Drawing.Size(55, 20);
+            this.in494.TabIndex = 202;
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.BackgroundImage")));
+            this.pictureBox38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox38.Location = new System.Drawing.Point(274, 347);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox38.TabIndex = 201;
+            this.pictureBox38.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox38, "Abrasive");
+            // 
+            // in495
+            // 
+            this.in495.Location = new System.Drawing.Point(67, 379);
+            this.in495.Name = "in495";
+            this.in495.Size = new System.Drawing.Size(55, 20);
+            this.in495.TabIndex = 204;
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox39.BackgroundImage")));
+            this.pictureBox39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox39.Location = new System.Drawing.Point(27, 375);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox39.TabIndex = 203;
+            this.pictureBox39.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox39, "Abrasive");
+            // 
+            // in496
+            // 
+            this.in496.Location = new System.Drawing.Point(191, 379);
+            this.in496.Name = "in496";
+            this.in496.Size = new System.Drawing.Size(55, 20);
+            this.in496.TabIndex = 206;
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox40.BackgroundImage")));
+            this.pictureBox40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox40.Location = new System.Drawing.Point(151, 375);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox40.TabIndex = 205;
+            this.pictureBox40.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox40, "Abrasive");
+            // 
+            // in1154
+            // 
+            this.in1154.Location = new System.Drawing.Point(314, 407);
+            this.in1154.Name = "in1154";
+            this.in1154.Size = new System.Drawing.Size(55, 20);
+            this.in1154.TabIndex = 212;
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.BackgroundImage")));
+            this.pictureBox41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox41.Location = new System.Drawing.Point(274, 403);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox41.TabIndex = 211;
+            this.pictureBox41.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox41, "Abrasive");
+            // 
+            // in319
+            // 
+            this.in319.Location = new System.Drawing.Point(191, 407);
+            this.in319.Name = "in319";
+            this.in319.Size = new System.Drawing.Size(55, 20);
+            this.in319.TabIndex = 210;
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox42.BackgroundImage")));
+            this.pictureBox42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox42.Location = new System.Drawing.Point(151, 403);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox42.TabIndex = 209;
+            this.pictureBox42.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox42, "Abrasive");
+            // 
+            // in320
+            // 
+            this.in320.Location = new System.Drawing.Point(67, 407);
+            this.in320.Name = "in320";
+            this.in320.Size = new System.Drawing.Size(55, 20);
+            this.in320.TabIndex = 208;
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox43.BackgroundImage")));
+            this.pictureBox43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox43.Location = new System.Drawing.Point(27, 403);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox43.TabIndex = 207;
+            this.pictureBox43.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox43, "Abrasive");
+            // 
+            // in322
+            // 
+            this.in322.Location = new System.Drawing.Point(314, 379);
+            this.in322.Name = "in322";
+            this.in322.Size = new System.Drawing.Size(55, 20);
+            this.in322.TabIndex = 214;
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox44.BackgroundImage")));
+            this.pictureBox44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox44.Location = new System.Drawing.Point(274, 375);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox44.TabIndex = 213;
+            this.pictureBox44.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox44, "Abrasive");
+            // 
             // StuffAutoBuffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(398, 268);
+            this.ClientSize = new System.Drawing.Size(398, 466);
+            this.Controls.Add(this.in322);
+            this.Controls.Add(this.pictureBox44);
+            this.Controls.Add(this.in1154);
+            this.Controls.Add(this.pictureBox41);
+            this.Controls.Add(this.in319);
+            this.Controls.Add(this.pictureBox42);
+            this.Controls.Add(this.in320);
+            this.Controls.Add(this.pictureBox43);
+            this.Controls.Add(this.in496);
+            this.Controls.Add(this.pictureBox40);
+            this.Controls.Add(this.in495);
+            this.Controls.Add(this.pictureBox39);
+            this.Controls.Add(this.in494);
+            this.Controls.Add(this.pictureBox38);
+            this.Controls.Add(this.in493);
+            this.Controls.Add(this.pictureBox37);
+            this.Controls.Add(this.in492);
+            this.Controls.Add(this.pictureBox36);
+            this.Controls.Add(this.in491);
+            this.Controls.Add(this.pictureBox35);
+            this.Controls.Add(this.in662);
+            this.Controls.Add(this.pictureBox34);
+            this.Controls.Add(this.in1171);
+            this.Controls.Add(this.pictureBox33);
+            this.Controls.Add(this.in1170);
+            this.Controls.Add(this.pictureBox32);
+            this.Controls.Add(this.in484);
+            this.Controls.Add(this.pictureBox31);
+            this.Controls.Add(this.in481);
+            this.Controls.Add(this.pictureBox30);
+            this.Controls.Add(this.in480);
+            this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.in92);
             this.Controls.Add(this.pictureBox27);
             this.Controls.Add(this.in91);
@@ -776,6 +1160,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -841,5 +1241,37 @@
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.TextBox in90;
         private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.TextBox in480;
+        private System.Windows.Forms.TextBox in481;
+        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.TextBox in484;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.TextBox in1170;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private System.Windows.Forms.TextBox in1171;
+        private System.Windows.Forms.PictureBox pictureBox33;
+        private System.Windows.Forms.TextBox in662;
+        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.TextBox in491;
+        private System.Windows.Forms.PictureBox pictureBox35;
+        private System.Windows.Forms.TextBox in492;
+        private System.Windows.Forms.PictureBox pictureBox36;
+        private System.Windows.Forms.TextBox in493;
+        private System.Windows.Forms.PictureBox pictureBox37;
+        private System.Windows.Forms.TextBox in494;
+        private System.Windows.Forms.PictureBox pictureBox38;
+        private System.Windows.Forms.TextBox in495;
+        private System.Windows.Forms.PictureBox pictureBox39;
+        private System.Windows.Forms.TextBox in496;
+        private System.Windows.Forms.PictureBox pictureBox40;
+        private System.Windows.Forms.TextBox in1154;
+        private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.TextBox in319;
+        private System.Windows.Forms.PictureBox pictureBox42;
+        private System.Windows.Forms.TextBox in320;
+        private System.Windows.Forms.PictureBox pictureBox43;
+        private System.Windows.Forms.TextBox in322;
+        private System.Windows.Forms.PictureBox pictureBox44;
     }
 }
