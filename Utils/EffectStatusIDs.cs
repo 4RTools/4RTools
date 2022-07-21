@@ -53,6 +53,8 @@ namespace _4RTools.Utils
         AUTOBERSERK = 132,
         AURA_NINJA = 208,
         PEEL_CHANGE = 206,
+        COMBAT_PILL = 662,
+        ENCHANT_BLADE = 316,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
@@ -93,5 +95,26 @@ namespace _4RTools.Utils
         //Scrolls
         INC_AGI = 12,
         BLESSING = 10,
+
+        //3th stuffs
+        HP_INCREASE_POTION_LARGE = 480,
+        SP_INCREASE_POTION_LARGE = 481,
+        ENRICH_CELERMINE_JUICE = 484,
+        RED_HERB_ACTIVATOR = 1170,
+        BLUE_HERB_ACTIVATOR = 1171,
+
+        //3th foods
+        STR_3RD_FOOD = 491,
+        INT_3RD_FOOD = 492,
+        VIT_3RD_FOOD = 493,
+        DEX_3RD_FOOD = 494,
+        AGI_3RD_FOOD = 495,
+        LUK_3RD_FOOD = 496,
+
+        //Rune Knight Runes
+        OTHILA = 322,
+        HAGALAZ = 320,
+        THURISAZ = 319,
+        LUX_AMINA = 1154,
     }
 }
