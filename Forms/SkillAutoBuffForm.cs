@@ -27,12 +27,6 @@ namespace _4RTools.Forms
                     Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().Autobuff.buffMapping);
                     this.updateInputValues(buffMappingClone);
                     break;
-                case MessageCode.TURN_OFF:
-                    ProfileSingleton.GetCurrent().Autobuff.Stop();
-                    break;
-                case MessageCode.TURN_ON:
-                    ProfileSingleton.GetCurrent().Autobuff.Start();
-                    break;
             }
         }
 

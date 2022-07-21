@@ -6,6 +6,31 @@ using System.Windows.Forms;
 
 namespace _4RTools.Model
 {
+
+    public class ClientDTO
+    {
+        public string name { get; set; }
+        public string description { get; set; }
+        public string hpAddress { get; set; }
+        public string nameAddress { get; set; }
+    }
+
+
+    public sealed class ClientListSingleton
+    {
+        private static List<Client> clients = new List<Client>();
+        
+        public static void AddClient(Client c)
+        {
+            clients.Add(c);
+        }
+
+        public static List<Client> GetAll()
+        {
+            return clients;
+        }
+    }
+
     public sealed class ClientSingleton
     {
         private static Client client;
@@ -37,7 +62,7 @@ namespace _4RTools.Model
         private int statusBufferAddress { get; set; }
         private int _num = 0;
 
-        private Client(string execName, int currentHPBaseAddress, int currentNameAddress)
+        public Client(string execName, int currentHPBaseAddress, int currentNameAddress)
         {
             this.currentNameAddress = currentNameAddress;
             this.currentHPBaseAddress = currentHPBaseAddress;
@@ -164,7 +189,7 @@ namespace _4RTools.Model
         public Client GetClientByProcess(string processName)
         {
        
-            foreach(Client c in GetAll())
+            foreach(Client c in ClientListSingleton.GetAll())
             {
                 if (c.execName == processName)
                 {
@@ -174,33 +199,5 @@ namespace _4RTools.Model
             }
             return null;
         }
-
-
-        private static List<Client> GetAll()
-        {
-            List<Client> clients = new List<Client>();
-
-            clients.Add(new Client("rtales.bin", 0x00E8E434, 0x00E90C00));
-            clients.Add(new Client("Jogar", 0x00E8E434, 0x00E90C00));
-            clients.Add(new Client("RagnaRotico",0x00E4CAF4, 0x00E4D768));
-            clients.Add(new Client("BattleOfSEARO",0x00E4CAF4, 0x00E4D768));
-            clients.Add(new Client("EasyRO",0x010DCE10, 0x010DF5D8));
-            clients.Add(new Client("Jogar",0x0101A700, 0x0101CEB0)); //Portal Kafra
-            clients.Add(new Client("ragna4th",0x011D1A04, 0x011D43E8));
-            clients.Add(new Client("ROZero",0x00F4942C, 0x00F4BD70));
-            clients.Add(new Client("MiracleRO", 0x00E4CAF4, 0x00E4D768));
-            clients.Add(new Client("PrimeRO",0x011D0A14, 0x011D33F8));
-            clients.Add(new Client("NR_RO_4TH",0x011D0A14, 0x011C9684));
-            clients.Add(new Client("Ragnarok", 0x011D0A14, 0x011D33F8)); //RagnaHistory
-            clients.Add(new Client("BlueRO",0x011D1A04, 0x011D43E8));
-            clients.Add(new Client("StreetRO 2.0",0x010DCE10, 0x010D5DA8));
-            clients.Add(new Client("Gladius", 0x010DCE10, 0x010DF5D8));
-            clients.Add(new Client("AllureWar", 0x01144144, 0x01146A18));
-            clients.Add(new Client("AngelingRO", 0x010DCE10, 0x010DF5D8));
-            clients.Add(new Client("Runa Ro", 0x00E73D3C, 0x00E749D8));
-
-            return clients;
-        }
-
     }
 }

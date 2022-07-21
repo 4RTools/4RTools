@@ -14,7 +14,7 @@ namespace _4RTools
             // Application app = new Application();
             // app.IsMdiContainer = true;
 
-            Forms.Container app = new Forms.Container();
+            Forms.ClientUpdaterForm app = new Forms.ClientUpdaterForm();
             System.Windows.Forms.Application.Run(app);
         }
     }
