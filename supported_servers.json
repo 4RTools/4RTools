@@ -50,8 +50,8 @@
     {
         "name": "MiracleRO",
         "description": "Miracle Ragnarok Online",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
+        "hpAddress": "0x1017F38",
+        "nameAddress": "0x101A6E0"
     },
     {
         "name": "PrimeRO",
