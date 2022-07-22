@@ -121,7 +121,7 @@
     },
     {   
         "name": "IkoRO",
-        "description": "AllstarRO",
+        "description": "IkoRo full client",
         "hpAddress": "0x0101C740",
         "nameAddress": "0x0101EEF0"
     }
