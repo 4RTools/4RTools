@@ -1,122 +1,16 @@
 [
     {
-        "name": "rtales.bin",
-        "description": "Ragna Tales",
-        "hpAddress": "0x00E8E434",
-        "nameAddress": "0x00E90C00"
+      "name": "seal",
+      "description": "Seal Ro",
+      "hpAddress": "0x1005F20",
+      "nameAddress": "0x10086C0",
+      "mapAddress": "0x10016C4"
     },
     {
-        "name": "Jogar",
-        "description": "YodaRO",
-        "hpAddress": "0x00E8E434",
-        "nameAddress": "0x00E90C00"
-    },
-    {
-        "name": "RagnaRotico",
-        "description": "RagnaRótico",
-        "hpAddress": "0x00E8E434",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "BattleOfSEARO",
-        "description": "Battle of SEA Ragnarok Online",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "EasyRO",
-        "description": "Easy RO",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Jogar",
-        "description": "Portal Kafra",
-        "hpAddress": "0x0101A700",
-        "nameAddress": "0x0101CEB0"
-    },
-    {
-        "name": "ragna4th",
-        "description": "Ragna 4TH",
-        "hpAddress": "0x011D1A04",
-        "nameAddress": "0x011D43E8"
-    },
-    {
-        "name": "ROZero",
-        "description": "Ragnarok Online Zero (NFT)",
-        "hpAddress": "0x00F4942C",
-        "nameAddress": "0x00F4BD70"
-    },
-    {
-        "name": "MiracleRO",
-        "description": "Miracle Ragnarok Online",
-        "hpAddress": "0x1017F38",
-        "nameAddress": "0x101A6E0"
-    },
-    {
-        "name": "PrimeRO",
-        "description": "Prime Ragnarok Online",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011D33F8"
-    },
-    {
-        "name": "NR_RO_4TH",
-        "description": "NRRO - Taiwan Server",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011C9684"
-    },
-    {
-        "name": "Ragnarok",
-        "description": "Ragna History",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011D33F8"
-    },
-    {
-        "name": "BlueRO",
-        "description": "Blue RO",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011D33F8"
-    },
-    {
-        "name": "StreetRO 2.0",
-        "description": "Street 2.0 Ragnarok",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010D5DA8"
-    },
-    {
-        "name": "Gladius",
-        "description": "Gladius Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "AllureWar",
-        "description": "AllureWar Ragnarok Online",
-        "hpAddress": "0x01144144",
-        "nameAddress": "0x01146A18"
-    },
-    {
-        "name": "AngelingRO",
-        "description": "Angeling RO",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Runa Ro",
-        "description": "Runa Ragnarok Online",
-        "hpAddress": "0x00E73D3C",
-        "nameAddress": "0x00E749D8"
-    },
-    {
-        "name": "remember-ro+gepard+lgp",
-        "description": "RememberRO",
-        "hpAddress": "0x0083E1B4",
-        "nameAddress": "0x00E749D8"
-    },
-    {   
-        "name": "AllstarRO",
-        "description": "AllstarRO",
-        "hpAddress": "0x10DCE10",
-        "nameAddress": "0x10D5DA8"
-    }
+        "name": "sealtest",
+        "description": "Seal Ro",
+        "hpAddress": "0x1005F20",
+        "nameAddress": "0x10086C0",
+        "mapAddress": "0x10016C4"
+      }
 ]
