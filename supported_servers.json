@@ -106,5 +106,11 @@
         "description": "Runa Ragnarok Online",
         "hpAddress": "0x00E73D3C",
         "nameAddress": "0x00E749D8"
+    },
+    {
+        "name": "remember-ro+gepard+lgp",
+        "description": "RememberRO",
+        "hpAddress": "0x0083E1B4",
+        "nameAddress": "0x00E749D8"
     }
 ]
