@@ -13,7 +13,11 @@ namespace _4RTools.Model
         public string description { get; set; }
         public string hpAddress { get; set; }
         public string nameAddress { get; set; }
+
+        public string mapAddress { get; set; }
     }
+
+
 
 
     public sealed class ClientListSingleton
@@ -60,12 +64,14 @@ namespace _4RTools.Model
         private int currentNameAddress { get; set; }
         private int currentHPBaseAddress { get; set; }
         private int statusBufferAddress { get; set; }
+        private int currentMapBaseAddress { get; set; }
         private int _num = 0;
 
-        public Client(string execName, int currentHPBaseAddress, int currentNameAddress)
+        public Client(string execName, int currentHPBaseAddress, int currentNameAddress, int currentMapBaseAddress)
         {
             this.currentNameAddress = currentNameAddress;
             this.currentHPBaseAddress = currentHPBaseAddress;
+            this.currentMapBaseAddress = currentMapBaseAddress;
             this.execName = execName;
             this.statusBufferAddress = currentHPBaseAddress + 0x474;
         }
@@ -93,10 +99,12 @@ namespace _4RTools.Model
                         this.currentHPBaseAddress = c.currentHPBaseAddress;
                         this.currentNameAddress = c.currentNameAddress;
                         this.statusBufferAddress = c.statusBufferAddress;
+                        this.currentMapBaseAddress = c.currentMapBaseAddress;
                     }catch
                     {
                         MessageBox.Show("This client is not supported. Only Spammers and macro will works.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         this.currentHPBaseAddress = 0;
+                        this.currentMapBaseAddress = 0;
                         this.currentNameAddress = 0;
                         this.statusBufferAddress = 0;
                     }
@@ -174,6 +182,10 @@ namespace _4RTools.Model
         public string ReadCharacterName()
         {
             return ReadMemoryAsString(this.currentNameAddress);
+        }
+        public string ReadMapName()
+        {
+            return ReadMemoryAsString(this.currentMapBaseAddress);
         }
 
         public uint ReadMaxSp()

@@ -30,7 +30,8 @@ namespace _4RTools.Forms
                 {
                     int hpAddress = Convert.ToInt32(clientDTO.hpAddress, 16);
                     int nameAddress = Convert.ToInt32(clientDTO.nameAddress, 16);
-                    ClientListSingleton.AddClient(new Client(clientDTO.name, hpAddress, nameAddress));
+                    int mapAddress = Convert.ToInt32(clientDTO.mapAddress, 16);
+                    ClientListSingleton.AddClient(new Client(clientDTO.name, hpAddress, nameAddress,mapAddress));
                     pbSupportedServer.Increment(1);
                 }
                 new Container().Show();

@@ -40,6 +40,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.atkDef = new System.Windows.Forms.TabPage();
+            this.tabMacroSwitch = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
@@ -58,7 +59,8 @@ namespace _4RTools.Forms
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
-            this.tabMacroSwitch = new System.Windows.Forms.TabPage();
+            this.labelmapName = new System.Windows.Forms.Label();
+            this.MapName = new System.Windows.Forms.Label();
             this.atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -157,6 +159,16 @@ namespace _4RTools.Forms
             this.atkDef.TabIndex = 5;
             this.atkDef.Text = "ATK x DEF Mode";
             this.atkDef.UseVisualStyleBackColor = true;
+            // 
+            // tabMacroSwitch
+            // 
+            this.tabMacroSwitch.Location = new System.Drawing.Point(4, 22);
+            this.tabMacroSwitch.Name = "tabMacroSwitch";
+            this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMacroSwitch.Size = new System.Drawing.Size(424, 274);
+            this.tabMacroSwitch.TabIndex = 8;
+            this.tabMacroSwitch.Text = "Macro Switch";
+            this.tabMacroSwitch.UseVisualStyleBackColor = true;
             // 
             // tabPageProfiles
             // 
@@ -285,6 +297,7 @@ namespace _4RTools.Forms
             this.lblCharacterName.Size = new System.Drawing.Size(87, 13);
             this.lblCharacterName.TabIndex = 19;
             this.lblCharacterName.Text = "Character Name:";
+            this.lblCharacterName.Click += new System.EventHandler(this.lblCharacterName_Click);
             // 
             // characterName
             // 
@@ -296,6 +309,7 @@ namespace _4RTools.Forms
             this.characterName.Size = new System.Drawing.Size(19, 13);
             this.characterName.TabIndex = 20;
             this.characterName.Text = "- -";
+            this.characterName.Click += new System.EventHandler(this.characterName_Click);
             // 
             // panel5
             // 
@@ -335,15 +349,24 @@ namespace _4RTools.Forms
             this.tabPageYggAutopot.Text = "Yggdrasil";
             this.tabPageYggAutopot.UseVisualStyleBackColor = true;
             // 
-            // tabMacroSwitch
+            // labelmapName
             // 
-            this.tabMacroSwitch.Location = new System.Drawing.Point(4, 22);
-            this.tabMacroSwitch.Name = "tabMacroSwitch";
-            this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMacroSwitch.Size = new System.Drawing.Size(424, 274);
-            this.tabMacroSwitch.TabIndex = 8;
-            this.tabMacroSwitch.Text = "Macro Switch";
-            this.tabMacroSwitch.UseVisualStyleBackColor = true;
+            this.labelmapName.AutoSize = true;
+            this.labelmapName.Location = new System.Drawing.Point(266, 216);
+            this.labelmapName.Name = "labelmapName";
+            this.labelmapName.Size = new System.Drawing.Size(62, 13);
+            this.labelmapName.TabIndex = 26;
+            this.labelmapName.Text = "Map Name:";
+            // 
+            // MapName
+            // 
+            this.MapName.AutoSize = true;
+            this.MapName.Location = new System.Drawing.Point(266, 229);
+            this.MapName.Name = "MapName";
+            this.MapName.Size = new System.Drawing.Size(16, 13);
+            this.MapName.TabIndex = 27;
+            this.MapName.Text = "- -";
+            this.MapName.Click += new System.EventHandler(this.label3_Click);
             // 
             // Container
             // 
@@ -351,6 +374,8 @@ namespace _4RTools.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(455, 625);
+            this.Controls.Add(this.MapName);
+            this.Controls.Add(this.labelmapName);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panel5);
@@ -412,5 +437,7 @@ namespace _4RTools.Forms
         private Panel panel1;
         private TabPage tabPageProfiles;
         private TabPage tabMacroSwitch;
+        private Label labelmapName;
+        private Label MapName;
     }
 }

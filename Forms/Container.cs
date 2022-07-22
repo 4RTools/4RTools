@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using _4RTools.Model;
 using _4RTools.Utils;
+using System.Collections.Generic;
 
 namespace _4RTools.Forms
 {
@@ -269,7 +270,8 @@ namespace _4RTools.Forms
                     Client client = ClientSingleton.GetClient();
                     if (client != null)
                     {
-                        characterName.Text = ClientSingleton.GetClient().ReadCharacterName();
+                        characterName.Text = client.ReadCharacterName();
+                        MapName.Text = client.ReadMapName();
                     }
                     break;
                 case MessageCode.CLICK_ICON_TRAY:
@@ -286,5 +288,22 @@ namespace _4RTools.Forms
         {
             if (this.WindowState == FormWindowState.Minimized) { this.Hide(); }
         }
+
+        private void lblCharacterName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

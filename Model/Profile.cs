@@ -21,8 +21,10 @@ namespace _4RTools.Model
                 if ((rawObject != null))
                 {
                     profile.Name = profileName;
+
                     profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByAction(rawObject, profile.UserPreferences));
                     profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByAction(rawObject, profile.AHK));
+                    profile.mapUtils = JsonConvert.DeserializeObject<MapUtils>(Profile.GetByAction(rawObject, profile.mapUtils));
                     profile.Autopot = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.Autopot));
                     profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.AutopotYgg));
                     profile.StatusRecovery = JsonConvert.DeserializeObject<StatusRecovery>(Profile.GetByAction(rawObject, profile.StatusRecovery));
@@ -87,7 +89,9 @@ namespace _4RTools.Model
     {
         public string Name { get; set; }
         public UserPreferences UserPreferences { get; set; }
+
         public AHK AHK { get; set; }
+        public MapUtils mapUtils { get; set; }
         public Autopot Autopot { get; set; }
         public Autopot AutopotYgg { get; set; }
         public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
@@ -103,7 +107,8 @@ namespace _4RTools.Model
             this.Name = name;
 
             this.UserPreferences = new UserPreferences();
-            this.AHK = new AHK(); 
+            this.AHK = new AHK();
+            this.mapUtils = new MapUtils();
             this.Autopot = new Autopot(Autopot.ACTION_NAME_AUTOPOT);
             this.AutopotYgg = new Autopot(Autopot.ACTION_NAME_AUTOPOT_YGG);
             this.AutoRefreshSpammer = new AutoRefreshSpammer();

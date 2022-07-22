@@ -81,6 +81,7 @@ namespace _4RTools.Forms
                 this.notifyIconTray.Icon = Resources.logo_4rtools_off;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
                 this.lblStatusToggle.Text = "Press the key to start!";
+                ProfileSingleton.GetCurrent().mapUtils.Stop();
                 new SoundPlayer(Resources.Speech_Off).Play();
             }
             else
@@ -94,6 +95,7 @@ namespace _4RTools.Forms
                     this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
                     this.lblStatusToggle.Text = "Press the key to stop!";
                     this.lblStatusToggle.ForeColor = Color.Black;
+                    ProfileSingleton.GetCurrent().mapUtils.Start();
                     new SoundPlayer(Resources.Speech_On).Play();
                 } else
                 {
@@ -115,6 +117,36 @@ namespace _4RTools.Forms
         {
             // Close the form, which closes the application.
             this.subject.Notify(new Utils.Message(MessageCode.SHUTDOWN_APPLICATION, null));
+        }
+
+        private void mappottoggle(object sender, EventArgs e)
+        {
+            if (this.mappot.BackColor == Color.Green)
+            {
+                this.mappot.BackColor = Color.Red;
+                Client client = ClientSingleton.GetClient();
+                ProfileSingleton.GetCurrent().mapUtils.updateautopot(true);
+            }
+            else
+            {
+                this.mappot.BackColor = Color.Green;
+                ProfileSingleton.GetCurrent().mapUtils.updateautopot(false);
+            }
+        }
+
+        private void mapbufftoggle(object sender, EventArgs e)
+        {
+            if(this.mapbuff.BackColor == Color.Green)
+            {
+                this.mapbuff.BackColor = Color.Red;
+                ProfileSingleton.GetCurrent().mapUtils.updateautobuff(true);
+            }
+            else
+            {
+                this.mapbuff.BackColor = Color.Green;
+                ProfileSingleton.GetCurrent().mapUtils.updateautobuff(false);
+
+            }
         }
     }
 }
