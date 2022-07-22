@@ -29,6 +29,11 @@ namespace _4RTools.Model
         {
             return clients;
         }
+
+        public static bool ExistsByName(string processName)
+        {
+            return clients.Exists(client => client.execName == processName);
+        }
     }
 
     public sealed class ClientSingleton
@@ -55,7 +60,7 @@ namespace _4RTools.Model
         public Process process { get; }
 
         private static int MAX_POSSIBLE_HP = 1000000;
-        private string execName { get; set; }
+        public string execName { get; private set; }
         private Utils.ProcessMemoryReader PMR { get; set; }
         private int currentNameAddress { get; set; }
         private int currentHPBaseAddress { get; set; }
