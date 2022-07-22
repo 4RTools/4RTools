@@ -118,5 +118,11 @@
         "description": "AllstarRO",
         "hpAddress": "0x10DCE10",
         "nameAddress": "0x10D5DA8"
+    },
+    {   
+        "name": "IkoRO",
+        "description": "AllstarRO",
+        "hpAddress": "0x0101C740",
+        "nameAddress": "0x0101EEF0"
     }
 ]
