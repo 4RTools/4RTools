@@ -118,11 +118,5 @@
         "description": "AllstarRO",
         "hpAddress": "0x10DCE10",
         "nameAddress": "0x10D5DA8"
-    },
-    {
-        "name": "AllstarRO",
-        "description": "AllstarRO_Alt",
-        "hpAddress": "0x10DCE10",
-        "nameAddress": "0x10DF5D8"
     }
 ]
