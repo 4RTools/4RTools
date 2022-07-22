@@ -112,5 +112,11 @@
         "description": "RememberRO",
         "hpAddress": "0x0083E1B4",
         "nameAddress": "0x00E749D8"
+    },
+    {   
+        "name": "AllstarRO",
+        "description": "AllstarRO",
+        "hpAddress": "0x10DCE10",
+        "nameAddress": "0x10D5DA8"
     }
 ]
