@@ -204,7 +204,7 @@ namespace _4RTools.Forms
             });
             foreach (Process p in Process.GetProcesses())
             {
-                if (p.MainWindowTitle != "")
+                if (p.MainWindowTitle != "" && ClientListSingleton.ExistsByProcessName(p.ProcessName))
                 {
                     this.processCB.Items.Add(string.Format("{0}.exe - {1}", p.ProcessName, p.Id));
                 }

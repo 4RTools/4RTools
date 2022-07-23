@@ -9,7 +9,7 @@ namespace _4RTools.Model
 
     public class ClientDTO
     {
-        public string name { get; set; }
+        public string processName { get; set; }
         public string description { get; set; }
         public string hpAddress { get; set; }
         public string nameAddress { get; set; }
@@ -28,6 +28,11 @@ namespace _4RTools.Model
         public static List<Client> GetAll()
         {
             return clients;
+        }
+
+        public static bool ExistsByProcessName(string processName)
+        {
+            return clients.Exists(client => client.processName == processName);
         }
     }
 
@@ -55,18 +60,18 @@ namespace _4RTools.Model
         public Process process { get; }
 
         private static int MAX_POSSIBLE_HP = 1000000;
-        private string execName { get; set; }
+        public string processName { get; private set; }
         private Utils.ProcessMemoryReader PMR { get; set; }
         private int currentNameAddress { get; set; }
         private int currentHPBaseAddress { get; set; }
         private int statusBufferAddress { get; set; }
         private int _num = 0;
 
-        public Client(string execName, int currentHPBaseAddress, int currentNameAddress)
+        public Client(string processName, int currentHPBaseAddress, int currentNameAddress)
         {
             this.currentNameAddress = currentNameAddress;
             this.currentHPBaseAddress = currentHPBaseAddress;
-            this.execName = execName;
+            this.processName = processName;
             this.statusBufferAddress = currentHPBaseAddress + 0x474;
         }
 
@@ -191,7 +196,7 @@ namespace _4RTools.Model
        
             foreach(Client c in ClientListSingleton.GetAll())
             {
-                if (c.execName == processName)
+                if (c.processName == processName)
                 {
                     uint hpBaseValue = ReadMemory(c.currentHPBaseAddress);
                     if (hpBaseValue > 0 && hpBaseValue < MAX_POSSIBLE_HP) return c;
