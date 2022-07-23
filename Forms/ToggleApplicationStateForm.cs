@@ -121,31 +121,52 @@ namespace _4RTools.Forms
 
         private void mappottoggle(object sender, EventArgs e)
         {
+            Client client = ClientSingleton.GetClient();
             if (this.mappot.BackColor == Color.Green)
             {
                 this.mappot.BackColor = Color.Red;
-                Client client = ClientSingleton.GetClient();
-                ProfileSingleton.GetCurrent().mapUtils.updateautopot(true);
+                if (client != null)
+                {
+                    ProfileSingleton.GetCurrent().mapUtils.updateautopot(true);
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().mapUtils);
+                    new SoundPlayer(Resources.Speech_On).Play();
+                }
             }
             else
             {
                 this.mappot.BackColor = Color.Green;
-                ProfileSingleton.GetCurrent().mapUtils.updateautopot(false);
+                if (client != null)
+                {
+                    ProfileSingleton.GetCurrent().mapUtils.updateautopot(false);
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().mapUtils);
+                    new SoundPlayer(Resources.Speech_On).Play();
+                }
             }
         }
 
         private void mapbufftoggle(object sender, EventArgs e)
         {
-            if(this.mapbuff.BackColor == Color.Green)
+            Client client = ClientSingleton.GetClient();
+            if (this.mapbuff.BackColor == Color.Green)
             {
                 this.mapbuff.BackColor = Color.Red;
-                ProfileSingleton.GetCurrent().mapUtils.updateautobuff(true);
+                if (client != null)
+                {
+                    ProfileSingleton.GetCurrent().mapUtils.updateautobuff(true);
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().mapUtils);
+                    new SoundPlayer(Resources.Speech_On).Play();
+                }
             }
             else
             {
                 this.mapbuff.BackColor = Color.Green;
-                ProfileSingleton.GetCurrent().mapUtils.updateautobuff(false);
+                if (client != null)
+                {
+                    ProfileSingleton.GetCurrent().mapUtils.updateautobuff(false);
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().mapUtils);
+                    new SoundPlayer(Resources.Speech_On).Play();
 
+                }
             }
         }
     }

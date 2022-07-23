@@ -1,14 +1,14 @@
 ﻿using _4RTools.Model;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Threading;
-
+using System.Windows.Forms;
 
 namespace _4RTools.Utils
 {
     public class MapModel
     {
-
 
         public string mapname { get; set; }
         public bool autopotonmap { get; set; }//disable autopot on map
@@ -22,18 +22,18 @@ namespace _4RTools.Utils
         }
     }
 
-
-    public class MapUtils : Action
+    public class MapUtils : Model.Action
     {
-        public List<MapModel> mapsList = new List<MapModel>();
+        public List<MapModel> mapsList;
 
-        private string ACTION_NAME = "MapChecks";
+        public string ACTION_NAME = "MapUtils";
 
         private _4RThread thread;
 
 
         public MapUtils()
         {
+            mapsList = new List<MapModel>();
         }
         public void setMapList(List<MapModel> newlist)
         {
@@ -85,6 +85,7 @@ namespace _4RTools.Utils
                     mapclone.autobuffonmap = true;
                     mapsList.Add(mapclone);
                     ProfileSingleton.GetCurrent().mapUtils.mapsList=maps;
+                    MessageBox.Show("is this working?", "Learn C#", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -95,8 +96,10 @@ namespace _4RTools.Utils
                     mapclone.autobuffonmap = false;
                     mapsList.Add(mapclone);
                     ProfileSingleton.GetCurrent().mapUtils.mapsList = maps;
+                    MessageBox.Show("is this working?", "Learn C#", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 }
-                
+
             }
         }
         public MapModel getMatchMap(string mapname)
@@ -131,7 +134,6 @@ namespace _4RTools.Utils
         {
             string mapname = roClient.ReadMapName();
             _ = getMatchMap(mapname);
-
             Thread.Sleep(5000);
             return 0;
         }
