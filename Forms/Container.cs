@@ -204,9 +204,7 @@ namespace _4RTools.Forms
             });
             foreach (Process p in Process.GetProcesses())
             {
-                bool isGameProcess = ClientListSingleton.ExistsByName(p.ProcessName);
-
-                if (p.MainWindowTitle != "" && isGameProcess)
+                if (p.MainWindowTitle != "" && ClientListSingleton.ExistsByProcessName(p.ProcessName))
                 {
                     this.processCB.Items.Add(string.Format("{0}.exe - {1}", p.ProcessName, p.Id));
                 }
