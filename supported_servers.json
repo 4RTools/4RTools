@@ -130,5 +130,11 @@
         "description": "AllstarRO",
         "hpAddress": "0x10DCE10",
         "nameAddress": "0x10DF5D8"
+    },
+    {   
+        "name": "Raglatam_MMORPG",
+        "description": "RagLatam",
+        "hpAddress": "0x0F57704",
+        "nameAddress": "0x0F5A048"
     }
 ]
