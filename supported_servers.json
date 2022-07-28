@@ -41,6 +41,12 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     },
+        {
+        "name": "OSRO",
+        "description": "OS Ragnarok Online",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
     {
         "name": "Jogar",
         "description": "Portal Kafra",
