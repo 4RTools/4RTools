@@ -142,5 +142,11 @@
         "description": "RagLatam",
         "hpAddress": "0x0F57704",
         "nameAddress": "0x0F5A048"
+    },
+    {
+        "name": "ProjectAlfheim",
+        "description": "Project Alfheim",
+        "hpAddress": "0x0F57704",
+        "nameAddress": "0x0F5A048"
     }
 ]
