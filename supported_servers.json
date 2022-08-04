@@ -148,5 +148,11 @@
         "description": "Project Alfheim",
         "hpAddress": "0x0F57704",
         "nameAddress": "0x0F5A048"
+    },
+    {
+        "name": "BestRO",
+        "description": "BestRO",
+        "hpAddress": "0x00E4CAF4",
+        "nameAddress": "0x00E4D768"
     }
 ]
