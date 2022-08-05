@@ -9,7 +9,7 @@ namespace _4RTools.Model
 
     public class ClientDTO
     {
-        public string processName { get; set; }
+        public string name { get; set; }
         public string description { get; set; }
         public string hpAddress { get; set; }
         public string nameAddress { get; set; }
@@ -149,16 +149,6 @@ namespace _4RTools.Model
         public bool IsSpBelow(int percent)
         {
             return ReadCurrentSp() * 100 < percent * ReadMaxSp();
-        }
-
-        public string HpLabel()
-        {
-            return string.Format("{0} / {1}", ReadCurrentHp(), ReadMaxHp());
-        }
-
-        public string SpLabel()
-        {
-            return string.Format("{0} / {1}", ReadCurrentSp(), ReadMaxSp());
         }
 
         public uint ReadCurrentHp()

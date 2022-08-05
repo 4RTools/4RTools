@@ -143,7 +143,7 @@
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
     <Compile Include="Model\UserPreferences.cs" />
-    <Compile Include="Model\Hexed.cs" />
+    <Compile Include="Model\Client.cs" />
     <Compile Include="Model\Action.cs" />
     <Compile Include="Model\Macro.cs" />
     <Compile Include="Model\Profile.cs" />
@@ -222,12 +222,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="supported_servers.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-4rtools.ico" />
+    <None Include="Resources\supported_servers.txt" />
     <None Include="Resources\arrowup.png" />
     <None Include="Resources\arrodown.png" />
     <None Include="Resources\Yggdrasil.bmp" />
