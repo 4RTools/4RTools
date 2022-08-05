@@ -37,10 +37,9 @@ namespace _4RTools.Forms
                 {
                     LoadServers(LoadLocalServerFile());
                 }
-                catch(Exception ex2)
+                catch(Exception)
                 {
-                    MessageBox.Show(ex2.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    Close();
+                    LoadServers(LoadResourceServerFile());
                 }
             }
             finally
@@ -48,6 +47,11 @@ namespace _4RTools.Forms
                 new Container().Show();
                 Hide();
             }
+        }
+
+        private string LoadResourceServerFile()
+        {
+            return Properties.Resources.supported_servers;
         }
 
         private string LoadLocalServerFile()
