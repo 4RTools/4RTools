@@ -143,7 +143,7 @@
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
     <Compile Include="Model\UserPreferences.cs" />
-    <Compile Include="Model\Hexed.cs" />
+    <Compile Include="Model\Client.cs" />
     <Compile Include="Model\Action.cs" />
     <Compile Include="Model\Macro.cs" />
     <Compile Include="Model\Profile.cs" />
