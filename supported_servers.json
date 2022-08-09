@@ -172,5 +172,11 @@
         "description": "Annix Ragnarok Online",
         "hpAddress": "0x00E4CAF4",
         "nameAddress": "0x00E4D768"
+    },
+    {
+        "name": "GatheringRO",
+        "description": "Gathering RO",
+        "hpAddress": "0x0010DCE10",
+        "nameAddress": "0x0010DF5D8"
     }
 ]
