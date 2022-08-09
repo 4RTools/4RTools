@@ -13,7 +13,7 @@
     },
     {
         "name": "RagnaRotico",
-        "description": "RagnaRótico",
+        "description": "RagnaRÃ³tico",
         "hpAddress": "0x00E8E434",
         "nameAddress": "0x00E4D768"
     },
@@ -41,9 +41,15 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     },
-        {
+     {
         "name": "OSRO",
         "description": "OS Ragnarok Online",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "cliente",
+        "description": "RagnaCool",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     },
@@ -129,7 +135,7 @@
         "name": "remember-ro+gepard+lgp",
         "description": "RememberRO",
         "hpAddress": "0x0083E1B4",
-        "nameAddress": "0x00E749D8"
+        "nameAddress": "0x0083E674"
     },
     {   
         "name": "AllstarRO",
@@ -152,6 +158,12 @@
     {
         "name": "BestRO",
         "description": "BestRO",
+        "hpAddress": "0x00E4CAF4",
+        "nameAddress": "0x00E4D768"
+    },
+     {
+        "name": "AnnixRO",
+        "description": "Annix Ragnarok Online",
         "hpAddress": "0x00E4CAF4",
         "nameAddress": "0x00E4D768"
     }
