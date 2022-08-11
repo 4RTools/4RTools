@@ -24,6 +24,12 @@
         "nameAddress": "0x00E4D768"
     },
     {
+        "name": "CookieRO",
+        "description": "Cookie Ragnarok Online",
+        "hpAddress": "0x00E4CAF4",
+        "nameAddress": "0x00E4D768"
+    },
+    {
         "name": "ArunafeltzRO",
         "description": "Arunafeltz Ragnarok Online",
         "hpAddress": "0x00E4CAF4",
