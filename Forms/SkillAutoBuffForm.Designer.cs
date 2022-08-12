@@ -112,7 +112,7 @@
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.in407 = new System.Windows.Forms.TextBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.in397 = new System.Windows.Forms.TextBox();
+            this.in1316 = new System.Windows.Forms.TextBox();
             this.in402 = new System.Windows.Forms.TextBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
@@ -898,12 +898,12 @@
             this.pictureBox41.TabIndex = 192;
             this.pictureBox41.TabStop = false;
             // 
-            // in397
+            // in1316
             // 
-            this.in397.Location = new System.Drawing.Point(191, 380);
-            this.in397.Name = "in397";
-            this.in397.Size = new System.Drawing.Size(55, 20);
-            this.in397.TabIndex = 191;
+            this.in1316.Location = new System.Drawing.Point(191, 380);
+            this.in1316.Name = "in1316";
+            this.in1316.Size = new System.Drawing.Size(55, 20);
+            this.in1316.TabIndex = 191;
             // 
             // in402
             // 
@@ -983,7 +983,7 @@
             this.Controls.Add(this.pictureBox44);
             this.Controls.Add(this.in407);
             this.Controls.Add(this.pictureBox41);
-            this.Controls.Add(this.in397);
+            this.Controls.Add(this.in1316);
             this.Controls.Add(this.in402);
             this.Controls.Add(this.pictureBox42);
             this.Controls.Add(this.pictureBox43);
@@ -1202,7 +1202,7 @@
         private System.Windows.Forms.PictureBox pictureBox40;
         private System.Windows.Forms.TextBox in407;
         private System.Windows.Forms.PictureBox pictureBox41;
-        private System.Windows.Forms.TextBox in397;
+        private System.Windows.Forms.TextBox in1316;
         private System.Windows.Forms.TextBox in402;
         private System.Windows.Forms.PictureBox pictureBox43;
         private System.Windows.Forms.PictureBox pictureBox42;
