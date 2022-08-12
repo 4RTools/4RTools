@@ -24,6 +24,12 @@
         "nameAddress": "0x00E4D768"
     },
     {
+        "name": "CookieRO",
+        "description": "Cookie Ragnarok Online",
+        "hpAddress": "0x00E4CAF4",
+        "nameAddress": "0x00E4D768"
+    },
+    {
         "name": "ArunafeltzRO",
         "description": "Arunafeltz Ragnarok Online",
         "hpAddress": "0x00E4CAF4",
@@ -48,7 +54,13 @@
         "nameAddress": "0x010DF5D8"
     },
     {
-        "name": "cliente",
+        "name": "MidgardRO",
+        "description": "Midgard Ragnarok Online",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "Cliente",
         "description": "RagnaCool",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
@@ -162,9 +174,27 @@
         "nameAddress": "0x00E4D768"
     },
      {
-        "name": "AnnixRO",
+        "name": "Annix RO",
         "description": "Annix Ragnarok Online",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "GatheringRO",
+        "description": "Gathering RO",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "AincradProjectEX",
+        "description": "Aincrad Project",
+        "hpAddress": "0x1017F38",
+        "nameAddress": "0x101A6E0"
+    },
+    {
+        "name": "seal",
+        "description": "Seal RO",
+        "hpAddress": "0x01005F20",
+        "nameAddress": "0x00FFF158"
     }
 ]
