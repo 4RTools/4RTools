@@ -43,9 +43,6 @@ namespace _4RTools.Model
                     if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                     {
                         bmClone.Remove(status);
-                    } else if (currentStatus <= 5000)
-                    {
-                        Console.WriteLine("Unrecognized effect ID: " + currentStatus);
                     }
 
                     if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
