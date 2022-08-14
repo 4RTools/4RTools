@@ -215,5 +215,12 @@
         "site": "https://primeragnarok.com.br/",
         "hpAddress": "0x01107BF0",
         "nameAddress": "0x0110A5B0"
+    },
+    {
+        "name": "xRO",
+        "description": "x-RO Mid Rates",
+        "site": "http://x-ragnarok.com.br/",
+        "hpAddress": "0x0083E1B4",
+        "nameAddress": "0x008388DE"
     }
 ]
