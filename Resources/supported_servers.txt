@@ -204,6 +204,12 @@
         "nameAddress": "0x00FFF158"
     },
     {
+        "name": "RO Esports",
+        "description": "Esports Ragnarok Online",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+     },
+     {
         "name": "LabanRO",
         "description": "Laban Ragnarok Online",
         "hpAddress": "0x010DCE10",
