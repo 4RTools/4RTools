@@ -208,5 +208,12 @@
         "description": "Laban Ragnarok Online",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "servercBRO",
+        "description": "Prime Ragnarok Online",
+        "site": "https://primeragnarok.com.br/",
+        "hpAddress": "0x01107BF0",
+        "nameAddress": "0x0110A5B0"
     }
 ]
