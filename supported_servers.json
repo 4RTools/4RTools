@@ -66,6 +66,12 @@
         "nameAddress": "0x010DF5D8"
     },
     {
+        "name": "cliente",
+        "description": "RagnaCool",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
         "name": "Jogar",
         "description": "Portal Kafra",
         "hpAddress": "0x0101A700",
@@ -229,5 +235,4 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     }
-    
 ]
