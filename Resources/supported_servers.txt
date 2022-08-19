@@ -47,7 +47,7 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     },
-     {
+    {
         "name": "OSRO",
         "description": "OS Ragnarok Online",
         "hpAddress": "0x010DCE10",
@@ -208,12 +208,12 @@
         "description": "Esports Ragnarok Online",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
-     },
-     {
+    },
+    {
         "name": "LabanRO",
         "description": "Laban Ragnarok Online",
         "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
+        "nameAddress": "0x010086C0"
     },
     {
         "name": "servercBRO",
@@ -228,5 +228,11 @@
         "site": "http://x-ragnarok.com.br/",
         "hpAddress": "0x0083E1B4",
         "nameAddress": "0x008388DE"
+    },
+    {
+        "name": "AgonRO",
+        "description": "Agon Ragnarok Online",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     }
 ]
