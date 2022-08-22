@@ -201,7 +201,7 @@
         "name": "seal",
         "description": "Seal RO",
         "hpAddress": "0x01005F20",
-        "nameAddress": "0x00FFF158"
+        "nameAddress": "0x010086C0"
     },
     {
         "name": "RO Esports",
