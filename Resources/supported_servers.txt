@@ -54,6 +54,12 @@
         "nameAddress": "0x010DF5D8"
     },
     {
+        "name": "Jogar",
+        "description": "Beast RO",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
         "name": "MidgardRO",
         "description": "Midgard Ragnarok Online",
         "hpAddress": "0x010DCE10",
@@ -232,7 +238,15 @@
     {
         "name": "AgonRO",
         "description": "Agon Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
+        "hpAddress": "0x00E4CAF4",
+        "nameAddress": "0x00DEECA8"
+    },
+    {
+        "name": "NovaRO",
+        "description": "NovaRO",
+        "site": null,
+        "https": null, //www.novaragnarok.com/,
+        "hpAddress": "0x00F5ACC4",
+        "nameAddress": "0x00F5D608"
     }
 ]
