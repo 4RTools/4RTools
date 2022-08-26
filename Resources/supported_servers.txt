@@ -244,8 +244,7 @@
     {
         "name": "NovaRO",
         "description": "NovaRO",
-        "site": null,
-        "https": null, //www.novaragnarok.com/,
+        "site": "https://www.novaragnarok.com/,
         "hpAddress": "0x00F5ACC4",
         "nameAddress": "0x00F5D608"
     }
