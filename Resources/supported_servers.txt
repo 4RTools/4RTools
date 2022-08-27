@@ -275,5 +275,5 @@
         "site": "https://darkness-ro.com/",
         "hpAddress": "0x00E8E434",
         "nameAddress": "0x00E90C00"
-    },
+    }
 ]
