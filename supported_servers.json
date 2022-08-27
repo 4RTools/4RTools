@@ -161,13 +161,13 @@
         "hpAddress": "0x0083E1B4",
         "nameAddress": "0x0083E674"
     },
-    {   
+    {
         "name": "AllstarRO",
         "description": "AllstarRO",
         "hpAddress": "0x10DCE10",
         "nameAddress": "0x10DF5D8"
     },
-    {   
+    {
         "name": "Raglatam_MMORPG",
         "description": "RagLatam",
         "hpAddress": "0x0F57704",
@@ -185,7 +185,7 @@
         "hpAddress": "0x00E4CAF4",
         "nameAddress": "0x00E4D768"
     },
-     {
+    {
         "name": "Annix RO",
         "description": "Annix Ragnarok Online",
         "hpAddress": "0x010DCE10",
@@ -245,14 +245,35 @@
         "name": "NovaRO",
         "description": "NovaRO",
         "site": "https://www.novaragnarok.com/",
-        "hpAddress": "0x00F5ACC8",
+        "hpAddress": "0x00F5ACC4",
         "nameAddress": "0x00F5D608"
     },
     {
-        "name": "AnnixRO",
-        "description": "Annix Ragnarok Online",
-        "site": "https://annix.ragnarok-online.net/",
+        "name": "RebelRO",
+        "description": "RebelRO",
+        "site": "https://rebelgaming.gg/",
+        "hpAddress": "0x00E8F434",
+        "nameAddress": "0x00E91C00"
+    },
+    {
+        "name": "UniROReborn",
+        "description": "UniRO Reborn",
+        "site": "https://uniroreborn.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "RainyRo",
+        "description": "Lets Play Rainy RO <3",
+        "site": "http://www.rainy.ragnarok-online.net/",
         "hpAddress": "0x00E4CAF4",
         "nameAddress": "0x00E4D768"
+    },
+    {
+        "name": "DarknessRO - Rebirth",
+        "description": "DarknessRO - Rebirth",
+        "site": "https://darkness-ro.com/",
+        "hpAddress": "0x00E8E434",
+        "nameAddress": "0x00E90C00"
     }
 ]
