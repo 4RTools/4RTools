@@ -289,4 +289,11 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     },
+    {
+        "name": "BountyRO",
+        "description": "BountyRO Ragnarok",
+        "site": "https://bountyragnarok.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    }
 ]
