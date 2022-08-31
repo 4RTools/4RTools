@@ -295,5 +295,12 @@
         "site": "https://bountyragnarok.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "DarkRO - Rebirth",
+        "description": "Dark RO",
+        "site": "https://dark-ro.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     }
 ]
