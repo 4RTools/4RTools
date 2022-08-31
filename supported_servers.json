@@ -302,5 +302,12 @@
         "site": "https://dark-ro.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "BBRO",
+        "description": "BoomBaam RagnarokOnline",
+        "site": "https://dark-ro.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     }
 ]
