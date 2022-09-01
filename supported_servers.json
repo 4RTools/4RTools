@@ -90,6 +90,12 @@
         "nameAddress": "0x011D43E8"
     },
     {
+        "name": "Ragnarok",
+        "description": "TrainingGuard Ragnarok",
+        "hpAddress": "0x011D1A04",
+        "nameAddress": "0x011D43E8"
+    },
+    {
         "name": "ROZero",
         "description": "Ragnarok Online Zero (NFT)",
         "hpAddress": "0x00F4942C",
