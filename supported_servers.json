@@ -321,7 +321,7 @@
         "name": "PKRO",
         "description": "PK Ragnarok Online",
         "site": "www.pk-ro.net",
-        "hpAddress": "00F48798",
-        "nameAddress": "00F45E58"
+        "hpAddress": "0x00F48798",
+        "nameAddress": "0x00F45E58"
     }
 ]
