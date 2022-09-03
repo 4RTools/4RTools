@@ -315,5 +315,13 @@
         "site": "https://dark-ro.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
+        
+    },
+    {
+        "name": "PKRO",
+        "description": "PK Ragnarok Online",
+        "site": "www.pk-ro.net",
+        "hpAddress": "00F48798",
+        "nameAddress": "00F45E58"
     }
 ]
