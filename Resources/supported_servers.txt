@@ -32,8 +32,8 @@
     {
         "name": "ArunafeltzRO",
         "description": "Arunafeltz Ragnarok Online",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     },
     {
         "name": "RagBrazil",
@@ -86,6 +86,12 @@
     {
         "name": "ragna4th",
         "description": "Ragna 4TH",
+        "hpAddress": "0x011D1A04",
+        "nameAddress": "0x011D43E8"
+    },
+    {
+        "name": "Ragnarok",
+        "description": "TrainingGuard Ragnarok",
         "hpAddress": "0x011D1A04",
         "nameAddress": "0x011D43E8"
     },
@@ -295,5 +301,33 @@
         "site": "https://bountyragnarok.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "DarkRO - Rebirth",
+        "description": "Dark RO",
+        "site": "https://dark-ro.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "BBRO",
+        "description": "BoomBaam RagnarokOnline",
+        "site": "https://dark-ro.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "PKRO",
+        "description": "PK Ragnarok Online",
+        "site": "http://www.pk-ro.net/",
+        "hpAddress": "0x00F48798",
+        "nameAddress": "0x00F45E58"
+    },
+    {
+        "name": "IconRO",
+        "description": "Icon Ragnarok Online",
+        "site": "https://www.playiconro.com/",
+        "hpAddress": "0x0101C740",
+        "nameAddress": "0x0101EEF0"
     }
 ]
