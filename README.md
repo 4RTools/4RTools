@@ -3,21 +3,22 @@
 </p>
 
 # 4RTools
-This is a all-in-one tool for **Ragnarok Online** servers.
-You will be able to Autopot, Spam Skill, Use Macro Songs and much more. Hope you enjoy it and colaborate with us.
-If you have found a bug or want to request a feature, feel free to open an issue!
+This is an all-in-one tool for **Ragnarök Online** servers. You will be able to Autopot, Spam Skill, Use Macro Songs and much more. Hope you enjoy it and collaborate with us. If you have found a bug or want to request a feature, feel free to open an issue!
+
+THIS IS A FREE TOOL, YOU CAN MAKE EVERYTHING YOU WANT UNDER MIT LICENSE. WE ARE OPEN FOR IDEAS AND COLLABORATIONS Made from community TO community.
 
 **THIS IS A FREE TOOL, YOU CAN MAKE EVERYTHING YOU WANT UNDER MIT LICENSE. WE'ARE OPEN FOR IDEAS AND COLLABORATIONS**
 *Made from community TO community*.
 
-All feedback are welcome!
-Discord: https://discord.gg/HRWvG5ut
-Website: https://www.4rtools.com.br/
+Your Feedback is Welcome!
+
+**Discord:** https://discord.gg/HRWvG5ut
+**Website:** https://www.4rtools.com.br/
 
 <img src='assets/images/ragnarok-icon.png' width='40'>
 
 ## Running the project
-This project was created using Visual Studio 2022, just open `4RTools.sln` in Visual Studio and you'll able to run and generate your own releases.
+This project was created using Visual Studio 2022, just open `4RTools.sln` in Visual Studio, and you'll be able to run and generate your own releases.
 
 ## Features
 - [x] Autopot
