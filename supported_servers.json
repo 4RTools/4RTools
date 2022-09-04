@@ -341,5 +341,12 @@
         "description": "Oath Ragnarok Online",
         "hpAddress": "0x00F45E54",
         "nameAddress": "0x00F48798"
+    },
+    {
+        "name": "Rebelro",
+        "description": "Rebel RO for win 11",
+        "site": "https://rebelgaming.gg/",
+        "hpAddress": "0x00E8F434",
+        "nameAddress": "0x00E91C00"
     }
 ]
