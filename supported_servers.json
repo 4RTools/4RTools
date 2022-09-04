@@ -348,5 +348,12 @@
         "site": "https://rebelgaming.gg/",
         "hpAddress": "0x00E8F434",
         "nameAddress": "0x00E91C00"
-    }
+    },
+    {
+        "name": "Hydro",
+        "description": "Hydro Ragnarok Online",
+        "site": "https://www.hydro-ro.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
 ]
