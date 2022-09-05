@@ -356,7 +356,7 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     },
-     {
+    {
         "name": "Vast RO",
         "description": "VastRO Ragnarok Online",
         "site": "http://vast.ragnarok-online.net/",
@@ -370,5 +370,4 @@
         "hpAddress": "0x00E8F434",
         "nameAddress": "0x00E91C00"
      }
-    
 ]
