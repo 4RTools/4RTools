@@ -363,5 +363,12 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
      }
+     {
+        "name": "Meta Ekspor",
+        "description": "Meta Ekspor Ragnarok Online",
+        "site": "https://www.metaekspor.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+     }
     
 ]
