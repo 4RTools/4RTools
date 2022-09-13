@@ -404,5 +404,11 @@
         "site": "http://solid.ragnarok-online.net/",
         "hpAddress": "0x00E4CAF4",
         "nameAddress": "0x00E4D768"
-    }
+    },
+    {
+        "name": "Belief",
+        "description": "Belief Ragnarok Online",
+        "hpAddress": "0x0101C740",
+        "nameAddress": "0x0101EEF0"
+    },
 ]
