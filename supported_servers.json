@@ -410,5 +410,11 @@
         "description": "Belief Ragnarok Online",
         "hpAddress": "0x0101C740",
         "nameAddress": "0x0101EEF0"
+    },
+    {
+        "name": "cdpCentral",
+        "description": "Central de Prontera",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     }
 ]
