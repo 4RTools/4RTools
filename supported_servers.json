@@ -428,5 +428,26 @@
         "description": "Underground",
         "hpAddress": "0x0101C740",
         "nameAddress": "0x0101EEF0"
+    },
+    {
+        "name": "rship",
+        "description": "RagnaShip V2",
+        "site": "https://ragnaship.com/x0",
+        "hpAddress": "0x00E8E434",
+        "nameAddress": "0x00E4D768"
+    },
+    {
+        "name": "gravity",
+        "description": "AKA-RO",
+        "site": "http://aka.ro-game.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "OMG RO",
+        "description": "OMG RO",
+        "site": "https://omg-ragnarok.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     }
 ]
