@@ -433,7 +433,7 @@
         "name": "rship",
         "description": "RagnaShip V2",
         "site": "https://ragnaship.com/x0",
-        "hpAddress": "0x00E8E434",
+        "hpAddress": "0x00E4CAF4",
         "nameAddress": "0x00E4D768"
     },
     {
