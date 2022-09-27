@@ -456,5 +456,11 @@
         "site": "https://playxro.net/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "VenvRO",
+        "description": "Venv Ragnarok Online",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010D5DA8"
     }
 ]
