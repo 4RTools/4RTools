@@ -279,8 +279,8 @@
         "name": "DarknessRO - Rebirth",
         "description": "DarknessRO - Rebirth",
         "site": "https://darkness-ro.com/",
-        "hpAddress": "0x00E8E434",
-        "nameAddress": "0x00E90C00"
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     },
     {
         "name": "RagnaChaos",
@@ -454,6 +454,34 @@
         "name": "xRO",
         "description": "xRO Gear 5",
         "site": "https://playxro.net/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "VenvRO",
+        "description": "Venv Ragnarok Online",
+        "hpAddress": "0x010DCE10",
+        "site": "https://www.venvro.com/",
+        "nameAddress": "0x010D5DA8"
+    },
+    {
+        "name": "client",
+        "description": "Uprising RO",
+        "hpAddress": "0x011D0A14",
+        "site": "https://uprisingro.net/",
+        "nameAddress": "0x011C9684"
+    },
+    {
+        "name": "Liveexe",
+        "description": "LiveRO",
+        "site": "https://live-ro.net/",
+        "hpAddress": "0x0083E1B4",
+        "nameAddress": "0x0083E674"
+    },
+    {
+        "name": "AnimaBellumRO",
+        "description": "ANIMA BELLUM PLAY ONLINE",
+        "site": "http://animabellum.ragnarok-online.net/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     }
