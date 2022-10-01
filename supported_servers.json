@@ -469,5 +469,11 @@
         "hpAddress": "0x011D0A14",
         "site": "https://uprisingro.net/",
         "nameAddress": "0x011C9684"
-    }
+    },
+    {
+        "name": "Liveexe",
+        "description": "LiveRO",
+        "hpAddress": "0x0083E1B4",
+        "nameAddress": "0x0083E674"
+    },
 ]
