@@ -491,5 +491,12 @@
         "site": "http://www.warzoneragnarok.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "aeRO",
+        "description": "Aero Gaming Ragnarok Online",
+        "site": "https://aerogaming.org/",
+        "hpAddress": "0x0083E1B4",
+        "nameAddress": "0x0083E674"
     }
 ]
