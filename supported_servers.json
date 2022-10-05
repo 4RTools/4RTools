@@ -505,5 +505,12 @@
         "site": "http://juan.ragnarok-online.net/",
         "hpAddress": "0x00E4CAF4",
         "nameAddress": "0x00E4D768"
+    },
+    {
+        "name": "InvRO",
+        "description": "InvasionRO",
+        "site": "https://invasionro.net/",
+        "hpAddress": "0x1017F38",
+        "nameAddress": "0x101A6E0"
     }
 ]
