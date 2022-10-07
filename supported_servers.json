@@ -512,5 +512,12 @@
         "site": "https://invasionro.net/",
         "hpAddress": "0x1017F38",
         "nameAddress": "0x101A6E0"
-    }
+    },
+    {
+        "name": "TambayanGS",
+        "description": "TambayanGS",
+        "site": "https://tambayangaming.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x43E19F98"
+  }
 ]
