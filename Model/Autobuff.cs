@@ -35,7 +35,7 @@ namespace _4RTools.Model
 
                 bool foundQuag = false;
                 Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
-                for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE - 1; i++)
+                for (int i = 0; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
@@ -61,7 +61,7 @@ namespace _4RTools.Model
                     }
                 }
 
-                Thread.Sleep(100);
+                Thread.Sleep(300);
                 return 0;
 
             });
