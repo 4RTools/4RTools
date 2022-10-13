@@ -19,7 +19,7 @@ namespace _4RTools.Model
                 dynamic rawObject = JsonConvert.DeserializeObject(json);
 
                 if ((rawObject != null))
-                {
+                {   
                     profile.Name = profileName;
                     profile.UserPreferences = JsonConvert.DeserializeObject<UserPreferences>(Profile.GetByAction(rawObject, profile.UserPreferences));
                     profile.AHK = JsonConvert.DeserializeObject<AHK>(Profile.GetByAction(rawObject, profile.AHK));
