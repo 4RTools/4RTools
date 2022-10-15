@@ -512,25 +512,32 @@
         "site": "https://tambayangaming.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x43E19F98"
-  },
-  {
+    },
+    {
         "name": "Anubis Ro",
         "site": "https://anubis.ragnarok-online.net/",
         "description": "Anubis Ragnarok Online",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
-  },
-  {
+    },
+    {
         "name": "PValhallaRO",
         "description": "PValhalla RO",
         "site": "https://play.project-valhalla.net/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
-   },
-   {
+    },
+    {
         "name": "Lumina Server",
         "description": "Lumina Server Ragnarok Online",
         "site": "https://www.lumina.rocks/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "ragnarok",
+        "description": "GCRO",
+        "site": "https://www.globalclassicro.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     }
