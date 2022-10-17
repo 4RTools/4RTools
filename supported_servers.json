@@ -540,5 +540,11 @@
         "site": "https://www.globalclassicro.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
-    }
+    },
+    {
+        "name": "CoreRO",
+        "description": "Core Ragnarok Online",
+        "hpAddress": "0x00F45E54",
+        "nameAddress": "0x00F48798"
+    },
 ]
