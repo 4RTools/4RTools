@@ -547,4 +547,11 @@
         "hpAddress": "0x00F45E54",
         "nameAddress": "0x00F48798"
     },
+    {
+        "name": "AverseRO",
+        "description": "AverseRO",
+        "site": "https://www.facebook.com/averseRO/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    }
 ]
