@@ -560,5 +560,12 @@
         "site": "https://ecro.gg/",
         "hpAddress": "0x00E1392C",
         "nameAddress": "0x00E14580"
+    },
+    {
+        "name": "The Yunna Server",
+        "description": "Yunna Server Ragnarok Online",
+        "site": "https://yunna-server.com/",
+        "hpAddress": "0x00FFB858",
+        "nameAddress": "0x00FFDEF8"
     }
 ]
