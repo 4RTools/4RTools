@@ -582,4 +582,11 @@
         "hpAddress": "0x00FFB858",
         "nameAddress": "0x00FFDEF8"
     },
+    {
+        "name": "Nazarick",
+        "description": "Nazarick Ragnarok Online",
+        "site": "http://nazarickro.com/",
+        "hpAddress": "0x0104D59C",
+        "nameAddress": "0x010467D0"
+    },
 ]
