@@ -453,16 +453,9 @@
     {
         "name": "Patch VenvRO",
         "description": "Venv Ragnarok Online",
-        "hpAddress": "0x010DCE10",
         "site": "https://www.venvro.com/",
-        "nameAddress": "0x010D5DA8"
-    },
-    {
-        "name": "VenvRO",
-        "description": "Venv Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "site": "https://www.venvro.com/",
-        "nameAddress": "0x010D5DA8"
+        "hpAddress": "0x00FCEA58",
+        "nameAddress": "0x00FD1220"
     },
     {
         "name": "client",
