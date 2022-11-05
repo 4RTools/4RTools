@@ -451,11 +451,11 @@
         "nameAddress": "0x010DF5D8"
     },
     {
-        "name": "VenvRO",
+        "name": "Patch VenvRO",
         "description": "Venv Ragnarok Online",
-        "hpAddress": "0x010DCE10",
         "site": "https://www.venvro.com/",
-        "nameAddress": "0x010D5DA8"
+        "hpAddress": "0x00FCEA58",
+        "nameAddress": "0x00FD1220"
     },
     {
         "name": "client",
@@ -512,26 +512,81 @@
         "site": "https://tambayangaming.com/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x43E19F98"
-  },
-  {
+    },
+    {
         "name": "Anubis Ro",
         "site": "https://anubis.ragnarok-online.net/",
         "description": "Anubis Ragnarok Online",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
-  },
-  {
+    },
+    {
         "name": "PValhallaRO",
         "description": "PValhalla RO",
         "site": "https://play.project-valhalla.net/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
-   },
-   {
-        "name": "Lumina Server",
+    },
+    {
+        "name": "Lumina Server (32 bit)",
         "description": "Lumina Server Ragnarok Online",
         "site": "https://www.lumina.rocks/",
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
-    }
+    },
+    {
+        "name": "ragnarok",
+        "description": "GCRO",
+        "site": "https://www.globalclassicro.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "CoreRO",
+        "description": "Core Ragnarok Online",
+        "hpAddress": "0x00F45E54",
+        "nameAddress": "0x00F48798"
+    },
+    {
+        "name": "AverseRO",
+        "description": "AverseRO",
+        "site": "https://www.facebook.com/averseRO/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "ecRO",
+        "description": "Empire Classic RO",
+        "site": "https://ecro.gg/",
+        "hpAddress": "0x00E1392C",
+        "nameAddress": "0x00E14580"
+    },
+    {
+        "name": "The Yunna Server",
+        "description": "Yunna Server Ragnarok Online",
+        "site": "https://yunna-server.com/",
+        "hpAddress": "0x00FFB858",
+        "nameAddress": "0x00FFDEF8"
+    },
+    {
+        "name": "BigfootRO",
+        "description": "Bigfoot Ragnarok Online",
+        "site": "https://bigfoot-ro.com/",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "EmeraldRO",
+        "description": "Emerald Ragnarok Online",
+        "site": "https://emeraldro.com.br/",
+        "hpAddress": "0x00FFB858",
+        "nameAddress": "0x00FFDEF8"
+    },
+    {
+        "name": "Nazarick",
+        "description": "Nazarick Ragnarok Online",
+        "site": "http://nazarickro.com/",
+        "hpAddress": "0x0104D59C",
+        "nameAddress": "0x010467D0"
+    },
 ]
