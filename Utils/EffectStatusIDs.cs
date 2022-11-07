@@ -68,6 +68,7 @@ namespace _4RTools.Utils
         PROTECTARMOR = 56,
         CASH_PLUSEXP = 250,
         CASH_RECEIVEITEM = 252,
+        ACCELERATION = 361,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
