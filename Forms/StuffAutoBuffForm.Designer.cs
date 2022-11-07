@@ -90,6 +90,7 @@
             this.pictureGuyakPudding = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureHEBubbleGum = new System.Windows.Forms.PictureBox();
+            this.pictureBattleManual = new System.Windows.Forms.PictureBox();
             this.in241 = new System.Windows.Forms.TextBox();
             this.in242 = new System.Windows.Forms.TextBox();
             this.in243 = new System.Windows.Forms.TextBox();
@@ -138,7 +139,6 @@
             this.in041 = new System.Windows.Forms.TextBox();
             this.in252 = new System.Windows.Forms.TextBox();
             this.in250 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -192,7 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureGuyakPudding)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBattleManual)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -889,6 +889,18 @@
             this.pictureHEBubbleGum.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureHEBubbleGum, "HE Bubble Gum");
             // 
+            // pictureBattleManual
+            // 
+            this.pictureBattleManual.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBattleManual.BackgroundImage")));
+            this.pictureBattleManual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBattleManual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBattleManual.Location = new System.Drawing.Point(151, 515);
+            this.pictureBattleManual.Name = "pictureBattleManual";
+            this.pictureBattleManual.Size = new System.Drawing.Size(36, 26);
+            this.pictureBattleManual.TabIndex = 291;
+            this.pictureBattleManual.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBattleManual, "Battle Manual 300%");
+            // 
             // in241
             // 
             this.in241.Location = new System.Drawing.Point(67, 14);
@@ -1225,18 +1237,6 @@
             this.in250.Size = new System.Drawing.Size(55, 20);
             this.in250.TabIndex = 292;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(151, 515);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox2.TabIndex = 291;
-            this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "Battle Manual 300%");
-            // 
             // StuffAutoBuffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1245,7 +1245,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(398, 645);
             this.Controls.Add(this.in250);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBattleManual);
             this.Controls.Add(this.in252);
             this.Controls.Add(this.pictureHEBubbleGum);
             this.Controls.Add(this.in56);
@@ -1408,7 +1408,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureGuyakPudding)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBattleManual)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1523,6 +1523,6 @@
         private System.Windows.Forms.TextBox in252;
         private System.Windows.Forms.PictureBox pictureHEBubbleGum;
         private System.Windows.Forms.TextBox in250;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBattleManual;
     }
 }
