@@ -129,7 +129,7 @@
             this.pictureMalangCatCan = new System.Windows.Forms.PictureBox();
             this.in685 = new System.Windows.Forms.TextBox();
             this.pictureAlmighty = new System.Windows.Forms.PictureBox();
-            this.in132 = new System.Windows.Forms.TextBox();
+            this.in662 = new System.Windows.Forms.TextBox();
             this.pictureCombatPill = new System.Windows.Forms.PictureBox();
             this.pictureGuyakPudding = new System.Windows.Forms.PictureBox();
             this.in56 = new System.Windows.Forms.TextBox();
@@ -1139,12 +1139,12 @@
             this.pictureAlmighty.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureAlmighty, "Almighty");
             // 
-            // in132
+            // in662
             // 
-            this.in132.Location = new System.Drawing.Point(314, 245);
-            this.in132.Name = "in132";
-            this.in132.Size = new System.Drawing.Size(55, 20);
-            this.in132.TabIndex = 282;
+            this.in662.Location = new System.Drawing.Point(314, 245);
+            this.in662.Name = "in662";
+            this.in662.Size = new System.Drawing.Size(55, 20);
+            this.in662.TabIndex = 282;
             // 
             // pictureCombatPill
             // 
@@ -1230,7 +1230,7 @@
             this.Controls.Add(this.pictureMalangCatCan);
             this.Controls.Add(this.in685);
             this.Controls.Add(this.pictureAlmighty);
-            this.Controls.Add(this.in132);
+            this.Controls.Add(this.in662);
             this.Controls.Add(this.in041);
             this.Controls.Add(this.pictureCombatPill);
             this.Controls.Add(this.pictureGuyakPudding);
@@ -1489,7 +1489,7 @@
         private System.Windows.Forms.PictureBox pictureMalangCatCan;
         private System.Windows.Forms.TextBox in685;
         private System.Windows.Forms.PictureBox pictureAlmighty;
-        private System.Windows.Forms.TextBox in132;
+        private System.Windows.Forms.TextBox in662;
         private System.Windows.Forms.PictureBox pictureCombatPill;
         private System.Windows.Forms.PictureBox pictureGuyakPudding;
         private System.Windows.Forms.TextBox in56;
