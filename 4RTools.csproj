@@ -224,12 +224,6 @@
     <Compile Include="Forms\ClientUpdaterForm.Designer.cs">
       <DependentUpon>ClientUpdaterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FourthClassesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FourthClassesForm.Designer.cs">
-      <DependentUpon>FourthClassesForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\MacroSongForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,9 +313,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClientUpdaterForm.resx">
       <DependentUpon>ClientUpdaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FourthClassesForm.resx">
-      <DependentUpon>FourthClassesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MacroSongForm.resx">
       <DependentUpon>MacroSongForm.cs</DependentUpon>

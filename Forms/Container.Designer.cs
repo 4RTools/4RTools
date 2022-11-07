@@ -59,7 +59,6 @@ namespace _4RTools.Forms
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabMacroSwitch = new System.Windows.Forms.TabPage();
-            this.tabFourthClassesAutoBuffs = new System.Windows.Forms.TabPage();
             this.atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -117,7 +116,6 @@ namespace _4RTools.Forms
             // atkDefMode
             // 
             this.atkDefMode.Controls.Add(this.tabPageSpammer);
-            this.atkDefMode.Controls.Add(this.tabFourthClassesAutoBuffs);
             this.atkDefMode.Controls.Add(this.tabPageAutobuffSkill);
             this.atkDefMode.Controls.Add(this.tabPageAutobuffStuff);
             this.atkDefMode.Controls.Add(this.tabPageMacroSongs);
@@ -347,16 +345,6 @@ namespace _4RTools.Forms
             this.tabMacroSwitch.Text = "Macro Switch";
             this.tabMacroSwitch.UseVisualStyleBackColor = true;
             //
-            // tabFourthClassesAutoBuffs
-            //
-            this.tabFourthClassesAutoBuffs.Location = new System.Drawing.Point(4, 22);
-            this.tabFourthClassesAutoBuffs.Name = "tabFourthClassesAutoBuffs";
-            this.tabFourthClassesAutoBuffs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFourthClassesAutoBuffs.Size = new System.Drawing.Size(424, 274);
-            this.tabFourthClassesAutoBuffs.TabIndex = 8;
-            this.tabFourthClassesAutoBuffs.Text = "4th Classes - Buffs";
-            this.tabFourthClassesAutoBuffs.UseVisualStyleBackColor = true;
-            //
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -424,6 +412,5 @@ namespace _4RTools.Forms
         private Panel panel1;
         private TabPage tabPageProfiles;
         private TabPage tabMacroSwitch;
-        private TabPage tabFourthClassesAutoBuffs;
     }
 }
