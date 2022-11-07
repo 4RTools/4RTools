@@ -135,6 +135,8 @@
             this.in56 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.in041 = new System.Windows.Forms.TextBox();
+            this.in252 = new System.Windows.Forms.TextBox();
+            this.pictureHEBubbleGum = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -187,6 +189,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureCombatPill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureGuyakPudding)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -1193,6 +1196,25 @@
             this.in041.Size = new System.Drawing.Size(55, 20);
             this.in041.TabIndex = 281;
             // 
+            // in252
+            // 
+            this.in252.Location = new System.Drawing.Point(191, 488);
+            this.in252.Name = "in252";
+            this.in252.Size = new System.Drawing.Size(55, 20);
+            this.in252.TabIndex = 290;
+            // 
+            // pictureHEBubbleGum
+            // 
+            this.pictureHEBubbleGum.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureHEBubbleGum.BackgroundImage")));
+            this.pictureHEBubbleGum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureHEBubbleGum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureHEBubbleGum.Location = new System.Drawing.Point(151, 486);
+            this.pictureHEBubbleGum.Name = "pictureHEBubbleGum";
+            this.pictureHEBubbleGum.Size = new System.Drawing.Size(36, 26);
+            this.pictureHEBubbleGum.TabIndex = 289;
+            this.pictureHEBubbleGum.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureHEBubbleGum, "HE Bubble Gum");
+            // 
             // StuffAutoBuffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1200,6 +1222,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(398, 645);
+            this.Controls.Add(this.in252);
+            this.Controls.Add(this.pictureHEBubbleGum);
             this.Controls.Add(this.in56);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.in618);
@@ -1359,6 +1383,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureCombatPill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureGuyakPudding)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1470,5 +1495,7 @@
         private System.Windows.Forms.TextBox in56;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox in041;
+        private System.Windows.Forms.TextBox in252;
+        private System.Windows.Forms.PictureBox pictureHEBubbleGum;
     }
 }

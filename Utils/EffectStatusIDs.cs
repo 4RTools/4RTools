@@ -65,6 +65,7 @@ namespace _4RTools.Utils
         REF_T_POTION = 1169,
         OVERLAPEXPUP = 618,
         PROTECTARMOR = 56,
+        CASH_RECEIVEITEM = 252,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
