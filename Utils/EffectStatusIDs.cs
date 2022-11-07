@@ -56,6 +56,7 @@ namespace _4RTools.Utils
         COMBAT_PILL = 662,
         ENCHANT_BLADE = 316,
         ALMIGHTY = 685,
+        RWC_2011_SCROLL = 664,
         INFINITY_DRINK = 1065,
         HP_INCREASE_POTION_LARGE = 480,
         SP_INCREASE_POTION_LARGE = 481,
@@ -65,6 +66,7 @@ namespace _4RTools.Utils
         REF_T_POTION = 1169,
         OVERLAPEXPUP = 618,
         PROTECTARMOR = 56,
+        CASH_PLUSEXP = 250,
         CASH_RECEIVEITEM = 252,
 
         //ELEMENTAL CONVERTERS

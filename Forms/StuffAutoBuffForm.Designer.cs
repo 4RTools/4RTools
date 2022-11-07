@@ -62,6 +62,34 @@
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.pictureCursedWater = new System.Windows.Forms.PictureBox();
+            this.in491 = new System.Windows.Forms.TextBox();
+            this.in492 = new System.Windows.Forms.TextBox();
+            this.in493 = new System.Windows.Forms.TextBox();
+            this.in494 = new System.Windows.Forms.TextBox();
+            this.in495 = new System.Windows.Forms.TextBox();
+            this.in496 = new System.Windows.Forms.TextBox();
+            this.pictureRefTPotion = new System.Windows.Forms.PictureBox();
+            this.pictureInfinityDrink = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureMalangCatCan = new System.Windows.Forms.PictureBox();
+            this.pictureAlmighty = new System.Windows.Forms.PictureBox();
+            this.pictureCombatPill = new System.Windows.Forms.PictureBox();
+            this.pictureGuyakPudding = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureHEBubbleGum = new System.Windows.Forms.PictureBox();
             this.in241 = new System.Windows.Forms.TextBox();
             this.in242 = new System.Windows.Forms.TextBox();
             this.in243 = new System.Windows.Forms.TextBox();
@@ -82,61 +110,35 @@
             this.in91 = new System.Windows.Forms.TextBox();
             this.in90 = new System.Windows.Forms.TextBox();
             this.in484 = new System.Windows.Forms.TextBox();
-            this.in491 = new System.Windows.Forms.TextBox();
-            this.in492 = new System.Windows.Forms.TextBox();
-            this.in493 = new System.Windows.Forms.TextBox();
-            this.in494 = new System.Windows.Forms.TextBox();
-            this.in495 = new System.Windows.Forms.TextBox();
-            this.in496 = new System.Windows.Forms.TextBox();
             this.in1154 = new System.Windows.Forms.TextBox();
             this.in319 = new System.Windows.Forms.TextBox();
             this.in320 = new System.Windows.Forms.TextBox();
             this.in322 = new System.Windows.Forms.TextBox();
             this.in64 = new System.Windows.Forms.TextBox();
             this.in1169 = new System.Windows.Forms.TextBox();
-            this.pictureRefTPotion = new System.Windows.Forms.PictureBox();
             this.in1065 = new System.Windows.Forms.TextBox();
-            this.pictureInfinityDrink = new System.Windows.Forms.PictureBox();
             this.in1170 = new System.Windows.Forms.TextBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.in1171 = new System.Windows.Forms.TextBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.in3 = new System.Windows.Forms.TextBox();
             this.in184 = new System.Windows.Forms.TextBox();
             this.in151 = new System.Windows.Forms.TextBox();
             this.in150 = new System.Windows.Forms.TextBox();
             this.in289 = new System.Windows.Forms.TextBox();
             this.in41 = new System.Windows.Forms.TextBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.in910 = new System.Windows.Forms.TextBox();
             this.in908 = new System.Windows.Forms.TextBox();
             this.in909 = new System.Windows.Forms.TextBox();
             this.in911 = new System.Windows.Forms.TextBox();
             this.in481 = new System.Windows.Forms.TextBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.in480 = new System.Windows.Forms.TextBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.in618 = new System.Windows.Forms.TextBox();
-            this.pictureMalangCatCan = new System.Windows.Forms.PictureBox();
-            this.in685 = new System.Windows.Forms.TextBox();
-            this.pictureAlmighty = new System.Windows.Forms.PictureBox();
+            this.in664 = new System.Windows.Forms.TextBox();
             this.in662 = new System.Windows.Forms.TextBox();
-            this.pictureCombatPill = new System.Windows.Forms.PictureBox();
-            this.pictureGuyakPudding = new System.Windows.Forms.PictureBox();
             this.in56 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.in041 = new System.Windows.Forms.TextBox();
             this.in252 = new System.Windows.Forms.TextBox();
-            this.pictureHEBubbleGum = new System.Windows.Forms.PictureBox();
+            this.in250 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -190,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureGuyakPudding)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -573,6 +576,319 @@
             this.pictureCursedWater.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureCursedWater, "Cursed Water");
             // 
+            // in491
+            // 
+            this.in491.Location = new System.Drawing.Point(67, 459);
+            this.in491.Name = "in491";
+            this.in491.Size = new System.Drawing.Size(55, 20);
+            this.in491.TabIndex = 196;
+            this.toolTip1.SetToolTip(this.in491, "3RD STR FOOD");
+            // 
+            // in492
+            // 
+            this.in492.Location = new System.Drawing.Point(67, 580);
+            this.in492.Name = "in492";
+            this.in492.Size = new System.Drawing.Size(55, 20);
+            this.in492.TabIndex = 198;
+            this.toolTip1.SetToolTip(this.in492, "3RD INT FOOD");
+            // 
+            // in493
+            // 
+            this.in493.Location = new System.Drawing.Point(67, 521);
+            this.in493.Name = "in493";
+            this.in493.Size = new System.Drawing.Size(55, 20);
+            this.in493.TabIndex = 200;
+            this.toolTip1.SetToolTip(this.in493, "3RD VIT FOOD");
+            // 
+            // in494
+            // 
+            this.in494.Location = new System.Drawing.Point(67, 550);
+            this.in494.Name = "in494";
+            this.in494.Size = new System.Drawing.Size(55, 20);
+            this.in494.TabIndex = 202;
+            this.toolTip1.SetToolTip(this.in494, "3RD DEX FOOD");
+            // 
+            // in495
+            // 
+            this.in495.Location = new System.Drawing.Point(67, 490);
+            this.in495.Name = "in495";
+            this.in495.Size = new System.Drawing.Size(55, 20);
+            this.in495.TabIndex = 204;
+            this.toolTip1.SetToolTip(this.in495, "3RD AGI FOOD");
+            // 
+            // in496
+            // 
+            this.in496.Location = new System.Drawing.Point(67, 611);
+            this.in496.Name = "in496";
+            this.in496.Size = new System.Drawing.Size(55, 20);
+            this.in496.TabIndex = 206;
+            this.toolTip1.SetToolTip(this.in496, "3RD LUK FOOD");
+            // 
+            // pictureRefTPotion
+            // 
+            this.pictureRefTPotion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureRefTPotion.BackgroundImage")));
+            this.pictureRefTPotion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureRefTPotion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureRefTPotion.Location = new System.Drawing.Point(151, 71);
+            this.pictureRefTPotion.Name = "pictureRefTPotion";
+            this.pictureRefTPotion.Size = new System.Drawing.Size(36, 26);
+            this.pictureRefTPotion.TabIndex = 261;
+            this.pictureRefTPotion.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureRefTPotion, "Golden X");
+            // 
+            // pictureInfinityDrink
+            // 
+            this.pictureInfinityDrink.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureInfinityDrink.BackgroundImage")));
+            this.pictureInfinityDrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureInfinityDrink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureInfinityDrink.Location = new System.Drawing.Point(151, 100);
+            this.pictureInfinityDrink.Name = "pictureInfinityDrink";
+            this.pictureInfinityDrink.Size = new System.Drawing.Size(36, 26);
+            this.pictureInfinityDrink.TabIndex = 259;
+            this.pictureInfinityDrink.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureInfinityDrink, "Infinity Drink");
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
+            this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox32.Location = new System.Drawing.Point(151, 12);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox32.TabIndex = 257;
+            this.pictureBox32.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox32, "Red Herb Activator");
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.BackgroundImage")));
+            this.pictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox33.Location = new System.Drawing.Point(151, 42);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox33.TabIndex = 255;
+            this.pictureBox33.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox33, "Blue Herb Activator");
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.BackgroundImage")));
+            this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox21.Location = new System.Drawing.Point(151, 334);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox21.TabIndex = 268;
+            this.pictureBox21.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox21, "Box of Thunder");
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox11.Location = new System.Drawing.Point(151, 306);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox11.TabIndex = 267;
+            this.pictureBox11.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox11, "Speedpot Potion / Guyak Pudding");
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Location = new System.Drawing.Point(151, 278);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox6.TabIndex = 266;
+            this.pictureBox6.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox6, "Box of Gloom");
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Location = new System.Drawing.Point(151, 250);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox5.TabIndex = 265;
+            this.pictureBox5.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox5, "Box of Sunlight");
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(151, 194);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox3.TabIndex = 264;
+            this.pictureBox3.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox3, "Box of Resentment (+20 ATQ)");
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(151, 222);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox4.TabIndex = 263;
+            this.pictureBox4.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox4, "Box of Drowsiness (+20 MATK)");
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Location = new System.Drawing.Point(27, 333);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox7.TabIndex = 32;
+            this.pictureBox7.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox7, "Fireproof Potion");
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.Location = new System.Drawing.Point(27, 366);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox8.TabIndex = 34;
+            this.pictureBox8.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox8, "Coldproof Potion");
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox9.Location = new System.Drawing.Point(27, 426);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox9.TabIndex = 36;
+            this.pictureBox9.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox9, "Groundproof Potion");
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox10.Location = new System.Drawing.Point(27, 396);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox10.TabIndex = 38;
+            this.pictureBox10.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox10, "Thunderproof Potion");
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox30.BackgroundImage")));
+            this.pictureBox30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox30.Location = new System.Drawing.Point(151, 164);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 277;
+            this.pictureBox30.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox30, "SP Increase Potion");
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.BackgroundImage")));
+            this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox25.Location = new System.Drawing.Point(151, 130);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox25.TabIndex = 275;
+            this.pictureBox25.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox25, "HP Increase Potion");
+            // 
+            // pictureMalangCatCan
+            // 
+            this.pictureMalangCatCan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureMalangCatCan.BackgroundImage")));
+            this.pictureMalangCatCan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureMalangCatCan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureMalangCatCan.Location = new System.Drawing.Point(274, 303);
+            this.pictureMalangCatCan.Name = "pictureMalangCatCan";
+            this.pictureMalangCatCan.Size = new System.Drawing.Size(36, 26);
+            this.pictureMalangCatCan.TabIndex = 285;
+            this.pictureMalangCatCan.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureMalangCatCan, "Malang Cat Can");
+            // 
+            // pictureAlmighty
+            // 
+            this.pictureAlmighty.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureAlmighty.BackgroundImage")));
+            this.pictureAlmighty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureAlmighty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureAlmighty.Location = new System.Drawing.Point(274, 273);
+            this.pictureAlmighty.Name = "pictureAlmighty";
+            this.pictureAlmighty.Size = new System.Drawing.Size(36, 26);
+            this.pictureAlmighty.TabIndex = 283;
+            this.pictureAlmighty.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureAlmighty, "Almighty");
+            // 
+            // pictureCombatPill
+            // 
+            this.pictureCombatPill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureCombatPill.BackgroundImage")));
+            this.pictureCombatPill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureCombatPill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureCombatPill.Location = new System.Drawing.Point(274, 241);
+            this.pictureCombatPill.Name = "pictureCombatPill";
+            this.pictureCombatPill.Size = new System.Drawing.Size(36, 26);
+            this.pictureCombatPill.TabIndex = 280;
+            this.pictureCombatPill.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureCombatPill, "Combat Pill");
+            // 
+            // pictureGuyakPudding
+            // 
+            this.pictureGuyakPudding.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureGuyakPudding.BackgroundImage")));
+            this.pictureGuyakPudding.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureGuyakPudding.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureGuyakPudding.Location = new System.Drawing.Point(151, 363);
+            this.pictureGuyakPudding.Name = "pictureGuyakPudding";
+            this.pictureGuyakPudding.Size = new System.Drawing.Size(36, 26);
+            this.pictureGuyakPudding.TabIndex = 279;
+            this.pictureGuyakPudding.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureGuyakPudding, "Guyak Pudding");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(151, 395);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox1.TabIndex = 287;
+            this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Full Chemical Protection (Scroll)");
+            // 
+            // pictureHEBubbleGum
+            // 
+            this.pictureHEBubbleGum.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureHEBubbleGum.BackgroundImage")));
+            this.pictureHEBubbleGum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureHEBubbleGum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureHEBubbleGum.Location = new System.Drawing.Point(151, 486);
+            this.pictureHEBubbleGum.Name = "pictureHEBubbleGum";
+            this.pictureHEBubbleGum.Size = new System.Drawing.Size(36, 26);
+            this.pictureHEBubbleGum.TabIndex = 289;
+            this.pictureHEBubbleGum.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureHEBubbleGum, "HE Bubble Gum");
+            // 
             // in241
             // 
             this.in241.Location = new System.Drawing.Point(67, 14);
@@ -713,54 +1029,6 @@
             this.in484.Size = new System.Drawing.Size(55, 20);
             this.in484.TabIndex = 188;
             // 
-            // in491
-            // 
-            this.in491.Location = new System.Drawing.Point(67, 459);
-            this.in491.Name = "in491";
-            this.in491.Size = new System.Drawing.Size(55, 20);
-            this.in491.TabIndex = 196;
-            this.toolTip1.SetToolTip(this.in491, "3RD STR FOOD");
-            // 
-            // in492
-            // 
-            this.in492.Location = new System.Drawing.Point(67, 580);
-            this.in492.Name = "in492";
-            this.in492.Size = new System.Drawing.Size(55, 20);
-            this.in492.TabIndex = 198;
-            this.toolTip1.SetToolTip(this.in492, "3RD INT FOOD");
-            // 
-            // in493
-            // 
-            this.in493.Location = new System.Drawing.Point(67, 521);
-            this.in493.Name = "in493";
-            this.in493.Size = new System.Drawing.Size(55, 20);
-            this.in493.TabIndex = 200;
-            this.toolTip1.SetToolTip(this.in493, "3RD VIT FOOD");
-            // 
-            // in494
-            // 
-            this.in494.Location = new System.Drawing.Point(67, 550);
-            this.in494.Name = "in494";
-            this.in494.Size = new System.Drawing.Size(55, 20);
-            this.in494.TabIndex = 202;
-            this.toolTip1.SetToolTip(this.in494, "3RD DEX FOOD");
-            // 
-            // in495
-            // 
-            this.in495.Location = new System.Drawing.Point(67, 490);
-            this.in495.Name = "in495";
-            this.in495.Size = new System.Drawing.Size(55, 20);
-            this.in495.TabIndex = 204;
-            this.toolTip1.SetToolTip(this.in495, "3RD AGI FOOD");
-            // 
-            // in496
-            // 
-            this.in496.Location = new System.Drawing.Point(67, 611);
-            this.in496.Name = "in496";
-            this.in496.Size = new System.Drawing.Size(55, 20);
-            this.in496.TabIndex = 206;
-            this.toolTip1.SetToolTip(this.in496, "3RD LUK FOOD");
-            // 
             // in1154
             // 
             this.in1154.Location = new System.Drawing.Point(314, 428);
@@ -803,36 +1071,12 @@
             this.in1169.Size = new System.Drawing.Size(55, 20);
             this.in1169.TabIndex = 262;
             // 
-            // pictureRefTPotion
-            // 
-            this.pictureRefTPotion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureRefTPotion.BackgroundImage")));
-            this.pictureRefTPotion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureRefTPotion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureRefTPotion.Location = new System.Drawing.Point(151, 71);
-            this.pictureRefTPotion.Name = "pictureRefTPotion";
-            this.pictureRefTPotion.Size = new System.Drawing.Size(36, 26);
-            this.pictureRefTPotion.TabIndex = 261;
-            this.pictureRefTPotion.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureRefTPotion, "Golden X");
-            // 
             // in1065
             // 
             this.in1065.Location = new System.Drawing.Point(191, 103);
             this.in1065.Name = "in1065";
             this.in1065.Size = new System.Drawing.Size(55, 20);
             this.in1065.TabIndex = 260;
-            // 
-            // pictureInfinityDrink
-            // 
-            this.pictureInfinityDrink.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureInfinityDrink.BackgroundImage")));
-            this.pictureInfinityDrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureInfinityDrink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureInfinityDrink.Location = new System.Drawing.Point(151, 100);
-            this.pictureInfinityDrink.Name = "pictureInfinityDrink";
-            this.pictureInfinityDrink.Size = new System.Drawing.Size(36, 26);
-            this.pictureInfinityDrink.TabIndex = 259;
-            this.pictureInfinityDrink.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureInfinityDrink, "Infinity Drink");
             // 
             // in1170
             // 
@@ -841,36 +1085,12 @@
             this.in1170.Size = new System.Drawing.Size(55, 20);
             this.in1170.TabIndex = 258;
             // 
-            // pictureBox32
-            // 
-            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
-            this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox32.Location = new System.Drawing.Point(151, 12);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox32.TabIndex = 257;
-            this.pictureBox32.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox32, "Red Herb Activator");
-            // 
             // in1171
             // 
             this.in1171.Location = new System.Drawing.Point(191, 42);
             this.in1171.Name = "in1171";
             this.in1171.Size = new System.Drawing.Size(55, 20);
             this.in1171.TabIndex = 256;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.BackgroundImage")));
-            this.pictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox33.Location = new System.Drawing.Point(151, 42);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox33.TabIndex = 255;
-            this.pictureBox33.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox33, "Blue Herb Activator");
             // 
             // in3
             // 
@@ -914,126 +1134,6 @@
             this.in41.Size = new System.Drawing.Size(55, 20);
             this.in41.TabIndex = 269;
             // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.BackgroundImage")));
-            this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox21.Location = new System.Drawing.Point(151, 334);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox21.TabIndex = 268;
-            this.pictureBox21.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox21, "Box of Thunder");
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox11.Location = new System.Drawing.Point(151, 306);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox11.TabIndex = 267;
-            this.pictureBox11.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox11, "Speedpot Potion / Guyak Pudding");
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(151, 278);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox6.TabIndex = 266;
-            this.pictureBox6.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox6, "Box of Gloom");
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(151, 250);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox5.TabIndex = 265;
-            this.pictureBox5.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox5, "Box of Sunlight");
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(151, 194);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox3.TabIndex = 264;
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "Box of Resentment (+20 ATQ)");
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(151, 222);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox4.TabIndex = 263;
-            this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "Box of Drowsiness (+20 MATK)");
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(27, 333);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox7.TabIndex = 32;
-            this.pictureBox7.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox7, "Fireproof Potion");
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(27, 366);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox8.TabIndex = 34;
-            this.pictureBox8.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox8, "Coldproof Potion");
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Location = new System.Drawing.Point(27, 426);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox9.TabIndex = 36;
-            this.pictureBox9.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox9, "Groundproof Potion");
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Location = new System.Drawing.Point(27, 396);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox10.TabIndex = 38;
-            this.pictureBox10.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox10, "Thunderproof Potion");
-            // 
             // in910
             // 
             this.in910.Location = new System.Drawing.Point(67, 336);
@@ -1069,37 +1169,12 @@
             this.in481.Size = new System.Drawing.Size(55, 20);
             this.in481.TabIndex = 278;
             // 
-            // pictureBox30
-            // 
-            this.pictureBox30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox30.BackgroundImage")));
-            this.pictureBox30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox30.Location = new System.Drawing.Point(151, 164);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 277;
-            this.pictureBox30.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox30, "SP Increase Potion");
-            // 
             // in480
             // 
             this.in480.Location = new System.Drawing.Point(191, 132);
             this.in480.Name = "in480";
             this.in480.Size = new System.Drawing.Size(55, 20);
             this.in480.TabIndex = 276;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.BackgroundImage")));
-            this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox25.Location = new System.Drawing.Point(151, 130);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox25.TabIndex = 275;
-            this.pictureBox25.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox25, "HP Increase Potion");
             // 
             // in618
             // 
@@ -1108,36 +1183,12 @@
             this.in618.Size = new System.Drawing.Size(55, 20);
             this.in618.TabIndex = 286;
             // 
-            // pictureMalangCatCan
+            // in664
             // 
-            this.pictureMalangCatCan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureMalangCatCan.BackgroundImage")));
-            this.pictureMalangCatCan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureMalangCatCan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureMalangCatCan.Location = new System.Drawing.Point(274, 303);
-            this.pictureMalangCatCan.Name = "pictureMalangCatCan";
-            this.pictureMalangCatCan.Size = new System.Drawing.Size(36, 26);
-            this.pictureMalangCatCan.TabIndex = 285;
-            this.pictureMalangCatCan.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureMalangCatCan, "Malang Cat Can");
-            // 
-            // in685
-            // 
-            this.in685.Location = new System.Drawing.Point(314, 276);
-            this.in685.Name = "in685";
-            this.in685.Size = new System.Drawing.Size(55, 20);
-            this.in685.TabIndex = 284;
-            // 
-            // pictureAlmighty
-            // 
-            this.pictureAlmighty.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureAlmighty.BackgroundImage")));
-            this.pictureAlmighty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureAlmighty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureAlmighty.Location = new System.Drawing.Point(274, 273);
-            this.pictureAlmighty.Name = "pictureAlmighty";
-            this.pictureAlmighty.Size = new System.Drawing.Size(36, 26);
-            this.pictureAlmighty.TabIndex = 283;
-            this.pictureAlmighty.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureAlmighty, "Almighty");
+            this.in664.Location = new System.Drawing.Point(314, 276);
+            this.in664.Name = "in664";
+            this.in664.Size = new System.Drawing.Size(55, 20);
+            this.in664.TabIndex = 284;
             // 
             // in662
             // 
@@ -1146,48 +1197,12 @@
             this.in662.Size = new System.Drawing.Size(55, 20);
             this.in662.TabIndex = 282;
             // 
-            // pictureCombatPill
-            // 
-            this.pictureCombatPill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureCombatPill.BackgroundImage")));
-            this.pictureCombatPill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureCombatPill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureCombatPill.Location = new System.Drawing.Point(274, 241);
-            this.pictureCombatPill.Name = "pictureCombatPill";
-            this.pictureCombatPill.Size = new System.Drawing.Size(36, 26);
-            this.pictureCombatPill.TabIndex = 280;
-            this.pictureCombatPill.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureCombatPill, "Combat Pill");
-            // 
-            // pictureGuyakPudding
-            // 
-            this.pictureGuyakPudding.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureGuyakPudding.BackgroundImage")));
-            this.pictureGuyakPudding.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureGuyakPudding.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureGuyakPudding.Location = new System.Drawing.Point(151, 363);
-            this.pictureGuyakPudding.Name = "pictureGuyakPudding";
-            this.pictureGuyakPudding.Size = new System.Drawing.Size(36, 26);
-            this.pictureGuyakPudding.TabIndex = 279;
-            this.pictureGuyakPudding.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureGuyakPudding, "Guyak Pudding");
-            // 
             // in56
             // 
             this.in56.Location = new System.Drawing.Point(191, 399);
             this.in56.Name = "in56";
             this.in56.Size = new System.Drawing.Size(55, 20);
             this.in56.TabIndex = 288;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(151, 395);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox1.TabIndex = 287;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "Full Chemical Protection (Scroll)");
             // 
             // in041
             // 
@@ -1203,17 +1218,24 @@
             this.in252.Size = new System.Drawing.Size(55, 20);
             this.in252.TabIndex = 290;
             // 
-            // pictureHEBubbleGum
+            // in250
             // 
-            this.pictureHEBubbleGum.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureHEBubbleGum.BackgroundImage")));
-            this.pictureHEBubbleGum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureHEBubbleGum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureHEBubbleGum.Location = new System.Drawing.Point(151, 486);
-            this.pictureHEBubbleGum.Name = "pictureHEBubbleGum";
-            this.pictureHEBubbleGum.Size = new System.Drawing.Size(36, 26);
-            this.pictureHEBubbleGum.TabIndex = 289;
-            this.pictureHEBubbleGum.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureHEBubbleGum, "HE Bubble Gum");
+            this.in250.Location = new System.Drawing.Point(191, 517);
+            this.in250.Name = "in250";
+            this.in250.Size = new System.Drawing.Size(55, 20);
+            this.in250.TabIndex = 292;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(151, 515);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox2.TabIndex = 291;
+            this.pictureBox2.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox2, "Battle Manual 300%");
             // 
             // StuffAutoBuffForm
             // 
@@ -1222,13 +1244,15 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(398, 645);
+            this.Controls.Add(this.in250);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.in252);
             this.Controls.Add(this.pictureHEBubbleGum);
             this.Controls.Add(this.in56);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.in618);
             this.Controls.Add(this.pictureMalangCatCan);
-            this.Controls.Add(this.in685);
+            this.Controls.Add(this.in664);
             this.Controls.Add(this.pictureAlmighty);
             this.Controls.Add(this.in662);
             this.Controls.Add(this.in041);
@@ -1384,6 +1408,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureGuyakPudding)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1487,7 +1512,7 @@
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.TextBox in618;
         private System.Windows.Forms.PictureBox pictureMalangCatCan;
-        private System.Windows.Forms.TextBox in685;
+        private System.Windows.Forms.TextBox in664;
         private System.Windows.Forms.PictureBox pictureAlmighty;
         private System.Windows.Forms.TextBox in662;
         private System.Windows.Forms.PictureBox pictureCombatPill;
@@ -1497,5 +1522,7 @@
         private System.Windows.Forms.TextBox in041;
         private System.Windows.Forms.TextBox in252;
         private System.Windows.Forms.PictureBox pictureHEBubbleGum;
+        private System.Windows.Forms.TextBox in250;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
