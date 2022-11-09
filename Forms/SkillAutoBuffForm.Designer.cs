@@ -120,6 +120,8 @@
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.in68 = new System.Windows.Forms.TextBox();
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.in361 = new System.Windows.Forms.TextBox();
+            this.pictureAcceleration = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
@@ -165,6 +167,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAcceleration)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox22
@@ -970,6 +973,25 @@
             this.pictureBox45.TabIndex = 196;
             this.pictureBox45.TabStop = false;
             // 
+            // in361
+            // 
+            this.in361.Location = new System.Drawing.Point(314, 412);
+            this.in361.Name = "in361";
+            this.in361.Size = new System.Drawing.Size(55, 20);
+            this.in361.TabIndex = 199;
+            // 
+            // pictureAcceleration
+            // 
+            this.pictureAcceleration.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureAcceleration.BackgroundImage")));
+            this.pictureAcceleration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureAcceleration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureAcceleration.Location = new System.Drawing.Point(274, 408);
+            this.pictureAcceleration.Name = "pictureAcceleration";
+            this.pictureAcceleration.Size = new System.Drawing.Size(36, 26);
+            this.pictureAcceleration.TabIndex = 198;
+            this.pictureAcceleration.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureAcceleration, "Acceleration");
+            // 
             // SkillAutoBuffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -977,6 +999,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(400, 457);
+            this.Controls.Add(this.in361);
+            this.Controls.Add(this.pictureAcceleration);
             this.Controls.Add(this.in68);
             this.Controls.Add(this.pictureBox45);
             this.Controls.Add(this.in391);
@@ -1113,6 +1137,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAcceleration)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1210,5 +1235,7 @@
         private System.Windows.Forms.PictureBox pictureBox44;
         private System.Windows.Forms.TextBox in68;
         private System.Windows.Forms.PictureBox pictureBox45;
+        private System.Windows.Forms.TextBox in361;
+        private System.Windows.Forms.PictureBox pictureAcceleration;
     }
 }

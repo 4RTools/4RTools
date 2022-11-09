@@ -344,7 +344,7 @@ namespace _4RTools.Forms
             this.tabMacroSwitch.TabIndex = 8;
             this.tabMacroSwitch.Text = "Macro Switch";
             this.tabMacroSwitch.UseVisualStyleBackColor = true;
-            // 
+            //
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

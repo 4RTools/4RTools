@@ -55,12 +55,27 @@ namespace _4RTools.Utils
         PEEL_CHANGE = 206,
         COMBAT_PILL = 662,
         ENCHANT_BLADE = 316,
+        ALMIGHTY = 685,
+        RWC_2011_SCROLL = 664,
+        INFINITY_DRINK = 1065,
+        HP_INCREASE_POTION_LARGE = 480,
+        SP_INCREASE_POTION_LARGE = 481,
+        ENRICH_CELERMINE_JUICE = 484,
+        RED_HERB_ACTIVATOR = 1170,
+        BLUE_HERB_ACTIVATOR = 1171,
+        REF_T_POTION = 1169,
+        OVERLAPEXPUP = 618,
+        PROTECTARMOR = 56,
+        CASH_PLUSEXP = 250,
+        CASH_RECEIVEITEM = 252,
+        ACCELERATION = 361,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
         PROPERTYWATER = 91,
         PROPERTYWIND = 92,
         PROPERTYGROUND = 93,
+        WEAPONPROPERTY = 64,
 
         //ASPD POTIONS
         CONCENTRATION_POTION = 37,
@@ -95,13 +110,6 @@ namespace _4RTools.Utils
         //Scrolls
         INC_AGI = 12,
         BLESSING = 10,
-
-        //3th stuffs
-        HP_INCREASE_POTION_LARGE = 480,
-        SP_INCREASE_POTION_LARGE = 481,
-        ENRICH_CELERMINE_JUICE = 484,
-        RED_HERB_ACTIVATOR = 1170,
-        BLUE_HERB_ACTIVATOR = 1171,
 
         //3th foods
         STR_3RD_FOOD = 491,
