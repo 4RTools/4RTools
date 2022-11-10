@@ -40,6 +40,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.atkDef = new System.Windows.Forms.TabPage();
+            this.tabMacroSwitch = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
@@ -58,7 +59,6 @@ namespace _4RTools.Forms
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
-            this.tabMacroSwitch = new System.Windows.Forms.TabPage();
             this.atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -98,7 +98,7 @@ namespace _4RTools.Forms
             this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpammer.Name = "tabPageSpammer";
             this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(424, 274);
+            this.tabPageSpammer.Size = new System.Drawing.Size(563, 274);
             this.tabPageSpammer.TabIndex = 1;
             this.tabPageSpammer.Text = "Skill Spammer";
             this.tabPageSpammer.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@ namespace _4RTools.Forms
             this.atkDefMode.Location = new System.Drawing.Point(15, 274);
             this.atkDefMode.Name = "atkDefMode";
             this.atkDefMode.SelectedIndex = 0;
-            this.atkDefMode.Size = new System.Drawing.Size(432, 300);
+            this.atkDefMode.Size = new System.Drawing.Size(571, 300);
             this.atkDefMode.TabIndex = 6;
             // 
             // tabPageAutobuffStuff
@@ -158,6 +158,16 @@ namespace _4RTools.Forms
             this.atkDef.Text = "ATK x DEF Mode";
             this.atkDef.UseVisualStyleBackColor = true;
             // 
+            // tabMacroSwitch
+            // 
+            this.tabMacroSwitch.Location = new System.Drawing.Point(4, 22);
+            this.tabMacroSwitch.Name = "tabMacroSwitch";
+            this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMacroSwitch.Size = new System.Drawing.Size(424, 274);
+            this.tabMacroSwitch.TabIndex = 8;
+            this.tabMacroSwitch.Text = "Macro Switch";
+            this.tabMacroSwitch.UseVisualStyleBackColor = true;
+            // 
             // tabPageProfiles
             // 
             this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
@@ -171,7 +181,7 @@ namespace _4RTools.Forms
             // lblLinkDiscord
             // 
             this.lblLinkDiscord.AutoSize = true;
-            this.lblLinkDiscord.Location = new System.Drawing.Point(344, 16);
+            this.lblLinkDiscord.Location = new System.Drawing.Point(479, 17);
             this.lblLinkDiscord.Name = "lblLinkDiscord";
             this.lblLinkDiscord.Size = new System.Drawing.Size(92, 13);
             this.lblLinkDiscord.TabIndex = 8;
@@ -194,7 +204,7 @@ namespace _4RTools.Forms
             // 
             this.panelDiscImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDiscImage.BackgroundImage")));
             this.panelDiscImage.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panelDiscImage.Location = new System.Drawing.Point(305, 6);
+            this.panelDiscImage.Location = new System.Drawing.Point(440, 7);
             this.panelDiscImage.Name = "panelDiscImage";
             this.panelDiscImage.Size = new System.Drawing.Size(32, 33);
             this.panelDiscImage.TabIndex = 10;
@@ -212,7 +222,7 @@ namespace _4RTools.Forms
             // 
             this.labelProfile.AutoSize = true;
             this.labelProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelProfile.Location = new System.Drawing.Point(252, 9);
+            this.labelProfile.Location = new System.Drawing.Point(401, 10);
             this.labelProfile.Name = "labelProfile";
             this.labelProfile.Size = new System.Drawing.Size(48, 17);
             this.labelProfile.TabIndex = 15;
@@ -221,7 +231,7 @@ namespace _4RTools.Forms
             // profileCB
             // 
             this.profileCB.FormattingEnabled = true;
-            this.profileCB.Location = new System.Drawing.Point(256, 29);
+            this.profileCB.Location = new System.Drawing.Point(405, 30);
             this.profileCB.Name = "profileCB";
             this.profileCB.Size = new System.Drawing.Size(181, 21);
             this.profileCB.TabIndex = 14;
@@ -238,13 +248,13 @@ namespace _4RTools.Forms
             this.panelFooter.Controls.Add(this.panelDiscImage);
             this.panelFooter.Location = new System.Drawing.Point(0, 580);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(456, 43);
+            this.panelFooter.Size = new System.Drawing.Size(600, 43);
             this.panelFooter.TabIndex = 16;
             // 
             // websiteLinkLabel
             // 
             this.websiteLinkLabel.AutoSize = true;
-            this.websiteLinkLabel.Location = new System.Drawing.Point(195, 15);
+            this.websiteLinkLabel.Location = new System.Drawing.Point(261, 16);
             this.websiteLinkLabel.Name = "websiteLinkLabel";
             this.websiteLinkLabel.Size = new System.Drawing.Size(91, 13);
             this.websiteLinkLabel.TabIndex = 12;
@@ -256,7 +266,7 @@ namespace _4RTools.Forms
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(158, 5);
+            this.panel1.Location = new System.Drawing.Point(224, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(32, 33);
             this.panel1.TabIndex = 13;
@@ -266,7 +276,7 @@ namespace _4RTools.Forms
             this.panel4.BackColor = System.Drawing.Color.Silver;
             this.panel4.Location = new System.Drawing.Point(16, 66);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(420, 1);
+            this.panel4.Size = new System.Drawing.Size(568, 1);
             this.panel4.TabIndex = 17;
             // 
             // label1
@@ -335,22 +345,12 @@ namespace _4RTools.Forms
             this.tabPageYggAutopot.Text = "Yggdrasil";
             this.tabPageYggAutopot.UseVisualStyleBackColor = true;
             // 
-            // tabMacroSwitch
-            // 
-            this.tabMacroSwitch.Location = new System.Drawing.Point(4, 22);
-            this.tabMacroSwitch.Name = "tabMacroSwitch";
-            this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMacroSwitch.Size = new System.Drawing.Size(424, 274);
-            this.tabMacroSwitch.TabIndex = 8;
-            this.tabMacroSwitch.Text = "Macro Switch";
-            this.tabMacroSwitch.UseVisualStyleBackColor = true;
-            //
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(455, 625);
+            this.ClientSize = new System.Drawing.Size(598, 625);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panel5);

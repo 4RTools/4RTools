@@ -78,10 +78,10 @@ namespace _4RTools.Forms
             {
                 this.btnStatusToggle.BackColor = Color.Red;
                 this.btnStatusToggle.Text = "OFF";
-                this.notifyIconTray.Icon = Resources.logo_4rtools_off;
+                this.notifyIconTray.Icon = Resources._4RTools.ETCResource.logo_4rtools_off;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
                 this.lblStatusToggle.Text = "Press the key to start!";
-                new SoundPlayer(Resources.Speech_Off).Play();
+                new SoundPlayer(Resources._4RTools.ETCResource.Speech_Off).Play();
             }
             else
             {
@@ -90,11 +90,11 @@ namespace _4RTools.Forms
                 {
                     this.btnStatusToggle.BackColor = Color.Green;
                     this.btnStatusToggle.Text = "ON";
-                    this.notifyIconTray.Icon = Resources.logo_4rtools_on;
+                    this.notifyIconTray.Icon = Resources._4RTools.ETCResource.logo_4rtools_on;
                     this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
                     this.lblStatusToggle.Text = "Press the key to stop!";
                     this.lblStatusToggle.ForeColor = Color.Black;
-                    new SoundPlayer(Resources.Speech_On).Play();
+                    new SoundPlayer(Resources._4RTools.ETCResource.Speech_On).Play();
                 } else
                 {
                     this.lblStatusToggle.Text = "Please select a valid Ragnarok Client!";

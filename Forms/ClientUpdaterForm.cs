@@ -69,7 +69,7 @@ namespace _4RTools.Forms
 
         private string LoadResourceServerFile()
         {
-            return Properties.Resources.supported_servers;
+            return Resources._4RTools.ETCResource.supported_servers;
         }
 
         private string LoadLocalServerFile()

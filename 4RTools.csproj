@@ -277,6 +277,7 @@
     <Compile Include="Model\Autopot.cs" />
     <Compile Include="Model\Autobuff.cs" />
     <Compile Include="Model\AutoRefreshSpammer.cs" />
+    <Compile Include="Model\Buff.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
     <Compile Include="Model\UserPreferences.cs" />
     <Compile Include="Model\Client.cs" />
@@ -296,6 +297,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\4RTools\ETCResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ETCResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\4RTools\Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\BuffList.cs" />
+    <Compile Include="Utils\Classe.cs" />
     <Compile Include="Utils\EffectStatusIDs.cs" />
     <Compile Include="Utils\AppConfig.cs" />
     <Compile Include="Utils\Constants.cs" />
@@ -347,6 +360,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\4RTools\Icons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\4RTools\ETCResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ETCResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -364,16 +385,116 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="assets\images\abrasive.gif" />
+    <None Include="assets\images\ac_concentration.gif" />
+    <None Include="assets\images\agi_3rd_food.png" />
+    <None Include="assets\images\agi_food.gif" />
+    <None Include="assets\images\al_angelus.gif" />
+    <None Include="assets\images\al_blessing.gif" />
+    <None Include="assets\images\al_blessing.png" />
+    <None Include="assets\images\al_incagi.gif" />
+    <None Include="assets\images\al_incagi.png" />
+    <None Include="assets\images\aloevera.gif" />
+    <None Include="assets\images\anodyne.gif" />
+    <None Include="assets\images\as_poisonreact.gif" />
+    <None Include="assets\images\asc_edp.gif" />
+    <None Include="assets\images\awakening_potion.gif" />
+    <None Include="assets\images\berserk_potion.gif" />
+    <None Include="assets\images\blue_herb_activator.png" />
+    <None Include="assets\images\bs_adrenaline.gif" />
+    <None Include="assets\images\bs_adrenaline2.gif" />
+    <None Include="assets\images\bs_maximize.gif" />
+    <None Include="assets\images\bs_overthrust.gif" />
+    <None Include="assets\images\bs_weaponperfect.gif" />
+    <None Include="assets\images\coldproof.gif" />
+    <None Include="assets\images\combat_pill.png" />
+    <None Include="assets\images\concentration_potiongif.gif" />
+    <None Include="assets\images\cotton-shirt.gif" />
+    <None Include="assets\images\cr_autoguard.gif" />
+    <None Include="assets\images\cr_defender.gif" />
+    <None Include="assets\images\cr_reflectshield.gif" />
+    <None Include="assets\images\cr_shrink.gif" />
+    <None Include="assets\images\dex_3rd_food.png" />
+    <None Include="assets\images\dex_food.gif" />
+    <None Include="assets\images\disc_logo.png" />
+    <None Include="assets\images\disc_logo_2.png" />
+    <None Include="assets\images\drowsiness.png" />
+    <None Include="assets\images\earhproof.gif" />
+    <None Include="assets\images\ele_earth_converter.gif" />
+    <None Include="assets\images\ele_fire_converter.gif" />
+    <None Include="assets\images\ele_water_converter.gif" />
+    <None Include="assets\images\ele_wind_converter.gif" />
+    <None Include="assets\images\enchant_blade.png" />
+    <None Include="assets\images\enriched_celermine.png" />
+    <None Include="assets\images\fireproof.gif" />
+    <None Include="assets\images\ghp.png" />
+    <None Include="assets\images\gloom.png" />
+    <None Include="assets\images\gsp.png" />
+    <None Include="assets\images\guard.gif" />
+    <None Include="assets\images\HAGALAZ.png" />
+    <None Include="assets\images\hood.gif" />
+    <None Include="assets\images\int_3rd_food.png" />
+    <None Include="assets\images\int_food.gif" />
+    <None Include="assets\images\knife.gif" />
+    <None Include="assets\images\lk_aurablade.gif" />
+    <None Include="assets\images\lk_berserk.gif" />
+    <None Include="assets\images\lk_concentration.gif" />
+    <None Include="assets\images\logo-4rtools-small-2.png" />
+    <None Include="assets\images\luk_3rd_food.png" />
+    <None Include="assets\images\luk_food.gif" />
+    <None Include="assets\images\lutie_pancake.gif" />
+    <None Include="assets\images\LUX_AMINA.png" />
+    <None Include="assets\images\mc_loud.gif" />
+    <None Include="assets\images\mer_quicken.gif" />
+    <None Include="assets\images\mg_energycoat.gif" />
+    <None Include="assets\images\ms_parrying.gif" />
+    <None Include="assets\images\nj_nen.gif" />
+    <None Include="assets\images\nj_utsusemi.gif" />
+    <None Include="assets\images\octocat.png" />
+    <None Include="assets\images\OTHILA.png" />
+    <None Include="assets\images\pf_doublecasting.gif" />
+    <None Include="assets\images\pf_memorize.gif" />
+    <None Include="assets\images\pr_gloria.gif" />
+    <None Include="assets\images\pr_magnificat.gif" />
+    <None Include="assets\images\red_herb_activator.png" />
+    <None Include="assets\images\regeneration.gif" />
+    <None Include="assets\images\resentment.png" />
+    <None Include="assets\images\sa_autospell.gif" />
+    <None Include="assets\images\scroll.gif" />
+    <None Include="assets\images\shoes.gif" />
+    <None Include="assets\images\sm_autoberserk.gif" />
+    <None Include="assets\images\sm_endure.gif" />
+    <None Include="assets\images\sn_sight.gif" />
+    <None Include="assets\images\sn_windwalk.gif" />
+    <None Include="assets\images\speed.gif" />
+    <None Include="assets\images\speedpotion.gif" />
+    <None Include="assets\images\st_preserve.gif" />
+    <None Include="assets\images\st_rejectsword.gif" />
+    <None Include="assets\images\str_3rd_food.png" />
+    <None Include="assets\images\strfood.gif" />
+    <None Include="assets\images\strfood.png" />
+    <None Include="assets\images\strfood2.png" />
+    <None Include="assets\images\sunbox.gif" />
+    <None Include="assets\images\thunderproof.gif" />
+    <None Include="assets\images\THURISAZ.png" />
+    <None Include="assets\images\vit_3rd_food.png" />
+    <None Include="assets\images\vit_food.gif" />
+    <None Include="assets\images\ws_cartboost.gif" />
+    <None Include="assets\images\ws_meltdown.gif" />
+    <None Include="assets\images\ws_overthrustmax.gif" />
+    <None Include="assets\images\wz_sightblaster.gif" />
+    <None Include="assets\etc\arrowdown.png" />
+    <None Include="assets\etc\arrowup.png" />
+    <None Include="assets\etc\logo_4rtools_off.ico" />
+    <None Include="assets\etc\logo_4rtools_on.ico" />
+    <None Include="assets\etc\Speech_Off.wav" />
+    <None Include="assets\etc\Speech_On.wav" />
+    <None Include="assets\etc\supported_servers.txt" />
+    <None Include="assets\etc\Yggdrasil.bmp" />
+    <None Include="assets\images\logo-4rtools-small.png" />
     <Content Include="logo-4rtools.ico" />
-    <None Include="Resources\supported_servers.txt" />
-    <None Include="Resources\arrowup.png" />
-    <None Include="Resources\arrodown.png" />
-    <None Include="Resources\Yggdrasil.bmp" />
-    <None Include="Resources\Speech_On.wav" />
-    <None Include="Resources\Speech_Off.wav" />
-    <None Include="Resources\logo_4rtools_off.ico" />
-    <None Include="Resources\logo_4rtools_on.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.6.5.5\build\Fody.targets" Condition="Exists('packages\Fody.6.5.5\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

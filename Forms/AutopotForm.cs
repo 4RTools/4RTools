@@ -16,8 +16,8 @@ namespace _4RTools.Forms
             InitializeComponent();
             if (isYgg)
             {
-                this.picBoxHP.Image = Properties.Resources.Yggdrasil;
-                this.picBoxSP.Image = Properties.Resources.Yggdrasil;
+                this.picBoxHP.Image = Resources._4RTools.ETCResource.Yggdrasil;
+                this.picBoxSP.Image = Resources._4RTools.ETCResource.Yggdrasil;
             }
             subject.Attach(this);
             this.isYgg = isYgg;

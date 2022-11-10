@@ -4,6 +4,7 @@ using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace _4RTools.Forms
 {
@@ -16,6 +17,7 @@ namespace _4RTools.Forms
             InitializeComponent();
             subject.Attach(this);
             ConfigureInputs();
+            RenderComponents();
 
         }
 
@@ -28,6 +30,31 @@ namespace _4RTools.Forms
                     this.updateInputValues(buffMappingClone);
                     break;
             }
+        }
+
+        public void RenderComponents()
+        {
+            TextBox textBox = new TextBox();
+            textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            textBox.TextChanged += new EventHandler(this.onTextChange);
+            textBox.Size = new Size(55, 20);
+            textBox.Location = new Point(50, 10);
+
+            this.ArcherSkillsGP.Controls.Add(textBox);
+
+            PictureBox pb = new PictureBox();
+            pb.Image = Resources._4RTools.Icons.agi_food;
+            pb.BackgroundImageLayout = ImageLayout.Center;
+            pb.BorderStyle = BorderStyle.FixedSingle;
+            pb.Location = new Point(10, 10);
+            pb.Name = "pictureBox22";
+            pb.Size = new Size(36, 26);
+            pb.TabIndex = 115;
+            pb.TabStop = false;
+
+            this.ArcherSkillsGP.Controls.Add(pb);
+
         }
 
  
