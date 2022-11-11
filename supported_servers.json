@@ -589,4 +589,10 @@
         "hpAddress": "0x0104D59C",
         "nameAddress": "0x010467D0"
     },
+    {
+        "name": "pbgo",
+        "nameAddress": "0x010DF5D8",
+        "hpAddress": "0x010DCE10",
+        "description": "Any random descroption"
+    },
 ]
