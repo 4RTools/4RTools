@@ -12,9 +12,7 @@ namespace _4RTools.Utils
         CURSE = 884,
         QUAGMIRE = 8,
         HALLUCINATIONWALK = 334,
-        HALLUCINATION = 34, // Also known as Illusion
-
-        //BUFFS
+        HALLUCINATION = 34,
         PROVOKE = 0,
         ENDURE = 1,
         CONCENTRATION  = 3,
@@ -75,7 +73,10 @@ namespace _4RTools.Utils
         PROPERTYWATER = 91,
         PROPERTYWIND = 92,
         PROPERTYGROUND = 93,
-        WEAPONPROPERTY = 64,
+        PROPERTYDARK = 146,
+
+        // ATTACK_PROPERTY
+        ATTACK_PROPERTY_DARKNESS = 904,
 
         //ASPD POTIONS
         CONCENTRATION_POTION = 37,
