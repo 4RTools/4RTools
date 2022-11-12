@@ -12,9 +12,7 @@ namespace _4RTools.Utils
         CURSE = 884,
         QUAGMIRE = 8,
         HALLUCINATIONWALK = 334,
-        HALLUCINATION = 34, // Also known as Illusion
-
-        //BUFFS
+        HALLUCINATION = 34,
         PROVOKE = 0,
 
         ENDURE = 1,
