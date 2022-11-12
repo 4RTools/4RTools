@@ -1265,7 +1265,7 @@
             // 
             // in110
             // 
-            this.in110.Location = new System.Drawing.Point(191, 576);
+            this.in110.Location = new System.Drawing.Point(191, 582);
             this.in110.Name = "in110";
             this.in110.Size = new System.Drawing.Size(55, 20);
             this.in110.TabIndex = 296;
@@ -1276,9 +1276,11 @@
             this.pictureBoxAssumptioScroll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAssumptioScroll.BackgroundImage")));
             this.pictureBoxAssumptioScroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBoxAssumptioScroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxAssumptioScroll.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAssumptioScroll.Image")));
             this.pictureBoxAssumptioScroll.Location = new System.Drawing.Point(151, 574);
             this.pictureBoxAssumptioScroll.Name = "pictureBoxAssumptioScroll";
-            this.pictureBoxAssumptioScroll.Size = new System.Drawing.Size(36, 26);
+            this.pictureBoxAssumptioScroll.Size = new System.Drawing.Size(36, 35);
+            this.pictureBoxAssumptioScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBoxAssumptioScroll.TabIndex = 295;
             this.pictureBoxAssumptioScroll.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBoxAssumptioScroll, "Assumptio Scroll");
