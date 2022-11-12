@@ -601,5 +601,11 @@
         "description": "Baron RAGNAROK ONLINE",
         "nameAddress": "0x00E4D768",
         "hpAddress": "0x00E4CAF4"
-    }
+    },
+    {
+        "nameAddress": "0x010DF5D8",
+        "hpAddress": "0x010DCE10",
+        "name": "EclipseRO",
+        "description": "Eclipse Ragnarok Online"
+    },
 ]
