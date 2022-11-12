@@ -66,6 +66,7 @@
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureAcceleration = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.in21 = new System.Windows.Forms.TextBox();
@@ -121,7 +122,8 @@
             this.in68 = new System.Windows.Forms.TextBox();
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.in361 = new System.Windows.Forms.TextBox();
-            this.pictureAcceleration = new System.Windows.Forms.PictureBox();
+            this.in204 = new System.Windows.Forms.TextBox();
+            this.pictureBoxGatlingFever = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
@@ -157,6 +159,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAcceleration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
@@ -167,7 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAcceleration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGatlingFever)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox22
@@ -554,6 +557,18 @@
             this.pictureBox35.Size = new System.Drawing.Size(36, 26);
             this.pictureBox35.TabIndex = 137;
             this.pictureBox35.TabStop = false;
+            // 
+            // pictureAcceleration
+            // 
+            this.pictureAcceleration.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureAcceleration.BackgroundImage")));
+            this.pictureAcceleration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureAcceleration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureAcceleration.Location = new System.Drawing.Point(274, 408);
+            this.pictureAcceleration.Name = "pictureAcceleration";
+            this.pictureAcceleration.Size = new System.Drawing.Size(36, 26);
+            this.pictureAcceleration.TabIndex = 198;
+            this.pictureAcceleration.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureAcceleration, "Acceleration");
             // 
             // pictureBox36
             // 
@@ -980,17 +995,24 @@
             this.in361.Size = new System.Drawing.Size(55, 20);
             this.in361.TabIndex = 199;
             // 
-            // pictureAcceleration
+            // in204
             // 
-            this.pictureAcceleration.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureAcceleration.BackgroundImage")));
-            this.pictureAcceleration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureAcceleration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureAcceleration.Location = new System.Drawing.Point(274, 408);
-            this.pictureAcceleration.Name = "pictureAcceleration";
-            this.pictureAcceleration.Size = new System.Drawing.Size(36, 26);
-            this.pictureAcceleration.TabIndex = 198;
-            this.pictureAcceleration.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureAcceleration, "Acceleration");
+            this.in204.Location = new System.Drawing.Point(67, 439);
+            this.in204.Name = "in204";
+            this.in204.Size = new System.Drawing.Size(55, 20);
+            this.in204.TabIndex = 201;
+            // 
+            // pictureBoxGatlingFever
+            // 
+            this.pictureBoxGatlingFever.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGatlingFever.BackgroundImage")));
+            this.pictureBoxGatlingFever.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxGatlingFever.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxGatlingFever.Location = new System.Drawing.Point(27, 435);
+            this.pictureBoxGatlingFever.Name = "pictureBoxGatlingFever";
+            this.pictureBoxGatlingFever.Size = new System.Drawing.Size(36, 26);
+            this.pictureBoxGatlingFever.TabIndex = 200;
+            this.pictureBoxGatlingFever.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxGatlingFever, "Acceleration");
             // 
             // SkillAutoBuffForm
             // 
@@ -998,7 +1020,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(400, 457);
+            this.ClientSize = new System.Drawing.Size(400, 478);
+            this.Controls.Add(this.in204);
+            this.Controls.Add(this.pictureBoxGatlingFever);
             this.Controls.Add(this.in361);
             this.Controls.Add(this.pictureAcceleration);
             this.Controls.Add(this.in68);
@@ -1127,6 +1151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAcceleration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
@@ -1137,7 +1162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAcceleration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGatlingFever)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1237,5 +1262,7 @@
         private System.Windows.Forms.PictureBox pictureBox45;
         private System.Windows.Forms.TextBox in361;
         private System.Windows.Forms.PictureBox pictureAcceleration;
+        private System.Windows.Forms.TextBox in204;
+        private System.Windows.Forms.PictureBox pictureBoxGatlingFever;
     }
 }

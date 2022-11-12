@@ -67,6 +67,7 @@ namespace _4RTools.Utils
         CASH_PLUSEXP = 250,
         CASH_RECEIVEITEM = 252,
         ACCELERATION = 361,
+        GATLINGFEVER = 204,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
