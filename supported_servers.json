@@ -595,4 +595,11 @@
         "hpAddress": "0x010DCE10",
         "description": "Any random descroption"
     },
+    {
+        "name": "BaronRO",
+        "site": "http://baron.ragnarok-online.net/",
+        "description": "Baron RAGNAROK ONLINE",
+        "nameAddress": "0x00E4D768",
+        "hpAddress": "0x00E4CAF4"
+    }
 ]
