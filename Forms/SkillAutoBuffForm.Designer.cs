@@ -125,19 +125,19 @@
             this.in204 = new System.Windows.Forms.TextBox();
             this.pictureBoxGatlingFever = new System.Windows.Forms.PictureBox();
             this.in17 = new System.Windows.Forms.TextBox();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHoly = new System.Windows.Forms.PictureBox();
             this.txt146 = new System.Windows.Forms.TextBox();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxShadow = new System.Windows.Forms.PictureBox();
             this.in148 = new System.Windows.Forms.TextBox();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGhost = new System.Windows.Forms.PictureBox();
             this.txt90 = new System.Windows.Forms.TextBox();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFire = new System.Windows.Forms.PictureBox();
             this.txt91 = new System.Windows.Forms.TextBox();
-            this.pictureBox50 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxWater = new System.Windows.Forms.PictureBox();
             this.txt93 = new System.Windows.Forms.TextBox();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEarth = new System.Windows.Forms.PictureBox();
             this.txt92 = new System.Windows.Forms.TextBox();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxWind = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
@@ -185,13 +185,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGatlingFever)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHoly)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShadow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGhost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWater)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEarth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWind)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox22
@@ -1043,19 +1043,19 @@
             this.in17.Size = new System.Drawing.Size(55, 20);
             this.in17.TabIndex = 332;
             // 
-            // pictureBox46
+            // pictureBoxHoly
             // 
-            this.pictureBox46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.BackgroundImage")));
-            this.pictureBox46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
-            this.pictureBox46.Location = new System.Drawing.Point(153, 501);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox46.TabIndex = 331;
-            this.pictureBox46.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox46, "Mild Wind (Holy)");
+            this.pictureBoxHoly.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHoly.BackgroundImage")));
+            this.pictureBoxHoly.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxHoly.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxHoly.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxHoly.Image")));
+            this.pictureBoxHoly.Location = new System.Drawing.Point(153, 501);
+            this.pictureBoxHoly.Name = "pictureBoxHoly";
+            this.pictureBoxHoly.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxHoly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxHoly.TabIndex = 331;
+            this.pictureBoxHoly.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxHoly, "Mild Wind (Holy)");
             // 
             // txt146
             // 
@@ -1064,19 +1064,19 @@
             this.txt146.Size = new System.Drawing.Size(55, 20);
             this.txt146.TabIndex = 330;
             // 
-            // pictureBox47
+            // pictureBoxShadow
             // 
-            this.pictureBox47.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox47.BackgroundImage")));
-            this.pictureBox47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox47.Image")));
-            this.pictureBox47.Location = new System.Drawing.Point(276, 467);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox47.TabIndex = 329;
-            this.pictureBox47.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox47, "Mild Wind (Shadow)");
+            this.pictureBoxShadow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxShadow.BackgroundImage")));
+            this.pictureBoxShadow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxShadow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxShadow.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxShadow.Image")));
+            this.pictureBoxShadow.Location = new System.Drawing.Point(276, 467);
+            this.pictureBoxShadow.Name = "pictureBoxShadow";
+            this.pictureBoxShadow.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxShadow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxShadow.TabIndex = 329;
+            this.pictureBoxShadow.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxShadow, "Mild Wind (Shadow)");
             // 
             // in148
             // 
@@ -1085,19 +1085,19 @@
             this.in148.Size = new System.Drawing.Size(55, 20);
             this.in148.TabIndex = 328;
             // 
-            // pictureBox48
+            // pictureBoxGhost
             // 
-            this.pictureBox48.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox48.BackgroundImage")));
-            this.pictureBox48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
-            this.pictureBox48.Location = new System.Drawing.Point(152, 466);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox48.TabIndex = 327;
-            this.pictureBox48.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox48, "Mild Wind (Ghost)");
+            this.pictureBoxGhost.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGhost.BackgroundImage")));
+            this.pictureBoxGhost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxGhost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxGhost.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxGhost.Image")));
+            this.pictureBoxGhost.Location = new System.Drawing.Point(152, 466);
+            this.pictureBoxGhost.Name = "pictureBoxGhost";
+            this.pictureBoxGhost.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxGhost.TabIndex = 327;
+            this.pictureBoxGhost.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxGhost, "Mild Wind (Ghost)");
             // 
             // txt90
             // 
@@ -1106,19 +1106,19 @@
             this.txt90.Size = new System.Drawing.Size(55, 20);
             this.txt90.TabIndex = 326;
             // 
-            // pictureBox49
+            // pictureBoxFire
             // 
-            this.pictureBox49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox49.BackgroundImage")));
-            this.pictureBox49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox49.Image")));
-            this.pictureBox49.Location = new System.Drawing.Point(28, 497);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox49.TabIndex = 325;
-            this.pictureBox49.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox49, "Mild Wind (Fire)");
+            this.pictureBoxFire.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxFire.BackgroundImage")));
+            this.pictureBoxFire.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxFire.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFire.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFire.Image")));
+            this.pictureBoxFire.Location = new System.Drawing.Point(28, 497);
+            this.pictureBoxFire.Name = "pictureBoxFire";
+            this.pictureBoxFire.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxFire.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxFire.TabIndex = 325;
+            this.pictureBoxFire.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxFire, "Mild Wind (Fire)");
             // 
             // txt91
             // 
@@ -1127,19 +1127,19 @@
             this.txt91.Size = new System.Drawing.Size(55, 20);
             this.txt91.TabIndex = 324;
             // 
-            // pictureBox50
+            // pictureBoxWater
             // 
-            this.pictureBox50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox50.BackgroundImage")));
-            this.pictureBox50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
-            this.pictureBox50.Location = new System.Drawing.Point(276, 432);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox50.TabIndex = 323;
-            this.pictureBox50.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox50, "Mild Wind (Water)");
+            this.pictureBoxWater.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxWater.BackgroundImage")));
+            this.pictureBoxWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxWater.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxWater.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxWater.Image")));
+            this.pictureBoxWater.Location = new System.Drawing.Point(276, 432);
+            this.pictureBoxWater.Name = "pictureBoxWater";
+            this.pictureBoxWater.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxWater.TabIndex = 323;
+            this.pictureBoxWater.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxWater, "Mild Wind (Water)");
             // 
             // txt93
             // 
@@ -1148,19 +1148,19 @@
             this.txt93.Size = new System.Drawing.Size(55, 20);
             this.txt93.TabIndex = 322;
             // 
-            // pictureBox51
+            // pictureBoxEarth
             // 
-            this.pictureBox51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox51.BackgroundImage")));
-            this.pictureBox51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
-            this.pictureBox51.Location = new System.Drawing.Point(28, 462);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox51.TabIndex = 321;
-            this.pictureBox51.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox51, "Mild Wind (Earth)");
+            this.pictureBoxEarth.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxEarth.BackgroundImage")));
+            this.pictureBoxEarth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxEarth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxEarth.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEarth.Image")));
+            this.pictureBoxEarth.Location = new System.Drawing.Point(28, 462);
+            this.pictureBoxEarth.Name = "pictureBoxEarth";
+            this.pictureBoxEarth.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxEarth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxEarth.TabIndex = 321;
+            this.pictureBoxEarth.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxEarth, "Mild Wind (Earth)");
             // 
             // txt92
             // 
@@ -1169,19 +1169,19 @@
             this.txt92.Size = new System.Drawing.Size(55, 20);
             this.txt92.TabIndex = 320;
             // 
-            // pictureBox52
+            // pictureBoxWind
             // 
-            this.pictureBox52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox52.BackgroundImage")));
-            this.pictureBox52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox52.Image")));
-            this.pictureBox52.Location = new System.Drawing.Point(152, 431);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox52.TabIndex = 319;
-            this.pictureBox52.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox52, "Mild Wind (Wind)");
+            this.pictureBoxWind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxWind.BackgroundImage")));
+            this.pictureBoxWind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxWind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxWind.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxWind.Image")));
+            this.pictureBoxWind.Location = new System.Drawing.Point(152, 431);
+            this.pictureBoxWind.Name = "pictureBoxWind";
+            this.pictureBoxWind.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxWind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxWind.TabIndex = 319;
+            this.pictureBoxWind.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxWind, "Mild Wind (Wind)");
             // 
             // SkillAutoBuffForm
             // 
@@ -1191,19 +1191,19 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(400, 541);
             this.Controls.Add(this.in17);
-            this.Controls.Add(this.pictureBox46);
+            this.Controls.Add(this.pictureBoxHoly);
             this.Controls.Add(this.txt146);
-            this.Controls.Add(this.pictureBox47);
+            this.Controls.Add(this.pictureBoxShadow);
             this.Controls.Add(this.in148);
-            this.Controls.Add(this.pictureBox48);
+            this.Controls.Add(this.pictureBoxGhost);
             this.Controls.Add(this.txt90);
-            this.Controls.Add(this.pictureBox49);
+            this.Controls.Add(this.pictureBoxFire);
             this.Controls.Add(this.txt91);
-            this.Controls.Add(this.pictureBox50);
+            this.Controls.Add(this.pictureBoxWater);
             this.Controls.Add(this.txt93);
-            this.Controls.Add(this.pictureBox51);
+            this.Controls.Add(this.pictureBoxEarth);
             this.Controls.Add(this.txt92);
-            this.Controls.Add(this.pictureBox52);
+            this.Controls.Add(this.pictureBoxWind);
             this.Controls.Add(this.in204);
             this.Controls.Add(this.pictureBoxGatlingFever);
             this.Controls.Add(this.in361);
@@ -1346,13 +1346,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGatlingFever)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHoly)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShadow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGhost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWater)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEarth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWind)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1455,18 +1455,18 @@
         private System.Windows.Forms.TextBox in204;
         private System.Windows.Forms.PictureBox pictureBoxGatlingFever;
         private System.Windows.Forms.TextBox in17;
-        private System.Windows.Forms.PictureBox pictureBox46;
+        private System.Windows.Forms.PictureBox pictureBoxHoly;
         private System.Windows.Forms.TextBox txt146;
-        private System.Windows.Forms.PictureBox pictureBox47;
+        private System.Windows.Forms.PictureBox pictureBoxShadow;
         private System.Windows.Forms.TextBox in148;
-        private System.Windows.Forms.PictureBox pictureBox48;
+        private System.Windows.Forms.PictureBox pictureBoxGhost;
         private System.Windows.Forms.TextBox txt90;
-        private System.Windows.Forms.PictureBox pictureBox49;
+        private System.Windows.Forms.PictureBox pictureBoxFire;
         private System.Windows.Forms.TextBox txt91;
-        private System.Windows.Forms.PictureBox pictureBox50;
+        private System.Windows.Forms.PictureBox pictureBoxWater;
         private System.Windows.Forms.TextBox txt93;
-        private System.Windows.Forms.PictureBox pictureBox51;
+        private System.Windows.Forms.PictureBox pictureBoxEarth;
         private System.Windows.Forms.TextBox txt92;
-        private System.Windows.Forms.PictureBox pictureBox52;
+        private System.Windows.Forms.PictureBox pictureBoxWind;
     }
 }
