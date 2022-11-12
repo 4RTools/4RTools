@@ -139,6 +139,8 @@
             this.in041 = new System.Windows.Forms.TextBox();
             this.in252 = new System.Windows.Forms.TextBox();
             this.in250 = new System.Windows.Forms.TextBox();
+            this.in867 = new System.Windows.Forms.TextBox();
+            this.pictureBoxPowerBooster = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -193,6 +195,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBattleManual)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPowerBooster)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -1237,6 +1240,26 @@
             this.in250.Size = new System.Drawing.Size(55, 20);
             this.in250.TabIndex = 292;
             // 
+            // in867
+            // 
+            this.in867.Location = new System.Drawing.Point(191, 546);
+            this.in867.Name = "in867";
+            this.in867.Size = new System.Drawing.Size(55, 20);
+            this.in867.TabIndex = 294;
+            this.toolTip1.SetToolTip(this.in867, "Power Booster");
+            // 
+            // pictureBoxPowerBooster
+            // 
+            this.pictureBoxPowerBooster.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPowerBooster.BackgroundImage")));
+            this.pictureBoxPowerBooster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxPowerBooster.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxPowerBooster.Location = new System.Drawing.Point(151, 544);
+            this.pictureBoxPowerBooster.Name = "pictureBoxPowerBooster";
+            this.pictureBoxPowerBooster.Size = new System.Drawing.Size(36, 26);
+            this.pictureBoxPowerBooster.TabIndex = 293;
+            this.pictureBoxPowerBooster.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxPowerBooster, "Battle Manual 300%");
+            // 
             // StuffAutoBuffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1244,6 +1267,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(398, 645);
+            this.Controls.Add(this.in867);
+            this.Controls.Add(this.pictureBoxPowerBooster);
             this.Controls.Add(this.in250);
             this.Controls.Add(this.pictureBattleManual);
             this.Controls.Add(this.in252);
@@ -1409,6 +1434,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBattleManual)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPowerBooster)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1524,5 +1550,7 @@
         private System.Windows.Forms.PictureBox pictureHEBubbleGum;
         private System.Windows.Forms.TextBox in250;
         private System.Windows.Forms.PictureBox pictureBattleManual;
+        private System.Windows.Forms.TextBox in867;
+        private System.Windows.Forms.PictureBox pictureBoxPowerBooster;
     }
 }

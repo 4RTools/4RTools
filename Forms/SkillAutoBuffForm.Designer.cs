@@ -1001,6 +1001,7 @@
             this.in204.Name = "in204";
             this.in204.Size = new System.Drawing.Size(55, 20);
             this.in204.TabIndex = 201;
+            this.toolTip1.SetToolTip(this.in204, "Gatling Fever");
             // 
             // pictureBoxGatlingFever
             // 
