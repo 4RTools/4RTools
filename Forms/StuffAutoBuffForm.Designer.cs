@@ -115,7 +115,7 @@
             this.in319 = new System.Windows.Forms.TextBox();
             this.in320 = new System.Windows.Forms.TextBox();
             this.in322 = new System.Windows.Forms.TextBox();
-            this.in64 = new System.Windows.Forms.TextBox();
+            this.in146 = new System.Windows.Forms.TextBox();
             this.in1169 = new System.Windows.Forms.TextBox();
             this.in1065 = new System.Windows.Forms.TextBox();
             this.in1170 = new System.Windows.Forms.TextBox();
@@ -141,6 +141,8 @@
             this.in250 = new System.Windows.Forms.TextBox();
             this.in867 = new System.Windows.Forms.TextBox();
             this.pictureBoxPowerBooster = new System.Windows.Forms.PictureBox();
+            this.in110 = new System.Windows.Forms.TextBox();
+            this.pictureBoxAssumptioScroll = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -196,6 +198,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBattleManual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPowerBooster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAssumptioScroll)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -1072,12 +1075,12 @@
             this.in322.Size = new System.Drawing.Size(55, 20);
             this.in322.TabIndex = 214;
             // 
-            // in64
+            // in146
             // 
-            this.in64.Location = new System.Drawing.Point(67, 303);
-            this.in64.Name = "in64";
-            this.in64.Size = new System.Drawing.Size(55, 20);
-            this.in64.TabIndex = 216;
+            this.in146.Location = new System.Drawing.Point(67, 303);
+            this.in146.Name = "in146";
+            this.in146.Size = new System.Drawing.Size(55, 20);
+            this.in146.TabIndex = 216;
             // 
             // in1169
             // 
@@ -1258,7 +1261,27 @@
             this.pictureBoxPowerBooster.Size = new System.Drawing.Size(36, 26);
             this.pictureBoxPowerBooster.TabIndex = 293;
             this.pictureBoxPowerBooster.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBoxPowerBooster, "Battle Manual 300%");
+            this.toolTip1.SetToolTip(this.pictureBoxPowerBooster, "Power Booster");
+            // 
+            // in110
+            // 
+            this.in110.Location = new System.Drawing.Point(191, 576);
+            this.in110.Name = "in110";
+            this.in110.Size = new System.Drawing.Size(55, 20);
+            this.in110.TabIndex = 296;
+            this.toolTip1.SetToolTip(this.in110, "Power Booster");
+            // 
+            // pictureBoxAssumptioScroll
+            // 
+            this.pictureBoxAssumptioScroll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAssumptioScroll.BackgroundImage")));
+            this.pictureBoxAssumptioScroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxAssumptioScroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxAssumptioScroll.Location = new System.Drawing.Point(151, 574);
+            this.pictureBoxAssumptioScroll.Name = "pictureBoxAssumptioScroll";
+            this.pictureBoxAssumptioScroll.Size = new System.Drawing.Size(36, 26);
+            this.pictureBoxAssumptioScroll.TabIndex = 295;
+            this.pictureBoxAssumptioScroll.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxAssumptioScroll, "Assumptio Scroll");
             // 
             // StuffAutoBuffForm
             // 
@@ -1267,6 +1290,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(398, 645);
+            this.Controls.Add(this.in110);
+            this.Controls.Add(this.pictureBoxAssumptioScroll);
             this.Controls.Add(this.in867);
             this.Controls.Add(this.pictureBoxPowerBooster);
             this.Controls.Add(this.in250);
@@ -1307,7 +1332,7 @@
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.in1171);
             this.Controls.Add(this.pictureBox33);
-            this.Controls.Add(this.in64);
+            this.Controls.Add(this.in146);
             this.Controls.Add(this.pictureCursedWater);
             this.Controls.Add(this.in322);
             this.Controls.Add(this.pictureBox44);
@@ -1435,6 +1460,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureHEBubbleGum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBattleManual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPowerBooster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAssumptioScroll)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1502,7 +1528,7 @@
         private System.Windows.Forms.PictureBox pictureBox43;
         private System.Windows.Forms.TextBox in322;
         private System.Windows.Forms.PictureBox pictureBox44;
-        private System.Windows.Forms.TextBox in64;
+        private System.Windows.Forms.TextBox in146;
         private System.Windows.Forms.PictureBox pictureCursedWater;
         private System.Windows.Forms.TextBox in1169;
         private System.Windows.Forms.PictureBox pictureRefTPotion;
@@ -1552,5 +1578,7 @@
         private System.Windows.Forms.PictureBox pictureBattleManual;
         private System.Windows.Forms.TextBox in867;
         private System.Windows.Forms.PictureBox pictureBoxPowerBooster;
+        private System.Windows.Forms.TextBox in110;
+        private System.Windows.Forms.PictureBox pictureBoxAssumptioScroll;
     }
 }

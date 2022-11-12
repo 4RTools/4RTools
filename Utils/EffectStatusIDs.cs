@@ -69,6 +69,7 @@ namespace _4RTools.Utils
         ACCELERATION = 361,
         LIMIT_POWER_BOOSTER = 867,
         GATLINGFEVER = 204,
+        ASSUMPTIO = 110,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
