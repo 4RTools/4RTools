@@ -55,6 +55,14 @@ namespace _4RTools.Forms
                     TextBox textBox = (TextBox)c[0];
                     textBox.Text = autobuffDict[effect].ToString();
                 }
+
+                // Workaround for now to avoid conflicts with inputs with the same effect ID
+                Control[] c_txt = this.Controls.Find("txt" + (int)effect, true);
+                if (c_txt.Length > 0)
+                {
+                    TextBox textBox = (TextBox)c[0];
+                    textBox.Text = autobuffDict[effect].ToString();
+                }
             }
         }
 
@@ -67,9 +75,20 @@ namespace _4RTools.Forms
                 if (txtBox.Text.ToString() != String.Empty)
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
-                    EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
+
+                    // Workaround for now to avoid conflicts with inputs with the same effect ID
+                    if (txtBox.Name.StartsWith("in"))
+                    {
+                        EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
+                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
+                        ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
+                    } else
+                    {
+                        EffectStatusIDs txtStatusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "txt" }, StringSplitOptions.None)[1]);
+                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(txtStatusID, key);
+                        ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
+                    }
+
                 }
             }
             catch { }

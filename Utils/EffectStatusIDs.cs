@@ -77,9 +77,9 @@ namespace _4RTools.Utils
         PROPERTYWIND = 92,
         PROPERTYGROUND = 93,
         PROPERTYDARK = 146,
-
-        // ATTACK_PROPERTY
+        PROPERTYTELEKINESIS = 148,
         ATTACK_PROPERTY_DARKNESS = 904,
+        ASPERSIO = 17,
 
         //ASPD POTIONS
         CONCENTRATION_POTION = 37,
