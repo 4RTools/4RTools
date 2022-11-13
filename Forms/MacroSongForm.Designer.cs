@@ -59,6 +59,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panelMacro2 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -86,6 +87,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panelMacro3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.in8mac3 = new System.Windows.Forms.TextBox();
@@ -112,6 +115,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panelMacro4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
@@ -139,10 +143,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.keyMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panelMacro1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -166,6 +166,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delayMac2)).BeginInit();
             this.panelMacro3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
@@ -187,7 +188,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delayMac4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.keyMapBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMacro1
@@ -266,7 +266,7 @@
             // 
             // in8mac1
             // 
-            this.in8mac1.Location = new System.Drawing.Point(353, 66);
+            this.in8mac1.Location = new System.Drawing.Point(353, 65);
             this.in8mac1.Name = "in8mac1";
             this.in8mac1.Size = new System.Drawing.Size(47, 20);
             this.in8mac1.TabIndex = 285;
@@ -497,10 +497,18 @@
             this.panelMacro2.Size = new System.Drawing.Size(528, 117);
             this.panelMacro2.TabIndex = 68;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Location = new System.Drawing.Point(117, 23);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 70);
+            this.panel2.TabIndex = 304;
+            // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(370, 50);
+            this.pictureBox12.Location = new System.Drawing.Point(371, 50);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(11, 14);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -510,7 +518,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(299, 50);
+            this.pictureBox13.Location = new System.Drawing.Point(300, 50);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(11, 14);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -520,7 +528,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox14.Location = new System.Drawing.Point(329, 36);
+            this.pictureBox14.Location = new System.Drawing.Point(330, 36);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(21, 41);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -529,14 +537,14 @@
             // 
             // in8mac2
             // 
-            this.in8mac2.Location = new System.Drawing.Point(352, 66);
+            this.in8mac2.Location = new System.Drawing.Point(353, 65);
             this.in8mac2.Name = "in8mac2";
             this.in8mac2.Size = new System.Drawing.Size(47, 20);
             this.in8mac2.TabIndex = 300;
             // 
             // in7mac2
             // 
-            this.in7mac2.Location = new System.Drawing.Point(352, 30);
+            this.in7mac2.Location = new System.Drawing.Point(353, 30);
             this.in7mac2.Name = "in7mac2";
             this.in7mac2.Size = new System.Drawing.Size(47, 20);
             this.in7mac2.TabIndex = 299;
@@ -544,7 +552,7 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(227, 50);
+            this.pictureBox15.Location = new System.Drawing.Point(230, 50);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(11, 14);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -554,7 +562,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox16.Location = new System.Drawing.Point(258, 36);
+            this.pictureBox16.Location = new System.Drawing.Point(260, 36);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(21, 41);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -564,7 +572,7 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(160, 50);
+            this.pictureBox17.Location = new System.Drawing.Point(159, 50);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(11, 14);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -574,7 +582,7 @@
             // pictureBox18
             // 
             this.pictureBox18.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox18.Location = new System.Drawing.Point(188, 36);
+            this.pictureBox18.Location = new System.Drawing.Point(189, 36);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(21, 41);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -583,42 +591,42 @@
             // 
             // in6mac2
             // 
-            this.in6mac2.Location = new System.Drawing.Point(281, 65);
+            this.in6mac2.Location = new System.Drawing.Point(282, 65);
             this.in6mac2.Name = "in6mac2";
             this.in6mac2.Size = new System.Drawing.Size(47, 20);
             this.in6mac2.TabIndex = 294;
             // 
             // in5mac2
             // 
-            this.in5mac2.Location = new System.Drawing.Point(281, 29);
+            this.in5mac2.Location = new System.Drawing.Point(282, 29);
             this.in5mac2.Name = "in5mac2";
             this.in5mac2.Size = new System.Drawing.Size(47, 20);
             this.in5mac2.TabIndex = 293;
             // 
             // in4mac2
             // 
-            this.in4mac2.Location = new System.Drawing.Point(209, 65);
+            this.in4mac2.Location = new System.Drawing.Point(212, 65);
             this.in4mac2.Name = "in4mac2";
             this.in4mac2.Size = new System.Drawing.Size(47, 20);
             this.in4mac2.TabIndex = 292;
             // 
             // in3mac2
             // 
-            this.in3mac2.Location = new System.Drawing.Point(209, 29);
+            this.in3mac2.Location = new System.Drawing.Point(212, 29);
             this.in3mac2.Name = "in3mac2";
             this.in3mac2.Size = new System.Drawing.Size(47, 20);
             this.in3mac2.TabIndex = 291;
             // 
             // in2mac2
             // 
-            this.in2mac2.Location = new System.Drawing.Point(141, 65);
+            this.in2mac2.Location = new System.Drawing.Point(140, 65);
             this.in2mac2.Name = "in2mac2";
             this.in2mac2.Size = new System.Drawing.Size(47, 20);
             this.in2mac2.TabIndex = 290;
             // 
             // in1mac2
             // 
-            this.in1mac2.Location = new System.Drawing.Point(141, 29);
+            this.in1mac2.Location = new System.Drawing.Point(140, 29);
             this.in1mac2.Name = "in1mac2";
             this.in1mac2.Size = new System.Drawing.Size(47, 20);
             this.in1mac2.TabIndex = 289;
@@ -643,7 +651,7 @@
             // 
             // btnResMac2
             // 
-            this.btnResMac2.Location = new System.Drawing.Point(32, 72);
+            this.btnResMac2.Location = new System.Drawing.Point(32, 69);
             this.btnResMac2.Name = "btnResMac2";
             this.btnResMac2.Size = new System.Drawing.Size(62, 23);
             this.btnResMac2.TabIndex = 209;
@@ -660,7 +668,7 @@
             // 
             // inTriggerMacro2
             // 
-            this.inTriggerMacro2.Location = new System.Drawing.Point(41, 11);
+            this.inTriggerMacro2.Location = new System.Drawing.Point(41, 14);
             this.inTriggerMacro2.Name = "inTriggerMacro2";
             this.inTriggerMacro2.Size = new System.Drawing.Size(47, 20);
             this.inTriggerMacro2.TabIndex = 70;
@@ -718,7 +726,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 14);
+            this.label3.Location = new System.Drawing.Point(13, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 13);
             this.label3.TabIndex = 16;
@@ -760,10 +768,28 @@
             this.panelMacro3.Size = new System.Drawing.Size(528, 117);
             this.panelMacro3.TabIndex = 68;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Silver;
+            this.panel5.Location = new System.Drawing.Point(117, 23);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1, 70);
+            this.panel5.TabIndex = 319;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.Location = new System.Drawing.Point(371, 50);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox21.TabIndex = 318;
+            this.pictureBox21.TabStop = false;
+            // 
             // pictureBox22
             // 
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(298, 50);
+            this.pictureBox22.Location = new System.Drawing.Point(300, 50);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(11, 14);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -773,7 +799,7 @@
             // pictureBox23
             // 
             this.pictureBox23.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox23.Location = new System.Drawing.Point(328, 36);
+            this.pictureBox23.Location = new System.Drawing.Point(330, 36);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(21, 41);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -782,14 +808,14 @@
             // 
             // in8mac3
             // 
-            this.in8mac3.Location = new System.Drawing.Point(351, 66);
+            this.in8mac3.Location = new System.Drawing.Point(353, 65);
             this.in8mac3.Name = "in8mac3";
             this.in8mac3.Size = new System.Drawing.Size(47, 20);
             this.in8mac3.TabIndex = 315;
             // 
             // in7mac3
             // 
-            this.in7mac3.Location = new System.Drawing.Point(351, 30);
+            this.in7mac3.Location = new System.Drawing.Point(353, 30);
             this.in7mac3.Name = "in7mac3";
             this.in7mac3.Size = new System.Drawing.Size(47, 20);
             this.in7mac3.TabIndex = 314;
@@ -797,7 +823,7 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(226, 50);
+            this.pictureBox24.Location = new System.Drawing.Point(230, 50);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(11, 14);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -807,7 +833,7 @@
             // pictureBox25
             // 
             this.pictureBox25.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox25.Location = new System.Drawing.Point(257, 36);
+            this.pictureBox25.Location = new System.Drawing.Point(260, 36);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(21, 41);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -827,7 +853,7 @@
             // pictureBox27
             // 
             this.pictureBox27.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox27.Location = new System.Drawing.Point(187, 36);
+            this.pictureBox27.Location = new System.Drawing.Point(189, 36);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(21, 41);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -836,28 +862,28 @@
             // 
             // in6mac3
             // 
-            this.in6mac3.Location = new System.Drawing.Point(280, 65);
+            this.in6mac3.Location = new System.Drawing.Point(282, 65);
             this.in6mac3.Name = "in6mac3";
             this.in6mac3.Size = new System.Drawing.Size(47, 20);
             this.in6mac3.TabIndex = 309;
             // 
             // in5mac3
             // 
-            this.in5mac3.Location = new System.Drawing.Point(280, 29);
+            this.in5mac3.Location = new System.Drawing.Point(282, 29);
             this.in5mac3.Name = "in5mac3";
             this.in5mac3.Size = new System.Drawing.Size(47, 20);
             this.in5mac3.TabIndex = 308;
             // 
             // in4mac3
             // 
-            this.in4mac3.Location = new System.Drawing.Point(208, 65);
+            this.in4mac3.Location = new System.Drawing.Point(212, 65);
             this.in4mac3.Name = "in4mac3";
             this.in4mac3.Size = new System.Drawing.Size(47, 20);
             this.in4mac3.TabIndex = 307;
             // 
             // in3mac3
             // 
-            this.in3mac3.Location = new System.Drawing.Point(208, 29);
+            this.in3mac3.Location = new System.Drawing.Point(212, 29);
             this.in3mac3.Name = "in3mac3";
             this.in3mac3.Size = new System.Drawing.Size(47, 20);
             this.in3mac3.TabIndex = 306;
@@ -931,7 +957,7 @@
             // 
             // inTriggerMacro3
             // 
-            this.inTriggerMacro3.Location = new System.Drawing.Point(41, 11);
+            this.inTriggerMacro3.Location = new System.Drawing.Point(41, 14);
             this.inTriggerMacro3.Name = "inTriggerMacro3";
             this.inTriggerMacro3.Size = new System.Drawing.Size(47, 20);
             this.inTriggerMacro3.TabIndex = 71;
@@ -971,7 +997,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 14);
+            this.label9.Location = new System.Drawing.Point(13, 18);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(25, 13);
             this.label9.TabIndex = 16;
@@ -1013,10 +1039,18 @@
             this.panelMacro4.Size = new System.Drawing.Size(528, 117);
             this.panelMacro4.TabIndex = 68;
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Silver;
+            this.panel7.Location = new System.Drawing.Point(117, 23);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1, 70);
+            this.panel7.TabIndex = 339;
+            // 
             // pictureBox28
             // 
             this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
-            this.pictureBox28.Location = new System.Drawing.Point(369, 49);
+            this.pictureBox28.Location = new System.Drawing.Point(371, 50);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(11, 14);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1026,7 +1060,7 @@
             // pictureBox29
             // 
             this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
-            this.pictureBox29.Location = new System.Drawing.Point(298, 49);
+            this.pictureBox29.Location = new System.Drawing.Point(300, 50);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(11, 14);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1036,7 +1070,7 @@
             // pictureBox30
             // 
             this.pictureBox30.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox30.Location = new System.Drawing.Point(328, 35);
+            this.pictureBox30.Location = new System.Drawing.Point(330, 36);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(21, 41);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1045,14 +1079,14 @@
             // 
             // in8mac4
             // 
-            this.in8mac4.Location = new System.Drawing.Point(351, 65);
+            this.in8mac4.Location = new System.Drawing.Point(353, 65);
             this.in8mac4.Name = "in8mac4";
             this.in8mac4.Size = new System.Drawing.Size(47, 20);
             this.in8mac4.TabIndex = 335;
             // 
             // in7mac4
             // 
-            this.in7mac4.Location = new System.Drawing.Point(351, 29);
+            this.in7mac4.Location = new System.Drawing.Point(353, 29);
             this.in7mac4.Name = "in7mac4";
             this.in7mac4.Size = new System.Drawing.Size(47, 20);
             this.in7mac4.TabIndex = 334;
@@ -1060,7 +1094,7 @@
             // pictureBox31
             // 
             this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
-            this.pictureBox31.Location = new System.Drawing.Point(226, 49);
+            this.pictureBox31.Location = new System.Drawing.Point(230, 50);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(11, 14);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1070,7 +1104,7 @@
             // pictureBox32
             // 
             this.pictureBox32.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox32.Location = new System.Drawing.Point(257, 35);
+            this.pictureBox32.Location = new System.Drawing.Point(260, 36);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(21, 41);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1080,7 +1114,7 @@
             // pictureBox33
             // 
             this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
-            this.pictureBox33.Location = new System.Drawing.Point(159, 49);
+            this.pictureBox33.Location = new System.Drawing.Point(159, 50);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(11, 14);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1090,7 +1124,7 @@
             // pictureBox34
             // 
             this.pictureBox34.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
-            this.pictureBox34.Location = new System.Drawing.Point(187, 35);
+            this.pictureBox34.Location = new System.Drawing.Point(189, 36);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(21, 41);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1099,42 +1133,42 @@
             // 
             // in6mac4
             // 
-            this.in6mac4.Location = new System.Drawing.Point(280, 64);
+            this.in6mac4.Location = new System.Drawing.Point(282, 65);
             this.in6mac4.Name = "in6mac4";
             this.in6mac4.Size = new System.Drawing.Size(47, 20);
             this.in6mac4.TabIndex = 329;
             // 
             // in5mac4
             // 
-            this.in5mac4.Location = new System.Drawing.Point(280, 28);
+            this.in5mac4.Location = new System.Drawing.Point(282, 28);
             this.in5mac4.Name = "in5mac4";
             this.in5mac4.Size = new System.Drawing.Size(47, 20);
             this.in5mac4.TabIndex = 328;
             // 
             // in4mac4
             // 
-            this.in4mac4.Location = new System.Drawing.Point(208, 64);
+            this.in4mac4.Location = new System.Drawing.Point(212, 65);
             this.in4mac4.Name = "in4mac4";
             this.in4mac4.Size = new System.Drawing.Size(47, 20);
             this.in4mac4.TabIndex = 327;
             // 
             // in3mac4
             // 
-            this.in3mac4.Location = new System.Drawing.Point(208, 28);
+            this.in3mac4.Location = new System.Drawing.Point(212, 29);
             this.in3mac4.Name = "in3mac4";
             this.in3mac4.Size = new System.Drawing.Size(47, 20);
             this.in3mac4.TabIndex = 326;
             // 
             // in2mac4
             // 
-            this.in2mac4.Location = new System.Drawing.Point(140, 64);
+            this.in2mac4.Location = new System.Drawing.Point(140, 65);
             this.in2mac4.Name = "in2mac4";
             this.in2mac4.Size = new System.Drawing.Size(47, 20);
             this.in2mac4.TabIndex = 325;
             // 
             // in1mac4
             // 
-            this.in1mac4.Location = new System.Drawing.Point(140, 28);
+            this.in1mac4.Location = new System.Drawing.Point(140, 29);
             this.in1mac4.Name = "in1mac4";
             this.in1mac4.Size = new System.Drawing.Size(47, 20);
             this.in1mac4.TabIndex = 324;
@@ -1185,7 +1219,7 @@
             // 
             // btnResMac4
             // 
-            this.btnResMac4.Location = new System.Drawing.Point(32, 70);
+            this.btnResMac4.Location = new System.Drawing.Point(32, 69);
             this.btnResMac4.Name = "btnResMac4";
             this.btnResMac4.Size = new System.Drawing.Size(62, 23);
             this.btnResMac4.TabIndex = 207;
@@ -1194,7 +1228,7 @@
             // 
             // inTriggerMacro4
             // 
-            this.inTriggerMacro4.Location = new System.Drawing.Point(41, 11);
+            this.inTriggerMacro4.Location = new System.Drawing.Point(41, 14);
             this.inTriggerMacro4.Name = "inTriggerMacro4";
             this.inTriggerMacro4.Size = new System.Drawing.Size(47, 20);
             this.inTriggerMacro4.TabIndex = 72;
@@ -1234,45 +1268,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 14);
+            this.label12.Location = new System.Drawing.Point(13, 18);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(25, 13);
             this.label12.TabIndex = 16;
             this.label12.Text = "Key";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Location = new System.Drawing.Point(116, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 70);
-            this.panel2.TabIndex = 304;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(369, 50);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(11, 14);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox21.TabIndex = 318;
-            this.pictureBox21.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(117, 22);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 70);
-            this.panel5.TabIndex = 319;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Silver;
-            this.panel7.Location = new System.Drawing.Point(117, 21);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1, 70);
-            this.panel7.TabIndex = 339;
             // 
             // MacroSongForm
             // 
@@ -1314,6 +1314,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.delayMac2)).EndInit();
             this.panelMacro3.ResumeLayout(false);
             this.panelMacro3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
@@ -1336,7 +1337,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delayMac4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.keyMapBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -210,6 +210,13 @@
         nz97FiBAAGlCjAcIGMD4UeLQjyCpYt3KtSvDgAA7
 </value>
   </data>
+  <data name="pictureBox21.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAD5JREFUKFNj+I8G6uvr4RgdjCpGBgzIkoQwaYpBxmOTQMdgZ4BJIMCmAIZhAMWD
+        +BSCAGVBBwLYFP7///8/AER+/6gdh+dFAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="pictureBox22.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -298,11 +305,4 @@
   <metadata name="keyMapBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="pictureBox21.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAD5JREFUKFNj+I8G6uvr4RgdjCpGBgzIkoQwaYpBxmOTQMdgZ4BJIMCmAIZhAMWD
-        +BSCAGVBBwLYFP7///8/AER+/6gdh+dFAAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>
