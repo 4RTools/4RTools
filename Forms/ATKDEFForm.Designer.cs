@@ -61,6 +61,7 @@
             this.lblSwitchDelay = new System.Windows.Forms.Label();
             this.switchDelay = new System.Windows.Forms.NumericUpDown();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBoxATKxDEFConfig = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -74,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spammerDelay)).BeginInit();
             this.panelSwitch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).BeginInit();
+            this.groupBoxATKxDEFConfig.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDef
@@ -81,13 +83,13 @@
             this.lblDef.AutoSize = true;
             this.lblDef.Location = new System.Drawing.Point(220, 46);
             this.lblDef.Name = "lblDef";
-            this.lblDef.Size = new System.Drawing.Size(93, 13);
+            this.lblDef.Size = new System.Drawing.Size(63, 13);
             this.lblDef.TabIndex = 0;
-            this.lblDef.Text = "DEF Mode Switch";
+            this.lblDef.Text = "DEF Switch";
             // 
             // inDef1
             // 
-            this.inDef1.Location = new System.Drawing.Point(252, 68);
+            this.inDef1.Location = new System.Drawing.Point(252, 70);
             this.inDef1.Name = "inDef1";
             this.inDef1.Size = new System.Drawing.Size(60, 20);
             this.inDef1.TabIndex = 1;
@@ -95,7 +97,7 @@
             // 
             // inDef2
             // 
-            this.inDef2.Location = new System.Drawing.Point(252, 94);
+            this.inDef2.Location = new System.Drawing.Point(252, 96);
             this.inDef2.Name = "inDef2";
             this.inDef2.Size = new System.Drawing.Size(60, 20);
             this.inDef2.TabIndex = 2;
@@ -103,7 +105,7 @@
             // 
             // inDef3
             // 
-            this.inDef3.Location = new System.Drawing.Point(252, 120);
+            this.inDef3.Location = new System.Drawing.Point(252, 122);
             this.inDef3.Name = "inDef3";
             this.inDef3.Size = new System.Drawing.Size(60, 20);
             this.inDef3.TabIndex = 3;
@@ -111,7 +113,7 @@
             // 
             // inDef4
             // 
-            this.inDef4.Location = new System.Drawing.Point(252, 146);
+            this.inDef4.Location = new System.Drawing.Point(252, 148);
             this.inDef4.Name = "inDef4";
             this.inDef4.Size = new System.Drawing.Size(60, 20);
             this.inDef4.TabIndex = 4;
@@ -119,7 +121,7 @@
             // 
             // inDef5
             // 
-            this.inDef5.Location = new System.Drawing.Point(252, 172);
+            this.inDef5.Location = new System.Drawing.Point(252, 174);
             this.inDef5.Name = "inDef5";
             this.inDef5.Size = new System.Drawing.Size(60, 20);
             this.inDef5.TabIndex = 5;
@@ -135,7 +137,7 @@
             // 
             // inAtk5
             // 
-            this.inAtk5.Location = new System.Drawing.Point(394, 172);
+            this.inAtk5.Location = new System.Drawing.Point(394, 174);
             this.inAtk5.Name = "inAtk5";
             this.inAtk5.Size = new System.Drawing.Size(60, 20);
             this.inAtk5.TabIndex = 12;
@@ -143,7 +145,7 @@
             // 
             // inAtk4
             // 
-            this.inAtk4.Location = new System.Drawing.Point(394, 146);
+            this.inAtk4.Location = new System.Drawing.Point(394, 148);
             this.inAtk4.Name = "inAtk4";
             this.inAtk4.Size = new System.Drawing.Size(60, 20);
             this.inAtk4.TabIndex = 11;
@@ -151,7 +153,7 @@
             // 
             // inAtk3
             // 
-            this.inAtk3.Location = new System.Drawing.Point(394, 120);
+            this.inAtk3.Location = new System.Drawing.Point(394, 122);
             this.inAtk3.Name = "inAtk3";
             this.inAtk3.Size = new System.Drawing.Size(60, 20);
             this.inAtk3.TabIndex = 10;
@@ -159,7 +161,7 @@
             // 
             // inAtk2
             // 
-            this.inAtk2.Location = new System.Drawing.Point(394, 94);
+            this.inAtk2.Location = new System.Drawing.Point(394, 96);
             this.inAtk2.Name = "inAtk2";
             this.inAtk2.Size = new System.Drawing.Size(60, 20);
             this.inAtk2.TabIndex = 9;
@@ -167,7 +169,7 @@
             // 
             // inAtk1
             // 
-            this.inAtk1.Location = new System.Drawing.Point(394, 68);
+            this.inAtk1.Location = new System.Drawing.Point(394, 70);
             this.inAtk1.Name = "inAtk1";
             this.inAtk1.Size = new System.Drawing.Size(60, 20);
             this.inAtk1.TabIndex = 8;
@@ -176,11 +178,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(390, 46);
+            this.label1.Location = new System.Drawing.Point(391, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "ATK Mode Switch";
+            this.label1.Text = "ATK Switch";
             // 
             // pictureBox1
             // 
@@ -236,7 +238,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(458, 119);
+            this.pictureBox6.Location = new System.Drawing.Point(458, 118);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
             this.pictureBox6.TabIndex = 22;
@@ -246,7 +248,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.InitialImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(458, 171);
+            this.pictureBox7.Location = new System.Drawing.Point(458, 172);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
             this.pictureBox7.TabIndex = 21;
@@ -256,7 +258,7 @@
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.InitialImage")));
-            this.pictureBox8.Location = new System.Drawing.Point(458, 145);
+            this.pictureBox8.Location = new System.Drawing.Point(458, 146);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(25, 25);
             this.pictureBox8.TabIndex = 20;
@@ -266,7 +268,7 @@
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.InitialImage")));
-            this.pictureBox9.Location = new System.Drawing.Point(458, 93);
+            this.pictureBox9.Location = new System.Drawing.Point(458, 94);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
             this.pictureBox9.TabIndex = 19;
@@ -276,7 +278,7 @@
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.InitialImage")));
-            this.pictureBox10.Location = new System.Drawing.Point(458, 67);
+            this.pictureBox10.Location = new System.Drawing.Point(458, 68);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 25);
             this.pictureBox10.TabIndex = 18;
@@ -284,7 +286,7 @@
             // 
             // inSpammerKey
             // 
-            this.inSpammerKey.Location = new System.Drawing.Point(107, 86);
+            this.inSpammerKey.Location = new System.Drawing.Point(101, 38);
             this.inSpammerKey.Name = "inSpammerKey";
             this.inSpammerKey.Size = new System.Drawing.Size(60, 20);
             this.inSpammerKey.TabIndex = 23;
@@ -293,7 +295,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 89);
+            this.label2.Location = new System.Drawing.Point(23, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 24;
@@ -301,7 +303,7 @@
             // 
             // spammerDelay
             // 
-            this.spammerDelay.Location = new System.Drawing.Point(107, 115);
+            this.spammerDelay.Location = new System.Drawing.Point(101, 67);
             this.spammerDelay.Maximum = new decimal(new int[] {
             500,
             0,
@@ -315,7 +317,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 117);
+            this.label3.Location = new System.Drawing.Point(14, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 26;
@@ -324,15 +326,9 @@
             // 
             // panelSwitch
             // 
-            this.panelSwitch.Controls.Add(this.lblSwitchDelay);
-            this.panelSwitch.Controls.Add(this.switchDelay);
             this.panelSwitch.Controls.Add(this.inAtk2);
-            this.panelSwitch.Controls.Add(this.label3);
             this.panelSwitch.Controls.Add(this.lblDef);
-            this.panelSwitch.Controls.Add(this.spammerDelay);
-            this.panelSwitch.Controls.Add(this.label2);
             this.panelSwitch.Controls.Add(this.inDef1);
-            this.panelSwitch.Controls.Add(this.inSpammerKey);
             this.panelSwitch.Controls.Add(this.inDef2);
             this.panelSwitch.Controls.Add(this.inDef3);
             this.panelSwitch.Controls.Add(this.pictureBox6);
@@ -353,6 +349,7 @@
             this.panelSwitch.Controls.Add(this.inAtk5);
             this.panelSwitch.Controls.Add(this.pictureBox2);
             this.panelSwitch.Controls.Add(this.pictureBox1);
+            this.panelSwitch.Controls.Add(this.groupBoxATKxDEFConfig);
             this.panelSwitch.Location = new System.Drawing.Point(18, 12);
             this.panelSwitch.Name = "panelSwitch";
             this.panelSwitch.Size = new System.Drawing.Size(517, 253);
@@ -361,7 +358,7 @@
             // lblSwitchDelay
             // 
             this.lblSwitchDelay.AutoSize = true;
-            this.lblSwitchDelay.Location = new System.Drawing.Point(32, 147);
+            this.lblSwitchDelay.Location = new System.Drawing.Point(26, 100);
             this.lblSwitchDelay.Name = "lblSwitchDelay";
             this.lblSwitchDelay.Size = new System.Drawing.Size(69, 13);
             this.lblSwitchDelay.TabIndex = 28;
@@ -370,7 +367,7 @@
             // 
             // switchDelay
             // 
-            this.switchDelay.Location = new System.Drawing.Point(107, 145);
+            this.switchDelay.Location = new System.Drawing.Point(101, 96);
             this.switchDelay.Maximum = new decimal(new int[] {
             500,
             0,
@@ -380,6 +377,21 @@
             this.switchDelay.Size = new System.Drawing.Size(60, 20);
             this.switchDelay.TabIndex = 27;
             this.switchDelay.ValueChanged += new System.EventHandler(this.onDelayChange);
+            // 
+            // groupBoxATKxDEFConfig
+            // 
+            this.groupBoxATKxDEFConfig.Controls.Add(this.lblSwitchDelay);
+            this.groupBoxATKxDEFConfig.Controls.Add(this.inSpammerKey);
+            this.groupBoxATKxDEFConfig.Controls.Add(this.switchDelay);
+            this.groupBoxATKxDEFConfig.Controls.Add(this.label2);
+            this.groupBoxATKxDEFConfig.Controls.Add(this.spammerDelay);
+            this.groupBoxATKxDEFConfig.Controls.Add(this.label3);
+            this.groupBoxATKxDEFConfig.Location = new System.Drawing.Point(13, 46);
+            this.groupBoxATKxDEFConfig.Name = "groupBoxATKxDEFConfig";
+            this.groupBoxATKxDEFConfig.Size = new System.Drawing.Size(191, 151);
+            this.groupBoxATKxDEFConfig.TabIndex = 33;
+            this.groupBoxATKxDEFConfig.TabStop = false;
+            this.groupBoxATKxDEFConfig.Text = "Configuration";
             // 
             // ATKDEFForm
             // 
@@ -405,6 +417,8 @@
             this.panelSwitch.ResumeLayout(false);
             this.panelSwitch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).EndInit();
+            this.groupBoxATKxDEFConfig.ResumeLayout(false);
+            this.groupBoxATKxDEFConfig.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -442,5 +456,6 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label lblSwitchDelay;
         private System.Windows.Forms.NumericUpDown switchDelay;
+        private System.Windows.Forms.GroupBox groupBoxATKxDEFConfig;
     }
 }
