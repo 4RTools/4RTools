@@ -29,6 +29,7 @@ namespace _4RTools.Forms
             SetToggleApplicationStateWindow();
             SetAutopotWindow();
             SetAutopotYggWindow();
+            SetSkillTimerWindow();
             SetAutoStatusEffectWindow();
             SetAHKWindow();
             SetProfileWindow();
@@ -43,7 +44,7 @@ namespace _4RTools.Forms
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(250, 60);
+            frm.Location = new Point(390, 60);
             frm.MdiParent = this;
             frm.Show();
         }
@@ -63,6 +64,16 @@ namespace _4RTools.Forms
             frm.MdiParent = this;
             frm.Show();
             addform(this.tabPageYggAutopot, frm);
+        }
+
+        public void SetSkillTimerWindow()
+        {
+            SkillTimerForm frm = new SkillTimerForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageSkillTimer, frm);
+
         }
         public void SetAutoStatusEffectWindow()
         {

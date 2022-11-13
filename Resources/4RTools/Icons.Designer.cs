@@ -153,6 +153,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap almighty {
+            get {
+                object obj = ResourceManager.GetObject("almighty", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aloevera {
             get {
                 object obj = ResourceManager.GetObject("aloevera", resourceCulture);
@@ -273,9 +283,39 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cat_can {
+            get {
+                object obj = ResourceManager.GetObject("cat_can", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap celermine {
+            get {
+                object obj = ResourceManager.GetObject("celermine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coldproof {
             get {
                 object obj = ResourceManager.GetObject("coldproof", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap combat_manual {
+            get {
+                object obj = ResourceManager.GetObject("combat_manual", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +386,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap cr_shrink {
             get {
                 object obj = ResourceManager.GetObject("cr_shrink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cursed_water {
+            get {
+                object obj = ResourceManager.GetObject("cursed_water", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,6 +513,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gatling_fever {
+            get {
+                object obj = ResourceManager.GetObject("gatling_fever", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ghp {
             get {
                 object obj = ResourceManager.GetObject("ghp", resourceCulture);
@@ -476,6 +536,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap gloom {
             get {
                 object obj = ResourceManager.GetObject("gloom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Golden_X {
+            get {
+                object obj = ResourceManager.GetObject("Golden_X", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +576,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap HAGALAZ {
             get {
                 object obj = ResourceManager.GetObject("HAGALAZ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap he_bubble_gum {
+            get {
+                object obj = ResourceManager.GetObject("he_bubble_gum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -646,6 +726,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap mc_loud {
             get {
                 object obj = ResourceManager.GetObject("mc_loud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mec_acceleration {
+            get {
+                object obj = ResourceManager.GetObject("mec_acceleration", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -956,6 +1046,86 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap THURISAZ {
             get {
                 object obj = ResourceManager.GetObject("THURISAZ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_earth {
+            get {
+                object obj = ResourceManager.GetObject("tk_earth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_mild_earth {
+            get {
+                object obj = ResourceManager.GetObject("tk_mild_earth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_mild_fire {
+            get {
+                object obj = ResourceManager.GetObject("tk_mild_fire", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_mild_ghost {
+            get {
+                object obj = ResourceManager.GetObject("tk_mild_ghost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_mild_holy {
+            get {
+                object obj = ResourceManager.GetObject("tk_mild_holy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_mild_shadow {
+            get {
+                object obj = ResourceManager.GetObject("tk_mild_shadow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_mild_water {
+            get {
+                object obj = ResourceManager.GetObject("tk_mild_water", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tk_mild_wind {
+            get {
+                object obj = ResourceManager.GetObject("tk_mild_wind", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -15,12 +15,6 @@ namespace _4RTools.Forms
             InitializeComponent();
             InitializeCheckAsThreeState();
             subject.Attach(this);
-
-            // Default values
-            this.txtSkillTimerKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            this.txtSkillTimerKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            this.txtSkillTimerKey.TextChanged += new EventHandler(this.onSkillTimerKeyChange);
-            this.txtAutoRefreshDelay.ValueChanged += new EventHandler(this.txtAutoRefreshDelayTextChanged);
         }
 
         public void Update(ISubject subject)
@@ -37,16 +31,12 @@ namespace _4RTools.Forms
                     }
 
                     this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.ahkDelay.ToString();
-                    this.txtSkillTimerKey.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey.ToString();
-                    this.txtAutoRefreshDelay.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay.ToString();
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AHK.Start();
-                    ProfileSingleton.GetCurrent().AutoRefreshSpammer.Start();
                     break;
                 case MessageCode.TURN_OFF:
                     ProfileSingleton.GetCurrent().AHK.Stop();
-                    ProfileSingleton.GetCurrent().AutoRefreshSpammer.Stop();
                     break;
             }
         }
@@ -88,22 +78,6 @@ namespace _4RTools.Forms
             catch { }
         }
 
-        private void onSkillTimerKeyChange(object sender, EventArgs e)
-        {
-            Key key = (Key)Enum.Parse(typeof(Key), txtSkillTimerKey.Text.ToString());
-            ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey = key;
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
-        }
-
-        private void txtAutoRefreshDelayTextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay = Int16.Parse(this.txtAutoRefreshDelay.Text);
-                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
-            }
-            catch { }
-        }
 
         private void InitializeCheckAsThreeState()
         {

@@ -9,11 +9,21 @@ namespace _4RTools.Forms
 {
     public partial class StuffAutoBuffForm : Form, IObserver
     {
+        private List<BuffContainer> stuffContainers = new List<BuffContainer>();
+
         public StuffAutoBuffForm(Subject subject)
         {
             InitializeComponent();
+            stuffContainers.Add(new BuffContainer(this.PotionsGP, Buff.GetPotionsBuffs()));
+            stuffContainers.Add(new BuffContainer(this.ElementalsGP, Buff.GetElementalsBuffs()));
+            stuffContainers.Add(new BuffContainer(this.BoxesGP, Buff.GetBoxesBuffs()));
+            stuffContainers.Add(new BuffContainer(this.FoodsGP, Buff.GetFoodBuffs()));
+            stuffContainers.Add(new BuffContainer(this.ScrollBuffsGP, Buff.GetScrollBuffs()));
+            stuffContainers.Add(new BuffContainer(this.EtcGP, Buff.GetETCBuffs()));
+
+            new BuffRenderer(stuffContainers, toolTip1).doRender();
+
             subject.Attach(this);
-            this.ConfigureInputs();
         }
 
         public void Update(ISubject subject)
@@ -33,17 +43,6 @@ namespace _4RTools.Forms
             }
         }
 
-        private void ConfigureInputs()
-        {
-            foreach (Control c in this.Controls)
-                if (c is TextBox)
-                {
-                    TextBox textBox = (TextBox)c;
-                    textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-                    textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-                    textBox.TextChanged += new EventHandler(this.onTextChange);
-                }
-        }
         private void updateInputValues(Dictionary<EffectStatusIDs, Key> autobuffDict)
         {
             FormUtils.ResetForm(this);
@@ -56,21 +55,6 @@ namespace _4RTools.Forms
                     textBox.Text = autobuffDict[effect].ToString();
                 }
             }
-        }
-        private void onTextChange(object sender, EventArgs e)
-        {
-            try
-            {
-                TextBox txtBox = (TextBox)sender;
-                if (txtBox.Text.ToString() != String.Empty) {
-                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
-                    EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
-                }
-                
-            }
-            catch { }
         }
     }
 }

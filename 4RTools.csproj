@@ -242,6 +242,12 @@
     <Compile Include="Forms\SkillAutoBuffForm.Designer.cs">
       <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SkillTimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SkillTimerForm.Designer.cs">
+      <DependentUpon>SkillTimerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StuffAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +284,8 @@
     <Compile Include="Model\Autobuff.cs" />
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\Buff.cs" />
+    <Compile Include="Model\BuffContainer.cs" />
+    <Compile Include="Model\BuffRenderer.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
     <Compile Include="Model\UserPreferences.cs" />
     <Compile Include="Model\Client.cs" />
@@ -307,7 +315,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Icons.resx</DependentUpon>
     </Compile>
-    <Compile Include="Utils\BuffList.cs" />
     <Compile Include="Utils\Classe.cs" />
     <Compile Include="Utils\EffectStatusIDs.cs" />
     <Compile Include="Utils\AppConfig.cs" />
@@ -335,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SkillAutoBuffForm.resx">
       <DependentUpon>SkillAutoBuffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SkillTimerForm.resx">
+      <DependentUpon>SkillTimerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StuffAutoBuffForm.resx">
       <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>
@@ -492,6 +502,23 @@
     <None Include="assets\etc\supported_servers.txt" />
     <None Include="assets\etc\Yggdrasil.bmp" />
     <None Include="assets\images\logo-4rtools-small.png" />
+    <None Include="assets\images\tk_earth.jpg" />
+    <None Include="assets\images\tk_mild_earth.jpg" />
+    <None Include="assets\images\tk_mild_fire.jpg" />
+    <None Include="assets\images\tk_mild_ghost.jpg" />
+    <None Include="assets\images\tk_mild_holy.jpg" />
+    <None Include="assets\images\tk_mild_shadow.jpg" />
+    <None Include="assets\images\tk_mild_water.jpg" />
+    <None Include="assets\images\tk_mild_wind.jpg" />
+    <None Include="assets\images\mec_acceleration.png" />
+    <None Include="assets\images\gatling_fever.png" />
+    <None Include="assets\images\cursed_water.gif" />
+    <None Include="assets\images\cat_can.png" />
+    <None Include="assets\images\almighty.png" />
+    <None Include="assets\images\he_bubble_gum.png" />
+    <None Include="assets\images\celermine.png" />
+    <None Include="assets\images\Golden X.png" />
+    <None Include="assets\images\combat_manual.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

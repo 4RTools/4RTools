@@ -11,13 +11,25 @@ namespace _4RTools.Forms
     public partial class SkillAutoBuffForm : Form, IObserver
     {
 
+        private List<BuffContainer> skillContainers =  new List<BuffContainer>();
+
         public SkillAutoBuffForm(Subject subject)
         {
             this.KeyPreview = true;
             InitializeComponent();
+
+            skillContainers.Add(new BuffContainer(this.ArcherSkillsGP, Buff.GetArcherSkills()));
+            skillContainers.Add(new BuffContainer(this.SwordmanSkillGP, Buff.GetSwordmanSkill()));
+            skillContainers.Add(new BuffContainer(this.MageSkillGP, Buff.GetMageSkills()));
+            skillContainers.Add(new BuffContainer(this.MerchantSkillsGP, Buff.GetMerchantSkills()));
+            skillContainers.Add(new BuffContainer(this.ThiefSkillsGP, Buff.GetThiefSkills()));
+            skillContainers.Add(new BuffContainer(this.AcolyteSkillsGP, Buff.GetAcolyteSkills()));
+            skillContainers.Add(new BuffContainer(this.TKSkillGroupBox, Buff.GetTaekwonSkills()));
+            skillContainers.Add(new BuffContainer(this.NinjaSkillsGP, Buff.GetNinjaSkills()));
+            skillContainers.Add(new BuffContainer(this.GunsSkillsGP, Buff.GetGunsSkills()));
+
+            new BuffRenderer(skillContainers, toolTip1).doRender();
             subject.Attach(this);
-            ConfigureInputs();
-            RenderComponents();
 
         }
 
@@ -32,45 +44,6 @@ namespace _4RTools.Forms
             }
         }
 
-        public void RenderComponents()
-        {
-            TextBox textBox = new TextBox();
-            textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            textBox.TextChanged += new EventHandler(this.onTextChange);
-            textBox.Size = new Size(55, 20);
-            textBox.Location = new Point(50, 10);
-
-            this.ArcherSkillsGP.Controls.Add(textBox);
-
-            PictureBox pb = new PictureBox();
-            pb.Image = Resources._4RTools.Icons.agi_food;
-            pb.BackgroundImageLayout = ImageLayout.Center;
-            pb.BorderStyle = BorderStyle.FixedSingle;
-            pb.Location = new Point(10, 10);
-            pb.Name = "pictureBox22";
-            pb.Size = new Size(36, 26);
-            pb.TabIndex = 115;
-            pb.TabStop = false;
-
-            this.ArcherSkillsGP.Controls.Add(pb);
-
-        }
-
- 
-
-        private void ConfigureInputs()
-        {
-            foreach (Control c in this.Controls)
-                if (c is TextBox)
-                {
-                    TextBox textBox = (TextBox)c;
-                    textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-                    textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-                    textBox.TextChanged += new EventHandler(this.onTextChange);
-                }
-        }
-
         private void updateInputValues(Dictionary<EffectStatusIDs, Key> autobuffDict)
         {
             FormUtils.ResetForm(this);
@@ -83,23 +56,6 @@ namespace _4RTools.Forms
                     textBox.Text = autobuffDict[effect].ToString();
                 }
             }
-        }
-
-        private void onTextChange(object sender, EventArgs e)
-        {
-            try
-            {
-
-                TextBox txtBox = (TextBox)sender;
-                if (txtBox.Text.ToString() != String.Empty)
-                {
-                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
-                    EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
-                }
-            }
-            catch { }
         }
     }
 }

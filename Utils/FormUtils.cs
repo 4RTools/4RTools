@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Input;
@@ -42,10 +43,23 @@ namespace _4RTools.Utils
             e.Handled = true;
         }
 
-        private static void resetForm(ControlCollection controls)
+        public static IEnumerable<Control> GetAll(Control control, Type type)
         {
-            foreach (Control control in controls)
+            var controls = control.Controls.Cast<Control>();
+
+            return controls.SelectMany(ctrl => GetAll(ctrl, type))
+                                      .Concat(controls)
+                                      .Where(c => c.GetType() == type);
+        }
+
+        private static void resetForm(Control control)
+        {
+
+            IEnumerable<Control> texts = GetAll(control, typeof(TextBox));
+            /*foreach (Control control in controls)
             {
+                
+
                 if (control is TextBox)
                 {
                     TextBox textBox = (TextBox)control;
@@ -70,22 +84,22 @@ namespace _4RTools.Utils
                     ListBox listBox = (ListBox)control;
                     listBox.ClearSelected();
                 }
-            }
+            }*/
         }
 
         public static void ResetForm(Form form)
         {
-            resetForm(form.Controls);
+            resetForm(form);
         }
 
         public static void ResetForm(Panel panel)
         {
-            resetForm(panel.Controls);
+            resetForm(panel);
         }
 
         public static void ResetForm(GroupBox group)
         {
-            resetForm(group.Controls);
+            resetForm(group);
         }
     }
 }

@@ -51,6 +51,23 @@ namespace _4RTools.Forms
                     textBox.Text = chainConfig.trigger.ToString();
                 }
 
+                //Update Dagger Value
+                Control[] cDagger = p.Controls.Find("inDaggerMacro" + chainConfig.id, true);
+                if (c.Length > 0)
+                {
+                    TextBox textBox = (TextBox)cDagger[0];
+                    textBox.Text = chainConfig.daggerKey.ToString();
+                }
+
+                //Update Instrument Value
+                Control[] cInstrument = p.Controls.Find("inInstrumentMacro" + chainConfig.id, true);
+                if (c.Length > 0)
+                {
+                    TextBox textBox = (TextBox)cInstrument[0];
+                    textBox.Text = chainConfig.instrumentKey.ToString();
+                }
+
+
                 List<string> names = new List<string>(chainConfig.macroEntries.Keys);
                 foreach (string cbName in names)
                 {
@@ -77,21 +94,35 @@ namespace _4RTools.Forms
             Macro SongMacro = ProfileSingleton.GetCurrent().SongMacro;
             TextBox textBox = (TextBox)sender;
             Key key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
-            string[] parts = textBox.Name.Split(new[] { "inTriggerMacro" }, StringSplitOptions.None);
 
-            if (parts.Length > 1) //It's a MacroTrigger
+            if(textBox.Tag != null)
             {
-                int id = Int16.Parse(parts[1]);
-                ChainConfig chainConfig = ProfileSingleton.GetCurrent().SongMacro.chainConfigs.Find(config => config.id == id);
-                chainConfig.trigger = key;
-                //If don't found a macro config with given cbTriggerMacroID
+                //Could be Trigger, Dagger or Instrument input
+                string[] inputTag = textBox.Tag.ToString().Split(new[] { ":" }, StringSplitOptions.None);
+                int macroid = short.Parse(inputTag[0]);
+                string type = inputTag[1];
+                ChainConfig chainConfig = ProfileSingleton.GetCurrent().SongMacro.chainConfigs.Find(config => config.id == macroid);
+
+                switch (type)
+                {
+                    case "Dagger":
+                        chainConfig.daggerKey = key;
+                        break;
+                    case "Instrument":
+                        chainConfig.instrumentKey= key;
+                        break;
+                    case "Trigger":
+                        chainConfig.trigger = key;
+                        break;
+                }
             }
             else
             {
-                int macroID = Int16.Parse(textBox.Name.Split(new[] { "mac" }, StringSplitOptions.None)[1]);
+                int macroID = short.Parse(textBox.Name.Split(new[] { "mac" }, StringSplitOptions.None)[1]);
                 ChainConfig chainConfig = SongMacro.chainConfigs.Find(songMacro => songMacro.id == macroID);
                 chainConfig.macroEntries[textBox.Name] = new MacroKey(key, chainConfig.delay);
             }
+
             ProfileSingleton.SetConfiguration(SongMacro);
         }
 

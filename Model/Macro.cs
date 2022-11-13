@@ -24,6 +24,8 @@ namespace _4RTools.Model
     {
         public int id;
         public Key trigger { get; set; }
+        public Key daggerKey { get; set; }
+        public Key instrumentKey { get; set; }
         public int delay { get; set; } = 50;
         public Dictionary<string, MacroKey> macroEntries { get; set; } = new Dictionary<string, MacroKey>();
 
@@ -39,6 +41,8 @@ namespace _4RTools.Model
             this.id = macro.id;
             this.delay = macro.delay;
             this.trigger = macro.trigger;
+            this.daggerKey = macro.daggerKey;
+            this.instrumentKey = macro.instrumentKey;
             this.macroEntries = new Dictionary<string, MacroKey>(macro.macroEntries);
         }
         public ChainConfig(int id, Key trigger)
@@ -100,9 +104,26 @@ namespace _4RTools.Model
                         MacroKey macroKey = macro["in" + i + "mac" + chainConfig.id];
                         if (macroKey.key != Key.None)
                         {
+                            if(chainConfig.instrumentKey != Key.None)
+                            {
+                                //Press instrument key if exists.
+                                Keys instrumentKey = (Keys)Enum.Parse(typeof(Keys), chainConfig.instrumentKey.ToString());
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, instrumentKey, 0);
+                                Thread.Sleep(30);
+                            }
+
                             Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.key.ToString());
                             Thread.Sleep(macroKey.delay);
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+
+                            if(chainConfig.daggerKey != Key.None)
+                            {
+                                //Press instrument key if exists.
+                                Keys daggerKey = (Keys)Enum.Parse(typeof(Keys), chainConfig.daggerKey.ToString());
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, daggerKey, 0);
+                                Thread.Sleep(30);
+                            }
+
                         }
                     }
                 }

@@ -16,7 +16,11 @@ namespace _4RTools.Utils
 
         //BUFFS
         PROVOKE = 0,
+
         ENDURE = 1,
+        PAINKILLER = 1,
+
+
         CONCENTRATION  = 3,
         TRUESIGHT = 115,
         GLORIA = 21,
@@ -69,13 +73,19 @@ namespace _4RTools.Utils
         CASH_PLUSEXP = 250,
         CASH_RECEIVEITEM = 252,
         ACCELERATION = 361,
+        LIMIT_POWER_BOOSTER = 867,
+        GATLINGFEVER = 204,
+        ASSUMPTIO = 110,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
         PROPERTYWATER = 91,
         PROPERTYWIND = 92,
         PROPERTYGROUND = 93,
+        PROPERTYDARK = 146,
+        PROPERTYTELEKINESIS = 148,
         WEAPONPROPERTY = 64,
+        ASPERSIO = 17,
 
         //ASPD POTIONS
         CONCENTRATION_POTION = 37,

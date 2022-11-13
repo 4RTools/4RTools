@@ -79,25 +79,16 @@
             this.chkS = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txtSkillTimerKey = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtAutoRefreshDelay = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblAutoRefreshKey = new System.Windows.Forms.Label();
-            this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).BeginInit();
             this.SuspendLayout();
             // 
             // chkF9
             // 
             this.chkF9.AutoSize = true;
-            this.chkF9.Location = new System.Drawing.Point(363, 13);
+            this.chkF9.Location = new System.Drawing.Point(429, 34);
             this.chkF9.Name = "chkF9";
             this.chkF9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkF9.Size = new System.Drawing.Size(38, 17);
@@ -108,7 +99,7 @@
             // chkF8
             // 
             this.chkF8.AutoSize = true;
-            this.chkF8.Location = new System.Drawing.Point(319, 13);
+            this.chkF8.Location = new System.Drawing.Point(385, 34);
             this.chkF8.Name = "chkF8";
             this.chkF8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkF8.Size = new System.Drawing.Size(38, 17);
@@ -119,7 +110,7 @@
             // chkF7
             // 
             this.chkF7.AutoSize = true;
-            this.chkF7.Location = new System.Drawing.Point(275, 13);
+            this.chkF7.Location = new System.Drawing.Point(341, 34);
             this.chkF7.Name = "chkF7";
             this.chkF7.Size = new System.Drawing.Size(38, 17);
             this.chkF7.TabIndex = 7;
@@ -129,7 +120,7 @@
             // chkF6
             // 
             this.chkF6.AutoSize = true;
-            this.chkF6.Location = new System.Drawing.Point(231, 13);
+            this.chkF6.Location = new System.Drawing.Point(297, 34);
             this.chkF6.Name = "chkF6";
             this.chkF6.Size = new System.Drawing.Size(38, 17);
             this.chkF6.TabIndex = 6;
@@ -139,7 +130,7 @@
             // chkF5
             // 
             this.chkF5.AutoSize = true;
-            this.chkF5.Location = new System.Drawing.Point(187, 13);
+            this.chkF5.Location = new System.Drawing.Point(253, 34);
             this.chkF5.Name = "chkF5";
             this.chkF5.Size = new System.Drawing.Size(38, 17);
             this.chkF5.TabIndex = 5;
@@ -149,7 +140,7 @@
             // chkF4
             // 
             this.chkF4.AutoSize = true;
-            this.chkF4.Location = new System.Drawing.Point(143, 13);
+            this.chkF4.Location = new System.Drawing.Point(209, 34);
             this.chkF4.Name = "chkF4";
             this.chkF4.Size = new System.Drawing.Size(38, 17);
             this.chkF4.TabIndex = 4;
@@ -159,7 +150,7 @@
             // chkF3
             // 
             this.chkF3.AutoSize = true;
-            this.chkF3.Location = new System.Drawing.Point(99, 13);
+            this.chkF3.Location = new System.Drawing.Point(165, 34);
             this.chkF3.Name = "chkF3";
             this.chkF3.Size = new System.Drawing.Size(38, 17);
             this.chkF3.TabIndex = 3;
@@ -169,7 +160,7 @@
             // chkF2
             // 
             this.chkF2.AutoSize = true;
-            this.chkF2.Location = new System.Drawing.Point(55, 13);
+            this.chkF2.Location = new System.Drawing.Point(121, 34);
             this.chkF2.Name = "chkF2";
             this.chkF2.Size = new System.Drawing.Size(38, 17);
             this.chkF2.TabIndex = 2;
@@ -179,7 +170,7 @@
             // chkF1
             // 
             this.chkF1.AutoSize = true;
-            this.chkF1.Location = new System.Drawing.Point(11, 13);
+            this.chkF1.Location = new System.Drawing.Point(77, 34);
             this.chkF1.Name = "chkF1";
             this.chkF1.Size = new System.Drawing.Size(38, 17);
             this.chkF1.TabIndex = 1;
@@ -189,7 +180,7 @@
             // chk9
             // 
             this.chk9.AutoSize = true;
-            this.chk9.Location = new System.Drawing.Point(363, 46);
+            this.chk9.Location = new System.Drawing.Point(429, 67);
             this.chk9.Name = "chk9";
             this.chk9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chk9.Size = new System.Drawing.Size(32, 17);
@@ -200,7 +191,7 @@
             // chk8
             // 
             this.chk8.AutoSize = true;
-            this.chk8.Location = new System.Drawing.Point(319, 46);
+            this.chk8.Location = new System.Drawing.Point(385, 67);
             this.chk8.Name = "chk8";
             this.chk8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chk8.Size = new System.Drawing.Size(32, 17);
@@ -211,7 +202,7 @@
             // chk7
             // 
             this.chk7.AutoSize = true;
-            this.chk7.Location = new System.Drawing.Point(275, 46);
+            this.chk7.Location = new System.Drawing.Point(341, 67);
             this.chk7.Name = "chk7";
             this.chk7.Size = new System.Drawing.Size(32, 17);
             this.chk7.TabIndex = 7;
@@ -221,7 +212,7 @@
             // chk6
             // 
             this.chk6.AutoSize = true;
-            this.chk6.Location = new System.Drawing.Point(231, 46);
+            this.chk6.Location = new System.Drawing.Point(297, 67);
             this.chk6.Name = "chk6";
             this.chk6.Size = new System.Drawing.Size(32, 17);
             this.chk6.TabIndex = 6;
@@ -231,7 +222,7 @@
             // chk5
             // 
             this.chk5.AutoSize = true;
-            this.chk5.Location = new System.Drawing.Point(187, 46);
+            this.chk5.Location = new System.Drawing.Point(253, 67);
             this.chk5.Name = "chk5";
             this.chk5.Size = new System.Drawing.Size(32, 17);
             this.chk5.TabIndex = 5;
@@ -241,7 +232,7 @@
             // chk4
             // 
             this.chk4.AutoSize = true;
-            this.chk4.Location = new System.Drawing.Point(143, 46);
+            this.chk4.Location = new System.Drawing.Point(209, 67);
             this.chk4.Name = "chk4";
             this.chk4.Size = new System.Drawing.Size(32, 17);
             this.chk4.TabIndex = 4;
@@ -251,7 +242,7 @@
             // chk3
             // 
             this.chk3.AutoSize = true;
-            this.chk3.Location = new System.Drawing.Point(99, 46);
+            this.chk3.Location = new System.Drawing.Point(165, 67);
             this.chk3.Name = "chk3";
             this.chk3.Size = new System.Drawing.Size(32, 17);
             this.chk3.TabIndex = 3;
@@ -261,7 +252,7 @@
             // chk2
             // 
             this.chk2.AutoSize = true;
-            this.chk2.Location = new System.Drawing.Point(55, 46);
+            this.chk2.Location = new System.Drawing.Point(121, 67);
             this.chk2.Name = "chk2";
             this.chk2.Size = new System.Drawing.Size(32, 17);
             this.chk2.TabIndex = 2;
@@ -271,7 +262,7 @@
             // chk1
             // 
             this.chk1.AutoSize = true;
-            this.chk1.Location = new System.Drawing.Point(11, 46);
+            this.chk1.Location = new System.Drawing.Point(77, 67);
             this.chk1.Name = "chk1";
             this.chk1.Size = new System.Drawing.Size(32, 17);
             this.chk1.TabIndex = 1;
@@ -281,7 +272,7 @@
             // chkM
             // 
             this.chkM.AutoSize = true;
-            this.chkM.Location = new System.Drawing.Point(275, 128);
+            this.chkM.Location = new System.Drawing.Point(341, 149);
             this.chkM.Name = "chkM";
             this.chkM.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkM.Size = new System.Drawing.Size(35, 17);
@@ -292,7 +283,7 @@
             // chkN
             // 
             this.chkN.AutoSize = true;
-            this.chkN.Location = new System.Drawing.Point(231, 128);
+            this.chkN.Location = new System.Drawing.Point(297, 149);
             this.chkN.Name = "chkN";
             this.chkN.Size = new System.Drawing.Size(34, 17);
             this.chkN.TabIndex = 24;
@@ -302,7 +293,7 @@
             // chkB
             // 
             this.chkB.AutoSize = true;
-            this.chkB.Location = new System.Drawing.Point(187, 128);
+            this.chkB.Location = new System.Drawing.Point(253, 149);
             this.chkB.Name = "chkB";
             this.chkB.Size = new System.Drawing.Size(33, 17);
             this.chkB.TabIndex = 23;
@@ -312,7 +303,7 @@
             // chkV
             // 
             this.chkV.AutoSize = true;
-            this.chkV.Location = new System.Drawing.Point(143, 128);
+            this.chkV.Location = new System.Drawing.Point(209, 149);
             this.chkV.Name = "chkV";
             this.chkV.Size = new System.Drawing.Size(33, 17);
             this.chkV.TabIndex = 22;
@@ -322,7 +313,7 @@
             // chkC
             // 
             this.chkC.AutoSize = true;
-            this.chkC.Location = new System.Drawing.Point(99, 128);
+            this.chkC.Location = new System.Drawing.Point(165, 149);
             this.chkC.Name = "chkC";
             this.chkC.Size = new System.Drawing.Size(33, 17);
             this.chkC.TabIndex = 21;
@@ -332,7 +323,7 @@
             // chkX
             // 
             this.chkX.AutoSize = true;
-            this.chkX.Location = new System.Drawing.Point(55, 128);
+            this.chkX.Location = new System.Drawing.Point(121, 149);
             this.chkX.Name = "chkX";
             this.chkX.Size = new System.Drawing.Size(33, 17);
             this.chkX.TabIndex = 20;
@@ -342,7 +333,7 @@
             // chkZ
             // 
             this.chkZ.AutoSize = true;
-            this.chkZ.Location = new System.Drawing.Point(11, 128);
+            this.chkZ.Location = new System.Drawing.Point(77, 149);
             this.chkZ.Name = "chkZ";
             this.chkZ.Size = new System.Drawing.Size(33, 17);
             this.chkZ.TabIndex = 19;
@@ -352,7 +343,7 @@
             // chkL
             // 
             this.chkL.AutoSize = true;
-            this.chkL.Location = new System.Drawing.Point(363, 105);
+            this.chkL.Location = new System.Drawing.Point(429, 126);
             this.chkL.Name = "chkL";
             this.chkL.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkL.Size = new System.Drawing.Size(32, 17);
@@ -363,7 +354,7 @@
             // chkK
             // 
             this.chkK.AutoSize = true;
-            this.chkK.Location = new System.Drawing.Point(319, 105);
+            this.chkK.Location = new System.Drawing.Point(385, 126);
             this.chkK.Name = "chkK";
             this.chkK.Size = new System.Drawing.Size(33, 17);
             this.chkK.TabIndex = 16;
@@ -373,7 +364,7 @@
             // chkJ
             // 
             this.chkJ.AutoSize = true;
-            this.chkJ.Location = new System.Drawing.Point(275, 105);
+            this.chkJ.Location = new System.Drawing.Point(341, 126);
             this.chkJ.Name = "chkJ";
             this.chkJ.Size = new System.Drawing.Size(31, 17);
             this.chkJ.TabIndex = 15;
@@ -383,7 +374,7 @@
             // chkH
             // 
             this.chkH.AutoSize = true;
-            this.chkH.Location = new System.Drawing.Point(231, 105);
+            this.chkH.Location = new System.Drawing.Point(297, 126);
             this.chkH.Name = "chkH";
             this.chkH.Size = new System.Drawing.Size(34, 17);
             this.chkH.TabIndex = 14;
@@ -393,7 +384,7 @@
             // chkG
             // 
             this.chkG.AutoSize = true;
-            this.chkG.Location = new System.Drawing.Point(187, 105);
+            this.chkG.Location = new System.Drawing.Point(253, 126);
             this.chkG.Name = "chkG";
             this.chkG.Size = new System.Drawing.Size(34, 17);
             this.chkG.TabIndex = 13;
@@ -403,7 +394,7 @@
             // chkF
             // 
             this.chkF.AutoSize = true;
-            this.chkF.Location = new System.Drawing.Point(143, 105);
+            this.chkF.Location = new System.Drawing.Point(209, 126);
             this.chkF.Name = "chkF";
             this.chkF.Size = new System.Drawing.Size(32, 17);
             this.chkF.TabIndex = 12;
@@ -413,7 +404,7 @@
             // chkD
             // 
             this.chkD.AutoSize = true;
-            this.chkD.Location = new System.Drawing.Point(99, 105);
+            this.chkD.Location = new System.Drawing.Point(165, 126);
             this.chkD.Name = "chkD";
             this.chkD.Size = new System.Drawing.Size(34, 17);
             this.chkD.TabIndex = 11;
@@ -423,7 +414,7 @@
             // chkA
             // 
             this.chkA.AutoSize = true;
-            this.chkA.Location = new System.Drawing.Point(11, 105);
+            this.chkA.Location = new System.Drawing.Point(77, 126);
             this.chkA.Name = "chkA";
             this.chkA.Size = new System.Drawing.Size(33, 17);
             this.chkA.TabIndex = 10;
@@ -433,7 +424,7 @@
             // chkO
             // 
             this.chkO.AutoSize = true;
-            this.chkO.Location = new System.Drawing.Point(363, 82);
+            this.chkO.Location = new System.Drawing.Point(429, 103);
             this.chkO.Name = "chkO";
             this.chkO.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkO.Size = new System.Drawing.Size(34, 17);
@@ -444,7 +435,7 @@
             // chkI
             // 
             this.chkI.AutoSize = true;
-            this.chkI.Location = new System.Drawing.Point(319, 82);
+            this.chkI.Location = new System.Drawing.Point(385, 103);
             this.chkI.Name = "chkI";
             this.chkI.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkI.Size = new System.Drawing.Size(29, 17);
@@ -455,7 +446,7 @@
             // chkU
             // 
             this.chkU.AutoSize = true;
-            this.chkU.Location = new System.Drawing.Point(275, 82);
+            this.chkU.Location = new System.Drawing.Point(341, 103);
             this.chkU.Name = "chkU";
             this.chkU.Size = new System.Drawing.Size(34, 17);
             this.chkU.TabIndex = 7;
@@ -465,7 +456,7 @@
             // chkY
             // 
             this.chkY.AutoSize = true;
-            this.chkY.Location = new System.Drawing.Point(231, 82);
+            this.chkY.Location = new System.Drawing.Point(297, 103);
             this.chkY.Name = "chkY";
             this.chkY.Size = new System.Drawing.Size(33, 17);
             this.chkY.TabIndex = 6;
@@ -475,7 +466,7 @@
             // chkT
             // 
             this.chkT.AutoSize = true;
-            this.chkT.Location = new System.Drawing.Point(187, 82);
+            this.chkT.Location = new System.Drawing.Point(253, 103);
             this.chkT.Name = "chkT";
             this.chkT.Size = new System.Drawing.Size(33, 17);
             this.chkT.TabIndex = 5;
@@ -485,7 +476,7 @@
             // chkR
             // 
             this.chkR.AutoSize = true;
-            this.chkR.Location = new System.Drawing.Point(143, 82);
+            this.chkR.Location = new System.Drawing.Point(209, 103);
             this.chkR.Name = "chkR";
             this.chkR.Size = new System.Drawing.Size(34, 17);
             this.chkR.TabIndex = 4;
@@ -495,7 +486,7 @@
             // chkE
             // 
             this.chkE.AutoSize = true;
-            this.chkE.Location = new System.Drawing.Point(99, 82);
+            this.chkE.Location = new System.Drawing.Point(165, 103);
             this.chkE.Name = "chkE";
             this.chkE.Size = new System.Drawing.Size(33, 17);
             this.chkE.TabIndex = 3;
@@ -505,7 +496,7 @@
             // chkW
             // 
             this.chkW.AutoSize = true;
-            this.chkW.Location = new System.Drawing.Point(55, 82);
+            this.chkW.Location = new System.Drawing.Point(121, 103);
             this.chkW.Name = "chkW";
             this.chkW.Size = new System.Drawing.Size(37, 17);
             this.chkW.TabIndex = 2;
@@ -515,7 +506,7 @@
             // chkQ
             // 
             this.chkQ.AutoSize = true;
-            this.chkQ.Location = new System.Drawing.Point(11, 82);
+            this.chkQ.Location = new System.Drawing.Point(77, 103);
             this.chkQ.Name = "chkQ";
             this.chkQ.Size = new System.Drawing.Size(34, 17);
             this.chkQ.TabIndex = 1;
@@ -534,7 +525,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(11, 153);
+            this.panel1.Location = new System.Drawing.Point(77, 174);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(385, 1);
             this.panel1.TabIndex = 26;
@@ -544,7 +535,7 @@
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(11, 71);
+            this.panel2.Location = new System.Drawing.Point(77, 92);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(385, 1);
             this.panel2.TabIndex = 27;
@@ -563,7 +554,7 @@
             this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.panel6);
-            this.panel4.Location = new System.Drawing.Point(10, 36);
+            this.panel4.Location = new System.Drawing.Point(76, 57);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(385, 1);
             this.panel4.TabIndex = 29;
@@ -580,7 +571,7 @@
             // chkS
             // 
             this.chkS.AutoSize = true;
-            this.chkS.Location = new System.Drawing.Point(55, 105);
+            this.chkS.Location = new System.Drawing.Point(121, 126);
             this.chkS.Name = "chkS";
             this.chkS.Size = new System.Drawing.Size(33, 17);
             this.chkS.TabIndex = 30;
@@ -591,7 +582,7 @@
             // 
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtSpammerDelay);
-            this.groupBox2.Location = new System.Drawing.Point(10, 168);
+            this.groupBox2.Location = new System.Drawing.Point(76, 189);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(119, 61);
             this.groupBox2.TabIndex = 32;
@@ -608,90 +599,12 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "ms";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(187, 173);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 78);
-            this.panel5.TabIndex = 27;
-            // 
-            // txtSkillTimerKey
-            // 
-            this.txtSkillTimerKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSkillTimerKey.Location = new System.Drawing.Point(58, 52);
-            this.txtSkillTimerKey.Name = "txtSkillTimerKey";
-            this.txtSkillTimerKey.Size = new System.Drawing.Size(61, 23);
-            this.txtSkillTimerKey.TabIndex = 4;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.txtAutoRefreshDelay);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtSkillTimerKey);
-            this.groupBox1.Controls.Add(this.lblAutoRefreshKey);
-            this.groupBox1.Controls.Add(this.lblAutoRefreshDelay);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.groupBox1.Location = new System.Drawing.Point(235, 167);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(161, 87);
-            this.groupBox1.TabIndex = 33;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Skill Timer";
-            // 
-            // txtAutoRefreshDelay
-            // 
-            this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(58, 24);
-            this.txtAutoRefreshDelay.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtAutoRefreshDelay.Name = "txtAutoRefreshDelay";
-            this.txtAutoRefreshDelay.Size = new System.Drawing.Size(61, 23);
-            this.txtAutoRefreshDelay.TabIndex = 34;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label2.Location = new System.Drawing.Point(119, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "sec";
-            // 
-            // lblAutoRefreshKey
-            // 
-            this.lblAutoRefreshKey.AutoSize = true;
-            this.lblAutoRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshKey.Location = new System.Drawing.Point(28, 56);
-            this.lblAutoRefreshKey.Name = "lblAutoRefreshKey";
-            this.lblAutoRefreshKey.Size = new System.Drawing.Size(27, 15);
-            this.lblAutoRefreshKey.TabIndex = 1;
-            this.lblAutoRefreshKey.Text = "Key";
-            // 
-            // lblAutoRefreshDelay
-            // 
-            this.lblAutoRefreshDelay.AutoSize = true;
-            this.lblAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(17, 28);
-            this.lblAutoRefreshDelay.Name = "lblAutoRefreshDelay";
-            this.lblAutoRefreshDelay.Size = new System.Drawing.Size(38, 15);
-            this.lblAutoRefreshDelay.TabIndex = 0;
-            this.lblAutoRefreshDelay.Text = "Delay";
-            this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(406, 270);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel5);
+            this.ClientSize = new System.Drawing.Size(537, 270);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.chkS);
             this.Controls.Add(this.panel4);
@@ -748,9 +661,6 @@
             this.panel4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -808,12 +718,5 @@
         private System.Windows.Forms.NumericUpDown txtSpammerDelay;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtSkillTimerKey;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblAutoRefreshKey;
-        private System.Windows.Forms.Label lblAutoRefreshDelay;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay;
     }
 }

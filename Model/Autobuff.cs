@@ -11,7 +11,7 @@ namespace _4RTools.Model
 
     public class AutoBuff : Action
     {
-        public static string ACTION_NAME_AUTOBUFF = "AutoBuff";
+        public static string ACTION_NAME_AUTOBUFF = "Autobuff";
 
         private _4RThread thread;
         public int delay { get; set; } = 1;
