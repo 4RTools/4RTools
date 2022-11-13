@@ -520,6 +520,8 @@
     <None Include="assets\images\Golden X.png" />
     <None Include="assets\images\combat_manual.png" />
     <None Include="assets\images\cr_fullprotection.gif" />
+    <None Include="assets\etc\HP.png" />
+    <None Include="assets\etc\SP.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

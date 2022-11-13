@@ -88,7 +88,7 @@
             // 
             // picBoxSP
             // 
-            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
+            this.picBoxSP.Image = Resources._4RTools.ETCResource.SP;
             this.picBoxSP.Location = new System.Drawing.Point(11, 37);
             this.picBoxSP.Name = "picBoxSP";
             this.picBoxSP.Size = new System.Drawing.Size(25, 25);
@@ -98,7 +98,7 @@
             // 
             // picBoxHP
             // 
-            this.picBoxHP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxHP.Image")));
+            this.picBoxHP.Image = Resources._4RTools.ETCResource.HP;
             this.picBoxHP.Location = new System.Drawing.Point(11, 11);
             this.picBoxHP.Name = "picBoxHP";
             this.picBoxHP.Size = new System.Drawing.Size(25, 25);
@@ -174,8 +174,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.ClientSize = new System.Drawing.Size(198, 100);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -192,6 +190,7 @@
             this.Controls.Add(this.picBoxHP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AutopotForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "AutopotForm";
             ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
