@@ -4,7 +4,6 @@ using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
 using System.Collections.Generic;
-using System.Drawing;
 
 namespace _4RTools.Forms
 {
@@ -38,23 +37,8 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    Dictionary<EffectStatusIDs, Key> buffMappingClone = new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().Autobuff.buffMapping);
-                    this.updateInputValues(buffMappingClone);
+                    BuffRenderer.doUpdate(new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().Autobuff.buffMapping), this);
                     break;
-            }
-        }
-
-        private void updateInputValues(Dictionary<EffectStatusIDs, Key> autobuffDict)
-        {
-            FormUtils.ResetForm(this);
-            foreach (EffectStatusIDs effect in autobuffDict.Keys)
-            {
-                Control[] c = this.Controls.Find("in" + (int)effect, true);
-                if (c.Length > 0)
-                {
-                    TextBox textBox = (TextBox)c[0];
-                    textBox.Text = autobuffDict[effect].ToString();
-                }
             }
         }
     }

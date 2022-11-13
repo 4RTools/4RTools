@@ -84,6 +84,11 @@ namespace _4RTools.Utils
             resetForm(form);
         }
 
+        public static void ResetForm(Control form)
+        {
+            resetForm(form);
+        }
+
         public static void ResetForm(Panel panel)
         {
             resetForm(panel);
