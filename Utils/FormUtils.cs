@@ -56,35 +56,27 @@ namespace _4RTools.Utils
         {
 
             IEnumerable<Control> texts = GetAll(control, typeof(TextBox));
-            /*foreach (Control control in controls)
+            IEnumerable<Control> checks = GetAll(control, typeof(CheckBox));
+            IEnumerable<Control> combos = GetAll(control, typeof(ComboBox));
+
+            foreach(Control c in texts)
             {
-                
+                TextBox textBox = (TextBox)c;
+                textBox.Text = Key.None.ToString();
+            }
 
-                if (control is TextBox)
-                {
-                    TextBox textBox = (TextBox)control;
-                    textBox.Text = Key.None.ToString();
-                }
+            foreach (Control c in checks)
+            {
+                CheckBox checkBox = (CheckBox)c;
+                checkBox.Checked = false;
+            }
 
-                if (control is ComboBox)
-                {
-                    ComboBox comboBox = (ComboBox)control;
-                    if (comboBox.Items.Count > 0)
-                        comboBox.SelectedIndex = 0;
-                }
-
-                if (control is CheckBox)
-                {
-                    CheckBox checkBox = (CheckBox)control;
-                    checkBox.Checked = false;
-                }
-
-                if (control is ListBox)
-                {
-                    ListBox listBox = (ListBox)control;
-                    listBox.ClearSelected();
-                }
-            }*/
+            foreach (Control c in combos)
+            {
+                ComboBox comboBox = (ComboBox)c;
+                if (comboBox.Items.Count > 0)
+                    comboBox.SelectedIndex = 0;
+            }
         }
 
         public static void ResetForm(Form form)

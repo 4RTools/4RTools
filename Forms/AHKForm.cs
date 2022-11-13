@@ -22,7 +22,9 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
+                    RemoveHandlers();
                     FormUtils.ResetForm(this);
+                    InitializeCheckAsThreeState();
                     Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.ahkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
@@ -76,6 +78,16 @@ namespace _4RTools.Forms
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
             catch { }
+        }
+
+        private void RemoveHandlers()
+        {
+            foreach (Control c in this.Controls)
+                if (c is CheckBox)
+                {
+                    CheckBox check = (CheckBox)c;
+                    check.CheckStateChanged -= onCheckChange;
+                }
         }
 
 
