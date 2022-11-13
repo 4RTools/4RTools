@@ -20,16 +20,17 @@ Your Feedback is Welcome!
 This project was created using Visual Studio 2022, just open `4RTools.sln` in Visual Studio, and you'll be able to run and generate your own releases.
 
 ## Features
+- [x] ON/OFF Button (with shortcut key)
 - [x] Autopot
 - [x] Autobuff status
 - [x] Manage Profiles
-- [x] ON/OFF Button (with shortcut key)
-- [x] Spammer
+- [x] AHK Spammer
 - [x] Auto Refresh Spammer
 - [x] Autobuff Stuffs
 - [x] Autobuff skills
 - [x] Song Macro
 - [x] Macro Switch/Macro Chain
+- [x] ATK x DEF Mode switch
 
 #### References
 https://github.com/k1ngJ/dtAP
