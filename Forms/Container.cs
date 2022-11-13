@@ -44,7 +44,7 @@ namespace _4RTools.Forms
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(390, 60);
+            frm.Location = new Point(350, 70);
             frm.MdiParent = this;
             frm.Show();
         }

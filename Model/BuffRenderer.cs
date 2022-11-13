@@ -56,6 +56,7 @@ namespace _4RTools.Model
                     textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
                     textBox.TextChanged += new EventHandler(onTextChange);
                     textBox.Size = new Size(55, 20);
+                    textBox.Tag = ((int)skill.effectStatusID);
                     textBox.Name = "in" + ((int)skill.effectStatusID);
                     textBox.Location = new Point(pb.Location.X + 35, pb.Location.Y + 3);
 
