@@ -519,6 +519,7 @@
     <None Include="assets\images\celermine.png" />
     <None Include="assets\images\Golden X.png" />
     <None Include="assets\images\combat_manual.png" />
+    <None Include="assets\images\cr_fullprotection.gif" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
