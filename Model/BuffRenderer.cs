@@ -12,6 +12,11 @@ namespace _4RTools.Model
 {
     internal class BuffRenderer
     {
+
+        private readonly int BUFFS_PER_ROW = 5;
+        private readonly int DISTANCE_BETWEEN_CONTAINERS = 10;
+        private readonly int DISTANCE_BETWEEN_ROWS = 30;
+
         private List<BuffContainer> _containers;
         private ToolTip _toolTip;
 
@@ -32,7 +37,7 @@ namespace _4RTools.Model
                 if (i > 0)
                 {
                     //If not first container to be rendered, get last container height and append 70
-                    bk.container.Location = new Point(_containers[i - 1].container.Location.X, _containers[i - 1].container.Location.Y + _containers[i - 1].container.Height + 10);
+                    bk.container.Location = new Point(_containers[i - 1].container.Location.X, _containers[i - 1].container.Location.Y + _containers[i - 1].container.Height + DISTANCE_BETWEEN_CONTAINERS);
                 }
 
                 foreach (Buff skill in bk.skills)
@@ -59,11 +64,11 @@ namespace _4RTools.Model
 
                     colCount++;
 
-                    if (colCount == 5)
+                    if (colCount == BUFFS_PER_ROW)
                     {
                         //5 Buffs per row
                         colCount = 0;
-                        lastLocation = new Point(bk.container.Location.X, lastLocation.Y + 30);
+                        lastLocation = new Point(bk.container.Location.X, lastLocation.Y + DISTANCE_BETWEEN_ROWS);
                     }
                 }
             }
