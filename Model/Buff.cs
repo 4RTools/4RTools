@@ -248,7 +248,7 @@ namespace _4RTools.Model
             skills.Add(new Buff("HAGALAZ Rune", EffectStatusIDs.HAGALAZ, Resources._4RTools.Icons.HAGALAZ));
             skills.Add(new Buff("LUX AMINA Rune", EffectStatusIDs.LUX_AMINA, Resources._4RTools.Icons.LUX_AMINA));
             skills.Add(new Buff("Cat Can", EffectStatusIDs.OVERLAPEXPUP, Resources._4RTools.Icons.cat_can));
-            skills.Add(new Buff("Almighty", EffectStatusIDs.ALMIGHTY, Resources._4RTools.Icons.almighty));
+            skills.Add(new Buff("Almighty", EffectStatusIDs.RWC_2011_SCROLL, Resources._4RTools.Icons.almighty));
             skills.Add(new Buff("Bubble Gum", EffectStatusIDs.CASH_RECEIVEITEM, Resources._4RTools.Icons.he_bubble_gum));
             skills.Add(new Buff("Battle Manual", EffectStatusIDs.CASH_PLUSEXP, Resources._4RTools.Icons.combat_manual));
 

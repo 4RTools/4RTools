@@ -59,7 +59,6 @@ namespace _4RTools.Utils
         PEEL_CHANGE = 206,
         COMBAT_PILL = 662,
         ENCHANT_BLADE = 316,
-        ALMIGHTY = 685,
         RWC_2011_SCROLL = 664,
         INFINITY_DRINK = 1065,
         HP_INCREASE_POTION_LARGE = 480,
