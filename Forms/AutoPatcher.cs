@@ -40,7 +40,9 @@ namespace _4RTools.Forms
             //List[1] = Url
             try
             {
-                File.Delete("4RTools_old.exe"); //Delete old 4RTools
+                String oldFileName = "4RTools_old.exe";
+                String sourceFileName = "4RTools.exe";
+                File.Delete(oldFileName); //Delete old 4RTools
                 //Fetch Github latest Tag
                 client.Timeout = TimeSpan.FromSeconds(5);
                 client.DefaultRequestHeaders.Add("User-Agent", "request");
