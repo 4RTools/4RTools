@@ -59,7 +59,7 @@ namespace _4RTools.Forms
                     //Need to download and update
                     await Download(downloadUrl, fileName); //Download the .rar file
                     RarArchive arch = new RarArchive(fileName);
-                    File.Move("4RTools.exe", "4RTools_old.exe");
+                    File.Move(sourceFileName, oldFileName);
                     arch.ExtractToDirectory(".");
                     arch.Dispose();
                     File.Delete(fileName); //Delete .rar file downloaded
