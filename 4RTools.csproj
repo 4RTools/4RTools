@@ -539,6 +539,7 @@
     <None Include="assets\images\cr_fullprotection.gif" />
     <None Include="assets\etc\HP.png" />
     <None Include="assets\etc\SP.png" />
+    <None Include="assets\images\cr_spearquicken.gif" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

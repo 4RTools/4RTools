@@ -18,6 +18,8 @@ namespace _4RTools.Utils
         ENDURE = 1,
         PAINKILLER = 1,
 
+        SPEARQUICKEN = 68,
+
 
         CONCENTRATION  = 3,
         TRUESIGHT = 115,
