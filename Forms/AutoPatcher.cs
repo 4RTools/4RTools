@@ -44,7 +44,7 @@ namespace _4RTools.Forms
                 //Fetch Github latest Tag
                 client.Timeout = TimeSpan.FromSeconds(5);
                 client.DefaultRequestHeaders.Add("User-Agent", "request");
-                string latestVersion = await client.GetStringAsync(AppConfig._4RLatestVersion);
+                string latestVersion = await client.GetStringAsync(AppConfig._4RLatestVersionURL);
                 JObject obj = JsonConvert.DeserializeObject<JObject>(latestVersion);
 
                 string tag = obj["name"].ToString(); //Tag Name
