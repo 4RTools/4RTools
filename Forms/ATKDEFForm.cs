@@ -107,7 +107,7 @@ namespace _4RTools.Forms
         {
             try
             {
-                foreach (Control c in this.panelSwitch.Controls)
+                foreach (Control c in FormUtils.GetAll(this, typeof(TextBox)))
                 {
                     if (c is TextBox)
                     {

@@ -87,10 +87,15 @@ namespace _4RTools.Forms
         {
             foreach (ClientDTO clientDTO in clients)
             {
-                int hpAddress = Convert.ToInt32(clientDTO.hpAddress, 16);
-                int nameAddress = Convert.ToInt32(clientDTO.nameAddress, 16);
-                ClientListSingleton.AddClient(new Client(clientDTO.name, hpAddress, nameAddress));
-                pbSupportedServer.Increment(1);
+                try
+                {
+                    int hpAddress = Convert.ToInt32(clientDTO.hpAddress, 16);
+                    int nameAddress = Convert.ToInt32(clientDTO.nameAddress, 16);
+                    ClientListSingleton.AddClient(new Client(clientDTO.name, hpAddress, nameAddress));
+                    pbSupportedServer.Increment(1);
+                }
+                catch { }
+                
             }
         }
     }
