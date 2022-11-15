@@ -11,6 +11,7 @@ namespace _4RTools.Utils
         public static string GithubLink = "https://github.com/4RTools/4Rtools";
         public static string DiscordLink = "https://discord.gg/AtZ2fJVtBz";
         public static string _4RClientsURL = "https://raw.githubusercontent.com/4RTools/4RTools/main/supported_servers.json";
+        public static string _4RLatestVersionURL = "https://api.github.com/repos/4RTools/4RTools/releases/latest";
         public static string Version = "v2.0.1";
     }
 }
