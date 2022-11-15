@@ -608,4 +608,11 @@
         "name": "EclipseRO",
         "description": "Eclipse Ragnarok Online"
     },
+    {
+        "name": "GodWarRO",
+        "site": "http://www.godwarro.net/",
+        "description": "GodWar",
+        "hpAddress": "0x01017F38",
+        "nameAddress": "0x00101A6E0"
+    }
 ]
