@@ -621,4 +621,16 @@
         "hpAddress": "0x010DCE10",
         "nameAddress": "0x010DF5D8"
     }
+    {
+        "name": "LegendRO",
+        "description": "LegendRO",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
+    },
+    {
+        "name": "Tera",
+        "description": "TeraRO",
+        "hpAddress": "0x01107BEC",
+        "nameAddress": "0x010E7888"
+    },
 ]
