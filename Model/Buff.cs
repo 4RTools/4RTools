@@ -50,6 +50,10 @@ namespace _4RTools.Model
             skills.Add(new Buff("Aura Blade", EffectStatusIDs.AURABLADE, Resources._4RTools.Icons.lk_aurablade));
             skills.Add(new Buff("Enchant Blade", EffectStatusIDs.AURABLADE, Resources._4RTools.Icons.enchant_blade));
             skills.Add(new Buff("Shrink", EffectStatusIDs.CR_SHRINK, Resources._4RTools.Icons.cr_shrink));
+            skills.Add(new Buff("Inspiration", EffectStatusIDs.INSPIRATION, Resources._4RTools.Icons.lg_inspiration));
+            skills.Add(new Buff("Prestige", EffectStatusIDs.PRESTIGE, Resources._4RTools.Icons.lg_prestige));
+            skills.Add(new Buff("Shield Spell", EffectStatusIDs.SHIELDSPELL_DEF, Resources._4RTools.Icons.lg_shieldspell));
+
 
 
             return skills;

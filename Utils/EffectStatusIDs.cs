@@ -20,6 +20,10 @@ namespace _4RTools.Utils
 
         SPEARQUICKEN = 68,
 
+        PRESTIGE = 402,
+        INSPIRATION = 407,
+        SHIELDSPELL_DEF = 396,
+
 
         CONCENTRATION  = 3,
         TRUESIGHT = 115,
