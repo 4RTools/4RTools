@@ -52,7 +52,7 @@ namespace _4RTools.Model
             skills.Add(new Buff("Shrink", EffectStatusIDs.CR_SHRINK, Resources._4RTools.Icons.cr_shrink));
             skills.Add(new Buff("Inspiration", EffectStatusIDs.INSPIRATION, Resources._4RTools.Icons.lg_inspiration));
             skills.Add(new Buff("Prestige", EffectStatusIDs.PRESTIGE, Resources._4RTools.Icons.lg_prestige));
-            skills.Add(new Buff("Shield Spell", EffectStatusIDs.SHIELDSPELL_DEF, Resources._4RTools.Icons.lg_shieldspell));
+            skills.Add(new Buff("Shield Spell", EffectStatusIDs.SHIELDSPELL, Resources._4RTools.Icons.lg_shieldspell));
 
 
 
