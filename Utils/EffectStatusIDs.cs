@@ -22,7 +22,7 @@ namespace _4RTools.Utils
 
         PRESTIGE = 402,
         INSPIRATION = 407,
-        SHIELDSPELL_DEF = 396,
+        SHIELDSPELL_DEF = 397,
 
 
         CONCENTRATION  = 3,
