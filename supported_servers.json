@@ -633,4 +633,11 @@
         "hpAddress": "0x01107BEC",
         "nameAddress": "0x010E7888"
     },
+    {
+        "name": "BrawlRO",
+        "description": "BrawlRO",
+        "site": "https://playbrawl.net/",
+        "hpAddress": "0x001818EC",
+        "nameAddress": "0x010DF5D8"
+    }
 ]
