@@ -81,6 +81,8 @@ namespace _4RTools.Utils
         FORCEOFVANGUARD = 391,
         UNLIMIT = 722,
         POEMBRAGI = 72,
+        RUSH_WINDMILL = 442,
+        MOONLIT_SERENADE = 447,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,

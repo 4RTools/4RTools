@@ -30,6 +30,8 @@ namespace _4RTools.Model
             skills.Add(new Buff("True Sight", EffectStatusIDs.TRUESIGHT, Resources._4RTools.Icons.sn_sight));
             skills.Add(new Buff("Ilimitar", EffectStatusIDs.UNLIMIT, Resources._4RTools.Icons.Ilimitar));
             skills.Add(new Buff("A Poem of Bragi", EffectStatusIDs.POEMBRAGI, Resources._4RTools.Icons.poem_of_bragi));
+            skills.Add(new Buff("Windmill Rush", EffectStatusIDs.RUSH_WINDMILL, Resources._4RTools.Icons.windmill_rush));
+            skills.Add(new Buff("Moonlight Serenade", EffectStatusIDs.MOONLIT_SERENADE, Resources._4RTools.Icons.moonlight_serenade));
 
             return skills;
         }
@@ -55,8 +57,7 @@ namespace _4RTools.Model
             skills.Add(new Buff("Inspiration", EffectStatusIDs.INSPIRATION, Resources._4RTools.Icons.lg_inspiration));
             skills.Add(new Buff("Prestige", EffectStatusIDs.PRESTIGE, Resources._4RTools.Icons.lg_prestige));
             skills.Add(new Buff("Shield Spell", EffectStatusIDs.SHIELDSPELL, Resources._4RTools.Icons.lg_shieldspell));
-
-
+            skills.Add(new Buff("Vanguard Force", EffectStatusIDs.FORCEOFVANGUARD, Resources._4RTools.Icons.vanguard_force));
 
             return skills;
         }
@@ -72,11 +73,10 @@ namespace _4RTools.Model
             skills.Add(new Buff("Lanças Duplas", EffectStatusIDs.DOUBLECASTING, Resources._4RTools.Icons.pf_doublecasting));
             skills.Add(new Buff("Presciência", EffectStatusIDs.MEMORIZE, Resources._4RTools.Icons.pf_memorize));
 
-
             return skills;
         }
 
-        //Swordsman Skills
+        //Merchant Skills
         public static List<Buff> GetMerchantSkills()
         {
             List<Buff> skills = new List<Buff>();
@@ -91,8 +91,6 @@ namespace _4RTools.Model
             skills.Add(new Buff("Cart Boost", EffectStatusIDs.CARTBOOST, Resources._4RTools.Icons.ws_cartboost));
             skills.Add(new Buff("Meltdown", EffectStatusIDs.MELTDOWN, Resources._4RTools.Icons.ws_meltdown));
             skills.Add(new Buff("Acceleration", EffectStatusIDs.ACCELERATION, Resources._4RTools.Icons.mec_acceleration));
-            skills.Add(new Buff("Vanguard Force", EffectStatusIDs.FORCEOFVANGUARD, Resources._4RTools.Icons.vanguard_force));
-
 
             return skills;
         }

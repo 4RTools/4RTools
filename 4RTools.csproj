@@ -543,6 +543,12 @@
     <None Include="assets\images\lg_inspiration.gif" />
     <None Include="assets\images\lg_prestige.gif" />
     <None Include="assets\images\lg_shieldspell.gif" />
+    <None Include="assets\images\VanguardForce.png" />
+    <None Include="assets\images\vanguard_force.png" />
+    <None Include="assets\images\Ilimitar.png" />
+    <None Include="assets\images\poem_of_bragi.png" />
+    <None Include="assets\images\windmill_rush.png" />
+    <None Include="assets\images\moonlight_serenade.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
