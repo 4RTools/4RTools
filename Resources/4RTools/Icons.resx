@@ -286,6 +286,9 @@
   <data name="hood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\hood.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ilimitar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\Ilimitar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="int_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\int_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -343,6 +346,9 @@
   <data name="mg_energycoat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\mg_energycoat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="moonlight_serenade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\moonlight_serenade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ms_parrying" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\ms_parrying.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -360,6 +366,9 @@
   </data>
   <data name="pf_memorize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\pf_memorize.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poem_of_bragi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\poem_of_bragi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pr_gloria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\pr_gloria.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -454,11 +463,17 @@
   <data name="tk_mild_wind" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\tk_mild_wind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vanguard_force" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\vanguard_force.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="vit_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\vit_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vit_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\vit_food.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windmill_rush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\windmill_rush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ws_cartboost" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\ws_cartboost.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
