@@ -78,6 +78,9 @@ namespace _4RTools.Utils
         LIMIT_POWER_BOOSTER = 867,
         GATLINGFEVER = 204,
         ASSUMPTIO = 110,
+        FORCEOFVANGUARD = 391,
+        UNLIMIT = 722,
+        POEMBRAGI = 72,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
