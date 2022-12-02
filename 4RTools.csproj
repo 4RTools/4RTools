@@ -331,7 +331,6 @@
       <DependentUpon>Icons.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\EffectStatusIDs.cs" />
-    <Compile Include="Utils\AppConfig.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\FormUtils.cs" />
     <Compile Include="Utils\Interop.cs" />
