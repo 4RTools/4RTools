@@ -184,6 +184,9 @@
   <data name="bs_weaponperfect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\bs_weaponperfect.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cart_boost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\cart_boost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cat_can" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\cat_can.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -259,8 +262,17 @@
   <data name="fireproof" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\fireproof.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="firm_faith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\firm_faith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gatling_fever" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\gatling_fever.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gentle_touch_convert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\gentle_touch_convert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gentle_touch_revitalize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\gentle_touch_revitalize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ghp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\ghp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,6 +382,9 @@
   <data name="poem_of_bragi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\poem_of_bragi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="powerful_faith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\powerful_faith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pr_gloria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\pr_gloria.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -384,6 +399,9 @@
   </data>
   <data name="resentment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\resentment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rising_dragon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\rising_dragon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sa_autospell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\sa_autospell.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
