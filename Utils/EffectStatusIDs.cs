@@ -83,6 +83,12 @@ namespace _4RTools.Utils
         POEMBRAGI = 72,
         RUSH_WINDMILL = 442,
         MOONLIT_SERENADE = 447,
+        RAISINGDRAGON = 410,
+        FIRM_FAITH = 1162,
+        POWERFUL_FAITH = 1160,
+        GENTLETOUCH_REVITALIZE = 427,
+        GENTLETOUCH_CHANGE = 426,
+        GN_CARTBOOST = 461,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,

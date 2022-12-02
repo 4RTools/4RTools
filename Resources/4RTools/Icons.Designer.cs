@@ -283,6 +283,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cart_boost {
+            get {
+                object obj = ResourceManager.GetObject("cart_boost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cat_can {
             get {
                 object obj = ResourceManager.GetObject("cat_can", resourceCulture);
@@ -533,9 +543,39 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap firm_faith {
+            get {
+                object obj = ResourceManager.GetObject("firm_faith", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gatling_fever {
             get {
                 object obj = ResourceManager.GetObject("gatling_fever", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gentle_touch_convert {
+            get {
+                object obj = ResourceManager.GetObject("gentle_touch_convert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gentle_touch_revitalize {
+            get {
+                object obj = ResourceManager.GetObject("gentle_touch_revitalize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -903,6 +943,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap powerful_faith {
+            get {
+                object obj = ResourceManager.GetObject("powerful_faith", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pr_gloria {
             get {
                 object obj = ResourceManager.GetObject("pr_gloria", resourceCulture);
@@ -946,6 +996,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap resentment {
             get {
                 object obj = ResourceManager.GetObject("resentment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rising_dragon {
+            get {
+                object obj = ResourceManager.GetObject("rising_dragon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

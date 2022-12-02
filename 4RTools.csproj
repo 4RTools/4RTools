@@ -549,6 +549,12 @@
     <None Include="assets\images\poem_of_bragi.png" />
     <None Include="assets\images\windmill_rush.png" />
     <None Include="assets\images\moonlight_serenade.png" />
+    <None Include="assets\images\rising_dragon.png" />
+    <None Include="assets\images\firm_faith.png" />
+    <None Include="assets\images\powerful_faith.png" />
+    <None Include="assets\images\gentle_touch_revitalize.png" />
+    <None Include="assets\images\gentle_touch_convert.png" />
+    <None Include="assets\images\cart_boost.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
