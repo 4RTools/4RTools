@@ -32,6 +32,7 @@ namespace _4RTools.Model
             skills.Add(new Buff("A Poem of Bragi", EffectStatusIDs.POEMBRAGI, Resources._4RTools.Icons.poem_of_bragi));
             skills.Add(new Buff("Windmill Rush", EffectStatusIDs.RUSH_WINDMILL, Resources._4RTools.Icons.windmill_rush));
             skills.Add(new Buff("Moonlight Serenade", EffectStatusIDs.MOONLIT_SERENADE, Resources._4RTools.Icons.moonlight_serenade));
+            skills.Add(new Buff("Frigg's Song", EffectStatusIDs.FRIGG_SONG, Resources._4RTools.Icons.friggs_song));
 
             return skills;
         }
@@ -105,6 +106,7 @@ namespace _4RTools.Model
             skills.Add(new Buff("Reject Sword", EffectStatusIDs.SWORDREJECT, Resources._4RTools.Icons.st_rejectsword));
             skills.Add(new Buff("Preserve", EffectStatusIDs.PRESERVE, Resources._4RTools.Icons.st_preserve));
             skills.Add(new Buff("Enchant Deadly Poison", EffectStatusIDs.EDP, Resources._4RTools.Icons.asc_edp));
+            skills.Add(new Buff("Weapon Blocking", EffectStatusIDs.WEAPONBLOCKING, Resources._4RTools.Icons.weapon_blocking));
 
             return skills;
         }

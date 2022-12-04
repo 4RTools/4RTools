@@ -89,6 +89,8 @@ namespace _4RTools.Utils
         GENTLETOUCH_REVITALIZE = 427,
         GENTLETOUCH_CHANGE = 426,
         GN_CARTBOOST = 461,
+        WEAPONBLOCKING = 337,
+        FRIGG_SONG = 715,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
