@@ -555,6 +555,8 @@
     <None Include="assets\images\gentle_touch_revitalize.png" />
     <None Include="assets\images\gentle_touch_convert.png" />
     <None Include="assets\images\cart_boost.png" />
+    <None Include="assets\images\weapon_blocking.png" />
+    <None Include="assets\images\friggs_song.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
