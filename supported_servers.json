@@ -641,10 +641,17 @@
         "nameAddress": "0x010DF5D8"
     },
     {
-        "name": "rgsv",
-        "description": "EternalRO",
-        "site": "https://eternalro.com.br/",
-        "hpAddress": "0x010BB6AC",
-        "nameAddress": "0x010BE070"
+      "name": "rgsv",
+      "description": "EternalRO",
+      "site": "https://eternalro.com.br/",
+      "hpAddress": "0x010BB6AC",
+      "nameAddress": "0x010BE070"
+    },
+    {
+      "name": "KlaipedaRO",
+      "description": "KlaipedaRO",
+      "site": "https://playklaipeda.net/",
+      "hpAddress": "0x01138DDC",
+      "nameAddress": "0x0113B7B0"
     }
 ]
