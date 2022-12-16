@@ -5,7 +5,6 @@ using System.Diagnostics;
 using System.IO;
 using _4RTools.Model;
 using _4RTools.Utils;
-using System.Configuration;
 
 namespace _4RTools.Forms
 {
@@ -20,7 +19,7 @@ namespace _4RTools.Forms
             this.subject.Attach(this);
 
             InitializeComponent();
-            this.Text = ConfigurationManager.AppSettings["Name"] + " - " + ConfigurationManager.AppSettings["Version"]; // Window title
+            this.Text = AppConfig.Name + " - " + AppConfig.Version; // Window title
 
             //Container Configuration
             this.IsMdiContainer = true;
@@ -243,17 +242,17 @@ namespace _4RTools.Forms
 
         private void lblLinkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(ConfigurationManager.AppSettings["GithubLink"]);
+            Process.Start(AppConfig.GithubLink);
         }
 
         private void lblLinkDiscord_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(ConfigurationManager.AppSettings["DiscordLink"]);
+            Process.Start(AppConfig.DiscordLink);
         }
 
         private void websiteLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(ConfigurationManager.AppSettings["4RToolsWebsite"]);
+            Process.Start(AppConfig.Website);
         }
 
         private void profileCB_SelectedIndexChanged(object sender, EventArgs e)
