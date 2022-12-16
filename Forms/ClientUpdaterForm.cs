@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Configuration;
 
 namespace _4RTools.Forms
 {
@@ -50,7 +49,7 @@ namespace _4RTools.Forms
                 
                 //If fetch successfully update and load local file.
                 client.Timeout = TimeSpan.FromSeconds(5);
-                string remoteServersRaw = await client.GetStringAsync(ConfigurationManager.AppSettings["SupportedServersURL"]);
+                string remoteServersRaw = await client.GetStringAsync(AppConfig._4RClientsURL);
                 clients.AddRange(JsonConvert.DeserializeObject<List<ClientDTO>>(remoteServersRaw));
 
             }

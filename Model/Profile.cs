@@ -4,20 +4,18 @@ using _4RTools.Utils;
 using _4RTools.Forms;
 using System.IO;
 using System;
-using System.Configuration;
 
 namespace _4RTools.Model
 {
     public class ProfileSingleton
     {
         public static Profile profile = new Profile("Default");
-        private static string profileFolder = ConfigurationManager.AppSettings["ProfileFolder"];
 
         public static void Load(string profileName)
         {
             try
             {
-                string json = File.ReadAllText(profileFolder + profileName + ".json");
+                string json = File.ReadAllText(AppConfig.ProfileFolder + profileName + ".json");
                 dynamic rawObject = JsonConvert.DeserializeObject(json);
 
                 if ((rawObject != null))
@@ -42,11 +40,11 @@ namespace _4RTools.Model
 
         public static void Create(string profileName)
         {
-            string jsonFileName = profileFolder + profileName + ".json";
+            string jsonFileName = AppConfig.ProfileFolder + profileName + ".json";
 
             if (!File.Exists(jsonFileName))
             {
-                if (!Directory.Exists(profileFolder)) { Directory.CreateDirectory(profileFolder); }
+                if (!Directory.Exists(AppConfig.ProfileFolder)) { Directory.CreateDirectory(AppConfig.ProfileFolder); }
                 FileStream fs = File.Create(jsonFileName);
                 fs.Close();
 
@@ -62,7 +60,7 @@ namespace _4RTools.Model
         {
             try
             {
-                if (profileName != "Default") { File.Delete(profileFolder + profileName + ".json"); }
+                if (profileName != "Default") { File.Delete(AppConfig.ProfileFolder + profileName + ".json"); }
             }
             catch { }
         }
@@ -71,11 +69,11 @@ namespace _4RTools.Model
         {
             if (profile != null)
             {
-                string jsonData = File.ReadAllText(profileFolder + profile.Name + ".json");
+                string jsonData = File.ReadAllText(AppConfig.ProfileFolder + profile.Name + ".json");
                 dynamic jsonObj = JsonConvert.DeserializeObject(jsonData);
                 jsonObj[action.GetActionName()] = action.GetConfiguration();
                 string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
-                File.WriteAllText(profileFolder + profile.Name + ".json", output);
+                File.WriteAllText(AppConfig.ProfileFolder + profile.Name + ".json", output);
             }
         }
 
@@ -130,7 +128,7 @@ namespace _4RTools.Model
             List<string> profiles = new List<string>();
             try
             {
-                string[] files =  Directory.GetFiles(ConfigurationManager.AppSettings["ProfileFolder"]);
+                string[] files =  Directory.GetFiles(AppConfig.ProfileFolder);
                 
                 foreach(string fileName in files)
                 {
