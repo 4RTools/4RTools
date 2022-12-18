@@ -653,5 +653,12 @@
       "site": "https://playklaipeda.net/",
       "hpAddress": "0x01138DDC",
       "nameAddress": "0x0113B7B0"
+    },
+    {
+      "name": "Tera",
+      "description": "Tera",
+      "site": "http://www.playtera.online/",
+      "hpAddress": "0x00F5ACC4",
+      "nameAddress": "0x0019B5EE"
     }
 ]
