@@ -59,7 +59,7 @@ namespace _4RTools.Model
     {
         public Process process { get; }
 
-        private static int MAX_POSSIBLE_HP = 2000000;
+        private static int MAX_POSSIBLE_HP = 10000000;
         public string processName { get; private set; }
         private Utils.ProcessMemoryReader PMR { get; set; }
         private int currentNameAddress { get; set; }
