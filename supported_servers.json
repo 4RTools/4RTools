@@ -660,5 +660,11 @@
       "site": "http://www.playtera.online/",
       "hpAddress": "0x00F5ACC4",
       "nameAddress": "0x0019B5EE"
+    },
+    {
+        "name": "BlackRO",
+        "description": "BlackRO Full PvP",
+        "hpAddress": "0x010DCE10",
+        "nameAddress": "0x010DF5D8"
     }
 ]
