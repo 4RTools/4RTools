@@ -20,6 +20,7 @@ namespace _4RTools.Utils
 
         SPEARQUICKEN = 68,
 
+        MONSTER_TRANSFORM = 621,
         PRESTIGE = 402,
         INSPIRATION = 407,
         SHIELDSPELL = 1316,
