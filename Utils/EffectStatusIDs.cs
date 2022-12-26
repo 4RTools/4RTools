@@ -24,6 +24,8 @@ namespace _4RTools.Utils
         INSPIRATION = 407,
         SHIELDSPELL = 1316,
 
+        SOULLINK = 149,
+        GNCARTBOOST = 461,
         CONCENTRATION  = 3,
         TRUESIGHT = 115,
         GLORIA = 21,

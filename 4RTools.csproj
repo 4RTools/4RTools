@@ -557,6 +557,8 @@
     <None Include="assets\images\cart_boost.png" />
     <None Include="assets\images\weapon_blocking.png" />
     <None Include="assets\images\friggs_song.png" />
+    <None Include="assets\images\sl_soullinker.gif" />
+    <None Include="assets\images\gn_cartboost.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
