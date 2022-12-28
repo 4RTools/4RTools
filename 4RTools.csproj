@@ -561,6 +561,9 @@
     <None Include="assets\images\gn_cartboost.png" />
     <None Include="assets\images\mob_transform.png" />
     <None Include="assets\images\researchreport.png" />
+    <None Include="assets\images\madnesscancel.gif" />
+    <None Include="assets\images\adjustment.gif" />
+    <None Include="assets\images\increase_accuracy.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
