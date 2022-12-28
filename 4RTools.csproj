@@ -560,6 +560,7 @@
     <None Include="assets\images\sl_soullinker.gif" />
     <None Include="assets\images\gn_cartboost.png" />
     <None Include="assets\images\mob_transform.png" />
+    <None Include="assets\images\researchreport.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

@@ -95,7 +95,8 @@ namespace _4RTools.Model
                 new Buff("Cart Boost", EffectStatusIDs.CARTBOOST, Resources._4RTools.Icons.ws_cartboost),
                 new Buff("Meltdown", EffectStatusIDs.MELTDOWN, Resources._4RTools.Icons.ws_meltdown),
                 new Buff("Acceleration", EffectStatusIDs.ACCELERATION, Resources._4RTools.Icons.mec_acceleration),
-                new Buff("Cart Boost", EffectStatusIDs.GN_CARTBOOST, Resources._4RTools.Icons.cart_boost)
+                new Buff("Cart Boost", EffectStatusIDs.GN_CARTBOOST, Resources._4RTools.Icons.cart_boost),
+                new Buff("Research Report", EffectStatusIDs.RESEARCHREPORT, Resources._4RTools.Icons.researchreport)
             };
 
             return skills;
@@ -169,6 +170,9 @@ namespace _4RTools.Model
             List<Buff> skills = new List<Buff>();
 
             skills.Add(new Buff("Gatling Fever", EffectStatusIDs.GATLINGFEVER, Resources._4RTools.Icons.gatling_fever));
+            skills.Add(new Buff("Madness Canceller", EffectStatusIDs.MADNESSCANCEL, Resources._4RTools.Icons.madnesscancel));
+            skills.Add(new Buff("Adjustment", EffectStatusIDs.ADJUSTMENT, Resources._4RTools.Icons.adjustment));
+            skills.Add(new Buff("Increase Accuracy", EffectStatusIDs.ACCURACY, Resources._4RTools.Icons.increase_accuracy));
 
             return skills;
         }
