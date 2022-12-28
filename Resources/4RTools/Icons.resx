@@ -124,6 +124,9 @@
   <data name="ac_concentration" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\ac_concentration.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="adjustment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\adjustment.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="agi_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\agi_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -304,6 +307,9 @@
   <data name="Ilimitar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\Ilimitar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="increase_accuracy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\increase_accuracy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="int_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\int_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -348,6 +354,9 @@
   </data>
   <data name="LUX_AMINA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\LUX_AMINA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="madnesscancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\madnesscancel.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mc_loud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\mc_loud.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -402,6 +411,9 @@
   </data>
   <data name="regeneration" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\regeneration.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="researchreport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\researchreport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="resentment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\resentment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

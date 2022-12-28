@@ -94,6 +94,10 @@ namespace _4RTools.Utils
         GN_CARTBOOST = 461,
         WEAPONBLOCKING = 337,
         FRIGG_SONG = 715,
+        RESEARCHREPORT = 1248,
+        MADNESSCANCEL = 203,
+        ADJUSTMENT = 209,
+        ACCURACY = 210,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
