@@ -27,7 +27,7 @@ namespace _4RTools.Utils
                         textBox.Text = e.KeyCode.ToString();
                         break;
                 }
-
+                textBox.Parent.Focus();
                 e.Handled = true;
             }
             catch { }

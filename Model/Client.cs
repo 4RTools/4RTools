@@ -9,10 +9,22 @@ namespace _4RTools.Model
 
     public class ClientDTO
     {
+        public int index { get; set; }
         public string name { get; set; }
         public string description { get; set; }
         public string hpAddress { get; set; }
         public string nameAddress { get; set; }
+
+        public ClientDTO() { }
+
+        public ClientDTO(string name, string description, string hpAddress, string nameAddress)
+        {
+            this.name= name;
+            this.description= description;
+            this.hpAddress= hpAddress;
+            this.nameAddress= nameAddress;
+        }
+
     }
 
 

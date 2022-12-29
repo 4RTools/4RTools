@@ -42,6 +42,7 @@ namespace _4RTools.Forms
             this.atkDef = new System.Windows.Forms.TabPage();
             this.tabMacroSwitch = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
+            this.tabPageServer = new System.Windows.Forms.TabPage();
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
             this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
             this.panelDiscImage = new System.Windows.Forms.Panel();
@@ -123,6 +124,7 @@ namespace _4RTools.Forms
             this.atkDefMode.Controls.Add(this.atkDef);
             this.atkDefMode.Controls.Add(this.tabMacroSwitch);
             this.atkDefMode.Controls.Add(this.tabPageProfiles);
+            this.atkDefMode.Controls.Add(this.tabPageServer);
             this.atkDefMode.Location = new System.Drawing.Point(15, 274);
             this.atkDefMode.Name = "atkDefMode";
             this.atkDefMode.SelectedIndex = 0;
@@ -178,6 +180,16 @@ namespace _4RTools.Forms
             this.tabPageProfiles.TabIndex = 7;
             this.tabPageProfiles.Text = "Profiles";
             this.tabPageProfiles.UseVisualStyleBackColor = true;
+            // 
+            // tabPageServer
+            // 
+            this.tabPageServer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageServer.Name = "tabPageServer";
+            this.tabPageServer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageServer.Size = new System.Drawing.Size(563, 274);
+            this.tabPageServer.TabIndex = 9;
+            this.tabPageServer.Text = "Servers";
+            this.tabPageServer.UseVisualStyleBackColor = true;
             // 
             // lblLinkDiscord
             // 
@@ -425,5 +437,6 @@ namespace _4RTools.Forms
         private TabPage tabPageProfiles;
         private TabPage tabMacroSwitch;
         private TabPage tabPageSkillTimer;
+        private TabPage tabPageServer;
     }
 }
