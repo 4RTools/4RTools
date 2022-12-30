@@ -24,15 +24,16 @@ namespace _4RTools.Forms
                 case MessageCode.PROFILE_CHANGED:
                     RemoveHandlers();
                     FormUtils.ResetForm(this);
+                    SetLegendDefaultValues();
                     InitializeCheckAsThreeState();
-                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.ahkEntries);
+                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.AhkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
                     {
-                        ToggleCheckboxByName(config.Key, config.Value.clickActive);
+                        ToggleCheckboxByName(config.Key, config.Value.ClickActive);
                     }
 
-                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.ahkDelay.ToString();
+                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AHK.Start();
@@ -62,12 +63,11 @@ namespace _4RTools.Forms
         {
             try
             {
-                ProfileSingleton.GetCurrent().AHK.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
+                ProfileSingleton.GetCurrent().AHK.AhkDelay = Int16.Parse(this.txtSpammerDelay.Text);
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
             catch{ }
         }
-
 
         private void ToggleCheckboxByName(string Name, bool state)
         {
@@ -106,9 +106,23 @@ namespace _4RTools.Forms
                 }
         }
 
-        private void noclicksample_CheckedChanged(object sender, EventArgs e)
+        private void SetLegendDefaultValues()
         {
+            this.cbWithNoClick.ThreeState = true;
+            this.cbWithNoClick.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.cbWithNoClick.AutoCheck = false;
+            this.cbWithClick.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbWithClick.ThreeState = true;
+            this.cbWithClick.AutoCheck = false;
+        }
 
+        private void radioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.Checked)
+            {
+                Console.WriteLine("===> RADIO BUTTON: ", rb);
+            }
         }
     }
 }
