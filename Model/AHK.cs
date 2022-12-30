@@ -35,7 +35,6 @@ namespace _4RTools.Model
         private const string ACTION_NAME = "AHK20";
         public const string COMPATIBILITY = "ahkCompatibility";
         public const string SPEED_BOOST = "ahkSpeedBoost";
-
         public Dictionary<string, KeyConfig> AhkEntries { get; set; } = new Dictionary<string, KeyConfig>();
         public int AhkDelay { get; set; } = 10;
         public bool mouseFlick { get; set; } = false;
