@@ -74,7 +74,6 @@ namespace _4RTools.Forms
             this.chkW = new System.Windows.Forms.CheckBox();
             this.chkQ = new System.Windows.Forms.CheckBox();
             this.txtSpammerDelay = new System.Windows.Forms.NumericUpDown();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -82,11 +81,14 @@ namespace _4RTools.Forms
             this.chkS = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupAhkConfig = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chkNoShift = new System.Windows.Forms.CheckBox();
             this.pbUpAndDownArrow = new System.Windows.Forms.PictureBox();
-            this.radioButtonSpeedBoost = new System.Windows.Forms.RadioButton();
-            this.radioButtonCompatibilityNoFlick = new System.Windows.Forms.RadioButton();
-            this.radioButtonCompatibility = new System.Windows.Forms.RadioButton();
+            this.chkMouseFlick = new System.Windows.Forms.CheckBox();
+            this.ahkSpeedBoost = new System.Windows.Forms.RadioButton();
+            this.ahkCompatibility = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbDeactivated = new System.Windows.Forms.CheckBox();
             this.cbWithNoClick = new System.Windows.Forms.CheckBox();
@@ -95,7 +97,8 @@ namespace _4RTools.Forms
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupAhkConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -531,19 +534,11 @@ namespace _4RTools.Forms
             // txtSpammerDelay
             // 
             this.txtSpammerDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSpammerDelay.Location = new System.Drawing.Point(9, 25);
+            this.txtSpammerDelay.Location = new System.Drawing.Point(10, 29);
             this.txtSpammerDelay.Name = "txtSpammerDelay";
             this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
             this.txtSpammerDelay.TabIndex = 31;
             this.txtSpammerDelay.ValueChanged += new System.EventHandler(this.txtSpammerDelay_TextChanged);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(15, 152);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(390, 1);
-            this.panel1.TabIndex = 26;
             // 
             // panel2
             // 
@@ -597,9 +592,9 @@ namespace _4RTools.Forms
             // 
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtSpammerDelay);
-            this.groupBox2.Location = new System.Drawing.Point(259, 25);
+            this.groupBox2.Location = new System.Drawing.Point(408, 19);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(119, 61);
+            this.groupBox2.Size = new System.Drawing.Size(115, 70);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Spammer Delay";
@@ -608,71 +603,103 @@ namespace _4RTools.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(71, 27);
+            this.label1.Location = new System.Drawing.Point(72, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 17);
             this.label1.TabIndex = 32;
             this.label1.Text = "ms";
             // 
-            // groupBox1
+            // groupAhkConfig
             // 
-            this.groupBox1.Controls.Add(this.pbUpAndDownArrow);
-            this.groupBox1.Controls.Add(this.radioButtonSpeedBoost);
-            this.groupBox1.Controls.Add(this.radioButtonCompatibilityNoFlick);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.radioButtonCompatibility);
-            this.groupBox1.Location = new System.Drawing.Point(15, 159);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(390, 100);
-            this.groupBox1.TabIndex = 33;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Configuration";
+            this.groupAhkConfig.Controls.Add(this.pictureBox1);
+            this.groupAhkConfig.Controls.Add(this.chkNoShift);
+            this.groupAhkConfig.Controls.Add(this.pbUpAndDownArrow);
+            this.groupAhkConfig.Controls.Add(this.chkMouseFlick);
+            this.groupAhkConfig.Controls.Add(this.ahkSpeedBoost);
+            this.groupAhkConfig.Controls.Add(this.groupBox2);
+            this.groupAhkConfig.Controls.Add(this.ahkCompatibility);
+            this.groupAhkConfig.Controls.Add(this.groupBox4);
+            this.groupAhkConfig.Location = new System.Drawing.Point(15, 159);
+            this.groupAhkConfig.Name = "groupAhkConfig";
+            this.groupAhkConfig.Size = new System.Drawing.Size(533, 105);
+            this.groupAhkConfig.TabIndex = 33;
+            this.groupAhkConfig.TabStop = false;
+            this.groupAhkConfig.Text = "AHK Configuration";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_4RTools.Properties.Resources.shift;
+            this.pictureBox1.Location = new System.Drawing.Point(338, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // chkNoShift
+            // 
+            this.chkNoShift.AutoSize = true;
+            this.chkNoShift.Location = new System.Drawing.Point(281, 62);
+            this.chkNoShift.Name = "chkNoShift";
+            this.chkNoShift.Size = new System.Drawing.Size(62, 17);
+            this.chkNoShift.TabIndex = 39;
+            this.chkNoShift.Text = "No shift";
+            this.chkNoShift.UseVisualStyleBackColor = true;
+            this.chkNoShift.CheckedChanged += new System.EventHandler(this.chkNoShift_CheckedChanged);
             // 
             // pbUpAndDownArrow
             // 
             this.pbUpAndDownArrow.Image = ((System.Drawing.Image)(resources.GetObject("pbUpAndDownArrow.Image")));
-            this.pbUpAndDownArrow.Location = new System.Drawing.Point(190, 48);
+            this.pbUpAndDownArrow.Location = new System.Drawing.Point(359, 38);
             this.pbUpAndDownArrow.Name = "pbUpAndDownArrow";
             this.pbUpAndDownArrow.Size = new System.Drawing.Size(16, 16);
             this.pbUpAndDownArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbUpAndDownArrow.TabIndex = 35;
             this.pbUpAndDownArrow.TabStop = false;
             // 
-            // radioButtonSpeedBoost
+            // chkMouseFlick
             // 
-            this.radioButtonSpeedBoost.AutoSize = true;
-            this.radioButtonSpeedBoost.Location = new System.Drawing.Point(17, 71);
-            this.radioButtonSpeedBoost.Name = "radioButtonSpeedBoost";
-            this.radioButtonSpeedBoost.Size = new System.Drawing.Size(208, 17);
-            this.radioButtonSpeedBoost.TabIndex = 37;
-            this.radioButtonSpeedBoost.TabStop = true;
-            this.radioButtonSpeedBoost.Text = "Speed boost (Recommended for WoE)";
-            this.radioButtonSpeedBoost.UseVisualStyleBackColor = true;
-            this.radioButtonSpeedBoost.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            this.chkMouseFlick.AutoSize = true;
+            this.chkMouseFlick.Location = new System.Drawing.Point(281, 38);
+            this.chkMouseFlick.Name = "chkMouseFlick";
+            this.chkMouseFlick.Size = new System.Drawing.Size(83, 17);
+            this.chkMouseFlick.TabIndex = 38;
+            this.chkMouseFlick.Text = "Mouse Flick";
+            this.chkMouseFlick.UseVisualStyleBackColor = true;
+            this.chkMouseFlick.CheckedChanged += new System.EventHandler(this.chkMouseFlick_CheckedChanged);
             // 
-            // radioButtonCompatibilityNoFlick
+            // ahkSpeedBoost
             // 
-            this.radioButtonCompatibilityNoFlick.AutoSize = true;
-            this.radioButtonCompatibilityNoFlick.Location = new System.Drawing.Point(17, 48);
-            this.radioButtonCompatibilityNoFlick.Name = "radioButtonCompatibilityNoFlick";
-            this.radioButtonCompatibilityNoFlick.Size = new System.Drawing.Size(176, 17);
-            this.radioButtonCompatibilityNoFlick.TabIndex = 36;
-            this.radioButtonCompatibilityNoFlick.TabStop = true;
-            this.radioButtonCompatibilityNoFlick.Text = "Compatibility without mouse flick";
-            this.radioButtonCompatibilityNoFlick.UseVisualStyleBackColor = true;
-            this.radioButtonCompatibilityNoFlick.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            this.ahkSpeedBoost.AutoSize = true;
+            this.ahkSpeedBoost.Location = new System.Drawing.Point(17, 58);
+            this.ahkSpeedBoost.Name = "ahkSpeedBoost";
+            this.ahkSpeedBoost.Size = new System.Drawing.Size(245, 17);
+            this.ahkSpeedBoost.TabIndex = 37;
+            this.ahkSpeedBoost.TabStop = true;
+            this.ahkSpeedBoost.Text = "Speed boost [ Recommended for WoE ] (Beta)";
+            this.ahkSpeedBoost.UseVisualStyleBackColor = true;
+            this.ahkSpeedBoost.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
-            // radioButtonCompatibility
+            // ahkCompatibility
             // 
-            this.radioButtonCompatibility.AutoSize = true;
-            this.radioButtonCompatibility.Location = new System.Drawing.Point(17, 25);
-            this.radioButtonCompatibility.Name = "radioButtonCompatibility";
-            this.radioButtonCompatibility.Size = new System.Drawing.Size(229, 17);
-            this.radioButtonCompatibility.TabIndex = 35;
-            this.radioButtonCompatibility.TabStop = true;
-            this.radioButtonCompatibility.Text = "Compatibility (Recommended for PvM/PvE)";
-            this.radioButtonCompatibility.UseVisualStyleBackColor = true;
-            this.radioButtonCompatibility.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            this.ahkCompatibility.AutoSize = true;
+            this.ahkCompatibility.Location = new System.Drawing.Point(17, 34);
+            this.ahkCompatibility.Name = "ahkCompatibility";
+            this.ahkCompatibility.Size = new System.Drawing.Size(235, 17);
+            this.ahkCompatibility.TabIndex = 35;
+            this.ahkCompatibility.TabStop = true;
+            this.ahkCompatibility.Text = "Compatibility [ Recommended for PvM/PvE ]";
+            this.ahkCompatibility.UseVisualStyleBackColor = true;
+            this.ahkCompatibility.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Location = new System.Drawing.Point(271, 19);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(115, 70);
+            this.groupBox4.TabIndex = 33;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Key Config";
             // 
             // groupBox3
             // 
@@ -726,11 +753,10 @@ namespace _4RTools.Forms
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(560, 270);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupAhkConfig);
             this.Controls.Add(this.chkS);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.chkM);
             this.Controls.Add(this.chk9);
             this.Controls.Add(this.chkN);
@@ -782,8 +808,9 @@ namespace _4RTools.Forms
             this.panel4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupAhkConfig.ResumeLayout(false);
+            this.groupAhkConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -835,7 +862,6 @@ namespace _4RTools.Forms
         private System.Windows.Forms.CheckBox chkE;
         private System.Windows.Forms.CheckBox chkW;
         private System.Windows.Forms.CheckBox chkQ;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
@@ -844,14 +870,17 @@ namespace _4RTools.Forms
         private System.Windows.Forms.NumericUpDown txtSpammerDelay;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupAhkConfig;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox cbDeactivated;
         private System.Windows.Forms.CheckBox cbWithNoClick;
         private System.Windows.Forms.CheckBox cbWithClick;
-        private System.Windows.Forms.RadioButton radioButtonSpeedBoost;
-        private System.Windows.Forms.RadioButton radioButtonCompatibilityNoFlick;
-        private System.Windows.Forms.RadioButton radioButtonCompatibility;
+        private System.Windows.Forms.RadioButton ahkSpeedBoost;
         private System.Windows.Forms.PictureBox pbUpAndDownArrow;
+        private CheckBox chkNoShift;
+        private CheckBox chkMouseFlick;
+        private PictureBox pictureBox1;
+        private RadioButton ahkCompatibility;
+        private GroupBox groupBox4;
     }
 }

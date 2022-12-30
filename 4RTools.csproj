@@ -432,7 +432,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\up-and-down-arrow.png" />
     <None Include="assets\images\abrasive.gif" />
     <None Include="assets\images\ac_concentration.gif" />
     <None Include="assets\images\agi_3rd_food.png" />
@@ -592,6 +591,8 @@
     <None Include="assets\images\energetic_drink.png" />
     <None Include="assets\images\tumbling.png" />
     <None Include="assets\images\izayoi.png" />
+    <None Include="assets\etc\shift.png" />
+    <None Include="assets\etc\up-and-down-arrow.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

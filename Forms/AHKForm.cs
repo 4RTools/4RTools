@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
+using System.Web;
 
 namespace _4RTools.Forms
 {
@@ -26,14 +27,20 @@ namespace _4RTools.Forms
                     FormUtils.ResetForm(this);
                     SetLegendDefaultValues();
                     InitializeCheckAsThreeState();
+
+                    RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.ahkMode];
+                    if (rdAhkMode != null) { rdAhkMode.Checked = true; };
+                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
+                    this.chkNoShift.Checked = ProfileSingleton.GetCurrent().AHK.noShift;
+                    this.chkMouseFlick.Checked = ProfileSingleton.GetCurrent().AHK.mouseFlick;
+                    this.DisableControlsIfSpeedBoost();
+
                     Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.AhkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
                     {
                         ToggleCheckboxByName(config.Key, config.Value.ClickActive);
                     }
-
-                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AHK.Start();
@@ -116,12 +123,41 @@ namespace _4RTools.Forms
             this.cbWithClick.AutoCheck = false;
         }
 
-        private void radioButton_CheckedChanged(object sender, EventArgs e)
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rb = sender as RadioButton;
             if (rb.Checked)
             {
-                Console.WriteLine("===> RADIO BUTTON: ", rb);
+                ProfileSingleton.GetCurrent().AHK.ahkMode = rb.Name;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+                this.DisableControlsIfSpeedBoost();
+            }
+        }
+
+        private void chkMouseFlick_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().AHK.mouseFlick = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+        }
+
+        private void chkNoShift_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().AHK.noShift = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+        }
+
+        private void DisableControlsIfSpeedBoost()
+        {
+            if (ProfileSingleton.GetCurrent().AHK.ahkMode == AHK.SPEED_BOOST)
+            {
+                this.chkMouseFlick.Enabled = false;
+                this.chkNoShift.Enabled = false;
+            } else
+            {
+                this.chkMouseFlick.Enabled = true;
+                this.chkNoShift.Enabled = true;
             }
         }
     }

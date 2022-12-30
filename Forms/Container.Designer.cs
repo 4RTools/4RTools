@@ -188,7 +188,7 @@ namespace _4RTools.Forms
             this.tabPageServer.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageServer.Size = new System.Drawing.Size(563, 274);
             this.tabPageServer.TabIndex = 9;
-            this.tabPageServer.Text = "Servers (Beta)";
+            this.tabPageServer.Text = "Servers";
             this.tabPageServer.UseVisualStyleBackColor = true;
             // 
             // lblLinkDiscord
