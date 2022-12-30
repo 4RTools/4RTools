@@ -23,9 +23,9 @@ namespace _4RTools.Model
     public class AHK : Action
     {
         private const string ACTION_NAME = "AHK20";
-        private const string COMPATIBILITY = "ahk_compatibility";
-        private const string COMPATIBILITY_WITHOUT_FLICK = "ahk_compatibility_without_flick";
-        private const string SPEED_BOOST = "ahk_speedboost";
+        private const string COMPATIBILITY = "ahkCompatibility";
+        private const string COMPATIBILITY_WITHOUT_FLICK = "ahkCompatibilityWithoutFlick";
+        private const string SPEED_BOOST = "ahkSpeedBoost";
         public Dictionary<string, KeyConfig> AhkEntries { get; set; } = new Dictionary<string, KeyConfig>();
         public int AhkDelay { get; set; } = 10;
         public string AhkMode { get; set; } = COMPATIBILITY;

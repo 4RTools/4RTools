@@ -121,7 +121,7 @@ namespace _4RTools.Forms
             RadioButton rb = sender as RadioButton;
             if (rb.Checked)
             {
-                Console.WriteLine("===> RADIO BUTTON: ", rb);
+                Console.WriteLine($"===> RADIO BUTTON: {rb.Name}");
             }
         }
     }

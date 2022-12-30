@@ -84,9 +84,9 @@ namespace _4RTools.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pbUpAndDownArrow = new System.Windows.Forms.PictureBox();
-            this.radioButtonSpeedBoost = new System.Windows.Forms.RadioButton();
-            this.radioButtonCompatibilityNoFlick = new System.Windows.Forms.RadioButton();
-            this.radioButtonCompatibility = new System.Windows.Forms.RadioButton();
+            this.ahkSpeedBoost = new System.Windows.Forms.RadioButton();
+            this.ahkCompatibilityWithoutFlick = new System.Windows.Forms.RadioButton();
+            this.ahkCompatibility = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbDeactivated = new System.Windows.Forms.CheckBox();
             this.cbWithNoClick = new System.Windows.Forms.CheckBox();
@@ -617,10 +617,10 @@ namespace _4RTools.Forms
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pbUpAndDownArrow);
-            this.groupBox1.Controls.Add(this.radioButtonSpeedBoost);
-            this.groupBox1.Controls.Add(this.radioButtonCompatibilityNoFlick);
+            this.groupBox1.Controls.Add(this.ahkSpeedBoost);
+            this.groupBox1.Controls.Add(this.ahkCompatibilityWithoutFlick);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.radioButtonCompatibility);
+            this.groupBox1.Controls.Add(this.ahkCompatibility);
             this.groupBox1.Location = new System.Drawing.Point(15, 159);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(390, 100);
@@ -638,41 +638,41 @@ namespace _4RTools.Forms
             this.pbUpAndDownArrow.TabIndex = 35;
             this.pbUpAndDownArrow.TabStop = false;
             // 
-            // radioButtonSpeedBoost
+            // ahkSpeedBoost
             // 
-            this.radioButtonSpeedBoost.AutoSize = true;
-            this.radioButtonSpeedBoost.Location = new System.Drawing.Point(17, 71);
-            this.radioButtonSpeedBoost.Name = "radioButtonSpeedBoost";
-            this.radioButtonSpeedBoost.Size = new System.Drawing.Size(208, 17);
-            this.radioButtonSpeedBoost.TabIndex = 37;
-            this.radioButtonSpeedBoost.TabStop = true;
-            this.radioButtonSpeedBoost.Text = "Speed boost (Recommended for WoE)";
-            this.radioButtonSpeedBoost.UseVisualStyleBackColor = true;
-            this.radioButtonSpeedBoost.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            this.ahkSpeedBoost.AutoSize = true;
+            this.ahkSpeedBoost.Location = new System.Drawing.Point(17, 71);
+            this.ahkSpeedBoost.Name = "ahkSpeedBoost";
+            this.ahkSpeedBoost.Size = new System.Drawing.Size(208, 17);
+            this.ahkSpeedBoost.TabIndex = 37;
+            this.ahkSpeedBoost.TabStop = true;
+            this.ahkSpeedBoost.Text = "Speed boost (Recommended for WoE)";
+            this.ahkSpeedBoost.UseVisualStyleBackColor = true;
+            this.ahkSpeedBoost.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
-            // radioButtonCompatibilityNoFlick
+            // ahkCompatibilityWithoutFlick
             // 
-            this.radioButtonCompatibilityNoFlick.AutoSize = true;
-            this.radioButtonCompatibilityNoFlick.Location = new System.Drawing.Point(17, 48);
-            this.radioButtonCompatibilityNoFlick.Name = "radioButtonCompatibilityNoFlick";
-            this.radioButtonCompatibilityNoFlick.Size = new System.Drawing.Size(176, 17);
-            this.radioButtonCompatibilityNoFlick.TabIndex = 36;
-            this.radioButtonCompatibilityNoFlick.TabStop = true;
-            this.radioButtonCompatibilityNoFlick.Text = "Compatibility without mouse flick";
-            this.radioButtonCompatibilityNoFlick.UseVisualStyleBackColor = true;
-            this.radioButtonCompatibilityNoFlick.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            this.ahkCompatibilityWithoutFlick.AutoSize = true;
+            this.ahkCompatibilityWithoutFlick.Location = new System.Drawing.Point(17, 48);
+            this.ahkCompatibilityWithoutFlick.Name = "ahkCompatibilityWithoutFlick";
+            this.ahkCompatibilityWithoutFlick.Size = new System.Drawing.Size(176, 17);
+            this.ahkCompatibilityWithoutFlick.TabIndex = 36;
+            this.ahkCompatibilityWithoutFlick.TabStop = true;
+            this.ahkCompatibilityWithoutFlick.Text = "Compatibility without mouse flick";
+            this.ahkCompatibilityWithoutFlick.UseVisualStyleBackColor = true;
+            this.ahkCompatibilityWithoutFlick.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
-            // radioButtonCompatibility
+            // ahkCompatibility
             // 
-            this.radioButtonCompatibility.AutoSize = true;
-            this.radioButtonCompatibility.Location = new System.Drawing.Point(17, 25);
-            this.radioButtonCompatibility.Name = "radioButtonCompatibility";
-            this.radioButtonCompatibility.Size = new System.Drawing.Size(229, 17);
-            this.radioButtonCompatibility.TabIndex = 35;
-            this.radioButtonCompatibility.TabStop = true;
-            this.radioButtonCompatibility.Text = "Compatibility (Recommended for PvM/PvE)";
-            this.radioButtonCompatibility.UseVisualStyleBackColor = true;
-            this.radioButtonCompatibility.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            this.ahkCompatibility.AutoSize = true;
+            this.ahkCompatibility.Location = new System.Drawing.Point(17, 25);
+            this.ahkCompatibility.Name = "ahkCompatibility";
+            this.ahkCompatibility.Size = new System.Drawing.Size(229, 17);
+            this.ahkCompatibility.TabIndex = 35;
+            this.ahkCompatibility.TabStop = true;
+            this.ahkCompatibility.Text = "Compatibility (Recommended for PvM/PvE)";
+            this.ahkCompatibility.UseVisualStyleBackColor = true;
+            this.ahkCompatibility.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -849,9 +849,9 @@ namespace _4RTools.Forms
         private System.Windows.Forms.CheckBox cbDeactivated;
         private System.Windows.Forms.CheckBox cbWithNoClick;
         private System.Windows.Forms.CheckBox cbWithClick;
-        private System.Windows.Forms.RadioButton radioButtonSpeedBoost;
-        private System.Windows.Forms.RadioButton radioButtonCompatibilityNoFlick;
-        private System.Windows.Forms.RadioButton radioButtonCompatibility;
+        private System.Windows.Forms.RadioButton ahkSpeedBoost;
+        private System.Windows.Forms.RadioButton ahkCompatibilityWithoutFlick;
+        private System.Windows.Forms.RadioButton ahkCompatibility;
         private System.Windows.Forms.PictureBox pbUpAndDownArrow;
     }
 }
