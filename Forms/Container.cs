@@ -169,6 +169,9 @@ namespace _4RTools.Forms
                         characterName.Text = ClientSingleton.GetClient().ReadCharacterName();
                     }
                     break;
+                case MessageCode.SERVER_LIST_CHANGED:
+                    this.refreshProcessList();
+                    break;
                 case MessageCode.CLICK_ICON_TRAY:
                     this.Show();
                     this.WindowState = FormWindowState.Normal;
