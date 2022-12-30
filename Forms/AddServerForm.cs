@@ -64,24 +64,24 @@ namespace _4RTools.Forms
             List<char> charsHP = dto.hpAddress.ToCharArray().ToList();
             List<char> charsName = dto.nameAddress.ToCharArray().ToList();
 
-            txtHP1.Text = charsHP.ElementAtOrDefault(2).ToString();
-            txtHP2.Text = charsHP.ElementAtOrDefault(3).ToString();
-            txtHP3.Text = charsHP.ElementAtOrDefault(4).ToString();
-            txtHP4.Text = charsHP.ElementAtOrDefault(5).ToString();
-            txtHP5.Text = charsHP.ElementAtOrDefault(6).ToString();
-            txtHP6.Text = charsHP.ElementAtOrDefault(7).ToString();
-            txtHP7.Text = charsHP.ElementAtOrDefault(8).ToString();
-            txtHP8.Text = charsHP.ElementAtOrDefault(9).ToString();
+            txtHP1.Text = charsHP.ElementAtOrDefault(0).ToString();
+            txtHP2.Text = charsHP.ElementAtOrDefault(1).ToString();
+            txtHP3.Text = charsHP.ElementAtOrDefault(2).ToString();
+            txtHP4.Text = charsHP.ElementAtOrDefault(3).ToString();
+            txtHP5.Text = charsHP.ElementAtOrDefault(4).ToString();
+            txtHP6.Text = charsHP.ElementAtOrDefault(5).ToString();
+            txtHP7.Text = charsHP.ElementAtOrDefault(6).ToString();
+            txtHP8.Text = charsHP.ElementAtOrDefault(7).ToString();
 
 
-            txtName1.Text = charsName.ElementAtOrDefault(2).ToString();
-            txtName2.Text = charsName.ElementAtOrDefault(3).ToString();
-            txtName3.Text = charsName.ElementAtOrDefault(4).ToString();
-            txtName4.Text = charsName.ElementAtOrDefault(5).ToString();
-            txtName5.Text = charsName.ElementAtOrDefault(6).ToString();
-            txtName6.Text = charsName.ElementAtOrDefault(7).ToString();
-            txtName7.Text = charsName.ElementAtOrDefault(8).ToString();
-            txtName8.Text = charsName.ElementAtOrDefault(9).ToString();
+            txtName1.Text = charsName.ElementAtOrDefault(0).ToString();
+            txtName2.Text = charsName.ElementAtOrDefault(1).ToString();
+            txtName3.Text = charsName.ElementAtOrDefault(2).ToString();
+            txtName4.Text = charsName.ElementAtOrDefault(3).ToString();
+            txtName5.Text = charsName.ElementAtOrDefault(4).ToString();
+            txtName6.Text = charsName.ElementAtOrDefault(5).ToString();
+            txtName7.Text = charsName.ElementAtOrDefault(6).ToString();
+            txtName8.Text = charsName.ElementAtOrDefault(7).ToString();
 
             processCB.Text = dto.name;
         }
@@ -148,17 +148,17 @@ namespace _4RTools.Forms
                 {
                     //Should create one
                     LocalServerManager.AddServer(hpAddress, nameAddress, processCB.Text);
+                    MessageBox.Show("Server " + processCB.Text + " successfully added !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    //Should Update
-                    this.dto.hpAddress = "0x"+hpAddress;
-                    this.dto.nameAddress = "0x"+nameAddress;
-                    this.dto.name = processCB.Text;
-                    LocalServerManager.UpdateClient(this.dto);
+                    //Update Server
+                    LocalServerManager.RemoveClient(dto);
+                    LocalServerManager.AddServer(hpAddress, nameAddress, processCB.Text);
+                    MessageBox.Show("Server " + processCB.Text + " successfully saved !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                this.subject.Notify(new Utils.Message(MessageCode.SERVER_ADDED, "Server Added"));
+                this.subject.Notify(new Utils.Message(MessageCode.SERVER_LIST_CHANGED, "Server Added"));
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);

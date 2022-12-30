@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,7 @@ namespace _4RTools.Forms
         {
             switch ((subject as Subject).Message.code)
             {
-                case MessageCode.SERVER_ADDED:
+                case MessageCode.SERVER_LIST_CHANGED:
                     this.doRender();
                     break;
             }
@@ -47,19 +48,23 @@ namespace _4RTools.Forms
 
         private void datagridServers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Update
+            ClientDTO current = (ClientDTO)clientDTOBindingSource.Current;
+            current.index = e.RowIndex;
+
             if (this.datagridServers.Columns[e.ColumnIndex].Name == "Delete")
             {
                 //Delete
                 if(MessageBox.Show("Are you sure want to delete this Server?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     clientDTOBindingSource.RemoveCurrent();
+                    LocalServerManager.RemoveClient(current);
+                    this.subject.Notify(new Utils.Message(MessageCode.SERVER_LIST_CHANGED, "Server Deleted"));
+                    MessageBox.Show("Server " + current.name + " successfully deleted !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                //Update
-                ClientDTO current = (ClientDTO)clientDTOBindingSource.Current;
-                current.index = e.RowIndex;
                 new AddServerForm(current, this.subject).Show();
             }
         }
