@@ -24,31 +24,29 @@ namespace _4RTools.Model
             {
                 throw new ArgumentException("Name Address is Invalid. Please type a valid Hex value.");
             }
-
-            string finalHpAddress = "0x" + hpAddress;
-            string finalNameAddress = "0x" + nameAddress;
-            ClientListSingleton.AddClient(new Client(processName, Convert.ToInt32(finalHpAddress, 16), Convert.ToInt32(finalNameAddress, 16)));
-
+            ClientDTO dto = new ClientDTO(processName, null, hpAddress, nameAddress);
+            ClientListSingleton.AddClient(new Client(dto));
 
             List<ClientDTO> clients = GetLocalClients();
-            clients.Add(new ClientDTO(processName, null, finalHpAddress, finalNameAddress));
+            clients.Add(dto);
             OverwriteLocalFile(clients);
 
             /**
-             * Cenários
-             * 1. Arquivo Local não existe
-             *  Solução: Criar um novo arquivo vazio
-             * 2. Arquivo Local existe mas com sintaxe inválida
-             *  Solução: Deletar o arquivo inválido e criar um novo arquivo vazio
+             * Cases
+             * 1. Local file don't exists
+             *  Solution: Create a empty file
+             * 2. Local file exists with wrong syntax
+             *  Solution: Remove invalid file and create new one
              * 3. Arquivo Local existe e é válido
              */
         }
 
-        public static void UpdateClient(ClientDTO client)
+        public static void RemoveClient(ClientDTO dto)
         {
             List<ClientDTO> clients = GetLocalClients();
-            clients[client.index] = client;
+            clients.RemoveAt(dto.index);
             OverwriteLocalFile(clients);
+            ClientListSingleton.RemoveClient(Client.FromDTO(dto));
         }
 
         private static void OverwriteLocalFile(List<ClientDTO> clients)
@@ -59,7 +57,7 @@ namespace _4RTools.Model
         }
 
 
-        public static string LoadLocalServerFile()
+        private static string LoadLocalServerFile()
         {
             if (!File.Exists(localServerName))
             {
