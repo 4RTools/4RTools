@@ -432,6 +432,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\up-and-down-arrow.png" />
     <None Include="assets\images\abrasive.gif" />
     <None Include="assets\images\ac_concentration.gif" />
     <None Include="assets\images\agi_3rd_food.png" />

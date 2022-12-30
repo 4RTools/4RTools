@@ -171,6 +171,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap up_and_down_arrow {
+            get {
+                object obj = ResourceManager.GetObject("up_and_down_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Yggdrasil {
             get {
                 object obj = ResourceManager.GetObject("Yggdrasil", resourceCulture);
