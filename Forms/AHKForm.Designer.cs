@@ -30,7 +30,6 @@ namespace _4RTools.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AHKForm));
             this.chkF9 = new System.Windows.Forms.CheckBox();
             this.chkF8 = new System.Windows.Forms.CheckBox();
             this.chkF7 = new System.Windows.Forms.CheckBox();
@@ -93,6 +92,7 @@ namespace _4RTools.Forms
             this.cbDeactivated = new System.Windows.Forms.CheckBox();
             this.cbWithNoClick = new System.Windows.Forms.CheckBox();
             this.cbWithClick = new System.Windows.Forms.CheckBox();
+            this.pbFlash = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -101,6 +101,7 @@ namespace _4RTools.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).BeginInit();
             this.SuspendLayout();
             // 
             // chkF9
@@ -746,6 +747,16 @@ namespace _4RTools.Forms
             this.cbWithClick.Text = "With mouse click";
             this.cbWithClick.UseVisualStyleBackColor = true;
             // 
+            // pbFlash
+            // 
+            this.pbFlash.Image = global::_4RTools.Resources._4RTools.ETCResource.flash;
+            this.pbFlash.Location = new System.Drawing.Point(220, 71);
+            this.pbFlash.Name = "pbFlash";
+            this.pbFlash.Size = new System.Drawing.Size(16, 16);
+            this.pbFlash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFlash.TabIndex = 35;
+            this.pbFlash.TabStop = false;
+            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -814,6 +825,7 @@ namespace _4RTools.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

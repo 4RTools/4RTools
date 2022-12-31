@@ -73,7 +73,7 @@ namespace _4RTools.Forms
                 ProfileSingleton.GetCurrent().AHK.AhkDelay = Int16.Parse(this.txtSpammerDelay.Text);
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
-            catch{ }
+            catch { }
         }
 
         private void ToggleCheckboxByName(string Name, bool state)

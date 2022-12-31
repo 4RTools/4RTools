@@ -52,7 +52,10 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                if (thread != null) { _4RThread.Stop(this.thread); }
+                if (thread != null) {
+                    Console.WriteLine("===> [AHK] _4RThread STOP");
+                    _4RThread.Stop(this.thread);
+                }
 
                 this.thread = new _4RThread(_ => AHKThreadExecution(roClient));
                 _4RThread.Start(this.thread);
