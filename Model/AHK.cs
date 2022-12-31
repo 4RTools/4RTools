@@ -40,7 +40,10 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                if (thread != null) { _4RThread.Stop(this.thread); }
+                if (thread != null) {
+                    Console.WriteLine("===> [AHK] _4RThread STOP");
+                    _4RThread.Stop(this.thread);
+                }
 
                 switch (this.AhkMode)
                 {
@@ -51,16 +54,16 @@ namespace _4RTools.Model
 
                     case COMPATIBILITY_WITHOUT_FLICK:
                         Console.WriteLine("===> COMPATIBILITY_WITHOUT_FLICK", this.AhkMode);
-                        this.thread = new _4RThread(_ => AHKCompatibility(roClient));
+                        this.thread = new _4RThread(_ => AHKCompatibilityWithoutFlick(roClient));
                         break;
 
                     case SPEED_BOOST:
                         Console.WriteLine("===> SPEED_BOOST", this.AhkMode);
-                        this.thread = new _4RThread(_ => AHKCompatibility(roClient));
+                        this.thread = new _4RThread(_ => AHKSpeedBoost(roClient));
                         break;
                 }
 
-                Console.WriteLine($"===> [AHK] _4RThread {thread.ToString()}");
+                Console.WriteLine("===> [AHK] _4RThread START");
                 _4RThread.Start(this.thread);
             }
         }
@@ -113,9 +116,7 @@ namespace _4RTools.Model
                         {
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                            System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
                             Thread.Sleep(1);
-                            System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
                             Thread.Sleep(this.AhkDelay);
                         }
@@ -140,30 +141,14 @@ namespace _4RTools.Model
             foreach (KeyConfig config in AhkEntries.Values)
             {
                 Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.Key.ToString());
-                if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
+                while (Keyboard.IsKeyDown(config.Key))
                 {
-                    if (config.ClickActive && Keyboard.IsKeyDown(config.Key))
-                    {
-                        while (Keyboard.IsKeyDown(config.Key))
-                        {
-                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                            System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                            Thread.Sleep(1);
-                            System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                            Thread.Sleep(this.AhkDelay);
-                        }
-                    }
-                    else
-                    {
-                        while (Keyboard.IsKeyDown(config.Key))
-                        {
-                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                            Thread.Sleep(this.AhkDelay);
-                        }
-                    }
-
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                    Thread.Sleep(1);
+                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
                     Thread.Sleep(this.AhkDelay);
                 }
             }

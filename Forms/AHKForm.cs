@@ -66,7 +66,7 @@ namespace _4RTools.Forms
                 ProfileSingleton.GetCurrent().AHK.AhkDelay = Int16.Parse(this.txtSpammerDelay.Text);
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
-            catch{ }
+            catch { }
         }
 
         private void ToggleCheckboxByName(string Name, bool state)
@@ -121,7 +121,9 @@ namespace _4RTools.Forms
             RadioButton rb = sender as RadioButton;
             if (rb.Checked)
             {
-                Console.WriteLine($"===> RADIO BUTTON: {rb.Name}");
+                ProfileSingleton.GetCurrent().AHK.AhkMode = rb.Name;
+                ProfileSingleton.GetCurrent().AHK.Start();
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
         }
     }
