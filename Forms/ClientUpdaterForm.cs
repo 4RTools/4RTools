@@ -10,13 +10,13 @@ namespace _4RTools.Forms
 {
     public partial class ClientUpdaterForm : Form
     {
-        private System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
+        private System.Net.Http.HttpClient httpClient = new System.Net.Http.HttpClient();
 
         public ClientUpdaterForm()
         {
-            var requestAccepts = client.DefaultRequestHeaders.Accept;
+            var requestAccepts = httpClient.DefaultRequestHeaders.Accept;
             requestAccepts.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.UserAgent.TryParseAdd("request"); //Set the User Agent to "request"
+            httpClient.DefaultRequestHeaders.UserAgent.TryParseAdd("request"); //Set the User Agent to "request"
             InitializeComponent();
             StartUpdate();
         }
@@ -25,31 +25,16 @@ namespace _4RTools.Forms
         {
             List<ClientDTO> clients = new List<ClientDTO>();
 
-            /**
-             * Try to load local supported_server.json file and append all data in clients list.
-             */
-            try
-            {
-                string localServers = LoadLocalServerFile();
-                if (localServers != null)
-                {
-                    clients.AddRange(JsonConvert.DeserializeObject<List<ClientDTO>>(localServers));
-                }
-            }catch
-            {
-                MessageBox.Show("Could not parse local supported_server.json. Invalid json format", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
 
             /**
              * Try to load remote supported_server.json file and append all data in clients list.
              */
             try
             {
-                
+                clients.AddRange(LocalServerManager.GetLocalClients()); //Load Local Servers First
                 //If fetch successfully update and load local file.
-                client.Timeout = TimeSpan.FromSeconds(5);
-                string remoteServersRaw = await client.GetStringAsync(AppConfig._4RClientsURL);
+                httpClient.Timeout = TimeSpan.FromSeconds(5);
+                string remoteServersRaw = await httpClient.GetStringAsync(AppConfig._4RClientsURL);
                 clients.AddRange(JsonConvert.DeserializeObject<List<ClientDTO>>(remoteServersRaw));
 
             }
@@ -72,26 +57,13 @@ namespace _4RTools.Forms
             return Resources._4RTools.ETCResource.supported_servers;
         }
 
-        private string LoadLocalServerFile()
-        {
-            string jsonFileName = "supported_servers.json";
-            if (!File.Exists(jsonFileName))
-            {
-                return null;
-            }
-            string json = File.ReadAllText(jsonFileName);
-            return json;
-        }
-
         private void LoadServers(List<ClientDTO> clients)
         {
             foreach (ClientDTO clientDTO in clients)
             {
                 try
                 {
-                    int hpAddress = Convert.ToInt32(clientDTO.hpAddress, 16);
-                    int nameAddress = Convert.ToInt32(clientDTO.nameAddress, 16);
-                    ClientListSingleton.AddClient(new Client(clientDTO.name, hpAddress, nameAddress));
+                    ClientListSingleton.AddClient(new Client(clientDTO));
                     pbSupportedServer.Increment(1);
                 }
                 catch { }
