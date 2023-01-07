@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Net;
 
 namespace _4RTools.Model
 {
@@ -102,8 +103,9 @@ namespace _4RTools.Model
         public Client(ClientDTO dto)
         {
             this.processName = dto.name;
-            this.currentHPBaseAddress = dto.hpAddressPointer;
-            this.currentNameAddress = dto.nameAddressPointer;
+            this.currentHPBaseAddress = Convert.ToInt32(dto.hpAddress, 16);
+            this.currentNameAddress = Convert.ToInt32(dto.nameAddress, 16);
+            this.statusBufferAddress = this.currentHPBaseAddress + 0x474;
         }
 
         public Client(string processName)
