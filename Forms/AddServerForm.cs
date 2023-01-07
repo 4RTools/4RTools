@@ -61,8 +61,8 @@ namespace _4RTools.Forms
         private void initiateWithClientDTO(ClientDTO dto)
         {
             //Addresses start in position 2 (0x...)
-            List<char> charsHP = dto.hpAddress.ToCharArray().ToList();
-            List<char> charsName = dto.nameAddress.ToCharArray().ToList();
+            List<char> charsHP = dto.hpAddress.Replace("0x", "").ToCharArray().ToList();
+            List<char> charsName = dto.nameAddress.Replace("0x", "").ToCharArray().ToList();
 
             txtHP1.Text = charsHP.ElementAtOrDefault(0).ToString();
             txtHP2.Text = charsHP.ElementAtOrDefault(1).ToString();
