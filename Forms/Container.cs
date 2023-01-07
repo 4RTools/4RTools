@@ -12,8 +12,7 @@ namespace _4RTools.Forms
     {
 
         private Subject subject = new Subject();
-        private String currentProfile;
-
+        private string currentProfile;
         public Container()
         {
             this.subject.Attach(this);
@@ -38,120 +37,7 @@ namespace _4RTools.Forms
             SetSongMacroWindow();
             SetATKDEFWindow();
             SetMacroSwitchWindow();
-        }
-
-        public void SetToggleApplicationStateWindow()
-        {
-            ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(350, 70);
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        public void SetAutopotWindow()
-        {
-            AutopotForm frm = new AutopotForm(subject, false);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.MdiParent = this;
-            frm.Show();
-            addform(this.tabPageAutopot, frm);
-        }
-        public void SetAutopotYggWindow()
-        {
-            AutopotForm frm = new AutopotForm(subject, true);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.MdiParent = this;
-            frm.Show();
-            addform(this.tabPageYggAutopot, frm);
-        }
-
-        public void SetSkillTimerWindow()
-        {
-            SkillTimerForm frm = new SkillTimerForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.MdiParent = this;
-            frm.Show();
-            addform(this.tabPageSkillTimer, frm);
-
-        }
-        public void SetAutoStatusEffectWindow()
-        {
-            StatusEffectForm form = new StatusEffectForm(subject);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(50, 220);
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        public void SetAHKWindow()
-        {
-            AHKForm frm = new AHKForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            frm.Show();
-            addform(this.tabPageSpammer, frm);
-        }
-
-        public void SetProfileWindow()
-        {
-            ProfileForm frm = new ProfileForm(this);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            frm.Show();
-            addform(this.tabPageProfiles, frm);
-        }
-
-        public void SetAutobuffStuffWindow()
-        {
-            StuffAutoBuffForm frm = new StuffAutoBuffForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            frm.Show();
-            addform(this.tabPageAutobuffStuff, frm);
-        }
-
-        public void SetAutobuffSkillWindow()
-        {
-            SkillAutoBuffForm frm = new SkillAutoBuffForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            addform(this.tabPageAutobuffSkill, frm);
-            frm.Show();
-        }
-
-        public void SetSongMacroWindow()
-        {
-            MacroSongForm frm = new MacroSongForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            addform(this.tabPageMacroSongs, frm);
-            frm.Show();
-        }
-
-        public void SetATKDEFWindow()
-        {
-            ATKDEFForm frm = new ATKDEFForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            addform(this.atkDef, frm);
-            frm.Show();
-        }
-
-        public void SetMacroSwitchWindow()
-        {
-            MacroSwitchForm frm = new MacroSwitchForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            addform(this.tabMacroSwitch, frm);
-            frm.Show();
+            SetServerWindow();
         }
 
         public void addform(TabPage tp, Form f)
@@ -283,6 +169,9 @@ namespace _4RTools.Forms
                         characterName.Text = ClientSingleton.GetClient().ReadCharacterName();
                     }
                     break;
+                case MessageCode.SERVER_LIST_CHANGED:
+                    this.refreshProcessList();
+                    break;
                 case MessageCode.CLICK_ICON_TRAY:
                     this.Show();
                     this.WindowState = FormWindowState.Normal;
@@ -297,5 +186,134 @@ namespace _4RTools.Forms
         {
             if (this.WindowState == FormWindowState.Minimized) { this.Hide(); }
         }
+
+        #region Frames
+
+        public void SetToggleApplicationStateWindow()
+        {
+            ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(350, 70);
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        public void SetAutopotWindow()
+        {
+            AutopotForm frm = new AutopotForm(subject, false);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageAutopot, frm);
+        }
+        public void SetAutopotYggWindow()
+        {
+            AutopotForm frm = new AutopotForm(subject, true);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageYggAutopot, frm);
+        }
+
+        public void SetSkillTimerWindow()
+        {
+            SkillTimerForm frm = new SkillTimerForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageSkillTimer, frm);
+
+        }
+        public void SetAutoStatusEffectWindow()
+        {
+            StatusEffectForm form = new StatusEffectForm(subject);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Location = new Point(50, 220);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        public void SetAHKWindow()
+        {
+            AHKForm frm = new AHKForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageSpammer, frm);
+        }
+
+        public void SetProfileWindow()
+        {
+            ProfileForm frm = new ProfileForm(this);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageProfiles, frm);
+        }
+
+        public void SetServerWindow()
+        {
+            ServersForm frm = new ServersForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageServer, frm);
+        }
+
+        public void SetAutobuffStuffWindow()
+        {
+            StuffAutoBuffForm frm = new StuffAutoBuffForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageAutobuffStuff, frm);
+        }
+
+        public void SetAutobuffSkillWindow()
+        {
+            SkillAutoBuffForm frm = new SkillAutoBuffForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.tabPageAutobuffSkill, frm);
+            frm.Show();
+        }
+
+        public void SetSongMacroWindow()
+        {
+            MacroSongForm frm = new MacroSongForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.tabPageMacroSongs, frm);
+            frm.Show();
+        }
+
+        public void SetATKDEFWindow()
+        {
+            ATKDEFForm frm = new ATKDEFForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.atkDef, frm);
+            frm.Show();
+        }
+
+        public void SetMacroSwitchWindow()
+        {
+            MacroSwitchForm frm = new MacroSwitchForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.tabMacroSwitch, frm);
+            frm.Show();
+        }
+
+
+        #endregion
     }
 }

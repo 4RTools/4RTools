@@ -22,7 +22,8 @@ namespace _4RTools.Utils
         TURN_ON,
         TURN_OFF,
         SHUTDOWN_APPLICATION,
-        CLICK_ICON_TRAY
+        CLICK_ICON_TRAY,
+        SERVER_LIST_CHANGED
     }
 
     public class Message
