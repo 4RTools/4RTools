@@ -675,8 +675,14 @@
   },
   {
     "name": "Emperor-Rebirth",
-    "site": "https://classic-sakray.com/",
+    "site": "http://emperor-rebirth.com/",
     "hpAddress": "0x010DCE10",
     "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "PayonStories",
+    "site": "https://cp.payonstories.com/",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
   }
 ]
