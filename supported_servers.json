@@ -672,5 +672,11 @@
     "site": "https://classic-sakray.com/",
     "hpAddress": "0x00FFB858",
     "nameAddress": "0x00FFDEF8"
+  },
+  {
+    "name": "Emperor-Rebirth",
+    "site": "https://classic-sakray.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
   }
 ]
