@@ -690,5 +690,11 @@
     "site": "http//ragnarokworld.us/",
     "hpAddress": "0x00F45E54",
     "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "IkariusRO",
+    "site": "http://ikariusro.net/",
+    "hpAddress": "0x00FCEA58",
+    "nameAddress": "0x00FD1220"
   }
 ]
