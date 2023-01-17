@@ -22,7 +22,7 @@ namespace _4RTools.Model
             Stop();
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
-            {  
+            {
                  this.thread = AutoBuffThread(roClient);
                 _4RThread.Start(this.thread);
             }
@@ -40,6 +40,14 @@ namespace _4RTools.Model
                     uint currentStatus = c.CurrentBuffStatusCode(i);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
 
+                    if (status == EffectStatusIDs.OVERTHRUSTMAX)
+                    {
+                        if (buffMapping.ContainsKey(EffectStatusIDs.OVERTHRUST))
+                        {
+                            bmClone.Remove(EffectStatusIDs.OVERTHRUST);
+                        }
+                    }
+
                     if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                     {
                         bmClone.Remove(status);
@@ -50,7 +58,7 @@ namespace _4RTools.Model
 
                 foreach (var item in bmClone)
                 {
-                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT))
+                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE))
                     {
                         break;
                     }
