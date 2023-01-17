@@ -684,5 +684,11 @@
     "site": "https://cp.payonstories.com/",
     "hpAddress": "0x00F45E54",
     "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "ragnarokworld",
+    "site": "http//ragnarokworld.us/",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
   }
 ]
