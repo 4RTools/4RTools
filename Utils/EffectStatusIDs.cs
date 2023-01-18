@@ -156,5 +156,8 @@ namespace _4RTools.Utils
         HAGALAZ = 320,
         THURISAZ = 319,
         LUX_AMINA = 1154,
+
+        TELEKINESIS_INTENSE = 717,
+        MYST_AMPLIFY = 113,
     }
 }

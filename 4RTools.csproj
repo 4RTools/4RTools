@@ -584,6 +584,8 @@
     <None Include="assets\images\madnesscancel.gif" />
     <None Include="assets\images\adjustment.gif" />
     <None Include="assets\images\increase_accuracy.png" />
+    <None Include="assets\images\telecinese.png" />
+    <None Include="assets\images\amplify.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
