@@ -696,5 +696,11 @@
     "site": "http://ikariusro.net/",
     "hpAddress": "0x00FCEA58",
     "nameAddress": "0x00FD1220"
+  },
+  {
+    "name": "WhiteRO",
+    "site": "http://whitero.com.br/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
   }
 ]
