@@ -702,5 +702,11 @@
     "site": "http://whitero.com.br/",
     "hpAddress": "0x010DCE10",
     "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Client",
+    "site": "https://devaro.site/",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
   }
 ]
