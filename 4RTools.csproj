@@ -586,6 +586,8 @@
     <None Include="assets\images\increase_accuracy.png" />
     <None Include="assets\images\telecinese.png" />
     <None Include="assets\images\amplify.png" />
+    <None Include="assets\images\recognized_spell.png" />
+    <None Include="assets\images\assumptio.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

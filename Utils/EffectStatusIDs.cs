@@ -139,6 +139,8 @@ namespace _4RTools.Utils
         BOX_OF_THUNDER = 289,
         SPEED_POT = 41,
 
+        RECOGNIZEDSPELL = 355,
+
         //Scrolls
         INC_AGI = 12,
         BLESSING = 10,

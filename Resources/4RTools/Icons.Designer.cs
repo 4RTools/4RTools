@@ -223,6 +223,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap assumptio {
+            get {
+                object obj = ResourceManager.GetObject("assumptio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap awakening_potion {
             get {
                 object obj = ResourceManager.GetObject("awakening_potion", resourceCulture);
@@ -1026,6 +1036,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap pr_magnificat {
             get {
                 object obj = ResourceManager.GetObject("pr_magnificat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recognized_spell {
+            get {
+                object obj = ResourceManager.GetObject("recognized_spell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

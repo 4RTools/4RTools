@@ -71,12 +71,13 @@ namespace _4RTools.Model
             List<Buff> skills = new List<Buff>
             {
                 new Buff("Energy Coat", EffectStatusIDs.ENERGYCOAT, Resources._4RTools.Icons.mg_energycoat),
-                new Buff("Explosão Protetora", EffectStatusIDs.SIGHTBLASTER, Resources._4RTools.Icons.wz_sightblaster),
-                new Buff("Desejo Arcano", EffectStatusIDs.AUTOSPELL, Resources._4RTools.Icons.sa_autospell),
-                new Buff("Lanças Duplas", EffectStatusIDs.DOUBLECASTING, Resources._4RTools.Icons.pf_doublecasting),
-                new Buff("Presciência", EffectStatusIDs.MEMORIZE, Resources._4RTools.Icons.pf_memorize),
-                new Buff("Telecinesia", EffectStatusIDs.TELEKINESIS_INTENSE, Resources._4RTools.Icons.telecinese),
-                new Buff("Amplificação Mística", EffectStatusIDs.MYST_AMPLIFY, Resources._4RTools.Icons.amplify)
+                new Buff("Sight Blaster", EffectStatusIDs.SIGHTBLASTER, Resources._4RTools.Icons.wz_sightblaster),
+                new Buff("Autospell", EffectStatusIDs.AUTOSPELL, Resources._4RTools.Icons.sa_autospell),
+                new Buff("Double Casting", EffectStatusIDs.DOUBLECASTING, Resources._4RTools.Icons.pf_doublecasting),
+                new Buff("Memorize", EffectStatusIDs.MEMORIZE, Resources._4RTools.Icons.pf_memorize),
+                new Buff("Telekinesis Intense", EffectStatusIDs.TELEKINESIS_INTENSE, Resources._4RTools.Icons.telecinese),
+                new Buff("Amplification", EffectStatusIDs.MYST_AMPLIFY, Resources._4RTools.Icons.amplify),
+                new Buff("Recognized Spell", EffectStatusIDs.RECOGNIZEDSPELL, Resources._4RTools.Icons.recognized_spell)
             };
 
             return skills;
@@ -270,7 +271,8 @@ namespace _4RTools.Model
                 new Buff("Bless Scroll", EffectStatusIDs.BLESSING, Resources._4RTools.Icons.al_blessing1),
                 new Buff("Full Chemical Protection (Scroll)", EffectStatusIDs.PROTECTARMOR, Resources._4RTools.Icons.cr_fullprotection),
                 new Buff("Link Scroll", EffectStatusIDs.SOULLINK, Resources._4RTools.Icons.sl_soullinker),
-                new Buff("Monster Transform",  EffectStatusIDs.MONSTER_TRANSFORM, Resources._4RTools.Icons.mob_transform)
+                new Buff("Monster Transform",  EffectStatusIDs.MONSTER_TRANSFORM, Resources._4RTools.Icons.mob_transform),
+                new Buff("Assumptio",  EffectStatusIDs.MONSTER_TRANSFORM, Resources._4RTools.Icons.assumptio)
 
             };
 
