@@ -1,564 +1,712 @@
 [
-    {
-        "name": "rtales.bin",
-        "description": "Ragna Tales",
-        "hpAddress": "0x00E8E434",
-        "nameAddress": "0x00E90C00"
-    },
-    {
-        "name": "Jogar",
-        "description": "YodaRO",
-        "hpAddress": "0x00E8E434",
-        "nameAddress": "0x00E90C00"
-    },
-    {
-        "name": "RagnaRotico",
-        "description": "RagnaRótico",
-        "hpAddress": "0x00E8E434",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "BattleOfSEARO",
-        "description": "Battle of SEA Ragnarok Online",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "CookieRO",
-        "description": "Cookie Ragnarok Online",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "ArunafeltzRO",
-        "description": "Arunafeltz Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "RagBrazil",
-        "description": "Rag Brazil",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "EasyRO",
-        "description": "Easy RO",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "OSRO",
-        "description": "OS Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Jogar",
-        "description": "Beast RO",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "MidgardRO",
-        "description": "Midgard Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Cliente",
-        "description": "RagnaCool",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "cliente",
-        "description": "RagnaCool",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Jogar",
-        "description": "Portal Kafra",
-        "hpAddress": "0x0101A700",
-        "nameAddress": "0x0101CEB0"
-    },
-    {
-        "name": "ragna4th",
-        "description": "Ragna 4TH",
-        "hpAddress": "0x011D1A04",
-        "nameAddress": "0x011D43E8"
-    },
-    {
-        "name": "Ragnarok",
-        "description": "TrainingGuard Ragnarok",
-        "hpAddress": "0x011D1A04",
-        "nameAddress": "0x011D43E8"
-    },
-    {
-        "name": "ROZero",
-        "description": "Ragnarok Online Zero (NFT)",
-        "hpAddress": "0x00F4942C",
-        "nameAddress": "0x00F4BD70"
-    },
-    {
-        "name": "MiracleRO",
-        "description": "Miracle Ragnarok Online",
-        "hpAddress": "0x1017F38",
-        "nameAddress": "0x101A6E0"
-    },
-    {
-        "name": "PrimeRO",
-        "description": "Prime Ragnarok Online",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011D33F8"
-    },
-    {
-        "name": "NR_RO_4TH",
-        "description": "NRRO - Taiwan Server",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011C9684"
-    },
-    {
-        "name": "Ragnarok",
-        "description": "Ragna History",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011D33F8"
-    },
-    {
-        "name": "BlueRO",
-        "description": "Blue RO",
-        "hpAddress": "0x011D0A14",
-        "nameAddress": "0x011D33F8"
-    },
-    {
-        "name": "StreetRO 2.0",
-        "description": "Street 2.0 Ragnarok",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010D5DA8"
-    },
-    {
-        "name": "Gladius",
-        "description": "Gladius Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "AllureWar",
-        "description": "AllureWar Ragnarok Online",
-        "hpAddress": "0x01144144",
-        "nameAddress": "0x01146A18"
-    },
-    {
-        "name": "AngelingRO",
-        "description": "Angeling RO",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Runa Ro",
-        "description": "Runa Ragnarok Online",
-        "hpAddress": "0x00E73D3C",
-        "nameAddress": "0x00E749D8"
-    },
-    {
-        "name": "remember-ro+gepard+lgp",
-        "description": "RememberRO",
-        "hpAddress": "0x0083E1B4",
-        "nameAddress": "0x0083E674"
-    },
-    {
-        "name": "AllstarRO",
-        "description": "AllstarRO",
-        "hpAddress": "0x10DCE10",
-        "nameAddress": "0x10DF5D8"
-    },
-    {
-        "name": "Raglatam_MMORPG",
-        "description": "RagLatam",
-        "hpAddress": "0x0F57704",
-        "nameAddress": "0x0F5A048"
-    },
-    {
-        "name": "ProjectAlfheim",
-        "description": "Project Alfheim",
-        "hpAddress": "0x0F57704",
-        "nameAddress": "0x0F5A048"
-    },
-    {
-        "name": "BestRO",
-        "description": "BestRO",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "Annix RO",
-        "description": "Annix Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "GatheringRO",
-        "description": "Gathering RO",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "AincradProjectEX",
-        "description": "Aincrad Project",
-        "hpAddress": "0x1017F38",
-        "nameAddress": "0x101A6E0"
-    },
-    {
-        "name": "seal",
-        "description": "Seal RO",
-        "hpAddress": "0x01005F20",
-        "nameAddress": "0x010086C0"
-    },
-    {
-        "name": "RO Esports",
-        "description": "Esports Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "LabanRO",
-        "description": "Laban Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010086C0"
-    },
-    {
-        "name": "servercBRO",
-        "description": "Prime Ragnarok Online",
-        "site": "https://primeragnarok.com.br/",
-        "hpAddress": "0x01107BF0",
-        "nameAddress": "0x0110A5B0"
-    },
-    {
-        "name": "AgonRO",
-        "description": "Agon Ragnarok Online",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00DEECA8"
-    },
-    {
-        "name": "NovaRO",
-        "description": "NovaRO",
-        "site": "https://www.novaragnarok.com/",
-        "hpAddress": "0x00F5ACC4",
-        "nameAddress": "0x00F5D608"
-    },
-    {
-        "name": "RebelRO",
-        "description": "RebelRO",
-        "site": "https://rebelgaming.gg/",
-        "hpAddress": "0x00E8F434",
-        "nameAddress": "0x00E91C00"
-    },
-    {
-        "name": "UniROReborn",
-        "description": "UniRO Reborn",
-        "site": "https://uniroreborn.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "RainyRo",
-        "description": "Lets Play Rainy RO <3",
-        "site": "http://www.rainy.ragnarok-online.net/",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "DarknessRO - Rebirth",
-        "description": "DarknessRO - Rebirth",
-        "site": "https://darkness-ro.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "RagnaChaos",
-        "description": "RagnaChaos",
-        "hpAddress": "0x00E1392C",
-        "nameAddress": "0x00E0DCD80"
-    },
-    {
-        "name": "Age-of-Ragnarok",
-        "description": "Age of_RO",
-        "site": "https://ageofragnarok.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "BountyRO",
-        "description": "BountyRO Ragnarok",
-        "site": "https://bountyragnarok.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "DarkRO - Rebirth",
-        "description": "Dark RO",
-        "site": "https://dark-ro.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "BBRO",
-        "description": "BoomBaam RagnarokOnline",
-        "site": "https://dark-ro.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "PKRO",
-        "description": "PK Ragnarok Online",
-        "site": "http://www.pk-ro.net/",
-        "hpAddress": "0x00F48798",
-        "nameAddress": "0x00F45E58"
-    },
-    {
-        "name": "IconRO",
-        "description": "Icon Ragnarok Online",
-        "site": "https://www.playiconro.com/",
-        "hpAddress": "0x0101C740",
-        "nameAddress": "0x0101EEF0"
-    },
-    {
-        "name": "RevRO",
-        "description": "RevRO Reborn",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "OathRO",
-        "description": "Oath Ragnarok Online",
-        "hpAddress": "0x00F45E54",
-        "nameAddress": "0x00F48798"
-    },
-    {
-        "name": "Rebelro",
-        "description": "Rebel RO for win 11",
-        "site": "https://rebelgaming.gg/",
-        "hpAddress": "0x00E8F434",
-        "nameAddress": "0x00E91C00"
-    },
-    {
-        "name": "Hydro",
-        "description": "Hydro Ragnarok Online",
-        "site": "https://www.hydro-ro.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Vast RO",
-        "description": "VastRO Ragnarok Online",
-        "site": "http://vast.ragnarok-online.net/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Meta Ekspor",
-        "description": "Meta Ekspor Ragnarok Online",
-        "site": "https://www.metaekspor.com/",
-        "hpAddress": "0x00E8F434",
-        "nameAddress": "0x00E91C00"
-    },
-    {
-        "name": "MajesticRO",
-        "description": "Majestic RO",
-        "site": "https://www.majestic.ragnarok-online.net/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "elves-client",
-        "description": "Elves Online",
-        "site": "https://elvesro.com/",
-        "hpAddress": "0x00F4840C",
-        "nameAddress": "0x00F4AD50"
-    },
-    {
-        "name": "AeonRO",
-        "description": "Aeon Ragnarok online",
-        "site": "https://aeon-ro.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Trinity2.0",
-        "description": "Trinity Ragnarok Online",
-        "site": "https://trinityv2.club/",
-        "hpAddress": "0x00E4CAE4",
-        "nameAddress": "0x00E4D758"
-    },
-    {
-        "name": "SolidRO",
-        "description": "Solid Ragnarok Online",
-        "site": "http://solid.ragnarok-online.net/",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "Belief",
-        "description": "Belief Ragnarok Online",
-        "hpAddress": "0x0101C740",
-        "nameAddress": "0x0101EEF0"
-    },
-    {
-        "name": "cdpCentral",
-        "description": "Central de Prontera",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Okita Ragnarok Online",
-        "description": "OkitaRO By: DFRick",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "UndergroundRO",
-        "description": "Underground",
-        "hpAddress": "0x0101C740",
-        "nameAddress": "0x0101EEF0"
-    },
-    {
-        "name": "rship",
-        "description": "RagnaShip V2",
-        "site": "https://ragnaship.com/x0",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "gravity",
-        "description": "AKA-RO",
-        "site": "http://aka.ro-game.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "OMG RO",
-        "description": "OMG RO",
-        "site": "https://omg-ragnarok.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "xRO",
-        "description": "xRO Gear 5",
-        "site": "https://playxro.net/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "VenvRO",
-        "description": "Venv Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "site": "https://www.venvro.com/",
-        "nameAddress": "0x010D5DA8"
-    },
-    {
-        "name": "client",
-        "description": "Uprising RO",
-        "hpAddress": "0x011D0A14",
-        "site": "https://uprisingro.net/",
-        "nameAddress": "0x011C9684"
-    },
-    {
-        "name": "Liveexe",
-        "description": "LiveRO",
-        "site": "https://live-ro.net/",
-        "hpAddress": "0x0083E1B4",
-        "nameAddress": "0x0083E674"
-    },
-    {
-        "name": "AnimaBellumRO",
-        "description": "ANIMA BELLUM PLAY ONLINE",
-        "site": "http://animabellum.ragnarok-online.net/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Warzone Ragnarok",
-        "description": "Warzone Ragnarok",
-        "site": "http://www.warzoneragnarok.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "aeRO",
-        "description": "Aero Gaming Ragnarok Online",
-        "site": "https://aerogaming.org/",
-        "hpAddress": "0x0083E1B4",
-        "nameAddress": "0x0083E674"
-    },
-    {
-        "name": "JuanRO",
-        "description": "JuanRO",
-        "site": "http://juan.ragnarok-online.net/",
-        "hpAddress": "0x00E4CAF4",
-        "nameAddress": "0x00E4D768"
-    },
-    {
-        "name": "InvRO",
-        "description": "InvasionRO",
-        "site": "https://invasionro.net/",
-        "hpAddress": "0x1017F38",
-        "nameAddress": "0x101A6E0"
-    },
-    {
-        "name": "TambayanGS",
-        "description": "TambayanGS",
-        "site": "https://tambayangaming.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x43E19F98"
-    },
-    {
-        "name": "Anubis Ro",
-        "site": "https://anubis.ragnarok-online.net/",
-        "description": "Anubis Ragnarok Online",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "PValhallaRO",
-        "description": "PValhalla RO",
-        "site": "https://play.project-valhalla.net/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "Lumina Server",
-        "description": "Lumina Server Ragnarok Online",
-        "site": "https://www.lumina.rocks/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "ragnarok",
-        "description": "GCRO",
-        "site": "https://www.globalclassicro.com/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "CoreRO",
-        "description": "Core Ragnarok Online",
-        "hpAddress": "0x00F45E54",
-        "nameAddress": "0x00F48798"
-    },
-    {
-        "name": "AverseRO",
-        "description": "AverseRO",
-        "site": "https://www.facebook.com/averseRO/",
-        "hpAddress": "0x010DCE10",
-        "nameAddress": "0x010DF5D8"
-    },
-    {
-        "name": "ecRO",
-        "description": "Empire Classic RO",
-        "site": "https://ecro.gg/",
-        "hpAddress": "0x00E1392C",
-        "nameAddress": "0x00E14580"
-    }
+  {
+    "name": "rtales.bin",
+    "description": "Ragna Tales",
+    "hpAddress": "0x00E8E434",
+    "nameAddress": "0x00E90C00"
+  },
+  {
+    "name": "Jogar",
+    "description": "YodaRO",
+    "hpAddress": "0x00E8E434",
+    "nameAddress": "0x00E90C00"
+  },
+  {
+    "name": "RagnaRotico",
+    "description": "RagnaRótico",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "BattleOfSEARO",
+    "description": "Battle of SEA Ragnarok Online",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "CookieRO",
+    "description": "Cookie Ragnarok Online",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "ArunafeltzRO",
+    "description": "Arunafeltz Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "RagBrazil",
+    "description": "Rag Brazil",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "EasyRO",
+    "description": "Easy RO",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "OSRO",
+    "description": "OS Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Jogar",
+    "description": "Beast RO",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "MidgardRO",
+    "description": "Midgard Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Cliente",
+    "description": "RagnaCool",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "cliente",
+    "description": "RagnaCool",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Jogar",
+    "description": "Portal Kafra",
+    "hpAddress": "0x0101A700",
+    "nameAddress": "0x0101CEB0"
+  },
+  {
+    "name": "ragna4th",
+    "description": "Ragna 4TH",
+    "hpAddress": "0x011D1A04",
+    "nameAddress": "0x011D43E8"
+  },
+  {
+    "name": "ROZero",
+    "description": "Ragnarok Online Zero (NFT)",
+    "hpAddress": "0x00F4942C",
+    "nameAddress": "0x00F4BD70"
+  },
+  {
+    "name": "MiracleRO",
+    "description": "Miracle Ragnarok Online",
+    "hpAddress": "0x1017F38",
+    "nameAddress": "0x101A6E0"
+  },
+  {
+    "name": "PrimeRO",
+    "description": "Prime Ragnarok Online",
+    "hpAddress": "0x011D0A14",
+    "nameAddress": "0x011D33F8"
+  },
+  {
+    "name": "NR_RO_4TH",
+    "description": "NRRO - Taiwan Server",
+    "hpAddress": "0x011D0A14",
+    "nameAddress": "0x011C9684"
+  },
+  {
+    "name": "Ragnarok",
+    "description": "Ragna History",
+    "hpAddress": "0x01152F44",
+    "nameAddress": "0x01155980"
+  },
+  {
+    "name": "BlueRO",
+    "description": "Blue RO",
+    "hpAddress": "0x011D0A14",
+    "nameAddress": "0x011D33F8"
+  },
+  {
+    "name": "StreetRO 2.0",
+    "description": "Street 2.0 Ragnarok",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010D5DA8"
+  },
+  {
+    "name": "Gladius",
+    "description": "Gladius Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "AllureWar",
+    "description": "AllureWar Ragnarok Online",
+    "hpAddress": "0x01144144",
+    "nameAddress": "0x01146A18"
+  },
+  {
+    "name": "AngelingRO",
+    "description": "Angeling RO",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Runa Ro",
+    "description": "Runa Ragnarok Online",
+    "hpAddress": "0x00E73D3C",
+    "nameAddress": "0x00E749D8"
+  },
+  {
+    "name": "remember-ro+gepard+lgp",
+    "description": "RememberRO",
+    "hpAddress": "0x0083E1B4",
+    "nameAddress": "0x0083E674"
+  },
+  {
+    "name": "AllstarRO",
+    "description": "AllstarRO",
+    "hpAddress": "0x10DCE10",
+    "nameAddress": "0x10DF5D8"
+  },
+  {
+    "name": "Raglatam_MMORPG",
+    "description": "RagLatam",
+    "hpAddress": "0x0F57704",
+    "nameAddress": "0x0F5A048"
+  },
+  {
+    "name": "ProjectAlfheim",
+    "description": "Project Alfheim",
+    "hpAddress": "0x0F57704",
+    "nameAddress": "0x0F5A048"
+  },
+  {
+    "name": "BestRO",
+    "description": "BestRO",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "Annix RO",
+    "description": "Annix Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "GatheringRO",
+    "description": "Gathering RO",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "AincradProjectEX",
+    "description": "Aincrad Project",
+    "hpAddress": "0x1017F38",
+    "nameAddress": "0x101A6E0"
+  },
+  {
+    "name": "seal",
+    "description": "Seal RO",
+    "hpAddress": "0x01005F20",
+    "nameAddress": "0x010086C0"
+  },
+  {
+    "name": "RO Esports",
+    "description": "Esports Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "LabanRO",
+    "description": "Laban Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010086C0"
+  },
+  {
+    "name": "servercBRO",
+    "description": "Prime Ragnarok Online",
+    "site": "https://primeragnarok.com.br/",
+    "hpAddress": "0x01107BF0",
+    "nameAddress": "0x0110A5B0"
+  },
+  {
+    "name": "AgonRO",
+    "description": "Agon Ragnarok Online",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00DEECA8"
+  },
+  {
+    "name": "NovaRO",
+    "description": "NovaRO",
+    "site": "https://www.novaragnarok.com/",
+    "hpAddress": "0x11D0A14",
+    "nameAddress": "0x011D33F8"
+  },
+  {
+    "name": "RebelRO",
+    "description": "RebelRO",
+    "site": "https://rebelgaming.gg/",
+    "hpAddress": "0x00E8F434",
+    "nameAddress": "0x00E91C00"
+  },
+  {
+    "name": "UniROReborn",
+    "description": "UniRO Reborn",
+    "site": "https://uniroreborn.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "RainyRo",
+    "description": "Lets Play Rainy RO <3",
+    "site": "http://www.rainy.ragnarok-online.net/",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "DarknessRO - Rebirth",
+    "description": "DarknessRO - Rebirth",
+    "site": "https://darkness-ro.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "RagnaChaos",
+    "description": "RagnaChaos",
+    "hpAddress": "0x00E1392C",
+    "nameAddress": "0x00E0DCD80"
+  },
+  {
+    "name": "Age-of-Ragnarok",
+    "description": "Age of_RO",
+    "site": "https://ageofragnarok.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "BountyRO",
+    "description": "BountyRO Ragnarok",
+    "site": "https://bountyragnarok.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "DarkRO - Rebirth",
+    "description": "Dark RO",
+    "site": "https://dark-ro.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "BBRO",
+    "description": "BoomBaam RagnarokOnline",
+    "site": "https://dark-ro.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "PKRO",
+    "description": "PK Ragnarok Online",
+    "site": "http://www.pk-ro.net/",
+    "hpAddress": "0x00F48798",
+    "nameAddress": "0x00F45E58"
+  },
+  {
+    "name": "IconRO",
+    "description": "Icon Ragnarok Online",
+    "site": "https://www.playiconro.com/",
+    "hpAddress": "0x0101C740",
+    "nameAddress": "0x0101EEF0"
+  },
+  {
+    "name": "RevRO",
+    "description": "RevRO Reborn",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "OathRO",
+    "description": "Oath Ragnarok Online",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "Rebelro",
+    "description": "Rebel RO for win 11",
+    "site": "https://rebelgaming.gg/",
+    "hpAddress": "0x00E8F434",
+    "nameAddress": "0x00E91C00"
+  },
+  {
+    "name": "Hydro",
+    "description": "Hydro Ragnarok Online",
+    "site": "https://www.hydro-ro.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Vast RO",
+    "description": "VastRO Ragnarok Online",
+    "site": "http://vast.ragnarok-online.net/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Meta Ekspor",
+    "description": "Meta Ekspor Ragnarok Online",
+    "site": "https://www.metaekspor.com/",
+    "hpAddress": "0x00E8F434",
+    "nameAddress": "0x00E91C00"
+  },
+  {
+    "name": "MajesticRO",
+    "description": "Majestic RO",
+    "site": "https://www.majestic.ragnarok-online.net/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "elves-client",
+    "description": "Elves Online",
+    "site": "https://elvesro.com/",
+    "hpAddress": "0x00F4840C",
+    "nameAddress": "0x00F4AD50"
+  },
+  {
+    "name": "AeonRO",
+    "description": "Aeon Ragnarok online",
+    "site": "https://aeon-ro.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Trinity2.0",
+    "description": "Trinity Ragnarok Online",
+    "site": "https://trinityv2.club/",
+    "hpAddress": "0x00E4CAE4",
+    "nameAddress": "0x00E4D758"
+  },
+  {
+    "name": "SolidRO",
+    "description": "Solid Ragnarok Online",
+    "site": "http://solid.ragnarok-online.net/",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "Belief",
+    "description": "Belief Ragnarok Online",
+    "hpAddress": "0x0101C740",
+    "nameAddress": "0x0101EEF0"
+  },
+  {
+    "name": "cdpCentral",
+    "description": "Central de Prontera",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Okita Ragnarok Online",
+    "description": "OkitaRO By: DFRick",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "UndergroundRO",
+    "description": "Underground",
+    "hpAddress": "0x0101C740",
+    "nameAddress": "0x0101EEF0"
+  },
+  {
+    "name": "rship",
+    "description": "RagnaShip V2",
+    "site": "https://ragnaship.com/x0",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "gravity",
+    "description": "AKA-RO",
+    "site": "http://aka.ro-game.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "OMG RO",
+    "description": "OMG RO",
+    "site": "https://omg-ragnarok.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "xRO",
+    "description": "xRO Gear 5",
+    "site": "https://playxro.net/",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "Patch VenvRO",
+    "description": "Venv Ragnarok Online",
+    "site": "https://www.venvro.com/",
+    "hpAddress": "0x00FCEA58",
+    "nameAddress": "0x00FD1220"
+  },
+  {
+    "name": "client",
+    "description": "Uprising RO",
+    "hpAddress": "0x011D0A14",
+    "site": "https://uprisingro.net/",
+    "nameAddress": "0x011C9684"
+  },
+  {
+    "name": "Liveexe",
+    "description": "LiveRO",
+    "site": "https://live-ro.net/",
+    "hpAddress": "0x0083E1B4",
+    "nameAddress": "0x0083E674"
+  },
+  {
+    "name": "AnimaBellumRO",
+    "description": "ANIMA BELLUM PLAY ONLINE",
+    "site": "http://animabellum.ragnarok-online.net/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Warzone Ragnarok",
+    "description": "Warzone Ragnarok",
+    "site": "http://www.warzoneragnarok.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "aeRO",
+    "description": "Aero Gaming Ragnarok Online",
+    "site": "https://aerogaming.org/",
+    "hpAddress": "0x0083E1B4",
+    "nameAddress": "0x0083E674"
+  },
+  {
+    "name": "JuanRO",
+    "description": "JuanRO",
+    "site": "http://juan.ragnarok-online.net/",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  },
+  {
+    "name": "InvRO",
+    "description": "InvasionRO",
+    "site": "https://invasionro.net/",
+    "hpAddress": "0x1017F38",
+    "nameAddress": "0x101A6E0"
+  },
+  {
+    "name": "TambayanGS",
+    "description": "TambayanGS",
+    "site": "https://tambayangaming.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x43E19F98"
+  },
+  {
+    "name": "Anubis Ro",
+    "site": "https://anubis.ragnarok-online.net/",
+    "description": "Anubis Ragnarok Online",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "PValhallaRO",
+    "description": "PValhalla RO",
+    "site": "https://play.project-valhalla.net/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Lumina Server (32 bit)",
+    "description": "Lumina Server Ragnarok Online",
+    "site": "https://www.lumina.rocks/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "ragnarok",
+    "description": "GCRO",
+    "site": "https://www.globalclassicro.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "CoreRO",
+    "description": "Core Ragnarok Online",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "AverseRO",
+    "description": "AverseRO",
+    "site": "https://www.facebook.com/averseRO/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "ecRO",
+    "description": "Empire Classic RO",
+    "site": "https://ecro.gg/",
+    "hpAddress": "0x00E1392C",
+    "nameAddress": "0x00E14580"
+  },
+  {
+    "name": "The Yunna Server",
+    "description": "Yunna Server Ragnarok Online",
+    "site": "https://yunna-server.com/",
+    "hpAddress": "0x00FFB858",
+    "nameAddress": "0x00FFDEF8"
+  },
+  {
+    "name": "BigfootRO",
+    "description": "Bigfoot Ragnarok Online",
+    "site": "https://bigfoot-ro.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "EmeraldRO",
+    "description": "Emerald Ragnarok Online",
+    "site": "https://emeraldro.com.br/",
+    "hpAddress": "0x00FFB858",
+    "nameAddress": "0x00FFDEF8"
+  },
+  {
+    "name": "Nazarick",
+    "description": "Nazarick Ragnarok Online",
+    "site": "http://nazarickro.com/",
+    "hpAddress": "0x0104D59C",
+    "nameAddress": "0x010467D0"
+  },
+  {
+    "name": "pbgo",
+    "nameAddress": "0x010DF5D8",
+    "hpAddress": "0x010DCE10",
+    "description": "Any random descroption"
+  },
+  {
+    "name": "BaronRO",
+    "site": "http://baron.ragnarok-online.net/",
+    "description": "Baron RAGNAROK ONLINE",
+    "nameAddress": "0x00E4D768",
+    "hpAddress": "0x00E4CAF4"
+  },
+  {
+    "nameAddress": "0x010DF5D8",
+    "hpAddress": "0x010DCE10",
+    "name": "EclipseRO",
+    "description": "Eclipse Ragnarok Online"
+  },
+  {
+    "name": "GodWarRO",
+    "site": "http://www.godwarro.net/",
+    "description": "GodWar",
+    "hpAddress": "0x01017F38",
+    "nameAddress": "0x00101A6E0"
+  },
+  {
+    "name": "rWAR Patcher",
+    "description": "RagnaWar",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "LegendRO",
+    "description": "LegendRO",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Tera",
+    "description": "TeraRO",
+    "hpAddress": "0x01107BEC",
+    "nameAddress": "0x010E7888"
+  },
+  {
+    "name": "BrawlRO",
+    "description": "BrawlRO",
+    "site": "https://playbrawl.net/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "rgsv",
+    "description": "EternalRO",
+    "site": "https://eternalro.com.br/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "KlaipedaRO",
+    "description": "KlaipedaRO",
+    "site": "https://playklaipeda.net/",
+    "hpAddress": "0x01138DDC",
+    "nameAddress": "0x0113B7B0"
+  },
+  {
+    "name": "Tera",
+    "description": "Tera",
+    "site": "http://www.playtera.online/",
+    "hpAddress": "0x00F5ACC4",
+    "nameAddress": "0x0019B5EE"
+  },
+  {
+    "name": "BlackRO",
+    "description": "BlackRO Full PvP",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Classic Sakray",
+    "site": "https://classic-sakray.com/",
+    "hpAddress": "0x00FFB858",
+    "nameAddress": "0x00FFDEF8"
+  },
+  {
+    "name": "Emperor-Rebirth",
+    "site": "http://emperor-rebirth.com/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "PayonStories",
+    "site": "https://cp.payonstories.com/",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "ragnarokworld",
+    "site": "http//ragnarokworld.us/",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "IkariusRO",
+    "site": "http://ikariusro.net/",
+    "hpAddress": "0x00FCEA58",
+    "nameAddress": "0x00FD1220"
+  },
+  {
+    "name": "WhiteRO",
+    "site": "http://whitero.com.br/",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
+  {
+    "name": "Client",
+    "site": "https://devaro.site/",
+    "hpAddress": "0x00F45E54",
+    "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "Arkaik",
+    "site": "https://gameshyped.com/pre-register/arkaik",
+    "hpAddress": "0x010DCE10",
+    "nameAddress": "0x010DF5D8"
+  },
 ]
