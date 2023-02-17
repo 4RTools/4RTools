@@ -709,4 +709,10 @@
     "hpAddress": "0x010DCE10",
     "nameAddress": "0x010DF5D8"
   },
+  {
+    "name": "gamestart",
+    "site": "https://www.kafraportal.com/",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  }
 ]
