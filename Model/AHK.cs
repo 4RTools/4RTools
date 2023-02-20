@@ -53,7 +53,6 @@ namespace _4RTools.Model
             if (roClient != null)
             {
                 if (thread != null) {
-                    Console.WriteLine("===> [AHK] _4RThread STOP");
                     _4RThread.Stop(this.thread);
                 }
 
