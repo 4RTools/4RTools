@@ -70,7 +70,7 @@ namespace _4RTools.Forms
         {
             try
             {
-                ProfileSingleton.GetCurrent().AHK.AhkDelay = Int16.Parse(this.txtSpammerDelay.Text);
+                ProfileSingleton.GetCurrent().AHK.AhkDelay = Convert.ToInt16(this.txtSpammerDelay.Value);
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
             catch { }
