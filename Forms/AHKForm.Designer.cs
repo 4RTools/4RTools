@@ -623,7 +623,7 @@ namespace _4RTools.Forms
             this.groupAhkConfig.Controls.Add(this.ahkCompatibilityWithoutFlick);
             this.groupAhkConfig.Controls.Add(this.groupBox2);
             this.groupAhkConfig.Controls.Add(this.ahkCompatibility);
-            this.groupAhkConfig.Location = new System.Drawing.Point(15, 159);
+            this.groupAhkConfig.Location = new System.Drawing.Point(15, 162);
             this.groupAhkConfig.Name = "groupAhkConfig";
             this.groupAhkConfig.Size = new System.Drawing.Size(390, 100);
             this.groupAhkConfig.TabIndex = 33;
@@ -633,7 +633,7 @@ namespace _4RTools.Forms
             // pbFlash
             // 
             this.pbFlash.Image = global::_4RTools.Resources._4RTools.ETCResource.flash;
-            this.pbFlash.Location = new System.Drawing.Point(220, 71);
+            this.pbFlash.Location = new System.Drawing.Point(226, 71);
             this.pbFlash.Name = "pbFlash";
             this.pbFlash.Size = new System.Drawing.Size(16, 16);
             this.pbFlash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -643,7 +643,7 @@ namespace _4RTools.Forms
             // pbUpAndDownArrow
             // 
             this.pbUpAndDownArrow.Image = global::_4RTools.Resources._4RTools.ETCResource.up_and_down_arrow;
-            this.pbUpAndDownArrow.Location = new System.Drawing.Point(187, 48);
+            this.pbUpAndDownArrow.Location = new System.Drawing.Point(189, 48);
             this.pbUpAndDownArrow.Name = "pbUpAndDownArrow";
             this.pbUpAndDownArrow.Size = new System.Drawing.Size(16, 16);
             this.pbUpAndDownArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -653,19 +653,19 @@ namespace _4RTools.Forms
             // ahkSpeedBoost
             // 
             this.ahkSpeedBoost.AutoSize = true;
-            this.ahkSpeedBoost.Location = new System.Drawing.Point(17, 71);
+            this.ahkSpeedBoost.Location = new System.Drawing.Point(15, 71);
             this.ahkSpeedBoost.Name = "ahkSpeedBoost";
-            this.ahkSpeedBoost.Size = new System.Drawing.Size(208, 17);
+            this.ahkSpeedBoost.Size = new System.Drawing.Size(214, 17);
             this.ahkSpeedBoost.TabIndex = 37;
             this.ahkSpeedBoost.TabStop = true;
-            this.ahkSpeedBoost.Text = "Speed boost (Recommended for WoE)";
+            this.ahkSpeedBoost.Text = "Speed boost [ Recommended for WoE ]";
             this.ahkSpeedBoost.UseVisualStyleBackColor = true;
             this.ahkSpeedBoost.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // ahkCompatibilityWithoutFlick
             // 
             this.ahkCompatibilityWithoutFlick.AutoSize = true;
-            this.ahkCompatibilityWithoutFlick.Location = new System.Drawing.Point(17, 48);
+            this.ahkCompatibilityWithoutFlick.Location = new System.Drawing.Point(15, 48);
             this.ahkCompatibilityWithoutFlick.Name = "ahkCompatibilityWithoutFlick";
             this.ahkCompatibilityWithoutFlick.Size = new System.Drawing.Size(176, 17);
             this.ahkCompatibilityWithoutFlick.TabIndex = 36;
@@ -677,12 +677,12 @@ namespace _4RTools.Forms
             // ahkCompatibility
             // 
             this.ahkCompatibility.AutoSize = true;
-            this.ahkCompatibility.Location = new System.Drawing.Point(17, 25);
+            this.ahkCompatibility.Location = new System.Drawing.Point(15, 25);
             this.ahkCompatibility.Name = "ahkCompatibility";
-            this.ahkCompatibility.Size = new System.Drawing.Size(229, 17);
+            this.ahkCompatibility.Size = new System.Drawing.Size(235, 17);
             this.ahkCompatibility.TabIndex = 35;
             this.ahkCompatibility.TabStop = true;
-            this.ahkCompatibility.Text = "Compatibility (Recommended for PvM/PvE)";
+            this.ahkCompatibility.Text = "Compatibility [ Recommended for PvM/PvE ]";
             this.ahkCompatibility.UseVisualStyleBackColor = true;
             this.ahkCompatibility.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
