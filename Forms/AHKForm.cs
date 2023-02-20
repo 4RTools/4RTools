@@ -28,8 +28,9 @@ namespace _4RTools.Forms
                     SetLegendDefaultValues();
                     InitializeCheckAsThreeState();
                     RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.AhkMode];
-                    if (rdAhkMode != null) { rdAhkMode.Checked = true; 
-}
+                    if (rdAhkMode != null) { rdAhkMode.Checked = true; };
+                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
+
                     Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.AhkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
@@ -68,7 +69,7 @@ namespace _4RTools.Forms
         {
             try
             {
-                ProfileSingleton.GetCurrent().AHK.AhkDelay = Int16.Parse(this.txtSpammerDelay.Text);
+                ProfileSingleton.GetCurrent().AHK.AhkDelay = Convert.ToInt16(this.txtSpammerDelay.Value);
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
             catch { }
