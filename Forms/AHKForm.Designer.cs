@@ -81,7 +81,8 @@ namespace _4RTools.Forms
             this.chkS = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupAhkConfig = new System.Windows.Forms.GroupBox();
+            this.pbFlash = new System.Windows.Forms.PictureBox();
             this.pbUpAndDownArrow = new System.Windows.Forms.PictureBox();
             this.ahkSpeedBoost = new System.Windows.Forms.RadioButton();
             this.ahkCompatibilityWithoutFlick = new System.Windows.Forms.RadioButton();
@@ -90,15 +91,14 @@ namespace _4RTools.Forms
             this.cbDeactivated = new System.Windows.Forms.CheckBox();
             this.cbWithNoClick = new System.Windows.Forms.CheckBox();
             this.cbWithClick = new System.Windows.Forms.CheckBox();
-            this.pbFlash = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupAhkConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).BeginInit();
             this.SuspendLayout();
             // 
             // chkF9
@@ -615,20 +615,30 @@ namespace _4RTools.Forms
             this.label1.TabIndex = 32;
             this.label1.Text = "ms";
             // 
-            // groupBox1
+            // groupAhkConfig
             // 
-            this.groupBox1.Controls.Add(this.pbFlash);
-            this.groupBox1.Controls.Add(this.pbUpAndDownArrow);
-            this.groupBox1.Controls.Add(this.ahkSpeedBoost);
-            this.groupBox1.Controls.Add(this.ahkCompatibilityWithoutFlick);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.ahkCompatibility);
-            this.groupBox1.Location = new System.Drawing.Point(15, 159);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(390, 100);
-            this.groupBox1.TabIndex = 33;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Configuration";
+            this.groupAhkConfig.Controls.Add(this.pbFlash);
+            this.groupAhkConfig.Controls.Add(this.pbUpAndDownArrow);
+            this.groupAhkConfig.Controls.Add(this.ahkSpeedBoost);
+            this.groupAhkConfig.Controls.Add(this.ahkCompatibilityWithoutFlick);
+            this.groupAhkConfig.Controls.Add(this.groupBox2);
+            this.groupAhkConfig.Controls.Add(this.ahkCompatibility);
+            this.groupAhkConfig.Location = new System.Drawing.Point(15, 159);
+            this.groupAhkConfig.Name = "groupAhkConfig";
+            this.groupAhkConfig.Size = new System.Drawing.Size(390, 100);
+            this.groupAhkConfig.TabIndex = 33;
+            this.groupAhkConfig.TabStop = false;
+            this.groupAhkConfig.Text = "Configuration";
+            // 
+            // pbFlash
+            // 
+            this.pbFlash.Image = global::_4RTools.Resources._4RTools.ETCResource.flash;
+            this.pbFlash.Location = new System.Drawing.Point(220, 71);
+            this.pbFlash.Name = "pbFlash";
+            this.pbFlash.Size = new System.Drawing.Size(16, 16);
+            this.pbFlash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFlash.TabIndex = 35;
+            this.pbFlash.TabStop = false;
             // 
             // pbUpAndDownArrow
             // 
@@ -721,16 +731,6 @@ namespace _4RTools.Forms
             this.cbWithClick.Text = "With mouse click";
             this.cbWithClick.UseVisualStyleBackColor = true;
             // 
-            // pbFlash
-            // 
-            this.pbFlash.Image = global::_4RTools.Resources._4RTools.ETCResource.flash;
-            this.pbFlash.Location = new System.Drawing.Point(220, 71);
-            this.pbFlash.Name = "pbFlash";
-            this.pbFlash.Size = new System.Drawing.Size(16, 16);
-            this.pbFlash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbFlash.TabIndex = 35;
-            this.pbFlash.TabStop = false;
-            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -738,7 +738,7 @@ namespace _4RTools.Forms
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(560, 270);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupAhkConfig);
             this.Controls.Add(this.chkS);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -794,12 +794,12 @@ namespace _4RTools.Forms
             this.panel4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupAhkConfig.ResumeLayout(false);
+            this.groupAhkConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -857,7 +857,7 @@ namespace _4RTools.Forms
         private System.Windows.Forms.NumericUpDown txtSpammerDelay;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupAhkConfig;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox cbDeactivated;
         private System.Windows.Forms.CheckBox cbWithNoClick;

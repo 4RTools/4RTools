@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
+using System.ComponentModel;
 
 namespace _4RTools.Forms
 {
@@ -26,6 +27,9 @@ namespace _4RTools.Forms
                     FormUtils.ResetForm(this);
                     SetLegendDefaultValues();
                     InitializeCheckAsThreeState();
+                    RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.AhkMode];
+                    if (rdAhkMode != null) { rdAhkMode.Checked = true; 
+}
                     Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.AhkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
@@ -33,7 +37,8 @@ namespace _4RTools.Forms
                         ToggleCheckboxByName(config.Key, config.Value.ClickActive);
                     }
 
-                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
+                    ProfileSingleton.GetCurrent().AHK.Start();
+
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AHK.Start();

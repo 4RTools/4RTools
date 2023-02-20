@@ -41,29 +41,24 @@ namespace _4RTools.Model
             if (roClient != null)
             {
                 if (thread != null) {
-                    Console.WriteLine("===> [AHK] _4RThread STOP");
                     _4RThread.Stop(this.thread);
                 }
 
                 switch (this.AhkMode)
                 {
                     case COMPATIBILITY:
-                        Console.WriteLine("===> COMPATIBILITY", this.AhkMode);
                         this.thread = new _4RThread(_ => AHKCompatibility(roClient));
                         break;
 
                     case COMPATIBILITY_WITHOUT_FLICK:
-                        Console.WriteLine("===> COMPATIBILITY_WITHOUT_FLICK", this.AhkMode);
                         this.thread = new _4RThread(_ => AHKCompatibilityWithoutFlick(roClient));
                         break;
 
                     case SPEED_BOOST:
-                        Console.WriteLine("===> SPEED_BOOST", this.AhkMode);
                         this.thread = new _4RThread(_ => AHKSpeedBoost(roClient));
                         break;
                 }
 
-                Console.WriteLine("===> [AHK] _4RThread START");
                 _4RThread.Start(this.thread);
             }
         }
