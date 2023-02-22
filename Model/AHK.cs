@@ -6,10 +6,11 @@ using System.Windows.Input;
 using System.Drawing;
 using _4RTools.Utils;
 using Newtonsoft.Json;
-
+using System.Runtime.InteropServices;
 
 namespace _4RTools.Model
 {
+    
 
     public class KeyConfig {
 
@@ -25,6 +26,9 @@ namespace _4RTools.Model
 
     public class AHK : Action
     {
+        [DllImport("user32.dll")]
+        static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
+
         public Dictionary<string,KeyConfig> ahkEntries { get; set; } = new Dictionary<string, KeyConfig>();
         private string ACTION_NAME = "AHK20";
         public int ahkDelay { get; set; } = 10;
@@ -49,6 +53,10 @@ namespace _4RTools.Model
 
         private int AHKThreadExecution(Client roClient)
         {
+            const int KEYEVENTF_EXTENDEDKEY = 0x0001;
+            const int KEYEVENTF_KEYUP = 0x0002;
+            const int VK_SHIFT = 0x10;
+
             foreach (KeyConfig config in ahkEntries.Values)
             {
                 Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
@@ -56,6 +64,7 @@ namespace _4RTools.Model
                 {
                     if (config.clickActive && Keyboard.IsKeyDown(config.key))
                     {
+                        keybd_event(VK_SHIFT, 0x45, KEYEVENTF_EXTENDEDKEY, 0);
                         while (Keyboard.IsKeyDown(config.key))
                         {
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
@@ -66,6 +75,7 @@ namespace _4RTools.Model
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
                             Thread.Sleep(this.ahkDelay);
                         }
+                        keybd_event(VK_SHIFT, 0x45, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
                     }
                     else
                     {
