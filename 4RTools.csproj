@@ -588,6 +588,9 @@
     <None Include="assets\images\amplify.png" />
     <None Include="assets\images\recognized_spell.png" />
     <None Include="assets\images\assumptio.png" />
+    <None Include="assets\images\energetic_drink.png" />
+    <None Include="assets\images\tumbling.png" />
+    <None Include="assets\images\izayoi.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

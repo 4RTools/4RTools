@@ -139,7 +139,10 @@ namespace _4RTools.Utils
         BOX_OF_THUNDER = 289,
         SPEED_POT = 41,
 
+        ENERGY_DRINK_RESERCH = 481,
         RECOGNIZEDSPELL = 355,
+        DODGE_ON = 143,
+        IZAYOI = 652,
 
         //Scrolls
         INC_AGI = 12,

@@ -265,6 +265,9 @@
   <data name="enchant_blade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\enchant_blade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="energetic_drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\energetic_drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="enriched_celermine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\enriched_celermine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -321,6 +324,9 @@
   </data>
   <data name="int_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\int_food.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="izayoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\izayoi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="knife" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\knife.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -513,6 +519,9 @@
   </data>
   <data name="tk_mild_wind" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\tk_mild_wind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tumbling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\tumbling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vanguard_force" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\vanguard_force.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
