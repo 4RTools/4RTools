@@ -365,11 +365,13 @@
     "nameAddress": "0x010DF5D8"
   },
   {
-    "name": "elves-client",
-    "description": "Elves Online",
+    "name": "elves-origin",
+    "description": "Elves Origins",
     "site": "https://elvesro.com/",
-    "hpAddress": "0x00F4840C",
-    "nameAddress": "0x00F4AD50"
+    "hpAddress": "011D1A04",
+    "nameAddress": "011CA674",
+    "hpAddressPointer": 18684420,
+    "nameAddressPointer": 18654836
   },
   {
     "name": "AeonRO",
