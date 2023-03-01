@@ -6,7 +6,7 @@ using System.Windows.Input;
 using System.Drawing;
 using _4RTools.Utils;
 using Newtonsoft.Json;
-
+using System.Runtime.InteropServices;
 
 namespace _4RTools.Model
 {
@@ -25,6 +25,10 @@ namespace _4RTools.Model
 
     public class AHK : Action
     {
+        // Import the mouse_event function from the Windows API
+        [DllImport("user32.dll")]
+        public static extern void mouse_event(uint dwFlags, uint dx, uint dy, uint dwData, int dwExtraInfo);
+
         public Dictionary<string,KeyConfig> ahkEntries { get; set; } = new Dictionary<string, KeyConfig>();
         private string ACTION_NAME = "AHK20";
         public int ahkDelay { get; set; } = 10;
@@ -58,12 +62,11 @@ namespace _4RTools.Model
                     {
                         while (Keyboard.IsKeyDown(config.key))
                         {
+                            Point cursorPos = System.Windows.Forms.Cursor.Position;
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                            System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                            mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
                             Thread.Sleep(1);
-                            System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                            mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
                             Thread.Sleep(this.ahkDelay);
                         }
                     }

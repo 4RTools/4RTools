@@ -17,6 +17,9 @@ namespace _4RTools.Utils
         public const int WM_SYSKEYUP = 0x0105;
         public const int WH_KEYBOARD_LL = 13;
 
+        public const uint MOUSEEVENTF_LEFTDOWN = 0x0002;
+        public const uint MOUSEEVENTF_LEFTUP = 0x0004;
+
 
         public const int MINIMUM_HP_TO_RECOVER = 20;
         public const int MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK = 1;
