@@ -27,19 +27,18 @@ namespace _4RTools.Forms
                     FormUtils.ResetForm(this);
                     SetLegendDefaultValues();
                     InitializeCheckAsThreeState();
-                    RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.AhkMode];
+                    RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.ahkMode];
                     if (rdAhkMode != null) { rdAhkMode.Checked = true; };
-                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
+                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.ahkDelay.ToString();
+                    this.chkNoShift.Checked = ProfileSingleton.GetCurrent().AHK.noShift;
+                    this.chkMouseFlick.Checked = ProfileSingleton.GetCurrent().AHK.mouseFlick;
 
-                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.AhkEntries);
+                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.ahkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
                     {
-                        ToggleCheckboxByName(config.Key, config.Value.ClickActive);
+                        ToggleCheckboxByName(config.Key, config.Value.clickActive);
                     }
-
-                    ProfileSingleton.GetCurrent().AHK.Start();
-
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AHK.Start();
@@ -69,7 +68,7 @@ namespace _4RTools.Forms
         {
             try
             {
-                ProfileSingleton.GetCurrent().AHK.AhkDelay = Convert.ToInt16(this.txtSpammerDelay.Value);
+                ProfileSingleton.GetCurrent().AHK.ahkDelay = Convert.ToInt16(this.txtSpammerDelay.Value);
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
             catch { }
@@ -115,9 +114,9 @@ namespace _4RTools.Forms
         private void SetLegendDefaultValues()
         {
             this.cbWithNoClick.ThreeState = true;
-            this.cbWithNoClick.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.cbWithNoClick.CheckState = CheckState.Indeterminate;
             this.cbWithNoClick.AutoCheck = false;
-            this.cbWithClick.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbWithClick.CheckState = CheckState.Checked;
             this.cbWithClick.ThreeState = true;
             this.cbWithClick.AutoCheck = false;
         }
@@ -127,10 +126,24 @@ namespace _4RTools.Forms
             RadioButton rb = sender as RadioButton;
             if (rb.Checked)
             {
-                ProfileSingleton.GetCurrent().AHK.AhkMode = rb.Name;
-                ProfileSingleton.GetCurrent().AHK.Start();
+                ProfileSingleton.GetCurrent().AHK.ahkMode = rb.Name;
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
+        }
+
+        private void chkMouseFlick_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().AHK.mouseFlick = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+
+        }
+
+        private void chkNoShift_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().AHK.noShift = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
         }
     }
 }

@@ -21,5 +21,13 @@ namespace _4RTools.Utils
         public const int MINIMUM_HP_TO_RECOVER = 20;
         public const int MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK = 1;
         public const int MAX_BUFF_LIST_INDEX_SIZE = 100;
+
+        public const uint MOUSEEVENTF_LEFTDOWN = 0x0002;
+        public const uint MOUSEEVENTF_LEFTUP = 0x0004;
+
+
+        public const int KEYEVENTF_EXTENDEDKEY = 0x0001;
+        public const int KEYEVENTF_KEYUP = 0x0002;
+        public const int VK_SHIFT = 0x10;
     }
 }

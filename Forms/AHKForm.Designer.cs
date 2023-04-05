@@ -82,10 +82,12 @@ namespace _4RTools.Forms
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupAhkConfig = new System.Windows.Forms.GroupBox();
-            this.pbFlash = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.chkNoShift = new System.Windows.Forms.CheckBox();
+            this.chkMouseFlick = new System.Windows.Forms.CheckBox();
             this.pbUpAndDownArrow = new System.Windows.Forms.PictureBox();
+            this.pbFlash = new System.Windows.Forms.PictureBox();
             this.ahkSpeedBoost = new System.Windows.Forms.RadioButton();
-            this.ahkCompatibilityWithoutFlick = new System.Windows.Forms.RadioButton();
             this.ahkCompatibility = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbDeactivated = new System.Windows.Forms.CheckBox();
@@ -96,8 +98,8 @@ namespace _4RTools.Forms
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupAhkConfig.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -598,7 +600,7 @@ namespace _4RTools.Forms
             // 
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtSpammerDelay);
-            this.groupBox2.Location = new System.Drawing.Point(259, 25);
+            this.groupBox2.Location = new System.Drawing.Point(259, 18);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(119, 61);
             this.groupBox2.TabIndex = 32;
@@ -617,10 +619,12 @@ namespace _4RTools.Forms
             // 
             // groupAhkConfig
             // 
-            this.groupAhkConfig.Controls.Add(this.pbFlash);
+            this.groupAhkConfig.Controls.Add(this.panel5);
+            this.groupAhkConfig.Controls.Add(this.chkNoShift);
+            this.groupAhkConfig.Controls.Add(this.chkMouseFlick);
             this.groupAhkConfig.Controls.Add(this.pbUpAndDownArrow);
+            this.groupAhkConfig.Controls.Add(this.pbFlash);
             this.groupAhkConfig.Controls.Add(this.ahkSpeedBoost);
-            this.groupAhkConfig.Controls.Add(this.ahkCompatibilityWithoutFlick);
             this.groupAhkConfig.Controls.Add(this.groupBox2);
             this.groupAhkConfig.Controls.Add(this.ahkCompatibility);
             this.groupAhkConfig.Location = new System.Drawing.Point(15, 162);
@@ -630,30 +634,60 @@ namespace _4RTools.Forms
             this.groupAhkConfig.TabStop = false;
             this.groupAhkConfig.Text = "Configuration";
             // 
-            // pbFlash
+            // panel5
             // 
-            this.pbFlash.Image = global::_4RTools.Resources._4RTools.ETCResource.flash;
-            this.pbFlash.Location = new System.Drawing.Point(226, 71);
-            this.pbFlash.Name = "pbFlash";
-            this.pbFlash.Size = new System.Drawing.Size(16, 16);
-            this.pbFlash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbFlash.TabIndex = 35;
-            this.pbFlash.TabStop = false;
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(126, 68);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1, 15);
+            this.panel5.TabIndex = 35;
+            // 
+            // chkNoShift
+            // 
+            this.chkNoShift.AutoSize = true;
+            this.chkNoShift.Location = new System.Drawing.Point(137, 68);
+            this.chkNoShift.Name = "chkNoShift";
+            this.chkNoShift.Size = new System.Drawing.Size(64, 17);
+            this.chkNoShift.TabIndex = 40;
+            this.chkNoShift.Text = "No Shift";
+            this.chkNoShift.UseVisualStyleBackColor = true;
+            this.chkNoShift.CheckedChanged += new System.EventHandler(this.chkNoShift_CheckedChanged);
+            // 
+            // chkMouseFlick
+            // 
+            this.chkMouseFlick.AutoSize = true;
+            this.chkMouseFlick.Location = new System.Drawing.Point(13, 69);
+            this.chkMouseFlick.Name = "chkMouseFlick";
+            this.chkMouseFlick.Size = new System.Drawing.Size(83, 17);
+            this.chkMouseFlick.TabIndex = 38;
+            this.chkMouseFlick.Text = "Mouse Flick";
+            this.chkMouseFlick.UseVisualStyleBackColor = true;
+            this.chkMouseFlick.CheckedChanged += new System.EventHandler(this.chkMouseFlick_CheckedChanged);
             // 
             // pbUpAndDownArrow
             // 
             this.pbUpAndDownArrow.Image = global::_4RTools.Resources._4RTools.ETCResource.up_and_down_arrow;
-            this.pbUpAndDownArrow.Location = new System.Drawing.Point(189, 48);
+            this.pbUpAndDownArrow.Location = new System.Drawing.Point(97, 68);
             this.pbUpAndDownArrow.Name = "pbUpAndDownArrow";
             this.pbUpAndDownArrow.Size = new System.Drawing.Size(16, 16);
             this.pbUpAndDownArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbUpAndDownArrow.TabIndex = 35;
             this.pbUpAndDownArrow.TabStop = false;
             // 
+            // pbFlash
+            // 
+            this.pbFlash.Image = global::_4RTools.Resources._4RTools.ETCResource.flash;
+            this.pbFlash.Location = new System.Drawing.Point(227, 44);
+            this.pbFlash.Name = "pbFlash";
+            this.pbFlash.Size = new System.Drawing.Size(16, 16);
+            this.pbFlash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFlash.TabIndex = 35;
+            this.pbFlash.TabStop = false;
+            // 
             // ahkSpeedBoost
             // 
             this.ahkSpeedBoost.AutoSize = true;
-            this.ahkSpeedBoost.Location = new System.Drawing.Point(15, 71);
+            this.ahkSpeedBoost.Location = new System.Drawing.Point(13, 43);
             this.ahkSpeedBoost.Name = "ahkSpeedBoost";
             this.ahkSpeedBoost.Size = new System.Drawing.Size(214, 17);
             this.ahkSpeedBoost.TabIndex = 37;
@@ -662,22 +696,10 @@ namespace _4RTools.Forms
             this.ahkSpeedBoost.UseVisualStyleBackColor = true;
             this.ahkSpeedBoost.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
-            // ahkCompatibilityWithoutFlick
-            // 
-            this.ahkCompatibilityWithoutFlick.AutoSize = true;
-            this.ahkCompatibilityWithoutFlick.Location = new System.Drawing.Point(15, 48);
-            this.ahkCompatibilityWithoutFlick.Name = "ahkCompatibilityWithoutFlick";
-            this.ahkCompatibilityWithoutFlick.Size = new System.Drawing.Size(176, 17);
-            this.ahkCompatibilityWithoutFlick.TabIndex = 36;
-            this.ahkCompatibilityWithoutFlick.TabStop = true;
-            this.ahkCompatibilityWithoutFlick.Text = "Compatibility without mouse flick";
-            this.ahkCompatibilityWithoutFlick.UseVisualStyleBackColor = true;
-            this.ahkCompatibilityWithoutFlick.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
-            // 
             // ahkCompatibility
             // 
             this.ahkCompatibility.AutoSize = true;
-            this.ahkCompatibility.Location = new System.Drawing.Point(15, 25);
+            this.ahkCompatibility.Location = new System.Drawing.Point(13, 20);
             this.ahkCompatibility.Name = "ahkCompatibility";
             this.ahkCompatibility.Size = new System.Drawing.Size(235, 17);
             this.ahkCompatibility.TabIndex = 35;
@@ -796,8 +818,8 @@ namespace _4RTools.Forms
             this.groupBox2.PerformLayout();
             this.groupAhkConfig.ResumeLayout(false);
             this.groupAhkConfig.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlash)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -863,9 +885,11 @@ namespace _4RTools.Forms
         private System.Windows.Forms.CheckBox cbWithNoClick;
         private System.Windows.Forms.CheckBox cbWithClick;
         private System.Windows.Forms.RadioButton ahkSpeedBoost;
-        private System.Windows.Forms.RadioButton ahkCompatibilityWithoutFlick;
         private System.Windows.Forms.RadioButton ahkCompatibility;
         private System.Windows.Forms.PictureBox pbUpAndDownArrow;
         private PictureBox pbFlash;
+        private Panel panel5;
+        private CheckBox chkNoShift;
+        private CheckBox chkMouseFlick;
     }
 }
