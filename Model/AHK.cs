@@ -26,12 +26,14 @@ namespace _4RTools.Model
 
         [DllImport("user32.dll")]
         public static extern void mouse_event(uint dwFlags, uint dx, uint dy, uint dwData, int dwExtraInfo);
-        static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
+
+        [DllImport("user32.dll")]
+        public static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
 
         private const string ACTION_NAME = "AHK20";
         private const string COMPATIBILITY = "ahkCompatibility";
-        private const string COMPATIBILITY_WITHOUT_FLICK = "ahkCompatibilityWithoutFlick";
         private const string SPEED_BOOST = "ahkSpeedBoost";
+
         public Dictionary<string, KeyConfig> ahkEntries { get; set; } = new Dictionary<string, KeyConfig>();
         public int ahkDelay { get; set; } = 10;
         public bool mouseFlick { get; set; } = false;
@@ -67,7 +69,7 @@ namespace _4RTools.Model
                 {
                     if (config.clickActive && Keyboard.IsKeyDown(config.key)) 
                     {
-                        keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
+                        if(noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
                         //Call Algorithm
                         switch (ahkMode)
                         {
@@ -78,7 +80,7 @@ namespace _4RTools.Model
                                 this.AHKCompatibility(roClient, config);
                                 break;
                         }
-                        keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
+                        if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
 
                     }
                     else

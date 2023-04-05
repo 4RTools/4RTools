@@ -535,9 +535,19 @@ namespace _4RTools.Forms
             // 
             this.txtSpammerDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtSpammerDelay.Location = new System.Drawing.Point(9, 25);
+            this.txtSpammerDelay.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.txtSpammerDelay.Name = "txtSpammerDelay";
             this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
             this.txtSpammerDelay.TabIndex = 31;
+            this.txtSpammerDelay.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.txtSpammerDelay.ValueChanged += new System.EventHandler(this.txtSpammerDelay_TextChanged);
             // 
             // panel1
