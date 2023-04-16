@@ -71,15 +71,7 @@ namespace _4RTools.Model
                     {
                         if(noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
                         //Call Algorithm
-                        switch (ahkMode)
-                        {
-                            case SPEED_BOOST:
-                                this.AHKSpeedBoost(roClient, config);
-                                break;
-                            case COMPATIBILITY:
-                                this.AHKCompatibility(roClient, config);
-                                break;
-                        }
+                        _DoSpammer(roClient, config);
                         if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
 
                     }
@@ -96,63 +88,55 @@ namespace _4RTools.Model
             }
             return 0;
         }
-
-        private int AHKCompatibility(Client roClient, KeyConfig config)
+        
+        private int _DoSpammer(Client roClient, KeyConfig config)
         {
             Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-            if (this.mouseFlick)
+            Func<int, int> send_click;
+
+            if (ahkMode.Equals(SPEED_BOOST))
             {
-                while (Keyboard.IsKeyDown(config.key))
+                //Use DLL to send mouse event
+                send_click = (evt) =>
                 {
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                    Point cursorPos = System.Windows.Forms.Cursor.Position;
+                    mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
                     Thread.Sleep(1);
-                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                    Thread.Sleep(this.ahkDelay);
-                }
+                    mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
+                    return 0;
+                };
             }
             else
             {
-                while (Keyboard.IsKeyDown(config.key))
-                {
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                //Send Event Directly to Window via PostMessage
+                send_click = (evt) => {
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
                     Thread.Sleep(1);
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                    Thread.Sleep(this.ahkDelay);
-                }
+                    return 0;
+                };
             }
-            return 0;
-        }
-        
-        private int AHKSpeedBoost(Client roClient, KeyConfig config)
-        {
-            Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+            
 
             if (this.mouseFlick)
             {
-                //Do Mouse Flick
-                Point cursorPos = System.Windows.Forms.Cursor.Position;
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
-                Thread.Sleep(1);
-                System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
-                Thread.Sleep(this.ahkDelay);
+                while (Keyboard.IsKeyDown(config.key))
+                {
+                    //Do Mouse Flick
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                    send_click(0);
+                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                    Thread.Sleep(this.ahkDelay);
+                }
             }
             else
             {
                 while (Keyboard.IsKeyDown(config.key))
                 {
                     //Cleaner While
-                    Point cursorPos = System.Windows.Forms.Cursor.Position;
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                    mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
-                    Thread.Sleep(1);
-                    mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
+                    send_click(0);
                     Thread.Sleep(this.ahkDelay);
                 }
             }
