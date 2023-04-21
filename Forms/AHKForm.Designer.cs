@@ -81,9 +81,7 @@ namespace _4RTools.Forms
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupAhkConfig = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chkNoShift = new System.Windows.Forms.CheckBox();
-            this.pbUpAndDownArrow = new System.Windows.Forms.PictureBox();
             this.chkMouseFlick = new System.Windows.Forms.CheckBox();
             this.ahkSpeedBoost = new System.Windows.Forms.RadioButton();
             this.ahkCompatibility = new System.Windows.Forms.RadioButton();
@@ -92,14 +90,16 @@ namespace _4RTools.Forms
             this.cbDeactivated = new System.Windows.Forms.CheckBox();
             this.cbWithNoClick = new System.Windows.Forms.CheckBox();
             this.cbWithClick = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbUpAndDownArrow = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupAhkConfig.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // chkF9
@@ -618,22 +618,12 @@ namespace _4RTools.Forms
             this.groupAhkConfig.Controls.Add(this.groupBox2);
             this.groupAhkConfig.Controls.Add(this.ahkCompatibility);
             this.groupAhkConfig.Controls.Add(this.groupBox4);
-            this.groupAhkConfig.Location = new System.Drawing.Point(15, 159);
+            this.groupAhkConfig.Location = new System.Drawing.Point(14, 159);
             this.groupAhkConfig.Name = "groupAhkConfig";
             this.groupAhkConfig.Size = new System.Drawing.Size(533, 105);
             this.groupAhkConfig.TabIndex = 33;
             this.groupAhkConfig.TabStop = false;
             this.groupAhkConfig.Text = "AHK Configuration";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_4RTools.Properties.Resources.shift;
-            this.pictureBox1.Location = new System.Drawing.Point(338, 61);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
             // 
             // chkNoShift
             // 
@@ -645,16 +635,6 @@ namespace _4RTools.Forms
             this.chkNoShift.Text = "No shift";
             this.chkNoShift.UseVisualStyleBackColor = true;
             this.chkNoShift.CheckedChanged += new System.EventHandler(this.chkNoShift_CheckedChanged);
-            // 
-            // pbUpAndDownArrow
-            // 
-            this.pbUpAndDownArrow.Image = ((System.Drawing.Image)(resources.GetObject("pbUpAndDownArrow.Image")));
-            this.pbUpAndDownArrow.Location = new System.Drawing.Point(359, 38);
-            this.pbUpAndDownArrow.Name = "pbUpAndDownArrow";
-            this.pbUpAndDownArrow.Size = new System.Drawing.Size(16, 16);
-            this.pbUpAndDownArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbUpAndDownArrow.TabIndex = 35;
-            this.pbUpAndDownArrow.TabStop = false;
             // 
             // chkMouseFlick
             // 
@@ -745,6 +725,26 @@ namespace _4RTools.Forms
             this.cbWithClick.Text = "With mouse click";
             this.cbWithClick.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_4RTools.Properties.Resources.shift;
+            this.pictureBox1.Location = new System.Drawing.Point(338, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbUpAndDownArrow
+            // 
+            this.pbUpAndDownArrow.Image = global::_4RTools.Properties.Resources.up_and_down_arrow;
+            this.pbUpAndDownArrow.Location = new System.Drawing.Point(359, 38);
+            this.pbUpAndDownArrow.Name = "pbUpAndDownArrow";
+            this.pbUpAndDownArrow.Size = new System.Drawing.Size(16, 16);
+            this.pbUpAndDownArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbUpAndDownArrow.TabIndex = 35;
+            this.pbUpAndDownArrow.TabStop = false;
+            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -809,10 +809,10 @@ namespace _4RTools.Forms
             this.groupBox2.PerformLayout();
             this.groupAhkConfig.ResumeLayout(false);
             this.groupAhkConfig.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUpAndDownArrow)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
