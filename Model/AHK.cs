@@ -33,6 +33,7 @@ namespace _4RTools.Model
         public static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
 
         private const string ACTION_NAME = "AHK20";
+        private _4RThread thread;
         public const string COMPATIBILITY = "ahkCompatibility";
         public const string SPEED_BOOST = "ahkSpeedBoost";
         public Dictionary<string, KeyConfig> AhkEntries { get; set; } = new Dictionary<string, KeyConfig>();
@@ -40,8 +41,6 @@ namespace _4RTools.Model
         public bool mouseFlick { get; set; } = false;
         public bool noShift { get; set; } = false;
         public string ahkMode { get; set; } = COMPATIBILITY;
-
-        private _4RThread thread;
 
         public AHK()
         {
