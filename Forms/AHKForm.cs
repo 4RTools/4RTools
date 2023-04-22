@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
+using System.Web;
 
 namespace _4RTools.Forms
 {
@@ -24,15 +25,22 @@ namespace _4RTools.Forms
                 case MessageCode.PROFILE_CHANGED:
                     RemoveHandlers();
                     FormUtils.ResetForm(this);
+                    SetLegendDefaultValues();
                     InitializeCheckAsThreeState();
-                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.ahkEntries);
+
+                    RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.ahkMode];
+                    if (rdAhkMode != null) { rdAhkMode.Checked = true; };
+                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
+                    this.chkNoShift.Checked = ProfileSingleton.GetCurrent().AHK.noShift;
+                    this.chkMouseFlick.Checked = ProfileSingleton.GetCurrent().AHK.mouseFlick;
+                    this.DisableControlsIfSpeedBoost();
+
+                    Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.AhkEntries);
 
                     foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
                     {
-                        ToggleCheckboxByName(config.Key, config.Value.clickActive);
+                        ToggleCheckboxByName(config.Key, config.Value.ClickActive);
                     }
-
-                    this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.ahkDelay.ToString();
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AHK.Start();
@@ -62,12 +70,11 @@ namespace _4RTools.Forms
         {
             try
             {
-                ProfileSingleton.GetCurrent().AHK.ahkDelay = Int16.Parse(this.txtSpammerDelay.Text);
+                ProfileSingleton.GetCurrent().AHK.AhkDelay = Convert.ToInt16(this.txtSpammerDelay.Value);
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
             }
-            catch{ }
+            catch { }
         }
-
 
         private void ToggleCheckboxByName(string Name, bool state)
         {
@@ -106,9 +113,52 @@ namespace _4RTools.Forms
                 }
         }
 
-        private void noclicksample_CheckedChanged(object sender, EventArgs e)
+        private void SetLegendDefaultValues()
         {
+            this.cbWithNoClick.ThreeState = true;
+            this.cbWithNoClick.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.cbWithNoClick.AutoCheck = false;
+            this.cbWithClick.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbWithClick.ThreeState = true;
+            this.cbWithClick.AutoCheck = false;
+        }
 
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.Checked)
+            {
+                ProfileSingleton.GetCurrent().AHK.ahkMode = rb.Name;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+                this.DisableControlsIfSpeedBoost();
+            }
+        }
+
+        private void chkMouseFlick_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().AHK.mouseFlick = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+        }
+
+        private void chkNoShift_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().AHK.noShift = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+        }
+
+        private void DisableControlsIfSpeedBoost()
+        {
+            if (ProfileSingleton.GetCurrent().AHK.ahkMode == AHK.SPEED_BOOST)
+            {
+                this.chkMouseFlick.Enabled = false;
+                this.chkNoShift.Enabled = false;
+            } else
+            {
+                this.chkMouseFlick.Enabled = true;
+                this.chkNoShift.Enabled = true;
+            }
         }
     }
 }

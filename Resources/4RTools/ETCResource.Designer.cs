@@ -83,6 +83,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flash {
+            get {
+                object obj = ResourceManager.GetObject("flash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HP {
             get {
                 object obj = ResourceManager.GetObject("HP", resourceCulture);
@@ -107,6 +117,16 @@ namespace _4RTools.Resources._4RTools {
             get {
                 object obj = ResourceManager.GetObject("logo_4rtools_on", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shift {
+            get {
+                object obj = ResourceManager.GetObject("shift", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -140,31 +160,42 @@ namespace _4RTools.Resources._4RTools {
         
         /// <summary>
         ///   Looks up a localized string similar to [
-        ///    {
-        ///        &quot;name&quot;: &quot;rtales.bin&quot;,
-        ///        &quot;description&quot;: &quot;Ragna Tales&quot;,
-        ///        &quot;hpAddress&quot;: &quot;0x00E8E434&quot;,
-        ///        &quot;nameAddress&quot;: &quot;0x00E90C00&quot;
-        ///    },
-        ///    {
-        ///        &quot;name&quot;: &quot;Jogar&quot;,
-        ///        &quot;description&quot;: &quot;YodaRO&quot;,
-        ///        &quot;hpAddress&quot;: &quot;0x00E8E434&quot;,
-        ///        &quot;nameAddress&quot;: &quot;0x00E90C00&quot;
-        ///    },
-        ///    {
-        ///        &quot;name&quot;: &quot;RagnaRotico&quot;,
-        ///        &quot;description&quot;: &quot;RagnaRótico&quot;,
-        ///        &quot;hpAddress&quot;: &quot;0x00E8E434&quot;,
-        ///        &quot;nameAddress&quot;: &quot;0x00E4D768&quot;
-        ///    },
-        ///    {
-        ///        &quot;name&quot;: &quot;BattleOfSEARO&quot;,
-        ///    [rest of string was truncated]&quot;;.
+        ///  {
+        ///    &quot;name&quot;: &quot;rtales.bin&quot;,
+        ///    &quot;description&quot;: &quot;Ragna Tales&quot;,
+        ///    &quot;hpAddress&quot;: &quot;0x00E8E434&quot;,
+        ///    &quot;nameAddress&quot;: &quot;0x00E90C00&quot;
+        ///  },
+        ///  {
+        ///    &quot;name&quot;: &quot;Jogar&quot;,
+        ///    &quot;description&quot;: &quot;YodaRO&quot;,
+        ///    &quot;hpAddress&quot;: &quot;0x00E8E434&quot;,
+        ///    &quot;nameAddress&quot;: &quot;0x00E90C00&quot;
+        ///  },
+        ///  {
+        ///    &quot;name&quot;: &quot;RagnaRotico&quot;,
+        ///    &quot;description&quot;: &quot;RagnaRótico&quot;,
+        ///    &quot;hpAddress&quot;: &quot;0x00E4CAF4&quot;,
+        ///    &quot;nameAddress&quot;: &quot;0x00E4D768&quot;
+        ///  },
+        ///  {
+        ///    &quot;name&quot;: &quot;BattleOfSEARO&quot;,
+        ///    &quot;description&quot;: &quot;Battle of SEA Ragnarok Online&quot;,
+        ///    &quot;hpAddress&quot;: [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string supported_servers {
             get {
                 return ResourceManager.GetString("supported_servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap up_and_down_arrow {
+            get {
+                object obj = ResourceManager.GetObject("up_and_down_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

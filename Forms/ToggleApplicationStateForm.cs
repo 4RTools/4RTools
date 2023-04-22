@@ -100,7 +100,6 @@ namespace _4RTools.Forms
                     this.lblStatusToggle.Text = "Please select a valid Ragnarok Client!";
                     this.lblStatusToggle.ForeColor = Color.Red;
                 }
-                
             }
 
             return true;
