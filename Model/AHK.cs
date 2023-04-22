@@ -88,14 +88,7 @@ namespace _4RTools.Model
                 foreach (KeyConfig config in AhkEntries.Values)
                 {
                     Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                    if (config.ClickActive)
-                    {
-                        this._AHKSpeedBoost(roClient, config, thisk);
-                    }
-                    else
-                    {
-                        this._AHKNoClick(roClient, config, thisk);
-                    }
+                    this._AHKSpeedBoost(roClient, config, thisk);
                 }
             }
 
