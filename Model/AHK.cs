@@ -78,12 +78,7 @@ namespace _4RTools.Model
                         }
                         else
                         {
-                            //Non Click Spammer - Algorithm
-                            while (Keyboard.IsKeyDown(config.key))
-                            {
-                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                                Thread.Sleep(this.AhkDelay);
-                            }
+                            this._AHKNoClick(roClient, config, thisk);
                         }
                     }
                 }
@@ -93,10 +88,13 @@ namespace _4RTools.Model
                 foreach (KeyConfig config in AhkEntries.Values)
                 {
                     Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                    while (Keyboard.IsKeyDown(config.key))
+                    if (config.ClickActive)
                     {
-                        this._AHKSpeedBoost(roClient, thisk);
-                        Thread.Sleep(this.AhkDelay);
+                        this._AHKSpeedBoost(roClient, config, thisk);
+                    }
+                    else
+                    {
+                        this._AHKNoClick(roClient, config, thisk);
                     }
                 }
             }
@@ -138,13 +136,26 @@ namespace _4RTools.Model
             }
         }
 
-        private void _AHKSpeedBoost(Client roClient, Keys thisk)
+        private void _AHKSpeedBoost(Client roClient, KeyConfig config, Keys thisk)
         {
-            Point cursorPos = System.Windows.Forms.Cursor.Position;
-            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-            mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
-            Thread.Sleep(1);
-            mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
+            while (Keyboard.IsKeyDown(config.key))
+            {
+                Point cursorPos = System.Windows.Forms.Cursor.Position;
+                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
+                Thread.Sleep(1);
+                mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
+                Thread.Sleep(this.AhkDelay);
+            }
+        }
+
+        private void _AHKNoClick(Client roClient, KeyConfig config, Keys thisk)
+        {
+            while (Keyboard.IsKeyDown(config.key))
+            {
+                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                Thread.Sleep(this.AhkDelay);
+            }
         }
 
         public void AddAHKEntry(string chkboxName, KeyConfig value)
