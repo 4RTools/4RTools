@@ -454,13 +454,6 @@
     "nameAddress": "0x00FD1220"
   },
   {
-    "name": "client",
-    "description": "Uprising RO",
-    "hpAddress": "0x011D0A14",
-    "site": "https://uprisingro.net/",
-    "nameAddress": "0x011C9684"
-  },
-  {
     "name": "Liveexe",
     "description": "LiveRO",
     "site": "https://live-ro.net/",
@@ -723,4 +716,10 @@
     "hpAddress": "0x010DCE10",
     "nameAddress": "0x010DF5D8"
   },
+  {
+    "name": "client",
+    "site": "https://revenge-ro.com/",
+    "hpAddress": "0x00E4CAF4",
+    "nameAddress": "0x00E4D768"
+  }
 ]
