@@ -12,6 +12,6 @@ namespace _4RTools.Utils
         public static string DiscordLink = "https://discord.gg/AtZ2fJVtBz";
         public static string _4RClientsURL = "https://storage.googleapis.com/4rtools/supported_servers.json";
         public static string _4RLatestVersionURL = "https://api.github.com/repos/4RTools/4RTools/releases/latest";
-        public static string Version = "v2.3.0";
+        public static string Version = "v2.3.1";
     }
 }
