@@ -37,7 +37,7 @@ namespace _4RTools.Model
         public const string COMPATIBILITY = "ahkCompatibility";
         public const string SPEED_BOOST = "ahkSpeedBoost";
         public Dictionary<string, KeyConfig> AhkEntries { get; set; } = new Dictionary<string, KeyConfig>();
-        public int AhkDelay { get; set; } = 10;
+        public int ahkDelay { get; set; } = 10;
         public bool mouseFlick { get; set; } = false;
         public bool noShift { get; set; } = false;
         public string ahkMode { get; set; } = COMPATIBILITY;
@@ -62,93 +62,67 @@ namespace _4RTools.Model
 
         private int AHKThreadExecution(Client roClient)
         {
-            if (ahkMode.Equals(COMPATIBILITY))
+            foreach (KeyConfig config in AhkEntries.Values)
             {
-                foreach (KeyConfig config in AhkEntries.Values)
+                Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+                if ((!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt)) && Keyboard.IsKeyDown(config.key))
                 {
-                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                    if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
-                    {
-                        if (config.ClickActive && Keyboard.IsKeyDown(config.key))
-                        {
-                            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
-                            _AHKCompatibility(roClient, config, thisk);
-                            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
-
-                        }
-                        else
-                        {
-                            this._AHKNoClick(roClient, config, thisk);
-                        }
-                    }
-                }
-            }
-            else
-            {
-                foreach (KeyConfig config in AhkEntries.Values)
-                {
-                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                    this._AHKSpeedBoost(roClient, config, thisk);
+                    this._DoSpammer(roClient, config);
                 }
             }
 
             return 0;
         }
-
-        private void _AHKCompatibility(Client roClient, KeyConfig config, Keys thisk)
+        private int _DoSpammer(Client roClient, KeyConfig config)
         {
-            Func<int, int> send_click;
+            Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+            Func<int, int> send_click = (_) => { return 0; };
 
-            //Send Event Directly to Window via PostMessage
-            send_click = (evt) => {
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                Thread.Sleep(1);
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                return 0;
-            };
-
-            if (this.mouseFlick)
+            if (ahkMode.Equals(SPEED_BOOST) && config.ClickActive)
             {
-                while (Keyboard.IsKeyDown(config.key))
+                //Use DLL to send mouse event
+                send_click = (_) =>
                 {
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                    send_click(0);
-                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
-                    Thread.Sleep(this.AhkDelay);
-                }
+                    Point cursorPos = System.Windows.Forms.Cursor.Position;
+                    mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
+                    Thread.Sleep(1);
+                    mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
+                    return 0;
+                };
             }
-            else
+            else if (ahkMode.Equals(COMPATIBILITY) && config.ClickActive)
             {
-                while (Keyboard.IsKeyDown(config.key))
-                {
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                    send_click(0);
-                    Thread.Sleep(this.AhkDelay);
-                }
+                //Send Event Directly to Window via PostMessage
+                send_click = (_) => {
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                    Thread.Sleep(1);
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                    return 0;
+                };
             }
-        }
 
-        private void _AHKSpeedBoost(Client roClient, KeyConfig config, Keys thisk)
-        {
-            while (Keyboard.IsKeyDown(config.key))
-            {
-                Point cursorPos = System.Windows.Forms.Cursor.Position;
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
-                Thread.Sleep(1);
-                mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursorPos.X, (uint)cursorPos.Y, 0, 0);
-                Thread.Sleep(this.AhkDelay);
-            }
-        }
 
-        private void _AHKNoClick(Client roClient, KeyConfig config, Keys thisk)
-        {
-            while (Keyboard.IsKeyDown(config.key))
+            //Press Shift if NoShift is Marked
+            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
+
+            do
             {
+                //Cleaner While
                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                Thread.Sleep(this.AhkDelay);
-            }
+                send_click(0);
+                Thread.Sleep(this.ahkDelay);
+            } while (Keyboard.IsKeyDown(config.key));
+
+            //Reset Cursor 
+            Point cursor = System.Windows.Forms.Cursor.Position;
+            mouse_event(Constants.MOUSEEVENTF_LEFTDOWN, (uint)cursor.X, (uint)cursor.Y, 0, 0);
+            Thread.Sleep(1);
+            mouse_event(Constants.MOUSEEVENTF_LEFTUP, (uint)cursor.X, (uint)cursor.Y, 0, 0);
+
+            //Release Shift Key
+            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
+
+            return 0;
         }
 
         public void AddAHKEntry(string chkboxName, KeyConfig value)
