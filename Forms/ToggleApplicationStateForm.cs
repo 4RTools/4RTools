@@ -14,6 +14,9 @@ namespace _4RTools.Forms
         private ContextMenu contextMenu;
         private MenuItem menuItem;
 
+        //Store key used for last profile - necessarly to clean when change profile
+        private Keys lastKey;
+
         public ToggleApplicationStateForm(Subject subject)
         {
             InitializeComponent();
@@ -21,7 +24,6 @@ namespace _4RTools.Forms
             subject.Attach(this);
             this.subject = subject;
             KeyboardHook.Enable();
-            KeyboardHook.Add(Keys.End, new KeyboardHook.KeyPressed(this.toggleStatus)); //Toggle System (ON-OFF)
             this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey;
             this.txtStatusToggleKey.KeyDown += new KeyEventHandler(FormUtils.OnKeyDown);
             this.txtStatusToggleKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
@@ -38,10 +40,9 @@ namespace _4RTools.Forms
             this.contextMenu.MenuItems.AddRange(
                     new MenuItem[] { this.menuItem });
 
-
             this.menuItem.Index = 0;
             this.menuItem.Text = "Close";
-            this.menuItem.Click += new System.EventHandler(this.notifyShutdownApplication);
+            this.menuItem.Click += new EventHandler(this.notifyShutdownApplication);
 
             this.notifyIconTray.ContextMenu = this.contextMenu;
         }
@@ -50,8 +51,12 @@ namespace _4RTools.Forms
         {
             if ((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
             {
-                FormUtils.ResetForm(this);
-                this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey.ToString();
+                Keys currentToggleKey = (Keys)Enum.Parse(typeof(Keys), ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey);
+                KeyboardHook.Remove(lastKey); //Remove last key hook to prevent toggle with last profile key used.
+
+                this.txtStatusToggleKey.Text = currentToggleKey.ToString();
+                KeyboardHook.Add(currentToggleKey, new KeyboardHook.KeyPressed(this.toggleStatus));
+                lastKey = currentToggleKey;
             }
         }
 
@@ -59,16 +64,14 @@ namespace _4RTools.Forms
 
         private void onStatusToggleKeyChange(object sender, EventArgs e)
         {
-            if (this.txtStatusToggleKey.Text != ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey)
-            {
-                Keys previousKey = (Keys)Enum.Parse(typeof(Keys), ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey);
-                Keys newKey = (Keys)Enum.Parse(typeof(Keys), this.txtStatusToggleKey.Text);
+            //Get last key from profile before update it in json
+            Keys currentToggleKey = (Keys)Enum.Parse(typeof(Keys), this.txtStatusToggleKey.Text);
+            KeyboardHook.Remove(lastKey);
+            KeyboardHook.Add(currentToggleKey, new KeyboardHook.KeyPressed(this.toggleStatus));
+            ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey = currentToggleKey.ToString(); //Update profile key
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
 
-                KeyboardHook.Remove(previousKey);
-                KeyboardHook.Add(newKey, new KeyboardHook.KeyPressed(this.toggleStatus));
-                ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey = this.txtStatusToggleKey.Text;
-                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
-            }
+            lastKey = currentToggleKey; //Refresh lastKey to update 
         }
 
         private bool toggleStatus()
