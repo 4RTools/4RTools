@@ -593,6 +593,7 @@
     <None Include="assets\images\izayoi.png" />
     <None Include="assets\etc\shift.png" />
     <None Include="assets\etc\up-and-down-arrow.png" />
+    <None Include="assets\images\mega_resist_potion.gif" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />

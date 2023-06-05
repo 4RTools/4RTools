@@ -184,6 +184,7 @@ namespace _4RTools.Model
 
 
         //--------------------- STUFFS ------------------------------
+        //--------------------- Potions ------------------------------
         public static List<Buff> GetPotionsBuffs()
         {
             List<Buff> skills = new List<Buff>
@@ -197,7 +198,8 @@ namespace _4RTools.Model
                 new Buff("Red Herb Activator", EffectStatusIDs.RED_HERB_ACTIVATOR, Resources._4RTools.Icons.red_herb_activator),
                 new Buff("Blue Herb Activator", EffectStatusIDs.BLUE_HERB_ACTIVATOR, Resources._4RTools.Icons.blue_herb_activator),
                 new Buff("Golden X", EffectStatusIDs.REF_T_POTION, Resources._4RTools.Icons.Golden_X), 
-                new Buff("Energy Drink", EffectStatusIDs.ENERGY_DRINK_RESERCH, Resources._4RTools.Icons.energetic_drink)
+                new Buff("Energy Drink", EffectStatusIDs.ENERGY_DRINK_RESERCH, Resources._4RTools.Icons.energetic_drink),
+                new Buff("Mega Resist Potion", EffectStatusIDs.TARGET_BLOOD, Resources._4RTools.Icons.mega_resist_potion)
             };
 
             return skills;
