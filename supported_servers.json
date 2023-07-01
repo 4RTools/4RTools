@@ -733,5 +733,11 @@
     "site": "https://ragnarestart.com/",
     "hpAddress": "0x00F45E54",
     "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "Jogar",
+    "site": "https://metrycro.com/",
+    "hpAddress": "0x0101A700",
+    "nameAddress": "0x0101CEB0"
   }
 ]
