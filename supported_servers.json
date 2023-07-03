@@ -733,5 +733,12 @@
     "site": "https://ragnarestart.com/",
     "hpAddress": "0x00F45E54",
     "nameAddress": "0x00F48798"
+  },
+  {
+    "name": "Ragexe",
+    "site": "https://landverse.com/",
+    "hpAddress": "0x012BE4CC",
+    "nameAddress": "0x012C0F08"
   }
+
 ]
