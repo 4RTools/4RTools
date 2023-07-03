@@ -71,7 +71,7 @@ namespace _4RTools.Model
                 foreach (Key key in defKeys.Values)
                 {
                     Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, toKeys(key), 0); //Equip DEF Items
-                    Thread.Sleep(50);
+                    Thread.Sleep(this.switchDelay);
                 }
             }
             return 0;
