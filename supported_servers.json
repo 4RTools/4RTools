@@ -745,6 +745,11 @@
     "site": "https://landverse.com/",
     "hpAddress": "0x012BE4CC",
     "nameAddress": "0x012C0F08"
+  },
+  {
+    "name": "uMMO",
+    "hpAddress": "010DCE10",
+    "nameAddress": "010D5DA8"
   }
 
 ]
