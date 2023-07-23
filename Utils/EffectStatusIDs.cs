@@ -109,6 +109,9 @@ namespace _4RTools.Utils
         WEAPONPROPERTY = 64,
         ASPERSIO = 17,
 
+        FULL_SWINGK = 486,
+        MANA_PLUS= 487,
+
         //ASPD POTIONS
         CONCENTRATION_POTION = 37,
         AWAKENING_POTION = 38,
