@@ -628,7 +628,7 @@ namespace _4RTools.Forms
             // pictureBox1
             // 
             this.pictureBox1.Image = global::_4RTools.Properties.Resources.shift;
-            this.pictureBox1.Location = new System.Drawing.Point(338, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(255, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -638,7 +638,7 @@ namespace _4RTools.Forms
             // chkNoShift
             // 
             this.chkNoShift.AutoSize = true;
-            this.chkNoShift.Location = new System.Drawing.Point(281, 62);
+            this.chkNoShift.Location = new System.Drawing.Point(198, 62);
             this.chkNoShift.Name = "chkNoShift";
             this.chkNoShift.Size = new System.Drawing.Size(64, 17);
             this.chkNoShift.TabIndex = 39;
@@ -649,7 +649,7 @@ namespace _4RTools.Forms
             // pbUpAndDownArrow
             // 
             this.pbUpAndDownArrow.Image = global::_4RTools.Properties.Resources.up_and_down_arrow;
-            this.pbUpAndDownArrow.Location = new System.Drawing.Point(359, 38);
+            this.pbUpAndDownArrow.Location = new System.Drawing.Point(276, 38);
             this.pbUpAndDownArrow.Name = "pbUpAndDownArrow";
             this.pbUpAndDownArrow.Size = new System.Drawing.Size(16, 16);
             this.pbUpAndDownArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -659,7 +659,7 @@ namespace _4RTools.Forms
             // chkMouseFlick
             // 
             this.chkMouseFlick.AutoSize = true;
-            this.chkMouseFlick.Location = new System.Drawing.Point(281, 38);
+            this.chkMouseFlick.Location = new System.Drawing.Point(198, 38);
             this.chkMouseFlick.Name = "chkMouseFlick";
             this.chkMouseFlick.Size = new System.Drawing.Size(83, 17);
             this.chkMouseFlick.TabIndex = 38;
@@ -672,10 +672,10 @@ namespace _4RTools.Forms
             this.ahkSpeedBoost.AutoSize = true;
             this.ahkSpeedBoost.Location = new System.Drawing.Point(17, 58);
             this.ahkSpeedBoost.Name = "ahkSpeedBoost";
-            this.ahkSpeedBoost.Size = new System.Drawing.Size(214, 17);
+            this.ahkSpeedBoost.Size = new System.Drawing.Size(85, 17);
             this.ahkSpeedBoost.TabIndex = 37;
             this.ahkSpeedBoost.TabStop = true;
-            this.ahkSpeedBoost.Text = "Speed boost [ Recommended for WoE ]";
+            this.ahkSpeedBoost.Text = "Speed boost";
             this.ahkSpeedBoost.UseVisualStyleBackColor = true;
             this.ahkSpeedBoost.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
@@ -684,16 +684,16 @@ namespace _4RTools.Forms
             this.ahkCompatibility.AutoSize = true;
             this.ahkCompatibility.Location = new System.Drawing.Point(17, 34);
             this.ahkCompatibility.Name = "ahkCompatibility";
-            this.ahkCompatibility.Size = new System.Drawing.Size(235, 17);
+            this.ahkCompatibility.Size = new System.Drawing.Size(83, 17);
             this.ahkCompatibility.TabIndex = 35;
             this.ahkCompatibility.TabStop = true;
-            this.ahkCompatibility.Text = "Compatibility [ Recommended for PvM/PvE ]";
+            this.ahkCompatibility.Text = "Compatibility";
             this.ahkCompatibility.UseVisualStyleBackColor = true;
             this.ahkCompatibility.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
             // groupBox4
             // 
-            this.groupBox4.Location = new System.Drawing.Point(271, 19);
+            this.groupBox4.Location = new System.Drawing.Point(188, 19);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(115, 70);
             this.groupBox4.TabIndex = 33;

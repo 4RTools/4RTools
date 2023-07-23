@@ -594,6 +594,8 @@
     <None Include="assets\etc\shift.png" />
     <None Include="assets\etc\up-and-down-arrow.png" />
     <None Include="assets\images\mega_resist_potion.gif" />
+    <None Include="assets\images\swing_k.png" />
+    <None Include="assets\images\mana_plus.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
