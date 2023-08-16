@@ -750,6 +750,11 @@
     "name": "uMMO",
     "hpAddress": "010DCE10",
     "nameAddress": "010D5DA8"
+  },
+  {
+    "name": "uaRO",
+    "site": "https://uaro.net/",
+    "hpAddress": "010DCE10",
+    "nameAddress": "010D5DA8"
   }
-
 ]
