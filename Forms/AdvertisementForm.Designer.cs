@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdvertisementForm));
             this.groupBoxAd = new System.Windows.Forms.GroupBox();
+            this.flagAds1 = new System.Windows.Forms.PictureBox();
+            this.flagAds0 = new System.Windows.Forms.PictureBox();
             this.discAd2 = new System.Windows.Forms.LinkLabel();
             this.discAd1 = new System.Windows.Forms.LinkLabel();
             this.discAd0 = new System.Windows.Forms.LinkLabel();
@@ -45,6 +47,8 @@
             this.panelAd0 = new System.Windows.Forms.Panel();
             this.pbAd0 = new System.Windows.Forms.PictureBox();
             this.groupBoxAd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagAds1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagAds0)).BeginInit();
             this.panelAd2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAd2)).BeginInit();
             this.panelAd1.SuspendLayout();
@@ -58,6 +62,8 @@
             this.groupBoxAd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxAd.AutoSize = true;
+            this.groupBoxAd.Controls.Add(this.flagAds1);
+            this.groupBoxAd.Controls.Add(this.flagAds0);
             this.groupBoxAd.Controls.Add(this.discAd2);
             this.groupBoxAd.Controls.Add(this.discAd1);
             this.groupBoxAd.Controls.Add(this.discAd0);
@@ -70,17 +76,35 @@
             this.groupBoxAd.Controls.Add(this.panelAd1);
             this.groupBoxAd.Controls.Add(this.panelAd0);
             this.groupBoxAd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBoxAd.Location = new System.Drawing.Point(2, 1);
+            this.groupBoxAd.Location = new System.Drawing.Point(1, -1);
             this.groupBoxAd.Name = "groupBoxAd";
             this.groupBoxAd.Size = new System.Drawing.Size(288, 551);
             this.groupBoxAd.TabIndex = 28;
             this.groupBoxAd.TabStop = false;
             this.groupBoxAd.Text = "Advertisement";
             // 
+            // flagAds1
+            // 
+            this.flagAds1.Location = new System.Drawing.Point(104, 331);
+            this.flagAds1.Name = "flagAds1";
+            this.flagAds1.Size = new System.Drawing.Size(24, 24);
+            this.flagAds1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.flagAds1.TabIndex = 13;
+            this.flagAds1.TabStop = false;
+            // 
+            // flagAds0
+            // 
+            this.flagAds0.Location = new System.Drawing.Point(104, 148);
+            this.flagAds0.Name = "flagAds0";
+            this.flagAds0.Size = new System.Drawing.Size(24, 24);
+            this.flagAds0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.flagAds0.TabIndex = 12;
+            this.flagAds0.TabStop = false;
+            // 
             // discAd2
             // 
             this.discAd2.AutoSize = true;
-            this.discAd2.Location = new System.Drawing.Point(59, 522);
+            this.discAd2.Location = new System.Drawing.Point(58, 522);
             this.discAd2.Name = "discAd2";
             this.discAd2.Size = new System.Drawing.Size(43, 13);
             this.discAd2.TabIndex = 11;
@@ -90,7 +114,7 @@
             // discAd1
             // 
             this.discAd1.AutoSize = true;
-            this.discAd1.Location = new System.Drawing.Point(60, 337);
+            this.discAd1.Location = new System.Drawing.Point(59, 337);
             this.discAd1.Name = "discAd1";
             this.discAd1.Size = new System.Drawing.Size(43, 13);
             this.discAd1.TabIndex = 11;
@@ -100,7 +124,7 @@
             // discAd0
             // 
             this.discAd0.AutoSize = true;
-            this.discAd0.Location = new System.Drawing.Point(57, 154);
+            this.discAd0.Location = new System.Drawing.Point(56, 154);
             this.discAd0.Name = "discAd0";
             this.discAd0.Size = new System.Drawing.Size(43, 13);
             this.discAd0.TabIndex = 11;
@@ -167,6 +191,7 @@
             // 
             this.pbAd2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbAd2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbAd2.ErrorImage")));
+            this.pbAd2.Image = ((System.Drawing.Image)(resources.GetObject("pbAd2.Image")));
             this.pbAd2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAd2.InitialImage")));
             this.pbAd2.Location = new System.Drawing.Point(0, 0);
             this.pbAd2.Name = "pbAd2";
@@ -189,6 +214,7 @@
             // 
             this.pbAd1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbAd1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbAd1.ErrorImage")));
+            this.pbAd1.Image = ((System.Drawing.Image)(resources.GetObject("pbAd1.Image")));
             this.pbAd1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAd1.InitialImage")));
             this.pbAd1.Location = new System.Drawing.Point(0, 0);
             this.pbAd1.Name = "pbAd1";
@@ -211,6 +237,7 @@
             // 
             this.pbAd0.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbAd0.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbAd0.ErrorImage")));
+            this.pbAd0.Image = ((System.Drawing.Image)(resources.GetObject("pbAd0.Image")));
             this.pbAd0.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAd0.InitialImage")));
             this.pbAd0.Location = new System.Drawing.Point(0, 0);
             this.pbAd0.Name = "pbAd0";
@@ -224,7 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(292, 554);
+            this.ClientSize = new System.Drawing.Size(292, 550);
             this.Controls.Add(this.groupBoxAd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdvertisementForm";
@@ -233,6 +260,8 @@
             this.Load += new System.EventHandler(this.AdvertisementForm_Load);
             this.groupBoxAd.ResumeLayout(false);
             this.groupBoxAd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagAds1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flagAds0)).EndInit();
             this.panelAd2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAd2)).EndInit();
             this.panelAd1.ResumeLayout(false);
@@ -261,5 +290,7 @@
         private System.Windows.Forms.PictureBox pbAd2;
         private System.Windows.Forms.PictureBox pbAd1;
         private System.Windows.Forms.PictureBox pbAd0;
+        private System.Windows.Forms.PictureBox flagAds0;
+        private System.Windows.Forms.PictureBox flagAds1;
     }
 }

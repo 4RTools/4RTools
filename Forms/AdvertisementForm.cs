@@ -36,10 +36,12 @@ namespace _4RTools.Forms
                     LinkLabel linkWebsite = (LinkLabel)this.Controls.Find("siteAd" + i, true)[0];
                     LinkLabel linkDisc = (LinkLabel)this.Controls.Find("discAd" + i, true)[0];
                     PictureBox pictureBox = (PictureBox)this.Controls.Find("pbAd" + i, true)[0];
-                    
+                    PictureBox flagPicture = (PictureBox)this.Controls.Find("flagAds" + i, true)[0];
+
                     linkDisc.Tag = ads[i].discordUrl;
                     linkWebsite.Tag = ads[i].websiteUrl;
-                    pictureBox.ImageLocation = ads[i].bannerUrl+"se";
+                    pictureBox.ImageLocation = ads[i].bannerUrl;
+                    flagPicture.Image = Resources._4RTools.Icons.flag_br;
 
                     linkDisc.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
                     linkWebsite.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
@@ -51,7 +53,6 @@ namespace _4RTools.Forms
             }
 
         }
-
 
         private void onLinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

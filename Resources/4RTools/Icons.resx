@@ -277,6 +277,9 @@
   <data name="firm_faith" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\firm_faith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flag_br" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\etc\flags\flag_br.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="friggs_song" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\friggs_song.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

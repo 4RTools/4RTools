@@ -26,16 +26,25 @@ namespace _4RTools.Model
         }
 
         public static List<Advertiser> LoadAdvertiser() {
-            List<Advertiser> ads =  new List<Advertiser> {};
-            var requestAccepts = httpClient.DefaultRequestHeaders.Accept;
-            requestAccepts.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-            httpClient.DefaultRequestHeaders.UserAgent.TryParseAdd("request"); //Set the User Agent to "request"
+            List<Advertiser> ads = new List<Advertiser> { };
 
-            httpClient.Timeout = TimeSpan.FromSeconds(5);
-            var response = httpClient.GetAsync(AppConfig._4RAdvertiserUrl).Result;
-            var json = response.Content.ReadAsStringAsync().Result;
+            try
+            {
 
-            ads.AddRange(JsonConvert.DeserializeObject<List<Advertiser>>(json));
+                var requestAccepts = httpClient.DefaultRequestHeaders.Accept;
+                requestAccepts.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                httpClient.DefaultRequestHeaders.UserAgent.TryParseAdd("request"); //Set the User Agent to "request"
+                httpClient.Timeout = TimeSpan.FromSeconds(5);
+                var response = httpClient.GetAsync(AppConfig._4RAdvertiserUrl).Result;
+                var json = response.Content.ReadAsStringAsync().Result;
+
+                ads.AddRange(JsonConvert.DeserializeObject<List<Advertiser>>(json));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
             return ads;
         }
     }

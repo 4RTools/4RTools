@@ -606,6 +606,7 @@
     <None Include="assets\images\mega_resist_potion.gif" />
     <None Include="assets\images\swing_k.png" />
     <None Include="assets\images\mana_plus.png" />
+    <None Include="assets\etc\flags\flag_br.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
