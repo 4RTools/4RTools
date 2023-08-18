@@ -13,6 +13,6 @@ namespace _4RTools.Utils
         public static string _4RClientsURL = "https://storage.googleapis.com/4rtools/supported_servers.json";
         public static string _4RAdvertiserUrl = "https://storage.googleapis.com/4rtools/advertisers.json";
         public static string _4RLatestVersionURL = "https://api.github.com/repos/4RTools/4RTools/releases/latest";
-        public static string Version = "v2.3.5";
+        public static string Version = "v2.4.0";
     }
 }
