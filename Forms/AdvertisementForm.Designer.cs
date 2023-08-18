@@ -94,7 +94,7 @@
             // 
             // flagAds0
             // 
-            this.flagAds0.Location = new System.Drawing.Point(104, 148);
+            this.flagAds0.Location = new System.Drawing.Point(104, 146);
             this.flagAds0.Name = "flagAds0";
             this.flagAds0.Size = new System.Drawing.Size(24, 24);
             this.flagAds0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
