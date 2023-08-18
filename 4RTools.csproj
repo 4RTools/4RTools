@@ -221,6 +221,12 @@
     <Compile Include="Forms\AddServerForm.Designer.cs">
       <DependentUpon>AddServerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdvertisementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdvertisementForm.Designer.cs">
+      <DependentUpon>AdvertisementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AHKForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +311,7 @@
     <Compile Include="Forms\ToggleApplicationStateForm.Designer.cs">
       <DependentUpon>ToggleApplicationStateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Advertiser.cs" />
     <Compile Include="Model\AHK.cs" />
     <Compile Include="Model\ATKDEFMode.cs" />
     <Compile Include="Model\Autopot.cs" />
@@ -354,6 +361,9 @@
     <Compile Include="Utils\_4RThread.cs" />
     <EmbeddedResource Include="Forms\AddServerForm.resx">
       <DependentUpon>AddServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdvertisementForm.resx">
+      <DependentUpon>AdvertisementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AHKForm.resx">
       <DependentUpon>AHKForm.cs</DependentUpon>
@@ -596,9 +606,9 @@
     <None Include="assets\images\mega_resist_potion.gif" />
     <None Include="assets\images\swing_k.png" />
     <None Include="assets\images\mana_plus.png" />
+    <None Include="assets\etc\flags\flag_br.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.6.5.5\build\Fody.targets" Condition="Exists('packages\Fody.6.5.5\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

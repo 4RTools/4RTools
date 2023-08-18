@@ -38,6 +38,7 @@ namespace _4RTools.Forms
             SetATKDEFWindow();
             SetMacroSwitchWindow();
             SetServerWindow();
+            SetAdvertisementWindow();
         }
 
         public void addform(TabPage tp, Form f)
@@ -197,6 +198,15 @@ namespace _4RTools.Forms
             frm.Show();
         }
 
+        public void SetAdvertisementWindow()
+        {
+            AdvertisementForm frm = new AdvertisementForm();
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            this.panelAdvertisement.Controls.Add(frm);
+            frm.Show();
+        }
+
         public void SetAutopotWindow()
         {
             AutopotForm frm = new AutopotForm(subject, false);
@@ -314,5 +324,10 @@ namespace _4RTools.Forms
 
 
         #endregion
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
