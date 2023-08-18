@@ -322,12 +322,6 @@ namespace _4RTools.Forms
             frm.Show();
         }
 
-
         #endregion
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }
