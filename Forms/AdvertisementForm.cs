@@ -58,6 +58,7 @@ namespace _4RTools.Forms
         {
             LinkLabel link = (LinkLabel)sender;
             Process.Start(link.Tag.ToString());
+            TrackerSingleton.Instance().SendEvent("click", "click", link.Name);
         }
     }
 }

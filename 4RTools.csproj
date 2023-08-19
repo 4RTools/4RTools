@@ -322,6 +322,7 @@
     <Compile Include="Model\BuffRenderer.cs" />
     <Compile Include="Model\LocalServerManager.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
+    <Compile Include="Model\Tracker.cs" />
     <Compile Include="Model\UserPreferences.cs" />
     <Compile Include="Model\Client.cs" />
     <Compile Include="Model\Action.cs" />

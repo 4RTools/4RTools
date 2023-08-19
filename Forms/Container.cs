@@ -39,6 +39,8 @@ namespace _4RTools.Forms
             SetMacroSwitchWindow();
             SetServerWindow();
             SetAdvertisementWindow();
+
+            TrackerSingleton.Instance().SendEvent("desktop_login", "page_view", "desktop_container_load");
         }
 
         public void addform(TabPage tp, Form f)
