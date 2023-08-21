@@ -756,5 +756,11 @@
     "site": "https://uaro.net/",
     "hpAddress": "010DCE10",
     "nameAddress": "010D5DA8"
+  },
+  {
+    "name": "DestinyRO",
+    "site": "https://destiny-ro.net/",
+    "hpAddress": "010DCE10",
+    "nameAddress": "010D5DA8"
   }
 ]
