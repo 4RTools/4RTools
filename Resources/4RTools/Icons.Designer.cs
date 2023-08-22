@@ -253,6 +253,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blessing_of_tyr {
+            get {
+                object obj = ResourceManager.GetObject("blessing_of_tyr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blue_herb_activator {
             get {
                 object obj = ResourceManager.GetObject("blue_herb_activator", resourceCulture);
@@ -606,6 +616,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap friggs_song {
             get {
                 object obj = ResourceManager.GetObject("friggs_song", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fury {
+            get {
+                object obj = ResourceManager.GetObject("fury", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

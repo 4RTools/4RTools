@@ -98,6 +98,7 @@ namespace _4RTools.Utils
         MADNESSCANCEL = 203,
         ADJUSTMENT = 209,
         ACCURACY = 210,
+        FURY = 86,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
@@ -159,6 +160,8 @@ namespace _4RTools.Utils
         DEX_3RD_FOOD = 494,
         AGI_3RD_FOOD = 495,
         LUK_3RD_FOOD = 496,
+        
+        BASICHIT = 248,
 
         //Rune Knight Runes
         OTHILA = 322,
