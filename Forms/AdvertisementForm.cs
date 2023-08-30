@@ -31,6 +31,7 @@ namespace _4RTools.Forms
 
             try
             {
+                Console.WriteLine(ads.Count);
                 for (int i = 0; i < ads.Count; i++)
                 {
                     LinkLabel linkWebsite = (LinkLabel)this.Controls.Find("siteAd" + i, true)[0];
@@ -45,11 +46,13 @@ namespace _4RTools.Forms
 
                     linkDisc.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
                     linkWebsite.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
+
+                    Console.WriteLine(ads[i].bannerUrl);
                 }
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("=============>", ex.Message);
             }
 
         }

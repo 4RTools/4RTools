@@ -38,6 +38,7 @@ namespace _4RTools.Model
                 var response = httpClient.GetAsync(AppConfig._4RAdvertiserUrl).Result;
                 var json = response.Content.ReadAsStringAsync().Result;
 
+                Console.WriteLine(json);
                 ads.AddRange(JsonConvert.DeserializeObject<List<Advertiser>>(json));
             }
             catch (Exception ex)
