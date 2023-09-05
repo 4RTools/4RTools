@@ -762,5 +762,11 @@
     "site": "https://destiny-ro.net/",
     "hpAddress": "010DCE10",
     "nameAddress": "010D5DA8"
+  },
+  {
+    "name": "roGG",
+    "site": "https://www.roglobalgrounds.com/",
+    "hpAddress": "00F45E54",
+    "nameAddress": "00F48798"
   }
 ]
