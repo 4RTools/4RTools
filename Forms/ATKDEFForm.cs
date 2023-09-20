@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace _4RTools.Forms
 {
@@ -37,6 +38,7 @@ namespace _4RTools.Forms
             this.inSpammerKey.Text = ProfileSingleton.GetCurrent().AtkDefMode.keySpammer.ToString();
             this.spammerDelay.Value = ProfileSingleton.GetCurrent().AtkDefMode.ahkDelay;
             this.switchDelay.Value = ProfileSingleton.GetCurrent().AtkDefMode.switchDelay;
+            this.inSpammerClick.Checked = ProfileSingleton.GetCurrent().AtkDefMode.keySpammerWithClick;
             Dictionary<string, Key> atkKeys = new Dictionary<string, Key>(ProfileSingleton.GetCurrent().AtkDefMode.atkKeys);
             Dictionary<string, Key> defKeys = new Dictionary<string, Key>(ProfileSingleton.GetCurrent().AtkDefMode.defKeys);
 
@@ -101,6 +103,12 @@ namespace _4RTools.Forms
             }            
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AtkDefMode);
 
+        }
+
+        private void ChkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            ProfileSingleton.GetCurrent().AtkDefMode.keySpammerWithClick = this.inSpammerClick.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AtkDefMode);
         }
 
         public void SetupInputs()

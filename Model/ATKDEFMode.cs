@@ -21,6 +21,7 @@ namespace _4RTools.Model
         public int ahkDelay { get; set; } = 10;
         public int switchDelay { get; set; } = 50;
         public Key keySpammer { get; set; }
+        public bool keySpammerWithClick { get; set; } = true;
         public Dictionary<string,Key> defKeys { get; set; } = new Dictionary<string,Key>();
         public Dictionary<string,Key> atkKeys { get; set; } = new Dictionary<string, Key>();
         private int PX_MOV = Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK;
@@ -56,16 +57,25 @@ namespace _4RTools.Model
                     Thread.Sleep(this.switchDelay);
                 }
 
-                while (Keyboard.IsKeyDown(keySpammer))                
+                if (this.keySpammerWithClick)
                 {
+                    while (Keyboard.IsKeyDown(keySpammer))
+                    {
 
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
-                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - PX_MOV, System.Windows.Forms.Cursor.Position.Y - PX_MOV);
-                    Thread.Sleep(1);
-                    System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + PX_MOV, System.Windows.Forms.Cursor.Position.Y + PX_MOV);
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
-                    Thread.Sleep(this.ahkDelay);
+                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                        Thread.Sleep(1);
+                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                        Thread.Sleep(this.ahkDelay);
+                    }
+                }
+                else
+                {
+                    while (Keyboard.IsKeyDown(keySpammer))
+                    {
+                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                        Thread.Sleep(this.ahkDelay);
+                    }
                 }
 
                 foreach (Key key in defKeys.Values)

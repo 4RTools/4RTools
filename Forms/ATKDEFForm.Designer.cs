@@ -58,10 +58,11 @@
             this.spammerDelay = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.panelSwitch = new System.Windows.Forms.Panel();
+            this.groupBoxATKxDEFConfig = new System.Windows.Forms.GroupBox();
             this.lblSwitchDelay = new System.Windows.Forms.Label();
             this.switchDelay = new System.Windows.Forms.NumericUpDown();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBoxATKxDEFConfig = new System.Windows.Forms.GroupBox();
+            this.inSpammerClick = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -74,8 +75,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spammerDelay)).BeginInit();
             this.panelSwitch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).BeginInit();
             this.groupBoxATKxDEFConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDef
@@ -286,7 +287,7 @@
             // 
             // inSpammerKey
             // 
-            this.inSpammerKey.Location = new System.Drawing.Point(101, 38);
+            this.inSpammerKey.Location = new System.Drawing.Point(101, 24);
             this.inSpammerKey.Name = "inSpammerKey";
             this.inSpammerKey.Size = new System.Drawing.Size(60, 20);
             this.inSpammerKey.TabIndex = 23;
@@ -295,7 +296,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 41);
+            this.label2.Location = new System.Drawing.Point(14, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 24;
@@ -303,7 +304,7 @@
             // 
             // spammerDelay
             // 
-            this.spammerDelay.Location = new System.Drawing.Point(101, 67);
+            this.spammerDelay.Location = new System.Drawing.Point(101, 56);
             this.spammerDelay.Maximum = new decimal(new int[] {
             500,
             0,
@@ -317,7 +318,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 71);
+            this.label3.Location = new System.Drawing.Point(14, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 26;
@@ -355,31 +356,9 @@
             this.panelSwitch.Size = new System.Drawing.Size(517, 253);
             this.panelSwitch.TabIndex = 27;
             // 
-            // lblSwitchDelay
-            // 
-            this.lblSwitchDelay.AutoSize = true;
-            this.lblSwitchDelay.Location = new System.Drawing.Point(26, 100);
-            this.lblSwitchDelay.Name = "lblSwitchDelay";
-            this.lblSwitchDelay.Size = new System.Drawing.Size(69, 13);
-            this.lblSwitchDelay.TabIndex = 28;
-            this.lblSwitchDelay.Text = "Switch Delay";
-            this.toolTip1.SetToolTip(this.lblSwitchDelay, "Delay between each item change.");
-            // 
-            // switchDelay
-            // 
-            this.switchDelay.Location = new System.Drawing.Point(101, 96);
-            this.switchDelay.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.switchDelay.Name = "switchDelay";
-            this.switchDelay.Size = new System.Drawing.Size(60, 20);
-            this.switchDelay.TabIndex = 27;
-            this.switchDelay.ValueChanged += new System.EventHandler(this.onDelayChange);
-            // 
             // groupBoxATKxDEFConfig
             // 
+            this.groupBoxATKxDEFConfig.Controls.Add(this.inSpammerClick);
             this.groupBoxATKxDEFConfig.Controls.Add(this.lblSwitchDelay);
             this.groupBoxATKxDEFConfig.Controls.Add(this.inSpammerKey);
             this.groupBoxATKxDEFConfig.Controls.Add(this.switchDelay);
@@ -392,6 +371,42 @@
             this.groupBoxATKxDEFConfig.TabIndex = 33;
             this.groupBoxATKxDEFConfig.TabStop = false;
             this.groupBoxATKxDEFConfig.Text = "Configuration";
+            // 
+            // lblSwitchDelay
+            // 
+            this.lblSwitchDelay.AutoSize = true;
+            this.lblSwitchDelay.Location = new System.Drawing.Point(17, 92);
+            this.lblSwitchDelay.Name = "lblSwitchDelay";
+            this.lblSwitchDelay.Size = new System.Drawing.Size(69, 13);
+            this.lblSwitchDelay.TabIndex = 28;
+            this.lblSwitchDelay.Text = "Switch Delay";
+            this.toolTip1.SetToolTip(this.lblSwitchDelay, "Delay between each item change.");
+            // 
+            // switchDelay
+            // 
+            this.switchDelay.Location = new System.Drawing.Point(101, 88);
+            this.switchDelay.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.switchDelay.Name = "switchDelay";
+            this.switchDelay.Size = new System.Drawing.Size(60, 20);
+            this.switchDelay.TabIndex = 27;
+            this.switchDelay.ValueChanged += new System.EventHandler(this.onDelayChange);
+            // 
+            // inSpammerClick
+            // 
+            this.inSpammerClick.AutoSize = true;
+            this.inSpammerClick.Checked = true;
+            this.inSpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.inSpammerClick.Location = new System.Drawing.Point(17, 120);
+            this.inSpammerClick.Name = "inSpammerClick";
+            this.inSpammerClick.Size = new System.Drawing.Size(107, 17);
+            this.inSpammerClick.TabIndex = 29;
+            this.inSpammerClick.Text = "With mouse click";
+            this.inSpammerClick.UseVisualStyleBackColor = true;
+            this.inSpammerClick.CheckedChanged += new System.EventHandler(this.ChkBox_CheckedChanged);
             // 
             // ATKDEFForm
             // 
@@ -416,9 +431,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.spammerDelay)).EndInit();
             this.panelSwitch.ResumeLayout(false);
             this.panelSwitch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).EndInit();
             this.groupBoxATKxDEFConfig.ResumeLayout(false);
             this.groupBoxATKxDEFConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -457,5 +472,6 @@
         private System.Windows.Forms.Label lblSwitchDelay;
         private System.Windows.Forms.NumericUpDown switchDelay;
         private System.Windows.Forms.GroupBox groupBoxATKxDEFConfig;
+        private System.Windows.Forms.CheckBox inSpammerClick;
     }
 }
