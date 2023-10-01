@@ -768,5 +768,11 @@
     "site": "https://www.roglobalgrounds.com/",
     "hpAddress": "00F45E54",
     "nameAddress": "00F48798"
+  },
+  {
+    "name": "Battle For Prontera",
+    "site": "https://battleforprontera.arknesia.com",
+    "hpAddress": "01138DDC",
+    "nameAddress": "0113B7B0"
   }
 ]
