@@ -768,5 +768,11 @@
     "site": "https://www.roglobalgrounds.com/",
     "hpAddress": "00F45E54",
     "nameAddress": "00F48798"
+  },
+  {
+    "name": "PrimeRO",
+    "site": "https://playragnaprime.com.br",
+    "hpAddress": "0x01145854",
+    "nameAddress": "0x01148228"
   }
 ]
