@@ -549,7 +549,33 @@ namespace _4RTools.Resources._4RTools {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+        /// <summary>
+        ///   elvesro
+        /// </summary>
+        internal static System.Drawing.Bitmap PROTECTWEAPON {
+            get {
+                object obj = ResourceManager.GetObject("PROTECTWEAPON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap PROTECTSHIELD {
+            get {
+                object obj = ResourceManager.GetObject("PROTECTSHIELD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap PROTECTARMOR {
+            get {
+                object obj = ResourceManager.GetObject("PROTECTARMOR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap PROTECTHELM {
+            get {
+                object obj = ResourceManager.GetObject("PROTECTHELM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
