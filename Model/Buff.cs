@@ -300,10 +300,10 @@ namespace _4RTools.Model
                 new Buff("Cat Can", EffectStatusIDs.OVERLAPEXPUP, Resources._4RTools.Icons.cat_can),
                 new Buff("Bubble Gum", EffectStatusIDs.CASH_RECEIVEITEM, Resources._4RTools.Icons.he_bubble_gum),
                 new Buff("Battle Manual", EffectStatusIDs.CASH_PLUSEXP, Resources._4RTools.Icons.combat_manual),
-				new Buff("Shield Protection", EffectStatusIDs.PROTECTSHIELD, Resources._4RTools.Icons.PROTECTSHIELD),
-				new Buff("Weapon Protection", EffectStatusIDs.PROTECTWEAPON, Resources._4RTools.Icons.PROTECTWEAPON),
-				new Buff("Amor Protection", EffectStatusIDs.PROTECTARMOR, Resources._4RTools.Icons.PROTECTARMOR),
-				new Buff("Helm Protection", EffectStatusIDs.PROTECTHELM, Resources._4RTools.Icons.PROTECTHELM)
+		new Buff("Shield Protection", EffectStatusIDs.PROTECTSHIELD, Resources._4RTools.Icons.PROTECTSHIELD),
+		new Buff("Weapon Protection", EffectStatusIDs.PROTECTWEAPON, Resources._4RTools.Icons.PROTECTWEAPON),
+		new Buff("Amor Protection", EffectStatusIDs.PROTECTARMOR, Resources._4RTools.Icons.PROTECTARMOR),
+		new Buff("Helm Protection", EffectStatusIDs.PROTECTHELM, Resources._4RTools.Icons.PROTECTHELM)
             };
 
             return skills;
