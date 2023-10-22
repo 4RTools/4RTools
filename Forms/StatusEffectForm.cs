@@ -17,7 +17,9 @@ namespace _4RTools.Forms
             this.txtStatusKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             this.txtStatusKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.txtStatusKey.TextChanged += new EventHandler(onStatusKeyChange);
-
+            this.txtNewStatusKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            this.txtNewStatusKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            this.txtNewStatusKey.TextChanged += new EventHandler(on3RDStatusKeyChange);
         }
 
         public void Update(ISubject subject)
@@ -52,6 +54,18 @@ namespace _4RTools.Forms
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.HALLUCINATION, k);
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CURSE, k);
 
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
+        }
+
+        private void on3RDStatusKeyChange(object sender, EventArgs e)
+        {
+            Key k = (Key)Enum.Parse(typeof(Key), this.txtNewStatusKey.Text.ToString());
+
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.PROPERTYUNDEAD, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.BLOODING, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.MISTY_FROST, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CRITICALWOUND, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.OVERHEAT, k);
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
         }
     }
