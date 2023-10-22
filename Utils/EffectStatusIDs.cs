@@ -124,6 +124,7 @@ namespace _4RTools.Utils
         FOOD_DEX = 244,
         FOOD_INT = 245,
         FOOD_LUK = 246,
+        FOOD_VIT_CASH = 273,
 
         REGENERATION_POTION = 292,
 

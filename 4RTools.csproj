@@ -610,6 +610,7 @@
     <None Include="assets\etc\flags\flag_br.png" />
     <None Include="assets\images\fury.png" />
     <None Include="assets\images\blessing_of_tyr.png" />
+    <None Include="assets\images\cash_food.gif" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
