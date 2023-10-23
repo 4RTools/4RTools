@@ -239,7 +239,7 @@ namespace _4RTools.Forms
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(50, 220);
+            form.Location = new Point(20, 220);
             form.MdiParent = this;
             form.Show();
         }

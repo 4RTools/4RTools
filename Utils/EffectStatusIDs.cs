@@ -5,6 +5,7 @@ namespace _4RTools.Utils
     [Flags]
     public enum EffectStatusIDs : uint
     {
+        //Status
         POISON = 883,
         SILENCE = 885,
         BLIND = 887,
@@ -14,6 +15,11 @@ namespace _4RTools.Utils
         HALLUCINATIONWALK = 334,
         HALLUCINATION = 34,
         PROVOKE = 0,
+        PROPERTYUNDEAD = 97,
+        BLOODING = 124,
+        MISTY_FROST = 1141,
+        CRITICALWOUND = 286,
+        OVERHEAT = 373,
 
         ENDURE = 1,
         PAINKILLER = 1,
@@ -116,17 +122,19 @@ namespace _4RTools.Utils
         FULL_SWINGK = 486,
         MANA_PLUS= 487,
 
-        //ASPD POTIONS
+        //POTIONS
         CONCENTRATION_POTION = 37,
         AWAKENING_POTION = 38,
         BERSERK_POTION = 39,
 
+        //FOODS
         FOOD_STR = 241,
         FOOD_AGI = 242,
         FOOD_VIT = 243,
         FOOD_DEX = 244,
         FOOD_INT = 245,
         FOOD_LUK = 246,
+        FOOD_VIT_CASH = 273,
 
         REGENERATION_POTION = 292,
 
@@ -156,14 +164,14 @@ namespace _4RTools.Utils
         INC_AGI = 12,
         BLESSING = 10,
 
-        //3th foods
+        //3RD foods
         STR_3RD_FOOD = 491,
         INT_3RD_FOOD = 492,
         VIT_3RD_FOOD = 493,
         DEX_3RD_FOOD = 494,
         AGI_3RD_FOOD = 495,
         LUK_3RD_FOOD = 496,
-        
+
         BASICHIT = 248,
 
         //Rune Knight Runes
