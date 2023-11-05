@@ -1,3 +1,6 @@
+// 20231104220357
+// https://storage.googleapis.com/4rtools/supported_servers.json
+
 [
   {
     "name": "rtales.bin",
@@ -732,7 +735,7 @@
     "name": "RagnaRestart",
     "site": "https://ragnarestart.com/",
     "hpAddress": "0x01138DDC",
-    "nameAddress": "0x01131ACC"
+    "nameAddress": "0x0113B7B0"
   },
   {
     "name": "Jogar",
@@ -770,9 +773,27 @@
     "nameAddress": "00F48798"
   },
   {
-    "name": "Battle For Prontera",
-    "site": "https://battleforprontera.arknesia.com",
-    "hpAddress": "01138DDC",
-    "nameAddress": "0113B7B0"
+    "name": "PRM",
+    "description": "A description for things",
+    "hpAddress": "0x01107BEC",
+    "nameAddress": "0x0110A5B0"
+  },
+  {
+    "name": "alfheim",
+    "site": "https://alfheimro.com/",
+    "hpAddress": "011D1A04",
+    "nameAddress": "011D43E8"
+  },
+  {
+    "name": "WarRO",
+    "description": "WarRO",
+    "hpAddress": "0x00E8F434",
+    "nameAddress": "0x00E91C00"
+  },
+  {
+    "name": "KriemRO",
+    "description": "KriemRO",
+    "hpAddress": "010DCE10",
+    "nameAddress": "010DF5D8"
   }
 ]
