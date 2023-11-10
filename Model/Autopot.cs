@@ -19,6 +19,7 @@ namespace _4RTools.Model
         public int hpPercent { get; set; }
         public Key spKey { get; set; }
         public int spPercent { get; set; }
+        public Key tiKey { get; set; }
         public int delay { get; set; } = 15;
         public int delayYgg { get; set; } = 50;
 
@@ -31,7 +32,7 @@ namespace _4RTools.Model
             this.actionName = actionName;
         }
 
-        public Autopot(Key hpKey, int hpPercent, int delay, Key spKey, int spPercent)
+        public Autopot(Key hpKey, int hpPercent, int delay, Key spKey, int spPercent, Key tiKey)
         {
             this.delay = delay;
 
@@ -42,6 +43,8 @@ namespace _4RTools.Model
             // SP
             this.spKey = spKey;
             this.spPercent = spPercent;
+
+            this.tiKey = tiKey;
         }
 
         public void Start()

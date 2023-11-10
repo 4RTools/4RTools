@@ -64,6 +64,7 @@ namespace _4RTools.Forms
             Key key = (Key)Enum.Parse(typeof(Key), txtHpKey.Text.ToString());
             this.autopot.hpKey = key;
             ProfileSingleton.SetConfiguration(this.autopot);
+            this.ActiveControl = null;
         }
 
         private void onSpTextChange(object sender, EventArgs e)
@@ -71,6 +72,7 @@ namespace _4RTools.Forms
             Key key = (Key)Enum.Parse(typeof(Key), txtSPKey.Text.ToString());
             this.autopot.spKey = key;
             ProfileSingleton.SetConfiguration(this.autopot);
+            this.ActiveControl = null;
         }
 
         private void txtAutopotDelayTextChanged(object sender, EventArgs e)

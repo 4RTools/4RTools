@@ -133,7 +133,8 @@ namespace _4RTools.Model
                 new Buff("Powerful Faith", EffectStatusIDs.POWERFUL_FAITH, Resources._4RTools.Icons.powerful_faith),
                 new Buff("Gentle Touch-Revitalize", EffectStatusIDs.GENTLETOUCH_REVITALIZE, Resources._4RTools.Icons.gentle_touch_revitalize),
                 new Buff("Gentle Touch-Convert", EffectStatusIDs.GENTLETOUCH_CHANGE, Resources._4RTools.Icons.gentle_touch_convert),
-                new Buff("Fury ", EffectStatusIDs.FURY, Resources._4RTools.Icons.fury)
+                new Buff("Fury", EffectStatusIDs.FURY, Resources._4RTools.Icons.fury),
+                new Buff("Impositio Manus", EffectStatusIDs.IMPOSITIO, Resources._4RTools.Icons.impositio_manus)
             };
 
             return skills;

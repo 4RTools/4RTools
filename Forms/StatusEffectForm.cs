@@ -55,6 +55,7 @@ namespace _4RTools.Forms
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CURSE, k);
 
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
+            this.ActiveControl = null;
         }
 
         private void on3RDStatusKeyChange(object sender, EventArgs e)
@@ -67,6 +68,7 @@ namespace _4RTools.Forms
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CRITICALWOUND, k);
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.OVERHEAT, k);
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
+            this.ActiveControl = null;
         }
     }
 }

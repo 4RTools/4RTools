@@ -21,8 +21,8 @@ namespace _4RTools.Utils
         CRITICALWOUND = 286,
         OVERHEAT = 373,
 
-        ENDURE = 1,
-        PAINKILLER = 1,
+        ENDURE = 315,
+        PAINKILLER = 577,
 
         SPEARQUICKEN = 68,
 
@@ -105,6 +105,7 @@ namespace _4RTools.Utils
         ADJUSTMENT = 209,
         ACCURACY = 210,
         FURY = 86,
+        IMPOSITIO = 15,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,

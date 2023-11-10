@@ -306,7 +306,7 @@
             // 
             this.spammerDelay.Location = new System.Drawing.Point(101, 56);
             this.spammerDelay.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -386,7 +386,7 @@
             // 
             this.switchDelay.Location = new System.Drawing.Point(101, 88);
             this.switchDelay.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});

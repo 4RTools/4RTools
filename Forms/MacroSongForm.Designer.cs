@@ -425,7 +425,7 @@
             // 
             this.delayMac1.Location = new System.Drawing.Point(41, 43);
             this.delayMac1.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -688,7 +688,7 @@
             // 
             this.delayMac2.Location = new System.Drawing.Point(41, 43);
             this.delayMac2.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -967,7 +967,7 @@
             // 
             this.delayMac3.Location = new System.Drawing.Point(41, 43);
             this.delayMac3.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -1238,7 +1238,7 @@
             // 
             this.delayMac4.Location = new System.Drawing.Point(41, 43);
             this.delayMac4.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});

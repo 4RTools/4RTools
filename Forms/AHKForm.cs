@@ -5,11 +5,13 @@ using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
 using System.Web;
+using System.Diagnostics.Tracing;
 
 namespace _4RTools.Forms
 {
     public partial class AHKForm : Form, IObserver
     {
+        private Autopot autopot;
 
         public AHKForm(Subject subject)
         {
@@ -26,6 +28,8 @@ namespace _4RTools.Forms
                     RemoveHandlers();
                     FormUtils.ResetForm(this);
                     SetLegendDefaultValues();
+                    this.txtTIKey.Text = "None";
+                    tiTextNone();
                     InitializeCheckAsThreeState();
 
                     RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.ahkMode];
@@ -50,6 +54,29 @@ namespace _4RTools.Forms
                     break;
             }
         }
+        private void onTiTextChange(object sender, EventArgs e)
+        {
+            Key key = (Key)Enum.Parse(typeof(Key), txtTIKey.Text.ToString());
+            try
+            {
+                ProfileSingleton.GetCurrent().AHK.tiMode = key;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+            }
+            catch { }
+            this.ActiveControl = null;
+        }
+
+        private void tiTextNone()
+        {
+            try
+            {
+                ProfileSingleton.GetCurrent().AHK.tiMode = Key.None;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AHK);
+            }
+            catch { }
+            this.ActiveControl = null;
+        }
+
 
         private void onCheckChange(object sender, EventArgs e)
         {
@@ -100,6 +127,10 @@ namespace _4RTools.Forms
 
         private void InitializeCheckAsThreeState()
         {
+            txtTIKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            txtTIKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            txtTIKey.TextChanged += new EventHandler(this.onTiTextChange);
+
             foreach (Control c in this.Controls)
                 if (c is CheckBox)
                 {

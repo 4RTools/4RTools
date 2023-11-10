@@ -92,6 +92,9 @@ namespace _4RTools.Forms
             this.cbDeactivated = new System.Windows.Forms.CheckBox();
             this.cbWithNoClick = new System.Windows.Forms.CheckBox();
             this.cbWithClick = new System.Windows.Forms.CheckBox();
+            this.txtTIKey = new System.Windows.Forms.TextBox();
+            this.txtTI = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtSpammerDelay)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -745,12 +748,41 @@ namespace _4RTools.Forms
             this.cbWithClick.Text = "With mouse click";
             this.cbWithClick.UseVisualStyleBackColor = true;
             // 
+            // txtTIKey
+            // 
+            this.txtTIKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtTIKey.Location = new System.Drawing.Point(426, 123);
+            this.txtTIKey.Name = "txtTIKey";
+            this.txtTIKey.Size = new System.Drawing.Size(47, 23);
+            this.txtTIKey.TabIndex = 45;
+            // 
+            // txtTI
+            // 
+            this.txtTI.AutoSize = true;
+            this.txtTI.Location = new System.Drawing.Point(477, 123);
+            this.txtTI.Name = "txtTI";
+            this.txtTI.Size = new System.Drawing.Size(69, 13);
+            this.txtTI.TabIndex = 46;
+            this.txtTI.Text = "Transfer Item";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(475, 136);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "(ALT + RClick)";
+            // 
             // AHKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(560, 270);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtTI);
+            this.Controls.Add(this.txtTIKey);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupAhkConfig);
             this.Controls.Add(this.chkS);
@@ -881,5 +913,8 @@ namespace _4RTools.Forms
         private PictureBox pictureBox1;
         private RadioButton ahkCompatibility;
         private GroupBox groupBox4;
+        private TextBox txtTIKey;
+        private Label txtTI;
+        private Label label2;
     }
 }
