@@ -42,20 +42,23 @@
             this.txtProfileName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtProfileName.ForeColor = System.Drawing.Color.White;
             this.txtProfileName.Location = new System.Drawing.Point(23, 29);
+            this.txtProfileName.Multiline = true;
             this.txtProfileName.Name = "txtProfileName";
-            this.txtProfileName.Size = new System.Drawing.Size(238, 20);
+            this.txtProfileName.Size = new System.Drawing.Size(238, 23);
             this.txtProfileName.TabIndex = 0;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(267, 29);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(78, 20);
+            this.btnSave.Size = new System.Drawing.Size(78, 23);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Create";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 

@@ -412,8 +412,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\4RTools\Icons.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\4RTools\ETCResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -502,7 +502,6 @@
     <None Include="assets\images\ms_parrying.gif" />
     <None Include="assets\images\nj_nen.gif" />
     <None Include="assets\images\nj_utsusemi.gif" />
-    <None Include="assets\images\octocat.png" />
     <None Include="assets\images\OTHILA.png" />
     <None Include="assets\images\pf_doublecasting.gif" />
     <None Include="assets\images\pf_memorize.gif" />
@@ -605,7 +604,21 @@
     <None Include="assets\images\fury.png" />
     <None Include="assets\images\blessing_of_tyr.png" />
     <None Include="assets\images\cash_food.gif" />
+    <Content Include="assets\images\ads_placeholder_clean.jpg" />
+    <Content Include="assets\images\cash_food.png" />
+    <Content Include="assets\images\ele_earth_converter.png" />
+    <Content Include="assets\images\ele_fire_converter.png" />
+    <Content Include="assets\images\ele_water_converter.png" />
+    <Content Include="assets\images\ele_wind_converter.png" />
     <Content Include="assets\images\impositio_manus.png" />
+    <Content Include="assets\images\octocat2.png" />
+    <Content Include="assets\images\tk_mild_earth.png" />
+    <Content Include="assets\images\tk_mild_fire.png" />
+    <Content Include="assets\images\tk_mild_ghost.png" />
+    <Content Include="assets\images\tk_mild_holy.png" />
+    <Content Include="assets\images\tk_mild_shadow.png" />
+    <Content Include="assets\images\tk_mild_water.png" />
+    <Content Include="assets\images\tk_mild_wind.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup>

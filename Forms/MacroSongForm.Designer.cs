@@ -261,7 +261,7 @@
             this.pictureBox8.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox8.Location = new System.Drawing.Point(330, 36);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox8.Size = new System.Drawing.Size(20, 40);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 287;
             this.pictureBox8.TabStop = false;
@@ -301,7 +301,7 @@
             this.pictureBox4.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox4.Location = new System.Drawing.Point(260, 36);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox4.Size = new System.Drawing.Size(20, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 283;
             this.pictureBox4.TabStop = false;
@@ -321,7 +321,7 @@
             this.pictureBox3.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox3.Location = new System.Drawing.Point(189, 36);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 281;
             this.pictureBox3.TabStop = false;
@@ -573,7 +573,7 @@
             this.pictureBox14.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox14.Location = new System.Drawing.Point(330, 36);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox14.Size = new System.Drawing.Size(20, 40);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox14.TabIndex = 302;
             this.pictureBox14.TabStop = false;
@@ -613,7 +613,7 @@
             this.pictureBox16.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox16.Location = new System.Drawing.Point(260, 36);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox16.Size = new System.Drawing.Size(20, 40);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox16.TabIndex = 298;
             this.pictureBox16.TabStop = false;
@@ -633,7 +633,7 @@
             this.pictureBox18.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox18.Location = new System.Drawing.Point(189, 36);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox18.Size = new System.Drawing.Size(20, 40);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox18.TabIndex = 296;
             this.pictureBox18.TabStop = false;
@@ -885,7 +885,7 @@
             this.pictureBox23.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox23.Location = new System.Drawing.Point(330, 36);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox23.Size = new System.Drawing.Size(20, 40);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox23.TabIndex = 317;
             this.pictureBox23.TabStop = false;
@@ -925,7 +925,7 @@
             this.pictureBox25.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox25.Location = new System.Drawing.Point(260, 36);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox25.Size = new System.Drawing.Size(20, 40);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox25.TabIndex = 313;
             this.pictureBox25.TabStop = false;
@@ -945,7 +945,7 @@
             this.pictureBox27.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox27.Location = new System.Drawing.Point(189, 36);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox27.Size = new System.Drawing.Size(20, 40);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox27.TabIndex = 311;
             this.pictureBox27.TabStop = false;
@@ -1197,7 +1197,7 @@
             this.pictureBox30.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox30.Location = new System.Drawing.Point(330, 36);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox30.Size = new System.Drawing.Size(20, 40);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox30.TabIndex = 337;
             this.pictureBox30.TabStop = false;
@@ -1237,7 +1237,7 @@
             this.pictureBox32.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox32.Location = new System.Drawing.Point(260, 36);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox32.Size = new System.Drawing.Size(20, 40);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox32.TabIndex = 333;
             this.pictureBox32.TabStop = false;
@@ -1257,7 +1257,7 @@
             this.pictureBox34.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox34.Location = new System.Drawing.Point(189, 36);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox34.Size = new System.Drawing.Size(20, 40);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox34.TabIndex = 331;
             this.pictureBox34.TabStop = false;

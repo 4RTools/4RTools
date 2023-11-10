@@ -189,10 +189,11 @@ namespace _4RTools.Forms
             // 
             // btnRefresh
             // 
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(201, 28);
+            this.btnRefresh.Location = new System.Drawing.Point(207, 28);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(19, 22);
             this.btnRefresh.TabIndex = 5;
@@ -202,6 +203,7 @@ namespace _4RTools.Forms
             // lblLinkDiscord
             // 
             this.lblLinkDiscord.AutoSize = true;
+            this.lblLinkDiscord.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.lblLinkDiscord.Location = new System.Drawing.Point(795, 16);
             this.lblLinkDiscord.Name = "lblLinkDiscord";
             this.lblLinkDiscord.Size = new System.Drawing.Size(92, 13);
@@ -213,6 +215,7 @@ namespace _4RTools.Forms
             // lblLinkGithub
             // 
             this.lblLinkGithub.AutoSize = true;
+            this.lblLinkGithub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.lblLinkGithub.Location = new System.Drawing.Point(70, 16);
             this.lblLinkGithub.Name = "lblLinkGithub";
             this.lblLinkGithub.Size = new System.Drawing.Size(74, 13);
@@ -279,6 +282,7 @@ namespace _4RTools.Forms
             // websiteLinkLabel
             // 
             this.websiteLinkLabel.AutoSize = true;
+            this.websiteLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.websiteLinkLabel.Location = new System.Drawing.Point(403, 16);
             this.websiteLinkLabel.Name = "websiteLinkLabel";
             this.websiteLinkLabel.Size = new System.Drawing.Size(91, 13);

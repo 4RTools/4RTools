@@ -118,62 +118,74 @@
             // discAd2
             // 
             this.discAd2.AutoSize = true;
+            this.discAd2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.discAd2.Location = new System.Drawing.Point(58, 522);
             this.discAd2.Name = "discAd2";
             this.discAd2.Size = new System.Drawing.Size(43, 13);
             this.discAd2.TabIndex = 11;
             this.discAd2.TabStop = true;
             this.discAd2.Text = "Discord";
+            this.discAd2.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
             // discAd1
             // 
             this.discAd1.AutoSize = true;
+            this.discAd1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.discAd1.Location = new System.Drawing.Point(59, 337);
             this.discAd1.Name = "discAd1";
             this.discAd1.Size = new System.Drawing.Size(43, 13);
             this.discAd1.TabIndex = 11;
             this.discAd1.TabStop = true;
             this.discAd1.Text = "Discord";
+            this.discAd1.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
             // discAd0
             // 
             this.discAd0.AutoSize = true;
+            this.discAd0.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.discAd0.Location = new System.Drawing.Point(56, 154);
             this.discAd0.Name = "discAd0";
             this.discAd0.Size = new System.Drawing.Size(43, 13);
             this.discAd0.TabIndex = 11;
             this.discAd0.TabStop = true;
             this.discAd0.Text = "Discord";
+            this.discAd0.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
             // siteAd2
             // 
             this.siteAd2.AutoSize = true;
+            this.siteAd2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.siteAd2.Location = new System.Drawing.Point(7, 522);
             this.siteAd2.Name = "siteAd2";
             this.siteAd2.Size = new System.Drawing.Size(46, 13);
             this.siteAd2.TabIndex = 11;
             this.siteAd2.TabStop = true;
             this.siteAd2.Text = "Website";
+            this.siteAd2.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
             // siteAd1
             // 
             this.siteAd1.AutoSize = true;
+            this.siteAd1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.siteAd1.Location = new System.Drawing.Point(8, 337);
             this.siteAd1.Name = "siteAd1";
             this.siteAd1.Size = new System.Drawing.Size(46, 13);
             this.siteAd1.TabIndex = 11;
             this.siteAd1.TabStop = true;
             this.siteAd1.Text = "Website";
+            this.siteAd1.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
             // siteAd0
             // 
             this.siteAd0.AutoSize = true;
+            this.siteAd0.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
             this.siteAd0.Location = new System.Drawing.Point(5, 154);
             this.siteAd0.Name = "siteAd0";
             this.siteAd0.Size = new System.Drawing.Size(46, 13);
             this.siteAd0.TabIndex = 11;
             this.siteAd0.TabStop = true;
             this.siteAd0.Text = "Website";
+            this.siteAd0.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
             // panel4
             // 

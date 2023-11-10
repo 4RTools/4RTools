@@ -200,7 +200,7 @@
     <value>..\..\assets\images\cart_boost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cash_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\cash_food.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\cash_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat_can" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\cat_can.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -257,16 +257,16 @@
     <value>..\..\assets\images\earhproof.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ele_earth_converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\ele_earth_converter.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\ele_earth_converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ele_fire_converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\ele_fire_converter.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\ele_fire_converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ele_water_converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\ele_water_converter.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\ele_water_converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ele_wind_converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\ele_wind_converter.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\ele_wind_converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="enchant_blade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\enchant_blade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -524,25 +524,25 @@
     <value>..\..\assets\images\tk_earth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk_mild_earth" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\tk_mild_earth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\tk_mild_earth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk_mild_fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\tk_mild_fire.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\tk_mild_fire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk_mild_ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\tk_mild_ghost.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\tk_mild_ghost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk_mild_holy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\tk_mild_holy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\tk_mild_holy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk_mild_shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\tk_mild_shadow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\tk_mild_shadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk_mild_water" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\tk_mild_water.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\tk_mild_water.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk_mild_wind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\assets\images\tk_mild_wind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\assets\images\tk_mild_wind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tumbling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\tumbling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

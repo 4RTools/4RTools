@@ -808,6 +808,8 @@ namespace _4RTools.Forms
             // 
             // txtTIKey
             // 
+            this.txtTIKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtTIKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTIKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtTIKey.Location = new System.Drawing.Point(426, 123);
             this.txtTIKey.Name = "txtTIKey";
