@@ -193,6 +193,7 @@
             // panelMacro1
             // 
             this.panelMacro1.AutoScroll = true;
+            this.panelMacro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.panelMacro1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMacro1.Controls.Add(this.panel1);
             this.panelMacro1.Controls.Add(this.pictureBox9);
@@ -221,6 +222,7 @@
             this.panelMacro1.Controls.Add(this.label4);
             this.panelMacro1.Controls.Add(this.label5);
             this.panelMacro1.Controls.Add(this.label6);
+            this.panelMacro1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.panelMacro1.Location = new System.Drawing.Point(7, 16);
             this.panelMacro1.Name = "panelMacro1";
             this.panelMacro1.Size = new System.Drawing.Size(528, 117);
@@ -259,13 +261,16 @@
             this.pictureBox8.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox8.Location = new System.Drawing.Point(330, 36);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox8.Size = new System.Drawing.Size(20, 40);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 287;
             this.pictureBox8.TabStop = false;
             // 
             // in8mac1
             // 
+            this.in8mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in8mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in8mac1.ForeColor = System.Drawing.Color.White;
             this.in8mac1.Location = new System.Drawing.Point(353, 65);
             this.in8mac1.Name = "in8mac1";
             this.in8mac1.Size = new System.Drawing.Size(47, 20);
@@ -273,6 +278,9 @@
             // 
             // in7mac1
             // 
+            this.in7mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac1.ForeColor = System.Drawing.Color.White;
             this.in7mac1.Location = new System.Drawing.Point(353, 30);
             this.in7mac1.Name = "in7mac1";
             this.in7mac1.Size = new System.Drawing.Size(47, 20);
@@ -293,7 +301,7 @@
             this.pictureBox4.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox4.Location = new System.Drawing.Point(260, 36);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox4.Size = new System.Drawing.Size(20, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 283;
             this.pictureBox4.TabStop = false;
@@ -313,7 +321,7 @@
             this.pictureBox3.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox3.Location = new System.Drawing.Point(189, 36);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 281;
             this.pictureBox3.TabStop = false;
@@ -338,6 +346,9 @@
             // 
             // inInstrumentMacro1
             // 
+            this.inInstrumentMacro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inInstrumentMacro1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inInstrumentMacro1.ForeColor = System.Drawing.Color.White;
             this.inInstrumentMacro1.Location = new System.Drawing.Point(465, 63);
             this.inInstrumentMacro1.Name = "inInstrumentMacro1";
             this.inInstrumentMacro1.Size = new System.Drawing.Size(47, 20);
@@ -356,6 +367,9 @@
             // 
             // inDaggerMacro1
             // 
+            this.inDaggerMacro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDaggerMacro1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDaggerMacro1.ForeColor = System.Drawing.Color.White;
             this.inDaggerMacro1.Location = new System.Drawing.Point(463, 32);
             this.inDaggerMacro1.Name = "inDaggerMacro1";
             this.inDaggerMacro1.Size = new System.Drawing.Size(47, 20);
@@ -364,15 +378,21 @@
             // 
             // btnResMac1
             // 
+            this.btnResMac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnResMac1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResMac1.ForeColor = System.Drawing.Color.White;
             this.btnResMac1.Location = new System.Drawing.Point(32, 69);
             this.btnResMac1.Name = "btnResMac1";
             this.btnResMac1.Size = new System.Drawing.Size(62, 23);
             this.btnResMac1.TabIndex = 210;
             this.btnResMac1.Text = "Reset";
-            this.btnResMac1.UseVisualStyleBackColor = true;
+            this.btnResMac1.UseVisualStyleBackColor = false;
             // 
             // in6mac1
             // 
+            this.in6mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac1.ForeColor = System.Drawing.Color.White;
             this.in6mac1.Location = new System.Drawing.Point(282, 65);
             this.in6mac1.Name = "in6mac1";
             this.in6mac1.Size = new System.Drawing.Size(47, 20);
@@ -380,6 +400,9 @@
             // 
             // in5mac1
             // 
+            this.in5mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac1.ForeColor = System.Drawing.Color.White;
             this.in5mac1.Location = new System.Drawing.Point(282, 29);
             this.in5mac1.Name = "in5mac1";
             this.in5mac1.Size = new System.Drawing.Size(47, 20);
@@ -387,6 +410,9 @@
             // 
             // in4mac1
             // 
+            this.in4mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac1.ForeColor = System.Drawing.Color.White;
             this.in4mac1.Location = new System.Drawing.Point(212, 65);
             this.in4mac1.Name = "in4mac1";
             this.in4mac1.Size = new System.Drawing.Size(47, 20);
@@ -394,6 +420,9 @@
             // 
             // in3mac1
             // 
+            this.in3mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac1.ForeColor = System.Drawing.Color.White;
             this.in3mac1.Location = new System.Drawing.Point(212, 29);
             this.in3mac1.Name = "in3mac1";
             this.in3mac1.Size = new System.Drawing.Size(47, 20);
@@ -401,6 +430,9 @@
             // 
             // in2mac1
             // 
+            this.in2mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac1.ForeColor = System.Drawing.Color.White;
             this.in2mac1.Location = new System.Drawing.Point(140, 65);
             this.in2mac1.Name = "in2mac1";
             this.in2mac1.Size = new System.Drawing.Size(47, 20);
@@ -408,6 +440,9 @@
             // 
             // in1mac1
             // 
+            this.in1mac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac1.ForeColor = System.Drawing.Color.White;
             this.in1mac1.Location = new System.Drawing.Point(140, 29);
             this.in1mac1.Name = "in1mac1";
             this.in1mac1.Size = new System.Drawing.Size(47, 20);
@@ -415,6 +450,9 @@
             // 
             // inTriggerMacro1
             // 
+            this.inTriggerMacro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inTriggerMacro1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inTriggerMacro1.ForeColor = System.Drawing.Color.White;
             this.inTriggerMacro1.Location = new System.Drawing.Point(41, 14);
             this.inTriggerMacro1.Name = "inTriggerMacro1";
             this.inTriggerMacro1.Size = new System.Drawing.Size(47, 20);
@@ -423,9 +461,12 @@
             // 
             // delayMac1
             // 
+            this.delayMac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.delayMac1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.delayMac1.ForeColor = System.Drawing.Color.White;
             this.delayMac1.Location = new System.Drawing.Point(41, 43);
             this.delayMac1.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -464,6 +505,7 @@
             // panelMacro2
             // 
             this.panelMacro2.AutoScroll = true;
+            this.panelMacro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.panelMacro2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMacro2.Controls.Add(this.panel2);
             this.panelMacro2.Controls.Add(this.pictureBox12);
@@ -492,6 +534,7 @@
             this.panelMacro2.Controls.Add(this.label1);
             this.panelMacro2.Controls.Add(this.label2);
             this.panelMacro2.Controls.Add(this.label3);
+            this.panelMacro2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.panelMacro2.Location = new System.Drawing.Point(7, 141);
             this.panelMacro2.Name = "panelMacro2";
             this.panelMacro2.Size = new System.Drawing.Size(528, 117);
@@ -530,13 +573,16 @@
             this.pictureBox14.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox14.Location = new System.Drawing.Point(330, 36);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox14.Size = new System.Drawing.Size(20, 40);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox14.TabIndex = 302;
             this.pictureBox14.TabStop = false;
             // 
             // in8mac2
             // 
+            this.in8mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in8mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in8mac2.ForeColor = System.Drawing.Color.White;
             this.in8mac2.Location = new System.Drawing.Point(353, 65);
             this.in8mac2.Name = "in8mac2";
             this.in8mac2.Size = new System.Drawing.Size(47, 20);
@@ -544,6 +590,9 @@
             // 
             // in7mac2
             // 
+            this.in7mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac2.ForeColor = System.Drawing.Color.White;
             this.in7mac2.Location = new System.Drawing.Point(353, 30);
             this.in7mac2.Name = "in7mac2";
             this.in7mac2.Size = new System.Drawing.Size(47, 20);
@@ -564,7 +613,7 @@
             this.pictureBox16.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox16.Location = new System.Drawing.Point(260, 36);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox16.Size = new System.Drawing.Size(20, 40);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox16.TabIndex = 298;
             this.pictureBox16.TabStop = false;
@@ -584,13 +633,16 @@
             this.pictureBox18.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox18.Location = new System.Drawing.Point(189, 36);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox18.Size = new System.Drawing.Size(20, 40);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox18.TabIndex = 296;
             this.pictureBox18.TabStop = false;
             // 
             // in6mac2
             // 
+            this.in6mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac2.ForeColor = System.Drawing.Color.White;
             this.in6mac2.Location = new System.Drawing.Point(282, 65);
             this.in6mac2.Name = "in6mac2";
             this.in6mac2.Size = new System.Drawing.Size(47, 20);
@@ -598,6 +650,9 @@
             // 
             // in5mac2
             // 
+            this.in5mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac2.ForeColor = System.Drawing.Color.White;
             this.in5mac2.Location = new System.Drawing.Point(282, 29);
             this.in5mac2.Name = "in5mac2";
             this.in5mac2.Size = new System.Drawing.Size(47, 20);
@@ -605,6 +660,9 @@
             // 
             // in4mac2
             // 
+            this.in4mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac2.ForeColor = System.Drawing.Color.White;
             this.in4mac2.Location = new System.Drawing.Point(212, 65);
             this.in4mac2.Name = "in4mac2";
             this.in4mac2.Size = new System.Drawing.Size(47, 20);
@@ -612,6 +670,9 @@
             // 
             // in3mac2
             // 
+            this.in3mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac2.ForeColor = System.Drawing.Color.White;
             this.in3mac2.Location = new System.Drawing.Point(212, 29);
             this.in3mac2.Name = "in3mac2";
             this.in3mac2.Size = new System.Drawing.Size(47, 20);
@@ -619,6 +680,9 @@
             // 
             // in2mac2
             // 
+            this.in2mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac2.ForeColor = System.Drawing.Color.White;
             this.in2mac2.Location = new System.Drawing.Point(140, 65);
             this.in2mac2.Name = "in2mac2";
             this.in2mac2.Size = new System.Drawing.Size(47, 20);
@@ -626,6 +690,9 @@
             // 
             // in1mac2
             // 
+            this.in1mac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac2.ForeColor = System.Drawing.Color.White;
             this.in1mac2.Location = new System.Drawing.Point(140, 29);
             this.in1mac2.Name = "in1mac2";
             this.in1mac2.Size = new System.Drawing.Size(47, 20);
@@ -651,15 +718,21 @@
             // 
             // btnResMac2
             // 
+            this.btnResMac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnResMac2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResMac2.ForeColor = System.Drawing.Color.White;
             this.btnResMac2.Location = new System.Drawing.Point(32, 69);
             this.btnResMac2.Name = "btnResMac2";
             this.btnResMac2.Size = new System.Drawing.Size(62, 23);
             this.btnResMac2.TabIndex = 209;
             this.btnResMac2.Text = "Reset";
-            this.btnResMac2.UseVisualStyleBackColor = true;
+            this.btnResMac2.UseVisualStyleBackColor = false;
             // 
             // inInstrumentMacro2
             // 
+            this.inInstrumentMacro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inInstrumentMacro2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inInstrumentMacro2.ForeColor = System.Drawing.Color.White;
             this.inInstrumentMacro2.Location = new System.Drawing.Point(465, 65);
             this.inInstrumentMacro2.Name = "inInstrumentMacro2";
             this.inInstrumentMacro2.Size = new System.Drawing.Size(47, 20);
@@ -668,6 +741,9 @@
             // 
             // inTriggerMacro2
             // 
+            this.inTriggerMacro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inTriggerMacro2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inTriggerMacro2.ForeColor = System.Drawing.Color.White;
             this.inTriggerMacro2.Location = new System.Drawing.Point(41, 14);
             this.inTriggerMacro2.Name = "inTriggerMacro2";
             this.inTriggerMacro2.Size = new System.Drawing.Size(47, 20);
@@ -686,9 +762,12 @@
             // 
             // delayMac2
             // 
+            this.delayMac2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.delayMac2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.delayMac2.ForeColor = System.Drawing.Color.White;
             this.delayMac2.Location = new System.Drawing.Point(41, 43);
             this.delayMac2.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -699,6 +778,9 @@
             // 
             // inDaggerMacro2
             // 
+            this.inDaggerMacro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDaggerMacro2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDaggerMacro2.ForeColor = System.Drawing.Color.White;
             this.inDaggerMacro2.Location = new System.Drawing.Point(463, 34);
             this.inDaggerMacro2.Name = "inDaggerMacro2";
             this.inDaggerMacro2.Size = new System.Drawing.Size(47, 20);
@@ -735,6 +817,7 @@
             // panelMacro3
             // 
             this.panelMacro3.AutoScroll = true;
+            this.panelMacro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.panelMacro3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMacro3.Controls.Add(this.panel5);
             this.panelMacro3.Controls.Add(this.pictureBox21);
@@ -763,6 +846,7 @@
             this.panelMacro3.Controls.Add(this.label7);
             this.panelMacro3.Controls.Add(this.label8);
             this.panelMacro3.Controls.Add(this.label9);
+            this.panelMacro3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.panelMacro3.Location = new System.Drawing.Point(7, 266);
             this.panelMacro3.Name = "panelMacro3";
             this.panelMacro3.Size = new System.Drawing.Size(528, 117);
@@ -801,13 +885,16 @@
             this.pictureBox23.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox23.Location = new System.Drawing.Point(330, 36);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox23.Size = new System.Drawing.Size(20, 40);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox23.TabIndex = 317;
             this.pictureBox23.TabStop = false;
             // 
             // in8mac3
             // 
+            this.in8mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in8mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in8mac3.ForeColor = System.Drawing.Color.White;
             this.in8mac3.Location = new System.Drawing.Point(353, 65);
             this.in8mac3.Name = "in8mac3";
             this.in8mac3.Size = new System.Drawing.Size(47, 20);
@@ -815,6 +902,9 @@
             // 
             // in7mac3
             // 
+            this.in7mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac3.ForeColor = System.Drawing.Color.White;
             this.in7mac3.Location = new System.Drawing.Point(353, 30);
             this.in7mac3.Name = "in7mac3";
             this.in7mac3.Size = new System.Drawing.Size(47, 20);
@@ -835,7 +925,7 @@
             this.pictureBox25.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox25.Location = new System.Drawing.Point(260, 36);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox25.Size = new System.Drawing.Size(20, 40);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox25.TabIndex = 313;
             this.pictureBox25.TabStop = false;
@@ -855,13 +945,16 @@
             this.pictureBox27.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox27.Location = new System.Drawing.Point(189, 36);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox27.Size = new System.Drawing.Size(20, 40);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox27.TabIndex = 311;
             this.pictureBox27.TabStop = false;
             // 
             // in6mac3
             // 
+            this.in6mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac3.ForeColor = System.Drawing.Color.White;
             this.in6mac3.Location = new System.Drawing.Point(282, 65);
             this.in6mac3.Name = "in6mac3";
             this.in6mac3.Size = new System.Drawing.Size(47, 20);
@@ -869,6 +962,9 @@
             // 
             // in5mac3
             // 
+            this.in5mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac3.ForeColor = System.Drawing.Color.White;
             this.in5mac3.Location = new System.Drawing.Point(282, 29);
             this.in5mac3.Name = "in5mac3";
             this.in5mac3.Size = new System.Drawing.Size(47, 20);
@@ -876,6 +972,9 @@
             // 
             // in4mac3
             // 
+            this.in4mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac3.ForeColor = System.Drawing.Color.White;
             this.in4mac3.Location = new System.Drawing.Point(212, 65);
             this.in4mac3.Name = "in4mac3";
             this.in4mac3.Size = new System.Drawing.Size(47, 20);
@@ -883,6 +982,9 @@
             // 
             // in3mac3
             // 
+            this.in3mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac3.ForeColor = System.Drawing.Color.White;
             this.in3mac3.Location = new System.Drawing.Point(212, 29);
             this.in3mac3.Name = "in3mac3";
             this.in3mac3.Size = new System.Drawing.Size(47, 20);
@@ -890,6 +992,9 @@
             // 
             // in2mac3
             // 
+            this.in2mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac3.ForeColor = System.Drawing.Color.White;
             this.in2mac3.Location = new System.Drawing.Point(140, 65);
             this.in2mac3.Name = "in2mac3";
             this.in2mac3.Size = new System.Drawing.Size(47, 20);
@@ -897,6 +1002,9 @@
             // 
             // in1mac3
             // 
+            this.in1mac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac3.ForeColor = System.Drawing.Color.White;
             this.in1mac3.Location = new System.Drawing.Point(140, 29);
             this.in1mac3.Name = "in1mac3";
             this.in1mac3.Size = new System.Drawing.Size(47, 20);
@@ -922,6 +1030,9 @@
             // 
             // inInstrumentMacro3
             // 
+            this.inInstrumentMacro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inInstrumentMacro3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inInstrumentMacro3.ForeColor = System.Drawing.Color.White;
             this.inInstrumentMacro3.Location = new System.Drawing.Point(465, 62);
             this.inInstrumentMacro3.Name = "inInstrumentMacro3";
             this.inInstrumentMacro3.Size = new System.Drawing.Size(47, 20);
@@ -940,6 +1051,9 @@
             // 
             // inDaggerMacro3
             // 
+            this.inDaggerMacro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDaggerMacro3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDaggerMacro3.ForeColor = System.Drawing.Color.White;
             this.inDaggerMacro3.Location = new System.Drawing.Point(463, 31);
             this.inDaggerMacro3.Name = "inDaggerMacro3";
             this.inDaggerMacro3.Size = new System.Drawing.Size(47, 20);
@@ -948,15 +1062,21 @@
             // 
             // btnResMac3
             // 
+            this.btnResMac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnResMac3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResMac3.ForeColor = System.Drawing.Color.White;
             this.btnResMac3.Location = new System.Drawing.Point(32, 69);
             this.btnResMac3.Name = "btnResMac3";
             this.btnResMac3.Size = new System.Drawing.Size(62, 23);
             this.btnResMac3.TabIndex = 208;
             this.btnResMac3.Text = "Reset";
-            this.btnResMac3.UseVisualStyleBackColor = true;
+            this.btnResMac3.UseVisualStyleBackColor = false;
             // 
             // inTriggerMacro3
             // 
+            this.inTriggerMacro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inTriggerMacro3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inTriggerMacro3.ForeColor = System.Drawing.Color.White;
             this.inTriggerMacro3.Location = new System.Drawing.Point(41, 14);
             this.inTriggerMacro3.Name = "inTriggerMacro3";
             this.inTriggerMacro3.Size = new System.Drawing.Size(47, 20);
@@ -965,9 +1085,12 @@
             // 
             // delayMac3
             // 
+            this.delayMac3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.delayMac3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.delayMac3.ForeColor = System.Drawing.Color.White;
             this.delayMac3.Location = new System.Drawing.Point(41, 43);
             this.delayMac3.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -1006,6 +1129,7 @@
             // panelMacro4
             // 
             this.panelMacro4.AutoScroll = true;
+            this.panelMacro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.panelMacro4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMacro4.Controls.Add(this.panel7);
             this.panelMacro4.Controls.Add(this.pictureBox28);
@@ -1034,6 +1158,7 @@
             this.panelMacro4.Controls.Add(this.label10);
             this.panelMacro4.Controls.Add(this.label11);
             this.panelMacro4.Controls.Add(this.label12);
+            this.panelMacro4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.panelMacro4.Location = new System.Drawing.Point(7, 391);
             this.panelMacro4.Name = "panelMacro4";
             this.panelMacro4.Size = new System.Drawing.Size(528, 117);
@@ -1072,13 +1197,16 @@
             this.pictureBox30.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox30.Location = new System.Drawing.Point(330, 36);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox30.Size = new System.Drawing.Size(20, 40);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox30.TabIndex = 337;
             this.pictureBox30.TabStop = false;
             // 
             // in8mac4
             // 
+            this.in8mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in8mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in8mac4.ForeColor = System.Drawing.Color.White;
             this.in8mac4.Location = new System.Drawing.Point(353, 65);
             this.in8mac4.Name = "in8mac4";
             this.in8mac4.Size = new System.Drawing.Size(47, 20);
@@ -1086,6 +1214,9 @@
             // 
             // in7mac4
             // 
+            this.in7mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac4.ForeColor = System.Drawing.Color.White;
             this.in7mac4.Location = new System.Drawing.Point(353, 29);
             this.in7mac4.Name = "in7mac4";
             this.in7mac4.Size = new System.Drawing.Size(47, 20);
@@ -1106,7 +1237,7 @@
             this.pictureBox32.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox32.Location = new System.Drawing.Point(260, 36);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox32.Size = new System.Drawing.Size(20, 40);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox32.TabIndex = 333;
             this.pictureBox32.TabStop = false;
@@ -1126,13 +1257,16 @@
             this.pictureBox34.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox34.Location = new System.Drawing.Point(189, 36);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(21, 41);
+            this.pictureBox34.Size = new System.Drawing.Size(20, 40);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox34.TabIndex = 331;
             this.pictureBox34.TabStop = false;
             // 
             // in6mac4
             // 
+            this.in6mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac4.ForeColor = System.Drawing.Color.White;
             this.in6mac4.Location = new System.Drawing.Point(282, 65);
             this.in6mac4.Name = "in6mac4";
             this.in6mac4.Size = new System.Drawing.Size(47, 20);
@@ -1140,6 +1274,9 @@
             // 
             // in5mac4
             // 
+            this.in5mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac4.ForeColor = System.Drawing.Color.White;
             this.in5mac4.Location = new System.Drawing.Point(282, 28);
             this.in5mac4.Name = "in5mac4";
             this.in5mac4.Size = new System.Drawing.Size(47, 20);
@@ -1147,6 +1284,9 @@
             // 
             // in4mac4
             // 
+            this.in4mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac4.ForeColor = System.Drawing.Color.White;
             this.in4mac4.Location = new System.Drawing.Point(212, 65);
             this.in4mac4.Name = "in4mac4";
             this.in4mac4.Size = new System.Drawing.Size(47, 20);
@@ -1154,6 +1294,9 @@
             // 
             // in3mac4
             // 
+            this.in3mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac4.ForeColor = System.Drawing.Color.White;
             this.in3mac4.Location = new System.Drawing.Point(212, 29);
             this.in3mac4.Name = "in3mac4";
             this.in3mac4.Size = new System.Drawing.Size(47, 20);
@@ -1161,6 +1304,9 @@
             // 
             // in2mac4
             // 
+            this.in2mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac4.ForeColor = System.Drawing.Color.White;
             this.in2mac4.Location = new System.Drawing.Point(140, 65);
             this.in2mac4.Name = "in2mac4";
             this.in2mac4.Size = new System.Drawing.Size(47, 20);
@@ -1168,6 +1314,9 @@
             // 
             // in1mac4
             // 
+            this.in1mac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac4.ForeColor = System.Drawing.Color.White;
             this.in1mac4.Location = new System.Drawing.Point(140, 29);
             this.in1mac4.Name = "in1mac4";
             this.in1mac4.Size = new System.Drawing.Size(47, 20);
@@ -1193,6 +1342,9 @@
             // 
             // inInstrumentMacro4
             // 
+            this.inInstrumentMacro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inInstrumentMacro4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inInstrumentMacro4.ForeColor = System.Drawing.Color.White;
             this.inInstrumentMacro4.Location = new System.Drawing.Point(465, 61);
             this.inInstrumentMacro4.Name = "inInstrumentMacro4";
             this.inInstrumentMacro4.Size = new System.Drawing.Size(47, 20);
@@ -1211,6 +1363,9 @@
             // 
             // inDaggerMacro4
             // 
+            this.inDaggerMacro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDaggerMacro4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDaggerMacro4.ForeColor = System.Drawing.Color.White;
             this.inDaggerMacro4.Location = new System.Drawing.Point(463, 30);
             this.inDaggerMacro4.Name = "inDaggerMacro4";
             this.inDaggerMacro4.Size = new System.Drawing.Size(47, 20);
@@ -1219,15 +1374,21 @@
             // 
             // btnResMac4
             // 
+            this.btnResMac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnResMac4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResMac4.ForeColor = System.Drawing.Color.White;
             this.btnResMac4.Location = new System.Drawing.Point(32, 69);
             this.btnResMac4.Name = "btnResMac4";
             this.btnResMac4.Size = new System.Drawing.Size(62, 23);
             this.btnResMac4.TabIndex = 207;
             this.btnResMac4.Text = "Reset";
-            this.btnResMac4.UseVisualStyleBackColor = true;
+            this.btnResMac4.UseVisualStyleBackColor = false;
             // 
             // inTriggerMacro4
             // 
+            this.inTriggerMacro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inTriggerMacro4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inTriggerMacro4.ForeColor = System.Drawing.Color.White;
             this.inTriggerMacro4.Location = new System.Drawing.Point(41, 14);
             this.inTriggerMacro4.Name = "inTriggerMacro4";
             this.inTriggerMacro4.Size = new System.Drawing.Size(47, 20);
@@ -1236,9 +1397,12 @@
             // 
             // delayMac4
             // 
+            this.delayMac4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.delayMac4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.delayMac4.ForeColor = System.Drawing.Color.White;
             this.delayMac4.Location = new System.Drawing.Point(41, 43);
             this.delayMac4.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -1279,7 +1443,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(547, 514);
             this.Controls.Add(this.panelMacro4);
             this.Controls.Add(this.panelMacro3);

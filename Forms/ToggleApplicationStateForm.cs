@@ -84,6 +84,7 @@ namespace _4RTools.Forms
                 this.notifyIconTray.Icon = Resources._4RTools.ETCResource.logo_4rtools_off;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
                 this.lblStatusToggle.Text = "Press the key to start!";
+                this.lblStatusToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
                 new SoundPlayer(Resources._4RTools.ETCResource.Speech_Off).Play();
             }
             else
@@ -96,7 +97,7 @@ namespace _4RTools.Forms
                     this.notifyIconTray.Icon = Resources._4RTools.ETCResource.logo_4rtools_on;
                     this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
                     this.lblStatusToggle.Text = "Press the key to stop!";
-                    this.lblStatusToggle.ForeColor = Color.Black;
+                    this.lblStatusToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
                     new SoundPlayer(Resources._4RTools.ETCResource.Speech_On).Play();
                 } else
                 {

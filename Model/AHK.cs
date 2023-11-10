@@ -8,6 +8,7 @@ using _4RTools.Utils;
 using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
+using System.Windows.Ink;
 
 namespace _4RTools.Model
 {
@@ -51,7 +52,8 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                if (thread != null) {
+                if (thread != null)
+                {
                     _4RThread.Stop(this.thread);
                 }
 
@@ -64,6 +66,7 @@ namespace _4RTools.Model
         {
             if (ahkMode.Equals(COMPATIBILITY))
             {
+
                 foreach (KeyConfig config in AhkEntries.Values)
                 {
                     Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
@@ -100,7 +103,8 @@ namespace _4RTools.Model
             Func<int, int> send_click;
 
             //Send Event Directly to Window via PostMessage
-            send_click = (evt) => {
+            send_click = (evt) =>
+            {
                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
                 Thread.Sleep(1);
                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);

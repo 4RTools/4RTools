@@ -40,20 +40,25 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.groupBox1.Controls.Add(this.txtStatusToggleKey);
             this.groupBox1.Controls.Add(this.btnStatusToggle);
             this.groupBox1.Controls.Add(this.lblStatusToggle);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.groupBox1.Location = new System.Drawing.Point(1, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 114);
+            this.groupBox1.Size = new System.Drawing.Size(178, 94);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Current Status";
             // 
             // txtStatusToggleKey
             // 
+            this.txtStatusToggleKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtStatusToggleKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStatusToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtStatusToggleKey.Location = new System.Drawing.Point(59, 54);
+            this.txtStatusToggleKey.ForeColor = System.Drawing.Color.White;
+            this.txtStatusToggleKey.Location = new System.Drawing.Point(103, 25);
             this.txtStatusToggleKey.Name = "txtStatusToggleKey";
             this.txtStatusToggleKey.Size = new System.Drawing.Size(61, 23);
             this.txtStatusToggleKey.TabIndex = 23;
@@ -66,7 +71,7 @@
             this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(53, 20);
+            this.btnStatusToggle.Location = new System.Drawing.Point(15, 23);
             this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
             this.btnStatusToggle.Name = "btnStatusToggle";
             this.btnStatusToggle.Size = new System.Drawing.Size(73, 28);
@@ -79,7 +84,7 @@
             // 
             this.lblStatusToggle.AllowDrop = true;
             this.lblStatusToggle.AutoSize = true;
-            this.lblStatusToggle.Location = new System.Drawing.Point(35, 80);
+            this.lblStatusToggle.Location = new System.Drawing.Point(33, 61);
             this.lblStatusToggle.MaximumSize = new System.Drawing.Size(109, 30);
             this.lblStatusToggle.Name = "lblStatusToggle";
             this.lblStatusToggle.Size = new System.Drawing.Size(109, 13);
@@ -98,9 +103,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(204, 129);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.ClientSize = new System.Drawing.Size(183, 99);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ToggleApplicationStateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

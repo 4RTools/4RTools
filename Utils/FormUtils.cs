@@ -79,6 +79,31 @@ namespace _4RTools.Utils
             }
         }
 
+        private static void resetCheckboxForm(Control control)
+        {
+
+            IEnumerable<Control> checks = GetAll(control, typeof(CheckBox));
+            IEnumerable<Control> combos = GetAll(control, typeof(ComboBox));
+
+            foreach (Control c in checks)
+            {
+                CheckBox checkBox = (CheckBox)c;
+                checkBox.Checked = false;
+            }
+
+            foreach (Control c in combos)
+            {
+                ComboBox comboBox = (ComboBox)c;
+                if (comboBox.Items.Count > 0)
+                    comboBox.SelectedIndex = 0;
+            }
+        }
+
+        public static void ResetCheckboxForm(Form form)
+        {
+            resetCheckboxForm(form);
+        }
+
         public static void ResetForm(Form form)
         {
             resetForm(form);

@@ -59,10 +59,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panelSwitch = new System.Windows.Forms.Panel();
             this.groupBoxATKxDEFConfig = new System.Windows.Forms.GroupBox();
+            this.inSpammerClick = new System.Windows.Forms.CheckBox();
             this.lblSwitchDelay = new System.Windows.Forms.Label();
             this.switchDelay = new System.Windows.Forms.NumericUpDown();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.inSpammerClick = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -82,6 +82,7 @@
             // lblDef
             // 
             this.lblDef.AutoSize = true;
+            this.lblDef.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.lblDef.Location = new System.Drawing.Point(220, 46);
             this.lblDef.Name = "lblDef";
             this.lblDef.Size = new System.Drawing.Size(63, 13);
@@ -90,6 +91,9 @@
             // 
             // inDef1
             // 
+            this.inDef1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDef1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDef1.ForeColor = System.Drawing.Color.White;
             this.inDef1.Location = new System.Drawing.Point(252, 70);
             this.inDef1.Name = "inDef1";
             this.inDef1.Size = new System.Drawing.Size(60, 20);
@@ -98,6 +102,9 @@
             // 
             // inDef2
             // 
+            this.inDef2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDef2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDef2.ForeColor = System.Drawing.Color.White;
             this.inDef2.Location = new System.Drawing.Point(252, 96);
             this.inDef2.Name = "inDef2";
             this.inDef2.Size = new System.Drawing.Size(60, 20);
@@ -106,6 +113,9 @@
             // 
             // inDef3
             // 
+            this.inDef3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDef3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDef3.ForeColor = System.Drawing.Color.White;
             this.inDef3.Location = new System.Drawing.Point(252, 122);
             this.inDef3.Name = "inDef3";
             this.inDef3.Size = new System.Drawing.Size(60, 20);
@@ -114,6 +124,9 @@
             // 
             // inDef4
             // 
+            this.inDef4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDef4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDef4.ForeColor = System.Drawing.Color.White;
             this.inDef4.Location = new System.Drawing.Point(252, 148);
             this.inDef4.Name = "inDef4";
             this.inDef4.Size = new System.Drawing.Size(60, 20);
@@ -122,6 +135,9 @@
             // 
             // inDef5
             // 
+            this.inDef5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDef5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDef5.ForeColor = System.Drawing.Color.White;
             this.inDef5.Location = new System.Drawing.Point(252, 174);
             this.inDef5.Name = "inDef5";
             this.inDef5.Size = new System.Drawing.Size(60, 20);
@@ -138,6 +154,9 @@
             // 
             // inAtk5
             // 
+            this.inAtk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inAtk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inAtk5.ForeColor = System.Drawing.Color.White;
             this.inAtk5.Location = new System.Drawing.Point(394, 174);
             this.inAtk5.Name = "inAtk5";
             this.inAtk5.Size = new System.Drawing.Size(60, 20);
@@ -146,6 +165,9 @@
             // 
             // inAtk4
             // 
+            this.inAtk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inAtk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inAtk4.ForeColor = System.Drawing.Color.White;
             this.inAtk4.Location = new System.Drawing.Point(394, 148);
             this.inAtk4.Name = "inAtk4";
             this.inAtk4.Size = new System.Drawing.Size(60, 20);
@@ -154,6 +176,9 @@
             // 
             // inAtk3
             // 
+            this.inAtk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inAtk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inAtk3.ForeColor = System.Drawing.Color.White;
             this.inAtk3.Location = new System.Drawing.Point(394, 122);
             this.inAtk3.Name = "inAtk3";
             this.inAtk3.Size = new System.Drawing.Size(60, 20);
@@ -162,6 +187,9 @@
             // 
             // inAtk2
             // 
+            this.inAtk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inAtk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inAtk2.ForeColor = System.Drawing.Color.White;
             this.inAtk2.Location = new System.Drawing.Point(394, 96);
             this.inAtk2.Name = "inAtk2";
             this.inAtk2.Size = new System.Drawing.Size(60, 20);
@@ -170,6 +198,9 @@
             // 
             // inAtk1
             // 
+            this.inAtk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inAtk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inAtk1.ForeColor = System.Drawing.Color.White;
             this.inAtk1.Location = new System.Drawing.Point(394, 70);
             this.inAtk1.Name = "inAtk1";
             this.inAtk1.Size = new System.Drawing.Size(60, 20);
@@ -179,6 +210,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.label1.Location = new System.Drawing.Point(391, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
@@ -287,6 +319,9 @@
             // 
             // inSpammerKey
             // 
+            this.inSpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inSpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inSpammerKey.ForeColor = System.Drawing.Color.White;
             this.inSpammerKey.Location = new System.Drawing.Point(101, 24);
             this.inSpammerKey.Name = "inSpammerKey";
             this.inSpammerKey.Size = new System.Drawing.Size(60, 20);
@@ -304,9 +339,12 @@
             // 
             // spammerDelay
             // 
+            this.spammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.spammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.spammerDelay.ForeColor = System.Drawing.Color.White;
             this.spammerDelay.Location = new System.Drawing.Point(101, 56);
             this.spammerDelay.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -327,6 +365,7 @@
             // 
             // panelSwitch
             // 
+            this.panelSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.panelSwitch.Controls.Add(this.inAtk2);
             this.panelSwitch.Controls.Add(this.lblDef);
             this.panelSwitch.Controls.Add(this.inDef1);
@@ -351,6 +390,7 @@
             this.panelSwitch.Controls.Add(this.pictureBox2);
             this.panelSwitch.Controls.Add(this.pictureBox1);
             this.panelSwitch.Controls.Add(this.groupBoxATKxDEFConfig);
+            this.panelSwitch.ForeColor = System.Drawing.Color.White;
             this.panelSwitch.Location = new System.Drawing.Point(18, 12);
             this.panelSwitch.Name = "panelSwitch";
             this.panelSwitch.Size = new System.Drawing.Size(517, 253);
@@ -365,6 +405,8 @@
             this.groupBoxATKxDEFConfig.Controls.Add(this.label2);
             this.groupBoxATKxDEFConfig.Controls.Add(this.spammerDelay);
             this.groupBoxATKxDEFConfig.Controls.Add(this.label3);
+            this.groupBoxATKxDEFConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxATKxDEFConfig.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.groupBoxATKxDEFConfig.Location = new System.Drawing.Point(13, 46);
             this.groupBoxATKxDEFConfig.Name = "groupBoxATKxDEFConfig";
             this.groupBoxATKxDEFConfig.Size = new System.Drawing.Size(191, 151);
@@ -386,7 +428,7 @@
             // 
             this.switchDelay.Location = new System.Drawing.Point(101, 88);
             this.switchDelay.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -408,11 +450,37 @@
             this.inSpammerClick.UseVisualStyleBackColor = true;
             this.inSpammerClick.CheckedChanged += new System.EventHandler(this.ChkBox_CheckedChanged);
             // 
+            // lblSwitchDelay
+            // 
+            this.lblSwitchDelay.AutoSize = true;
+            this.lblSwitchDelay.Location = new System.Drawing.Point(17, 92);
+            this.lblSwitchDelay.Name = "lblSwitchDelay";
+            this.lblSwitchDelay.Size = new System.Drawing.Size(69, 13);
+            this.lblSwitchDelay.TabIndex = 28;
+            this.lblSwitchDelay.Text = "Switch Delay";
+            this.toolTip1.SetToolTip(this.lblSwitchDelay, "Delay between each item change.");
+            // 
+            // switchDelay
+            // 
+            this.switchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.switchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.switchDelay.ForeColor = System.Drawing.Color.White;
+            this.switchDelay.Location = new System.Drawing.Point(101, 88);
+            this.switchDelay.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.switchDelay.Name = "switchDelay";
+            this.switchDelay.Size = new System.Drawing.Size(60, 20);
+            this.switchDelay.TabIndex = 27;
+            this.switchDelay.ValueChanged += new System.EventHandler(this.onDelayChange);
+            // 
             // ATKDEFForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(547, 277);
             this.Controls.Add(this.panelSwitch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
