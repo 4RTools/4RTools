@@ -42,7 +42,7 @@ namespace _4RTools.Model
         public bool mouseFlick { get; set; } = false;
         public bool noShift { get; set; } = false;
         public string ahkMode { get; set; } = COMPATIBILITY;
-        public Key tiMode { get; set; }
+        public Key tiMode { get; set; } = 0;
 
         public AHK()
         {

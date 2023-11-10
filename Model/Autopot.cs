@@ -19,7 +19,6 @@ namespace _4RTools.Model
         public int hpPercent { get; set; }
         public Key spKey { get; set; }
         public int spPercent { get; set; }
-        public Key tiKey { get; set; }
         public int delay { get; set; } = 15;
         public int delayYgg { get; set; } = 50;
 
@@ -44,7 +43,6 @@ namespace _4RTools.Model
             this.spKey = spKey;
             this.spPercent = spPercent;
 
-            this.tiKey = tiKey;
         }
 
         public void Start()

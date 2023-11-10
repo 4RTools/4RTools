@@ -12,13 +12,10 @@ namespace _4RTools.Forms
     public partial class AHKForm : Form, IObserver
     {
         private AHK ahk;
-        private Subject subject;
         public AHKForm(Subject subject)
         {
-            this.subject = subject;
-            InitializeComponent();
-            setupTiInput();
             subject.Attach(this);
+            InitializeComponent();
         }
 
         public void Update(ISubject subject)
@@ -26,7 +23,6 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.ahk = ProfileSingleton.GetCurrent().AHK;
                     InitializeApplicationForm();
                     break;
                 case MessageCode.TURN_ON:
@@ -41,20 +37,19 @@ namespace _4RTools.Forms
         private void InitializeApplicationForm()
         {
             RemoveHandlers();
-            FormUtils.ResetCheckboxForm(this);
+            FormUtils.ResetForm(this);
             SetLegendDefaultValues();
+            this.ahk = ProfileSingleton.GetCurrent().AHK;
             InitializeCheckAsThreeState();
-
-            RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[this.ahk.ahkMode];
+            
+            RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.ahkMode];
             if (rdAhkMode != null) { rdAhkMode.Checked = true; };
-
-            this.txtTIKey.Text = this.ahk.tiMode.ToString();
-            this.txtSpammerDelay.Text = this.ahk.AhkDelay.ToString();
-            this.chkNoShift.Checked = this.ahk.noShift;
-            this.chkMouseFlick.Checked = this.ahk.mouseFlick;
+            this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
+            this.chkNoShift.Checked = ProfileSingleton.GetCurrent().AHK.noShift;
+            this.chkMouseFlick.Checked = ProfileSingleton.GetCurrent().AHK.mouseFlick;
             this.DisableControlsIfSpeedBoost();
 
-            Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(this.ahk.AhkEntries);
+            Dictionary<string, KeyConfig> ahkClones = new Dictionary<string, KeyConfig>(ProfileSingleton.GetCurrent().AHK.AhkEntries);
 
             foreach (KeyValuePair<string, KeyConfig> config in ahkClones)
             {
@@ -123,6 +118,11 @@ namespace _4RTools.Forms
 
         private void InitializeCheckAsThreeState()
         {
+            this.txtTIKey.Text = this.ahk.tiMode.ToString();
+            txtTIKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            txtTIKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            txtTIKey.TextChanged += new EventHandler(this.onTiTextChange);
+
             foreach (Control c in this.Controls)
                 if (c is CheckBox)
                 {
