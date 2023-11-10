@@ -58,6 +58,8 @@
             // ArcherSkillsGP
             // 
             this.ArcherSkillsGP.AutoSize = true;
+            this.ArcherSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ArcherSkillsGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.ArcherSkillsGP.Location = new System.Drawing.Point(12, 12);
             this.ArcherSkillsGP.Name = "ArcherSkillsGP";
             this.ArcherSkillsGP.Size = new System.Drawing.Size(505, 30);
@@ -68,6 +70,8 @@
             // SwordmanSkillGP
             // 
             this.SwordmanSkillGP.AutoSize = true;
+            this.SwordmanSkillGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SwordmanSkillGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.SwordmanSkillGP.Location = new System.Drawing.Point(12, 48);
             this.SwordmanSkillGP.Name = "SwordmanSkillGP";
             this.SwordmanSkillGP.Size = new System.Drawing.Size(505, 32);
@@ -78,6 +82,8 @@
             // MageSkillGP
             // 
             this.MageSkillGP.AutoSize = true;
+            this.MageSkillGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MageSkillGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.MageSkillGP.Location = new System.Drawing.Point(12, 86);
             this.MageSkillGP.Name = "MageSkillGP";
             this.MageSkillGP.Size = new System.Drawing.Size(505, 35);
@@ -88,6 +94,8 @@
             // MerchantSkillsGP
             // 
             this.MerchantSkillsGP.AutoSize = true;
+            this.MerchantSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MerchantSkillsGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.MerchantSkillsGP.Location = new System.Drawing.Point(12, 127);
             this.MerchantSkillsGP.Name = "MerchantSkillsGP";
             this.MerchantSkillsGP.Size = new System.Drawing.Size(505, 35);
@@ -98,6 +106,8 @@
             // ThiefSkillsGP
             // 
             this.ThiefSkillsGP.AutoSize = true;
+            this.ThiefSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ThiefSkillsGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.ThiefSkillsGP.Location = new System.Drawing.Point(12, 168);
             this.ThiefSkillsGP.Name = "ThiefSkillsGP";
             this.ThiefSkillsGP.Size = new System.Drawing.Size(505, 35);
@@ -108,6 +118,8 @@
             // AcolyteSkillsGP
             // 
             this.AcolyteSkillsGP.AutoSize = true;
+            this.AcolyteSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AcolyteSkillsGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.AcolyteSkillsGP.Location = new System.Drawing.Point(12, 213);
             this.AcolyteSkillsGP.Name = "AcolyteSkillsGP";
             this.AcolyteSkillsGP.Size = new System.Drawing.Size(505, 35);
@@ -118,6 +130,8 @@
             // TKSkillGroupBox
             // 
             this.TKSkillGroupBox.AutoSize = true;
+            this.TKSkillGroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TKSkillGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.TKSkillGroupBox.Location = new System.Drawing.Point(12, 254);
             this.TKSkillGroupBox.Name = "TKSkillGroupBox";
             this.TKSkillGroupBox.Size = new System.Drawing.Size(505, 35);
@@ -128,6 +142,8 @@
             // NinjaSkillsGP
             // 
             this.NinjaSkillsGP.AutoSize = true;
+            this.NinjaSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NinjaSkillsGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.NinjaSkillsGP.Location = new System.Drawing.Point(12, 295);
             this.NinjaSkillsGP.Name = "NinjaSkillsGP";
             this.NinjaSkillsGP.Size = new System.Drawing.Size(505, 35);
@@ -138,6 +154,8 @@
             // GunsSkillsGP
             // 
             this.GunsSkillsGP.AutoSize = true;
+            this.GunsSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GunsSkillsGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.GunsSkillsGP.Location = new System.Drawing.Point(12, 336);
             this.GunsSkillsGP.Name = "GunsSkillsGP";
             this.GunsSkillsGP.Size = new System.Drawing.Size(505, 35);
@@ -150,7 +168,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(563, 388);
             this.Controls.Add(this.GunsSkillsGP);
             this.Controls.Add(this.NinjaSkillsGP);
@@ -161,6 +179,7 @@
             this.Controls.Add(this.MageSkillGP);
             this.Controls.Add(this.ArcherSkillsGP);
             this.Controls.Add(this.SwordmanSkillGP);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SkillAutoBuffForm";
             this.Text = "SkilAutoBuffForm";

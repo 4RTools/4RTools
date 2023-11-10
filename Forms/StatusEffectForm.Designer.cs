@@ -44,7 +44,10 @@ namespace _4RTools.Forms
             // 
             // txtStatusKey
             // 
+            this.txtStatusKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtStatusKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStatusKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtStatusKey.ForeColor = System.Drawing.Color.White;
             this.txtStatusKey.Location = new System.Drawing.Point(74, 8);
             this.txtStatusKey.Name = "txtStatusKey";
             this.txtStatusKey.Size = new System.Drawing.Size(45, 23);
@@ -90,7 +93,10 @@ namespace _4RTools.Forms
             // 
             // txtNewStatusKey
             // 
+            this.txtNewStatusKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtNewStatusKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNewStatusKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtNewStatusKey.ForeColor = System.Drawing.Color.White;
             this.txtNewStatusKey.Location = new System.Drawing.Point(205, 8);
             this.txtNewStatusKey.Name = "txtNewStatusKey";
             this.txtNewStatusKey.Size = new System.Drawing.Size(45, 23);
@@ -106,7 +112,7 @@ namespace _4RTools.Forms
             // 
             // StatusEffectForm
             // 
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(260, 39);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label2);
@@ -115,6 +121,7 @@ namespace _4RTools.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtStatusKey);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StatusEffectForm";
             this.Padding = new System.Windows.Forms.Padding(10);

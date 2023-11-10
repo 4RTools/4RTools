@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdvertisementForm));
             this.groupBoxAd = new System.Windows.Forms.GroupBox();
+            this.flagAds2 = new System.Windows.Forms.PictureBox();
             this.flagAds1 = new System.Windows.Forms.PictureBox();
             this.flagAds0 = new System.Windows.Forms.PictureBox();
             this.discAd2 = new System.Windows.Forms.LinkLabel();
@@ -46,8 +47,8 @@
             this.pbAd1 = new System.Windows.Forms.PictureBox();
             this.panelAd0 = new System.Windows.Forms.Panel();
             this.pbAd0 = new System.Windows.Forms.PictureBox();
-            this.flagAds2 = new System.Windows.Forms.PictureBox();
             this.groupBoxAd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagAds2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagAds1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagAds0)).BeginInit();
             this.panelAd2.SuspendLayout();
@@ -56,7 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAd1)).BeginInit();
             this.panelAd0.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAd0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagAds2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxAd
@@ -64,6 +64,7 @@
             this.groupBoxAd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxAd.AutoSize = true;
+            this.groupBoxAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.groupBoxAd.Controls.Add(this.flagAds2);
             this.groupBoxAd.Controls.Add(this.flagAds1);
             this.groupBoxAd.Controls.Add(this.flagAds0);
@@ -78,13 +79,23 @@
             this.groupBoxAd.Controls.Add(this.panelAd2);
             this.groupBoxAd.Controls.Add(this.panelAd1);
             this.groupBoxAd.Controls.Add(this.panelAd0);
-            this.groupBoxAd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBoxAd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxAd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.groupBoxAd.Location = new System.Drawing.Point(1, -1);
             this.groupBoxAd.Name = "groupBoxAd";
             this.groupBoxAd.Size = new System.Drawing.Size(288, 559);
             this.groupBoxAd.TabIndex = 28;
             this.groupBoxAd.TabStop = false;
             this.groupBoxAd.Text = "Advertisement";
+            // 
+            // flagAds2
+            // 
+            this.flagAds2.Location = new System.Drawing.Point(104, 516);
+            this.flagAds2.Name = "flagAds2";
+            this.flagAds2.Size = new System.Drawing.Size(24, 24);
+            this.flagAds2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.flagAds2.TabIndex = 14;
+            this.flagAds2.TabStop = false;
             // 
             // flagAds1
             // 
@@ -249,15 +260,6 @@
             this.pbAd0.TabIndex = 0;
             this.pbAd0.TabStop = false;
             // 
-            // flagAds2
-            // 
-            this.flagAds2.Location = new System.Drawing.Point(104, 516);
-            this.flagAds2.Name = "flagAds2";
-            this.flagAds2.Size = new System.Drawing.Size(24, 24);
-            this.flagAds2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.flagAds2.TabIndex = 14;
-            this.flagAds2.TabStop = false;
-            // 
             // AdvertisementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,6 +274,7 @@
             this.Load += new System.EventHandler(this.AdvertisementForm_Load);
             this.groupBoxAd.ResumeLayout(false);
             this.groupBoxAd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagAds2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagAds1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagAds0)).EndInit();
             this.panelAd2.ResumeLayout(false);
@@ -280,7 +283,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAd1)).EndInit();
             this.panelAd0.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAd0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagAds2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

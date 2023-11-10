@@ -40,9 +40,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.groupBox1.Controls.Add(this.txtStatusToggleKey);
             this.groupBox1.Controls.Add(this.btnStatusToggle);
             this.groupBox1.Controls.Add(this.lblStatusToggle);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(178, 114);
@@ -52,7 +54,10 @@
             // 
             // txtStatusToggleKey
             // 
+            this.txtStatusToggleKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtStatusToggleKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStatusToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtStatusToggleKey.ForeColor = System.Drawing.Color.White;
             this.txtStatusToggleKey.Location = new System.Drawing.Point(59, 54);
             this.txtStatusToggleKey.Name = "txtStatusToggleKey";
             this.txtStatusToggleKey.Size = new System.Drawing.Size(61, 23);
@@ -98,9 +103,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(204, 129);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ToggleApplicationStateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

@@ -32,11 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAddServer = new System.Windows.Forms.Button();
             this.datagridServers = new System.Windows.Forms.DataGridView();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hpAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.clientDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridServers)).BeginInit();
@@ -46,8 +46,10 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.panel1.Controls.Add(this.btnAddServer);
             this.panel1.Controls.Add(this.datagridServers);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.panel1.Location = new System.Drawing.Point(12, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(541, 250);
@@ -55,17 +57,21 @@
             // 
             // btnAddServer
             // 
+            this.btnAddServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnAddServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddServer.ForeColor = System.Drawing.Color.White;
             this.btnAddServer.Location = new System.Drawing.Point(3, 12);
             this.btnAddServer.Name = "btnAddServer";
             this.btnAddServer.Size = new System.Drawing.Size(104, 23);
             this.btnAddServer.TabIndex = 27;
             this.btnAddServer.Text = "Add Server";
-            this.btnAddServer.UseVisualStyleBackColor = true;
+            this.btnAddServer.UseVisualStyleBackColor = false;
             this.btnAddServer.Click += new System.EventHandler(this.btnAddServer_Click);
             // 
             // datagridServers
             // 
             this.datagridServers.AutoGenerateColumns = false;
+            this.datagridServers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.datagridServers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagridServers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridServers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -82,22 +88,6 @@
             this.datagridServers.Size = new System.Drawing.Size(541, 200);
             this.datagridServers.TabIndex = 0;
             this.datagridServers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridServers_CellContentClick);
-            // 
-            // Edit
-            // 
-            this.Edit.HeaderText = "Edit";
-            this.Edit.Name = "Edit";
-            this.Edit.Text = "Edit";
-            this.Edit.UseColumnTextForButtonValue = true;
-            this.Edit.Width = 80;
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 80;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -121,6 +111,22 @@
             this.nameAddressDataGridViewTextBoxColumn.Name = "nameAddressDataGridViewTextBoxColumn";
             this.nameAddressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // Edit
+            // 
+            this.Edit.HeaderText = "Edit";
+            this.Edit.Name = "Edit";
+            this.Edit.Text = "Edit";
+            this.Edit.UseColumnTextForButtonValue = true;
+            this.Edit.Width = 80;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 80;
+            // 
             // clientDTOBindingSource
             // 
             this.clientDTOBindingSource.DataSource = typeof(_4RTools.Model.ClientDTO);
@@ -129,9 +135,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(565, 268);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ServersForm";
             this.Text = "ServersForm";
