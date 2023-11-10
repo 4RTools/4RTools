@@ -320,7 +320,7 @@ namespace _4RTools.Forms
             // 
             this.lblCharacterName.AutoSize = true;
             this.lblCharacterName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblCharacterName.Location = new System.Drawing.Point(362, 210);
+            this.lblCharacterName.Location = new System.Drawing.Point(350, 180);
             this.lblCharacterName.Name = "lblCharacterName";
             this.lblCharacterName.Size = new System.Drawing.Size(87, 13);
             this.lblCharacterName.TabIndex = 19;
@@ -331,7 +331,7 @@ namespace _4RTools.Forms
             this.characterName.AutoSize = true;
             this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.characterName.Location = new System.Drawing.Point(362, 223);
+            this.characterName.Location = new System.Drawing.Point(350, 193);
             this.characterName.Name = "characterName";
             this.characterName.Size = new System.Drawing.Size(19, 13);
             this.characterName.TabIndex = 20;
@@ -340,7 +340,7 @@ namespace _4RTools.Forms
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(302, 83);
+            this.panel5.Location = new System.Drawing.Point(285, 83);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1, 180);
             this.panel5.TabIndex = 18;
@@ -350,7 +350,7 @@ namespace _4RTools.Forms
             this.tabControlAutopot.Controls.Add(this.tabPageAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageYggAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageSkillTimer);
-            this.tabControlAutopot.Location = new System.Drawing.Point(22, 83);
+            this.tabControlAutopot.Location = new System.Drawing.Point(44, 83);
             this.tabControlAutopot.Name = "tabControlAutopot";
             this.tabControlAutopot.SelectedIndex = 0;
             this.tabControlAutopot.Size = new System.Drawing.Size(204, 127);

@@ -307,11 +307,21 @@
       <DependentUpon>SkillTimerForm.cs</DependentUpon>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Compile>
+    <Compile Include="Forms\CustomButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomButtonForm.Designer.cs">
+      <DependentUpon>CustomButtonForm.cs</DependentUpon>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Compile>
     <Compile Include="Forms\StuffAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <EmbeddedResource Include="Forms\SkillTimerForm.resx">
       <DependentUpon>SkillTimerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomButtonForm.resx">
+      <DependentUpon>CustomButtonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StatusEffectForm.resx">
       <DependentUpon>StatusEffectForm.cs</DependentUpon>
@@ -360,6 +370,7 @@
     <Compile Include="Model\Buff.cs" />
     <Compile Include="Model\BuffContainer.cs" />
     <Compile Include="Model\BuffRenderer.cs" />
+    <Compile Include="Model\Custom.cs" />
     <Compile Include="Model\LocalServerManager.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
     <Compile Include="Model\Tracker.cs" />

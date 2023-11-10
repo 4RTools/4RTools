@@ -31,6 +31,7 @@ namespace _4RTools.Model
                     profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.SongMacro));
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                     profile.MacroSwitch = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.MacroSwitch));
+                    profile.Custom = JsonConvert.DeserializeObject<Custom>(Profile.GetByAction(rawObject, profile.Custom));
                 }
             }
             catch {
@@ -96,6 +97,7 @@ namespace _4RTools.Model
         public Macro SongMacro { get; set;}
         public Macro MacroSwitch { get; set;}
 
+        public Custom Custom { get; set; }
         public ATKDEFMode AtkDefMode { get; set; }
 
         public Profile(string name)
@@ -112,6 +114,7 @@ namespace _4RTools.Model
             this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);
             this.MacroSwitch = new Macro(Macro.ACTION_NAME_MACRO_SWITCH, MacroSwitchForm.TOTAL_MACRO_LANES);
             this.AtkDefMode = new ATKDEFMode();
+            this.Custom = new Custom();
         }
 
         public static object GetByAction(dynamic obj, Action action)

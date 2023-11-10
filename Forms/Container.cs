@@ -30,6 +30,7 @@ namespace _4RTools.Forms
             SetAutopotYggWindow();
             SetSkillTimerWindow();
             SetAutoStatusEffectWindow();
+            SetCustomButtonsWindow();
             SetAHKWindow();
             SetProfileWindow();
             SetAutobuffStuffWindow();
@@ -195,7 +196,7 @@ namespace _4RTools.Forms
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(350, 70);
+            frm.Location = new Point(350, 80);
             frm.MdiParent = this;
             frm.Show();
         }
@@ -235,11 +236,21 @@ namespace _4RTools.Forms
             addform(this.tabPageSkillTimer, frm);
 
         }
+
         public void SetAutoStatusEffectWindow()
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(20, 220);
+            form.Location = new Point(10, 220);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        public void SetCustomButtonsWindow()
+        {
+            CustomButtonForm form = new CustomButtonForm(subject);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Location = new Point(375, 220);
             form.MdiParent = this;
             form.Show();
         }

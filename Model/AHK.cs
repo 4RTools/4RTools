@@ -42,7 +42,6 @@ namespace _4RTools.Model
         public bool mouseFlick { get; set; } = false;
         public bool noShift { get; set; } = false;
         public string ahkMode { get; set; } = COMPATIBILITY;
-        public Key tiMode { get; set; } = 0;
 
         public AHK()
         {
@@ -65,13 +64,7 @@ namespace _4RTools.Model
 
         private int AHKThreadExecution(Client roClient)
         {
-            var TiMode = ProfileSingleton.GetCurrent().AHK.tiMode;
-            if (!TiMode.Equals(Key.None) && Keyboard.IsKeyDown(TiMode))
-            {
-                _AHKTransferBoost(roClient, new KeyConfig(TiMode, true), (Keys)Enum.Parse(typeof(Keys), TiMode.ToString()));
-                return 0;
-            }
-            else if (ahkMode.Equals(COMPATIBILITY))
+            if (ahkMode.Equals(COMPATIBILITY))
             {
 
                 foreach (KeyConfig config in AhkEntries.Values)
@@ -160,30 +153,6 @@ namespace _4RTools.Model
                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
                 Thread.Sleep(this.AhkDelay);
             }
-        }
-
-        private void _AHKTransferBoost(Client roClient, KeyConfig config, Keys thisk)
-        {
-            Func<int, int> send_click;
-
-            //Send Event Directly to Window via PostMessage
-            send_click = (evt) =>
-            {
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_RBUTTONDOWN, 0, 0);
-                Thread.Sleep(1);
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_RBUTTONUP, 0, 0);
-                return 0;
-            };
-
-            keybd_event(Constants.VK_LMENU, 0xA4, Constants.KEYEVENTF_EXTENDEDKEY, 0);
-
-            while (Keyboard.IsKeyDown(config.key))
-            {
-                //Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                send_click(0);
-                Thread.Sleep(10);
-            }
-            keybd_event(Constants.VK_LMENU, 0xA4, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
         }
 
         public void AddAHKEntry(string chkboxName, KeyConfig value)

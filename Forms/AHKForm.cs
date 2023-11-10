@@ -57,18 +57,6 @@ namespace _4RTools.Forms
             }
         }
 
-        private void onTiTextChange(object sender, EventArgs e)
-        {
-            Key key = (Key)Enum.Parse(typeof(Key), this.txtTIKey.Text.ToString());
-            try
-            {
-                this.ahk.tiMode = key;
-                ProfileSingleton.SetConfiguration(this.ahk);
-            }
-            catch { }
-            this.ActiveControl = null;
-        }
-
         private void onCheckChange(object sender, EventArgs e)
         {
             CheckBox checkbox = (CheckBox)sender;
@@ -118,11 +106,6 @@ namespace _4RTools.Forms
 
         private void InitializeCheckAsThreeState()
         {
-            this.txtTIKey.Text = this.ahk.tiMode.ToString();
-            txtTIKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            txtTIKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            txtTIKey.TextChanged += new EventHandler(this.onTiTextChange);
-
             foreach (Control c in this.Controls)
                 if (c is CheckBox)
                 {
@@ -135,13 +118,6 @@ namespace _4RTools.Forms
                     if (check.Enabled)
                         check.CheckStateChanged += onCheckChange;
                 }
-        }
-
-        private void setupTiInput()
-        {
-            txtTIKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            txtTIKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            txtTIKey.TextChanged += new EventHandler(this.onTiTextChange);
         }
 
         private void SetLegendDefaultValues()
