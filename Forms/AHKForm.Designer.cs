@@ -580,7 +580,7 @@ namespace _4RTools.Forms
             this.txtSpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.txtSpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSpammerDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSpammerDelay.ForeColor = System.Drawing.Color.White;
+            this.txtSpammerDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.txtSpammerDelay.Location = new System.Drawing.Point(10, 29);
             this.txtSpammerDelay.Name = "txtSpammerDelay";
             this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
@@ -811,6 +811,7 @@ namespace _4RTools.Forms
             this.txtTIKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.txtTIKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTIKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtTIKey.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.txtTIKey.Location = new System.Drawing.Point(426, 123);
             this.txtTIKey.Name = "txtTIKey";
             this.txtTIKey.Size = new System.Drawing.Size(47, 23);
