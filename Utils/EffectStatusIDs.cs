@@ -31,6 +31,7 @@ namespace _4RTools.Utils
         INSPIRATION = 407,
         SHIELDSPELL = 1316,
 
+        FEARBREEZE = 352,
         SOULLINK = 149,
         GNCARTBOOST = 461,
         CONCENTRATION  = 3,
