@@ -6,17 +6,21 @@ Este projeto e uma adaptacao do projeto 4RTools para uso pessoal e como objeto d
 
 ## Rodando o projeto
 
-Caso voce queira usar esta versao do 4rTools voce pode ou extrair o `4RTools-dev.zip` com a release que esta na raiz do projeto, ou usando o Visual Studio 2022 abrir o `4RTools.sln` e rodar e gerar suas propias releases.
+Caso voce queira usar esta versao do 4rTools voce pode ou extrair o `4RTools-dev-1.0.0.zip` com a release que esta na raiz do projeto, ou usando o Visual Studio 2022 abrir o `4RTools.sln` e rodar e gerar suas propias releases.
 
 ## Copiando perfil
 
 Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RTools para a nova pasta extraida e ambos tem compatibilidade.
 
 ## Custom Features
+### Versão 1.0.0
 - [x] Modo Escuro
 - [x] Auto-Transfer Itens
 - [x] Vigor Auto-Spawn
 - [x] Novas Skills de Sumo (Impositio Manus)
+
+### Versão 1.0.1
+- [x] Nova Skill de Archer (Disparo Selvagem)
 
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
