@@ -304,6 +304,21 @@
 	<data name="impositio_manus" type="System.Resources.ResXFileRef, System.Windows.Forms">
 		<value>..\..\assets\images\impositio_manus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 	</data>
+	<data name="moon_comfort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\moon_comfort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="sun_comfort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\sun_comfort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="star_comfort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\star_comfort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="solar_miracle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\solar_miracle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="sun_warm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\sun_warm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
 	<data name="fear_breeze" type="System.Resources.ResXFileRef, System.Windows.Forms">
 		<value>..\..\assets\images\fear_breeze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 	</data>

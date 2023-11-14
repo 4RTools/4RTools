@@ -30,6 +30,7 @@ namespace _4RTools.Model
 
         public _4RThread AutoBuffThread(Client c)
         {
+            var teste = new List<uint>();
             _4RThread autobuffItemThread = new _4RThread(_ =>
             {
 
@@ -38,6 +39,7 @@ namespace _4RTools.Model
                 for (int i = 0; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
+                    teste.Add(currentStatus);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
 
                     if (status == EffectStatusIDs.OVERTHRUSTMAX)
@@ -55,7 +57,7 @@ namespace _4RTools.Model
 
                     if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
                 }
-
+                var resultteste = teste;
                 foreach (var item in bmClone)
                 {
                     if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE))
