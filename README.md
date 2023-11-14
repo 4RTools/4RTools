@@ -16,7 +16,6 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 ### Versão 1.0.0
 - [x] Modo Escuro
 - [x] Auto-Transfer Itens
-- [x] Vigor Auto-Spawn
 - [x] Novas Skills de Sumo (Impositio Manus)
 
 ### Versão 1.0.1
@@ -26,6 +25,7 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Nova Skill de Mestre Taekwon (Proteção Solar)
 - [x] Nova Skill de Mestre Taekwon (Proteção Lunar)
 - [x] Nova Skill de Mestre Taekwon (Proteção Estelar)
+- [x] Correção Vigor Auto-Spawn
 
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
