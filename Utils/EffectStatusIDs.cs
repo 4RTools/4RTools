@@ -21,7 +21,7 @@ namespace _4RTools.Utils
         CRITICALWOUND = 286,
         OVERHEAT = 373,
 
-        ENDURE = 315,
+        ENDURE = 1,
         PAINKILLER = 577,
 
         SPEARQUICKEN = 68,
