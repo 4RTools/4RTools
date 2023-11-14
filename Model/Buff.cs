@@ -32,7 +32,8 @@ namespace _4RTools.Model
                 new Buff("A Poem of Bragi", EffectStatusIDs.POEMBRAGI, Resources._4RTools.Icons.poem_of_bragi),
                 new Buff("Windmill Rush", EffectStatusIDs.RUSH_WINDMILL, Resources._4RTools.Icons.windmill_rush),
                 new Buff("Moonlight Serenade", EffectStatusIDs.MOONLIT_SERENADE, Resources._4RTools.Icons.moonlight_serenade),
-                new Buff("Frigg's Song", EffectStatusIDs.FRIGG_SONG, Resources._4RTools.Icons.friggs_song)
+                new Buff("Frigg's Song", EffectStatusIDs.FRIGG_SONG, Resources._4RTools.Icons.friggs_song),
+                new Buff("Fear Breeze", EffectStatusIDs.FEARBREEZE, Resources._4RTools.Icons.fear_breeze),
             };
 
             return skills;
@@ -165,8 +166,14 @@ namespace _4RTools.Model
                 new Buff("Mild Wind (Ghost)", EffectStatusIDs.PROPERTYTELEKINESIS, Resources._4RTools.Icons.tk_mild_ghost),
                 new Buff("Mild Wind (Holy)", EffectStatusIDs.ASPERSIO, Resources._4RTools.Icons.tk_mild_holy),
                 new Buff("Mild Wind (Shadow)", EffectStatusIDs.PROPERTYDARK, Resources._4RTools.Icons.tk_mild_shadow),
-                new Buff("Tumbling", EffectStatusIDs.DODGE_ON, Resources._4RTools.Icons.tumbling)
-            };
+                new Buff("Tumbling", EffectStatusIDs.DODGE_ON, Resources._4RTools.Icons.tumbling),
+                new Buff("Milagre Solar, Lunar e Estelar", EffectStatusIDs.SPIRIT, Resources._4RTools.Icons.solar_miracle),
+                new Buff("Calor Solar, Lunar, Estelar", EffectStatusIDs.WARM, Resources._4RTools.Icons.sun_warm),
+                new Buff("Proteção Solar", EffectStatusIDs.SUN_COMFORT, Resources._4RTools.Icons.sun_comfort),
+                new Buff("Proteção Lunar", EffectStatusIDs.MOON_COMFORT, Resources._4RTools.Icons.moon_comfort),
+                new Buff("Proteção Estelar", EffectStatusIDs.STAR_COMFORT, Resources._4RTools.Icons.star_comfort),
+
+        };
 
             return skills;
         }

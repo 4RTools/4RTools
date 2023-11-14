@@ -32,10 +32,9 @@ namespace _4RTools.Model
         {
             _4RThread autobuffItemThread = new _4RThread(_ =>
             {
-
                 bool foundQuag = false;
                 Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
-                for (int i = 0; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
+                for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
@@ -68,7 +67,6 @@ namespace _4RTools.Model
                         Thread.Sleep(10);
                     }
                 }
-
                 Thread.Sleep(300);
                 return 0;
 

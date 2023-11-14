@@ -593,6 +593,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fear_breeze {
+            get {
+                object obj = ResourceManager.GetObject("fear_breeze", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fireproof {
             get {
                 object obj = ResourceManager.GetObject("fireproof", resourceCulture);
@@ -1023,6 +1033,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap moon_comfort {
+            get {
+                object obj = ResourceManager.GetObject("moon_comfort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap moonlight_serenade {
             get {
                 object obj = ResourceManager.GetObject("moonlight_serenade", resourceCulture);
@@ -1273,6 +1293,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap solar_miracle {
+            get {
+                object obj = ResourceManager.GetObject("solar_miracle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap speed {
             get {
                 object obj = ResourceManager.GetObject("speed", resourceCulture);
@@ -1313,6 +1343,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap star_comfort {
+            get {
+                object obj = ResourceManager.GetObject("star_comfort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap str_3rd_food {
             get {
                 object obj = ResourceManager.GetObject("str_3rd_food", resourceCulture);
@@ -1346,6 +1386,26 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap strfood2 {
             get {
                 object obj = ResourceManager.GetObject("strfood2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sun_comfort {
+            get {
+                object obj = ResourceManager.GetObject("sun_comfort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sun_warm {
+            get {
+                object obj = ResourceManager.GetObject("sun_warm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -21,7 +21,7 @@ namespace _4RTools.Utils
         CRITICALWOUND = 286,
         OVERHEAT = 373,
 
-        ENDURE = 315,
+        ENDURE = 1,
         PAINKILLER = 577,
 
         SPEARQUICKEN = 68,
@@ -31,9 +31,15 @@ namespace _4RTools.Utils
         INSPIRATION = 407,
         SHIELDSPELL = 1316,
 
+        SPIRIT = 1401,
+        WARM = 165,
+        SUN_COMFORT = 169,
+        MOON_COMFORT = 170,
+        STAR_COMFORT = 171,
+        FEARBREEZE = 352,
         SOULLINK = 149,
         GNCARTBOOST = 461,
-        CONCENTRATION  = 3,
+        CONCENTRATION = 3,
         TRUESIGHT = 115,
         GLORIA = 21,
         MAGNIFICAT = 20,
@@ -118,7 +124,7 @@ namespace _4RTools.Utils
         ASPERSIO = 17,
 
         FULL_SWINGK = 486,
-        MANA_PLUS= 487,
+        MANA_PLUS = 487,
 
         //POTIONS
         CONCENTRATION_POTION = 37,
