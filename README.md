@@ -1,25 +1,33 @@
-<p align="center">
-  <img src="/assets/images/combo-tools.png">
-</p>
+# 4RTools - Ragnatales
 
-# 4RTools
-This is an all-in-one tool for **Ragnarök Online** servers. You will be able to Autopot, Spam Skill, Use Macro Songs and much more. Hope you enjoy it and collaborate with us. If you have found a bug or want to request a feature, feel free to open an issue!
+Este projeto e uma adaptacao do projeto 4RTools para uso pessoal e como objeto de estudo, onde acrescento features na ferramenta para atender as minhas necessidades jogando no servidor Ragnatales.
 
-**THIS IS A FREE TOOL, YOU CAN MAKE EVERYTHING YOU WANT UNDER MIT LICENSE. WE ARE OPEN FOR IDEAS AND COLLABORATIONS**
+**ESTA VERSAO E UMA VERSAO EXTENDIDA DA ORIGINAL, CONTENDO TODAS AS FUNCIONALIDADES ORIGINAIS E ALGUMAS CUSTOMIZADAS**
 
-*Made from community TO community*.
+## Rodando o projeto
 
-Your Feedback is Welcome!
+Caso voce queira usar esta versao do 4rTools voce pode ou extrair o `4RTools-dev-1.0.1.zip` com a release que esta na raiz do projeto, ou usando o Visual Studio 2022 abrir o `4RTools.sln` e rodar e gerar suas propias releases.
 
-**Discord:** https://discord.gg/HRWvG5ut
-**Website:** https://www.4rtools.com.br/
+## Copiando perfil
 
-<img src='assets/images/ragnarok-icon.png' width='40'>
+Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RTools para a nova pasta extraida e ambos tem compatibilidade.
 
-## Running the project
-This project was created using Visual Studio 2022, just open `4RTools.sln` in Visual Studio, and you'll be able to run and generate your own releases.
+## Custom Features
+### Versão 1.0.0
+- [x] Modo Escuro
+- [x] Auto-Transfer Itens
+- [x] Novas Skills de Sumo (Impositio Manus)
 
-## Features
+### Versão 1.0.1
+- [x] Nova Skill de Archer (Disparo Selvagem)
+- [x] Nova Skill de Mestre Taekwon (Milagre solar, Lunar e Estelar)
+- [x] Nova Skill de Mestre Taekwon (Calor solar, Lunar e Estelar)
+- [x] Nova Skill de Mestre Taekwon (Proteção Solar)
+- [x] Nova Skill de Mestre Taekwon (Proteção Lunar)
+- [x] Nova Skill de Mestre Taekwon (Proteção Estelar)
+- [x] Correção Vigor Auto-Spawn
+
+## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot
 - [x] Autobuff status
@@ -31,11 +39,3 @@ This project was created using Visual Studio 2022, just open `4RTools.sln` in Vi
 - [x] Song Macro
 - [x] Macro Switch/Macro Chain
 - [x] ATK x DEF Mode switch
-
-#### References
-https://github.com/k1ngJ/dtAP
-
-## Collaborators
-<a href="https://github.com/4RTools/4RTools/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=4RTools/4RTools" />
-</a>
