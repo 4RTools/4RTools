@@ -162,6 +162,7 @@ namespace _4RTools.Utils
         RECOGNIZEDSPELL = 355,
         DODGE_ON = 143,
         IZAYOI = 652,
+        BUNSINJYUTSU = 207,
         TARGET_BLOOD = 301,
 
         //Scrolls
