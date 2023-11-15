@@ -53,7 +53,7 @@
             this.txtHPpct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHPpct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtHPpct.ForeColor = System.Drawing.Color.White;
-            this.txtHPpct.Location = new System.Drawing.Point(118, 12);
+            this.txtHPpct.Location = new System.Drawing.Point(133, 12);
             this.txtHPpct.Name = "txtHPpct";
             this.txtHPpct.Size = new System.Drawing.Size(44, 23);
             this.txtHPpct.TabIndex = 39;
@@ -63,7 +63,7 @@
             // 
             this.labelSP.AutoSize = true;
             this.labelSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelSP.Location = new System.Drawing.Point(164, 40);
+            this.labelSP.Location = new System.Drawing.Point(179, 40);
             this.labelSP.Name = "labelSP";
             this.labelSP.Size = new System.Drawing.Size(20, 17);
             this.labelSP.TabIndex = 38;
@@ -73,7 +73,7 @@
             // 
             this.labelHP.AutoSize = true;
             this.labelHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelHP.Location = new System.Drawing.Point(164, 15);
+            this.labelHP.Location = new System.Drawing.Point(179, 15);
             this.labelHP.Name = "labelHP";
             this.labelHP.Size = new System.Drawing.Size(20, 17);
             this.labelHP.TabIndex = 37;
@@ -85,7 +85,7 @@
             this.txtAutopotDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAutopotDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtAutopotDelay.ForeColor = System.Drawing.Color.White;
-            this.txtAutopotDelay.Location = new System.Drawing.Point(118, 64);
+            this.txtAutopotDelay.Location = new System.Drawing.Point(133, 64);
             this.txtAutopotDelay.Name = "txtAutopotDelay";
             this.txtAutopotDelay.Size = new System.Drawing.Size(44, 23);
             this.txtAutopotDelay.TabIndex = 36;
@@ -95,7 +95,7 @@
             // 
             this.picBoxSP.BackColor = System.Drawing.Color.Transparent;
             this.picBoxSP.Image = global::_4RTools.Resources._4RTools.ETCResource.SP;
-            this.picBoxSP.Location = new System.Drawing.Point(11, 37);
+            this.picBoxSP.Location = new System.Drawing.Point(22, 37);
             this.picBoxSP.Name = "picBoxSP";
             this.picBoxSP.Size = new System.Drawing.Size(25, 25);
             this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -106,7 +106,7 @@
             // 
             this.picBoxHP.BackColor = System.Drawing.Color.Transparent;
             this.picBoxHP.Image = global::_4RTools.Resources._4RTools.ETCResource.HP;
-            this.picBoxHP.Location = new System.Drawing.Point(11, 11);
+            this.picBoxHP.Location = new System.Drawing.Point(22, 11);
             this.picBoxHP.Name = "picBoxHP";
             this.picBoxHP.Size = new System.Drawing.Size(25, 25);
             this.picBoxHP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -117,7 +117,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(74, 67);
+            this.label2.Location = new System.Drawing.Point(89, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 41;
@@ -127,7 +127,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(163, 67);
+            this.label1.Location = new System.Drawing.Point(178, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 17);
             this.label1.TabIndex = 42;
@@ -139,7 +139,7 @@
             this.txtHpKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHpKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtHpKey.ForeColor = System.Drawing.Color.White;
-            this.txtHpKey.Location = new System.Drawing.Point(56, 12);
+            this.txtHpKey.Location = new System.Drawing.Point(67, 12);
             this.txtHpKey.Name = "txtHpKey";
             this.txtHpKey.Size = new System.Drawing.Size(61, 23);
             this.txtHpKey.TabIndex = 43;
@@ -150,7 +150,7 @@
             this.txtSPKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSPKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtSPKey.ForeColor = System.Drawing.Color.White;
-            this.txtSPKey.Location = new System.Drawing.Point(56, 38);
+            this.txtSPKey.Location = new System.Drawing.Point(67, 38);
             this.txtSPKey.Name = "txtSPKey";
             this.txtSPKey.Size = new System.Drawing.Size(61, 23);
             this.txtSPKey.TabIndex = 44;
@@ -158,7 +158,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 17);
+            this.label3.Location = new System.Drawing.Point(45, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 13);
             this.label3.TabIndex = 45;
@@ -167,7 +167,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 43);
+            this.label4.Location = new System.Drawing.Point(46, 43);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(21, 13);
             this.label4.TabIndex = 46;
@@ -179,7 +179,7 @@
             this.txtSPpct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSPpct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtSPpct.ForeColor = System.Drawing.Color.White;
-            this.txtSPpct.Location = new System.Drawing.Point(118, 38);
+            this.txtSPpct.Location = new System.Drawing.Point(133, 38);
             this.txtSPpct.Name = "txtSPpct";
             this.txtSPpct.Size = new System.Drawing.Size(44, 23);
             this.txtSPpct.TabIndex = 40;
@@ -189,8 +189,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(198, 100);
+            this.ClientSize = new System.Drawing.Size(224, 100);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtSPKey);

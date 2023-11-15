@@ -39,7 +39,7 @@ namespace _4RTools.Forms
             SetATKDEFWindow();
             SetMacroSwitchWindow();
             SetServerWindow();
-            SetAdvertisementWindow();
+            //SetAdvertisementWindow();
 
             TrackerSingleton.Instance().SendEvent("desktop_login", "page_view", "desktop_container_load");
         }
@@ -196,17 +196,8 @@ namespace _4RTools.Forms
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(350, 80);
+            frm.Location = new Point(415, 80);
             frm.MdiParent = this;
-            frm.Show();
-        }
-
-        public void SetAdvertisementWindow()
-        {
-            AdvertisementForm frm = new AdvertisementForm();
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.MdiParent = this;
-            this.panelAdvertisement.Controls.Add(frm);
             frm.Show();
         }
 
@@ -241,7 +232,7 @@ namespace _4RTools.Forms
         {
             StatusEffectForm form = new StatusEffectForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(10, 220);
+            form.Location = new Point(40, 220);
             form.MdiParent = this;
             form.Show();
         }
@@ -250,7 +241,7 @@ namespace _4RTools.Forms
         {
             CustomButtonForm form = new CustomButtonForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(375, 220);
+            form.Location = new Point(445, 220);
             form.MdiParent = this;
             form.Show();
         }
