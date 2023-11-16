@@ -259,6 +259,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Container.resx">
       <DependentUpon>Container.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Forms\MacroSongForm.Designer.cs">
       <DependentUpon>MacroSongForm.cs</DependentUpon>
@@ -319,6 +320,7 @@
     </Compile>
     <EmbeddedResource Include="Forms\SkillTimerForm.resx">
       <DependentUpon>SkillTimerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomButtonForm.resx">
       <DependentUpon>CustomButtonForm.cs</DependentUpon>

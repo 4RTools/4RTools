@@ -323,6 +323,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bunsinjyutsu {
+            get {
+                object obj = ResourceManager.GetObject("bunsinjyutsu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cart_boost {
             get {
                 object obj = ResourceManager.GetObject("cart_boost", resourceCulture);

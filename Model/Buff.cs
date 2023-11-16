@@ -148,7 +148,8 @@ namespace _4RTools.Model
             {
                 new Buff("Cicada Skin Shed", EffectStatusIDs.PEEL_CHANGE, Resources._4RTools.Icons.nj_utsusemi),
                 new Buff("Ninja Aura", EffectStatusIDs.AURA_NINJA, Resources._4RTools.Icons.nj_nen),
-                new Buff("Izayoi", EffectStatusIDs.IZAYOI, Resources._4RTools.Icons.izayoi)
+                new Buff("Izayoi", EffectStatusIDs.IZAYOI, Resources._4RTools.Icons.izayoi),
+                new Buff("Imagem Falsa", EffectStatusIDs.BUNSINJYUTSU, Resources._4RTools.Icons.bunsinjyutsu)
             };
 
             return skills;
@@ -171,7 +172,7 @@ namespace _4RTools.Model
                 new Buff("Calor Solar, Lunar, Estelar", EffectStatusIDs.WARM, Resources._4RTools.Icons.sun_warm),
                 new Buff("Proteção Solar", EffectStatusIDs.SUN_COMFORT, Resources._4RTools.Icons.sun_comfort),
                 new Buff("Proteção Lunar", EffectStatusIDs.MOON_COMFORT, Resources._4RTools.Icons.moon_comfort),
-                new Buff("Proteção Estelar", EffectStatusIDs.STAR_COMFORT, Resources._4RTools.Icons.star_comfort),
+                new Buff("Proteção Estelar", EffectStatusIDs.STAR_COMFORT, Resources._4RTools.Icons.star_comfort)
 
         };
 

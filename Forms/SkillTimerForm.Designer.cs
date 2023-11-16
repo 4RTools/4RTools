@@ -42,7 +42,7 @@
             this.txtAutoRefreshDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtAutoRefreshDelay.ForeColor = System.Drawing.Color.White;
-            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(71, 22);
+            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(93, 22);
             this.txtAutoRefreshDelay.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -56,7 +56,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label2.Location = new System.Drawing.Point(132, 26);
+            this.label2.Location = new System.Drawing.Point(154, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 15);
             this.label2.TabIndex = 5;
@@ -68,7 +68,7 @@
             this.txtSkillTimerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSkillTimerKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtSkillTimerKey.ForeColor = System.Drawing.Color.White;
-            this.txtSkillTimerKey.Location = new System.Drawing.Point(71, 50);
+            this.txtSkillTimerKey.Location = new System.Drawing.Point(93, 50);
             this.txtSkillTimerKey.Name = "txtSkillTimerKey";
             this.txtSkillTimerKey.Size = new System.Drawing.Size(61, 23);
             this.txtSkillTimerKey.TabIndex = 4;
@@ -77,7 +77,7 @@
             // 
             this.lblAutoRefreshKey.AutoSize = true;
             this.lblAutoRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshKey.Location = new System.Drawing.Point(41, 54);
+            this.lblAutoRefreshKey.Location = new System.Drawing.Point(63, 54);
             this.lblAutoRefreshKey.Name = "lblAutoRefreshKey";
             this.lblAutoRefreshKey.Size = new System.Drawing.Size(27, 15);
             this.lblAutoRefreshKey.TabIndex = 1;
@@ -87,7 +87,7 @@
             // 
             this.lblAutoRefreshDelay.AutoSize = true;
             this.lblAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(27, 26);
+            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(49, 26);
             this.lblAutoRefreshDelay.Name = "lblAutoRefreshDelay";
             this.lblAutoRefreshDelay.Size = new System.Drawing.Size(38, 15);
             this.lblAutoRefreshDelay.TabIndex = 0;
@@ -99,7 +99,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(190, 101);
+            this.ClientSize = new System.Drawing.Size(225, 101);
             this.Controls.Add(this.txtAutoRefreshDelay);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSkillTimerKey);
