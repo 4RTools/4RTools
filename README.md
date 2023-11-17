@@ -27,6 +27,10 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Nova Skill de Mestre Taekwon (Proteção Estelar)
 - [x] Correção Vigor Auto-Spawn
 
+### Versão 1.0.2
+- [x] Nova Skill de Ninja (Imagem Falsa)
+- [x] Nova Skill de Justiceiro (Reação Ilimitada)
+
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot
