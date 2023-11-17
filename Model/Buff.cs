@@ -174,7 +174,7 @@ namespace _4RTools.Model
                 new Buff("Proteção Lunar", EffectStatusIDs.MOON_COMFORT, Resources._4RTools.Icons.moon_comfort),
                 new Buff("Proteção Estelar", EffectStatusIDs.STAR_COMFORT, Resources._4RTools.Icons.star_comfort)
 
-        };
+            };
 
             return skills;
         }
@@ -182,12 +182,14 @@ namespace _4RTools.Model
 
         public static List<Buff> GetGunsSkills()
         {
-            List<Buff> skills = new List<Buff>();
-
-            skills.Add(new Buff("Gatling Fever", EffectStatusIDs.GATLINGFEVER, Resources._4RTools.Icons.gatling_fever));
-            skills.Add(new Buff("Madness Canceller", EffectStatusIDs.MADNESSCANCEL, Resources._4RTools.Icons.madnesscancel));
-            skills.Add(new Buff("Adjustment", EffectStatusIDs.ADJUSTMENT, Resources._4RTools.Icons.adjustment));
-            skills.Add(new Buff("Increase Accuracy", EffectStatusIDs.ACCURACY, Resources._4RTools.Icons.increase_accuracy));
+            List<Buff> skills = new List<Buff>
+            {
+                new Buff("Ataque Gatling", EffectStatusIDs.GATLINGFEVER, Resources._4RTools.Icons.gatling_fever),
+                new Buff("Resistência Final", EffectStatusIDs.MADNESSCANCEL, Resources._4RTools.Icons.madnesscancel),
+                new Buff("Pânico do Justiceiro", EffectStatusIDs.ADJUSTMENT, Resources._4RTools.Icons.adjustment),
+                new Buff("Aumentar Precisão", EffectStatusIDs.ACCURACY, Resources._4RTools.Icons.increase_accuracy),
+                new Buff("Reação Ilimitada", EffectStatusIDs.E_CHAIN, Resources._4RTools.Icons.e_chain),
+            };
 
             return skills;
         }

@@ -198,22 +198,12 @@
       <DependentUpon>AddServerForm.cs</DependentUpon>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Compile>
-    <Compile Include="Forms\AdvertisementForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <EmbeddedResource Include="Forms\AddServerForm.resx">
       <DependentUpon>AddServerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Forms\AdvertisementForm.Designer.cs">
-      <DependentUpon>AdvertisementForm.cs</DependentUpon>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </Compile>
     <Compile Include="Forms\AHKForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <EmbeddedResource Include="Forms\AdvertisementForm.resx">
-      <DependentUpon>AdvertisementForm.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="Forms\AHKForm.Designer.cs">
       <DependentUpon>AHKForm.cs</DependentUpon>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -363,7 +353,6 @@
       <DependentUpon>ToggleApplicationStateForm.cs</DependentUpon>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Compile>
-    <Compile Include="Model\Advertiser.cs" />
     <Compile Include="Model\AHK.cs" />
     <Compile Include="Model\ATKDEFMode.cs" />
     <Compile Include="Model\Autopot.cs" />
