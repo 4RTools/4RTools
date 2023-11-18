@@ -113,6 +113,9 @@ namespace _4RTools.Utils
         FURY = 86,
         IMPOSITIO = 15,
         E_CHAIN = 753,
+        AUTOSHADOWSPELL = 393,
+        CLOAKING = 5,
+        HIDING = 4,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,

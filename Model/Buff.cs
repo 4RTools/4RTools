@@ -111,11 +111,15 @@ namespace _4RTools.Model
         {
             List<Buff> skills = new List<Buff>
             {
-                new Buff("Poison React", EffectStatusIDs.POISONREACT, Resources._4RTools.Icons.as_poisonreact),
-                new Buff("Reject Sword", EffectStatusIDs.SWORDREJECT, Resources._4RTools.Icons.st_rejectsword),
-                new Buff("Preserve", EffectStatusIDs.PRESERVE, Resources._4RTools.Icons.st_preserve),
-                new Buff("Enchant Deadly Poison", EffectStatusIDs.EDP, Resources._4RTools.Icons.asc_edp),
-                new Buff("Weapon Blocking", EffectStatusIDs.WEAPONBLOCKING, Resources._4RTools.Icons.weapon_blocking)
+                new Buff("Refletir Veneno", EffectStatusIDs.POISONREACT, Resources._4RTools.Icons.as_poisonreact),
+                new Buff("Instinto de Defesa", EffectStatusIDs.SWORDREJECT, Resources._4RTools.Icons.st_rejectsword),
+                new Buff("Preservar", EffectStatusIDs.PRESERVE, Resources._4RTools.Icons.st_preserve),
+                new Buff("Encantar com Veneno Mortal", EffectStatusIDs.EDP, Resources._4RTools.Icons.asc_edp),
+                new Buff("Reflexo de Combate", EffectStatusIDs.WEAPONBLOCKING, Resources._4RTools.Icons.weapon_blocking),
+                new Buff("Esconderijo", EffectStatusIDs.HIDING, Resources._4RTools.Icons.hiding),
+                new Buff("Furtividade", EffectStatusIDs.CLOAKING, Resources._4RTools.Icons.cloaking),
+                new Buff("Desejo das Sombras", EffectStatusIDs.AUTOSHADOWSPELL, Resources._4RTools.Icons.autoshadowspell),
+
             };
 
             return skills;
