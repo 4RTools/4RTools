@@ -30,6 +30,9 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 ### Versão 1.0.2
 - [x] Nova Skill de Ninja (Imagem Falsa)
 - [x] Nova Skill de Justiceiro (Reação Ilimitada)
+- [x] Nova Skill de Gatuno (Esconderijo)
+- [x] Nova Skill de Gatuno (Furtividade)
+- [x] Nova Skill de Gatuno (Desejo das Sombras)
 
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
