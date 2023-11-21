@@ -271,17 +271,18 @@ namespace _4RTools.Model
         {
             List<Buff> skills = new List<Buff>
             {
-                new Buff("Drowsiness Box", EffectStatusIDs.DROWSINESS_BOX, Resources._4RTools.Icons.drowsiness),
-                new Buff("Resentment Box", EffectStatusIDs.RESENTMENT_BOX, Resources._4RTools.Icons.resentment),
-                new Buff("Sunlight Box", EffectStatusIDs.SUNLIGHT_BOX, Resources._4RTools.Icons.sunbox),
-                new Buff("Box of Gloom", EffectStatusIDs.CONCENTRATION, Resources._4RTools.Icons.gloom),
-                new Buff("Box of Thunder", EffectStatusIDs.BOX_OF_THUNDER, Resources._4RTools.Icons.speed),
-                new Buff("Speed Potion / Guyak", EffectStatusIDs.SPEED_POT, Resources._4RTools.Icons.speedpotion),
-                new Buff("Anodyne", EffectStatusIDs.ENDURE, Resources._4RTools.Icons.anodyne),
-                new Buff("Aloevera", EffectStatusIDs.PROVOKE, Resources._4RTools.Icons.aloevera),
+                new Buff("Caixa da Sonolência", EffectStatusIDs.DROWSINESS_BOX, Resources._4RTools.Icons.drowsiness),
+                new Buff("Caixa do Ressentimento", EffectStatusIDs.RESENTMENT_BOX, Resources._4RTools.Icons.resentment),
+                new Buff("Caixa da Luz do Sol", EffectStatusIDs.SUNLIGHT_BOX, Resources._4RTools.Icons.sunbox),
+                new Buff("Caixa da Escuridão", EffectStatusIDs.CONCENTRATION, Resources._4RTools.Icons.gloom),
+                new Buff("Caixa do Trovão", EffectStatusIDs.BOX_OF_THUNDER, Resources._4RTools.Icons.speed),
+                new Buff("Poção do Vento / Poção de Guyak", EffectStatusIDs.SPEED_POT, Resources._4RTools.Icons.speedpotion),
+                new Buff("Analgésico", EffectStatusIDs.ENDURE, Resources._4RTools.Icons.anodyne),
+                new Buff("Aloe Vera", EffectStatusIDs.PROVOKE, Resources._4RTools.Icons.aloevera),
                 new Buff("Abrasivo", EffectStatusIDs.CRITICALPERCENT, Resources._4RTools.Icons.abrasive),
-                new Buff("Combat Pill", EffectStatusIDs.COMBAT_PILL, Resources._4RTools.Icons.combat_pill),
-                new Buff("Celermine Juice", EffectStatusIDs.ENRICH_CELERMINE_JUICE, Resources._4RTools.Icons.celermine)
+                new Buff("Pílula de Combate", EffectStatusIDs.COMBAT_PILL, Resources._4RTools.Icons.combat_pill),
+                new Buff("Suco Celular Enriquecido", EffectStatusIDs.ENRICH_CELERMINE_JUICE, Resources._4RTools.Icons.celermine),
+                new Buff("Garrafa de Veneno", EffectStatusIDs.ASPDPOTIONINFINITY, Resources._4RTools.Icons.poison)
             };
 
             return skills;
