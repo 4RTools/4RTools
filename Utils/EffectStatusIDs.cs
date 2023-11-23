@@ -112,6 +112,10 @@ namespace _4RTools.Utils
         ACCURACY = 210,
         FURY = 86,
         IMPOSITIO = 15,
+        E_CHAIN = 753,
+        AUTOSHADOWSPELL = 393,
+        CLOAKING = 5,
+        HIDING = 4,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
@@ -130,6 +134,7 @@ namespace _4RTools.Utils
         CONCENTRATION_POTION = 37,
         AWAKENING_POTION = 38,
         BERSERK_POTION = 39,
+        ASPDPOTIONINFINITY = 40,
 
         //FOODS
         FOOD_STR = 241,
