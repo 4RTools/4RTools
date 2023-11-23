@@ -32,7 +32,6 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Nova Skill de Justiceiro (Reação Ilimitada)
 - [x] Nova Skill de Gatuno (Esconderijo)
 - [x] Nova Skill de Gatuno (Furtividade)
-- [x] Nova Skill de Gatuno (Desejo das Sombras)
 - [x] Novo Autobuff-Stuffs de Veneno para gatunos
 
 ## Original Features
