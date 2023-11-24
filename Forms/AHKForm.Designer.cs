@@ -579,6 +579,11 @@ namespace _4RTools.Forms
             this.txtSpammerDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtSpammerDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.txtSpammerDelay.Location = new System.Drawing.Point(10, 29);
+            this.txtSpammerDelay.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.txtSpammerDelay.Name = "txtSpammerDelay";
             this.txtSpammerDelay.Size = new System.Drawing.Size(59, 23);
             this.txtSpammerDelay.TabIndex = 31;
