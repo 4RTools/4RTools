@@ -366,12 +366,19 @@
   },
   {
     "name": "elves-origin",
-    "description": "Elves Origins",
+    "description": "Elves Origins(DX7)",
     "site": "https://elvesro.com/",
     "hpAddress": "011D1A04",
     "nameAddress": "011CA674",
     "hpAddressPointer": 18684420,
     "nameAddressPointer": 18654836
+  },
+  {
+    "name": "elves-origin",
+    "description": "Elves Origins(DX9)",
+    "site": "https://elvesro.com/",
+    "hpAddress": "000001453C2C",
+    "nameAddress": "000001456678"
   },
   {
     "name": "AeonRO",
