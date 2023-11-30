@@ -563,6 +563,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eden_scroll {
+            get {
+                object obj = ResourceManager.GetObject("eden_scroll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ele_earth_converter {
             get {
                 object obj = ResourceManager.GetObject("ele_earth_converter", resourceCulture);
@@ -576,6 +586,26 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap ele_fire_converter {
             get {
                 object obj = ResourceManager.GetObject("ele_fire_converter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ele_ghost_converter {
+            get {
+                object obj = ResourceManager.GetObject("ele_ghost_converter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ele_holy_converter {
+            get {
+                object obj = ResourceManager.GetObject("ele_holy_converter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
