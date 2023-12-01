@@ -1,4 +1,4 @@
-# 4RTools - Ragnatales
+# R4Tools - Ragnatales
 
 Este projeto e uma adaptacao do projeto 4RTools para uso pessoal e como objeto de estudo, onde acrescento features na ferramenta para atender as minhas necessidades jogando no servidor Ragnatales.
 
