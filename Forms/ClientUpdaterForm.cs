@@ -33,9 +33,9 @@ namespace _4RTools.Forms
             {
                 clients.AddRange(LocalServerManager.GetLocalClients()); //Load Local Servers First
                 //If fetch successfully update and load local file.
-                httpClient.Timeout = TimeSpan.FromSeconds(5);
-                string remoteServersRaw = await httpClient.GetStringAsync(AppConfig._4RClientsURL);
-                clients.AddRange(JsonConvert.DeserializeObject<List<ClientDTO>>(remoteServersRaw));
+                // httpClient.Timeout = TimeSpan.FromSeconds(5);
+                // string remoteServersRaw = await httpClient.GetStringAsync(AppConfig._4RClientsURL);
+                // clients.AddRange(JsonConvert.DeserializeObject<List<ClientDTO>>(remoteServersRaw));
 
             }
             catch(Exception ex)
