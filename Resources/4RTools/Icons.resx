@@ -610,4 +610,13 @@
 	<data name="poison" type="System.Resources.ResXFileRef, System.Windows.Forms">
 		<value>..\..\assets\images\poison.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 	</data>
+	<data name="ele_ghost_converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\ele_ghost_converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="ele_holy_converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\ele_holy_converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="eden_scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\eden_scroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
 </root>

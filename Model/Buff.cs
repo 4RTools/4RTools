@@ -227,15 +227,17 @@ namespace _4RTools.Model
         {
             List<Buff> skills = new List<Buff>
             {
-                new Buff("Fire Conversor", EffectStatusIDs.PROPERTYFIRE, Resources._4RTools.Icons.ele_fire_converter),
-                new Buff("Wind Conversor", EffectStatusIDs.PROPERTYWIND, Resources._4RTools.Icons.ele_wind_converter),
-                new Buff("Earth Conversor", EffectStatusIDs.PROPERTYGROUND, Resources._4RTools.Icons.ele_earth_converter),
-                new Buff("Water Conversor", EffectStatusIDs.PROPERTYWATER, Resources._4RTools.Icons.ele_water_converter),
-                new Buff("Cursed Water", EffectStatusIDs.PROPERTYDARK, Resources._4RTools.Icons.cursed_water),
-                new Buff("Fireproof Potion", EffectStatusIDs.RESIST_PROPERTY_FIRE, Resources._4RTools.Icons.fireproof),
-                new Buff("Waterproof Potion", EffectStatusIDs.RESIST_PROPERTY_WATER, Resources._4RTools.Icons.coldproof),
-                new Buff("Windproof Potion", EffectStatusIDs.RESIST_PROPERTY_WIND, Resources._4RTools.Icons.thunderproof),
-                new Buff("Earthproof Potion", EffectStatusIDs.RESIST_PROPERTY_GROUND, Resources._4RTools.Icons.earhproof)
+                new Buff("Conversor Elemental Fogo", EffectStatusIDs.PROPERTYFIRE, Resources._4RTools.Icons.ele_fire_converter),
+                new Buff("Conversor Elemental Vento", EffectStatusIDs.PROPERTYWIND, Resources._4RTools.Icons.ele_wind_converter),
+                new Buff("Conversor Elemental Terra", EffectStatusIDs.PROPERTYGROUND, Resources._4RTools.Icons.ele_earth_converter),
+                new Buff("Conversor Elemental Água", EffectStatusIDs.PROPERTYWATER, Resources._4RTools.Icons.ele_water_converter),
+                new Buff("Pergaminho de Aspersio", EffectStatusIDs.ASPERSIO, Resources._4RTools.Icons.ele_holy_converter),
+                new Buff("Conversor Elemental Fantasma", EffectStatusIDs.PROPERTYTELEKINESIS, Resources._4RTools.Icons.ele_ghost_converter),
+                new Buff("Água Amaldiçoada", EffectStatusIDs.PROPERTYDARK, Resources._4RTools.Icons.cursed_water),
+                new Buff("Poção Anti-Fogo", EffectStatusIDs.RESIST_PROPERTY_FIRE, Resources._4RTools.Icons.fireproof),
+                new Buff("Poção Anti-Água", EffectStatusIDs.RESIST_PROPERTY_WATER, Resources._4RTools.Icons.coldproof),
+                new Buff("Poção Anti-Vento", EffectStatusIDs.RESIST_PROPERTY_WIND, Resources._4RTools.Icons.thunderproof),
+                new Buff("Poção Anti-Terra", EffectStatusIDs.RESIST_PROPERTY_GROUND, Resources._4RTools.Icons.earhproof)
             };
 
             return skills;
@@ -292,6 +294,7 @@ namespace _4RTools.Model
             List<Buff> skills = new List<Buff>
             {
 
+                new Buff("Pergaminho do Éden", EffectStatusIDs.INC_AGI, Resources._4RTools.Icons.eden_scroll),
                 new Buff("Increase Agility Scroll", EffectStatusIDs.INC_AGI, Resources._4RTools.Icons.al_incagi1),
                 new Buff("Bless Scroll", EffectStatusIDs.BLESSING, Resources._4RTools.Icons.al_blessing1),
                 new Buff("Full Chemical Protection (Scroll)", EffectStatusIDs.PROTECTARMOR, Resources._4RTools.Icons.cr_fullprotection),
