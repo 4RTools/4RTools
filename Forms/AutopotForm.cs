@@ -47,7 +47,8 @@ namespace _4RTools.Forms
             this.txtHPpct.Text = this.autopot.hpPercent.ToString();
             this.txtSPpct.Text = this.autopot.spPercent.ToString();
             this.txtAutopotDelay.Text = this.autopot.delay.ToString();
-
+            RadioButton rdHealFirst = (RadioButton)this.Controls[ProfileSingleton.GetCurrent().Autopot.firstHeal];
+            if (rdHealFirst != null) { rdHealFirst.Checked = true; };
 
             txtHpKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             txtHpKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
@@ -104,6 +105,15 @@ namespace _4RTools.Forms
                 ProfileSingleton.SetConfiguration(this.autopot);
             }
             catch (Exception) { }
+        }
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.Checked)
+            {
+                this.autopot.firstHeal = rb.Name;
+                ProfileSingleton.SetConfiguration(this.autopot);
+            }
         }
     }
 }

@@ -41,7 +41,7 @@ namespace _4RTools.Forms
             SetServerWindow();
             //SetAdvertisementWindow();
 
-            TrackerSingleton.Instance().SendEvent("desktop_login", "page_view", "desktop_container_load");
+            //TrackerSingleton.Instance().SendEvent("desktop_login", "page_view", "desktop_container_load");
         }
 
         public void addform(TabPage tp, Form f)

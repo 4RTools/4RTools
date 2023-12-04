@@ -14,13 +14,15 @@ namespace _4RTools.Model
 
         public static string ACTION_NAME_AUTOPOT = "Autopot";
         public static string ACTION_NAME_AUTOPOT_YGG = "AutopotYgg";
-
+        public const string FIRSTHP = "firstHP";
+        public const string FIRSTSP = "firstSP";
         public Key hpKey { get; set; }
         public int hpPercent { get; set; }
         public Key spKey { get; set; }
         public int spPercent { get; set; }
         public int delay { get; set; } = 15;
         public int delayYgg { get; set; } = 50;
+        public string firstHeal { get; set; } = FIRSTHP;
 
         public string actionName { get; set; }
         private _4RThread thread;
@@ -49,7 +51,7 @@ namespace _4RTools.Model
         {
             Stop();
             Client roClient = ClientSingleton.GetClient();
-            if(roClient != null)
+            if (roClient != null)
             {
                 int hpPotCount = 0;
                 this.thread = new _4RThread(_ => AutopotThreadExecution(roClient, hpPotCount));
@@ -59,7 +61,45 @@ namespace _4RTools.Model
 
         private int AutopotThreadExecution(Client roClient, int hpPotCount)
         {
-            // check hp first
+
+            if (firstHeal.Equals(FIRSTHP))
+            {
+                healHPFirst(roClient, hpPotCount);
+            }
+            else
+            {
+                healSPFirst(roClient, hpPotCount);
+            }
+
+            Thread.Sleep(this.delay);
+            return 0;
+        }
+
+        private void healSPFirst(Client roClient, int hpPotCount)
+        {
+            if (roClient.IsSpBelow(spPercent))
+            {
+                pot(this.spKey);
+                hpPotCount++;
+
+                if (hpPotCount == 3)
+                {
+                    hpPotCount = 0;
+                    if (roClient.IsHpBelow(hpPercent))
+                    {
+                        pot(this.hpKey);
+                    }
+                }
+            }
+            // check hp
+            if (roClient.IsHpBelow(hpPercent))
+            {
+                pot(this.hpKey);
+            }
+        }
+
+        private void healHPFirst(Client roClient, int hpPotCount)
+        {
             if (roClient.IsHpBelow(hpPercent))
             {
                 pot(this.hpKey);
@@ -79,9 +119,6 @@ namespace _4RTools.Model
             {
                 pot(this.spKey);
             }
-
-            Thread.Sleep(this.delay);
-            return 0;
         }
 
         private void pot(Key key)
