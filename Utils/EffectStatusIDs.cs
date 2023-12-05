@@ -44,6 +44,8 @@ namespace _4RTools.Utils
         GLORIA = 21,
         MAGNIFICAT = 20,
         ANGELUS = 9,
+        LAUDA_AGNUS = 331,
+        LAUDA_RAMUS = 332,
         WINDWALK = 116,
         OVERTHRUST = 25,
         OVERTHRUSTMAX = 188,
@@ -116,6 +118,7 @@ namespace _4RTools.Utils
         AUTOSHADOWSPELL = 393,
         CLOAKING = 5,
         HIDING = 4,
+        MAGNUM = 131,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
