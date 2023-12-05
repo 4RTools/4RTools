@@ -14,7 +14,7 @@ namespace _4RTools.Utils
         QUAGMIRE = 8,
         HALLUCINATIONWALK = 334,
         HALLUCINATION = 34,
-        PROVOKE = 0,
+        PROVOKE = 2015,
         PROPERTYUNDEAD = 97,
         BLOODING = 124,
         MISTY_FROST = 1141,
@@ -119,6 +119,7 @@ namespace _4RTools.Utils
         CLOAKING = 5,
         HIDING = 4,
         MAGNUM = 131,
+        GIANTGROWTH = 319, // futura força titanica
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
