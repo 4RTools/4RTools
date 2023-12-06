@@ -39,6 +39,7 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Nova Skill de Noviço (Lauda Ramus)
 - [x] Nova Skill de Espadachim (Impacto Explosivo)
 - [x] Adicionado mais 3 macro switchs
+- [x] Adicionado mais 1 Skill Timer
 - [x] Correção Aloe Vera (ragnatales é diferente)
 
 ## Original Features
