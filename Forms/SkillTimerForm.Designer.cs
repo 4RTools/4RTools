@@ -33,7 +33,13 @@
             this.txtSkillTimerKey = new System.Windows.Forms.TextBox();
             this.lblAutoRefreshKey = new System.Windows.Forms.Label();
             this.lblAutoRefreshDelay = new System.Windows.Forms.Label();
+            this.txtAutoRefreshDelay1 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtSkillTimerKey1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtAutoRefreshDelay
@@ -42,7 +48,7 @@
             this.txtAutoRefreshDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtAutoRefreshDelay.ForeColor = System.Drawing.Color.White;
-            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(93, 22);
+            this.txtAutoRefreshDelay.Location = new System.Drawing.Point(137, 15);
             this.txtAutoRefreshDelay.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -56,7 +62,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.label2.Location = new System.Drawing.Point(154, 26);
+            this.label2.Location = new System.Drawing.Point(198, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 15);
             this.label2.TabIndex = 5;
@@ -68,7 +74,7 @@
             this.txtSkillTimerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSkillTimerKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtSkillTimerKey.ForeColor = System.Drawing.Color.White;
-            this.txtSkillTimerKey.Location = new System.Drawing.Point(93, 50);
+            this.txtSkillTimerKey.Location = new System.Drawing.Point(30, 16);
             this.txtSkillTimerKey.Name = "txtSkillTimerKey";
             this.txtSkillTimerKey.Size = new System.Drawing.Size(61, 23);
             this.txtSkillTimerKey.TabIndex = 4;
@@ -77,7 +83,7 @@
             // 
             this.lblAutoRefreshKey.AutoSize = true;
             this.lblAutoRefreshKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshKey.Location = new System.Drawing.Point(63, 54);
+            this.lblAutoRefreshKey.Location = new System.Drawing.Point(0, 19);
             this.lblAutoRefreshKey.Name = "lblAutoRefreshKey";
             this.lblAutoRefreshKey.Size = new System.Drawing.Size(27, 15);
             this.lblAutoRefreshKey.TabIndex = 1;
@@ -87,12 +93,70 @@
             // 
             this.lblAutoRefreshDelay.AutoSize = true;
             this.lblAutoRefreshDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(49, 26);
+            this.lblAutoRefreshDelay.Location = new System.Drawing.Point(93, 18);
             this.lblAutoRefreshDelay.Name = "lblAutoRefreshDelay";
             this.lblAutoRefreshDelay.Size = new System.Drawing.Size(38, 15);
             this.lblAutoRefreshDelay.TabIndex = 0;
             this.lblAutoRefreshDelay.Text = "Delay";
             this.lblAutoRefreshDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtAutoRefreshDelay1
+            // 
+            this.txtAutoRefreshDelay1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtAutoRefreshDelay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAutoRefreshDelay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtAutoRefreshDelay1.ForeColor = System.Drawing.Color.White;
+            this.txtAutoRefreshDelay1.Location = new System.Drawing.Point(137, 54);
+            this.txtAutoRefreshDelay1.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.txtAutoRefreshDelay1.Name = "txtAutoRefreshDelay1";
+            this.txtAutoRefreshDelay1.Size = new System.Drawing.Size(61, 23);
+            this.txtAutoRefreshDelay1.TabIndex = 39;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            this.label1.Location = new System.Drawing.Point(198, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 15);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "sec";
+            // 
+            // txtSkillTimerKey1
+            // 
+            this.txtSkillTimerKey1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtSkillTimerKey1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSkillTimerKey1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtSkillTimerKey1.ForeColor = System.Drawing.Color.White;
+            this.txtSkillTimerKey1.Location = new System.Drawing.Point(30, 55);
+            this.txtSkillTimerKey1.Name = "txtSkillTimerKey1";
+            this.txtSkillTimerKey1.Size = new System.Drawing.Size(61, 23);
+            this.txtSkillTimerKey1.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            this.label3.Location = new System.Drawing.Point(93, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Delay";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            this.label4.Location = new System.Drawing.Point(0, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(27, 15);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Key";
             // 
             // SkillTimerForm
             // 
@@ -100,6 +164,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(225, 101);
+            this.Controls.Add(this.txtAutoRefreshDelay1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtSkillTimerKey1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAutoRefreshDelay);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSkillTimerKey);
@@ -110,6 +179,7 @@
             this.Name = "SkillTimerForm";
             this.Text = "SkillTimerForm";
             ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAutoRefreshDelay1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,5 +191,10 @@
         private System.Windows.Forms.TextBox txtSkillTimerKey;
         private System.Windows.Forms.Label lblAutoRefreshKey;
         private System.Windows.Forms.Label lblAutoRefreshDelay;
+        private System.Windows.Forms.NumericUpDown txtAutoRefreshDelay1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtSkillTimerKey1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
