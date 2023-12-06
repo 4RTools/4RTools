@@ -366,13 +366,13 @@
   },
   {
     "name": "elves-origin",
-    "description": "Elves Origins",
+    "description": "Elves Origins(DX9)",
     "site": "https://elvesro.com/",
-    "hpAddress": "011D1A04",
-    "nameAddress": "011CA674",
+    "hpAddress": "014757AC",
+    "nameAddress": "014781F8",
     "hpAddressPointer": 18684420,
     "nameAddressPointer": 18654836
-  },
+  }
   {
     "name": "AeonRO",
     "description": "Aeon Ragnarok online",
