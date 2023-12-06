@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using _4RTools.Model;
 using _4RTools.Utils;
 using System.Text.RegularExpressions;
+using System.Windows.Ink;
+using System.Linq.Expressions;
+using System.Xml.Linq;
 
 namespace _4RTools.Forms
 {
     public partial class MacroSwitchForm : Form, IObserver
     {
-        public static int TOTAL_MACRO_LANES = 3;
+        public static int TOTAL_MACRO_LANES = 6;
         public MacroSwitchForm(Subject subject)
         {
             subject.Attach(this);
@@ -39,6 +42,12 @@ namespace _4RTools.Forms
             try
             {
                 GroupBox group = (GroupBox)this.Controls.Find("chainGroup" + id, true)[0];
+                ChainConfig exist = ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs.Find(config => config.id == id);
+                if (exist == null)
+                {
+                    ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs.Add(new ChainConfig(id, Key.None));
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().MacroSwitch);
+                }
                 ChainConfig chainConfig = new ChainConfig(ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs[id - 1]);
                 FormUtils.ResetForm(group);
 
@@ -60,11 +69,14 @@ namespace _4RTools.Forms
                     }
                 }
             }
-            catch { };
+            catch (Exception ex)
+            {
+                var exc = ex;
+            };
         }
 
         private void onTextChange(object sender, EventArgs e)
-        {                 
+        {
             TextBox textBox = (TextBox)sender;
             int chainID = Int16.Parse(textBox.Parent.Name.Split(new[] { "chainGroup" }, StringSplitOptions.None)[1]);
             GroupBox group = (GroupBox)this.Controls.Find("chainGroup" + chainID, true)[0];
@@ -82,14 +94,19 @@ namespace _4RTools.Forms
 
         private void onDelayChange(object sender, EventArgs e)
         {
+
             NumericUpDown delayInput = (NumericUpDown)sender;
             int chainID = Int16.Parse(delayInput.Parent.Name.Split(new[] { "chainGroup" }, StringSplitOptions.None)[1]);
             ChainConfig chainConfig = ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs.Find(config => config.id == chainID);
 
             String cbName = delayInput.Name.Split(new[] { "delay" }, StringSplitOptions.None)[0];
-            chainConfig.macroEntries[cbName].delay = decimal.ToInt16(delayInput.Value);
+            try
+            {
+                chainConfig.macroEntries[cbName].delay = decimal.ToInt16(delayInput.Value);
 
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().MacroSwitch);
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().MacroSwitch);
+            }
+            catch (Exception ex){ }
         }
 
         private void updateUi()

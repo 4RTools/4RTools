@@ -913,6 +913,26 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lauda_agnus {
+            get {
+                object obj = ResourceManager.GetObject("lauda_agnus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lauda_ramus {
+            get {
+                object obj = ResourceManager.GetObject("lauda_ramus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lg_inspiration {
             get {
                 object obj = ResourceManager.GetObject("lg_inspiration", resourceCulture);
@@ -1036,6 +1056,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap madnesscancel {
             get {
                 object obj = ResourceManager.GetObject("madnesscancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magnum {
+            get {
+                object obj = ResourceManager.GetObject("magnum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
