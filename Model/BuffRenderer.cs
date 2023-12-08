@@ -88,7 +88,18 @@ namespace _4RTools.Model
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
+                    if(statusID == EffectStatusIDs.EDEN)
+                    {
+                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.ASSUMPTIO, key);
+                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.INC_AGI, key);
+                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.BLESSING, key);
+                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.EDEN, key);
+                    }
+                    else
+                    {
+                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
+                    }
+                    
                     ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
                 }
             }

@@ -120,6 +120,9 @@ namespace _4RTools.Utils
         HIDING = 4,
         MAGNUM = 131,
         GIANTGROWTH = 319, // futura força titanica
+        palitochocolatehp = 2036,
+        palitocassismatk = 2038,
+        EDEN = 9999,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,

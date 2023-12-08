@@ -297,7 +297,7 @@ namespace _4RTools.Model
             List<Buff> skills = new List<Buff>
             {
 
-                new Buff("Pergaminho do Éden", EffectStatusIDs.INC_AGI, Resources._4RTools.Icons.eden_scroll),
+                new Buff("Pergaminho do Éden", EffectStatusIDs.EDEN, Resources._4RTools.Icons.eden_scroll),
                 new Buff("Increase Agility Scroll", EffectStatusIDs.INC_AGI, Resources._4RTools.Icons.al_incagi1),
                 new Buff("Bless Scroll", EffectStatusIDs.BLESSING, Resources._4RTools.Icons.al_blessing1),
                 new Buff("Full Chemical Protection (Scroll)", EffectStatusIDs.PROTECTARMOR, Resources._4RTools.Icons.cr_fullprotection),
