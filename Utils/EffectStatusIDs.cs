@@ -145,6 +145,7 @@ namespace _4RTools.Utils
         FOOD_INT = 245,
         FOOD_LUK = 246,
         FOOD_VIT_CASH = 273,
+        ACARAJE = 414,
 
         REGENERATION_POTION = 292,
 
