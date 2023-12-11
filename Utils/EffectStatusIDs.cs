@@ -6,19 +6,13 @@ namespace _4RTools.Utils
     public enum EffectStatusIDs : uint
     {
         //Status
-        POISON = 883,
-        SILENCE = 885,
-        BLIND = 887,
-        CONFUSION = 886,
-        CURSE = 884,
         QUAGMIRE = 8,
         HALLUCINATIONWALK = 334,
         HALLUCINATION = 34,
         PROVOKE = 2015,
         PROPERTYUNDEAD = 97,
-        BLOODING = 124,
+
         MISTY_FROST = 1141,
-        CRITICALWOUND = 286,
         OVERHEAT = 373,
 
         ENDURE = 1,
@@ -199,5 +193,25 @@ namespace _4RTools.Utils
 
         TELEKINESIS_INTENSE = 717,
         MYST_AMPLIFY = 113,
+
+        // DEBUFFS
+        // validados
+        CRITICALWOUND = 286,
+        FREEZING = 351,
+        CURSE = 884,
+        BLEEDING = 124,
+        SILENCE = 885,
+        DECREASE_AGI = 13,
+        CONFUSION = 886,
+        STUN = 877,
+        DEEP_SLEEP = 435,
+        POISON = 883,
+
+        // não validados
+        FEAR = 891,
+        BLIND = 887,
+
+
+
     }
 }

@@ -63,7 +63,7 @@ namespace _4RTools.Forms
             Key k = (Key)Enum.Parse(typeof(Key), this.txtNewStatusKey.Text.ToString());
 
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.PROPERTYUNDEAD, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.BLOODING, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.BLEEDING, k);
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.MISTY_FROST, k);
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CRITICALWOUND, k);
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.OVERHEAT, k);

@@ -328,6 +328,27 @@ namespace _4RTools.Model
 
             return skills;
         }
+        //--------------------- DEBUFFS ------------------------------
+        public static List<Buff> GetDebuffs()
+        {
+            List<Buff> skills = new List<Buff>
+            {
+                new Buff("Ferimento Crítico", EffectStatusIDs.CRITICALWOUND, Resources._4RTools.Icons.critical_wound),
+                new Buff("Hipotermia", EffectStatusIDs.FREEZING, Resources._4RTools.Icons.freezing),
+                new Buff("Maldição", EffectStatusIDs.CURSE, Resources._4RTools.Icons.curse),
+                new Buff("Sangramento", EffectStatusIDs.BLEEDING, Resources._4RTools.Icons.bleeding),
+                new Buff("Silêncio", EffectStatusIDs.SILENCE, Resources._4RTools.Icons.silence),
+                new Buff("Diminuir Agilidade", EffectStatusIDs.DECREASE_AGI, Resources._4RTools.Icons.decrease_agi),
+                new Buff("Caos / Confusão", EffectStatusIDs.CONFUSION, Resources._4RTools.Icons.chaos),
+                new Buff("Atordoamento", EffectStatusIDs.STUN, Resources._4RTools.Icons.stun),
+                new Buff("Sono Profundo", EffectStatusIDs.DEEP_SLEEP, Resources._4RTools.Icons.deep_sleep),
+                new Buff("Envenenamento", EffectStatusIDs.POISON, Resources._4RTools.Icons.poison_status),
+
+            };
+
+            return skills;
+        }
+
 
     }
 }

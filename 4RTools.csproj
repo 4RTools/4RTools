@@ -306,6 +306,13 @@
       <DependentUpon>CustomButtonForm.cs</DependentUpon>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Compile>
+    <Compile Include="Forms\AutoBuffStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AutoBuffStatusForm.Designer.cs">
+      <DependentUpon>AutoBuffStatusForm.cs</DependentUpon>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Compile>
     <Compile Include="Forms\StuffAutoBuffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -347,6 +354,9 @@
     <Compile Include="Forms\ToggleApplicationStateForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <EmbeddedResource Include="Forms\AutoBuffStatusForm.resx">
+      <DependentUpon>AutoBuffStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\StuffAutoBuffForm.resx">
       <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -361,6 +371,7 @@
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\Buff.cs" />
     <Compile Include="Model\BuffContainer.cs" />
+    <Compile Include="Model\DebuffRenderer.cs" />
     <Compile Include="Model\BuffRenderer.cs" />
     <Compile Include="Model\Custom.cs" />
     <Compile Include="Model\LocalServerManager.cs" />
