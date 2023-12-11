@@ -266,6 +266,12 @@ namespace _4RTools.Model
                 new Buff("Almighty", EffectStatusIDs.RWC_2011_SCROLL, Resources._4RTools.Icons.almighty),
                 new Buff("CASH Food", EffectStatusIDs.FOOD_VIT_CASH, Resources._4RTools.Icons.cash_food),
                 new Buff("Acarajé", EffectStatusIDs.ACARAJE, Resources._4RTools.Icons.acaraje),
+                new Buff("Palitos de Laranja", EffectStatusIDs.STR_Biscuit_Stick, Resources._4RTools.Icons.STR_Biscuit),
+                new Buff("Palitos de Baunilha", EffectStatusIDs.AGI_Biscuit_Stick, Resources._4RTools.Icons.AGI_Biscuit),
+                new Buff("Palitos de Cassis", EffectStatusIDs.INT_Biscuit_Stick, Resources._4RTools.Icons.INT_Biscuit),
+                new Buff("Palitos de Chocolate", EffectStatusIDs.VIT_Biscuit_Stick, Resources._4RTools.Icons.VIT_Biscuit),
+                new Buff("Palitos de Limão", EffectStatusIDs.DEX_Biscuit_Stick, Resources._4RTools.Icons.DEX_Biscuit),
+                new Buff("Palitos de Morango", EffectStatusIDs.LUK_Biscuit_Stick, Resources._4RTools.Icons.LUK_Biscuit),
             };
 
 

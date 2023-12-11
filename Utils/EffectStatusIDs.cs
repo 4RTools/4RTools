@@ -114,8 +114,6 @@ namespace _4RTools.Utils
         HIDING = 4,
         MAGNUM = 131,
         GIANTGROWTH = 319, // futura força titanica
-        palitochocolatehp = 2036,
-        palitocassismatk = 2038,
         EDEN = 9999,
 
         //ELEMENTAL CONVERTERS
@@ -146,10 +144,18 @@ namespace _4RTools.Utils
         FOOD_LUK = 246,
         FOOD_VIT_CASH = 273,
         ACARAJE = 414,
+        STR_Biscuit_Stick = 2035,
+        VIT_Biscuit_Stick = 2036,
+        AGI_Biscuit_Stick = 2037,
+        INT_Biscuit_Stick = 2038,
+        DEX_Biscuit_Stick = 2039,
+        LUK_Biscuit_Stick = 2040,
+
 
         REGENERATION_POTION = 292,
 
         CRITICALPERCENT = 295, // Abrasive
+
 
         //Boxes
         DROWSINESS_BOX = 151, //SONOLENCIA

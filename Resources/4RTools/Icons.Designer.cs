@@ -113,6 +113,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AGI_Biscuit {
+            get {
+                object obj = ResourceManager.GetObject("AGI_Biscuit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap agi_food {
             get {
                 object obj = ResourceManager.GetObject("agi_food", resourceCulture);
@@ -603,6 +613,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DEX_Biscuit {
+            get {
+                object obj = ResourceManager.GetObject("DEX_Biscuit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dex_food {
             get {
                 object obj = ResourceManager.GetObject("dex_food", resourceCulture);
@@ -973,6 +993,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap INT_Biscuit {
+            get {
+                object obj = ResourceManager.GetObject("INT_Biscuit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap int_food {
             get {
                 object obj = ResourceManager.GetObject("int_food", resourceCulture);
@@ -1106,6 +1136,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap luk_3rd_food {
             get {
                 object obj = ResourceManager.GetObject("luk_3rd_food", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LUK_Biscuit {
+            get {
+                object obj = ResourceManager.GetObject("LUK_Biscuit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1593,6 +1633,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap STR_Biscuit {
+            get {
+                object obj = ResourceManager.GetObject("STR_Biscuit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap strfood {
             get {
                 object obj = ResourceManager.GetObject("strfood", resourceCulture);
@@ -1806,6 +1856,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap vit_3rd_food {
             get {
                 object obj = ResourceManager.GetObject("vit_3rd_food", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VIT_Biscuit {
+            get {
+                object obj = ResourceManager.GetObject("VIT_Biscuit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
