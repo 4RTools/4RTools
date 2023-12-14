@@ -26,13 +26,13 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    DebuffRenderer.doUpdate(new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().StatusRecovery.buffMapping), this);
+                    DebuffRenderer.doUpdate(new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().DebuffsRecovery.buffMapping), this);
                     break;
                 case MessageCode.TURN_OFF:
-                    ProfileSingleton.GetCurrent().StatusRecovery.Stop();
+                    ProfileSingleton.GetCurrent().DebuffsRecovery.Stop();
                     break;
                 case MessageCode.TURN_ON:
-                    ProfileSingleton.GetCurrent().StatusRecovery.Start();
+                    ProfileSingleton.GetCurrent().DebuffsRecovery.Start();
                     break;
             }
         }

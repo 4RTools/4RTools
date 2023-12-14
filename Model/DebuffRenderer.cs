@@ -88,8 +88,8 @@ namespace _4RTools.Model
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(statusID, key);               
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
+                    ProfileSingleton.GetCurrent().DebuffsRecovery.AddKeyToBuff(statusID, key);               
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().DebuffsRecovery);
                 }
             }
             catch { }
