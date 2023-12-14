@@ -13,12 +13,10 @@ Caso voce queira usar esta versao do 4rTools voce pode ou extrair o `4RTools-dev
 Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RTools para a nova pasta extraida e ambos tem compatibilidade.
 
 ## Custom Features
-### Versão 1.0.0
+### Versão 2.6.0
 - [x] Modo Escuro
 - [x] Auto-Transfer Itens
 - [x] Novas Skills de Sumo (Impositio Manus)
-
-### Versão 1.0.1
 - [x] Nova Skill de Archer (Disparo Selvagem)
 - [x] Nova Skill de Mestre Taekwon (Milagre solar, Lunar e Estelar)
 - [x] Nova Skill de Mestre Taekwon (Calor solar, Lunar e Estelar)
@@ -26,13 +24,29 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Nova Skill de Mestre Taekwon (Proteção Lunar)
 - [x] Nova Skill de Mestre Taekwon (Proteção Estelar)
 - [x] Correção Vigor Auto-Spawn
-
-### Versão 1.0.2
 - [x] Nova Skill de Ninja (Imagem Falsa)
 - [x] Nova Skill de Justiceiro (Reação Ilimitada)
 - [x] Nova Skill de Gatuno (Esconderijo)
 - [x] Nova Skill de Gatuno (Furtividade)
 - [x] Novo Autobuff-Stuffs de Veneno para gatunos
+
+### Versão 2.6.1
+- [x] Adicionado seleção de prioridade de cura para HP/SP
+- [x] Novo Autobuff-Stuffs de Pergaminho do eden
+- [x] Novo Autobuff-Stuffs de Pergaminho de aspersio
+- [x] Novo Autobuff-Stuffs de Pergaminho de fantasma
+- [x] Nova Skill de Noviço (Lauda Agnus)
+- [x] Nova Skill de Noviço (Lauda Ramus)
+- [x] Nova Skill de Espadachim (Impacto Explosivo)
+- [x] Adicionado mais 3 macro switchs
+- [x] Adicionado mais 1 Skill Timer
+- [x] Correção Aloe Vera (ragnatales é diferente)
+
+### Versão 2.6.2
+- [x] Adicionado nova aba de Debuffs (para quem utiliza a pot para debuffs específicos )
+- [x] Novo Autobuff-Stuffs de Incenso queimado
+- [x] Novo Autobuff-Stuffs de Acarajé
+- [x] Novo Autobuff-Stuffs de Palitos (Laranja/Baunilha/Cassis/Chocolate/Limão/Morango)
 
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
