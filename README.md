@@ -42,6 +42,13 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Adicionado mais 1 Skill Timer
 - [x] Correção Aloe Vera (ragnatales é diferente)
 
+### Versão 2.6.2
+- [x] Adicionado nova aba de Debuffs (para quem utiliza a pot para debuffs específicos )
+- [x] Novo Autobuff-Stuffs de Incenso queimado
+- [x] Novo Autobuff-Stuffs de Acarajé
+- [x] Novo Autobuff-Stuffs de Palitos (Laranja/Baunilha/Cassis/Chocolate/Limão/Morango)
+
+
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot
