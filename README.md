@@ -48,7 +48,6 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Novo Autobuff-Stuffs de Acarajé
 - [x] Novo Autobuff-Stuffs de Palitos (Laranja/Baunilha/Cassis/Chocolate/Limão/Morango)
 
-
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot

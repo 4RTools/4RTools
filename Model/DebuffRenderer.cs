@@ -10,17 +10,17 @@ using System.Windows.Input;
 
 namespace _4RTools.Model
 {
-    internal class BuffRenderer
+    internal class DebuffRenderer
     {
 
         private readonly int BUFFS_PER_ROW = 5;
         private readonly int DISTANCE_BETWEEN_CONTAINERS = 10;
-        private readonly int DISTANCE_BETWEEN_ROWS = 30;
+        private readonly int DISTANCE_BETWEEN_ROWS = 45;
 
         private List<BuffContainer> _containers;
         private ToolTip _toolTip;
 
-        public BuffRenderer(List<BuffContainer> containers, ToolTip toolTip)
+        public DebuffRenderer(List<BuffContainer> containers, ToolTip toolTip)
         {
             this._containers = containers;
             this._toolTip = toolTip;
@@ -49,7 +49,7 @@ namespace _4RTools.Model
                     pb.BackgroundImageLayout = ImageLayout.Center;
                     pb.Location = new Point(lastLocation.X + (colCount * 100), lastLocation.Y);
                     pb.Name = "pbox" + ((int)skill.effectStatusID);
-                    pb.Size = new Size(26, 26);
+                    pb.Size = new Size(32, 32);
                     _toolTip.SetToolTip(pb, skill.name);
 
                     textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
@@ -58,7 +58,7 @@ namespace _4RTools.Model
                     textBox.Size = new Size(55, 20);
                     textBox.Tag = ((int)skill.effectStatusID);
                     textBox.Name = "in" + ((int)skill.effectStatusID);
-                    textBox.Location = new Point(pb.Location.X + 35, pb.Location.Y + 3);
+                    textBox.Location = new Point(pb.Location.X + 35, pb.Location.Y + 8);
                     textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
                     textBox.ForeColor = System.Drawing.Color.White;
                     textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -88,19 +88,8 @@ namespace _4RTools.Model
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    if(statusID == EffectStatusIDs.EDEN)
-                    {
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.ASSUMPTIO, key);
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.INC_AGI, key);
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.BLESSING, key);
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.EDEN, key);
-                    }
-                    else
-                    {
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
-                    }
-                    
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
+                    ProfileSingleton.GetCurrent().DebuffsRecovery.AddKeyToBuff(statusID, key);               
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().DebuffsRecovery);
                 }
             }
             catch { }

@@ -94,6 +94,7 @@ namespace _4RTools.Model
         public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
         public AutoBuff Autobuff { get; set; }
         public StatusRecovery StatusRecovery { get; set; }
+        public DebuffsRecovery DebuffsRecovery { get; set; }
         public Macro SongMacro { get; set;}
         public Macro MacroSwitch { get; set;}
 
@@ -114,6 +115,7 @@ namespace _4RTools.Model
             this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);
             this.MacroSwitch = new Macro(Macro.ACTION_NAME_MACRO_SWITCH, MacroSwitchForm.TOTAL_MACRO_LANES);
             this.AtkDefMode = new ATKDEFMode();
+            this.DebuffsRecovery = new DebuffsRecovery();
             this.Custom = new Custom();
         }
 

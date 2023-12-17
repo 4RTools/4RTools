@@ -265,6 +265,13 @@ namespace _4RTools.Model
                 new Buff("3RD LUK Food", EffectStatusIDs.LUK_3RD_FOOD, Resources._4RTools.Icons.luk_3rd_food),
                 new Buff("Almighty", EffectStatusIDs.RWC_2011_SCROLL, Resources._4RTools.Icons.almighty),
                 new Buff("CASH Food", EffectStatusIDs.FOOD_VIT_CASH, Resources._4RTools.Icons.cash_food),
+                new Buff("Acarajé", EffectStatusIDs.ACARAJE, Resources._4RTools.Icons.acaraje),
+                new Buff("Palitos de Laranja", EffectStatusIDs.STR_Biscuit_Stick, Resources._4RTools.Icons.STR_Biscuit),
+                new Buff("Palitos de Baunilha", EffectStatusIDs.AGI_Biscuit_Stick, Resources._4RTools.Icons.AGI_Biscuit),
+                new Buff("Palitos de Cassis", EffectStatusIDs.INT_Biscuit_Stick, Resources._4RTools.Icons.INT_Biscuit),
+                new Buff("Palitos de Chocolate", EffectStatusIDs.VIT_Biscuit_Stick, Resources._4RTools.Icons.VIT_Biscuit),
+                new Buff("Palitos de Limão", EffectStatusIDs.DEX_Biscuit_Stick, Resources._4RTools.Icons.DEX_Biscuit),
+                new Buff("Palitos de Morango", EffectStatusIDs.LUK_Biscuit_Stick, Resources._4RTools.Icons.LUK_Biscuit),
             };
 
 
@@ -297,13 +304,16 @@ namespace _4RTools.Model
             List<Buff> skills = new List<Buff>
             {
 
-                new Buff("Pergaminho do Éden", EffectStatusIDs.INC_AGI, Resources._4RTools.Icons.eden_scroll),
+                new Buff("Pergaminho do Éden", EffectStatusIDs.EDEN, Resources._4RTools.Icons.eden_scroll),
                 new Buff("Increase Agility Scroll", EffectStatusIDs.INC_AGI, Resources._4RTools.Icons.al_incagi1),
                 new Buff("Bless Scroll", EffectStatusIDs.BLESSING, Resources._4RTools.Icons.al_blessing1),
                 new Buff("Full Chemical Protection (Scroll)", EffectStatusIDs.PROTECTARMOR, Resources._4RTools.Icons.cr_fullprotection),
+                new Buff("Incenso Queimado",  EffectStatusIDs.SPIRIT, Resources._4RTools.Icons.burnt_incense),
                 new Buff("Link Scroll", EffectStatusIDs.SOULLINK, Resources._4RTools.Icons.sl_soullinker),
                 new Buff("Monster Transform",  EffectStatusIDs.MONSTER_TRANSFORM, Resources._4RTools.Icons.mob_transform),
-                new Buff("Assumptio",  EffectStatusIDs.ASSUMPTIO, Resources._4RTools.Icons.assumptio)
+                new Buff("Assumptio",  EffectStatusIDs.ASSUMPTIO, Resources._4RTools.Icons.assumptio),
+                
+
 
             };
 
@@ -325,6 +335,27 @@ namespace _4RTools.Model
 
             return skills;
         }
+        //--------------------- DEBUFFS ------------------------------
+        public static List<Buff> GetDebuffs()
+        {
+            List<Buff> skills = new List<Buff>
+            {
+                new Buff("Ferimento Crítico", EffectStatusIDs.CRITICALWOUND, Resources._4RTools.Icons.critical_wound),
+                new Buff("Hipotermia", EffectStatusIDs.FREEZING, Resources._4RTools.Icons.freezing),
+                new Buff("Maldição", EffectStatusIDs.CURSE, Resources._4RTools.Icons.curse),
+                new Buff("Sangramento", EffectStatusIDs.BLEEDING, Resources._4RTools.Icons.bleeding),
+                new Buff("Silêncio", EffectStatusIDs.SILENCE, Resources._4RTools.Icons.silence),
+                new Buff("Diminuir Agilidade", EffectStatusIDs.DECREASE_AGI, Resources._4RTools.Icons.decrease_agi),
+                new Buff("Caos / Confusão", EffectStatusIDs.CONFUSION, Resources._4RTools.Icons.chaos),
+                new Buff("Atordoamento", EffectStatusIDs.STUN, Resources._4RTools.Icons.stun),
+                new Buff("Sono Profundo", EffectStatusIDs.DEEP_SLEEP, Resources._4RTools.Icons.deep_sleep),
+                new Buff("Envenenamento", EffectStatusIDs.POISON, Resources._4RTools.Icons.poison_status),
+
+            };
+
+            return skills;
+        }
+
 
     }
 }

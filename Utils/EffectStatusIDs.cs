@@ -6,19 +6,13 @@ namespace _4RTools.Utils
     public enum EffectStatusIDs : uint
     {
         //Status
-        POISON = 883,
-        SILENCE = 885,
-        BLIND = 887,
-        CONFUSION = 886,
-        CURSE = 884,
         QUAGMIRE = 8,
         HALLUCINATIONWALK = 334,
         HALLUCINATION = 34,
         PROVOKE = 2015,
         PROPERTYUNDEAD = 97,
-        BLOODING = 124,
+
         MISTY_FROST = 1141,
-        CRITICALWOUND = 286,
         OVERHEAT = 373,
 
         ENDURE = 1,
@@ -120,6 +114,7 @@ namespace _4RTools.Utils
         HIDING = 4,
         MAGNUM = 131,
         GIANTGROWTH = 319, // futura força titanica
+        EDEN = 9999,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,
@@ -148,10 +143,19 @@ namespace _4RTools.Utils
         FOOD_INT = 245,
         FOOD_LUK = 246,
         FOOD_VIT_CASH = 273,
+        ACARAJE = 414,
+        STR_Biscuit_Stick = 2035,
+        VIT_Biscuit_Stick = 2036,
+        AGI_Biscuit_Stick = 2037,
+        INT_Biscuit_Stick = 2038,
+        DEX_Biscuit_Stick = 2039,
+        LUK_Biscuit_Stick = 2040,
+
 
         REGENERATION_POTION = 292,
 
         CRITICALPERCENT = 295, // Abrasive
+
 
         //Boxes
         DROWSINESS_BOX = 151, //SONOLENCIA
@@ -196,5 +200,25 @@ namespace _4RTools.Utils
 
         TELEKINESIS_INTENSE = 717,
         MYST_AMPLIFY = 113,
+
+        // DEBUFFS
+        // validados
+        CRITICALWOUND = 286,
+        FREEZING = 351,
+        CURSE = 884,
+        BLEEDING = 124,
+        SILENCE = 885,
+        DECREASE_AGI = 13,
+        CONFUSION = 886,
+        STUN = 877,
+        DEEP_SLEEP = 435,
+        POISON = 883,
+
+        // não validados
+        FEAR = 891,
+        BLIND = 887,
+
+
+
     }
 }
