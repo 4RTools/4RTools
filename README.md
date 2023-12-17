@@ -6,7 +6,7 @@ Este projeto e uma adaptacao do projeto 4RTools para uso pessoal e como objeto d
 
 ## Rodando o projeto
 
-Caso voce queira usar esta versao do 4rTools voce pode ou extrair o `4RTools-dev-1.0.1.zip` com a release que esta na raiz do projeto, ou usando o Visual Studio 2022 abrir o `4RTools.sln` e rodar e gerar suas propias releases.
+Caso voce queira usar esta versao do 4rTools voce pode baixar 'https://github.com/biancaazuma/4RTools-RagTools/releases/download/v2.6.1/4RTools.-.v2.6.1.rar' com a release que esta na raiz do projeto, ou usando o Visual Studio 2022 abrir o `4RTools.sln` e rodar e gerar suas propias releases.
 
 ## Copiando perfil
 
@@ -41,6 +41,12 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Adicionado mais 3 macro switchs
 - [x] Adicionado mais 1 Skill Timer
 - [x] Correção Aloe Vera (ragnatales é diferente)
+
+### Versão 2.6.2
+- [x] Adicionado nova aba de Debuffs (para quem utiliza a pot para debuffs específicos )
+- [x] Novo Autobuff-Stuffs de Incenso queimado
+- [x] Novo Autobuff-Stuffs de Acarajé
+- [x] Novo Autobuff-Stuffs de Palitos (Laranja/Baunilha/Cassis/Chocolate/Limão/Morango)
 
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
