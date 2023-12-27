@@ -94,19 +94,5 @@ namespace _4RTools.Model
             }
             catch { }
         }
-
-        public static void doUpdate(Dictionary<EffectStatusIDs, Key> autobuffDict, Control control)
-        {
-            FormUtils.ResetForm(control);
-            foreach (EffectStatusIDs effect in autobuffDict.Keys)
-            {
-                Control[] c = control.Controls.Find("in" + (int)effect, true);
-                if (c.Length > 0)
-                {
-                    TextBox textBox = (TextBox)c[0];
-                    textBox.Text = autobuffDict[effect].ToString();
-                }
-            }
-        }
     }
 }

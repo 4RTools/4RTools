@@ -4,6 +4,8 @@ using System.Windows.Input;
 using System.Collections.Generic;
 using _4RTools.Utils;
 using _4RTools.Model;
+using System.Linq;
+using System.Windows.Media.Effects;
 
 namespace _4RTools.Forms
 {
@@ -26,7 +28,7 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    DebuffRenderer.doUpdate(new Dictionary<EffectStatusIDs, Key>(ProfileSingleton.GetCurrent().DebuffsRecovery.buffMapping), this);
+                    doUpdate(this);
                     break;
                 case MessageCode.TURN_OFF:
                     ProfileSingleton.GetCurrent().DebuffsRecovery.Stop();
@@ -34,6 +36,23 @@ namespace _4RTools.Forms
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().DebuffsRecovery.Start();
                     break;
+            }
+        }
+        public static void doUpdate(Control control)
+        {
+            var autobuffDict = ProfileSingleton.GetCurrent().DebuffsRecovery.buffMapping;
+            var groupbox = control.Controls.OfType<GroupBox>().FirstOrDefault();
+            foreach (TextBox txt in groupbox.Controls.OfType<TextBox>()) {
+                var buffid = int.Parse(txt.Name.Split('n')[1]);
+                var existe = autobuffDict.FirstOrDefault(x => x.Key.Equals((EffectStatusIDs)buffid));
+                if (existe.Key != 0)
+                {
+                    txt.Text = autobuffDict[(EffectStatusIDs)buffid].ToString();
+                }
+                else
+                {
+                    txt.Text = "None";
+                }
             }
         }
     }
