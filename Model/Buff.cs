@@ -142,6 +142,7 @@ namespace _4RTools.Model
                 new Buff("Impositio Manus", EffectStatusIDs.IMPOSITIO, Resources._4RTools.Icons.impositio_manus),
                 new Buff("Lauda Agnus", EffectStatusIDs.LAUDA_AGNUS, Resources._4RTools.Icons.lauda_agnus),
                 new Buff("Lauda Ramus", EffectStatusIDs.LAUDA_RAMUS, Resources._4RTools.Icons.lauda_ramus),
+                new Buff("Basílica", EffectStatusIDs.BASILICA, Resources._4RTools.Icons.basilica),
             };
 
             return skills;
@@ -329,7 +330,7 @@ namespace _4RTools.Model
                 new Buff("HAGALAZ Rune", EffectStatusIDs.HAGALAZ, Resources._4RTools.Icons.HAGALAZ),
                 new Buff("LUX AMINA Rune", EffectStatusIDs.LUX_AMINA, Resources._4RTools.Icons.LUX_AMINA),
                 new Buff("Cat Can", EffectStatusIDs.OVERLAPEXPUP, Resources._4RTools.Icons.cat_can),
-                new Buff("Bubble Gum", EffectStatusIDs.CASH_RECEIVEITEM, Resources._4RTools.Icons.he_bubble_gum),
+                new Buff("Goma de Mascar", EffectStatusIDs.CASH_RECEIVEITEM, Resources._4RTools.Icons.he_bubble_gum),
                 new Buff("Battle Manual", EffectStatusIDs.CASH_PLUSEXP, Resources._4RTools.Icons.combat_manual)
             };
 

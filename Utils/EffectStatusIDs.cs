@@ -114,6 +114,7 @@ namespace _4RTools.Utils
         HIDING = 4,
         MAGNUM = 131,
         GIANTGROWTH = 319, // futura força titanica
+        BASILICA = 1122,
         EDEN = 9999,
 
         //ELEMENTAL CONVERTERS
