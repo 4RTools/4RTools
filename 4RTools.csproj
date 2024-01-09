@@ -611,6 +611,9 @@
     <None Include="assets\images\fury.png" />
     <None Include="assets\images\blessing_of_tyr.png" />
     <None Include="assets\images\cash_food.gif" />
+    <None Include="assets\images\impositio_manus.png" />
+    <None Include="assets\images\servant_weapon.png" />
+    <None Include="assets\images\reflect_damage.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -105,6 +105,9 @@ namespace _4RTools.Utils
         ADJUSTMENT = 209,
         ACCURACY = 210,
         FURY = 86,
+        IMPOSITIO = 15,
+        SERVANTWEAPON = 1172,
+        REFLECTDAMAGE = 390,
 
         //ELEMENTAL CONVERTERS
         PROPERTYFIRE = 90,

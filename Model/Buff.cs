@@ -59,7 +59,9 @@ namespace _4RTools.Model
                 new Buff("Inspiration", EffectStatusIDs.INSPIRATION, Resources._4RTools.Icons.lg_inspiration),
                 new Buff("Prestige", EffectStatusIDs.PRESTIGE, Resources._4RTools.Icons.lg_prestige),
                 new Buff("Shield Spell", EffectStatusIDs.SHIELDSPELL, Resources._4RTools.Icons.lg_shieldspell),
-                new Buff("Vanguard Force", EffectStatusIDs.FORCEOFVANGUARD, Resources._4RTools.Icons.vanguard_force)
+                new Buff("Vanguard Force", EffectStatusIDs.FORCEOFVANGUARD, Resources._4RTools.Icons.vanguard_force),
+                new Buff("Servant Weapon", EffectStatusIDs.SERVANTWEAPON, Resources._4RTools.Icons.servant_weapon),
+                new Buff("Reflect Damage", EffectStatusIDs.REFLECTDAMAGE, Resources._4RTools.Icons.reflect_damage),
             };
 
             return skills;
@@ -133,7 +135,8 @@ namespace _4RTools.Model
                 new Buff("Powerful Faith", EffectStatusIDs.POWERFUL_FAITH, Resources._4RTools.Icons.powerful_faith),
                 new Buff("Gentle Touch-Revitalize", EffectStatusIDs.GENTLETOUCH_REVITALIZE, Resources._4RTools.Icons.gentle_touch_revitalize),
                 new Buff("Gentle Touch-Convert", EffectStatusIDs.GENTLETOUCH_CHANGE, Resources._4RTools.Icons.gentle_touch_convert),
-                new Buff("Fury ", EffectStatusIDs.FURY, Resources._4RTools.Icons.fury)
+                new Buff("Fury ", EffectStatusIDs.FURY, Resources._4RTools.Icons.fury),
+                new Buff("Impositio Manus",  EffectStatusIDs.IMPOSITIO, Resources._4RTools.Icons.impositio_manus),
             };
 
             return skills;
@@ -282,7 +285,7 @@ namespace _4RTools.Model
                 new Buff("Full Chemical Protection (Scroll)", EffectStatusIDs.PROTECTARMOR, Resources._4RTools.Icons.cr_fullprotection),
                 new Buff("Link Scroll", EffectStatusIDs.SOULLINK, Resources._4RTools.Icons.sl_soullinker),
                 new Buff("Monster Transform",  EffectStatusIDs.MONSTER_TRANSFORM, Resources._4RTools.Icons.mob_transform),
-                new Buff("Assumptio",  EffectStatusIDs.ASSUMPTIO, Resources._4RTools.Icons.assumptio)
+                new Buff("Assumptio",  EffectStatusIDs.ASSUMPTIO, Resources._4RTools.Icons.assumptio),
 
             };
 

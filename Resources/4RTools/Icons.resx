@@ -328,6 +328,9 @@
   <data name="Ilimitar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\Ilimitar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="impositio_manus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\impositio_manus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="increase_accuracy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\increase_accuracy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -442,6 +445,9 @@
   <data name="red_herb_activator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\red_herb_activator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reflect_damage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\reflect_damage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="regeneration" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\regeneration.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -459,6 +465,9 @@
   </data>
   <data name="scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\scroll.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="servant_weapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\servant_weapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\shoes.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

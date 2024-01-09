@@ -763,6 +763,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap impositio_manus {
+            get {
+                object obj = ResourceManager.GetObject("impositio_manus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap increase_accuracy {
             get {
                 object obj = ResourceManager.GetObject("increase_accuracy", resourceCulture);
@@ -1143,6 +1153,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reflect_damage {
+            get {
+                object obj = ResourceManager.GetObject("reflect_damage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap regeneration {
             get {
                 object obj = ResourceManager.GetObject("regeneration", resourceCulture);
@@ -1196,6 +1216,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap scroll {
             get {
                 object obj = ResourceManager.GetObject("scroll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap servant_weapon {
+            get {
+                object obj = ResourceManager.GetObject("servant_weapon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
