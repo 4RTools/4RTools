@@ -273,6 +273,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap base_combat {
+            get {
+                object obj = ResourceManager.GetObject("base_combat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap basilica {
             get {
                 object obj = ResourceManager.GetObject("basilica", resourceCulture);
@@ -436,6 +446,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap chaos {
             get {
                 object obj = ResourceManager.GetObject("chaos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap class_combat {
+            get {
+                object obj = ResourceManager.GetObject("class_combat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
