@@ -32,6 +32,12 @@ namespace _4RTools.Model
                 for (int i = 0; i <= Constants.MAX_BUFF_LIST_INDEX_SIZE - 1; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
+
+                    if (currentStatus == 4294967295)
+                    {
+                        continue;
+                    }
+
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
                     if (buffMapping.ContainsKey((EffectStatusIDs)currentStatus)) //IF FOR REMOVE STATUS - CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                     {

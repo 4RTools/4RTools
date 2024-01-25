@@ -38,6 +38,12 @@ namespace _4RTools.Model
                 for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
+
+                    if(currentStatus == 4294967295)
+                    {
+                        continue;
+                    }
+
                     buffs.Add(currentStatus);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
 

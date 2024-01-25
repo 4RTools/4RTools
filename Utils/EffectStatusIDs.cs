@@ -93,6 +93,7 @@ namespace _4RTools.Utils
         FORCEOFVANGUARD = 391,
         UNLIMIT = 722,
         POEMBRAGI = 72,
+        APPLEIDUN = 73,
         RUSH_WINDMILL = 442,
         MOONLIT_SERENADE = 447,
         RAISINGDRAGON = 410,
@@ -220,7 +221,14 @@ namespace _4RTools.Utils
         FEAR = 891,
         BLIND = 887,
 
+        // pergaminhos cheffenia
 
+        GHOSTRING = 302,
+        ANGELING = 302,
+        TAO_GUNKA = 368,
+        SR_ORCS = 371,
+        ORC_HEROI = 370,
+        ABELHA = 369,
 
     }
 }
