@@ -9,7 +9,7 @@ namespace _4RTools.Forms
 {
     public partial class MacroSongForm : Form, IObserver
     {
-        public static int TOTAL_MACRO_LANES_FOR_SONGS = 4;
+        public static int TOTAL_MACRO_LANES_FOR_SONGS = 8;
         public MacroSongForm(Subject subject)
         {
             subject.Attach(this);
@@ -39,7 +39,7 @@ namespace _4RTools.Forms
             try
             {
                 Macro songMacro = ProfileSingleton.GetCurrent().SongMacro;
-                Panel p = (Panel)this.Controls.Find("panelMacro" + id, true)[0];
+                GroupBox p = (GroupBox)this.Controls.Find("panelMacro" + id, true)[0];
                 ChainConfig chainConfig = new ChainConfig(songMacro.chainConfigs[id - 1]);
                 FormUtils.ResetForm(p);
 
@@ -120,6 +120,11 @@ namespace _4RTools.Forms
             {
                 int macroID = short.Parse(textBox.Name.Split(new[] { "mac" }, StringSplitOptions.None)[1]);
                 ChainConfig chainConfig = SongMacro.chainConfigs.Find(songMacro => songMacro.id == macroID);
+                if(chainConfig == null)
+                {
+                    SongMacro.chainConfigs.Add(new ChainConfig(macroID, Key.None));
+                    chainConfig = SongMacro.chainConfigs.Find(songMacro => songMacro.id == macroID);
+                }
                 chainConfig.macroEntries[textBox.Name] = new MacroKey(key, chainConfig.delay);
             }
 
@@ -173,7 +178,7 @@ namespace _4RTools.Forms
         {
             try
             {
-                Panel p = (Panel)this.Controls.Find("panelMacro" + id, true)[0];
+                GroupBox p = (GroupBox)this.Controls.Find("panelMacro" + id, true)[0];
                 foreach (Control c in p.Controls)
                 {
                     if (c is TextBox)
