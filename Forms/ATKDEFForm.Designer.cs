@@ -63,6 +63,10 @@
             this.lblSwitchDelay = new System.Windows.Forms.Label();
             this.switchDelay = new System.Windows.Forms.NumericUpDown();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.inDef6 = new System.Windows.Forms.TextBox();
+            this.inAtk6 = new System.Windows.Forms.TextBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -77,13 +81,15 @@
             this.panelSwitch.SuspendLayout();
             this.groupBoxATKxDEFConfig.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDef
             // 
             this.lblDef.AutoSize = true;
             this.lblDef.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblDef.Location = new System.Drawing.Point(220, 46);
+            this.lblDef.Location = new System.Drawing.Point(249, 46);
             this.lblDef.Name = "lblDef";
             this.lblDef.Size = new System.Drawing.Size(63, 13);
             this.lblDef.TabIndex = 0;
@@ -94,7 +100,7 @@
             this.inDef1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inDef1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inDef1.ForeColor = System.Drawing.Color.White;
-            this.inDef1.Location = new System.Drawing.Point(252, 70);
+            this.inDef1.Location = new System.Drawing.Point(252, 67);
             this.inDef1.Name = "inDef1";
             this.inDef1.Size = new System.Drawing.Size(60, 20);
             this.inDef1.TabIndex = 1;
@@ -105,7 +111,7 @@
             this.inDef2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inDef2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inDef2.ForeColor = System.Drawing.Color.White;
-            this.inDef2.Location = new System.Drawing.Point(252, 96);
+            this.inDef2.Location = new System.Drawing.Point(252, 90);
             this.inDef2.Name = "inDef2";
             this.inDef2.Size = new System.Drawing.Size(60, 20);
             this.inDef2.TabIndex = 2;
@@ -116,7 +122,7 @@
             this.inDef3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inDef3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inDef3.ForeColor = System.Drawing.Color.White;
-            this.inDef3.Location = new System.Drawing.Point(252, 122);
+            this.inDef3.Location = new System.Drawing.Point(252, 114);
             this.inDef3.Name = "inDef3";
             this.inDef3.Size = new System.Drawing.Size(60, 20);
             this.inDef3.TabIndex = 3;
@@ -127,7 +133,7 @@
             this.inDef4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inDef4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inDef4.ForeColor = System.Drawing.Color.White;
-            this.inDef4.Location = new System.Drawing.Point(252, 148);
+            this.inDef4.Location = new System.Drawing.Point(252, 138);
             this.inDef4.Name = "inDef4";
             this.inDef4.Size = new System.Drawing.Size(60, 20);
             this.inDef4.TabIndex = 4;
@@ -138,7 +144,7 @@
             this.inDef5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inDef5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inDef5.ForeColor = System.Drawing.Color.White;
-            this.inDef5.Location = new System.Drawing.Point(252, 174);
+            this.inDef5.Location = new System.Drawing.Point(252, 162);
             this.inDef5.Name = "inDef5";
             this.inDef5.Size = new System.Drawing.Size(60, 20);
             this.inDef5.TabIndex = 5;
@@ -149,7 +155,7 @@
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Location = new System.Drawing.Point(356, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 150);
+            this.panel1.Size = new System.Drawing.Size(1, 160);
             this.panel1.TabIndex = 6;
             // 
             // inAtk5
@@ -157,7 +163,7 @@
             this.inAtk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inAtk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inAtk5.ForeColor = System.Drawing.Color.White;
-            this.inAtk5.Location = new System.Drawing.Point(394, 174);
+            this.inAtk5.Location = new System.Drawing.Point(394, 163);
             this.inAtk5.Name = "inAtk5";
             this.inAtk5.Size = new System.Drawing.Size(60, 20);
             this.inAtk5.TabIndex = 12;
@@ -168,7 +174,7 @@
             this.inAtk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inAtk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inAtk4.ForeColor = System.Drawing.Color.White;
-            this.inAtk4.Location = new System.Drawing.Point(394, 148);
+            this.inAtk4.Location = new System.Drawing.Point(394, 139);
             this.inAtk4.Name = "inAtk4";
             this.inAtk4.Size = new System.Drawing.Size(60, 20);
             this.inAtk4.TabIndex = 11;
@@ -179,7 +185,7 @@
             this.inAtk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inAtk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inAtk3.ForeColor = System.Drawing.Color.White;
-            this.inAtk3.Location = new System.Drawing.Point(394, 122);
+            this.inAtk3.Location = new System.Drawing.Point(394, 115);
             this.inAtk3.Name = "inAtk3";
             this.inAtk3.Size = new System.Drawing.Size(60, 20);
             this.inAtk3.TabIndex = 10;
@@ -190,7 +196,7 @@
             this.inAtk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inAtk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inAtk2.ForeColor = System.Drawing.Color.White;
-            this.inAtk2.Location = new System.Drawing.Point(394, 96);
+            this.inAtk2.Location = new System.Drawing.Point(394, 91);
             this.inAtk2.Name = "inAtk2";
             this.inAtk2.Size = new System.Drawing.Size(60, 20);
             this.inAtk2.TabIndex = 9;
@@ -201,7 +207,7 @@
             this.inAtk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.inAtk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inAtk1.ForeColor = System.Drawing.Color.White;
-            this.inAtk1.Location = new System.Drawing.Point(394, 70);
+            this.inAtk1.Location = new System.Drawing.Point(394, 67);
             this.inAtk1.Name = "inAtk1";
             this.inAtk1.Size = new System.Drawing.Size(60, 20);
             this.inAtk1.TabIndex = 8;
@@ -221,9 +227,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(223, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(223, 88);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(25, 24);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
@@ -231,7 +237,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(223, 94);
+            this.pictureBox2.Location = new System.Drawing.Point(223, 111);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.TabIndex = 14;
@@ -241,7 +247,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(223, 146);
+            this.pictureBox3.Location = new System.Drawing.Point(223, 159);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.TabIndex = 15;
@@ -251,7 +257,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(223, 172);
+            this.pictureBox4.Location = new System.Drawing.Point(223, 183);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
             this.pictureBox4.TabIndex = 16;
@@ -261,7 +267,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(223, 120);
+            this.pictureBox5.Location = new System.Drawing.Point(223, 135);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.TabIndex = 17;
@@ -271,7 +277,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(458, 118);
+            this.pictureBox6.Location = new System.Drawing.Point(458, 136);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
             this.pictureBox6.TabIndex = 22;
@@ -281,7 +287,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.InitialImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(458, 172);
+            this.pictureBox7.Location = new System.Drawing.Point(458, 184);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
             this.pictureBox7.TabIndex = 21;
@@ -291,7 +297,7 @@
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.InitialImage")));
-            this.pictureBox8.Location = new System.Drawing.Point(458, 146);
+            this.pictureBox8.Location = new System.Drawing.Point(458, 160);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(25, 25);
             this.pictureBox8.TabIndex = 20;
@@ -301,7 +307,7 @@
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.InitialImage")));
-            this.pictureBox9.Location = new System.Drawing.Point(458, 94);
+            this.pictureBox9.Location = new System.Drawing.Point(458, 112);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
             this.pictureBox9.TabIndex = 19;
@@ -311,7 +317,7 @@
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.InitialImage")));
-            this.pictureBox10.Location = new System.Drawing.Point(458, 68);
+            this.pictureBox10.Location = new System.Drawing.Point(458, 88);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 25);
             this.pictureBox10.TabIndex = 18;
@@ -366,6 +372,10 @@
             // panelSwitch
             // 
             this.panelSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.panelSwitch.Controls.Add(this.pictureBox12);
+            this.panelSwitch.Controls.Add(this.pictureBox11);
+            this.panelSwitch.Controls.Add(this.inAtk6);
+            this.panelSwitch.Controls.Add(this.inDef6);
             this.panelSwitch.Controls.Add(this.inAtk2);
             this.panelSwitch.Controls.Add(this.lblDef);
             this.panelSwitch.Controls.Add(this.inDef1);
@@ -414,29 +424,6 @@
             this.groupBoxATKxDEFConfig.TabStop = false;
             this.groupBoxATKxDEFConfig.Text = "Configuration";
             // 
-            // lblSwitchDelay
-            // 
-            this.lblSwitchDelay.AutoSize = true;
-            this.lblSwitchDelay.Location = new System.Drawing.Point(17, 92);
-            this.lblSwitchDelay.Name = "lblSwitchDelay";
-            this.lblSwitchDelay.Size = new System.Drawing.Size(69, 13);
-            this.lblSwitchDelay.TabIndex = 28;
-            this.lblSwitchDelay.Text = "Switch Delay";
-            this.toolTip1.SetToolTip(this.lblSwitchDelay, "Delay between each item change.");
-            // 
-            // switchDelay
-            // 
-            this.switchDelay.Location = new System.Drawing.Point(101, 88);
-            this.switchDelay.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.switchDelay.Name = "switchDelay";
-            this.switchDelay.Size = new System.Drawing.Size(60, 20);
-            this.switchDelay.TabIndex = 27;
-            this.switchDelay.ValueChanged += new System.EventHandler(this.onDelayChange);
-            // 
             // inSpammerClick
             // 
             this.inSpammerClick.AutoSize = true;
@@ -476,6 +463,48 @@
             this.switchDelay.TabIndex = 27;
             this.switchDelay.ValueChanged += new System.EventHandler(this.onDelayChange);
             // 
+            // inDef6
+            // 
+            this.inDef6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inDef6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inDef6.ForeColor = System.Drawing.Color.White;
+            this.inDef6.Location = new System.Drawing.Point(252, 186);
+            this.inDef6.Name = "inDef6";
+            this.inDef6.Size = new System.Drawing.Size(60, 20);
+            this.inDef6.TabIndex = 34;
+            this.inDef6.Tag = "1";
+            // 
+            // inAtk6
+            // 
+            this.inAtk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.inAtk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inAtk6.ForeColor = System.Drawing.Color.White;
+            this.inAtk6.Location = new System.Drawing.Point(394, 187);
+            this.inAtk6.Name = "inAtk6";
+            this.inAtk6.Size = new System.Drawing.Size(60, 20);
+            this.inAtk6.TabIndex = 35;
+            this.inAtk6.Tag = "1";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.InitialImage")));
+            this.pictureBox11.Location = new System.Drawing.Point(223, 64);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox11.TabIndex = 36;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.InitialImage")));
+            this.pictureBox12.Location = new System.Drawing.Point(458, 64);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox12.TabIndex = 37;
+            this.pictureBox12.TabStop = false;
+            // 
             // ATKDEFForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,6 +531,8 @@
             this.groupBoxATKxDEFConfig.ResumeLayout(false);
             this.groupBoxATKxDEFConfig.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -541,5 +572,9 @@
         private System.Windows.Forms.NumericUpDown switchDelay;
         private System.Windows.Forms.GroupBox groupBoxATKxDEFConfig;
         private System.Windows.Forms.CheckBox inSpammerClick;
+        private System.Windows.Forms.TextBox inAtk6;
+        private System.Windows.Forms.TextBox inDef6;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }
