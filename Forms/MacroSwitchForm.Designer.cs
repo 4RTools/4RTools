@@ -211,6 +211,66 @@
             this.pictureBox76 = new System.Windows.Forms.PictureBox();
             this.pictureBox77 = new System.Windows.Forms.PictureBox();
             this.pictureBox78 = new System.Windows.Forms.PictureBox();
+            this.chainGroup8 = new System.Windows.Forms.GroupBox();
+            this.in1mac8 = new System.Windows.Forms.TextBox();
+            this.in7mac8 = new System.Windows.Forms.TextBox();
+            this.in6mac8 = new System.Windows.Forms.TextBox();
+            this.in2mac8 = new System.Windows.Forms.TextBox();
+            this.in5mac8 = new System.Windows.Forms.TextBox();
+            this.in3mac8 = new System.Windows.Forms.TextBox();
+            this.in4mac8 = new System.Windows.Forms.TextBox();
+            this.in7mac8delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox79 = new System.Windows.Forms.PictureBox();
+            this.pictureBox80 = new System.Windows.Forms.PictureBox();
+            this.in6mac8delay = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox81 = new System.Windows.Forms.PictureBox();
+            this.in1mac8delay = new System.Windows.Forms.NumericUpDown();
+            this.in5mac8delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox82 = new System.Windows.Forms.PictureBox();
+            this.pictureBox83 = new System.Windows.Forms.PictureBox();
+            this.in2mac8delay = new System.Windows.Forms.NumericUpDown();
+            this.in4mac8delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox84 = new System.Windows.Forms.PictureBox();
+            this.pictureBox85 = new System.Windows.Forms.PictureBox();
+            this.in3mac8delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox86 = new System.Windows.Forms.PictureBox();
+            this.pictureBox87 = new System.Windows.Forms.PictureBox();
+            this.pictureBox88 = new System.Windows.Forms.PictureBox();
+            this.pictureBox89 = new System.Windows.Forms.PictureBox();
+            this.pictureBox90 = new System.Windows.Forms.PictureBox();
+            this.pictureBox91 = new System.Windows.Forms.PictureBox();
+            this.chainGroup7 = new System.Windows.Forms.GroupBox();
+            this.in1mac7 = new System.Windows.Forms.TextBox();
+            this.in7mac7 = new System.Windows.Forms.TextBox();
+            this.in6mac7 = new System.Windows.Forms.TextBox();
+            this.in2mac7 = new System.Windows.Forms.TextBox();
+            this.in5mac7 = new System.Windows.Forms.TextBox();
+            this.in3mac7 = new System.Windows.Forms.TextBox();
+            this.in4mac7 = new System.Windows.Forms.TextBox();
+            this.in7mac7delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox92 = new System.Windows.Forms.PictureBox();
+            this.pictureBox93 = new System.Windows.Forms.PictureBox();
+            this.in6mac7delay = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox94 = new System.Windows.Forms.PictureBox();
+            this.in1mac7delay = new System.Windows.Forms.NumericUpDown();
+            this.in5mac7delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox95 = new System.Windows.Forms.PictureBox();
+            this.pictureBox96 = new System.Windows.Forms.PictureBox();
+            this.in2mac7delay = new System.Windows.Forms.NumericUpDown();
+            this.in4mac7delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox97 = new System.Windows.Forms.PictureBox();
+            this.pictureBox98 = new System.Windows.Forms.PictureBox();
+            this.in3mac7delay = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox99 = new System.Windows.Forms.PictureBox();
+            this.pictureBox100 = new System.Windows.Forms.PictureBox();
+            this.pictureBox101 = new System.Windows.Forms.PictureBox();
+            this.pictureBox102 = new System.Windows.Forms.PictureBox();
+            this.pictureBox103 = new System.Windows.Forms.PictureBox();
+            this.pictureBox104 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in1mac1delay)).BeginInit();
@@ -337,6 +397,48 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).BeginInit();
+            this.chainGroup8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in7mac8delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in6mac8delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in1mac8delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in5mac8delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in2mac8delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in4mac8delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in3mac8delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).BeginInit();
+            this.chainGroup7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in7mac7delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in6mac7delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in1mac7delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in5mac7delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in2mac7delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in4mac7delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in3mac7delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox100)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox101)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox102)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox103)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox104)).BeginInit();
             this.SuspendLayout();
             // 
             // in1mac1
@@ -2528,13 +2630,743 @@
             this.pictureBox78.TabIndex = 275;
             this.pictureBox78.TabStop = false;
             // 
+            // chainGroup8
+            // 
+            this.chainGroup8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.chainGroup8.Controls.Add(this.in1mac8);
+            this.chainGroup8.Controls.Add(this.in7mac8);
+            this.chainGroup8.Controls.Add(this.in6mac8);
+            this.chainGroup8.Controls.Add(this.in2mac8);
+            this.chainGroup8.Controls.Add(this.in5mac8);
+            this.chainGroup8.Controls.Add(this.in3mac8);
+            this.chainGroup8.Controls.Add(this.in4mac8);
+            this.chainGroup8.Controls.Add(this.in7mac8delay);
+            this.chainGroup8.Controls.Add(this.pictureBox79);
+            this.chainGroup8.Controls.Add(this.pictureBox80);
+            this.chainGroup8.Controls.Add(this.in6mac8delay);
+            this.chainGroup8.Controls.Add(this.label13);
+            this.chainGroup8.Controls.Add(this.label14);
+            this.chainGroup8.Controls.Add(this.pictureBox81);
+            this.chainGroup8.Controls.Add(this.in1mac8delay);
+            this.chainGroup8.Controls.Add(this.in5mac8delay);
+            this.chainGroup8.Controls.Add(this.pictureBox82);
+            this.chainGroup8.Controls.Add(this.pictureBox83);
+            this.chainGroup8.Controls.Add(this.in2mac8delay);
+            this.chainGroup8.Controls.Add(this.in4mac8delay);
+            this.chainGroup8.Controls.Add(this.pictureBox84);
+            this.chainGroup8.Controls.Add(this.pictureBox85);
+            this.chainGroup8.Controls.Add(this.in3mac8delay);
+            this.chainGroup8.Controls.Add(this.pictureBox86);
+            this.chainGroup8.Controls.Add(this.pictureBox87);
+            this.chainGroup8.Controls.Add(this.pictureBox88);
+            this.chainGroup8.Controls.Add(this.pictureBox89);
+            this.chainGroup8.Controls.Add(this.pictureBox90);
+            this.chainGroup8.Controls.Add(this.pictureBox91);
+            this.chainGroup8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chainGroup8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.chainGroup8.Location = new System.Drawing.Point(1, 880);
+            this.chainGroup8.Name = "chainGroup8";
+            this.chainGroup8.Size = new System.Drawing.Size(533, 118);
+            this.chainGroup8.TabIndex = 288;
+            this.chainGroup8.TabStop = false;
+            this.chainGroup8.Text = "Switch 8";
+            // 
+            // in1mac8
+            // 
+            this.in1mac8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac8.ForeColor = System.Drawing.Color.White;
+            this.in1mac8.Location = new System.Drawing.Point(63, 34);
+            this.in1mac8.Name = "in1mac8";
+            this.in1mac8.Size = new System.Drawing.Size(49, 20);
+            this.in1mac8.TabIndex = 182;
+            // 
+            // in7mac8
+            // 
+            this.in7mac8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac8.ForeColor = System.Drawing.Color.White;
+            this.in7mac8.Location = new System.Drawing.Point(477, 34);
+            this.in7mac8.Name = "in7mac8";
+            this.in7mac8.Size = new System.Drawing.Size(49, 20);
+            this.in7mac8.TabIndex = 277;
+            // 
+            // in6mac8
+            // 
+            this.in6mac8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac8.ForeColor = System.Drawing.Color.White;
+            this.in6mac8.Location = new System.Drawing.Point(408, 34);
+            this.in6mac8.Name = "in6mac8";
+            this.in6mac8.Size = new System.Drawing.Size(49, 20);
+            this.in6mac8.TabIndex = 273;
+            // 
+            // in2mac8
+            // 
+            this.in2mac8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac8.ForeColor = System.Drawing.Color.White;
+            this.in2mac8.Location = new System.Drawing.Point(132, 34);
+            this.in2mac8.Name = "in2mac8";
+            this.in2mac8.Size = new System.Drawing.Size(49, 20);
+            this.in2mac8.TabIndex = 257;
+            // 
+            // in5mac8
+            // 
+            this.in5mac8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac8.ForeColor = System.Drawing.Color.White;
+            this.in5mac8.Location = new System.Drawing.Point(339, 34);
+            this.in5mac8.Name = "in5mac8";
+            this.in5mac8.Size = new System.Drawing.Size(49, 20);
+            this.in5mac8.TabIndex = 269;
+            // 
+            // in3mac8
+            // 
+            this.in3mac8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac8.ForeColor = System.Drawing.Color.White;
+            this.in3mac8.Location = new System.Drawing.Point(201, 34);
+            this.in3mac8.Name = "in3mac8";
+            this.in3mac8.Size = new System.Drawing.Size(49, 20);
+            this.in3mac8.TabIndex = 261;
+            // 
+            // in4mac8
+            // 
+            this.in4mac8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac8.ForeColor = System.Drawing.Color.White;
+            this.in4mac8.Location = new System.Drawing.Point(270, 34);
+            this.in4mac8.Name = "in4mac8";
+            this.in4mac8.Size = new System.Drawing.Size(49, 20);
+            this.in4mac8.TabIndex = 265;
+            // 
+            // in7mac8delay
+            // 
+            this.in7mac8delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac8delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac8delay.ForeColor = System.Drawing.Color.White;
+            this.in7mac8delay.Location = new System.Drawing.Point(479, 68);
+            this.in7mac8delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in7mac8delay.Name = "in7mac8delay";
+            this.in7mac8delay.Size = new System.Drawing.Size(47, 20);
+            this.in7mac8delay.TabIndex = 280;
+            // 
+            // pictureBox79
+            // 
+            this.pictureBox79.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox79.Image")));
+            this.pictureBox79.Location = new System.Drawing.Point(496, 54);
+            this.pictureBox79.Name = "pictureBox79";
+            this.pictureBox79.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox79.TabIndex = 278;
+            this.pictureBox79.TabStop = false;
+            // 
+            // pictureBox80
+            // 
+            this.pictureBox80.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox80.Image")));
+            this.pictureBox80.Location = new System.Drawing.Point(82, 54);
+            this.pictureBox80.Name = "pictureBox80";
+            this.pictureBox80.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox80.TabIndex = 194;
+            this.pictureBox80.TabStop = false;
+            // 
+            // in6mac8delay
+            // 
+            this.in6mac8delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac8delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac8delay.ForeColor = System.Drawing.Color.White;
+            this.in6mac8delay.Location = new System.Drawing.Point(410, 68);
+            this.in6mac8delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in6mac8delay.Name = "in6mac8delay";
+            this.in6mac8delay.Size = new System.Drawing.Size(47, 20);
+            this.in6mac8delay.TabIndex = 276;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 72);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 13);
+            this.label13.TabIndex = 248;
+            this.label13.Text = "Delays(ms):";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(27, 38);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(33, 13);
+            this.label14.TabIndex = 222;
+            this.label14.Text = "Keys:";
+            // 
+            // pictureBox81
+            // 
+            this.pictureBox81.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox81.Image")));
+            this.pictureBox81.Location = new System.Drawing.Point(427, 54);
+            this.pictureBox81.Name = "pictureBox81";
+            this.pictureBox81.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox81.TabIndex = 274;
+            this.pictureBox81.TabStop = false;
+            // 
+            // in1mac8delay
+            // 
+            this.in1mac8delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac8delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac8delay.ForeColor = System.Drawing.Color.White;
+            this.in1mac8delay.Location = new System.Drawing.Point(65, 68);
+            this.in1mac8delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in1mac8delay.Name = "in1mac8delay";
+            this.in1mac8delay.Size = new System.Drawing.Size(47, 20);
+            this.in1mac8delay.TabIndex = 254;
+            // 
+            // in5mac8delay
+            // 
+            this.in5mac8delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac8delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac8delay.ForeColor = System.Drawing.Color.White;
+            this.in5mac8delay.Location = new System.Drawing.Point(341, 68);
+            this.in5mac8delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in5mac8delay.Name = "in5mac8delay";
+            this.in5mac8delay.Size = new System.Drawing.Size(47, 20);
+            this.in5mac8delay.TabIndex = 272;
+            // 
+            // pictureBox82
+            // 
+            this.pictureBox82.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox82.Image")));
+            this.pictureBox82.Location = new System.Drawing.Point(151, 54);
+            this.pictureBox82.Name = "pictureBox82";
+            this.pictureBox82.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox82.TabIndex = 258;
+            this.pictureBox82.TabStop = false;
+            // 
+            // pictureBox83
+            // 
+            this.pictureBox83.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox83.Image")));
+            this.pictureBox83.Location = new System.Drawing.Point(358, 54);
+            this.pictureBox83.Name = "pictureBox83";
+            this.pictureBox83.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox83.TabIndex = 270;
+            this.pictureBox83.TabStop = false;
+            // 
+            // in2mac8delay
+            // 
+            this.in2mac8delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac8delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac8delay.ForeColor = System.Drawing.Color.White;
+            this.in2mac8delay.Location = new System.Drawing.Point(134, 68);
+            this.in2mac8delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in2mac8delay.Name = "in2mac8delay";
+            this.in2mac8delay.Size = new System.Drawing.Size(47, 20);
+            this.in2mac8delay.TabIndex = 260;
+            // 
+            // in4mac8delay
+            // 
+            this.in4mac8delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac8delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac8delay.ForeColor = System.Drawing.Color.White;
+            this.in4mac8delay.Location = new System.Drawing.Point(272, 68);
+            this.in4mac8delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in4mac8delay.Name = "in4mac8delay";
+            this.in4mac8delay.Size = new System.Drawing.Size(47, 20);
+            this.in4mac8delay.TabIndex = 268;
+            // 
+            // pictureBox84
+            // 
+            this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
+            this.pictureBox84.Location = new System.Drawing.Point(220, 54);
+            this.pictureBox84.Name = "pictureBox84";
+            this.pictureBox84.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox84.TabIndex = 262;
+            this.pictureBox84.TabStop = false;
+            // 
+            // pictureBox85
+            // 
+            this.pictureBox85.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox85.Image")));
+            this.pictureBox85.Location = new System.Drawing.Point(289, 54);
+            this.pictureBox85.Name = "pictureBox85";
+            this.pictureBox85.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox85.TabIndex = 266;
+            this.pictureBox85.TabStop = false;
+            // 
+            // in3mac8delay
+            // 
+            this.in3mac8delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac8delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac8delay.ForeColor = System.Drawing.Color.White;
+            this.in3mac8delay.Location = new System.Drawing.Point(203, 68);
+            this.in3mac8delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in3mac8delay.Name = "in3mac8delay";
+            this.in3mac8delay.Size = new System.Drawing.Size(47, 20);
+            this.in3mac8delay.TabIndex = 264;
+            // 
+            // pictureBox86
+            // 
+            this.pictureBox86.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox86.Location = new System.Drawing.Point(112, 38);
+            this.pictureBox86.Name = "pictureBox86";
+            this.pictureBox86.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox86.TabIndex = 195;
+            this.pictureBox86.TabStop = false;
+            // 
+            // pictureBox87
+            // 
+            this.pictureBox87.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox87.Location = new System.Drawing.Point(181, 38);
+            this.pictureBox87.Name = "pictureBox87";
+            this.pictureBox87.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox87.TabIndex = 259;
+            this.pictureBox87.TabStop = false;
+            // 
+            // pictureBox88
+            // 
+            this.pictureBox88.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox88.Location = new System.Drawing.Point(250, 38);
+            this.pictureBox88.Name = "pictureBox88";
+            this.pictureBox88.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox88.TabIndex = 263;
+            this.pictureBox88.TabStop = false;
+            // 
+            // pictureBox89
+            // 
+            this.pictureBox89.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox89.Location = new System.Drawing.Point(319, 38);
+            this.pictureBox89.Name = "pictureBox89";
+            this.pictureBox89.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox89.TabIndex = 267;
+            this.pictureBox89.TabStop = false;
+            // 
+            // pictureBox90
+            // 
+            this.pictureBox90.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox90.Location = new System.Drawing.Point(388, 38);
+            this.pictureBox90.Name = "pictureBox90";
+            this.pictureBox90.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox90.TabIndex = 271;
+            this.pictureBox90.TabStop = false;
+            // 
+            // pictureBox91
+            // 
+            this.pictureBox91.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox91.Location = new System.Drawing.Point(457, 38);
+            this.pictureBox91.Name = "pictureBox91";
+            this.pictureBox91.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox91.TabIndex = 275;
+            this.pictureBox91.TabStop = false;
+            // 
+            // chainGroup7
+            // 
+            this.chainGroup7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.chainGroup7.Controls.Add(this.in1mac7);
+            this.chainGroup7.Controls.Add(this.in7mac7);
+            this.chainGroup7.Controls.Add(this.in6mac7);
+            this.chainGroup7.Controls.Add(this.in2mac7);
+            this.chainGroup7.Controls.Add(this.in5mac7);
+            this.chainGroup7.Controls.Add(this.in3mac7);
+            this.chainGroup7.Controls.Add(this.in4mac7);
+            this.chainGroup7.Controls.Add(this.in7mac7delay);
+            this.chainGroup7.Controls.Add(this.pictureBox92);
+            this.chainGroup7.Controls.Add(this.pictureBox93);
+            this.chainGroup7.Controls.Add(this.in6mac7delay);
+            this.chainGroup7.Controls.Add(this.label15);
+            this.chainGroup7.Controls.Add(this.label16);
+            this.chainGroup7.Controls.Add(this.pictureBox94);
+            this.chainGroup7.Controls.Add(this.in1mac7delay);
+            this.chainGroup7.Controls.Add(this.in5mac7delay);
+            this.chainGroup7.Controls.Add(this.pictureBox95);
+            this.chainGroup7.Controls.Add(this.pictureBox96);
+            this.chainGroup7.Controls.Add(this.in2mac7delay);
+            this.chainGroup7.Controls.Add(this.in4mac7delay);
+            this.chainGroup7.Controls.Add(this.pictureBox97);
+            this.chainGroup7.Controls.Add(this.pictureBox98);
+            this.chainGroup7.Controls.Add(this.in3mac7delay);
+            this.chainGroup7.Controls.Add(this.pictureBox99);
+            this.chainGroup7.Controls.Add(this.pictureBox100);
+            this.chainGroup7.Controls.Add(this.pictureBox101);
+            this.chainGroup7.Controls.Add(this.pictureBox102);
+            this.chainGroup7.Controls.Add(this.pictureBox103);
+            this.chainGroup7.Controls.Add(this.pictureBox104);
+            this.chainGroup7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chainGroup7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.chainGroup7.Location = new System.Drawing.Point(1, 756);
+            this.chainGroup7.Name = "chainGroup7";
+            this.chainGroup7.Size = new System.Drawing.Size(533, 118);
+            this.chainGroup7.TabIndex = 287;
+            this.chainGroup7.TabStop = false;
+            this.chainGroup7.Text = "Switch 7";
+            // 
+            // in1mac7
+            // 
+            this.in1mac7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac7.ForeColor = System.Drawing.Color.White;
+            this.in1mac7.Location = new System.Drawing.Point(63, 34);
+            this.in1mac7.Name = "in1mac7";
+            this.in1mac7.Size = new System.Drawing.Size(49, 20);
+            this.in1mac7.TabIndex = 182;
+            // 
+            // in7mac7
+            // 
+            this.in7mac7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac7.ForeColor = System.Drawing.Color.White;
+            this.in7mac7.Location = new System.Drawing.Point(477, 34);
+            this.in7mac7.Name = "in7mac7";
+            this.in7mac7.Size = new System.Drawing.Size(49, 20);
+            this.in7mac7.TabIndex = 277;
+            // 
+            // in6mac7
+            // 
+            this.in6mac7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac7.ForeColor = System.Drawing.Color.White;
+            this.in6mac7.Location = new System.Drawing.Point(408, 34);
+            this.in6mac7.Name = "in6mac7";
+            this.in6mac7.Size = new System.Drawing.Size(49, 20);
+            this.in6mac7.TabIndex = 273;
+            // 
+            // in2mac7
+            // 
+            this.in2mac7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac7.ForeColor = System.Drawing.Color.White;
+            this.in2mac7.Location = new System.Drawing.Point(132, 34);
+            this.in2mac7.Name = "in2mac7";
+            this.in2mac7.Size = new System.Drawing.Size(49, 20);
+            this.in2mac7.TabIndex = 257;
+            // 
+            // in5mac7
+            // 
+            this.in5mac7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac7.ForeColor = System.Drawing.Color.White;
+            this.in5mac7.Location = new System.Drawing.Point(339, 34);
+            this.in5mac7.Name = "in5mac7";
+            this.in5mac7.Size = new System.Drawing.Size(49, 20);
+            this.in5mac7.TabIndex = 269;
+            // 
+            // in3mac7
+            // 
+            this.in3mac7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac7.ForeColor = System.Drawing.Color.White;
+            this.in3mac7.Location = new System.Drawing.Point(201, 34);
+            this.in3mac7.Name = "in3mac7";
+            this.in3mac7.Size = new System.Drawing.Size(49, 20);
+            this.in3mac7.TabIndex = 261;
+            // 
+            // in4mac7
+            // 
+            this.in4mac7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac7.ForeColor = System.Drawing.Color.White;
+            this.in4mac7.Location = new System.Drawing.Point(270, 34);
+            this.in4mac7.Name = "in4mac7";
+            this.in4mac7.Size = new System.Drawing.Size(49, 20);
+            this.in4mac7.TabIndex = 265;
+            // 
+            // in7mac7delay
+            // 
+            this.in7mac7delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in7mac7delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in7mac7delay.ForeColor = System.Drawing.Color.White;
+            this.in7mac7delay.Location = new System.Drawing.Point(479, 68);
+            this.in7mac7delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in7mac7delay.Name = "in7mac7delay";
+            this.in7mac7delay.Size = new System.Drawing.Size(47, 20);
+            this.in7mac7delay.TabIndex = 280;
+            // 
+            // pictureBox92
+            // 
+            this.pictureBox92.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox92.Image")));
+            this.pictureBox92.Location = new System.Drawing.Point(496, 54);
+            this.pictureBox92.Name = "pictureBox92";
+            this.pictureBox92.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox92.TabIndex = 278;
+            this.pictureBox92.TabStop = false;
+            // 
+            // pictureBox93
+            // 
+            this.pictureBox93.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox93.Image")));
+            this.pictureBox93.Location = new System.Drawing.Point(82, 54);
+            this.pictureBox93.Name = "pictureBox93";
+            this.pictureBox93.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox93.TabIndex = 194;
+            this.pictureBox93.TabStop = false;
+            // 
+            // in6mac7delay
+            // 
+            this.in6mac7delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in6mac7delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in6mac7delay.ForeColor = System.Drawing.Color.White;
+            this.in6mac7delay.Location = new System.Drawing.Point(410, 68);
+            this.in6mac7delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in6mac7delay.Name = "in6mac7delay";
+            this.in6mac7delay.Size = new System.Drawing.Size(47, 20);
+            this.in6mac7delay.TabIndex = 276;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(3, 72);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(61, 13);
+            this.label15.TabIndex = 248;
+            this.label15.Text = "Delays(ms):";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(27, 38);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(33, 13);
+            this.label16.TabIndex = 222;
+            this.label16.Text = "Keys:";
+            // 
+            // pictureBox94
+            // 
+            this.pictureBox94.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox94.Image")));
+            this.pictureBox94.Location = new System.Drawing.Point(427, 54);
+            this.pictureBox94.Name = "pictureBox94";
+            this.pictureBox94.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox94.TabIndex = 274;
+            this.pictureBox94.TabStop = false;
+            // 
+            // in1mac7delay
+            // 
+            this.in1mac7delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in1mac7delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in1mac7delay.ForeColor = System.Drawing.Color.White;
+            this.in1mac7delay.Location = new System.Drawing.Point(65, 68);
+            this.in1mac7delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in1mac7delay.Name = "in1mac7delay";
+            this.in1mac7delay.Size = new System.Drawing.Size(47, 20);
+            this.in1mac7delay.TabIndex = 254;
+            // 
+            // in5mac7delay
+            // 
+            this.in5mac7delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in5mac7delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in5mac7delay.ForeColor = System.Drawing.Color.White;
+            this.in5mac7delay.Location = new System.Drawing.Point(341, 68);
+            this.in5mac7delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in5mac7delay.Name = "in5mac7delay";
+            this.in5mac7delay.Size = new System.Drawing.Size(47, 20);
+            this.in5mac7delay.TabIndex = 272;
+            // 
+            // pictureBox95
+            // 
+            this.pictureBox95.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox95.Image")));
+            this.pictureBox95.Location = new System.Drawing.Point(151, 54);
+            this.pictureBox95.Name = "pictureBox95";
+            this.pictureBox95.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox95.TabIndex = 258;
+            this.pictureBox95.TabStop = false;
+            // 
+            // pictureBox96
+            // 
+            this.pictureBox96.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox96.Image")));
+            this.pictureBox96.Location = new System.Drawing.Point(358, 54);
+            this.pictureBox96.Name = "pictureBox96";
+            this.pictureBox96.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox96.TabIndex = 270;
+            this.pictureBox96.TabStop = false;
+            // 
+            // in2mac7delay
+            // 
+            this.in2mac7delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in2mac7delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in2mac7delay.ForeColor = System.Drawing.Color.White;
+            this.in2mac7delay.Location = new System.Drawing.Point(134, 68);
+            this.in2mac7delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in2mac7delay.Name = "in2mac7delay";
+            this.in2mac7delay.Size = new System.Drawing.Size(47, 20);
+            this.in2mac7delay.TabIndex = 260;
+            // 
+            // in4mac7delay
+            // 
+            this.in4mac7delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in4mac7delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in4mac7delay.ForeColor = System.Drawing.Color.White;
+            this.in4mac7delay.Location = new System.Drawing.Point(272, 68);
+            this.in4mac7delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in4mac7delay.Name = "in4mac7delay";
+            this.in4mac7delay.Size = new System.Drawing.Size(47, 20);
+            this.in4mac7delay.TabIndex = 268;
+            // 
+            // pictureBox97
+            // 
+            this.pictureBox97.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox97.Image")));
+            this.pictureBox97.Location = new System.Drawing.Point(220, 54);
+            this.pictureBox97.Name = "pictureBox97";
+            this.pictureBox97.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox97.TabIndex = 262;
+            this.pictureBox97.TabStop = false;
+            // 
+            // pictureBox98
+            // 
+            this.pictureBox98.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox98.Image")));
+            this.pictureBox98.Location = new System.Drawing.Point(289, 54);
+            this.pictureBox98.Name = "pictureBox98";
+            this.pictureBox98.Size = new System.Drawing.Size(11, 14);
+            this.pictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox98.TabIndex = 266;
+            this.pictureBox98.TabStop = false;
+            // 
+            // in3mac7delay
+            // 
+            this.in3mac7delay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.in3mac7delay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.in3mac7delay.ForeColor = System.Drawing.Color.White;
+            this.in3mac7delay.Location = new System.Drawing.Point(203, 68);
+            this.in3mac7delay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.in3mac7delay.Name = "in3mac7delay";
+            this.in3mac7delay.Size = new System.Drawing.Size(47, 20);
+            this.in3mac7delay.TabIndex = 264;
+            // 
+            // pictureBox99
+            // 
+            this.pictureBox99.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox99.Location = new System.Drawing.Point(112, 38);
+            this.pictureBox99.Name = "pictureBox99";
+            this.pictureBox99.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox99.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox99.TabIndex = 195;
+            this.pictureBox99.TabStop = false;
+            // 
+            // pictureBox100
+            // 
+            this.pictureBox100.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox100.Location = new System.Drawing.Point(181, 38);
+            this.pictureBox100.Name = "pictureBox100";
+            this.pictureBox100.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox100.TabIndex = 259;
+            this.pictureBox100.TabStop = false;
+            // 
+            // pictureBox101
+            // 
+            this.pictureBox101.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox101.Location = new System.Drawing.Point(250, 38);
+            this.pictureBox101.Name = "pictureBox101";
+            this.pictureBox101.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox101.TabIndex = 263;
+            this.pictureBox101.TabStop = false;
+            // 
+            // pictureBox102
+            // 
+            this.pictureBox102.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox102.Location = new System.Drawing.Point(319, 38);
+            this.pictureBox102.Name = "pictureBox102";
+            this.pictureBox102.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox102.TabIndex = 267;
+            this.pictureBox102.TabStop = false;
+            // 
+            // pictureBox103
+            // 
+            this.pictureBox103.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox103.Location = new System.Drawing.Point(388, 38);
+            this.pictureBox103.Name = "pictureBox103";
+            this.pictureBox103.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox103.TabIndex = 271;
+            this.pictureBox103.TabStop = false;
+            // 
+            // pictureBox104
+            // 
+            this.pictureBox104.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox104.Location = new System.Drawing.Point(457, 38);
+            this.pictureBox104.Name = "pictureBox104";
+            this.pictureBox104.Size = new System.Drawing.Size(20, 40);
+            this.pictureBox104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox104.TabIndex = 275;
+            this.pictureBox104.TabStop = false;
+            // 
             // MacroSwitchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(542, 757);
+            this.ClientSize = new System.Drawing.Size(542, 1005);
+            this.Controls.Add(this.chainGroup8);
+            this.Controls.Add(this.chainGroup7);
             this.Controls.Add(this.chainGroup6);
             this.Controls.Add(this.chainGroup5);
             this.Controls.Add(this.chainGroup4);
@@ -2677,6 +3509,50 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).EndInit();
+            this.chainGroup8.ResumeLayout(false);
+            this.chainGroup8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in7mac8delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in6mac8delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in1mac8delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in5mac8delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in2mac8delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in4mac8delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in3mac8delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).EndInit();
+            this.chainGroup7.ResumeLayout(false);
+            this.chainGroup7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in7mac7delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in6mac7delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in1mac7delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in5mac7delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in2mac7delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in4mac7delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in3mac7delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox100)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox101)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox102)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox103)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox104)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2863,5 +3739,65 @@
         private System.Windows.Forms.PictureBox pictureBox76;
         private System.Windows.Forms.PictureBox pictureBox77;
         private System.Windows.Forms.PictureBox pictureBox78;
+        private System.Windows.Forms.GroupBox chainGroup8;
+        private System.Windows.Forms.TextBox in1mac8;
+        private System.Windows.Forms.TextBox in7mac8;
+        private System.Windows.Forms.TextBox in6mac8;
+        private System.Windows.Forms.TextBox in2mac8;
+        private System.Windows.Forms.TextBox in5mac8;
+        private System.Windows.Forms.TextBox in3mac8;
+        private System.Windows.Forms.TextBox in4mac8;
+        private System.Windows.Forms.NumericUpDown in7mac8delay;
+        private System.Windows.Forms.PictureBox pictureBox79;
+        private System.Windows.Forms.PictureBox pictureBox80;
+        private System.Windows.Forms.NumericUpDown in6mac8delay;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox81;
+        private System.Windows.Forms.NumericUpDown in1mac8delay;
+        private System.Windows.Forms.NumericUpDown in5mac8delay;
+        private System.Windows.Forms.PictureBox pictureBox82;
+        private System.Windows.Forms.PictureBox pictureBox83;
+        private System.Windows.Forms.NumericUpDown in2mac8delay;
+        private System.Windows.Forms.NumericUpDown in4mac8delay;
+        private System.Windows.Forms.PictureBox pictureBox84;
+        private System.Windows.Forms.PictureBox pictureBox85;
+        private System.Windows.Forms.NumericUpDown in3mac8delay;
+        private System.Windows.Forms.PictureBox pictureBox86;
+        private System.Windows.Forms.PictureBox pictureBox87;
+        private System.Windows.Forms.PictureBox pictureBox88;
+        private System.Windows.Forms.PictureBox pictureBox89;
+        private System.Windows.Forms.PictureBox pictureBox90;
+        private System.Windows.Forms.PictureBox pictureBox91;
+        private System.Windows.Forms.GroupBox chainGroup7;
+        private System.Windows.Forms.TextBox in1mac7;
+        private System.Windows.Forms.TextBox in7mac7;
+        private System.Windows.Forms.TextBox in6mac7;
+        private System.Windows.Forms.TextBox in2mac7;
+        private System.Windows.Forms.TextBox in5mac7;
+        private System.Windows.Forms.TextBox in3mac7;
+        private System.Windows.Forms.TextBox in4mac7;
+        private System.Windows.Forms.NumericUpDown in7mac7delay;
+        private System.Windows.Forms.PictureBox pictureBox92;
+        private System.Windows.Forms.PictureBox pictureBox93;
+        private System.Windows.Forms.NumericUpDown in6mac7delay;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox94;
+        private System.Windows.Forms.NumericUpDown in1mac7delay;
+        private System.Windows.Forms.NumericUpDown in5mac7delay;
+        private System.Windows.Forms.PictureBox pictureBox95;
+        private System.Windows.Forms.PictureBox pictureBox96;
+        private System.Windows.Forms.NumericUpDown in2mac7delay;
+        private System.Windows.Forms.NumericUpDown in4mac7delay;
+        private System.Windows.Forms.PictureBox pictureBox97;
+        private System.Windows.Forms.PictureBox pictureBox98;
+        private System.Windows.Forms.NumericUpDown in3mac7delay;
+        private System.Windows.Forms.PictureBox pictureBox99;
+        private System.Windows.Forms.PictureBox pictureBox100;
+        private System.Windows.Forms.PictureBox pictureBox101;
+        private System.Windows.Forms.PictureBox pictureBox102;
+        private System.Windows.Forms.PictureBox pictureBox103;
+        private System.Windows.Forms.PictureBox pictureBox104;
     }
 }

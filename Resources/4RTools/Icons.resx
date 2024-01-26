@@ -682,4 +682,31 @@
 	<data name="AGI_Biscuit" type="System.Resources.ResXFileRef, System.Windows.Forms">
 		<value>..\..\assets\images\AGI_Biscuit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 	</data>
+	<data name="basilica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\basilica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="class_combat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\combat_manual_class.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="base_combat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\combat_manual_base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="perg_orcheroi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\perg_orcheroi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="perg_senhororc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\perg_senhororc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="perg_taogunka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\perg_taogunka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="perg_ghostring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\perg_ghostring.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="perg_angeling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\perg_angeling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
+	<data name="perg_abelha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\perg_abelha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
 </root>

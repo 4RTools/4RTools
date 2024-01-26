@@ -38,6 +38,12 @@ namespace _4RTools.Model
                 for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
+
+                    if(currentStatus == 4294967295)
+                    {
+                        continue;
+                    }
+
                     buffs.Add(currentStatus);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
 
@@ -65,7 +71,7 @@ namespace _4RTools.Model
                 buffs.Clear();
                 foreach (var item in bmClone)
                 {
-                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE))
+                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN))
                     {
                         break;
                     }

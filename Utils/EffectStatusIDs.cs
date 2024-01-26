@@ -83,7 +83,8 @@ namespace _4RTools.Utils
         REF_T_POTION = 1169,
         OVERLAPEXPUP = 618,
         PROTECTARMOR = 56,
-        CASH_PLUSEXP = 250,
+        CASH_PLUSEXP = 1400,
+        CASH_PLUSECLASSXP = 312,
         CASH_RECEIVEITEM = 252,
         ACCELERATION = 361,
         LIMIT_POWER_BOOSTER = 867,
@@ -92,6 +93,7 @@ namespace _4RTools.Utils
         FORCEOFVANGUARD = 391,
         UNLIMIT = 722,
         POEMBRAGI = 72,
+        APPLEIDUN = 73,
         RUSH_WINDMILL = 442,
         MOONLIT_SERENADE = 447,
         RAISINGDRAGON = 410,
@@ -114,6 +116,7 @@ namespace _4RTools.Utils
         HIDING = 4,
         MAGNUM = 131,
         GIANTGROWTH = 319, // futura força titanica
+        BASILICA = 1122,
         EDEN = 9999,
 
         //ELEMENTAL CONVERTERS
@@ -218,7 +221,14 @@ namespace _4RTools.Utils
         FEAR = 891,
         BLIND = 887,
 
+        // pergaminhos cheffenia
 
+        GHOSTRING = 302,
+        ANGELING = 302,
+        TAO_GUNKA = 368,
+        SR_ORCS = 371,
+        ORC_HEROI = 370,
+        ABELHA = 369,
 
     }
 }

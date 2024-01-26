@@ -13,7 +13,7 @@ namespace _4RTools.Forms
 {
     public partial class MacroSwitchForm : Form, IObserver
     {
-        public static int TOTAL_MACRO_LANES = 6;
+        public static int TOTAL_MACRO_LANES = 8;
         public MacroSwitchForm(Subject subject)
         {
             subject.Attach(this);

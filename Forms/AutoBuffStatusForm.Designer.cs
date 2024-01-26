@@ -63,7 +63,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AutoBuffStatusForm";
-            this.Text = "AutobuffSkillForm";
+            this.Text = "AutoBuffStatusForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

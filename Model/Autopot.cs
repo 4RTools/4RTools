@@ -5,6 +5,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Input;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace _4RTools.Model
 {
@@ -61,21 +62,21 @@ namespace _4RTools.Model
 
         private int AutopotThreadExecution(Client roClient, int hpPotCount)
         {
-
+            bool hasCriticalWound = HasCriticalWound(roClient);
             if (firstHeal.Equals(FIRSTHP))
             {
-                healHPFirst(roClient, hpPotCount);
+                healHPFirst(roClient, hpPotCount, hasCriticalWound);
             }
             else
             {
-                healSPFirst(roClient, hpPotCount);
+                healSPFirst(roClient, hpPotCount, hasCriticalWound);
             }
 
             Thread.Sleep(this.delay);
             return 0;
         }
 
-        private void healSPFirst(Client roClient, int hpPotCount)
+        private void healSPFirst(Client roClient, int hpPotCount, bool hasCriticalWound)
         {
             if (roClient.IsSpBelow(spPercent))
             {
@@ -85,7 +86,7 @@ namespace _4RTools.Model
                 if (hpPotCount == 3)
                 {
                     hpPotCount = 0;
-                    if (roClient.IsHpBelow(hpPercent))
+                    if (roClient.IsHpBelow(hpPercent) && ((!hasCriticalWound && this.actionName == ACTION_NAME_AUTOPOT) || this.actionName == ACTION_NAME_AUTOPOT_YGG))
                     {
                         pot(this.hpKey);
                     }
@@ -98,13 +99,14 @@ namespace _4RTools.Model
             }
         }
 
-        private void healHPFirst(Client roClient, int hpPotCount)
+        private void healHPFirst(Client roClient, int hpPotCount, bool hasCriticalWound)
         {
             if (roClient.IsHpBelow(hpPercent))
             {
-                pot(this.hpKey);
-                hpPotCount++;
-
+                if ((!hasCriticalWound && this.actionName == ACTION_NAME_AUTOPOT) || this.actionName == ACTION_NAME_AUTOPOT_YGG) {
+                    pot(this.hpKey);
+                    hpPotCount++;
+                }
                 if (hpPotCount == 3)
                 {
                     hpPotCount = 0;
@@ -144,6 +146,27 @@ namespace _4RTools.Model
         public string GetActionName()
         {
             return this.actionName != null ? this.actionName : ACTION_NAME_AUTOPOT;
+        }
+
+        public bool HasCriticalWound(Client c)
+        {
+            for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
+            {
+                uint currentStatus = c.CurrentBuffStatusCode(i);
+
+                if (currentStatus == 4294967295)
+                {
+                    continue;
+                }
+                EffectStatusIDs status = (EffectStatusIDs)currentStatus;
+
+                if (status == EffectStatusIDs.CRITICALWOUND)
+                {
+                    return true;
+                }
+            }
+            
+            return false;
         }
     }
 }
