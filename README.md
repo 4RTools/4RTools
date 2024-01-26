@@ -48,6 +48,17 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Novo Autobuff-Stuffs de Acarajé
 - [x] Novo Autobuff-Stuffs de Palitos (Laranja/Baunilha/Cassis/Chocolate/Limão/Morango)
 
+### Versão 2.6.4
+- [x] Adicionado chapéu aba de ATK x DEF
+- [x] Ajustado spam da habilidade Rapidez com Lança quando estiver em cima do pântano dos mortos
+- [x] Adicionado 2 Macro Switch (ja está no Max totalizando 8)
+- [x] Adicionado 4 Macro Songs (ja está no Max totalizando 8)
+- [x] Para cura de pot de hp quando estiver com ferimento critico (Ygg funciona normalmente)
+- [x] Adicionado pergaminhos de cheffenia (Ghostring, Angeling, Tao Gunka, Senhor dos Orcs, Orc Herói, Abelha Rainha)
+- [x] Novo Autobuff-Stuffs de  Manual de Combate de Classe
+- [x] Alterado icone de Goma
+- [x] Nova Skill de Noviço (Basílica)
+
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot
