@@ -25,15 +25,16 @@ namespace _4RTools.Model
         {
             List<Buff> skills = new List<Buff>
             {
-                new Buff("Concentration", EffectStatusIDs.CONCENTRATION, Resources._4RTools.Icons.ac_concentration),
-                new Buff("Wind Walk", EffectStatusIDs.WINDWALK, Resources._4RTools.Icons.sn_windwalk),
-                new Buff("True Sight", EffectStatusIDs.TRUESIGHT, Resources._4RTools.Icons.sn_sight),
+                new Buff("Concentração", EffectStatusIDs.CONCENTRATION, Resources._4RTools.Icons.ac_concentration),
+                new Buff("Caminho do Vento", EffectStatusIDs.WINDWALK, Resources._4RTools.Icons.sn_windwalk),
+                new Buff("Visão Real", EffectStatusIDs.TRUESIGHT, Resources._4RTools.Icons.sn_sight),
                 new Buff("Ilimitar", EffectStatusIDs.UNLIMIT, Resources._4RTools.Icons.Ilimitar),
-                new Buff("A Poem of Bragi", EffectStatusIDs.POEMBRAGI, Resources._4RTools.Icons.poem_of_bragi),
-                new Buff("Windmill Rush", EffectStatusIDs.RUSH_WINDMILL, Resources._4RTools.Icons.windmill_rush),
-                new Buff("Moonlight Serenade", EffectStatusIDs.MOONLIT_SERENADE, Resources._4RTools.Icons.moonlight_serenade),
-                new Buff("Frigg's Song", EffectStatusIDs.FRIGG_SONG, Resources._4RTools.Icons.friggs_song),
-                new Buff("Fear Breeze", EffectStatusIDs.FEARBREEZE, Resources._4RTools.Icons.fear_breeze),
+                new Buff("Poema de Bragi", EffectStatusIDs.POEMBRAGI, Resources._4RTools.Icons.poem_of_bragi),
+                new Buff("Sinfonia dos Ventos", EffectStatusIDs.RUSH_WINDMILL, Resources._4RTools.Icons.windmill_rush),
+                new Buff("Serenata ao Luar", EffectStatusIDs.MOONLIT_SERENADE, Resources._4RTools.Icons.moonlight_serenade),
+                new Buff("Canção de Frigga", EffectStatusIDs.FRIGG_SONG, Resources._4RTools.Icons.friggs_song),
+                new Buff("Disparo Selvagem", EffectStatusIDs.FEARBREEZE, Resources._4RTools.Icons.fear_breeze),
+                new Buff("Dança com Lobos", EffectStatusIDs.DANCE_WITH_WUG, Resources._4RTools.Icons.dance_with_wug),
             };
 
             return skills;
@@ -358,6 +359,7 @@ namespace _4RTools.Model
                 new Buff("Atordoamento", EffectStatusIDs.STUN, Resources._4RTools.Icons.stun),
                 new Buff("Sono Profundo", EffectStatusIDs.DEEP_SLEEP, Resources._4RTools.Icons.deep_sleep),
                 new Buff("Envenenamento", EffectStatusIDs.POISON, Resources._4RTools.Icons.poison_status),
+                new Buff("Sentar", EffectStatusIDs.SIT, Resources._4RTools.Icons.sit),
 
             };
 

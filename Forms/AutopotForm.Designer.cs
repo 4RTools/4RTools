@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.firstHP = new System.Windows.Forms.RadioButton();
             this.firstSP = new System.Windows.Forms.RadioButton();
+            this.chkStopWitchFC = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtHPpct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxHP)).BeginInit();
@@ -220,6 +221,18 @@
             this.firstSP.UseVisualStyleBackColor = true;
             this.firstSP.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
+            // chkStopWitchFC
+            // 
+            this.chkStopWitchFC.AutoSize = true;
+            this.chkStopWitchFC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.chkStopWitchFC.Location = new System.Drawing.Point(12, 74);
+            this.chkStopWitchFC.Name = "chkStopWitchFC";
+            this.chkStopWitchFC.Size = new System.Drawing.Size(90, 17);
+            this.chkStopWitchFC.TabIndex = 50;
+            this.chkStopWitchFC.Text = "Parar com FC";
+            this.chkStopWitchFC.UseVisualStyleBackColor = true;
+            this.chkStopWitchFC.CheckedChanged += new System.EventHandler(this.chkStopWitchFC_CheckedChanged);
+            // 
             // AutopotForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +240,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(224, 100);
+            this.Controls.Add(this.chkStopWitchFC);
             this.Controls.Add(this.firstSP);
             this.Controls.Add(this.firstHP);
             this.Controls.Add(this.label5);
@@ -274,5 +288,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton firstHP;
         private System.Windows.Forms.RadioButton firstSP;
+        private System.Windows.Forms.CheckBox chkStopWitchFC;
     }
 }

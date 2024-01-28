@@ -613,6 +613,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dance_with_wug {
+            get {
+                object obj = ResourceManager.GetObject("dance_with_wug", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap decrease_agi {
             get {
                 object obj = ResourceManager.GetObject("decrease_agi", resourceCulture);
@@ -1596,6 +1606,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap silence {
             get {
                 object obj = ResourceManager.GetObject("silence", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sit {
+            get {
+                object obj = ResourceManager.GetObject("sit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

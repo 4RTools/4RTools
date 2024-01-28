@@ -230,5 +230,8 @@ namespace _4RTools.Utils
         ORC_HEROI = 370,
         ABELHA = 369,
 
+        DANCE_WITH_WUG = 441,
+        SIT = 622,
+
     }
 }
