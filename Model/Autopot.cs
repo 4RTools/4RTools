@@ -23,6 +23,7 @@ namespace _4RTools.Model
         public int spPercent { get; set; }
         public int delay { get; set; } = 15;
         public int delayYgg { get; set; } = 50;
+        public bool stopWitchFC { get; set; } = false;
         public string firstHeal { get; set; } = FIRSTHP;
 
         public string actionName { get; set; }
@@ -83,13 +84,18 @@ namespace _4RTools.Model
                 pot(this.spKey);
                 hpPotCount++;
 
-                if (hpPotCount == 3)
+                if (hpPotCount == 3 && roClient.IsHpBelow(hpPercent))
                 {
                     hpPotCount = 0;
-                    if (roClient.IsHpBelow(hpPercent) && ((!hasCriticalWound && this.actionName == ACTION_NAME_AUTOPOT) || this.actionName == ACTION_NAME_AUTOPOT_YGG))
+                    if (this.actionName == ACTION_NAME_AUTOPOT_YGG)
                     {
                         pot(this.hpKey);
                     }
+                    else if (this.actionName == ACTION_NAME_AUTOPOT && ((!this.stopWitchFC && hasCriticalWound) || !hasCriticalWound))
+                    {
+                        pot(this.hpKey);
+                    }
+
                 }
             }
             // check hp
@@ -103,17 +109,21 @@ namespace _4RTools.Model
         {
             if (roClient.IsHpBelow(hpPercent))
             {
-                if ((!hasCriticalWound && this.actionName == ACTION_NAME_AUTOPOT) || this.actionName == ACTION_NAME_AUTOPOT_YGG) {
+                if (this.actionName == ACTION_NAME_AUTOPOT_YGG)
+                {
                     pot(this.hpKey);
                     hpPotCount++;
                 }
-                if (hpPotCount == 3)
+                else if (this.actionName == ACTION_NAME_AUTOPOT && ((!this.stopWitchFC && hasCriticalWound) || !hasCriticalWound))
+                {
+                    pot(this.hpKey);
+                    hpPotCount++;
+                }
+                if (hpPotCount == 3 && roClient.IsSpBelow(spPercent))
                 {
                     hpPotCount = 0;
-                    if (roClient.IsSpBelow(spPercent))
-                    {
-                        pot(this.spKey);
-                    }
+                    pot(this.spKey);
+
                 }
             }
             // check sp

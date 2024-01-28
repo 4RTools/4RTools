@@ -18,6 +18,7 @@ namespace _4RTools.Forms
             {
                 this.picBoxHP.Image = Resources._4RTools.ETCResource.Yggdrasil;
                 this.picBoxSP.Image = Resources._4RTools.ETCResource.Yggdrasil;
+                this.chkStopWitchFC.Hide();
             }
             subject.Attach(this);
             this.isYgg = isYgg;
@@ -47,6 +48,7 @@ namespace _4RTools.Forms
             this.txtHPpct.Text = this.autopot.hpPercent.ToString();
             this.txtSPpct.Text = this.autopot.spPercent.ToString();
             this.txtAutopotDelay.Text = this.autopot.delay.ToString();
+            this.chkStopWitchFC.Checked = this.autopot.stopWitchFC;
             RadioButton rdHealFirst = (RadioButton)this.Controls[ProfileSingleton.GetCurrent().Autopot.firstHeal];
             if (rdHealFirst != null) { rdHealFirst.Checked = true; };
 
@@ -95,6 +97,13 @@ namespace _4RTools.Forms
             }
             catch (Exception) { }
 
+        }
+
+        private void chkStopWitchFC_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            this.autopot.stopWitchFC = chk.Checked;
+            ProfileSingleton.SetConfiguration(this.autopot);
         }
 
         private void txtSPpctTextChanged(object sender, EventArgs e)
