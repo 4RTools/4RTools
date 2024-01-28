@@ -231,6 +231,7 @@ namespace _4RTools.Utils
         ABELHA = 369,
 
         DANCE_WITH_WUG = 441,
+        SIT = 622,
 
     }
 }

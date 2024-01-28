@@ -359,6 +359,7 @@ namespace _4RTools.Model
                 new Buff("Atordoamento", EffectStatusIDs.STUN, Resources._4RTools.Icons.stun),
                 new Buff("Sono Profundo", EffectStatusIDs.DEEP_SLEEP, Resources._4RTools.Icons.deep_sleep),
                 new Buff("Envenenamento", EffectStatusIDs.POISON, Resources._4RTools.Icons.poison_status),
+                new Buff("Sentar", EffectStatusIDs.SIT, Resources._4RTools.Icons.sit),
 
             };
 
