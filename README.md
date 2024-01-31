@@ -59,6 +59,12 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Alterado icone de Goma
 - [x] Nova Skill de Noviço (Basílica)
 
+### Versão 2.6.5
+- [x] Adicionado botão para ativar/desativar a pot quando estiver com Ferimento Crítico (se estiver selecionado não vai curar quando estiver com ferimento critico)
+- [x] Novo Debuffs de sentar (se o boss mandar sentar ele levanta sozinho, mas tem que associar sua tecla de sentar lá)
+- [x] Nova Skill de Arqueiro (Dança com Lobos)
+
+
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot
