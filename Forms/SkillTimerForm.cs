@@ -27,9 +27,13 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
+                    string skillTimerKey = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey.ToString();
+                    string autoRefreshDelay = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay.ToString();
+                    
                     FormUtils.ResetForm(this);
-                    this.txtSkillTimerKey.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshKey.ToString();
-                    this.txtAutoRefreshDelay.Text = ProfileSingleton.GetCurrent().AutoRefreshSpammer.refreshDelay.ToString();
+
+                    this.txtSkillTimerKey.Text = skillTimerKey;
+                    this.txtAutoRefreshDelay.Text = autoRefreshDelay;
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AutoRefreshSpammer.Start();
