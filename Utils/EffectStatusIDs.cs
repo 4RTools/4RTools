@@ -63,6 +63,7 @@ namespace _4RTools.Utils
         REFLECTSHIELD = 59,
         DEFENDER = 62,
         CR_SHRINK = 197,
+        ONEHANDQUICKEN = 161,
         TWOHANDQUICKEN = 2,
         AURABLADE = 103,
         LKCONCENTRATION = 105,
