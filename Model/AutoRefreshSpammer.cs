@@ -4,59 +4,56 @@ using System.Windows.Input;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using _4RTools.Utils;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace _4RTools.Model
 {
     public class AutoRefreshSpammer : Action
     {
         private string ACTION_NAME = "AutoRefreshSpammer";
-        private _4RThread thread;
+
+        public Dictionary<int, MacroKey> skillTimer = new Dictionary<int, MacroKey>();
+
         private _4RThread thread1;
-        public int refreshDelay { get; set; } = 5;
-        public Key refreshKey { get; set; }
-
-        public int refreshDelay1 { get; set; } = 5;
-        public Key refreshKey1 { get; set; }
-
-        public AutoRefreshSpammer()
-        {
-
-        }
+        private _4RThread thread2;
+        private _4RThread thread3;
+        private _4RThread thread4;
 
         public void Start()
         {
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                const int defaultDelayInSeconds = 1000;
-                int delayInSeconds = this.refreshDelay * 1000;
-                int delayInSeconds1 = this.refreshDelay1 * 1000;
-                int delay = delayInSeconds == 0 ? defaultDelayInSeconds : delayInSeconds;
-                int delay1 = delayInSeconds1 == 0 ? defaultDelayInSeconds : delayInSeconds1;
+                this.thread1 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[1].delay, skillTimer[1].key));
+                this.thread2 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[2].delay, skillTimer[2].key));
+                this.thread3 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[3].delay, skillTimer[3].key));
+                this.thread4 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[4].delay, skillTimer[4].key));
 
-
-                this.thread = new _4RThread(_ => AutorefreshThreadExecution(roClient, delay, this.refreshKey));
-                _4RThread.Start(this.thread);
-
-                this.thread1 = new _4RThread(_ => AutorefreshThreadExecution(roClient, delay1, this.refreshKey1));
                 _4RThread.Start(this.thread1);
+                _4RThread.Start(this.thread2);
+                _4RThread.Start(this.thread3);
+                _4RThread.Start(this.thread4);
             }
         }
 
-        private int AutorefreshThreadExecution(Client roClient, int delay, Key rKey)
+        private int AutoRefreshThreadExecution(Client roClient, int delay, Key rKey)
         {
             if (rKey != Key.None)
             {
                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), rKey.ToString()), 0);
             }
-            Thread.Sleep(delay);
+            Thread.Sleep(delay * 1000);
             return 0;
         }
 
         public void Stop()
         {
-            _4RThread.Stop(this.thread);
             _4RThread.Stop(this.thread1);
+            _4RThread.Stop(this.thread2);
+            _4RThread.Stop(this.thread3);
+            _4RThread.Stop(this.thread4);
         }
 
         public string GetConfiguration()
