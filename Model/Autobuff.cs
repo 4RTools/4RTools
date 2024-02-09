@@ -33,6 +33,7 @@ namespace _4RTools.Model
             _4RThread autobuffItemThread = new _4RThread(_ =>
             {
                 bool foundQuag = false;
+                bool foundDecreaseAgi = false;
                 List<uint> buffs = new List<uint>();
                 Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
                 for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
@@ -67,13 +68,18 @@ namespace _4RTools.Model
                     }
 
                     if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
-                }
+                    if (status == EffectStatusIDs.DECREASE_AGI) foundDecreaseAgi = true;
+              }
                 buffs.Clear();
                 foreach (var item in bmClone)
                 {
                     if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN))
                     {
                         break;
+                    }
+                    else if (foundDecreaseAgi && (item.Key == EffectStatusIDs.TWOHANDQUICKEN || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.ADRENALINE2 || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.SPEARQUICKEN))
+                    {
+                      break;
                     }
                     else if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
                     {
