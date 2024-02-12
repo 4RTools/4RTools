@@ -26,6 +26,7 @@ namespace _4RTools.Forms
 
             //Paint Children Forms 
             SetToggleApplicationStateWindow();
+            SetToggleHealStateWindow();
             SetAutopotWindow();
             SetAutopotYggWindow();
             SetSkillTimerWindow();
@@ -200,6 +201,16 @@ namespace _4RTools.Forms
             frm.FormBorderStyle = FormBorderStyle.None;
             //frm.Location = new Point(415, 80);
             frm.Location = new Point(360, 80);
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        public void SetToggleHealStateWindow()
+        {
+            ToggleHealStateForm frm = new ToggleHealStateForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            //frm.Location = new Point(415, 80);
+            frm.Location = new Point(510, 80);
             frm.MdiParent = this;
             frm.Show();
         }

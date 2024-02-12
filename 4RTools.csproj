@@ -352,6 +352,13 @@
       <DependentUpon>ProfileForm.cs</DependentUpon>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Compile>
+    <Compile Include="Forms\ToggleHealStateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToggleHealStateForm.Designer.cs">
+      <DependentUpon>ToggleHealStateForm.cs</DependentUpon>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Compile>
     <Compile Include="Forms\ToggleApplicationStateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -417,6 +424,10 @@
     <Compile Include="Utils\ProcessMemoryReader.cs" />
     <Compile Include="Utils\RObserver.cs" />
     <Compile Include="Utils\_4RThread.cs" />
+    <EmbeddedResource Include="Forms\ToggleHealStateForm.resx">
+      <DependentUpon>ToggleHealStateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ToggleApplicationStateForm.resx">
       <DependentUpon>ToggleApplicationStateForm.cs</DependentUpon>
       <SubType>Designer</SubType>
