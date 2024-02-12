@@ -24,7 +24,7 @@ namespace _4RTools.Forms
             subject.Attach(this);
             this.subject = subject;
             KeyboardHook.Enable();
-            this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey;
+            this.txtStatusToggleKey.Text = ProfileSingleton.GetCurrent().UserPreferences.toggleHealingStateKey;
             this.txtStatusToggleKey.KeyDown += new KeyEventHandler(FormUtils.OnKeyDown);
             this.txtStatusToggleKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.txtStatusToggleKey.TextChanged += new EventHandler(this.onStatusToggleKeyChange);
@@ -51,7 +51,7 @@ namespace _4RTools.Forms
         {
             if ((subject as Subject).Message.code == MessageCode.PROFILE_CHANGED)
             {
-                Keys currentToggleKey = (Keys)Enum.Parse(typeof(Keys), ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey);
+                Keys currentToggleKey = (Keys)Enum.Parse(typeof(Keys), ProfileSingleton.GetCurrent().UserPreferences.toggleHealingStateKey);
                 KeyboardHook.Remove(lastKey); //Remove last key hook to prevent toggle with last profile key used.
 
                 this.txtStatusToggleKey.Text = currentToggleKey.ToString();
@@ -68,7 +68,7 @@ namespace _4RTools.Forms
             Keys currentToggleKey = (Keys)Enum.Parse(typeof(Keys), this.txtStatusToggleKey.Text);
             KeyboardHook.Remove(lastKey);
             KeyboardHook.Add(currentToggleKey, new KeyboardHook.KeyPressed(this.toggleStatus));
-            ProfileSingleton.GetCurrent().UserPreferences.toggleStateKey = currentToggleKey.ToString(); //Update profile key
+            ProfileSingleton.GetCurrent().UserPreferences.toggleHealingStateKey = currentToggleKey.ToString(); //Update profile key
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
 
             lastKey = currentToggleKey; //Refresh lastKey to update 
@@ -85,7 +85,7 @@ namespace _4RTools.Forms
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_HEAL_OFF, null));
                 this.lblStatusToggle.Text = "Press the key to start healing!";
                 this.lblStatusToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-                new SoundPlayer(Resources._4RTools.ETCResource.Speech_Off).Play();
+                new SoundPlayer(Resources._4RTools.ETCResource.Healing_Off).Play();
             }
             else
             {
@@ -98,7 +98,7 @@ namespace _4RTools.Forms
                     this.subject.Notify(new Utils.Message(MessageCode.TURN_HEAL_ON, null));
                     this.lblStatusToggle.Text = "Press the key to stop healing!";
                     this.lblStatusToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-                    new SoundPlayer(Resources._4RTools.ETCResource.Speech_On).Play();
+                    new SoundPlayer(Resources._4RTools.ETCResource.Healing_On).Play();
                 } else
                 {
                     this.lblStatusToggle.Text = "Please select a valid Ragnarok Client!";

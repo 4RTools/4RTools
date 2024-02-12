@@ -444,6 +444,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\4RTools\ETCResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>ETCResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="4RTools_TemporaryKey.pfx" />
@@ -631,6 +632,10 @@
     <None Include="assets\images\fury.png" />
     <None Include="assets\images\blessing_of_tyr.png" />
     <None Include="assets\images\cash_food.gif" />
+    <None Include="assets\etc\Healing_On.mp3" />
+    <None Include="assets\etc\Healing_Off.mp3" />
+    <None Include="assets\etc\Healing_Off.wav" />
+    <None Include="assets\etc\Healing_On.wav" />
     <Content Include="assets\images\ads_placeholder_clean.jpg" />
     <Content Include="assets\images\cash_food.png" />
     <Content Include="assets\images\ele_earth_converter.png" />
