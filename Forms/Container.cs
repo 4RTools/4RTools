@@ -30,7 +30,6 @@ namespace _4RTools.Forms
             SetAutopotWindow();
             SetAutopotYggWindow();
             SetSkillTimerWindow();
-            SetAutoStatusEffectWindow();
             SetCustomButtonsWindow();
             SetAHKWindow();
             SetAutoBuffStatusWindow();
@@ -251,15 +250,6 @@ namespace _4RTools.Forms
             frm.Show();
             addform(this.tabPageSkillTimer, frm);
 
-        }
-
-        public void SetAutoStatusEffectWindow()
-        {
-            StatusEffectForm form = new StatusEffectForm(subject);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(40, 220);
-            form.MdiParent = this;
-            form.Show();
         }
 
         public void SetCustomButtonsWindow()

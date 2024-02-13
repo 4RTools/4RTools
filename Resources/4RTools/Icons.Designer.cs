@@ -503,6 +503,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap concentration_guarana {
+            get {
+                object obj = ResourceManager.GetObject("concentration_guarana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap concentration_potiongif {
             get {
                 object obj = ResourceManager.GetObject("concentration_potiongif", resourceCulture);
