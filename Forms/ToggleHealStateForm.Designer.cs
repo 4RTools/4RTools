@@ -1,6 +1,6 @@
 ﻿namespace _4RTools.Forms
 {
-    partial class ToggleApplicationStateForm
+    partial class ToggleHealStateForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
       this.components = new System.ComponentModel.Container();
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToggleApplicationStateForm));
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToggleHealStateForm));
       this.groupBox1 = new System.Windows.Forms.GroupBox();
       this.txtStatusToggleKey = new System.Windows.Forms.TextBox();
       this.btnStatusToggle = new System.Windows.Forms.Button();
@@ -47,10 +47,10 @@
       this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
       this.groupBox1.Location = new System.Drawing.Point(1, 0);
       this.groupBox1.Name = "groupBox1";
-      this.groupBox1.Size = new System.Drawing.Size(141, 94);
+      this.groupBox1.Size = new System.Drawing.Size(144, 94);
       this.groupBox1.TabIndex = 25;
       this.groupBox1.TabStop = false;
-      this.groupBox1.Text = "Current Status";
+      this.groupBox1.Text = "Heal Status";
       // 
       // txtStatusToggleKey
       // 
@@ -84,12 +84,13 @@
       // 
       this.lblStatusToggle.AllowDrop = true;
       this.lblStatusToggle.AutoSize = true;
-      this.lblStatusToggle.Location = new System.Drawing.Point(23, 61);
-      this.lblStatusToggle.MaximumSize = new System.Drawing.Size(109, 30);
+      this.lblStatusToggle.BackColor = System.Drawing.Color.Transparent;
+      this.lblStatusToggle.Location = new System.Drawing.Point(2, 61);
+      this.lblStatusToggle.MaximumSize = new System.Drawing.Size(200, 30);
       this.lblStatusToggle.Name = "lblStatusToggle";
-      this.lblStatusToggle.Size = new System.Drawing.Size(109, 13);
+      this.lblStatusToggle.Size = new System.Drawing.Size(143, 13);
       this.lblStatusToggle.TabIndex = 22;
-      this.lblStatusToggle.Text = "Press the key to start!";
+      this.lblStatusToggle.Text = "Press the key to start healing";
       this.lblStatusToggle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // notifyIconTray
@@ -99,16 +100,16 @@
       this.notifyIconTray.Visible = true;
       this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
       // 
-      // ToggleApplicationStateForm
+      // ToggleHealStateForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-      this.ClientSize = new System.Drawing.Size(146, 99);
+      this.ClientSize = new System.Drawing.Size(149, 99);
       this.Controls.Add(this.groupBox1);
       this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-      this.Name = "ToggleApplicationStateForm";
+      this.Name = "ToggleHealStateForm";
       this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
       this.Text = "ToggleApplicationStateForm";
       this.groupBox1.ResumeLayout(false);

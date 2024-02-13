@@ -419,7 +419,6 @@ namespace _4RTools.Forms
             this.tabControlAutopot.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -454,5 +453,5 @@ namespace _4RTools.Forms
         private TabPage tabPageSkillTimer;
         //private TabPage tabPageServer;
         private TabPage tabPageDebuffs;
-    }
+  }
 }

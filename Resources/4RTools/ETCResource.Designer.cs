@@ -91,6 +91,24 @@ namespace _4RTools.Resources._4RTools {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Healing_Off {
+            get {
+                return ResourceManager.GetStream("Healing_Off", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Healing_On {
+            get {
+                return ResourceManager.GetStream("Healing_On", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap HP {
