@@ -370,7 +370,6 @@
     <Compile Include="Model\AutoRefreshSpammer.cs" />
     <Compile Include="Model\Buff.cs" />
     <Compile Include="Model\BuffContainer.cs" />
-    <Compile Include="Model\SkillTimerRenderer.cs" />
     <Compile Include="Model\DebuffRenderer.cs" />
     <Compile Include="Model\BuffRenderer.cs" />
     <Compile Include="Model\Custom.cs" />

@@ -168,7 +168,7 @@ namespace _4RTools.Forms
             this.lblProcessName.AutoSize = true;
             this.lblProcessName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblProcessName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblProcessName.Location = new System.Drawing.Point(63, 9);
+            this.lblProcessName.Location = new System.Drawing.Point(13, 9);
             this.lblProcessName.Name = "lblProcessName";
             this.lblProcessName.Size = new System.Drawing.Size(109, 17);
             this.lblProcessName.TabIndex = 3;
@@ -180,7 +180,7 @@ namespace _4RTools.Forms
             this.processCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.processCB.ForeColor = System.Drawing.Color.White;
             this.processCB.FormattingEnabled = true;
-            this.processCB.Location = new System.Drawing.Point(68, 29);
+            this.processCB.Location = new System.Drawing.Point(18, 29);
             this.processCB.Name = "processCB";
             this.processCB.Size = new System.Drawing.Size(184, 21);
             this.processCB.TabIndex = 2;
@@ -192,7 +192,7 @@ namespace _4RTools.Forms
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(258, 28);
+            this.btnRefresh.Location = new System.Drawing.Point(208, 28);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(19, 22);
             this.btnRefresh.TabIndex = 5;
@@ -246,7 +246,7 @@ namespace _4RTools.Forms
             this.labelProfile.AutoSize = true;
             this.labelProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.labelProfile.Location = new System.Drawing.Point(418, 10);
+            this.labelProfile.Location = new System.Drawing.Point(252, 9);
             this.labelProfile.Name = "labelProfile";
             this.labelProfile.Size = new System.Drawing.Size(48, 17);
             this.labelProfile.TabIndex = 15;
@@ -258,7 +258,7 @@ namespace _4RTools.Forms
             this.profileCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.profileCB.ForeColor = System.Drawing.Color.White;
             this.profileCB.FormattingEnabled = true;
-            this.profileCB.Location = new System.Drawing.Point(422, 30);
+            this.profileCB.Location = new System.Drawing.Point(256, 29);
             this.profileCB.Name = "profileCB";
             this.profileCB.Size = new System.Drawing.Size(181, 21);
             this.profileCB.TabIndex = 14;
@@ -318,19 +318,20 @@ namespace _4RTools.Forms
             // lblCharacterName
             // 
             this.lblCharacterName.AutoSize = true;
+            this.lblCharacterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblCharacterName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblCharacterName.Location = new System.Drawing.Point(414, 180);
+            this.lblCharacterName.Location = new System.Drawing.Point(473, 9);
             this.lblCharacterName.Name = "lblCharacterName";
-            this.lblCharacterName.Size = new System.Drawing.Size(87, 13);
+            this.lblCharacterName.Size = new System.Drawing.Size(115, 17);
             this.lblCharacterName.TabIndex = 19;
             this.lblCharacterName.Text = "Character Name:";
             // 
             // characterName
             // 
             this.characterName.AutoSize = true;
-            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.characterName.Location = new System.Drawing.Point(414, 193);
+            this.characterName.Location = new System.Drawing.Point(473, 32);
             this.characterName.Name = "characterName";
             this.characterName.Size = new System.Drawing.Size(19, 13);
             this.characterName.TabIndex = 20;
@@ -419,6 +420,7 @@ namespace _4RTools.Forms
             this.tabControlAutopot.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
