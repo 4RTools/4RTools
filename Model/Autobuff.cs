@@ -23,7 +23,7 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                 this.thread = AutoBuffThread(roClient);
+                this.thread = AutoBuffThread(roClient);
                 _4RThread.Start(this.thread);
             }
         }
@@ -40,10 +40,7 @@ namespace _4RTools.Model
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
 
-                    if(currentStatus == 4294967295)
-                    {
-                        continue;
-                    }
+                    if (currentStatus == uint.MaxValue) { continue; }
 
                     buffs.Add(currentStatus);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
@@ -69,7 +66,7 @@ namespace _4RTools.Model
 
                     if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
                     if (status == EffectStatusIDs.DECREASE_AGI) foundDecreaseAgi = true;
-              }
+                }
                 buffs.Clear();
                 foreach (var item in bmClone)
                 {
@@ -79,7 +76,7 @@ namespace _4RTools.Model
                     }
                     else if (foundDecreaseAgi && (item.Key == EffectStatusIDs.TWOHANDQUICKEN || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.ADRENALINE2 || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.SPEARQUICKEN))
                     {
-                      break;
+                        break;
                     }
                     else if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
                     {
@@ -129,7 +126,7 @@ namespace _4RTools.Model
 
         private void useAutobuff(Key key)
         {
-            if((key != Key.None) && !Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
+            if ((key != Key.None) && !Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
                 Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), key.ToString()), 0);
         }
     }

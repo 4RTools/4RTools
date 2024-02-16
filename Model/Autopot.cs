@@ -164,10 +164,8 @@ namespace _4RTools.Model
             {
                 uint currentStatus = c.CurrentBuffStatusCode(i);
 
-                if (currentStatus == 4294967295)
-                {
-                    continue;
-                }
+                if (currentStatus == uint.MaxValue) { continue; }
+
                 EffectStatusIDs status = (EffectStatusIDs)currentStatus;
 
                 if (status == EffectStatusIDs.CRITICALWOUND)
