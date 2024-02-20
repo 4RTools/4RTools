@@ -39,8 +39,7 @@ namespace _4RTools.Forms
             SetSongMacroWindow();
             SetATKDEFWindow();
             SetMacroSwitchWindow();
-            //SetServerWindow();
-            //SetAdvertisementWindow();
+            SetAutoSwitchWindow();
 
             //TrackerSingleton.Instance().SendEvent("desktop_login", "page_view", "desktop_container_load");
         }
@@ -156,7 +155,8 @@ namespace _4RTools.Forms
                     ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
                     subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
                     currentProfile = this.profileCB.Text.ToString();
-                } catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -167,7 +167,8 @@ namespace _4RTools.Forms
         {
             switch ((subject as Subject).Message.code)
             {
-                case MessageCode.TURN_ON: case MessageCode.PROFILE_CHANGED:
+                case MessageCode.TURN_ON:
+                case MessageCode.PROFILE_CHANGED:
                     Client client = ClientSingleton.GetClient();
                     if (client != null)
                     {
@@ -281,16 +282,6 @@ namespace _4RTools.Forms
             addform(this.tabPageProfiles, frm);
         }
 
-        //public void SetServerWindow()
-        //{
-        //    ServersForm frm = new ServersForm(subject);
-        //    frm.FormBorderStyle = FormBorderStyle.None;
-        //    frm.Location = new Point(0, 65);
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //    addform(this.tabPageServer, frm);
-        //}
-
         public void SetAutobuffStuffWindow()
         {
             StuffAutoBuffForm frm = new StuffAutoBuffForm(subject);
@@ -340,6 +331,17 @@ namespace _4RTools.Forms
             addform(this.tabMacroSwitch, frm);
             frm.Show();
         }
+
+        public void SetAutoSwitchWindow()
+        {
+            AutoSwitchForm frm = new AutoSwitchForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageAutoSwitch, frm);
+
+        }
+
 
         #endregion
     }

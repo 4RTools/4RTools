@@ -116,7 +116,7 @@ namespace _4RTools.Utils
         CLOAKING = 5,
         HIDING = 4,
         MAGNUM = 131,
-        GIANTGROWTH = 319, // futura força titanica
+        FIGHTINGSPIRIT = 322, // aura de combate
         BASILICA = 1122,
         EDEN = 9999,
 

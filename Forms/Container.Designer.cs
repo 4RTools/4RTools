@@ -61,6 +61,7 @@ namespace _4RTools.Forms
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabPageSkillTimer = new System.Windows.Forms.TabPage();
+            this.tabPageAutoSwitch = new System.Windows.Forms.TabPage();
             atkDefMode = new System.Windows.Forms.TabControl();
             atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
@@ -350,6 +351,7 @@ namespace _4RTools.Forms
             this.tabControlAutopot.Controls.Add(this.tabPageAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageYggAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageSkillTimer);
+            this.tabControlAutopot.Controls.Add(this.tabPageAutoSwitch);
             this.tabControlAutopot.Location = new System.Drawing.Point(15, 83);
             this.tabControlAutopot.Name = "tabControlAutopot";
             this.tabControlAutopot.SelectedIndex = 0;
@@ -385,6 +387,16 @@ namespace _4RTools.Forms
             this.tabPageSkillTimer.Size = new System.Drawing.Size(320, 154);
             this.tabPageSkillTimer.TabIndex = 2;
             this.tabPageSkillTimer.Text = "Skill Timer";
+            // 
+            // tabPageAutoSwitch
+            // 
+            this.tabPageAutoSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.tabPageAutoSwitch.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutoSwitch.Name = "tabPageAutoSwitch";
+            this.tabPageAutoSwitch.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutoSwitch.Size = new System.Drawing.Size(320, 154);
+            this.tabPageAutoSwitch.TabIndex = 3;
+            this.tabPageAutoSwitch.Text = "Auto Switch";
             // 
             // Container
             // 
@@ -453,6 +465,7 @@ namespace _4RTools.Forms
         private TabPage tabPageProfiles;
         private TabPage tabMacroSwitch;
         private TabPage tabPageSkillTimer;
+        private TabPage tabPageAutoSwitch;
         //private TabPage tabPageServer;
         private TabPage tabPageDebuffs;
   }
