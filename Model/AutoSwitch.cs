@@ -81,7 +81,7 @@ namespace _4RTools.Model
 
                     foreach (var skill in skillClone)
                     {
-                        if (skill.skillId == EffectStatusIDs.CRAZY_UPROAR)
+                        if (skill.skillId == EffectStatusIDs.CRAZY_UPROAR && c.ReadCurrentSp() > 8)
                         {
                             this.useAutobuff(skill.itemKey, skill.skillKey);
                             Thread.Sleep(100);
