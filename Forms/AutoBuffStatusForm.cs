@@ -41,9 +41,11 @@ namespace _4RTools.Forms
                     break;
                 case MessageCode.TURN_OFF:
                     ProfileSingleton.GetCurrent().DebuffsRecovery.Stop();
+                    ProfileSingleton.GetCurrent().StatusRecovery.Stop();
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().DebuffsRecovery.Start();
+                    ProfileSingleton.GetCurrent().StatusRecovery.Start();
                     break;
             }
         }
