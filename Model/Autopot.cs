@@ -51,10 +51,13 @@ namespace _4RTools.Model
 
         public void Start()
         {
-            Stop();
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
+                if (this.thread != null)
+                {
+                    _4RThread.Stop(this.thread);
+                }
                 int hpPotCount = 0;
                 this.thread = new _4RThread(_ => AutopotThreadExecution(roClient, hpPotCount));
                 _4RThread.Start(this.thread);

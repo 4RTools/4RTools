@@ -7,7 +7,7 @@ namespace _4RTools.Model
     {
         private string ACTION_NAME = "UserPreferences";
         public string toggleStateKey { get; set; } = Keys.End.ToString();
-        public string toggleHealingStateKey { get; set; } = Keys.Delete.ToString();
+        public string toggleStateHealKey { get; set; } = Keys.End.ToString();
 
 
         public UserPreferences()

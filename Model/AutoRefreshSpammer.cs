@@ -26,6 +26,11 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
+                validadeThreads(this.thread1);
+                validadeThreads(this.thread2);
+                validadeThreads(this.thread3);
+                validadeThreads(this.thread4);
+
                 this.thread1 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[1].delay, skillTimer[1].key));
                 this.thread2 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[2].delay, skillTimer[2].key));
                 this.thread3 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[3].delay, skillTimer[3].key));
@@ -35,6 +40,14 @@ namespace _4RTools.Model
                 _4RThread.Start(this.thread2);
                 _4RThread.Start(this.thread3);
                 _4RThread.Start(this.thread4);
+            }
+        }
+
+        private void validadeThreads(_4RThread _4RThread)
+        {
+            if (_4RThread != null)
+            {
+                _4RThread.Stop(_4RThread);
             }
         }
 
