@@ -38,8 +38,8 @@ namespace _4RTools.Forms
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.atkDef = new System.Windows.Forms.TabPage();
             this.tabMacroSwitch = new System.Windows.Forms.TabPage();
-            this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.tabPageDebuffs = new System.Windows.Forms.TabPage();
+            this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.lblProcessName = new System.Windows.Forms.Label();
             this.processCB = new System.Windows.Forms.ComboBox();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@ namespace _4RTools.Forms
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabPageSkillTimer = new System.Windows.Forms.TabPage();
+            this.tabPageAutoSwitch = new System.Windows.Forms.TabPage();
             atkDefMode = new System.Windows.Forms.TabControl();
             atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
@@ -77,7 +78,6 @@ namespace _4RTools.Forms
             atkDefMode.Controls.Add(this.tabMacroSwitch);
             atkDefMode.Controls.Add(this.tabPageDebuffs);
             atkDefMode.Controls.Add(this.tabPageProfiles);
-
             atkDefMode.Location = new System.Drawing.Point(15, 274);
             atkDefMode.Name = "atkDefMode";
             atkDefMode.SelectedIndex = 0;
@@ -144,16 +144,6 @@ namespace _4RTools.Forms
             this.tabMacroSwitch.TabIndex = 8;
             this.tabMacroSwitch.Text = "Macro Switch";
             // 
-            // tabPageProfiles
-            // 
-            this.tabPageProfiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProfiles.Name = "tabPageProfiles";
-            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(629, 274);
-            this.tabPageProfiles.TabIndex = 9;
-            this.tabPageProfiles.Text = "Profiles";
-            // 
             // tabPageDebuffs
             // 
             this.tabPageDebuffs.Location = new System.Drawing.Point(4, 22);
@@ -164,12 +154,22 @@ namespace _4RTools.Forms
             this.tabPageDebuffs.Text = "Debuffs";
             this.tabPageDebuffs.UseVisualStyleBackColor = true;
             // 
+            // tabPageProfiles
+            // 
+            this.tabPageProfiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProfiles.Name = "tabPageProfiles";
+            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProfiles.Size = new System.Drawing.Size(629, 274);
+            this.tabPageProfiles.TabIndex = 9;
+            this.tabPageProfiles.Text = "Profiles";
+            // 
             // lblProcessName
             // 
             this.lblProcessName.AutoSize = true;
             this.lblProcessName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblProcessName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblProcessName.Location = new System.Drawing.Point(63, 9);
+            this.lblProcessName.Location = new System.Drawing.Point(13, 9);
             this.lblProcessName.Name = "lblProcessName";
             this.lblProcessName.Size = new System.Drawing.Size(109, 17);
             this.lblProcessName.TabIndex = 3;
@@ -181,7 +181,7 @@ namespace _4RTools.Forms
             this.processCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.processCB.ForeColor = System.Drawing.Color.White;
             this.processCB.FormattingEnabled = true;
-            this.processCB.Location = new System.Drawing.Point(68, 29);
+            this.processCB.Location = new System.Drawing.Point(18, 29);
             this.processCB.Name = "processCB";
             this.processCB.Size = new System.Drawing.Size(184, 21);
             this.processCB.TabIndex = 2;
@@ -193,7 +193,7 @@ namespace _4RTools.Forms
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(258, 28);
+            this.btnRefresh.Location = new System.Drawing.Point(208, 28);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(19, 22);
             this.btnRefresh.TabIndex = 5;
@@ -247,7 +247,7 @@ namespace _4RTools.Forms
             this.labelProfile.AutoSize = true;
             this.labelProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.labelProfile.Location = new System.Drawing.Point(418, 10);
+            this.labelProfile.Location = new System.Drawing.Point(252, 9);
             this.labelProfile.Name = "labelProfile";
             this.labelProfile.Size = new System.Drawing.Size(48, 17);
             this.labelProfile.TabIndex = 15;
@@ -259,7 +259,7 @@ namespace _4RTools.Forms
             this.profileCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.profileCB.ForeColor = System.Drawing.Color.White;
             this.profileCB.FormattingEnabled = true;
-            this.profileCB.Location = new System.Drawing.Point(422, 30);
+            this.profileCB.Location = new System.Drawing.Point(256, 29);
             this.profileCB.Name = "profileCB";
             this.profileCB.Size = new System.Drawing.Size(181, 21);
             this.profileCB.TabIndex = 14;
@@ -319,19 +319,20 @@ namespace _4RTools.Forms
             // lblCharacterName
             // 
             this.lblCharacterName.AutoSize = true;
+            this.lblCharacterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblCharacterName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblCharacterName.Location = new System.Drawing.Point(414, 180);
+            this.lblCharacterName.Location = new System.Drawing.Point(473, 9);
             this.lblCharacterName.Name = "lblCharacterName";
-            this.lblCharacterName.Size = new System.Drawing.Size(87, 13);
+            this.lblCharacterName.Size = new System.Drawing.Size(115, 17);
             this.lblCharacterName.TabIndex = 19;
             this.lblCharacterName.Text = "Character Name:";
             // 
             // characterName
             // 
             this.characterName.AutoSize = true;
-            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.characterName.Location = new System.Drawing.Point(414, 193);
+            this.characterName.Location = new System.Drawing.Point(473, 32);
             this.characterName.Name = "characterName";
             this.characterName.Size = new System.Drawing.Size(19, 13);
             this.characterName.TabIndex = 20;
@@ -350,10 +351,11 @@ namespace _4RTools.Forms
             this.tabControlAutopot.Controls.Add(this.tabPageAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageYggAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageSkillTimer);
-            this.tabControlAutopot.Location = new System.Drawing.Point(56, 83);
+            this.tabControlAutopot.Controls.Add(this.tabPageAutoSwitch);
+            this.tabControlAutopot.Location = new System.Drawing.Point(15, 83);
             this.tabControlAutopot.Name = "tabControlAutopot";
             this.tabControlAutopot.SelectedIndex = 0;
-            this.tabControlAutopot.Size = new System.Drawing.Size(235, 127);
+            this.tabControlAutopot.Size = new System.Drawing.Size(328, 180);
             this.tabControlAutopot.TabIndex = 25;
             // 
             // tabPageAutopot
@@ -362,7 +364,7 @@ namespace _4RTools.Forms
             this.tabPageAutopot.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutopot.Name = "tabPageAutopot";
             this.tabPageAutopot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutopot.Size = new System.Drawing.Size(227, 101);
+            this.tabPageAutopot.Size = new System.Drawing.Size(320, 154);
             this.tabPageAutopot.TabIndex = 0;
             this.tabPageAutopot.Text = "Autopot";
             // 
@@ -372,7 +374,7 @@ namespace _4RTools.Forms
             this.tabPageYggAutopot.Location = new System.Drawing.Point(4, 22);
             this.tabPageYggAutopot.Name = "tabPageYggAutopot";
             this.tabPageYggAutopot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageYggAutopot.Size = new System.Drawing.Size(227, 101);
+            this.tabPageYggAutopot.Size = new System.Drawing.Size(320, 154);
             this.tabPageYggAutopot.TabIndex = 1;
             this.tabPageYggAutopot.Text = "Yggdrasil";
             // 
@@ -382,9 +384,19 @@ namespace _4RTools.Forms
             this.tabPageSkillTimer.Location = new System.Drawing.Point(4, 22);
             this.tabPageSkillTimer.Name = "tabPageSkillTimer";
             this.tabPageSkillTimer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSkillTimer.Size = new System.Drawing.Size(227, 101);
+            this.tabPageSkillTimer.Size = new System.Drawing.Size(320, 154);
             this.tabPageSkillTimer.TabIndex = 2;
             this.tabPageSkillTimer.Text = "Skill Timer";
+            // 
+            // tabPageAutoSwitch
+            // 
+            this.tabPageAutoSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.tabPageAutoSwitch.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutoSwitch.Name = "tabPageAutoSwitch";
+            this.tabPageAutoSwitch.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutoSwitch.Size = new System.Drawing.Size(320, 154);
+            this.tabPageAutoSwitch.TabIndex = 3;
+            this.tabPageAutoSwitch.Text = "Auto Switch";
             // 
             // Container
             // 
@@ -453,7 +465,8 @@ namespace _4RTools.Forms
         private TabPage tabPageProfiles;
         private TabPage tabMacroSwitch;
         private TabPage tabPageSkillTimer;
+        private TabPage tabPageAutoSwitch;
         //private TabPage tabPageServer;
         private TabPage tabPageDebuffs;
-    }
+  }
 }

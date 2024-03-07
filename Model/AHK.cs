@@ -52,7 +52,7 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                if (thread != null)
+                if (this.thread != null)
                 {
                     _4RThread.Stop(this.thread);
                 }

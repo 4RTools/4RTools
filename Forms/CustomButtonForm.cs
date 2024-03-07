@@ -14,14 +14,6 @@ namespace _4RTools.Forms
         {
             InitializeComponent();
             subject.Attach(this);
-
-            //this.txtTransferKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            //this.txtTransferKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            //this.txtTransferKey.TextChanged += new EventHandler(onTransferKeyChange);
-
-            //this.txtAutoClickKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
-            //this.txtAutoClickKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
-            //this.txtAutoClickKey.TextChanged += new EventHandler(onAutoClickKeyChange);
         }
 
         public void Update(ISubject subject)
@@ -62,9 +54,5 @@ namespace _4RTools.Forms
             catch { }
             this.ActiveControl = null;
         }
-
-        //private void onAutoClickKeyChange(object sender, EventArgs e)
-        //{
-        //}
     }
 }

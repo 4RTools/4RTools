@@ -64,7 +64,6 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Novo Debuffs de sentar (se o boss mandar sentar ele levanta sozinho, mas tem que associar sua tecla de sentar lá)
 - [x] Nova Skill de Arqueiro (Dança com Lobos)
 
-
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot

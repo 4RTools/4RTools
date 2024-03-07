@@ -63,6 +63,7 @@ namespace _4RTools.Model
                 new Buff("Shield Spell", EffectStatusIDs.SHIELDSPELL, Resources._4RTools.Icons.lg_shieldspell),
                 new Buff("Vanguard Force", EffectStatusIDs.FORCEOFVANGUARD, Resources._4RTools.Icons.vanguard_force),
                 new Buff("Impacto Explosivo", EffectStatusIDs.MAGNUM, Resources._4RTools.Icons.magnum),
+                new Buff("Rapidez com Uma Mão", EffectStatusIDs.ONEHANDQUICKEN, Resources._4RTools.Icons.onehand),
             };
 
             return skills;
@@ -209,10 +210,10 @@ namespace _4RTools.Model
         {
             List<Buff> skills = new List<Buff>
             {
-                new Buff("Concentration Potion", EffectStatusIDs.CONCENTRATION_POTION, Resources._4RTools.Icons.concentration_potiongif),
-                new Buff("Awakening Potion", EffectStatusIDs.AWAKENING_POTION, Resources._4RTools.Icons.awakening_potion),
-                new Buff("Berserk Potion", EffectStatusIDs.BERSERK_POTION, Resources._4RTools.Icons.berserk_potion),
-                new Buff("Regeneration Potion", EffectStatusIDs.REGENERATION_POTION, Resources._4RTools.Icons.regeneration),
+                new Buff("Bala de Guaraná | Poção da Concentração", EffectStatusIDs.CONCENTRATION_POTION, Resources._4RTools.Icons.concentration_guarana),
+                new Buff("Poção do Despertar", EffectStatusIDs.AWAKENING_POTION, Resources._4RTools.Icons.awakening_potion),
+                new Buff("Poção da Fúria Selvagem", EffectStatusIDs.BERSERK_POTION, Resources._4RTools.Icons.berserk_potion),
+                new Buff("Poção de Regeneração", EffectStatusIDs.REGENERATION_POTION, Resources._4RTools.Icons.regeneration),
                 new Buff("HP Increase Potion", EffectStatusIDs.HP_INCREASE_POTION_LARGE, Resources._4RTools.Icons.ghp),
                 new Buff("SP Increase Potion", EffectStatusIDs.SP_INCREASE_POTION_LARGE, Resources._4RTools.Icons.gsp),
                 new Buff("Red Herb Activator", EffectStatusIDs.RED_HERB_ACTIVATOR, Resources._4RTools.Icons.red_herb_activator),
@@ -289,7 +290,7 @@ namespace _4RTools.Model
                 new Buff("Caixa da Luz do Sol", EffectStatusIDs.SUNLIGHT_BOX, Resources._4RTools.Icons.sunbox),
                 new Buff("Caixa da Escuridão", EffectStatusIDs.CONCENTRATION, Resources._4RTools.Icons.gloom),
                 new Buff("Caixa do Trovão", EffectStatusIDs.BOX_OF_THUNDER, Resources._4RTools.Icons.speed),
-                new Buff("Poção do Vento / Poção de Guyak", EffectStatusIDs.SPEED_POT, Resources._4RTools.Icons.speedpotion),
+                new Buff("Poção de Guyak | Poção do Vento", EffectStatusIDs.SPEED_POT, Resources._4RTools.Icons.speedpotion),
                 new Buff("Analgésico", EffectStatusIDs.ENDURE, Resources._4RTools.Icons.anodyne),
                 new Buff("Aloe Vera", EffectStatusIDs.PROVOKE, Resources._4RTools.Icons.aloevera),
                 new Buff("Abrasivo", EffectStatusIDs.CRITICALPERCENT, Resources._4RTools.Icons.abrasive),

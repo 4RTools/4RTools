@@ -63,6 +63,7 @@ namespace _4RTools.Utils
         REFLECTSHIELD = 59,
         DEFENDER = 62,
         CR_SHRINK = 197,
+        ONEHANDQUICKEN = 161,
         TWOHANDQUICKEN = 2,
         AURABLADE = 103,
         LKCONCENTRATION = 105,
@@ -115,7 +116,7 @@ namespace _4RTools.Utils
         CLOAKING = 5,
         HIDING = 4,
         MAGNUM = 131,
-        GIANTGROWTH = 319, // futura força titanica
+        FIGHTINGSPIRIT = 322, // aura de combate
         BASILICA = 1122,
         EDEN = 9999,
 

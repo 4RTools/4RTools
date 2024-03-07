@@ -51,10 +51,13 @@ namespace _4RTools.Model
 
         public void Start()
         {
-            Stop();
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
+                if (this.thread != null)
+                {
+                    _4RThread.Stop(this.thread);
+                }
                 int hpPotCount = 0;
                 this.thread = new _4RThread(_ => AutopotThreadExecution(roClient, hpPotCount));
                 _4RThread.Start(this.thread);
@@ -164,10 +167,8 @@ namespace _4RTools.Model
             {
                 uint currentStatus = c.CurrentBuffStatusCode(i);
 
-                if (currentStatus == 4294967295)
-                {
-                    continue;
-                }
+                if (currentStatus == uint.MaxValue) { continue; }
+
                 EffectStatusIDs status = (EffectStatusIDs)currentStatus;
 
                 if (status == EffectStatusIDs.CRITICALWOUND)

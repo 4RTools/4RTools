@@ -127,6 +127,12 @@
   <data name="flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\flash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Healing_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\etc\Healing_Off.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Healing_On" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\etc\Healing_On.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="HP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\etc\HP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

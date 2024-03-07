@@ -23,7 +23,11 @@ namespace _4RTools.Model
             Client roClient = ClientSingleton.GetClient();
             if (roClient != null)
             {
-                 this.thread = AutoBuffThread(roClient);
+                if (this.thread != null)
+                {
+                    _4RThread.Stop(this.thread);
+                }
+                this.thread = AutoBuffThread(roClient);
                 _4RThread.Start(this.thread);
             }
         }
@@ -33,16 +37,14 @@ namespace _4RTools.Model
             _4RThread autobuffItemThread = new _4RThread(_ =>
             {
                 bool foundQuag = false;
+                bool foundDecreaseAgi = false;
                 List<uint> buffs = new List<uint>();
                 Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
                 for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
 
-                    if(currentStatus == 4294967295)
-                    {
-                        continue;
-                    }
+                    if (currentStatus == uint.MaxValue) { continue; }
 
                     buffs.Add(currentStatus);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
@@ -67,11 +69,16 @@ namespace _4RTools.Model
                     }
 
                     if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
+                    if (status == EffectStatusIDs.DECREASE_AGI) foundDecreaseAgi = true;
                 }
                 buffs.Clear();
                 foreach (var item in bmClone)
                 {
-                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN))
+                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN || item.Key == EffectStatusIDs.WINDWALK))
+                    {
+                        break;
+                    }
+                    else if (foundDecreaseAgi && (item.Key == EffectStatusIDs.TWOHANDQUICKEN || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.ADRENALINE2 || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.SPEARQUICKEN))
                     {
                         break;
                     }
@@ -123,7 +130,7 @@ namespace _4RTools.Model
 
         private void useAutobuff(Key key)
         {
-            if((key != Key.None) && !Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
+            if ((key != Key.None) && !Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
                 Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), key.ToString()), 0);
         }
     }
