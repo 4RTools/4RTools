@@ -65,7 +65,7 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Nova Skill de Arqueiro (Dança com Lobos)
 
 ### Versão 2.6.6
-- [x] Ajustado spam da habilidade rapidez com  duas mãos, rapidez com uma mão, Adrenalina Pura, Adrenalina Concentrada quando estiver com diminuir gilidade
+- [x] Ajustado spam da habilidade rapidez com  duas mãos, rapidez com uma mão, Adrenalina Pura, Adrenalina Concentrada quando estiver com diminuir agilidade
 - [x] Adicionado 2 Skill Timer (totalizando 4)
 - [x] Movido Panacéia e Doce de Elvira para aba de debuffs
 - [x] Alterado icone de bala de guaraná + poção da concentração
