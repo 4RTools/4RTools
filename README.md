@@ -64,6 +64,16 @@ Voce pode copiar e substituir a pastar `Profile` de sua versao anterior do 4RToo
 - [x] Novo Debuffs de sentar (se o boss mandar sentar ele levanta sozinho, mas tem que associar sua tecla de sentar lá)
 - [x] Nova Skill de Arqueiro (Dança com Lobos)
 
+### Versão 2.6.6
+- [x] Ajustado spam da habilidade rapidez com  duas mãos, rapidez com uma mão, Adrenalina Pura, Adrenalina Concentrada quando estiver com diminuir gilidade
+- [x] Adicionado 2 Skill Timer (totalizando 4)
+- [x] Movido Panacéia e Doce de Elvira para aba de debuffs
+- [x] Alterado icone de bala de guaraná + poção da concentração
+- [x] Adicionado botão para ligar/desligar apenas pot (se quiser continuar com o 4rtools como está atuamente só colocar o mesmo botão nos 2)
+- [x] Adicionado nova aba de Auto Switch de baixos (nariz de dissimulado e vajra)
+- [x] Nova Skill de Espadachim (Rapidez com Uma Mão)
+- [x] Ajustado spam da habilidade Caminho do Vento quando estiver em cima do pântano dos mortos
+
 ## Original Features
 - [x] ON/OFF Button (with shortcut key)
 - [x] Autopot
