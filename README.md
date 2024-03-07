@@ -6,7 +6,7 @@ Este projeto e uma adaptacao do projeto 4RTools para uso pessoal e como objeto d
 
 ## Rodando o projeto
 
-Caso voce queira usar esta versao do 4rTools voce pode baixar 'https://github.com/biancaazuma/4RTools-RagTools/releases/download/v2.6.5/4RTools.-.v2.6.5.rar' com a release que esta na raiz do projeto, ou usando o Visual Studio 2022 abrir o `4RTools.sln` e rodar e gerar suas propias releases.
+Caso voce queira usar esta versao do 4rTools voce pode baixar 'https://github.com/biancaazuma/4RTools-RagTools/releases/download/v2.6.6/4RTools.-.v2.6.6.rar' com a release que esta na raiz do projeto, ou usando o Visual Studio 2022 abrir o `4RTools.sln` e rodar e gerar suas propias releases.
 
 ## Copiando perfil
 
