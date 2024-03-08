@@ -18,6 +18,8 @@ namespace _4RTools.Forms
         private Keys lastKey;
         private Keys healLastKey;
 
+        public ToggleApplicationStateForm() { }
+
         public ToggleApplicationStateForm(Subject subject)
         {
             InitializeComponent();
@@ -111,13 +113,41 @@ namespace _4RTools.Forms
                     this.lblStatusToggle.Text = "Press the key to stop!";
                     this.lblStatusToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
                     new SoundPlayer(Resources._4RTools.ETCResource.Speech_On).Play();
-                } else
+                }
+                else
                 {
                     this.lblStatusToggle.Text = "Please select a valid Ragnarok Client!";
                     this.lblStatusToggle.ForeColor = Color.Red;
                 }
             }
 
+            return true;
+        }
+
+        public bool TurnOFF()
+        {
+            bool isOn = this.btnStatusToggle.Text == "ON";
+            if (isOn)
+            {
+                this.btnStatusToggle.BackColor = Color.Red;
+                this.btnStatusToggle.Text = "OFF";
+                this.notifyIconTray.Icon = Resources._4RTools.ETCResource.logo_4rtools_off;
+                this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
+                this.lblStatusToggle.Text = "Press the key to start!";
+                this.lblStatusToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+                new SoundPlayer(Resources._4RTools.ETCResource.Speech_Off).Play();
+            }
+
+            bool isOnheal = this.btnStatusHealToggle.Text == "ON";
+            if (isOnheal)
+            {
+                this.btnStatusHealToggle.BackColor = Color.Red;
+                this.btnStatusHealToggle.Text = "OFF";
+                this.subject.Notify(new Utils.Message(MessageCode.TURN_HEAL_OFF, null));
+                this.lblStatusHealToggle.Text = "Press the key to start healing!";
+                this.lblStatusHealToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+                new SoundPlayer(Resources._4RTools.ETCResource.Healing_Off).Play();
+            }
             return true;
         }
 

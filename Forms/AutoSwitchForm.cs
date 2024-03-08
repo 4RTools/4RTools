@@ -76,24 +76,6 @@ namespace _4RTools.Forms
                     break;
             }
         }
-        //public static void doUpdate(Control control)
-        //{
-        //    var autobuffDict = ProfileSingleton.GetCurrent().DebuffsRecovery.buffMapping;
-        //    var groupbox = control.Controls.OfType<GroupBox>().FirstOrDefault();
-        //    foreach (TextBox txt in groupbox.Controls.OfType<TextBox>())
-        //    {
-        //        var buffid = int.Parse(txt.Name.Split('n')[1]);
-        //        var existe = autobuffDict.FirstOrDefault(x => x.Key.Equals((EffectStatusIDs)buffid));
-        //        if (existe.Key != 0)
-        //        {
-        //            txt.Text = autobuffDict[(EffectStatusIDs)buffid].ToString();
-        //        }
-        //        else
-        //        {
-        //            txt.Text = "None";
-        //        }
-        //    }
-        //}
 
         private void onTextChange(object sender, EventArgs e)
         {

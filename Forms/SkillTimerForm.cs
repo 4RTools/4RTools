@@ -21,7 +21,6 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    //FormUtils.ResetForm(this);
                     validate();
                     updateUi();
                     break;

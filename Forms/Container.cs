@@ -13,6 +13,8 @@ namespace _4RTools.Forms
 
         private Subject subject = new Subject();
         private string currentProfile;
+
+        private ToggleApplicationStateForm frmToggleApplication = new ToggleApplicationStateForm();
         public Container()
         {
             this.subject.Attach(this);
@@ -25,7 +27,7 @@ namespace _4RTools.Forms
             SetBackGroundColorOfMDIForm();
 
             //Paint Children Forms 
-            SetToggleApplicationStateWindow();
+            frmToggleApplication = SetToggleApplicationStateWindow();
             SetAutopotWindow();
             SetAutopotYggWindow();
             SetSkillTimerWindow();
@@ -151,6 +153,10 @@ namespace _4RTools.Forms
             {
                 try
                 {
+                    if (currentProfile != null) {
+                        this.frmToggleApplication.TurnOFF();
+                    }
+
                     ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
                     subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
                     currentProfile = this.profileCB.Text.ToString();
@@ -194,14 +200,14 @@ namespace _4RTools.Forms
 
         #region Frames
 
-        public void SetToggleApplicationStateWindow()
+        public ToggleApplicationStateForm SetToggleApplicationStateWindow()
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            //frm.Location = new Point(415, 80);
             frm.Location = new Point(360, 80);
             frm.MdiParent = this;
             frm.Show();
+            return frm;
         }
 
         public void SetAutopotWindow()
