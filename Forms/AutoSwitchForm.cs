@@ -99,33 +99,5 @@ namespace _4RTools.Forms
             catch { }
         }
 
-        private void onStatusKeyChange(object sender, EventArgs e)
-        {
-            Key k = (Key)Enum.Parse(typeof(Key), this.ITEMin319.Text.ToString());
-
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.POISON, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.SILENCE, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.BLIND, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CONFUSION, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.HALLUCINATIONWALK, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.HALLUCINATION, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CURSE, k);
-
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
-            this.ActiveControl = null;
-        }
-
-        private void on3RDStatusKeyChange(object sender, EventArgs e)
-        {
-            Key k = (Key)Enum.Parse(typeof(Key), this.ITEMin30.Text.ToString());
-
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.PROPERTYUNDEAD, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.BLEEDING, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.MISTY_FROST, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.CRITICALWOUND, k);
-            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.OVERHEAT, k);
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
-            this.ActiveControl = null;
-        }
     }
 }
