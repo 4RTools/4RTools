@@ -116,7 +116,7 @@ namespace _4RTools.Utils
         CLOAKING = 5,
         HIDING = 4,
         MAGNUM = 131,
-        FIGHTINGSPIRIT = 322, // aura de combate
+        FIGHTINGSPIRIT = 322,
         BASILICA = 1122,
         EDEN = 9999,
 
@@ -158,12 +158,12 @@ namespace _4RTools.Utils
 
         REGENERATION_POTION = 292,
 
-        CRITICALPERCENT = 295, // Abrasive
+        CRITICALPERCENT = 295,
 
 
         //Boxes
-        DROWSINESS_BOX = 151, //SONOLENCIA
-        RESENTMENT_BOX = 150, //RESSENTIMENTO
+        DROWSINESS_BOX = 151,
+        RESENTMENT_BOX = 150,
         SUNLIGHT_BOX = 184,
 
         //Elemental Potions
@@ -206,7 +206,6 @@ namespace _4RTools.Utils
         MYST_AMPLIFY = 113,
 
         // DEBUFFS
-        // validados
         CRITICALWOUND = 286,
         FREEZING = 351,
         CURSE = 884,
@@ -218,7 +217,6 @@ namespace _4RTools.Utils
         DEEP_SLEEP = 435,
         POISON = 883,
 
-        // não validados
         FEAR = 891,
         BLIND = 887,
 
