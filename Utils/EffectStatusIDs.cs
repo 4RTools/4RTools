@@ -216,7 +216,8 @@ namespace _4RTools.Utils
         POISON = 883,
 
         SLOW_CAST = 282,
-        MANDRAGORA8 = 470,
+        MANDRAGORA = 470,
+        BURNING = 881,
 
         FEAR = 891,
         BLIND = 887,
