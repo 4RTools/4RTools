@@ -628,6 +628,7 @@
     <None Include="assets\etc\Healing_Off.mp3" />
     <None Include="assets\etc\Healing_Off.wav" />
     <None Include="assets\etc\Healing_On.wav" />
+    <None Include="assets\images\accuracy_Scroll.png" />
     <Content Include="assets\images\ads_placeholder_clean.jpg" />
     <Content Include="assets\images\cash_food.png" />
     <Content Include="assets\images\ele_earth_converter.png" />
@@ -635,8 +636,13 @@
     <Content Include="assets\images\ele_water_converter.png" />
     <Content Include="assets\images\ele_wind_converter.png" />
     <Content Include="assets\images\fear_breeze.png" />
+    <None Include="assets\images\halohalo.png" />
+    <None Include="assets\images\flee_scroll.png" />
+    <None Include="assets\images\Glass_Of_Illusion.png" />
     <Content Include="assets\images\impositio_manus.png" />
+    <None Include="assets\images\mental_potion.png" />
     <Content Include="assets\images\octocat2.png" />
+    <None Include="assets\images\spellbreaker.png" />
     <Content Include="assets\images\tk_mild_earth.png" />
     <Content Include="assets\images\tk_mild_fire.png" />
     <Content Include="assets\images\tk_mild_ghost.png" />
@@ -644,6 +650,7 @@
     <Content Include="assets\images\tk_mild_shadow.png" />
     <Content Include="assets\images\tk_mild_water.png" />
     <Content Include="assets\images\tk_mild_wind.png" />
+    <None Include="assets\images\vitata_potion.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup>

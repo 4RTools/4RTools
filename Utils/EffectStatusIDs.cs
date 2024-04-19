@@ -194,8 +194,6 @@ namespace _4RTools.Utils
         AGI_3RD_FOOD = 495,
         LUK_3RD_FOOD = 496,
 
-        BASICHIT = 248,
-
         //Rune Knight Runes
         OTHILA = 322,
         HAGALAZ = 320,
@@ -217,6 +215,9 @@ namespace _4RTools.Utils
         DEEP_SLEEP = 435,
         POISON = 883,
 
+        SLOW_CAST = 282,
+        MANDRAGORA8 = 470,
+
         FEAR = 891,
         BLIND = 887,
 
@@ -232,5 +233,12 @@ namespace _4RTools.Utils
         DANCE_WITH_WUG = 441,
         SIT = 622,
 
+        SPELLBREAKER = 300,
+        HALOHALO = 2011,
+        FLEE_SCROLL = 247,
+        ACCURACY_SCROLL = 248,
+        GLASS_OF_ILLUSION = 296,
+        MENTAL_POTION = 298,
+        VITATA_POTION = 483,
     }
 }
