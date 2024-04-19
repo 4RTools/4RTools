@@ -742,4 +742,13 @@
   <data name="vitata_potion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\vitata_potion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="burning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\burning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mandragora_howling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\mandragora_howling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slow_cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\slow_cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -403,6 +403,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap burning {
+            get {
+                object obj = ResourceManager.GetObject("burning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap burnt_incense {
             get {
                 object obj = ResourceManager.GetObject("burnt_incense", resourceCulture);
@@ -1303,6 +1313,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mandragora_howling {
+            get {
+                object obj = ResourceManager.GetObject("mandragora_howling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mc_loud {
             get {
                 object obj = ResourceManager.GetObject("mc_loud", resourceCulture);
@@ -1696,6 +1716,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap sl_soullinker {
             get {
                 object obj = ResourceManager.GetObject("sl_soullinker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap slow_cast {
+            get {
+                object obj = ResourceManager.GetObject("slow_cast", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

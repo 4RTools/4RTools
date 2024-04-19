@@ -365,6 +365,9 @@ namespace _4RTools.Model
                 new Buff("Sono Profundo", EffectStatusIDs.DEEP_SLEEP, Resources._4RTools.Icons.deep_sleep),
                 new Buff("Envenenamento", EffectStatusIDs.POISON, Resources._4RTools.Icons.poison_status),
                 new Buff("Sentar", EffectStatusIDs.SIT, Resources._4RTools.Icons.sit),
+                new Buff("Incêndio", EffectStatusIDs.BURNING, Resources._4RTools.Icons.burning),
+                new Buff("Grito da Mandrágora", EffectStatusIDs.MANDRAGORA, Resources._4RTools.Icons.mandragora_howling),
+                new Buff("Conjuração Lenta", EffectStatusIDs.SLOW_CAST, Resources._4RTools.Icons.slow_cast),
 
             };
 

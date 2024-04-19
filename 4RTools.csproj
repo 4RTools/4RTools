@@ -630,6 +630,7 @@
     <None Include="assets\etc\Healing_On.wav" />
     <None Include="assets\images\accuracy_Scroll.png" />
     <Content Include="assets\images\ads_placeholder_clean.jpg" />
+    <None Include="assets\images\burning.png" />
     <Content Include="assets\images\cash_food.png" />
     <Content Include="assets\images\ele_earth_converter.png" />
     <Content Include="assets\images\ele_fire_converter.png" />
@@ -641,8 +642,10 @@
     <None Include="assets\images\Glass_Of_Illusion.png" />
     <Content Include="assets\images\impositio_manus.png" />
     <None Include="assets\images\mental_potion.png" />
+    <None Include="assets\images\mandragora_howling.png" />
     <Content Include="assets\images\octocat2.png" />
     <None Include="assets\images\spellbreaker.png" />
+    <None Include="assets\images\slow_cast.png" />
     <Content Include="assets\images\tk_mild_earth.png" />
     <Content Include="assets\images\tk_mild_fire.png" />
     <Content Include="assets\images\tk_mild_ghost.png" />
