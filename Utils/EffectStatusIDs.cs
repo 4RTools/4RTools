@@ -181,7 +181,7 @@ namespace _4RTools.Utils
         IZAYOI = 652,
         BUNSINJYUTSU = 207,
         TARGET_BLOOD = 301,
-        CAT_JUICE = 300,
+        JUICE_CAT = 300,
 
         //Scrolls
         INC_AGI = 12,
