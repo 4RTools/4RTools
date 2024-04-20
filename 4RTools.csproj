@@ -636,6 +636,7 @@
     <Content Include="assets\images\ele_wind_converter.png" />
     <Content Include="assets\images\fear_breeze.png" />
     <Content Include="assets\images\impositio_manus.png" />
+    <Content Include="assets\images\juice_cat.png" />
     <Content Include="assets\images\octocat2.png" />
     <Content Include="assets\images\tk_mild_earth.png" />
     <Content Include="assets\images\tk_mild_fire.png" />

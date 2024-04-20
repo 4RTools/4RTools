@@ -178,6 +178,9 @@
 	<data name="blessing_of_tyr" type="System.Resources.ResXFileRef, System.Windows.Forms">
 		<value>..\..\assets\images\blessing_of_tyr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 	</data>
+	<data name="juice_cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\..\assets\images\juice_cat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
 	<data name="blue_herb_activator" type="System.Resources.ResXFileRef, System.Windows.Forms">
 		<value>..\..\assets\images\blue_herb_activator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 	</data>
