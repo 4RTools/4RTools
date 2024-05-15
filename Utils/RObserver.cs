@@ -25,8 +25,12 @@ namespace _4RTools.Utils
         CLICK_ICON_TRAY,
         SERVER_LIST_CHANGED,
         TURN_HEAL_ON,
-        TURN_HEAL_OFF
-  }
+        TURN_HEAL_OFF,
+        TURN_CITY_ON,
+        TURN_CITY_OFF,
+        TURN_REIN_ON,
+        TURN_REIN_OFF
+    }
 
     public class Message
     {

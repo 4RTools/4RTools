@@ -8,7 +8,10 @@ namespace _4RTools.Model
         private string ACTION_NAME = "UserPreferences";
         public string toggleStateKey { get; set; } = Keys.End.ToString();
         public string toggleStateHealKey { get; set; } = Keys.End.ToString();
-
+        public string toggleCityKey { get; set; } = Keys.End.ToString();
+        public string toggleReinKey { get; set; } = Keys.End.ToString();
+        public bool toggleCity { get; set; }
+        public bool toggleRein { get; set; }
 
         public UserPreferences()
         {

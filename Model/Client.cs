@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Net;
+using System.Net.Mail;
 
 namespace _4RTools.Model
 {
@@ -18,20 +19,26 @@ namespace _4RTools.Model
         public string hpAddress { get; set; }
         public string nameAddress { get; set; }
 
+        public string mapAddress { get; set; }
+
         public int hpAddressPointer { get; set; }
         public int nameAddressPointer { get; set; }
+        public int mapAddressPointer { get; set; }
 
         public ClientDTO() { }
 
-        public ClientDTO(string name, string description, string hpAddress, string nameAddress)
+        public ClientDTO(string name, string description, string hpAddress, string nameAddress, string mapAddress)
         {
             this.name= name;
             this.description = description;
             this.hpAddress = hpAddress;
             this.nameAddress = nameAddress;
+            this.mapAddress = mapAddress;
 
             this.hpAddressPointer = Convert.ToInt32(hpAddress, 16);
             this.nameAddressPointer = Convert.ToInt32(nameAddress, 16);
+            this.mapAddressPointer = Convert.ToInt32(mapAddress, 16);
+
         }
 
     }
@@ -89,13 +96,15 @@ namespace _4RTools.Model
         private Utils.ProcessMemoryReader PMR { get; set; }
         public int currentNameAddress { get; set; }
         public int currentHPBaseAddress { get; set; }
+        public int currentMapAddress { get; set; }
         private int statusBufferAddress { get; set; }
         private int _num = 0;
 
-        public Client(string processName, int currentHPBaseAddress, int currentNameAddress)
+        public Client(string processName, int currentHPBaseAddress, int currentNameAddress, int currentMapAddress)
         {
             this.currentNameAddress = currentNameAddress;
             this.currentHPBaseAddress = currentHPBaseAddress;
+            this.currentMapAddress = currentMapAddress;
             this.processName = processName;
             this.statusBufferAddress = currentHPBaseAddress + 0x474;
         }
@@ -105,6 +114,7 @@ namespace _4RTools.Model
             this.processName = dto.name;
             this.currentHPBaseAddress = Convert.ToInt32(dto.hpAddress, 16);
             this.currentNameAddress = Convert.ToInt32(dto.nameAddress, 16);
+            this.currentMapAddress = Convert.ToInt32(dto.mapAddress, 16);
             this.statusBufferAddress = this.currentHPBaseAddress + 0x474;
         }
 
@@ -130,12 +140,15 @@ namespace _4RTools.Model
 
                         this.currentHPBaseAddress = c.currentHPBaseAddress;
                         this.currentNameAddress = c.currentNameAddress;
+                        this.currentMapAddress = c.currentMapAddress;
                         this.statusBufferAddress = c.statusBufferAddress;
-                    }catch
+                    }
+                    catch
                     {
                         MessageBox.Show("This client is not supported. Only Spammers and macro will works.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         this.currentHPBaseAddress = 0;
                         this.currentNameAddress = 0;
+                        this.currentMapAddress = 0;
                         this.statusBufferAddress = 0;
                     }
                    
@@ -202,6 +215,11 @@ namespace _4RTools.Model
         public string ReadCharacterName()
         {
             return ReadMemoryAsString(this.currentNameAddress);
+        }
+
+        public string ReadCurrentMap()
+        {
+            return ReadMemoryAsString(this.currentMapAddress);
         }
 
         public uint ReadMaxSp()

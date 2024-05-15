@@ -66,16 +66,20 @@ namespace _4RTools.Model
 
         private int AutopotThreadExecution(Client roClient, int hpPotCount)
         {
-            bool hasCriticalWound = HasCriticalWound(roClient);
-            if (firstHeal.Equals(FIRSTHP))
+            string currentMap = roClient.ReadCurrentMap();
+            List<String> list = LocalServerManager.GetListCities();
+            if (ProfileSingleton.GetCurrent().UserPreferences.toggleCity || list.Contains(currentMap) == false)
             {
-                healHPFirst(roClient, hpPotCount, hasCriticalWound);
+                bool hasCriticalWound = HasCriticalWound(roClient);
+                if (firstHeal.Equals(FIRSTHP))
+                {
+                    healHPFirst(roClient, hpPotCount, hasCriticalWound);
+                }
+                else
+                {
+                    healSPFirst(roClient, hpPotCount, hasCriticalWound);
+                }
             }
-            else
-            {
-                healSPFirst(roClient, hpPotCount, hasCriticalWound);
-            }
-
             Thread.Sleep(this.delay);
             return 0;
         }

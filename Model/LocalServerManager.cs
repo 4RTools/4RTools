@@ -12,6 +12,7 @@ namespace _4RTools.Model
     {
 
         private static readonly string localServerName = "supported_servers.json";
+        private static readonly string localCityName = "city_name.json";
 
         public static void AddServer(string hpAddress, string nameAddress, string processName)
         {
@@ -24,7 +25,7 @@ namespace _4RTools.Model
             {
                 throw new ArgumentException("Name Address is Invalid. Please type a valid Hex value.");
             }
-            ClientDTO dto = new ClientDTO(processName, null, hpAddress, nameAddress);
+            ClientDTO dto = new ClientDTO(processName, null, hpAddress, nameAddress, null);
             ClientListSingleton.AddClient(new Client(dto));
 
             List<ClientDTO> clients = GetLocalClients();
@@ -61,7 +62,7 @@ namespace _4RTools.Model
         {
             if (!File.Exists(localServerName))
             {
-                string startJson = "[]";
+                string startJson = "[\r\n  {\r\n    \"name\": \"rtales.bin\",\r\n    \"description\": \"Ragna Tales\",\r\n    \"hpAddress\": \"0x00E8E434\",\r\n    \"nameAddress\": \"0x00E90C00\",\r\n    \"mapAddress\": \"0x00E89BD4\"\r\n  }\r\n]";
                 FileStream f = File.Create(localServerName);
                 f.Close();
                 File.WriteAllText(localServerName, startJson);
@@ -82,6 +83,36 @@ namespace _4RTools.Model
             }catch
             {
                 return new List<ClientDTO>();
+            }
+        }
+
+        private static string LoadLocalCityNameFile()
+        {
+            if (!File.Exists(localCityName))
+            {
+                string startJson = "[\r\n  \"prontera\",\r\n  \"morocc\",\r\n  \"geffen\",\r\n  \"payon\",\r\n  \"alberta\",\r\n  \"izlude\",\r\n  \"aldebaran\",\r\n  \"xmas\",\r\n  \"comodo\",\r\n  \"yuno\",\r\n  \"amatsu\",\r\n  \"gonryun\",\r\n  \"umbala\",\r\n  \"niflheim\",\r\n  \"louyang\",\r\n  \"jawaii\",\r\n  \"ayothaya\",\r\n  \"einbroch\",\r\n  \"lighthalzen\",\r\n  \"einbech\",\r\n  \"hugel\",\r\n  \"rachel\",\r\n  \"veins\",\r\n  \"moscovia\",\r\n  \"brasilis\",\r\n  \"harboro1\",\r\n  \"wave_vip\",\r\n  \"moc_para01\",\r\n  \"party_room\",    \r\n  \"market_01\",\r\n  \"market_02\",\r\n  \"verus04\"\r\n]";
+                FileStream f = File.Create(localCityName);
+                f.Close();
+                File.WriteAllText(localCityName, startJson);
+                return startJson;
+            }
+            string json = File.ReadAllText(localCityName);
+            return json;
+        }
+
+        public static List<String> GetListCities()
+        {
+            string localServers = LoadLocalCityNameFile();
+
+            if (string.IsNullOrEmpty(localServers)) return new List<String>();
+
+            try
+            {
+                return JsonConvert.DeserializeObject<List<String>>(localServers);
+            }
+            catch
+            {
+                return new List<String>();
             }
         }
 

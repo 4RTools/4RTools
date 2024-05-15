@@ -33,7 +33,7 @@ namespace _4RTools.Utils
         FEARBREEZE = 352,
         SOULLINK = 149,
         GNCARTBOOST = 461,
-        CONCENTRATION = 3,
+        CONCENTRATION = 3,       
         TRUESIGHT = 115,
         GLORIA = 21,
         MAGNIFICAT = 20,
@@ -232,6 +232,8 @@ namespace _4RTools.Utils
 
         DANCE_WITH_WUG = 441,
         SIT = 622,
+
+        RIDDING = 613,
 
     }
 }
