@@ -224,7 +224,7 @@ namespace _4RTools.Model
                 new Buff("Full SwingK Potion", EffectStatusIDs.FULL_SWINGK, Resources._4RTools.Icons.swing_k),
                 new Buff("Mana Plus Potion", EffectStatusIDs.MANA_PLUS, Resources._4RTools.Icons.mana_plus),
                 new Buff("Blessing Of Tyr", EffectStatusIDs.BASICHIT, Resources._4RTools.Icons.blessing_of_tyr),
-                new Buff("Juice Cat", EffectStatusIDs.JUICE_CAT, Resources._4RTools.Icons.juice_cat)
+                new Buff("Cat Juice", EffectStatusIDs.CAT_JUICE, Resources._4RTools.Icons.juice_cat)
             };
 
             return skills;
