@@ -53,9 +53,14 @@ namespace _4RTools.Model
 
         private int AutoRefreshThreadExecution(Client roClient, int delay, Key rKey)
         {
-            if (rKey != Key.None)
+            string currentMap = roClient.ReadCurrentMap();
+            List<String> list = LocalServerManager.GetListCities();
+            if (ProfileSingleton.GetCurrent().UserPreferences.toggleCity || list.Contains(currentMap) == false)
             {
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), rKey.ToString()), 0);
+                if (rKey != Key.None)
+                {
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), rKey.ToString()), 0);
+                }
             }
             Thread.Sleep(delay * 1000);
             return 0;
