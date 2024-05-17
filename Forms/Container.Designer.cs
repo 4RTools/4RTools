@@ -62,6 +62,7 @@ namespace _4RTools.Forms
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.tabPageSkillTimer = new System.Windows.Forms.TabPage();
             this.tabPageAutoSwitch = new System.Windows.Forms.TabPage();
+            this.tabConfig = new System.Windows.Forms.TabPage();
             atkDefMode = new System.Windows.Forms.TabControl();
             atkDefMode.SuspendLayout();
             this.panelFooter.SuspendLayout();
@@ -77,7 +78,9 @@ namespace _4RTools.Forms
             atkDefMode.Controls.Add(this.atkDef);
             atkDefMode.Controls.Add(this.tabMacroSwitch);
             atkDefMode.Controls.Add(this.tabPageDebuffs);
+            atkDefMode.Controls.Add(this.tabConfig);
             atkDefMode.Controls.Add(this.tabPageProfiles);
+
             atkDefMode.Location = new System.Drawing.Point(15, 274);
             atkDefMode.Name = "atkDefMode";
             atkDefMode.SelectedIndex = 0;
@@ -132,7 +135,7 @@ namespace _4RTools.Forms
             this.atkDef.Padding = new System.Windows.Forms.Padding(3);
             this.atkDef.Size = new System.Drawing.Size(629, 274);
             this.atkDef.TabIndex = 5;
-            this.atkDef.Text = "ATK x DEF Mode";
+            this.atkDef.Text = "ATK x DEF";
             // 
             // tabMacroSwitch
             // 
@@ -398,6 +401,16 @@ namespace _4RTools.Forms
             this.tabPageAutoSwitch.TabIndex = 3;
             this.tabPageAutoSwitch.Text = "Auto Switch";
             // 
+            // tabConfig
+            // 
+            this.tabConfig.Location = new System.Drawing.Point(4, 22);
+            this.tabConfig.Name = "tabPageConfig";
+            this.tabConfig.Padding = new System.Windows.Forms.Padding(3);
+            this.tabConfig.Size = new System.Drawing.Size(629, 274);
+            this.tabConfig.TabIndex = 10;
+            this.tabConfig.Text = "Config";
+            this.tabConfig.UseVisualStyleBackColor = true;
+            // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -468,5 +481,6 @@ namespace _4RTools.Forms
         private TabPage tabPageAutoSwitch;
         //private TabPage tabPageServer;
         private TabPage tabPageDebuffs;
-  }
+        private TabPage tabConfig;
+    }
 }

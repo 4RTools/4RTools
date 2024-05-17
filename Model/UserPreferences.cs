@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using _4RTools.Utils;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace _4RTools.Model
@@ -9,6 +11,7 @@ namespace _4RTools.Model
         public string toggleStateKey { get; set; } = Keys.End.ToString();
         public string toggleStateHealKey { get; set; } = Keys.End.ToString();
 
+        public List<EffectStatusIDs> autoBuffOrder { get; set; } = new List<EffectStatusIDs>();
 
         public UserPreferences()
         {
@@ -26,6 +29,10 @@ namespace _4RTools.Model
         public string GetActionName()
         {
             return ACTION_NAME;
+        }
+        public void SetAutoBuffOrder(List<EffectStatusIDs> buffs)
+        {
+            this.autoBuffOrder = buffs;
         }
     }
 }

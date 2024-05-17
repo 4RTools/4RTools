@@ -9,13 +9,24 @@ using _4RTools.Utils;
 namespace _4RTools.Model
 {
 
-    public class AutoBuff : Action
+    public class AutoBuffStuff : Action
     {
-        public static string ACTION_NAME_AUTOBUFF = "Autobuff";
-
+        public static string ACTION_NAME_AUTOBUFFSKILL = "AutobuffSkill";
+        public static string ACTION_NAME_AUTOBUFFSTUFF = "AutobuffStuff";
+        public string actionName { get; set; }
         private _4RThread thread;
         public int delay { get; set; } = 1;
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
+
+        public AutoBuffStuff(string actionName)
+        {
+            this.actionName = actionName;
+        }
+
+        //public void SetBuffMapping(Dictionary<EffectStatusIDs, Key> buffMapping)
+        //{
+        //    this.buffMapping = buffMapping;
+        //}
 
         public void Start()
         {
@@ -125,7 +136,7 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return ACTION_NAME_AUTOBUFF;
+            return this.actionName;
         }
 
         private void useAutobuff(Key key)

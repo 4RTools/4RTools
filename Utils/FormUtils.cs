@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Linq;
+using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 using System.Windows.Input;
-using static System.Windows.Forms.Control;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace _4RTools.Utils
 {
@@ -15,7 +16,7 @@ namespace _4RTools.Utils
         {
             try
             {
-                TextBox textBox = (TextBox)sender;
+                System.Windows.Forms.TextBox textBox = (System.Windows.Forms.TextBox)sender;
                 Key thisk = (Key)Enum.Parse(typeof(Key), e.KeyCode.ToString());
 
                 switch (thisk)
@@ -55,13 +56,13 @@ namespace _4RTools.Utils
         private static void resetForm(Control control)
         {
 
-            IEnumerable<Control> texts = GetAll(control, typeof(TextBox));
+            IEnumerable<Control> texts = GetAll(control, typeof(System.Windows.Forms.TextBox));
             IEnumerable<Control> checks = GetAll(control, typeof(CheckBox));
-            IEnumerable<Control> combos = GetAll(control, typeof(ComboBox));
+            IEnumerable<Control> combos = GetAll(control, typeof(System.Windows.Forms.ComboBox));
 
             foreach(Control c in texts)
             {
-                TextBox textBox = (TextBox)c;
+                System.Windows.Forms.TextBox textBox = (System.Windows.Forms.TextBox)c;
                 textBox.Text = Key.None.ToString();
             }
 
@@ -73,7 +74,7 @@ namespace _4RTools.Utils
 
             foreach (Control c in combos)
             {
-                ComboBox comboBox = (ComboBox)c;
+                System.Windows.Forms.ComboBox comboBox = (System.Windows.Forms.ComboBox)c;
                 if (comboBox.Items.Count > 0)
                     comboBox.SelectedIndex = 0;
             }
@@ -83,7 +84,7 @@ namespace _4RTools.Utils
         {
 
             IEnumerable<Control> checks = GetAll(control, typeof(CheckBox));
-            IEnumerable<Control> combos = GetAll(control, typeof(ComboBox));
+            IEnumerable<Control> combos = GetAll(control, typeof(System.Windows.Forms.ComboBox));
 
             foreach (Control c in checks)
             {
@@ -93,7 +94,7 @@ namespace _4RTools.Utils
 
             foreach (Control c in combos)
             {
-                ComboBox comboBox = (ComboBox)c;
+                System.Windows.Forms.ComboBox comboBox = (System.Windows.Forms.ComboBox)c;
                 if (comboBox.Items.Count > 0)
                     comboBox.SelectedIndex = 0;
             }
@@ -123,5 +124,49 @@ namespace _4RTools.Utils
         {
             resetForm(group);
         }
+
+       
+    }
+    public static class EnumExtensions
+    {
+        public static string ToDescriptionString(this EffectStatusIDs val)
+        {
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])val
+               .GetType()
+               .GetField(val.ToString())
+               .GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
+        }
+        public static string GetDescription(this Enum value)
+        {
+            Type type = value.GetType();
+            string name = Enum.GetName(type, value);
+            if (name != null)
+            {
+                FieldInfo field = type.GetField(name);
+                if (field != null)
+                {
+                    DescriptionAttribute attr =
+                           Attribute.GetCustomAttribute(field,
+                             typeof(DescriptionAttribute)) as DescriptionAttribute;
+                    if (attr != null)
+                    {
+                        return attr.Description;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public static EffectStatusIDs ToEffectStatusId(this String val)
+        {
+
+            EffectStatusIDs t = Enum.GetValues(typeof(EffectStatusIDs))
+                .Cast<EffectStatusIDs>()
+                .FirstOrDefault(v => v.GetDescription() == val);
+            return t;
+        }
+
+        
     }
 }
