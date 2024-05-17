@@ -13,6 +13,7 @@ namespace _4RTools.Model
 
         private static readonly string localServerName = "supported_servers.json";
         private static readonly string localCityName = "city_name.json";
+        private static List<String> cityList;
 
         public static void AddServer(string hpAddress, string nameAddress, string processName)
         {
@@ -102,18 +103,21 @@ namespace _4RTools.Model
 
         public static List<String> GetListCities()
         {
-            string localServers = LoadLocalCityNameFile();
+            if (cityList == null || cityList.Count == 0) { 
+                string localServers = LoadLocalCityNameFile();
 
-            if (string.IsNullOrEmpty(localServers)) return new List<String>();
+                if (string.IsNullOrEmpty(localServers)) return new List<String>();
 
-            try
-            {
-                return JsonConvert.DeserializeObject<List<String>>(localServers);
+                try
+                {
+                    cityList = JsonConvert.DeserializeObject<List<String>>(localServers);
+                }
+                catch
+                {
+                    return new List<String>();
+                }
             }
-            catch
-            {
-                return new List<String>();
-            }
+            return cityList;
         }
 
         private static bool isValid(IEnumerable<char> chars)

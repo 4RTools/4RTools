@@ -27,7 +27,6 @@ namespace _4RTools.Utils
         TURN_HEAL_ON,
         TURN_HEAL_OFF,
         ADDED_NEW_AUTOBUFF_SKILL,
-        TURN_HEAL_OFF,
         TURN_CITY_ON,
         TURN_CITY_OFF,
         TURN_REIN_ON,
