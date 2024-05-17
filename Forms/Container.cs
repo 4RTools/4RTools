@@ -41,6 +41,7 @@ namespace _4RTools.Forms
             SetATKDEFWindow();
             SetMacroSwitchWindow();
             SetAutoSwitchWindow();
+            SetConfigWindow();
 
             //TrackerSingleton.Instance().SendEvent("desktop_login", "page_view", "desktop_container_load");
         }
@@ -337,6 +338,15 @@ namespace _4RTools.Forms
 
         }
 
+        public void SetConfigWindow()
+        {
+            ConfigForm frm = new ConfigForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.tabConfig, frm);
+            frm.Show();
+        }
 
         #endregion
     }

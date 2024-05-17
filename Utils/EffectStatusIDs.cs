@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace _4RTools.Utils
 {
+
     [Flags]
     public enum EffectStatusIDs : uint
     {
@@ -14,10 +16,10 @@ namespace _4RTools.Utils
 
         MISTY_FROST = 1141,
         OVERHEAT = 373,
-
+        [Description("Vigor")]
         ENDURE = 1,
         PAINKILLER = 577,
-
+        [Description("Rapidez com Lança")]
         SPEARQUICKEN = 68,
 
         MONSTER_TRANSFORM = 621,
@@ -30,16 +32,19 @@ namespace _4RTools.Utils
         SUN_COMFORT = 169,
         MOON_COMFORT = 170,
         STAR_COMFORT = 171,
+        [Description("Disparo Selvagem")]
         FEARBREEZE = 352,
         SOULLINK = 149,
-        GNCARTBOOST = 461,
-        CONCENTRATION = 3,       
+        [Description("Concentração")]
+        CONCENTRATION = 3,
+        [Description("Visão Real")]
         TRUESIGHT = 115,
         GLORIA = 21,
         MAGNIFICAT = 20,
         ANGELUS = 9,
         LAUDA_AGNUS = 331,
         LAUDA_RAMUS = 332,
+        [Description("Caminho do vento")]
         WINDWALK = 116,
         OVERTHRUST = 25,
         OVERTHRUSTMAX = 188,
@@ -59,7 +64,9 @@ namespace _4RTools.Utils
         SWORDREJECT = 120,
         EDP = 114,
         POISONREACT = 7,
+        [Description("Bloqueio")]
         AUTOGUARD = 58,
+        [Description("Escudo Refletor")]
         REFLECTSHIELD = 59,
         DEFENDER = 62,
         CR_SHRINK = 197,
@@ -69,6 +76,7 @@ namespace _4RTools.Utils
         LKCONCENTRATION = 105,
         PARRYING = 104,
         BERSERK = 107,
+        [Description("Instinto de Sobrevivência")]
         AUTOBERSERK = 132,
         AURA_NINJA = 208,
         PEEL_CHANGE = 206,
@@ -92,10 +100,14 @@ namespace _4RTools.Utils
         GATLINGFEVER = 204,
         ASSUMPTIO = 110,
         FORCEOFVANGUARD = 391,
+        [Description("Ilimitar")]
         UNLIMIT = 722,
+        [Description("Poema de Bragi")]
         POEMBRAGI = 72,
         APPLEIDUN = 73,
+        [Description("Sinfonia dos Ventos")]
         RUSH_WINDMILL = 442,
+        [Description("Serenata ao Luar")]
         MOONLIT_SERENADE = 447,
         RAISINGDRAGON = 410,
         FIRM_FAITH = 1162,
@@ -104,6 +116,7 @@ namespace _4RTools.Utils
         GENTLETOUCH_CHANGE = 426,
         GN_CARTBOOST = 461,
         WEAPONBLOCKING = 337,
+        [Description("Canção de Frigga")]
         FRIGG_SONG = 715,
         RESEARCHREPORT = 1248,
         MADNESSCANCEL = 203,
@@ -194,10 +207,8 @@ namespace _4RTools.Utils
         AGI_3RD_FOOD = 495,
         LUK_3RD_FOOD = 496,
 
-        BASICHIT = 248,
-
         //Rune Knight Runes
-        OTHILA = 322,
+        //OTHILA = 322,
         HAGALAZ = 320,
         THURISAZ = 319,
         LUX_AMINA = 1154,
@@ -217,6 +228,10 @@ namespace _4RTools.Utils
         DEEP_SLEEP = 435,
         POISON = 883,
 
+        SLOW_CAST = 282,
+        MANDRAGORA = 470,
+        BURNING = 881,
+
         FEAR = 891,
         BLIND = 887,
 
@@ -229,10 +244,20 @@ namespace _4RTools.Utils
         ORC_HEROI = 370,
         ABELHA = 369,
 
+        [Description("Dança com Lobos")]
         DANCE_WITH_WUG = 441,
         SIT = 622,
 
+        SPELLBREAKER = 300,
+        HALOHALO = 2011,
+        FLEE_SCROLL = 247,
+        ACCURACY_SCROLL = 248,
+        GLASS_OF_ILLUSION = 296,
+        MENTAL_POTION = 298,
+        VITATA_POTION = 483,
         RIDDING = 613,
 
     }
+
 }
+

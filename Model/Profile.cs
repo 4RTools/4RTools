@@ -27,7 +27,8 @@ namespace _4RTools.Model
                     profile.AutopotYgg = JsonConvert.DeserializeObject<Autopot>(Profile.GetByAction(rawObject, profile.AutopotYgg));
                     profile.StatusRecovery = JsonConvert.DeserializeObject<StatusRecovery>(Profile.GetByAction(rawObject, profile.StatusRecovery));
                     profile.AutoRefreshSpammer = JsonConvert.DeserializeObject<AutoRefreshSpammer>(Profile.GetByAction(rawObject, profile.AutoRefreshSpammer));
-                    profile.Autobuff = JsonConvert.DeserializeObject<AutoBuff>(Profile.GetByAction(rawObject, profile.Autobuff));
+                    profile.AutobuffSkill = JsonConvert.DeserializeObject<AutoBuffSkill>(Profile.GetByAction(rawObject, profile.AutobuffSkill));
+                    profile.AutobuffStuff = JsonConvert.DeserializeObject<AutoBuffStuff>(Profile.GetByAction(rawObject, profile.AutobuffStuff));
                     profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.SongMacro));
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                     profile.MacroSwitch = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.MacroSwitch));
@@ -94,7 +95,8 @@ namespace _4RTools.Model
         public Autopot Autopot { get; set; }
         public Autopot AutopotYgg { get; set; }
         public AutoRefreshSpammer AutoRefreshSpammer { get; set; }
-        public AutoBuff Autobuff { get; set; }
+        public AutoBuffSkill AutobuffSkill { get; set; }
+        public AutoBuffStuff AutobuffStuff { get; set; }
         public StatusRecovery StatusRecovery { get; set; }
         public DebuffsRecovery DebuffsRecovery { get; set; }
         public Macro SongMacro { get; set;}
@@ -113,7 +115,8 @@ namespace _4RTools.Model
             this.Autopot = new Autopot(Autopot.ACTION_NAME_AUTOPOT);
             this.AutopotYgg = new Autopot(Autopot.ACTION_NAME_AUTOPOT_YGG);
             this.AutoRefreshSpammer = new AutoRefreshSpammer();
-            this.Autobuff = new AutoBuff();
+            this.AutobuffSkill = new AutoBuffSkill(AutoBuffSkill.ACTION_NAME_AUTOBUFFSKILL);
+            this.AutobuffStuff = new AutoBuffStuff(AutoBuffStuff.ACTION_NAME_AUTOBUFFSTUFF);
             this.StatusRecovery = new StatusRecovery();
             this.SongMacro = new Macro(Macro.ACTION_NAME_SONG_MACRO,MacroSongForm.TOTAL_MACRO_LANES_FOR_SONGS);
             this.MacroSwitch = new Macro(Macro.ACTION_NAME_MACRO_SWITCH, MacroSwitchForm.TOTAL_MACRO_LANES);

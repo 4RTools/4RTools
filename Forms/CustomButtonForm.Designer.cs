@@ -1,6 +1,4 @@
-﻿using _4RTools.Utils;
-
-namespace _4RTools.Forms
+﻿namespace _4RTools.Forms
 {
     partial class CustomButtonForm
     {

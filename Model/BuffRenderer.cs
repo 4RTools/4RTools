@@ -1,4 +1,5 @@
-﻿using _4RTools.Utils;
+﻿using _4RTools.Forms;
+using _4RTools.Utils;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -19,11 +20,15 @@ namespace _4RTools.Model
 
         private List<BuffContainer> _containers;
         private ToolTip _toolTip;
+        private String _typeAutoBuff;
+        private Subject _subject;
 
-        public BuffRenderer(List<BuffContainer> containers, ToolTip toolTip)
+        public BuffRenderer(List<BuffContainer> containers, ToolTip toolTip, String autoBuff, Subject subject)
         {
             this._containers = containers;
             this._toolTip = toolTip;
+            this._typeAutoBuff = autoBuff;
+            this._subject = subject;
         }
 
         public void doRender()
@@ -82,26 +87,46 @@ namespace _4RTools.Model
         {
             try
             {
+                if (this._typeAutoBuff == ProfileSingleton.GetCurrent().AutobuffSkill.actionName)
+                {
+                    var _autoBuff = ProfileSingleton.GetCurrent().AutobuffSkill;
+                }
 
                 TextBox txtBox = (TextBox)sender;
-                if (txtBox.Text.ToString() != String.Empty)
+                if ((txtBox.Text.ToString() != String.Empty) && (txtBox.Text.ToString() != "None"))
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    if(statusID == EffectStatusIDs.EDEN)
+
+
+                    if (this._typeAutoBuff == ProfileSingleton.GetCurrent().AutobuffSkill.actionName)
                     {
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.ASSUMPTIO, key);
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.INC_AGI, key);
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.BLESSING, key);
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(EffectStatusIDs.EDEN, key);
+                        var _autoBuffSkill = ProfileSingleton.GetCurrent().AutobuffSkill;
+
+                        _autoBuffSkill.AddKeyToBuff(statusID, key);
+
+                        ProfileSingleton.SetConfiguration(_autoBuffSkill);
+                        _subject.Notify(new Utils.Message(Utils.MessageCode.ADDED_NEW_AUTOBUFF_SKILL, _autoBuffSkill));
                     }
                     else
                     {
-                        ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
+
+                        var _autoBuffStuff = ProfileSingleton.GetCurrent().AutobuffStuff;
+                        if (statusID == EffectStatusIDs.EDEN)
+                        {
+                            _autoBuffStuff.AddKeyToBuff(EffectStatusIDs.ASSUMPTIO, key);
+                            _autoBuffStuff.AddKeyToBuff(EffectStatusIDs.INC_AGI, key);
+                            _autoBuffStuff.AddKeyToBuff(EffectStatusIDs.BLESSING, key);
+                            _autoBuffStuff.AddKeyToBuff(EffectStatusIDs.EDEN, key);
+                        }
+                        else
+                        {
+                            _autoBuffStuff.AddKeyToBuff(statusID, key);
+                        }
+                        ProfileSingleton.SetConfiguration(_autoBuffStuff);
                     }
-                    
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
                 }
+
             }
             catch { }
         }

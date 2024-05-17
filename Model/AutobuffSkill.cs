@@ -9,13 +9,19 @@ using _4RTools.Utils;
 namespace _4RTools.Model
 {
 
-    public class AutoBuff : Action
+    public class AutoBuffSkill : Action
     {
-        public static string ACTION_NAME_AUTOBUFF = "Autobuff";
-
+        public static string ACTION_NAME_AUTOBUFFSKILL = "AutobuffSkill";
+        public string actionName { get; set; }
         private _4RThread thread;
         public int delay { get; set; } = 1;
+
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
+
+        public AutoBuffSkill(string actionName)
+        {
+            this.actionName = actionName;
+        }
 
         public void Start()
         {
@@ -48,7 +54,7 @@ namespace _4RTools.Model
                         uint currentStatus = c.CurrentBuffStatusCode(i);
 
                         if (currentStatus == uint.MaxValue) { continue; }
-                                            
+
                         buffs.Add(currentStatus);
                         EffectStatusIDs status = (EffectStatusIDs)currentStatus;
 
@@ -76,10 +82,10 @@ namespace _4RTools.Model
                     }
                     if (buffs.Contains((int)EffectStatusIDs.RIDDING) && ProfileSingleton.GetCurrent().UserPreferences.toggleRein == false) {
                     }
-                    else {                    
+                    else {
                         foreach (var item in bmClone)
                         {
-                            if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN || item.Key == EffectStatusIDs.WINDWALK))
+                            if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.WINDWALK))
                             {
                                 break;
                             }
@@ -93,7 +99,7 @@ namespace _4RTools.Model
                                 Thread.Sleep(10);
                             }
                         }
-                        
+
                     }
                     buffs.Clear();
                 }
@@ -117,6 +123,11 @@ namespace _4RTools.Model
                 buffMapping.Add(status, key);
             }
         }
+
+        public void setBuffMapping(Dictionary<EffectStatusIDs, Key> buffs)
+        {
+            this.buffMapping = new Dictionary<EffectStatusIDs, Key>(buffs);
+        }
         public void ClearKeyMapping()
         {
             buffMapping.Clear();
@@ -134,7 +145,7 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return ACTION_NAME_AUTOBUFF;
+            return this.actionName;
         }
 
         private void useAutobuff(Key key)
