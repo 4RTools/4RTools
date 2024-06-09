@@ -81,7 +81,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Oli.Controls">
-      <HintPath>..\..\..\Downloads\DragDropListBox_demo\Oli.Controls.dll</HintPath>
+      <HintPath>Dependencies\Oli.Controls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
