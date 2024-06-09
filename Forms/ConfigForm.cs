@@ -39,16 +39,20 @@ namespace _4RTools.Forms
             {
                 AutoBuffSkill currentBuffs = (AutoBuffSkill)(subject as Subject).Message.data;
                 listBox1.Items.Clear();
-                if (currentBuffs != null)
-                {
-                    var buffsList = currentBuffs.buffMapping.Keys.ToList();
-                    listBox1.Items.Clear();
 
-                    foreach (var buff in buffsList)
-                    {
-                        listBox1.Items.Add(buff.ToDescriptionString());
-                    }
+                if (currentBuffs == null)
+                {
+                    currentBuffs = ProfileSingleton.GetCurrent().AutobuffSkill;
                 }
+
+                var buffsList = currentBuffs.buffMapping.Keys.ToList();
+                listBox1.Items.Clear();
+
+                foreach (var buff in buffsList)
+                {
+                    listBox1.Items.Add(buff.ToDescriptionString());
+                }
+
             }
             catch { }
         }
