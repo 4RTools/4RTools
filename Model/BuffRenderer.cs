@@ -22,6 +22,7 @@ namespace _4RTools.Model
         private ToolTip _toolTip;
         private String _typeAutoBuff;
         private Subject _subject;
+        string OldText = string.Empty;
 
         public BuffRenderer(List<BuffContainer> containers, ToolTip toolTip, String autoBuff, Subject subject)
         {
@@ -59,6 +60,7 @@ namespace _4RTools.Model
 
                     textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
                     textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+                    textBox.GotFocus += new EventHandler(textBox_GotFocus);
                     textBox.TextChanged += new EventHandler(onTextChange);
                     textBox.Size = new Size(55, 20);
                     textBox.Tag = ((int)skill.effectStatusID);
@@ -93,24 +95,21 @@ namespace _4RTools.Model
                 }
 
                 TextBox txtBox = (TextBox)sender;
-                if ((txtBox.Text.ToString() != String.Empty) && (txtBox.Text.ToString() != "None"))
+                bool textChanged = this.OldText != String.Empty && this.OldText != txtBox.Text.ToString();
+                if ((txtBox.Text.ToString() != String.Empty) && textChanged)
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
 
-
                     if (this._typeAutoBuff == ProfileSingleton.GetCurrent().AutobuffSkill.actionName)
                     {
                         var _autoBuffSkill = ProfileSingleton.GetCurrent().AutobuffSkill;
-
                         _autoBuffSkill.AddKeyToBuff(statusID, key);
-
                         ProfileSingleton.SetConfiguration(_autoBuffSkill);
                         _subject.Notify(new Utils.Message(Utils.MessageCode.ADDED_NEW_AUTOBUFF_SKILL, _autoBuffSkill));
                     }
                     else
                     {
-
                         var _autoBuffStuff = ProfileSingleton.GetCurrent().AutobuffStuff;
                         if (statusID == EffectStatusIDs.EDEN)
                         {
@@ -143,6 +142,13 @@ namespace _4RTools.Model
                     textBox.Text = autobuffDict[effect].ToString();
                 }
             }
+        }
+
+
+        private void textBox_GotFocus(object sender, EventArgs e)
+        {
+            TextBox txtBox = (TextBox)sender;
+            this.OldText = txtBox.Text.ToString();
         }
     }
 }
