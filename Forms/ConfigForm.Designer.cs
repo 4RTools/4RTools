@@ -32,15 +32,15 @@ namespace _4RTools.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.clientDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listBox1 = new Oli.Controls.DragDropListBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkStopBuffsOnRein = new System.Windows.Forms.CheckBox();
+            this.chkStopBuffsOnCity = new System.Windows.Forms.CheckBox();
+            this.clientDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clientDTOBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // clientDTOBindingSource
-            // 
-            this.clientDTOBindingSource.DataSource = typeof(_4RTools.Model.ClientDTO);
             // 
             // listBox1
             // 
@@ -62,18 +62,59 @@ namespace _4RTools.Forms
             this.label2.TabIndex = 3;
             this.label2.Text = "Ordem de uso de Autobuffs";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.chkStopBuffsOnRein);
+            this.groupBox1.Controls.Add(this.chkStopBuffsOnCity);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.groupBox1.Location = new System.Drawing.Point(162, 144);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(279, 106);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Configurações 4RTools";
+            // 
+            // chkStopBuffsOnRein
+            // 
+            this.chkStopBuffsOnRein.AutoSize = true;
+            this.chkStopBuffsOnRein.Location = new System.Drawing.Point(13, 69);
+            this.chkStopBuffsOnRein.Name = "chkStopBuffsOnRein";
+            this.chkStopBuffsOnRein.Size = new System.Drawing.Size(130, 17);
+            this.chkStopBuffsOnRein.TabIndex = 1;
+            this.chkStopBuffsOnRein.Text = "Pausar buffs na rédea";
+            this.chkStopBuffsOnRein.UseVisualStyleBackColor = true;
+            this.chkStopBuffsOnRein.CheckedChanged += new System.EventHandler(this.chkStopBuffsOnRein_CheckedChanged);
+            // 
+            // chkStopBuffsOnCity
+            // 
+            this.chkStopBuffsOnCity.AutoSize = true;
+            this.chkStopBuffsOnCity.Location = new System.Drawing.Point(13, 31);
+            this.chkStopBuffsOnCity.Name = "chkStopBuffsOnCity";
+            this.chkStopBuffsOnCity.Size = new System.Drawing.Size(256, 17);
+            this.chkStopBuffsOnCity.TabIndex = 0;
+            this.chkStopBuffsOnCity.Text = "Pausar buff/pot/skill timer/auto switch na cidade";
+            this.chkStopBuffsOnCity.UseVisualStyleBackColor = true;
+            this.chkStopBuffsOnCity.CheckedChanged += new System.EventHandler(this.chkStopBuffsOnCity_CheckedChanged);
+            // 
+            // clientDTOBindingSource
+            // 
+            this.clientDTOBindingSource.DataSource = typeof(_4RTools.Model.ClientDTO);
+            // 
             // ConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(374, 256);
+            this.ClientSize = new System.Drawing.Size(500, 256);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConfigForm";
             this.Text = "ConfigForm";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clientDTOBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -85,5 +126,8 @@ namespace _4RTools.Forms
         private System.Windows.Forms.BindingSource clientDTOBindingSource;
         private Oli.Controls.DragDropListBox listBox1;
         private Label label2;
+        private GroupBox groupBox1;
+        private CheckBox chkStopBuffsOnRein;
+        private CheckBox chkStopBuffsOnCity;
     }
 }

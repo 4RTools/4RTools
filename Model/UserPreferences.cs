@@ -11,10 +11,9 @@ namespace _4RTools.Model
         public string toggleStateKey { get; set; } = Keys.End.ToString();
         public string toggleStateHealKey { get; set; } = Keys.End.ToString();
         public List<EffectStatusIDs> autoBuffOrder { get; set; } = new List<EffectStatusIDs>();
-        public string toggleCityKey { get; set; } = Keys.End.ToString();
-        public string toggleReinKey { get; set; } = Keys.End.ToString();
-        public bool toggleCity { get; set; }
-        public bool toggleRein { get; set; }
+
+        public bool stopBuffsCity { get; set; } = false;
+        public bool stopBuffsRein { get; set; } = false;
 
         public UserPreferences()
         {

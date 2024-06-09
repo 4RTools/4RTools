@@ -15,6 +15,7 @@ namespace _4RTools.Model
         public string actionName { get; set; }
         private _4RThread thread;
         public int delay { get; set; } = 1;
+        public List<String> listCities { get; set; }
 
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
 
@@ -33,6 +34,7 @@ namespace _4RTools.Model
                 {
                     _4RThread.Stop(this.thread);
                 }
+                if (this.listCities == null || this.listCities.Count == 0) this.listCities = LocalServerManager.GetListCities();
                 this.thread = AutoBuffThread(roClient);
                 _4RThread.Start(this.thread);
             }
@@ -45,8 +47,8 @@ namespace _4RTools.Model
                 bool foundQuag = false;
                 bool foundDecreaseAgi = false;
                 string currentMap = c.ReadCurrentMap();
-                List<String> list = LocalServerManager.GetListCities();
-                if (ProfileSingleton.GetCurrent().UserPreferences.toggleCity || list.Contains(currentMap) == false) {
+                if (!ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity || this.listCities.Contains(currentMap) == false)
+                {
                     List<uint> buffs = new List<uint>();
                     Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
                     for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
@@ -80,9 +82,8 @@ namespace _4RTools.Model
                         if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
                         if (status == EffectStatusIDs.DECREASE_AGI) foundDecreaseAgi = true;
                     }
-                    if (buffs.Contains((int)EffectStatusIDs.RIDDING) && ProfileSingleton.GetCurrent().UserPreferences.toggleRein == false) {
-                    }
-                    else {
+                    if (!buffs.Contains((int)EffectStatusIDs.RIDDING) || ProfileSingleton.GetCurrent().UserPreferences.stopBuffsRein == false)
+                    {
                         foreach (var item in bmClone)
                         {
                             if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.WINDWALK))

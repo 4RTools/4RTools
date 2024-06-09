@@ -21,7 +21,7 @@ namespace _4RTools.Model
         public int delay { get; set; } = 1;
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
         public List<AutoSwitchConfig> autoSwitchMapping = new List<AutoSwitchConfig>();
-
+        public List<String> listCities { get; set; }
 
         public class AutoSwitchConfig
         {
@@ -40,6 +40,7 @@ namespace _4RTools.Model
                 {
                     _4RThread.Stop(this.thread);
                 }
+                if (this.listCities == null || this.listCities.Count == 0) this.listCities = LocalServerManager.GetListCities();
                 this.thread = AutoSwitchThread(roClient);
                 _4RThread.Start(this.thread);
             }
@@ -56,8 +57,7 @@ namespace _4RTools.Model
 
                     List<AutoSwitchConfig> skillClone = new List<AutoSwitchConfig>(this.autoSwitchMapping);
                     string currentMap = c.ReadCurrentMap();
-                    List<String> list = LocalServerManager.GetListCities();
-                    if (ProfileSingleton.GetCurrent().UserPreferences.toggleCity || list.Contains(currentMap) == false)
+                    if (!ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity || this.listCities.Contains(currentMap) == false)
                     {
                         for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                         {

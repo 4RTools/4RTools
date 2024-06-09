@@ -49,6 +49,8 @@ namespace _4RTools.Forms
                         listBox1.Items.Add(buff.ToDescriptionString());
                     }
                 }
+                this.chkStopBuffsOnCity.Checked = ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity;
+                this.chkStopBuffsOnRein.Checked = ProfileSingleton.GetCurrent().UserPreferences.stopBuffsRein;
             }
             catch { }
         }
@@ -83,6 +85,20 @@ namespace _4RTools.Forms
                 }
             }
             catch { }
+        }
+
+        private void chkStopBuffsOnRein_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().UserPreferences.stopBuffsRein = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
+        }
+
+        private void chkStopBuffsOnCity_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
         }
 
     }

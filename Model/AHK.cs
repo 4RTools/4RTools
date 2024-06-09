@@ -64,39 +64,34 @@ namespace _4RTools.Model
 
         private int AHKThreadExecution(Client roClient)
         {
-            string currentMap = roClient.ReadCurrentMap();
-            List<String> list = LocalServerManager.GetListCities();
-            if (ProfileSingleton.GetCurrent().UserPreferences.toggleCity || list.Contains(currentMap) == false)
+            if (ahkMode.Equals(COMPATIBILITY))
             {
-                if (ahkMode.Equals(COMPATIBILITY))
+
+                foreach (KeyConfig config in AhkEntries.Values)
                 {
-
-                    foreach (KeyConfig config in AhkEntries.Values)
+                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+                    if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
                     {
-                        Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                        if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
+                        if (config.ClickActive && Keyboard.IsKeyDown(config.key))
                         {
-                            if (config.ClickActive && Keyboard.IsKeyDown(config.key))
-                            {
-                                if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
-                                _AHKCompatibility(roClient, config, thisk);
-                                if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
+                            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
+                            _AHKCompatibility(roClient, config, thisk);
+                            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
 
-                            }
-                            else
-                            {
-                                this._AHKNoClick(roClient, config, thisk);
-                            }
+                        }
+                        else
+                        {
+                            this._AHKNoClick(roClient, config, thisk);
                         }
                     }
                 }
-                else
+            }
+            else
+            {
+                foreach (KeyConfig config in AhkEntries.Values)
                 {
-                    foreach (KeyConfig config in AhkEntries.Values)
-                    {
-                        Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                        this._AHKSpeedBoost(roClient, config, thisk);
-                    }
+                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+                    this._AHKSpeedBoost(roClient, config, thisk);
                 }
             }
             return 0;

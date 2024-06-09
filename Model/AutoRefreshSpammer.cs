@@ -15,6 +15,7 @@ namespace _4RTools.Model
         private string ACTION_NAME = "AutoRefreshSpammer";
 
         public Dictionary<int, MacroKey> skillTimer = new Dictionary<int, MacroKey>();
+        public List<String> listCities { get; set; }
 
         private _4RThread thread1;
         private _4RThread thread2;
@@ -30,6 +31,8 @@ namespace _4RTools.Model
                 validadeThreads(this.thread2);
                 validadeThreads(this.thread3);
                 validadeThreads(this.thread4);
+
+                if (this.listCities == null || this.listCities.Count == 0) this.listCities = LocalServerManager.GetListCities();
 
                 this.thread1 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[1].delay, skillTimer[1].key));
                 this.thread2 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[2].delay, skillTimer[2].key));
@@ -54,8 +57,7 @@ namespace _4RTools.Model
         private int AutoRefreshThreadExecution(Client roClient, int delay, Key rKey)
         {
             string currentMap = roClient.ReadCurrentMap();
-            List<String> list = LocalServerManager.GetListCities();
-            if (ProfileSingleton.GetCurrent().UserPreferences.toggleCity || list.Contains(currentMap) == false)
+            if (!ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity || this.listCities.Contains(currentMap) == false)
             {
                 if (rKey != Key.None)
                 {
