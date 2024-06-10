@@ -398,3 +398,8 @@ FodyWeavers.xsd
 *.sln.iml
 
 OldVersions/
+.idea/vcs.xml
+.idea/modules.xml
+.idea/4RTools-RagTools.iml
+.idea/misc.xml
+.idea/.gitignore

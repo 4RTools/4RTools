@@ -29,6 +29,8 @@ namespace _4RTools.Model
         public string actionName { get; set; }
         private _4RThread thread;
 
+        public List<String> listCities { get; set; }
+
         public Autopot() { }
         public Autopot(string actionName)
         {
@@ -59,6 +61,7 @@ namespace _4RTools.Model
                     _4RThread.Stop(this.thread);
                 }
                 int hpPotCount = 0;
+                if (this.listCities == null || this.listCities.Count == 0) this.listCities = LocalServerManager.GetListCities();
                 this.thread = new _4RThread(_ => AutopotThreadExecution(roClient, hpPotCount));
                 _4RThread.Start(this.thread);
             }
@@ -66,16 +69,20 @@ namespace _4RTools.Model
 
         private int AutopotThreadExecution(Client roClient, int hpPotCount)
         {
-            bool hasCriticalWound = HasCriticalWound(roClient);
-            if (firstHeal.Equals(FIRSTHP))
-            {
-                healHPFirst(roClient, hpPotCount, hasCriticalWound);
-            }
-            else
-            {
-                healSPFirst(roClient, hpPotCount, hasCriticalWound);
-            }
+            string currentMap = roClient.ReadCurrentMap();
 
+            if (!ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity || this.listCities.Contains(currentMap) == false)
+            {
+                bool hasCriticalWound = HasCriticalWound(roClient);
+                if (firstHeal.Equals(FIRSTHP))
+                {
+                    healHPFirst(roClient, hpPotCount, hasCriticalWound);
+                }
+                else
+                {
+                    healSPFirst(roClient, hpPotCount, hasCriticalWound);
+                }
+            }
             Thread.Sleep(this.delay);
             return 0;
         }

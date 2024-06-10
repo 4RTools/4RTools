@@ -94,7 +94,6 @@ namespace _4RTools.Model
                     this._AHKSpeedBoost(roClient, config, thisk);
                 }
             }
-
             return 0;
         }
 

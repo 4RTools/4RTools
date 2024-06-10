@@ -15,6 +15,7 @@ namespace _4RTools.Model
         public string actionName { get; set; }
         private _4RThread thread;
         public int delay { get; set; } = 1;
+        public List<String> listCities { get; set; }
 
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
 
@@ -33,6 +34,7 @@ namespace _4RTools.Model
                 {
                     _4RThread.Stop(this.thread);
                 }
+                if (this.listCities == null || this.listCities.Count == 0) this.listCities = LocalServerManager.GetListCities();
                 this.thread = AutoBuffThread(roClient);
                 _4RThread.Start(this.thread);
             }
@@ -44,55 +46,63 @@ namespace _4RTools.Model
             {
                 bool foundQuag = false;
                 bool foundDecreaseAgi = false;
-                List<uint> buffs = new List<uint>();
-                Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
-                for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
+                string currentMap = c.ReadCurrentMap();
+                if (!ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity || this.listCities.Contains(currentMap) == false)
                 {
-                    uint currentStatus = c.CurrentBuffStatusCode(i);
-
-                    if (currentStatus == uint.MaxValue) { continue; }
-
-                    buffs.Add(currentStatus);
-                    EffectStatusIDs status = (EffectStatusIDs)currentStatus;
-
-                    if (status == EffectStatusIDs.OVERTHRUSTMAX)
+                    List<uint> buffs = new List<uint>();
+                    Dictionary<EffectStatusIDs, Key> bmClone = new Dictionary<EffectStatusIDs, Key>(this.buffMapping);
+                    for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                     {
-                        if (buffMapping.ContainsKey(EffectStatusIDs.OVERTHRUST))
+                        uint currentStatus = c.CurrentBuffStatusCode(i);
+
+                        if (currentStatus == uint.MaxValue) { continue; }
+
+                        buffs.Add(currentStatus);
+                        EffectStatusIDs status = (EffectStatusIDs)currentStatus;
+
+                        if (status == EffectStatusIDs.OVERTHRUSTMAX)
                         {
-                            bmClone.Remove(EffectStatusIDs.OVERTHRUST);
+                            if (buffMapping.ContainsKey(EffectStatusIDs.OVERTHRUST))
+                            {
+                                bmClone.Remove(EffectStatusIDs.OVERTHRUST);
+                            }
                         }
-                    }
-                    if (bmClone.ContainsKey(EffectStatusIDs.EDEN))
-                    {
-                        bmClone.Remove(EffectStatusIDs.EDEN);
-                    }
+                        if (bmClone.ContainsKey(EffectStatusIDs.EDEN))
+                        {
+                            bmClone.Remove(EffectStatusIDs.EDEN);
+                        }
 
 
 
-                    if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
-                    {
-                        bmClone.Remove(status);
-                    }
+                        if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
+                        {
+                            bmClone.Remove(status);
+                        }
 
-                    if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
-                    if (status == EffectStatusIDs.DECREASE_AGI) foundDecreaseAgi = true;
-                }
-                buffs.Clear();
-                foreach (var item in bmClone)
-                {
-                    if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.WINDWALK))
-                    {
-                        break;
+                        if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
+                        if (status == EffectStatusIDs.DECREASE_AGI) foundDecreaseAgi = true;
                     }
-                    else if (foundDecreaseAgi && (item.Key == EffectStatusIDs.TWOHANDQUICKEN || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.ADRENALINE2 || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.SPEARQUICKEN))
+                    if (!buffs.Contains((int)EffectStatusIDs.RIDDING) || ProfileSingleton.GetCurrent().UserPreferences.stopBuffsRein == false)
                     {
-                        break;
+                        foreach (var item in bmClone)
+                        {
+                            if (foundQuag && (item.Key == EffectStatusIDs.CONCENTRATION || item.Key == EffectStatusIDs.INC_AGI || item.Key == EffectStatusIDs.TRUESIGHT || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.SPEARQUICKEN || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.WINDWALK))
+                            {
+                                break;
+                            }
+                            else if (foundDecreaseAgi && (item.Key == EffectStatusIDs.TWOHANDQUICKEN || item.Key == EffectStatusIDs.ADRENALINE || item.Key == EffectStatusIDs.ADRENALINE2 || item.Key == EffectStatusIDs.ONEHANDQUICKEN || item.Key == EffectStatusIDs.SPEARQUICKEN))
+                            {
+                                break;
+                            }
+                            else if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
+                            {
+                                this.useAutobuff(item.Value);
+                                Thread.Sleep(10);
+                            }
+                        }
+
                     }
-                    else if (c.ReadCurrentHp() >= Constants.MINIMUM_HP_TO_RECOVER)
-                    {
-                        this.useAutobuff(item.Value);
-                        Thread.Sleep(10);
-                    }
+                    buffs.Clear();
                 }
                 Thread.Sleep(300);
                 return 0;

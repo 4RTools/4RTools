@@ -329,6 +329,8 @@ namespace _4RTools.Utils
         GLASS_OF_ILLUSION = 296,
         MENTAL_POTION = 298,
         VITATA_POTION = 483,
+        RIDDING = 613,
+
     }
 
 }

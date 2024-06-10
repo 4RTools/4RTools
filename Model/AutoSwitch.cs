@@ -21,7 +21,7 @@ namespace _4RTools.Model
         public int delay { get; set; } = 1;
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
         public List<AutoSwitchConfig> autoSwitchMapping = new List<AutoSwitchConfig>();
-
+        public List<String> listCities { get; set; }
 
         public class AutoSwitchConfig
         {
@@ -40,6 +40,7 @@ namespace _4RTools.Model
                 {
                     _4RThread.Stop(this.thread);
                 }
+                if (this.listCities == null || this.listCities.Count == 0) this.listCities = LocalServerManager.GetListCities();
                 this.thread = AutoSwitchThread(roClient);
                 _4RThread.Start(this.thread);
             }
@@ -55,66 +56,68 @@ namespace _4RTools.Model
                     procVajra = false;
 
                     List<AutoSwitchConfig> skillClone = new List<AutoSwitchConfig>(this.autoSwitchMapping);
-
-                    for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
+                    string currentMap = c.ReadCurrentMap();
+                    if (!ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity || this.listCities.Contains(currentMap) == false)
                     {
-                        uint currentStatus = c.CurrentBuffStatusCode(i);
-
-                        if (currentStatus == uint.MaxValue) { continue; }
-
-                        EffectStatusIDs status = (EffectStatusIDs)currentStatus;
-
-                        if (autoSwitchMapping.Exists(x => x.skillId == status))
+                        for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)
                         {
-                            skillClone = skillClone.Where(skill => skill.skillId != status).ToList();
-                        }
+                            uint currentStatus = c.CurrentBuffStatusCode(i);
 
-                        if (status == EffectStatusIDs.THURISAZ || status == EffectStatusIDs.FIGHTINGSPIRIT)
-                        {
-                            if (equipVajra == true)
+                            if (currentStatus == uint.MaxValue) { continue; }
+
+                            EffectStatusIDs status = (EffectStatusIDs)currentStatus;
+
+                            if (autoSwitchMapping.Exists(x => x.skillId == status))
                             {
-                                equipVajra = false;
-                                this.equipNextItem(autoSwitchMapping.FirstOrDefault(x => x.skillId == EffectStatusIDs.THURISAZ || x.skillId == EffectStatusIDs.FIGHTINGSPIRIT).nextItemKey);
-                            }
-                            skillClone = validadeVajraSkills(skillClone, status);
-                            procVajra = true;
-                        }
-
-                    }
-
-                    foreach (var skill in skillClone)
-                    {
-                        if (skill.skillId == EffectStatusIDs.CRAZY_UPROAR && c.ReadCurrentSp() > 8)
-                        {
-                            this.useAutobuff(skill.itemKey, skill.skillKey);
-                            Thread.Sleep(100);
-                            this.equipNextItem(skill.nextItemKey);
-                            equipVajra = false;
-                            Thread.Sleep(3000);
-                        }
-
-                        if (skill.skillId == EffectStatusIDs.THURISAZ || skill.skillId == EffectStatusIDs.FIGHTINGSPIRIT)
-                        {
-                            contVajra++;
-
-                            if (contVajra > 100) { contVajra = 0; equipVajra = false; }
-
-                            if (procVajra)
-                            {
-                                equipVajra = false;
-                                this.equipNextItem(skill.nextItemKey);
-                                break;
+                                skillClone = skillClone.Where(skill => skill.skillId != status).ToList();
                             }
 
-                            if (!equipVajra)
+                            if (status == EffectStatusIDs.THURISAZ || status == EffectStatusIDs.FIGHTINGSPIRIT)
                             {
-                                Thread.Sleep(100);
+                                if (equipVajra == true)
+                                {
+                                    equipVajra = false;
+                                    this.equipNextItem(autoSwitchMapping.FirstOrDefault(x => x.skillId == EffectStatusIDs.THURISAZ || x.skillId == EffectStatusIDs.FIGHTINGSPIRIT).nextItemKey);
+                                }
+                                skillClone = validadeVajraSkills(skillClone, status);
+                                procVajra = true;
+                            }
+
+                        }
+                        foreach (var skill in skillClone)
+                        {
+                            if (skill.skillId == EffectStatusIDs.CRAZY_UPROAR && c.ReadCurrentSp() > 8)
+                            {
                                 this.useAutobuff(skill.itemKey, skill.skillKey);
-                                equipVajra = true;
+                                Thread.Sleep(100);
+                                this.equipNextItem(skill.nextItemKey);
+                                equipVajra = false;
+                                Thread.Sleep(3000);
+                            }
+
+                            if (skill.skillId == EffectStatusIDs.THURISAZ || skill.skillId == EffectStatusIDs.FIGHTINGSPIRIT)
+                            {
+                                contVajra++;
+
+                                if (contVajra > 100) { contVajra = 0; equipVajra = false; }
+
+                                if (procVajra)
+                                {
+                                    equipVajra = false;
+                                    this.equipNextItem(skill.nextItemKey);
+                                    break;
+                                }
+
+                                if (!equipVajra)
+                                {
+                                    Thread.Sleep(100);
+                                    this.useAutobuff(skill.itemKey, skill.skillKey);
+                                    equipVajra = true;
+                                }
+
                             }
 
                         }
-
                     }
                     Thread.Sleep(300);
                     return 0;

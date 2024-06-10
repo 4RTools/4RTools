@@ -10,8 +10,10 @@ namespace _4RTools.Model
         private string ACTION_NAME = "UserPreferences";
         public string toggleStateKey { get; set; } = Keys.End.ToString();
         public string toggleStateHealKey { get; set; } = Keys.End.ToString();
-
         public List<EffectStatusIDs> autoBuffOrder { get; set; } = new List<EffectStatusIDs>();
+
+        public bool stopBuffsCity { get; set; } = false;
+        public bool stopBuffsRein { get; set; } = false;
 
         public UserPreferences()
         {

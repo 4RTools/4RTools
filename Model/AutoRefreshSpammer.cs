@@ -15,6 +15,7 @@ namespace _4RTools.Model
         private string ACTION_NAME = "AutoRefreshSpammer";
 
         public Dictionary<int, MacroKey> skillTimer = new Dictionary<int, MacroKey>();
+        public List<String> listCities { get; set; }
 
         private _4RThread thread1;
         private _4RThread thread2;
@@ -30,6 +31,8 @@ namespace _4RTools.Model
                 validadeThreads(this.thread2);
                 validadeThreads(this.thread3);
                 validadeThreads(this.thread4);
+
+                if (this.listCities == null || this.listCities.Count == 0) this.listCities = LocalServerManager.GetListCities();
 
                 this.thread1 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[1].delay, skillTimer[1].key));
                 this.thread2 = new _4RThread((_) => AutoRefreshThreadExecution(roClient, skillTimer[2].delay, skillTimer[2].key));
@@ -53,9 +56,13 @@ namespace _4RTools.Model
 
         private int AutoRefreshThreadExecution(Client roClient, int delay, Key rKey)
         {
-            if (rKey != Key.None)
+            string currentMap = roClient.ReadCurrentMap();
+            if (!ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity || this.listCities.Contains(currentMap) == false)
             {
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), rKey.ToString()), 0);
+                if (rKey != Key.None)
+                {
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), rKey.ToString()), 0);
+                }
             }
             Thread.Sleep(delay * 1000);
             return 0;
