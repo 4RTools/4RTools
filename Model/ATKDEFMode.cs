@@ -26,7 +26,7 @@ namespace _4RTools.Model
         public Dictionary<string, Key> defKeys { get; set; } = new Dictionary<string, Key>();
         public Dictionary<string, Key> atkKeys { get; set; } = new Dictionary<string, Key>();
         public EquipConfig() { }
-            public EquipConfig(int id)
+        public EquipConfig(int id)
         {
             this.id = id;
             this.defKeys = new Dictionary<string, Key>();
@@ -97,10 +97,12 @@ namespace _4RTools.Model
 
             foreach (EquipConfig equipConfig in this.equipConfigs)
             {
+                bool equipAtkItems = false;
+                bool equipDefItems = false;
                 if (equipConfig.keySpammer != Key.None && Keyboard.IsKeyDown(equipConfig.keySpammer))
                 {
                     Keys thisk = toKeys(equipConfig.keySpammer);
-                    bool equipAtkItems = false;
+
                     while (Keyboard.IsKeyDown(equipConfig.keySpammer))
                     {
                         if (!equipAtkItems)
@@ -110,6 +112,7 @@ namespace _4RTools.Model
                                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, toKeys(key), 0); //Equip ATK Items
                                 Thread.Sleep(equipConfig.switchDelay);
                             }
+                            equipAtkItems = true;
                         }
 
                         if (equipConfig.keySpammerWithClick)
@@ -126,10 +129,14 @@ namespace _4RTools.Model
                             Thread.Sleep(equipConfig.ahkDelay);
                         }
                     }
-                    foreach (Key key in equipConfig.defKeys.Values)
+                    if (!equipDefItems)
                     {
-                        Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, toKeys(key), 0); //Equip DEF Items
-                        Thread.Sleep(equipConfig.switchDelay);
+                        foreach (Key key in equipConfig.defKeys.Values)
+                        {
+                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, toKeys(key), 0); //Equip DEF Items
+                            Thread.Sleep(equipConfig.switchDelay);
+                        }
+                        equipDefItems = true;
                     }
                 }
             }
