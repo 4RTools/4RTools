@@ -67,7 +67,7 @@ namespace _4RTools.Forms
             this.groupBox1.Controls.Add(this.chkStopBuffsOnRein);
             this.groupBox1.Controls.Add(this.chkStopBuffsOnCity);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.groupBox1.Location = new System.Drawing.Point(162, 144);
+            this.groupBox1.Location = new System.Drawing.Point(163, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(279, 106);
             this.groupBox1.TabIndex = 0;
