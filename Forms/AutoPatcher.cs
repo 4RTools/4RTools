@@ -46,6 +46,8 @@ namespace _4RTools.Forms
                 //Fetch Github latest Tag
                 client.Timeout = TimeSpan.FromSeconds(5);
                 client.DefaultRequestHeaders.Add("User-Agent", "request");
+
+                #region comment this for no att versions
                 string latestVersion = await client.GetStringAsync(AppConfig._4RLatestVersionURL);
                 JObject obj = JsonConvert.DeserializeObject<JObject>(latestVersion);
 
@@ -65,7 +67,7 @@ namespace _4RTools.Forms
                     File.Delete(fileName); //Delete .rar file downloaded
                     Environment.Exit(0);
                 }
-
+                #endregion
             }
             finally
             {
@@ -84,7 +86,8 @@ namespace _4RTools.Forms
 
         void _4RTools_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            this.BeginInvoke((MethodInvoker)delegate {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
                 double bytesIn = double.Parse(e.BytesReceived.ToString());
                 double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
                 double percentage = bytesIn / totalBytes * 100;
