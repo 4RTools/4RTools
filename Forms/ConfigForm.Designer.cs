@@ -69,7 +69,7 @@ namespace _4RTools.Forms
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.groupBox1.Location = new System.Drawing.Point(163, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(279, 106);
+            this.groupBox1.Size = new System.Drawing.Size(300, 106);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Configurações 4RTools";
@@ -79,9 +79,9 @@ namespace _4RTools.Forms
             this.chkStopBuffsOnRein.AutoSize = true;
             this.chkStopBuffsOnRein.Location = new System.Drawing.Point(13, 69);
             this.chkStopBuffsOnRein.Name = "chkStopBuffsOnRein";
-            this.chkStopBuffsOnRein.Size = new System.Drawing.Size(130, 17);
+            this.chkStopBuffsOnRein.Size = new System.Drawing.Size(166, 17);
             this.chkStopBuffsOnRein.TabIndex = 1;
-            this.chkStopBuffsOnRein.Text = "Pausar buffs na rédea";
+            this.chkStopBuffsOnRein.Text = "Pausar autobuff-skill na rédea";
             this.chkStopBuffsOnRein.UseVisualStyleBackColor = true;
             this.chkStopBuffsOnRein.CheckedChanged += new System.EventHandler(this.chkStopBuffsOnRein_CheckedChanged);
             // 
@@ -90,9 +90,9 @@ namespace _4RTools.Forms
             this.chkStopBuffsOnCity.AutoSize = true;
             this.chkStopBuffsOnCity.Location = new System.Drawing.Point(13, 31);
             this.chkStopBuffsOnCity.Name = "chkStopBuffsOnCity";
-            this.chkStopBuffsOnCity.Size = new System.Drawing.Size(256, 17);
+            this.chkStopBuffsOnCity.Size = new System.Drawing.Size(282, 17);
             this.chkStopBuffsOnCity.TabIndex = 0;
-            this.chkStopBuffsOnCity.Text = "Pausar buff/pot/skill timer/auto switch na cidade";
+            this.chkStopBuffsOnCity.Text = "Pausar autobuffs/pot/skill timer/auto switch na cidade";
             this.chkStopBuffsOnCity.UseVisualStyleBackColor = true;
             this.chkStopBuffsOnCity.CheckedChanged += new System.EventHandler(this.chkStopBuffsOnCity_CheckedChanged);
             // 
