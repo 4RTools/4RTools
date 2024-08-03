@@ -6,10 +6,10 @@ using System.Windows.Input;
 
 namespace _4RTools.Forms
 {
-    public partial class StatusEffectForm : Form, IObserver
+    public partial class DebuffRecoveryForm : Form, IObserver
     {
 
-        public StatusEffectForm(Subject subject)
+        public DebuffRecoveryForm(Subject subject)
         {
             InitializeComponent();
             subject.Attach(this);

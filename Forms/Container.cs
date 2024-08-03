@@ -237,7 +237,7 @@ namespace _4RTools.Forms
         }
         public void SetAutoStatusEffectWindow()
         {
-            StatusEffectForm form = new StatusEffectForm(subject);
+            DebuffRecoveryForm form = new DebuffRecoveryForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
             form.Location = new Point(20, 220);
             form.MdiParent = this;
