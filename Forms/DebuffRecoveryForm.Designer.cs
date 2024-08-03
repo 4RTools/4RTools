@@ -2,7 +2,7 @@
 
 namespace _4RTools.Forms
 {
-    partial class StatusEffectForm
+    partial class DebuffRecoveryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace _4RTools.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatusEffectForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DebuffRecoveryForm));
             this.txtStatusKey = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
