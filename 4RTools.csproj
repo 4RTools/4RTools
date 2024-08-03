@@ -287,11 +287,11 @@
     <Compile Include="Forms\StuffAutoBuffForm.Designer.cs">
       <DependentUpon>StuffAutoBuffForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StatusEffectForm.cs">
+    <Compile Include="Forms\DebuffRecoveryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StatusEffectForm.Designer.cs">
-      <DependentUpon>StatusEffectForm.cs</DependentUpon>
+    <Compile Include="Forms\DebuffRecoveryForm.Designer.cs">
+      <DependentUpon>DebuffRecoveryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Container.cs">
       <SubType>Form</SubType>
@@ -406,8 +406,8 @@
     <EmbeddedResource Include="Forms\ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\StatusEffectForm.resx">
-      <DependentUpon>StatusEffectForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DebuffRecoveryForm.resx">
+      <DependentUpon>DebuffRecoveryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ToggleApplicationStateForm.resx">
       <DependentUpon>ToggleApplicationStateForm.cs</DependentUpon>
