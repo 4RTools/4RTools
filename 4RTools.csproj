@@ -634,7 +634,6 @@
     <None Include="assets\images\scrolls\soul_scroll.png" />
     <None Include="assets\images\scrolls\undead_element_scroll.png" />
     <None Include="assets\images\ads_placeholder_clean.jpg" />
-    <None Include="assets\images\alt_q.png" />
     <None Include="assets\images\arrow-right-2.png" />
     <None Include="assets\images\arrow-right-3.png" />
     <None Include="assets\images\arrow-right-4.png" />
@@ -687,6 +686,8 @@
     <None Include="assets\images\sunglasses.gif" />
     <None Include="assets\images\true_limit_power_booster.png" />
     <None Include="assets\images\violin.gif" />
+    <None Include="assets\images\third_and_fourth_class\climax.png" />
+    <None Include="assets\images\third_and_fourth_class\universal_stance.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
