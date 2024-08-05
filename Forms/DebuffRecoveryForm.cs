@@ -26,7 +26,7 @@ namespace _4RTools.Forms
             this.txtNewStatusKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.txtNewStatusKey.TextChanged += new EventHandler(on3RDStatusKeyChange);
 
-            skillContainers.Add(new BuffContainer(this.DebuffRecoveryGP, Status.GetDebuffs()));
+            skillContainers.Add(new BuffContainer(this.DebuffRecoveryGP, Buff.GetDebuffs()));
 
             new BuffRenderer(ProfileSingleton.GetCurrent().DebuffsRecovery, skillContainers, toolTip1).doRender();
 

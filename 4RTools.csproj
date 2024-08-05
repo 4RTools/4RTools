@@ -320,6 +320,7 @@
     <Compile Include="Model\Buff.cs" />
     <Compile Include="Model\BuffContainer.cs" />
     <Compile Include="Model\BuffRenderer.cs" />
+    <Compile Include="Model\DebuffsRecovery.cs" />
     <Compile Include="Model\LocalServerManager.cs" />
     <Compile Include="Model\StatusRecovery.cs" />
     <Compile Include="Model\Tracker.cs" />
@@ -614,6 +615,18 @@
     <None Include="assets\images\impositio_manus.png" />
     <None Include="assets\images\servant_weapon.png" />
     <None Include="assets\images\reflect_damage.png" />
+    <None Include="assets\images\debuffs\bleeding.png" />
+    <None Include="assets\images\debuffs\chaos.png" />
+    <None Include="assets\images\debuffs\critical_wound.png" />
+    <None Include="assets\images\debuffs\curse.png" />
+    <None Include="assets\images\debuffs\decrease_agi.png" />
+    <None Include="assets\images\debuffs\deep_sleep.png" />
+    <None Include="assets\images\debuffs\freezing.png" />
+    <None Include="assets\images\debuffs\poison_status.png" />
+    <None Include="assets\images\debuffs\silence.png" />
+    <None Include="assets\images\debuffs\stun.png" />
+    <None Include="assets\images\debuffs\water_of_lucky.gif" />
+    <None Include="assets\images\new.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
