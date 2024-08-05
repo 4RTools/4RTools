@@ -27,7 +27,7 @@ namespace _4RTools.Forms
             skillContainers.Add(new BuffContainer(this.NinjaSkillsGP, Buff.GetNinjaSkills()));
             skillContainers.Add(new BuffContainer(this.GunsSkillsGP, Buff.GetGunsSkills()));
 
-            new BuffRenderer(skillContainers, toolTip1).doRender();
+            new BuffRenderer(ProfileSingleton.GetCurrent().Autobuff, skillContainers, toolTip1).doRender();
             subject.Attach(this);
 
         }

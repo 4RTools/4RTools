@@ -29,11 +29,11 @@ namespace _4RTools.Forms
             SetAutopotWindow();
             SetAutopotYggWindow();
             SetSkillTimerWindow();
-            SetAutoStatusEffectWindow();
-            SetAHKWindow();
             SetProfileWindow();
-            SetAutobuffStuffWindow();
+            SetAHKWindow();
             SetAutobuffSkillWindow();
+            SetAutobuffStuffWindow();
+            SetDebuffRecoveryWindow();
             SetSongMacroWindow();
             SetATKDEFWindow();
             SetMacroSwitchWindow();
@@ -72,7 +72,6 @@ namespace _4RTools.Forms
         {
             Client client = new Client(this.processCB.SelectedItem.ToString());
             ClientSingleton.Instance(client);
-            characterName.Text = client.ReadCharacterName();
             subject.Notify(new Utils.Message(Utils.MessageCode.PROCESS_CHANGED, null));
         }
 
@@ -153,9 +152,11 @@ namespace _4RTools.Forms
                     ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
                     subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
                     currentProfile = this.profileCB.Text.ToString();
-                } catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Console.Error.WriteLine(ex.ToString());
+                    MessageBox.Show($"Error while loading the new profile. Please get in touch via Discord.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -164,12 +165,21 @@ namespace _4RTools.Forms
         {
             switch ((subject as Subject).Message.code)
             {
-                case MessageCode.TURN_ON: case MessageCode.PROFILE_CHANGED:
+                case MessageCode.PROCESS_CHANGED:
+                case MessageCode.PROFILE_CHANGED:
                     Client client = ClientSingleton.GetClient();
                     if (client != null)
-                    {
-                        characterName.Text = ClientSingleton.GetClient().ReadCharacterName();
-                    }
+                        this.characterName.Text = client.ReadCharacterName();
+                    break;
+                case MessageCode.TURN_OFF:
+                    this.profileCB.Enabled = true;
+                    this.processCB.Enabled = true;
+
+                    break;
+                case MessageCode.TURN_ON:
+                    this.profileCB.Enabled = false;
+                    this.processCB.Enabled = false;
+                    this.characterName.Text = ClientSingleton.GetClient().ReadCharacterName();
                     break;
                 case MessageCode.SERVER_LIST_CHANGED:
                     this.refreshProcessList();
@@ -195,8 +205,8 @@ namespace _4RTools.Forms
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(350, 70);
             frm.MdiParent = this;
+            this.OnOffPanel.Controls.Add(frm);
             frm.Show();
         }
 
@@ -235,24 +245,6 @@ namespace _4RTools.Forms
             addform(this.tabPageSkillTimer, frm);
 
         }
-        public void SetAutoStatusEffectWindow()
-        {
-            StatusEffectForm form = new StatusEffectForm(subject);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(20, 220);
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        public void SetAHKWindow()
-        {
-            AHKForm frm = new AHKForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            frm.Show();
-            addform(this.tabPageSpammer, frm);
-        }
 
         public void SetProfileWindow()
         {
@@ -274,14 +266,14 @@ namespace _4RTools.Forms
             addform(this.tabPageServer, frm);
         }
 
-        public void SetAutobuffStuffWindow()
+        public void SetAHKWindow()
         {
-            StuffAutoBuffForm frm = new StuffAutoBuffForm(subject);
+            AHKForm frm = new AHKForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageAutobuffStuff, frm);
+            addform(this.tabPageSpammer, frm);
         }
 
         public void SetAutobuffSkillWindow()
@@ -292,6 +284,26 @@ namespace _4RTools.Forms
             frm.MdiParent = this;
             addform(this.tabPageAutobuffSkill, frm);
             frm.Show();
+        }
+
+        public void SetAutobuffStuffWindow()
+        {
+            StuffAutoBuffForm frm = new StuffAutoBuffForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageAutobuffStuff, frm);
+        }
+
+        public void SetDebuffRecoveryWindow()
+        {
+            DebuffRecoveryForm frm = new DebuffRecoveryForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabDebuffRecovery, frm);
         }
 
         public void SetSongMacroWindow()

@@ -2,24 +2,26 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
 
 namespace _4RTools.Model
 {
-    public class StatusRecovery : Action
+    public class DebuffsRecovery : Action
     {
-        public static string ACTION_NAME_STATUS_AUTOBUFF = "StatusRecovery";
+        public static string ACTION_NAME_DEBUFF_RECOVERY = "DebuffsRecovery";
 
         private _4RThread thread;
         public Dictionary<EffectStatusIDs, Key> buffMapping = new Dictionary<EffectStatusIDs, Key>();
         public int delay { get; set; } = 1;
-        public bool autoStand { get; set; } = false;
 
         public string GetActionName()
         {
-            return ACTION_NAME_STATUS_AUTOBUFF;
+            return ACTION_NAME_DEBUFF_RECOVERY;
         }
 
         public _4RThread RestoreStatusThread(Client c)
@@ -40,13 +42,7 @@ namespace _4RTools.Model
                             this.useStatusRecovery(key);
                         }
                     }
-
-                    if (this.autoStand && EffectStatusIDs.EFST_SIT == status)
-                    {
-                        this.useStatusRecovery(Key.Insert);
-                    }
                 }
-
                 Thread.Sleep(this.delay);
                 return 0;
             });
@@ -93,6 +89,5 @@ namespace _4RTools.Model
             if ((key != Key.None) && !Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
                 Interop.PostMessage(ClientSingleton.GetClient().process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), key.ToString()), 0);
         }
-
     }
 }

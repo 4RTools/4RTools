@@ -98,9 +98,10 @@ namespace _4RTools.Forms
                     this.lblStatusToggle.Text = "Press the key to stop!";
                     this.lblStatusToggle.ForeColor = Color.Black;
                     new SoundPlayer(Resources._4RTools.ETCResource.Speech_On).Play();
-                } else
+                }
+                else
                 {
-                    this.lblStatusToggle.Text = "Please select a valid Ragnarok Client!";
+                    this.lblStatusToggle.Text = "Please select the Ragnarok Client!!";
                     this.lblStatusToggle.ForeColor = Color.Red;
                 }
             }

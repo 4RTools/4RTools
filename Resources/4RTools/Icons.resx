@@ -175,6 +175,9 @@
   <data name="berserk_potion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\berserk_potion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bleeding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\bleeding.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="blessing_of_tyr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\blessing_of_tyr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,6 +211,9 @@
   <data name="celermine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\celermine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chaos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\chaos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="coldproof" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\coldproof.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -222,6 +228,9 @@
   </data>
   <data name="cotton_shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\cotton-shirt.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="critical_wound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\critical_wound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cr_autoguard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\cr_autoguard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,8 +250,17 @@
   <data name="cr_spearquicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\cr_spearquicken.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="curse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\curse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cursed_water" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\cursed_water.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="decrease_agi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\decrease_agi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deep_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\deep_sleep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dex_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\dex_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -285,6 +303,9 @@
   </data>
   <data name="flag_br" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\etc\flags\flag_br.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freezing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\freezing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="friggs_song" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\friggs_song.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -430,6 +451,9 @@
   <data name="poem_of_bragi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\poem_of_bragi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="poison_status" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\poison_status.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="powerful_faith" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\powerful_faith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -472,6 +496,9 @@
   <data name="shoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\shoes.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="silence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\silence.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sl_soullinker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\sl_soullinker.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -504,6 +531,9 @@
   </data>
   <data name="str_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\str_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\stun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="st_preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\st_preserve.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -561,6 +591,9 @@
   </data>
   <data name="vit_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\vit_food.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="water_of_lucky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\debuffs\water_of_lucky.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="weapon_blocking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\weapon_blocking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

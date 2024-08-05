@@ -101,7 +101,7 @@ namespace _4RTools.Model
                 new Buff("Meltdown", EffectStatusIDs.MELTDOWN, Resources._4RTools.Icons.ws_meltdown),
                 new Buff("Acceleration", EffectStatusIDs.ACCELERATION, Resources._4RTools.Icons.mec_acceleration),
                 new Buff("Cart Boost", EffectStatusIDs.GN_CARTBOOST, Resources._4RTools.Icons.cart_boost),
-                new Buff("Research Report", EffectStatusIDs.RESEARCHREPORT, Resources._4RTools.Icons.researchreport)
+                new Buff("Research Report", EffectStatusIDs.EFST_RESEARCHREPORT, Resources._4RTools.Icons.researchreport)
             };
 
             return skills;
@@ -308,5 +308,25 @@ namespace _4RTools.Model
             return skills;
         }
 
+        //--------------------- DEBUFFS ------------------------------
+        public static List<Buff> GetDebuffs()
+        {
+            List<Buff> skills = new List<Buff>
+            {
+                new Buff("Critical Wounds", EffectStatusIDs.CRITICALWOUND, Resources._4RTools.Icons.critical_wound),
+                new Buff("FREEZING", EffectStatusIDs.EFST_FREEZING, Resources._4RTools.Icons.freezing),
+                new Buff("Curse", EffectStatusIDs.CURSE, Resources._4RTools.Icons.curse),
+                new Buff("Bleeding", EffectStatusIDs.EFST_BLEEDING, Resources._4RTools.Icons.bleeding),
+                new Buff("Silence", EffectStatusIDs.SILENCE, Resources._4RTools.Icons.silence),
+                new Buff("Decrease Agi", EffectStatusIDs.EFST_DECREASE_AGI, Resources._4RTools.Icons.decrease_agi),
+                new Buff("Confusion / chaos", EffectStatusIDs.CONFUSION, Resources._4RTools.Icons.chaos),
+                new Buff("STUN", EffectStatusIDs.EFST_STUN, Resources._4RTools.Icons.stun),
+                new Buff("Deep Sleep", EffectStatusIDs.EFST_DEEP_SLEEP, Resources._4RTools.Icons.deep_sleep),
+                new Buff("Posion", EffectStatusIDs.POISON, Resources._4RTools.Icons.poison_status),
+                new Buff("Lucky Water", EffectStatusIDs.EFST_HANDICAPSTATE_MISFORTUNE, Resources._4RTools.Icons.water_of_lucky),
+            };
+
+            return skills;
+        }
     }
 }

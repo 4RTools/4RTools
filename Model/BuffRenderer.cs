@@ -17,11 +17,13 @@ namespace _4RTools.Model
         private readonly int DISTANCE_BETWEEN_CONTAINERS = 10;
         private readonly int DISTANCE_BETWEEN_ROWS = 30;
 
+        private dynamic _model;
         private List<BuffContainer> _containers;
         private ToolTip _toolTip;
 
-        public BuffRenderer(List<BuffContainer> containers, ToolTip toolTip)
+        public BuffRenderer(dynamic model, List<BuffContainer> containers, ToolTip toolTip)
         {
+            this._model = model;
             this._containers = containers;
             this._toolTip = toolTip;
         }
@@ -46,6 +48,7 @@ namespace _4RTools.Model
                     TextBox textBox = new TextBox();
 
                     pb.Image = skill.icon;
+                    pb.SizeMode = PictureBoxSizeMode.CenterImage;
                     pb.BackgroundImageLayout = ImageLayout.Center;
                     pb.Location = new Point(lastLocation.X + (colCount * 100), lastLocation.Y);
                     pb.Name = "pbox" + ((int)skill.effectStatusID);
@@ -85,8 +88,8 @@ namespace _4RTools.Model
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().Autobuff.AddKeyToBuff(statusID, key);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Autobuff);
+                    this._model.AddKeyToBuff(statusID, key);
+                    ProfileSingleton.SetConfiguration(this._model);
                 }
             }
             catch { }

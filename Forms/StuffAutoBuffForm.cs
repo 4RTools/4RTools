@@ -21,7 +21,7 @@ namespace _4RTools.Forms
             stuffContainers.Add(new BuffContainer(this.ScrollBuffsGP, Buff.GetScrollBuffs()));
             stuffContainers.Add(new BuffContainer(this.EtcGP, Buff.GetETCBuffs()));
 
-            new BuffRenderer(stuffContainers, toolTip1).doRender();
+            new BuffRenderer(ProfileSingleton.GetCurrent().Autobuff, stuffContainers, toolTip1).doRender();
 
             subject.Attach(this);
         }
