@@ -1,4 +1,6 @@
-﻿namespace _4RTools.Forms
+﻿using System.Windows.Forms;
+
+namespace _4RTools.Forms
 {
     partial class ToggleApplicationStateForm
     {
@@ -30,30 +32,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToggleApplicationStateForm));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtStatusToggleKey = new System.Windows.Forms.TextBox();
             this.btnStatusToggle = new System.Windows.Forms.Button();
             this.lblStatusToggle = new System.Windows.Forms.Label();
             this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtStatusToggleKey);
-            this.groupBox1.Controls.Add(this.btnStatusToggle);
-            this.groupBox1.Controls.Add(this.lblStatusToggle);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 114);
-            this.groupBox1.TabIndex = 25;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Current Status";
             // 
             // txtStatusToggleKey
             // 
             this.txtStatusToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtStatusToggleKey.Location = new System.Drawing.Point(59, 54);
+            this.txtStatusToggleKey.Location = new System.Drawing.Point(74, 51);
             this.txtStatusToggleKey.Name = "txtStatusToggleKey";
             this.txtStatusToggleKey.Size = new System.Drawing.Size(61, 23);
             this.txtStatusToggleKey.TabIndex = 23;
@@ -66,7 +56,7 @@
             this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(53, 20);
+            this.btnStatusToggle.Location = new System.Drawing.Point(68, 17);
             this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
             this.btnStatusToggle.Name = "btnStatusToggle";
             this.btnStatusToggle.Size = new System.Drawing.Size(73, 28);
@@ -79,7 +69,7 @@
             // 
             this.lblStatusToggle.AllowDrop = true;
             this.lblStatusToggle.AutoSize = true;
-            this.lblStatusToggle.Location = new System.Drawing.Point(35, 80);
+            this.lblStatusToggle.Location = new System.Drawing.Point(57, 80);
             this.lblStatusToggle.MaximumSize = new System.Drawing.Size(109, 30);
             this.lblStatusToggle.Name = "lblStatusToggle";
             this.lblStatusToggle.Size = new System.Drawing.Size(109, 13);
@@ -94,12 +84,24 @@
             this.notifyIconTray.Visible = true;
             this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtStatusToggleKey);
+            this.groupBox1.Controls.Add(this.btnStatusToggle);
+            this.groupBox1.Controls.Add(this.lblStatusToggle);
+            this.groupBox1.Location = new System.Drawing.Point(1, 1);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(222, 110);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "ON / OFF";
+            // 
             // ToggleApplicationStateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(204, 129);
+            this.ClientSize = new System.Drawing.Size(226, 114);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ToggleApplicationStateForm";
@@ -112,11 +114,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnStatusToggle;
         private System.Windows.Forms.Label lblStatusToggle;
         private System.Windows.Forms.TextBox txtStatusToggleKey;
         private System.Windows.Forms.NotifyIcon notifyIconTray;
+        private GroupBox groupBox1;
     }
 }
