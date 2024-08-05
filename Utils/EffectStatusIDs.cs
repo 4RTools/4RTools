@@ -307,5 +307,6 @@ namespace _4RTools.Utils
 
         // Star Emperor(https://irowiki.org/wiki/Star_Emperor)
         EFST_SKY_ENCHANT = 1392,
+        EFST_UNIVERSESTANCE = 1039,
     }
 }
