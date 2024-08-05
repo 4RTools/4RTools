@@ -1,9 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using System.Windows.Input;
 using System.Collections.Generic;
 using _4RTools.Utils;
 using _4RTools.Model;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace _4RTools.Forms
 {
@@ -20,6 +20,7 @@ namespace _4RTools.Forms
             stuffContainers.Add(new BuffContainer(this.FoodsGP, Buff.GetFoodBuffs()));
             stuffContainers.Add(new BuffContainer(this.ScrollBuffsGP, Buff.GetScrollBuffs()));
             stuffContainers.Add(new BuffContainer(this.EtcGP, Buff.GetETCBuffs()));
+            stuffContainers.Add(new BuffContainer(this.ExpGP, Buff.GetEXPBuffs()));
 
             new BuffRenderer(ProfileSingleton.GetCurrent().Autobuff, stuffContainers, toolTip1).doRender();
 
