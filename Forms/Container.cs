@@ -243,8 +243,7 @@ namespace _4RTools.Forms
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageSkillTimer, frm);
-
+            addform(this.tabSkillTimer, frm);
         }
 
         public void SetProfileWindow()
