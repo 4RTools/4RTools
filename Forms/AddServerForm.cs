@@ -161,7 +161,7 @@ namespace _4RTools.Forms
                 this.subject.Notify(new Utils.Message(MessageCode.SERVER_LIST_CHANGED, "Server Added"));
             }catch(Exception ex)
             {
-                MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"[Add Server] {ex.Message}", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
