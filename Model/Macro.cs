@@ -12,6 +12,7 @@ namespace _4RTools.Model
     {
         public Key key { get; set; }
         public int delay { get; set; } = 50;
+        public bool hasClick { get; set; } = false;
 
         public MacroKey(Key key, int delay)
         {
@@ -28,6 +29,8 @@ namespace _4RTools.Model
         public Key instrumentKey { get; set; }
         public int delay { get; set; } = 50;
         public Dictionary<string, MacroKey> macroEntries { get; set; } = new Dictionary<string, MacroKey>();
+        public bool infinityLoop { get; set; } = false;
+        public bool infinityLoopOn { get; set; } = false;
 
         public ChainConfig() { }
         public ChainConfig(int id)
