@@ -259,6 +259,11 @@ namespace _4RTools.Model
             List<Buff> skills = new List<Buff>
             {
                 new Buff("Hidden Card", EffectStatusIDs.EFST_HIDDEN_CARD, Resources._4RTools.Icons.hidden_card),
+                new Buff("Intensive Aim", EffectStatusIDs.EFST_INTENSIVE_AIM, Resources._4RTools.Icons.intensive_aim),
+                new Buff("Auto Firing Launcher", EffectStatusIDs.EFST_AUTO_FIRING_LAUNCHEREFST, Resources._4RTools.Icons.auto_firing_launcher),
+                new Buff("Platinum Altar", EffectStatusIDs.EFST_P_ALTER, Resources._4RTools.Icons.platinum_altar),
+                new Buff("Hit Barrel", EffectStatusIDs.EFST_HEAT_BARREL, Resources._4RTools.Icons.hit_barrel),
+                new Buff("Eternal Chain", EffectStatusIDs.EFST_E_CHAIN, Resources._4RTools.Icons.eternal_chain),
                 new Buff("Grenade Fragmenth Lv 1", EffectStatusIDs.EFST_GRENADE_FRAGMENT_1, Resources._4RTools.Icons.grenade_fragment_1),
                 new Buff("Grenade Fragmenth Lv 2", EffectStatusIDs.EFST_GRENADE_FRAGMENT_2, Resources._4RTools.Icons.grenade_fragment_2),
                 new Buff("Grenade Fragmenth Lv 3", EffectStatusIDs.EFST_GRENADE_FRAGMENT_3, Resources._4RTools.Icons.grenade_fragment_3),
