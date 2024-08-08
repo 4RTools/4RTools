@@ -190,6 +190,9 @@
   <data name="attack_stance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\third_and_fourth_class\attack_stance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="auto_firing_launcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\third_and_fourth_class\auto_firing_launcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="awakening_potion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\awakening_potion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -388,6 +391,9 @@
   <data name="enriched_celermine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\enriched_celermine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="eternal_chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\third_and_fourth_class\eternal_chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fear_breeze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\fear_breeze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -481,6 +487,9 @@
   <data name="hidden_card" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\third_and_fourth_class\hidden_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hit_barrel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\third_and_fourth_class\hit_barrel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="holy_armor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\scrolls\holy_armor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -501,6 +510,9 @@
   </data>
   <data name="infinity_drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\infinity_drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="intensive_aim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\third_and_fourth_class\intensive_aim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="int_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\int_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -645,6 +657,9 @@
   </data>
   <data name="pf_memorize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\pf_memorize.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="platinum_altar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\third_and_fourth_class\platinum_altar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pocao_fantastica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\pocao_fantastica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

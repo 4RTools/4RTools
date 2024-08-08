@@ -294,6 +294,11 @@ namespace _4RTools.Utils
 
         // [Night Watch](https://wiki.ragna4th.com/Night_Watch)
         EFST_HIDDEN_CARD = 1354,
+        EFST_INTENSIVE_AIM = 1345,
+        EFST_AUTO_FIRING_LAUNCHEREFST = 1353,
+        EFST_P_ALTER = 758,
+        EFST_HEAT_BARREL = 759,
+        EFST_E_CHAIN = 753,
         EFST_GRENADE_FRAGMENT_1 = 1347,
         EFST_GRENADE_FRAGMENT_2 = 1348,
         EFST_GRENADE_FRAGMENT_3 = 1349,
