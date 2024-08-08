@@ -50,7 +50,6 @@ namespace _4RTools.Forms
             this.panel5 = new System.Windows.Forms.Panel();
             this.tabControlAutopot = new System.Windows.Forms.TabControl();
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
-            this.tabPageSkillTimer = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
             this.panelAdvertisement = new System.Windows.Forms.Panel();
             this.tabPageServer = new System.Windows.Forms.TabPage();
@@ -63,10 +62,10 @@ namespace _4RTools.Forms
             this.tabPageSpammer = new System.Windows.Forms.TabPage();
             this.atkDefMode = new System.Windows.Forms.TabControl();
             this.tabDebuffRecovery = new System.Windows.Forms.TabPage();
+            this.tabSkillTimer = new System.Windows.Forms.TabPage();
             this.characterName = new System.Windows.Forms.Label();
             this.lblCharacterName = new System.Windows.Forms.Label();
             this.OnOffPanel = new System.Windows.Forms.Panel();
-            this.tabSkillTimer = new System.Windows.Forms.TabPage();
             this.panelFooter.SuspendLayout();
             this.tabControlAutopot.SuspendLayout();
             this.atkDefMode.SuspendLayout();
@@ -227,7 +226,6 @@ namespace _4RTools.Forms
             // tabControlAutopot
             // 
             this.tabControlAutopot.Controls.Add(this.tabPageAutopot);
-            this.tabControlAutopot.Controls.Add(this.tabPageSkillTimer);
             this.tabControlAutopot.Controls.Add(this.tabPageYggAutopot);
             this.tabControlAutopot.ImageList = this.TabControlImageList;
             this.tabControlAutopot.Location = new System.Drawing.Point(15, 83);
@@ -245,16 +243,6 @@ namespace _4RTools.Forms
             this.tabPageAutopot.TabIndex = 0;
             this.tabPageAutopot.Text = "Autopot";
             this.tabPageAutopot.UseVisualStyleBackColor = true;
-            // 
-            // tabPageSkillTimer
-            // 
-            this.tabPageSkillTimer.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSkillTimer.Name = "tabPageSkillTimer";
-            this.tabPageSkillTimer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSkillTimer.Size = new System.Drawing.Size(300, 139);
-            this.tabPageSkillTimer.TabIndex = 2;
-            this.tabPageSkillTimer.Text = "Skill Timer";
-            this.tabPageSkillTimer.UseVisualStyleBackColor = true;
             // 
             // tabPageYggAutopot
             // 
@@ -385,6 +373,16 @@ namespace _4RTools.Forms
             this.tabDebuffRecovery.Text = "Debuff";
             this.tabDebuffRecovery.UseVisualStyleBackColor = true;
             // 
+            // tabSkillTimer
+            // 
+            this.tabSkillTimer.Location = new System.Drawing.Point(4, 22);
+            this.tabSkillTimer.Name = "tabSkillTimer";
+            this.tabSkillTimer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSkillTimer.Size = new System.Drawing.Size(563, 274);
+            this.tabSkillTimer.TabIndex = 11;
+            this.tabSkillTimer.Text = "Skill timers";
+            this.tabSkillTimer.UseVisualStyleBackColor = true;
+            // 
             // characterName
             // 
             this.characterName.AutoSize = true;
@@ -412,16 +410,6 @@ namespace _4RTools.Forms
             this.OnOffPanel.Name = "OnOffPanel";
             this.OnOffPanel.Size = new System.Drawing.Size(223, 112);
             this.OnOffPanel.TabIndex = 29;
-            // 
-            // tabSkillTimer
-            // 
-            this.tabSkillTimer.Location = new System.Drawing.Point(4, 22);
-            this.tabSkillTimer.Name = "tabSkillTimer";
-            this.tabSkillTimer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSkillTimer.Size = new System.Drawing.Size(563, 274);
-            this.tabSkillTimer.TabIndex = 11;
-            this.tabSkillTimer.Text = "Skill timers";
-            this.tabSkillTimer.UseVisualStyleBackColor = true;
             // 
             // Container
             // 
@@ -482,7 +470,6 @@ namespace _4RTools.Forms
         private TabPage tabPageYggAutopot;
         private LinkLabel websiteLinkLabel;
         private Panel panel1;
-        private TabPage tabPageSkillTimer;
         private Panel panelAdvertisement;
         private ImageList TabControlImageList;
         private TabPage tabPageServer;
