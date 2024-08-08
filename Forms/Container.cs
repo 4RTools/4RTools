@@ -24,7 +24,7 @@ namespace _4RTools.Forms
             this.IsMdiContainer = true;
             SetBackGroundColorOfMDIForm();
 
-            //Paint Children Forms 
+            //Paint Children Forms
             SetToggleApplicationStateWindow();
             SetAutopotWindow();
             SetAutopotYggWindow();
@@ -156,7 +156,7 @@ namespace _4RTools.Forms
                 }
                 catch (Exception ex)
                 {
-                    Console.Error.WriteLine(ex.ToString());
+                    Console.Error.WriteLine($"[ProfileSingleton.Load] Error Message: {ex.Message}");
                     MessageBox.Show($"Error while loading the new profile. Please get in touch via Discord.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

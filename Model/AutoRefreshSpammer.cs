@@ -9,14 +9,14 @@ namespace _4RTools.Model
 {
     public class AutoRefreshSpammer : Action
     {
-        private string ACTION_NAME = "AutoRefreshSpammer";
         private _4RThread thread;
-        public int refreshDelay { get; set; } = 5;
-        public Key refreshKey { get; set; }
+        public string ActionName { get; set; }
+        public int RefreshDelay { get; set; } = 5;
+        public Key RefreshKey { get; set; }
 
-        public AutoRefreshSpammer()
+        public AutoRefreshSpammer(string actionName)
         {
-
+            this.ActionName = actionName;
         }
 
         public void Start()
@@ -25,7 +25,7 @@ namespace _4RTools.Model
             if (roClient != null)
             {
                 const int defaultDelayInSeconds = 1000;
-                int delayInSeconds = this.refreshDelay * 1000;
+                int delayInSeconds = this.RefreshDelay * 1000;
                 int delay = delayInSeconds == 0 ? defaultDelayInSeconds : delayInSeconds;
                 this.thread = new _4RThread(_ => AutorefreshThreadExecution(roClient, delay));
                 _4RThread.Start(this.thread);
@@ -34,9 +34,9 @@ namespace _4RTools.Model
 
         private int AutorefreshThreadExecution(Client roClient, int delay)
         {
-            if (this.refreshKey != Key.None)
+            if (this.RefreshKey != Key.None)
             {
-                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.refreshKey.ToString()), 0);
+                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, (Keys)Enum.Parse(typeof(Keys), this.RefreshKey.ToString()), 0);
             }
             Thread.Sleep(delay);
             return 0;
@@ -54,7 +54,7 @@ namespace _4RTools.Model
 
         public string GetActionName()
         {
-            return ACTION_NAME;
+            return this.ActionName;
         }
     }
 }
