@@ -22,6 +22,7 @@ namespace _4RTools.Forms
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -57,12 +58,12 @@ namespace _4RTools.Forms
             this.tabMacroSwitch = new System.Windows.Forms.TabPage();
             this.atkDef = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
+            this.tabPageSpammer = new System.Windows.Forms.TabPage();
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
-            this.tabPageSpammer = new System.Windows.Forms.TabPage();
+            this.tabSkillTimer = new System.Windows.Forms.TabPage();
             this.atkDefMode = new System.Windows.Forms.TabControl();
             this.tabDebuffRecovery = new System.Windows.Forms.TabPage();
-            this.tabSkillTimer = new System.Windows.Forms.TabPage();
             this.characterName = new System.Windows.Forms.Label();
             this.lblCharacterName = new System.Windows.Forms.Label();
             this.OnOffPanel = new System.Windows.Forms.Panel();
@@ -349,10 +350,10 @@ namespace _4RTools.Forms
             this.atkDefMode.Controls.Add(this.tabDebuffRecovery);
             this.atkDefMode.Controls.Add(this.tabPageAutobuffSkill);
             this.atkDefMode.Controls.Add(this.tabPageAutobuffStuff);
+            this.atkDefMode.Controls.Add(this.tabSkillTimer);
+            this.atkDefMode.Controls.Add(this.tabMacroSwitch);
             this.atkDefMode.Controls.Add(this.tabPageMacroSongs);
             this.atkDefMode.Controls.Add(this.atkDef);
-            this.atkDefMode.Controls.Add(this.tabMacroSwitch);
-            this.atkDefMode.Controls.Add(this.tabSkillTimer);
             this.atkDefMode.Controls.Add(this.tabPageProfiles);
             this.atkDefMode.Controls.Add(this.tabPageServer);
             this.atkDefMode.ImageList = this.TabControlImageList;
@@ -369,17 +370,18 @@ namespace _4RTools.Forms
             this.tabDebuffRecovery.Name = "tabDebuffRecovery";
             this.tabDebuffRecovery.Padding = new System.Windows.Forms.Padding(3);
             this.tabDebuffRecovery.Size = new System.Drawing.Size(563, 274);
-            this.tabDebuffRecovery.TabIndex = 10;
+            this.tabDebuffRecovery.TabIndex = 2;
             this.tabDebuffRecovery.Text = "Debuff";
             this.tabDebuffRecovery.UseVisualStyleBackColor = true;
-            // 
+            //
             // tabSkillTimer
-            // 
+            //
+            this.tabSkillTimer.ImageIndex = 0;
             this.tabSkillTimer.Location = new System.Drawing.Point(4, 22);
             this.tabSkillTimer.Name = "tabSkillTimer";
             this.tabSkillTimer.Padding = new System.Windows.Forms.Padding(3);
             this.tabSkillTimer.Size = new System.Drawing.Size(563, 274);
-            this.tabSkillTimer.TabIndex = 11;
+            this.tabSkillTimer.TabIndex = 5;
             this.tabSkillTimer.Text = "Skill timers";
             this.tabSkillTimer.UseVisualStyleBackColor = true;
             // 
