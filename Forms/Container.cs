@@ -36,7 +36,8 @@ namespace _4RTools.Forms
             SetDebuffRecoveryWindow();
             SetSongMacroWindow();
             SetATKDEFWindow();
-            SetMacroSwitchWindow();
+            // SetMacroSwitchWindow();
+            SetStalkerWindow();
             SetServerWindow();
             SetAdvertisementWindow();
 
@@ -329,6 +330,16 @@ namespace _4RTools.Forms
         public void SetMacroSwitchWindow()
         {
             MacroSwitchForm frm = new MacroSwitchForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Location = new Point(0, 65);
+            frm.MdiParent = this;
+            addform(this.tabMacroSwitch, frm);
+            frm.Show();
+        }
+
+        public void SetStalkerWindow()
+        {
+            StalkerForm frm = new StalkerForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
