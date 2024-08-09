@@ -314,7 +314,6 @@ namespace _4RTools.Model
                 new Buff("Poção do Furor Físico", EffectStatusIDs.EFST_DF_FULLSWINGK, Resources._4RTools.Icons.full_swingK),
                 new Buff("Poção Mágica", EffectStatusIDs.EFST_DRACULA_CARD, Resources._4RTools.Icons.pocao_magica),
                 new Buff("True ASPD Intensifying Potion", EffectStatusIDs.EFST_REUSE_LIMIT_ASPD_POTION, Resources._4RTools.Icons.G_ASPD_Potion),
-                new Buff("Super Elixir Rubro", EffectStatusIDs.RWC_2011_SCROLL, Resources._4RTools.Icons.red_booster),
                 new Buff("True Medium Life Potion", EffectStatusIDs.EFST_L_LIFEPOTION, Resources._4RTools.Icons.g_med_life_potion),
             };
 
