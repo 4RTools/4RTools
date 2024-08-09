@@ -20,6 +20,7 @@ namespace _4RTools.Forms
             stuffContainers.Add(new BuffContainer(this.FoodsGP, Buff.GetFoodBuffs()));
             stuffContainers.Add(new BuffContainer(this.ScrollBuffsGP, Buff.GetScrollBuffs()));
             stuffContainers.Add(new BuffContainer(this.EtcGP, Buff.GetETCBuffs()));
+            stuffContainers.Add(new BuffContainer(this.CandiesGP, Buff.GetETCBuffs()));
             stuffContainers.Add(new BuffContainer(this.ExpGP, Buff.GetEXPBuffs()));
 
             new BuffRenderer(ProfileSingleton.GetCurrent().Autobuff, stuffContainers, toolTip1).doRender();
