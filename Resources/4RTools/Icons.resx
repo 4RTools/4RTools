@@ -136,6 +136,9 @@
   <data name="adjustment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\adjustment.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="advance_combat_pill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\boxes\advance_combat_pill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="agi_3rd_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\agi_3rd_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -249,6 +252,9 @@
   </data>
   <data name="chaos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\debuffs\chaos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cherry_blossom_cake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\candies\cherry_blossom_cake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="climax" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\third_and_fourth_class\climax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,6 +424,9 @@
   <data name="frost_giant_blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\frost_giant_blood.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="full_swingK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\potions\full_swingK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fury" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\fury.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -474,6 +483,15 @@
   </data>
   <data name="guard_stance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\third_and_fourth_class\guard_stance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="g_almighty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\candies\g_almighty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G_ASPD_Potion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\potions\G_ASPD_Potion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="g_med_life_potion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\potions\g_med_life_potion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HAGALAZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\HAGALAZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -664,6 +682,9 @@
   <data name="pocao_fantastica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\pocao_fantastica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pocao_magica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\potions\pocao_magica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="poem_of_bragi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\poem_of_bragi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -672,6 +693,9 @@
   </data>
   <data name="poison_status" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\debuffs\poison_status.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pop_corn_fes_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\candies\pop_corn_fes_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="potent_venom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\third_and_fourth_class\potent_venom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -772,6 +796,9 @@
   <data name="soul_scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\scrolls\soul_scroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="spark_candy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\candies\spark_candy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\speed.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -810,6 +837,12 @@
   </data>
   <data name="sunbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\sunbox.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sweets_macacake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\candies\sweets_macacake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sweets_sparfait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\candies\sweets_sparfait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="swing_k" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\swing_k.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

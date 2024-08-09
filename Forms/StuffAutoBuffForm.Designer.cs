@@ -37,6 +37,7 @@
             this.EtcGP = new System.Windows.Forms.GroupBox();
             this.PotionsGP = new System.Windows.Forms.GroupBox();
             this.ExpGP = new System.Windows.Forms.GroupBox();
+            this.CandiesGP = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // toolTip1
@@ -89,7 +90,7 @@
             // EtcGP
             // 
             this.EtcGP.AutoSize = true;
-            this.EtcGP.Location = new System.Drawing.Point(12, 244);
+            this.EtcGP.Location = new System.Drawing.Point(10, 205);
             this.EtcGP.Name = "EtcGP";
             this.EtcGP.Size = new System.Drawing.Size(520, 33);
             this.EtcGP.TabIndex = 298;
@@ -110,12 +111,22 @@
             // ExpGP
             // 
             this.ExpGP.AutoSize = true;
-            this.ExpGP.Location = new System.Drawing.Point(10, 205);
+            this.ExpGP.Location = new System.Drawing.Point(10, 283);
             this.ExpGP.Name = "ExpGP";
             this.ExpGP.Size = new System.Drawing.Size(520, 33);
             this.ExpGP.TabIndex = 299;
             this.ExpGP.TabStop = false;
             this.ExpGP.Text = "EXP";
+            // 
+            // CandiesGP
+            // 
+            this.CandiesGP.AutoSize = true;
+            this.CandiesGP.Location = new System.Drawing.Point(10, 244);
+            this.CandiesGP.Name = "CandiesGP";
+            this.CandiesGP.Size = new System.Drawing.Size(520, 33);
+            this.CandiesGP.TabIndex = 299;
+            this.CandiesGP.TabStop = false;
+            this.CandiesGP.Text = "Candies";
             // 
             // StuffAutoBuffForm
             // 
@@ -123,7 +134,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(540, 297);
+            this.ClientSize = new System.Drawing.Size(540, 334);
+            this.Controls.Add(this.CandiesGP);
             this.Controls.Add(this.ExpGP);
             this.Controls.Add(this.EtcGP);
             this.Controls.Add(this.ScrollBuffsGP);
@@ -148,5 +160,6 @@
         private System.Windows.Forms.GroupBox ScrollBuffsGP;
         private System.Windows.Forms.GroupBox EtcGP;
         private System.Windows.Forms.GroupBox ExpGP;
+        private System.Windows.Forms.GroupBox CandiesGP;
     }
 }
