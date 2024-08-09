@@ -7,6 +7,10 @@ namespace _4RTools.Utils
     [Flags]
     public enum EffectStatusIDs : uint
     {
+        // Potions
+        EFST_DF_FULLSWINGK = 1128,
+        EFST_REUSE_LIMIT_ASPD_POTION = 712,
+        EFST_L_LIFEPOTION = 294,
         //Status
         POISON = 883,
         SILENCE = 885,
@@ -79,6 +83,7 @@ namespace _4RTools.Utils
         AURA_NINJA = 208,
         PEEL_CHANGE = 206,
         COMBAT_PILL = 662,
+        EFST_GM_BATTLE2 = 663,
         ENCHANT_BLADE = 316,
         RWC_2011_SCROLL = 664,
         HP_INCREASE_POTION_LARGE = 480,
@@ -216,7 +221,7 @@ namespace _4RTools.Utils
 
         BASICHIT = 248,
 
-        //Rune Knight Runes
+        // Rune Knight Runes
         OTHILA = 322,
         HAGALAZ = 320,
         THURISAZ = 319,
@@ -225,10 +230,22 @@ namespace _4RTools.Utils
         TELEKINESIS_INTENSE = 717,
         MYST_AMPLIFY = 113,
 
+        // Candies
+        EFST_SWEETSFAIR_ATK = 1132,
+        EFST_SWEETSFAIR_MATK = 1133,
+        EFST_FLOWER_LEAF2 = 1135,
+        EFST_STEAMPACK = 305,
+        EFST_ALMIGHTY = 685,
+        EFST_FLOWER_LEAF4 = 1137,
+
         // EXP
         CASH_PLUSEXP = 1400,
         CASH_PLUSECLASSXP = 312,
         CASH_RECEIVEITEM = 252,
+
+        // Effect MvP Cards
+
+        EFST_DRACULA_CARD = 865,
 
         // Third Class
 

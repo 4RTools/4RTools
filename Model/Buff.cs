@@ -311,6 +311,11 @@ namespace _4RTools.Model
                 new Buff("Infinity Drink", EffectStatusIDs.EFST_INFINITY_DRINK, Resources._4RTools.Icons.infinity_drink),
                 new Buff("Red Booster (ATK +30, MATK +30)", EffectStatusIDs.RWC_2011_SCROLL, Resources._4RTools.Icons.red_booster),
                 new Buff("Poção Fantástica (Sealed Kiel Card)", EffectStatusIDs.EFST_KIEL_CARD, Resources._4RTools.Icons.pocao_fantastica),
+                new Buff("Poção do Furor Físico", EffectStatusIDs.EFST_DF_FULLSWINGK, Resources._4RTools.Icons.full_swingK),
+                new Buff("Poção Mágica", EffectStatusIDs.EFST_DRACULA_CARD, Resources._4RTools.Icons.pocao_magica),
+                new Buff("True ASPD Intensifying Potion", EffectStatusIDs.EFST_REUSE_LIMIT_ASPD_POTION, Resources._4RTools.Icons.G_ASPD_Potion),
+                new Buff("Super Elixir Rubro", EffectStatusIDs.RWC_2011_SCROLL, Resources._4RTools.Icons.red_booster),
+                new Buff("True Medium Life Potion", EffectStatusIDs.EFST_L_LIFEPOTION, Resources._4RTools.Icons.g_med_life_potion),
             };
 
             return skills;
@@ -390,6 +395,7 @@ namespace _4RTools.Model
                 new Buff("Aloevera", EffectStatusIDs.PROVOKE, Resources._4RTools.Icons.aloevera),
                 new Buff("Abrasivo", EffectStatusIDs.CRITICALPERCENT, Resources._4RTools.Icons.abrasive),
                 new Buff("Combat Pill", EffectStatusIDs.COMBAT_PILL, Resources._4RTools.Icons.combat_pill),
+                new Buff("Advance Combat Pill", EffectStatusIDs.EFST_GM_BATTLE2, Resources._4RTools.Icons.advance_combat_pill),
                 new Buff("Celermine Juice", EffectStatusIDs.ENRICH_CELERMINE_JUICE, Resources._4RTools.Icons.celermine),
                 new Buff("Guarana Candy", EffectStatusIDs.SPEED_POT, Resources._4RTools.Icons.guarana_candy),
                 new Buff("Poison Bottle", EffectStatusIDs.ASPDPOTIONINFINITY, Resources._4RTools.Icons.poison),
@@ -438,6 +444,21 @@ namespace _4RTools.Model
                 new Buff("Orc Lord", EffectStatusIDs.EFST_ORC_LORD, Resources._4RTools.Icons.perg_senhororc),
                 new Buff("Orc Hero", EffectStatusIDs.EFST_ORC_HERO, Resources._4RTools.Icons.perg_orcheroi),
                 new Buff("MISTRESS", EffectStatusIDs.EFST_MISTRESS, Resources._4RTools.Icons.perg_abelha),
+            };
+
+            return skills;
+        }
+
+        public static List<Buff> GetCandiesBuffs()
+        {
+            List<Buff> skills = new List<Buff>
+            {
+                new Buff("Sweets Macaron Cake", EffectStatusIDs.EFST_SWEETSFAIR_ATK, Resources._4RTools.Icons.sweets_macacake),
+                new Buff("Sweets Strawberry Parfait", EffectStatusIDs.EFST_SWEETSFAIR_MATK, Resources._4RTools.Icons.sweets_sparfait),
+                new Buff("Popcorn Festival Buff", EffectStatusIDs.EFST_FLOWER_LEAF2, Resources._4RTools.Icons.pop_corn_fes_buff),
+                new Buff("Doce Hiper Açucarado", EffectStatusIDs.EFST_STEAMPACK, Resources._4RTools.Icons.spark_candy),
+                new Buff("Elixir Ultra Milagroso", EffectStatusIDs.EFST_ALMIGHTY, Resources._4RTools.Icons.g_almighty),
+                new Buff("Cherry Blossom Rice Cake", EffectStatusIDs.EFST_FLOWER_LEAF4, Resources._4RTools.Icons.cherry_blossom_cake),
             };
 
             return skills;
