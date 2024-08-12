@@ -68,9 +68,7 @@
             this.in3mac1click = new System.Windows.Forms.CheckBox();
             this.in2mac1click = new System.Windows.Forms.CheckBox();
             this.in1mac1click = new System.Windows.Forms.CheckBox();
-            this.stalkerCbMac1 = new System.Windows.Forms.CheckBox();
             this.chainGroup2 = new System.Windows.Forms.GroupBox();
-            this.stalkerCbMac2 = new System.Windows.Forms.CheckBox();
             this.in7mac2click = new System.Windows.Forms.CheckBox();
             this.in1mac2 = new System.Windows.Forms.TextBox();
             this.in6mac2click = new System.Windows.Forms.CheckBox();
@@ -108,7 +106,6 @@
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.chainGroup3 = new System.Windows.Forms.GroupBox();
-            this.stalkerCbMac3 = new System.Windows.Forms.CheckBox();
             this.in7mac3click = new System.Windows.Forms.CheckBox();
             this.in1mac3 = new System.Windows.Forms.TextBox();
             this.in6mac3click = new System.Windows.Forms.CheckBox();
@@ -145,6 +142,12 @@
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.infinityLoop1 = new System.Windows.Forms.RadioButton();
+            this.triggerOnce1 = new System.Windows.Forms.RadioButton();
+            this.infinityLoop2 = new System.Windows.Forms.RadioButton();
+            this.triggerOnce2 = new System.Windows.Forms.RadioButton();
+            this.infinityLoop3 = new System.Windows.Forms.RadioButton();
+            this.triggerOnce3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in1mac1delay)).BeginInit();
@@ -498,6 +501,8 @@
             // 
             // chainGroup1
             // 
+            this.chainGroup1.Controls.Add(this.infinityLoop1);
+            this.chainGroup1.Controls.Add(this.triggerOnce1);
             this.chainGroup1.Controls.Add(this.in7mac1click);
             this.chainGroup1.Controls.Add(this.in6mac1click);
             this.chainGroup1.Controls.Add(this.in5mac1click);
@@ -505,7 +510,6 @@
             this.chainGroup1.Controls.Add(this.in3mac1click);
             this.chainGroup1.Controls.Add(this.in2mac1click);
             this.chainGroup1.Controls.Add(this.in1mac1click);
-            this.chainGroup1.Controls.Add(this.stalkerCbMac1);
             this.chainGroup1.Controls.Add(this.in1mac1);
             this.chainGroup1.Controls.Add(this.in7mac1);
             this.chainGroup1.Controls.Add(this.in6mac1);
@@ -612,20 +616,11 @@
             this.in1mac1click.Text = "Click?";
             this.in1mac1click.UseVisualStyleBackColor = true;
             // 
-            // stalkerCbMac1
-            // 
-            this.stalkerCbMac1.AutoSize = true;
-            this.stalkerCbMac1.Location = new System.Drawing.Point(63, 11);
-            this.stalkerCbMac1.Name = "stalkerCbMac1";
-            this.stalkerCbMac1.Size = new System.Drawing.Size(291, 17);
-            this.stalkerCbMac1.TabIndex = 281;
-            this.stalkerCbMac1.Text = "Infinity loop (Repeat macro until press the first key again)";
-            this.stalkerCbMac1.UseVisualStyleBackColor = true;
-            // 
             // chainGroup2
             // 
-            this.chainGroup2.Controls.Add(this.stalkerCbMac2);
+            this.chainGroup2.Controls.Add(this.infinityLoop2);
             this.chainGroup2.Controls.Add(this.in7mac2click);
+            this.chainGroup2.Controls.Add(this.triggerOnce2);
             this.chainGroup2.Controls.Add(this.in1mac2);
             this.chainGroup2.Controls.Add(this.in6mac2click);
             this.chainGroup2.Controls.Add(this.in7mac2);
@@ -667,16 +662,6 @@
             this.chainGroup2.TabIndex = 282;
             this.chainGroup2.TabStop = false;
             this.chainGroup2.Text = "Switch 2";
-            // 
-            // stalkerCbMac2
-            // 
-            this.stalkerCbMac2.AutoSize = true;
-            this.stalkerCbMac2.Location = new System.Drawing.Point(63, 11);
-            this.stalkerCbMac2.Name = "stalkerCbMac2";
-            this.stalkerCbMac2.Size = new System.Drawing.Size(291, 17);
-            this.stalkerCbMac2.TabIndex = 289;
-            this.stalkerCbMac2.Text = "Infinity loop (Repeat macro until press the first key again)";
-            this.stalkerCbMac2.UseVisualStyleBackColor = true;
             // 
             // in7mac2click
             // 
@@ -1031,8 +1016,9 @@
             // 
             // chainGroup3
             // 
-            this.chainGroup3.Controls.Add(this.stalkerCbMac3);
+            this.chainGroup3.Controls.Add(this.infinityLoop3);
             this.chainGroup3.Controls.Add(this.in7mac3click);
+            this.chainGroup3.Controls.Add(this.triggerOnce3);
             this.chainGroup3.Controls.Add(this.in1mac3);
             this.chainGroup3.Controls.Add(this.in6mac3click);
             this.chainGroup3.Controls.Add(this.in7mac3);
@@ -1074,16 +1060,6 @@
             this.chainGroup3.TabIndex = 283;
             this.chainGroup3.TabStop = false;
             this.chainGroup3.Text = "Switch 3";
-            // 
-            // stalkerCbMac3
-            // 
-            this.stalkerCbMac3.AutoSize = true;
-            this.stalkerCbMac3.Location = new System.Drawing.Point(63, 11);
-            this.stalkerCbMac3.Name = "stalkerCbMac3";
-            this.stalkerCbMac3.Size = new System.Drawing.Size(291, 17);
-            this.stalkerCbMac3.TabIndex = 296;
-            this.stalkerCbMac3.Text = "Infinity loop (Repeat macro until press the first key again)";
-            this.stalkerCbMac3.UseVisualStyleBackColor = true;
             // 
             // in7mac3click
             // 
@@ -1436,6 +1412,72 @@
             this.pictureBox39.TabIndex = 275;
             this.pictureBox39.TabStop = false;
             // 
+            // infinityLoop1
+            // 
+            this.infinityLoop1.AutoSize = true;
+            this.infinityLoop1.Location = new System.Drawing.Point(151, 11);
+            this.infinityLoop1.Name = "infinityLoop1";
+            this.infinityLoop1.Size = new System.Drawing.Size(326, 17);
+            this.infinityLoop1.TabIndex = 290;
+            this.infinityLoop1.TabStop = true;
+            this.infinityLoop1.Text = "Trigger infinite loop (Repeat macro until press the first key again)";
+            this.infinityLoop1.UseVisualStyleBackColor = true;
+            // 
+            // triggerOnce1
+            // 
+            this.triggerOnce1.AutoSize = true;
+            this.triggerOnce1.Location = new System.Drawing.Point(63, 11);
+            this.triggerOnce1.Name = "triggerOnce1";
+            this.triggerOnce1.Size = new System.Drawing.Size(87, 17);
+            this.triggerOnce1.TabIndex = 289;
+            this.triggerOnce1.TabStop = true;
+            this.triggerOnce1.Text = "Trigger Once";
+            this.triggerOnce1.UseVisualStyleBackColor = true;
+            // 
+            // infinityLoop2
+            // 
+            this.infinityLoop2.AutoSize = true;
+            this.infinityLoop2.Location = new System.Drawing.Point(151, 11);
+            this.infinityLoop2.Name = "infinityLoop2";
+            this.infinityLoop2.Size = new System.Drawing.Size(326, 17);
+            this.infinityLoop2.TabIndex = 292;
+            this.infinityLoop2.TabStop = true;
+            this.infinityLoop2.Text = "Trigger infinite loop (Repeat macro until press the first key again)";
+            this.infinityLoop2.UseVisualStyleBackColor = true;
+            // 
+            // triggerOnce2
+            // 
+            this.triggerOnce2.AutoSize = true;
+            this.triggerOnce2.Location = new System.Drawing.Point(63, 11);
+            this.triggerOnce2.Name = "triggerOnce2";
+            this.triggerOnce2.Size = new System.Drawing.Size(87, 17);
+            this.triggerOnce2.TabIndex = 291;
+            this.triggerOnce2.TabStop = true;
+            this.triggerOnce2.Text = "Trigger Once";
+            this.triggerOnce2.UseVisualStyleBackColor = true;
+            // 
+            // infinityLoop3
+            // 
+            this.infinityLoop3.AutoSize = true;
+            this.infinityLoop3.Location = new System.Drawing.Point(151, 11);
+            this.infinityLoop3.Name = "infinityLoop3";
+            this.infinityLoop3.Size = new System.Drawing.Size(326, 17);
+            this.infinityLoop3.TabIndex = 297;
+            this.infinityLoop3.TabStop = true;
+            this.infinityLoop3.Text = "Trigger infinite loop (Repeat macro until press the first key again)";
+            this.infinityLoop3.UseVisualStyleBackColor = true;
+            // 
+            // triggerOnce3
+            // 
+            this.triggerOnce3.AutoSize = true;
+            this.triggerOnce3.Location = new System.Drawing.Point(63, 11);
+            this.triggerOnce3.Name = "triggerOnce3";
+            this.triggerOnce3.Size = new System.Drawing.Size(87, 17);
+            this.triggerOnce3.TabIndex = 296;
+            this.triggerOnce3.TabStop = true;
+            this.triggerOnce3.Text = "Trigger Once";
+            this.triggerOnce3.UseVisualStyleBackColor = true;
+            // 
             // StalkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1611,7 +1653,6 @@
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.NumericUpDown in7mac2delay;
-        private System.Windows.Forms.CheckBox stalkerCbMac1;
         private System.Windows.Forms.CheckBox in1mac1click;
         private System.Windows.Forms.CheckBox in7mac1click;
         private System.Windows.Forms.CheckBox in6mac1click;
@@ -1633,7 +1674,11 @@
         private System.Windows.Forms.CheckBox in3mac3click;
         private System.Windows.Forms.CheckBox in2mac3click;
         private System.Windows.Forms.CheckBox in1mac3click;
-        private System.Windows.Forms.CheckBox stalkerCbMac2;
-        private System.Windows.Forms.CheckBox stalkerCbMac3;
+        private System.Windows.Forms.RadioButton infinityLoop1;
+        private System.Windows.Forms.RadioButton triggerOnce1;
+        private System.Windows.Forms.RadioButton infinityLoop2;
+        private System.Windows.Forms.RadioButton triggerOnce2;
+        private System.Windows.Forms.RadioButton infinityLoop3;
+        private System.Windows.Forms.RadioButton triggerOnce3;
     }
 }

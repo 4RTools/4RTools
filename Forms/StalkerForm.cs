@@ -26,10 +26,10 @@ namespace _4RTools.Forms
                     updateUi();
                     break;
                 case MessageCode.TURN_ON:
-                    ProfileSingleton.GetCurrent().MacroSwitch.Start();
+                    ProfileSingleton.GetCurrent().Stalker.Start();
                     break;
                 case MessageCode.TURN_OFF:
-                    ProfileSingleton.GetCurrent().MacroSwitch.Stop();
+                    ProfileSingleton.GetCurrent().Stalker.Stop();
                     break;
             }
         }
@@ -39,8 +39,19 @@ namespace _4RTools.Forms
             try
             {
                 GroupBox group = (GroupBox)this.Controls.Find("chainGroup" + id, true)[0];
-                ChainConfig chainConfig = new ChainConfig(ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs[id - 1]);
+                ChainConfig chainConfig = new ChainConfig(ProfileSingleton.GetCurrent().Stalker.ChainConfigs[id - 1]);
+
                 FormUtils.ResetForm(group);
+
+                if (chainConfig.infinityLoop)
+                {
+                    RadioButton rd = (RadioButton)this.Controls.Find("infinityLoop" + id, true)[0];
+                    rd.Checked = true;
+                } else
+                {
+                    RadioButton rd = (RadioButton)this.Controls.Find("triggerOnce" + id, true)[0];
+                    rd.Checked = true;
+                }
 
                 List<string> names = new List<string>(chainConfig.macroEntries.Keys);
                 foreach (string cbName in names)
@@ -75,7 +86,7 @@ namespace _4RTools.Forms
             TextBox textBox = (TextBox)sender;
             int chainID = Int16.Parse(textBox.Parent.Name.Split(new[] { "chainGroup" }, StringSplitOptions.None)[1]);
             GroupBox group = (GroupBox)this.Controls.Find("chainGroup" + chainID, true)[0];
-            ChainConfig chainConfig = ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs.Find(config => config.id == chainID);
+            ChainConfig chainConfig = ProfileSingleton.GetCurrent().Stalker.ChainConfigs.Find(config => config.id == chainID);
 
             Key key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
             NumericUpDown delayInput = (NumericUpDown)group.Controls.Find($"{textBox.Name}delay", true)[0];
@@ -84,31 +95,48 @@ namespace _4RTools.Forms
             bool isFirstInput = Regex.IsMatch(textBox.Name, $"in1mac{chainID}");
             if (isFirstInput) { chainConfig.trigger = key; }
 
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().MacroSwitch);
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Stalker);
         }
 
         private void onDelayChange(object sender, EventArgs e)
         {
             NumericUpDown delayInput = (NumericUpDown)sender;
             int chainID = Int16.Parse(delayInput.Parent.Name.Split(new[] { "chainGroup" }, StringSplitOptions.None)[1]);
-            ChainConfig chainConfig = ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs.Find(config => config.id == chainID);
+            ChainConfig chainConfig = ProfileSingleton.GetCurrent().Stalker.ChainConfigs.Find(config => config.id == chainID);
 
             String cbName = delayInput.Name.Split(new[] { "delay" }, StringSplitOptions.None)[0];
             chainConfig.macroEntries[cbName].delay = decimal.ToInt16(delayInput.Value);
 
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().MacroSwitch);
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Stalker);
         }
 
         private void onClickCheckChange(object sender, EventArgs e)
         {
             CheckBox checkbox = (CheckBox)sender;
             int chainID = Int16.Parse(checkbox.Parent.Name.Split(new[] { "chainGroup" }, StringSplitOptions.None)[1]);
-            ChainConfig chainConfig = ProfileSingleton.GetCurrent().MacroSwitch.chainConfigs.Find(config => config.id == chainID);
+            ChainConfig chainConfig = ProfileSingleton.GetCurrent().Stalker.ChainConfigs.Find(config => config.id == chainID);
 
             String cbName = checkbox.Name.Split(new[] { "click" }, StringSplitOptions.None)[0];
             chainConfig.macroEntries[cbName].hasClick = checkbox.Checked;
 
-            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().MacroSwitch);
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Stalker);
+        }
+
+        private void onRadioButtonChange(object sender, EventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            int chainID = Int16.Parse(rb.Parent.Name.Split(new[] { "chainGroup" }, StringSplitOptions.None)[1]);
+            ChainConfig chainConfig = ProfileSingleton.GetCurrent().Stalker.ChainConfigs.Find(config => config.id == chainID);
+
+            if (rb.Checked && rb.Name.StartsWith("infinityLoop"))
+            {
+                chainConfig.infinityLoop = true;
+            } else
+            {
+                chainConfig.infinityLoop = false;
+            }
+
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Stalker);
         }
 
         private void updateUi()
@@ -152,6 +180,12 @@ namespace _4RTools.Forms
                     {
                         CheckBox click = (CheckBox)control;
                         click.CheckStateChanged += this.onClickCheckChange;
+                    }
+
+                    if (control is RadioButton)
+                    {
+                        RadioButton radioButton = (RadioButton)control;
+                        radioButton.CheckedChanged += onRadioButtonChange;
                     }
                 }
             }
