@@ -46,6 +46,7 @@ namespace _4RTools.Model
             this.trigger = macro.trigger;
             this.daggerKey = macro.daggerKey;
             this.instrumentKey = macro.instrumentKey;
+            this.infinityLoop = macro.infinityLoop;
             this.macroEntries = new Dictionary<string, MacroKey>(macro.macroEntries);
         }
         public ChainConfig(int id, Key trigger)
