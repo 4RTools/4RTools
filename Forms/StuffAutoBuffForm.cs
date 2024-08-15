@@ -23,7 +23,7 @@ namespace _4RTools.Forms
             stuffContainers.Add(new BuffContainer(this.CandiesGP, Buff.GetCandiesBuffs()));
             stuffContainers.Add(new BuffContainer(this.ExpGP, Buff.GetEXPBuffs()));
 
-            new BuffRenderer(ProfileSingleton.GetCurrent().Autobuff, stuffContainers, toolTip1).doRender();
+            new BuffRenderer("Autobuff", stuffContainers, toolTip1).doRender();
 
             subject.Attach(this);
         }

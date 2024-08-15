@@ -28,7 +28,7 @@ namespace _4RTools.Forms
 
             skillContainers.Add(new BuffContainer(this.DebuffRecoveryGP, Buff.GetDebuffs()));
 
-            new BuffRenderer(ProfileSingleton.GetCurrent().DebuffsRecovery, skillContainers, toolTip1).doRender();
+            new BuffRenderer("DebuffsRecovery", skillContainers, toolTip1).doRender();
 
             subject.Attach(this);
         }

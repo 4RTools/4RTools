@@ -32,7 +32,7 @@ namespace _4RTools.Forms
             skillContainers.Add(new BuffContainer(this.NightWatchSkillsGP, Buff.GetNightWatchSkills()));
             skillContainers.Add(new BuffContainer(this.HyperNoviceSkillsGP, Buff.GetHyperNoviceSkills()));
 
-            new BuffRenderer(ProfileSingleton.GetCurrent().Autobuff, skillContainers, toolTip1).doRender();
+            new BuffRenderer("Autobuff", skillContainers, toolTip1).doRender();
             subject.Attach(this);
 
         }
