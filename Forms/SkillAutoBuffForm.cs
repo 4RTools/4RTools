@@ -34,7 +34,6 @@ namespace _4RTools.Forms
 
             new BuffRenderer("Autobuff", skillContainers, toolTip1).doRender();
             subject.Attach(this);
-
         }
 
         public void Update(ISubject subject)
