@@ -45,6 +45,7 @@
             this.SoulAsceticSkillsGP = new System.Windows.Forms.GroupBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.HomunculusSkillsGP = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,7 +152,7 @@
             // HyperNoviceSkillsGP
             // 
             this.HyperNoviceSkillsGP.AutoSize = true;
-            this.HyperNoviceSkillsGP.Location = new System.Drawing.Point(10, 528);
+            this.HyperNoviceSkillsGP.Location = new System.Drawing.Point(10, 490);
             this.HyperNoviceSkillsGP.Name = "HyperNoviceSkillsGP";
             this.HyperNoviceSkillsGP.Size = new System.Drawing.Size(520, 30);
             this.HyperNoviceSkillsGP.TabIndex = 215;
@@ -161,7 +162,7 @@
             // NightWatchSkillsGP
             // 
             this.NightWatchSkillsGP.AutoSize = true;
-            this.NightWatchSkillsGP.Location = new System.Drawing.Point(10, 488);
+            this.NightWatchSkillsGP.Location = new System.Drawing.Point(8, 454);
             this.NightWatchSkillsGP.Name = "NightWatchSkillsGP";
             this.NightWatchSkillsGP.Size = new System.Drawing.Size(520, 30);
             this.NightWatchSkillsGP.TabIndex = 226;
@@ -171,7 +172,7 @@
             // SoulAsceticSkillsGP
             // 
             this.SoulAsceticSkillsGP.AutoSize = true;
-            this.SoulAsceticSkillsGP.Location = new System.Drawing.Point(10, 448);
+            this.SoulAsceticSkillsGP.Location = new System.Drawing.Point(10, 408);
             this.SoulAsceticSkillsGP.Name = "SoulAsceticSkillsGP";
             this.SoulAsceticSkillsGP.Size = new System.Drawing.Size(520, 30);
             this.SoulAsceticSkillsGP.TabIndex = 225;
@@ -189,6 +190,16 @@
             this.pictureBox38.TabIndex = 145;
             this.pictureBox38.TabStop = false;
             // 
+            // HomunculusSkillsGP
+            // 
+            this.HomunculusSkillsGP.AutoSize = true;
+            this.HomunculusSkillsGP.Location = new System.Drawing.Point(10, 526);
+            this.HomunculusSkillsGP.Name = "HomunculusSkillsGP";
+            this.HomunculusSkillsGP.Size = new System.Drawing.Size(520, 30);
+            this.HomunculusSkillsGP.TabIndex = 227;
+            this.HomunculusSkillsGP.TabStop = false;
+            this.HomunculusSkillsGP.Text = "Homunculus";
+            // 
             // SkillAutoBuffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,6 +207,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(540, 566);
+            this.Controls.Add(this.HomunculusSkillsGP);
             this.Controls.Add(this.HyperNoviceSkillsGP);
             this.Controls.Add(this.NightWatchSkillsGP);
             this.Controls.Add(this.SoulAsceticSkillsGP);
@@ -234,5 +246,6 @@
         private System.Windows.Forms.GroupBox NightWatchSkillsGP;
         private System.Windows.Forms.GroupBox SoulAsceticSkillsGP;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.GroupBox HomunculusSkillsGP;
     }
 }

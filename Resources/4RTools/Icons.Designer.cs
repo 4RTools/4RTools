@@ -1383,6 +1383,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap homun_last {
+            get {
+                object obj = ResourceManager.GetObject("homun_last", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hood {
             get {
                 object obj = ResourceManager.GetObject("hood", resourceCulture);
@@ -2036,6 +2046,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap prontera_march {
             get {
                 object obj = ResourceManager.GetObject("prontera_march", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pyroclastic {
+            get {
+                object obj = ResourceManager.GetObject("pyroclastic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
