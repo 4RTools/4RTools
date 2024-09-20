@@ -698,6 +698,8 @@
     <None Include="assets\images\violin.gif" />
     <None Include="assets\images\third_and_fourth_class\climax.png" />
     <None Include="assets\images\third_and_fourth_class\universal_stance.png" />
+    <None Include="assets\images\pyroclastic.png" />
+    <None Include="assets\images\homun_last.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

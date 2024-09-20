@@ -475,6 +475,17 @@ namespace _4RTools.Model
             return skills;
         }
 
+        public static List<Buff> GetHomunculusBuffs()
+        {
+            List<Buff> skills = new List<Buff>
+            {
+                new Buff("Pyroclastic", EffectStatusIDs.EFST_PYROCLASTIC, Resources._4RTools.Icons.pyroclastic),
+                new Buff("HOMUN_LAST", EffectStatusIDs.EFST_TEMPERING, Resources._4RTools.Icons.homun_last),
+            };
+
+            return skills;
+        }
+
         //--------------------- DEBUFFS ------------------------------
         public static List<Buff> GetDebuffs()
         {
