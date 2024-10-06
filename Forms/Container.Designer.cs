@@ -38,14 +38,11 @@ namespace _4RTools.Forms
             this.btnRefresh = new System.Windows.Forms.Button();
             this.TabControlImageList = new System.Windows.Forms.ImageList(this.components);
             this.lblLinkDiscord = new System.Windows.Forms.LinkLabel();
-            this.lblLinkGithub = new System.Windows.Forms.LinkLabel();
             this.panelDiscImage = new System.Windows.Forms.Panel();
-            this.panelGithubImage = new System.Windows.Forms.Panel();
             this.labelProfile = new System.Windows.Forms.Label();
             this.profileCB = new System.Windows.Forms.ComboBox();
             this.panelFooter = new System.Windows.Forms.Panel();
-            this.websiteLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbPowered = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -118,17 +115,6 @@ namespace _4RTools.Forms
             this.lblLinkDiscord.Text = "Join in our discord";
             this.lblLinkDiscord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkDiscord_LinkClicked);
             // 
-            // lblLinkGithub
-            // 
-            this.lblLinkGithub.AutoSize = true;
-            this.lblLinkGithub.Location = new System.Drawing.Point(70, 16);
-            this.lblLinkGithub.Name = "lblLinkGithub";
-            this.lblLinkGithub.Size = new System.Drawing.Size(74, 13);
-            this.lblLinkGithub.TabIndex = 9;
-            this.lblLinkGithub.TabStop = true;
-            this.lblLinkGithub.Text = "Github Project";
-            this.lblLinkGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkGithub_LinkClicked);
-            // 
             // panelDiscImage
             // 
             this.panelDiscImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDiscImage.BackgroundImage")));
@@ -137,15 +123,6 @@ namespace _4RTools.Forms
             this.panelDiscImage.Name = "panelDiscImage";
             this.panelDiscImage.Size = new System.Drawing.Size(32, 33);
             this.panelDiscImage.TabIndex = 10;
-            // 
-            // panelGithubImage
-            // 
-            this.panelGithubImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelGithubImage.BackgroundImage")));
-            this.panelGithubImage.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panelGithubImage.Location = new System.Drawing.Point(31, 6);
-            this.panelGithubImage.Name = "panelGithubImage";
-            this.panelGithubImage.Size = new System.Drawing.Size(32, 33);
-            this.panelGithubImage.TabIndex = 11;
             // 
             // labelProfile
             // 
@@ -169,10 +146,7 @@ namespace _4RTools.Forms
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelFooter.Controls.Add(this.websiteLinkLabel);
-            this.panelFooter.Controls.Add(this.panel1);
-            this.panelFooter.Controls.Add(this.lblLinkGithub);
-            this.panelFooter.Controls.Add(this.panelGithubImage);
+            this.panelFooter.Controls.Add(this.lbPowered);
             this.panelFooter.Controls.Add(this.lblLinkDiscord);
             this.panelFooter.Controls.Add(this.panelDiscImage);
             this.panelFooter.Location = new System.Drawing.Point(-3, 580);
@@ -180,25 +154,15 @@ namespace _4RTools.Forms
             this.panelFooter.Size = new System.Drawing.Size(903, 43);
             this.panelFooter.TabIndex = 16;
             // 
-            // websiteLinkLabel
+            // lbPowered
             // 
-            this.websiteLinkLabel.AutoSize = true;
-            this.websiteLinkLabel.Location = new System.Drawing.Point(403, 16);
-            this.websiteLinkLabel.Name = "websiteLinkLabel";
-            this.websiteLinkLabel.Size = new System.Drawing.Size(91, 13);
-            this.websiteLinkLabel.TabIndex = 12;
-            this.websiteLinkLabel.TabStop = true;
-            this.websiteLinkLabel.Text = "WebSite 4RTools";
-            this.websiteLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.websiteLinkLabel_LinkClicked);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(366, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(32, 33);
-            this.panel1.TabIndex = 13;
+            this.lbPowered.AutoSize = true;
+            this.lbPowered.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPowered.Location = new System.Drawing.Point(16, 16);
+            this.lbPowered.Name = "lbPowered";
+            this.lbPowered.Size = new System.Drawing.Size(181, 13);
+            this.lbPowered.TabIndex = 0;
+            this.lbPowered.Text = "Powered by AuTHEntiC and MarkiinG";
             // 
             // panel4
             // 
@@ -312,6 +276,16 @@ namespace _4RTools.Forms
             this.tabPageMacroSongs.Text = "Macro Songs";
             this.tabPageMacroSongs.UseVisualStyleBackColor = true;
             // 
+            // tabPageSpammer
+            // 
+            this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpammer.Name = "tabPageSpammer";
+            this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSpammer.Size = new System.Drawing.Size(563, 274);
+            this.tabPageSpammer.TabIndex = 1;
+            this.tabPageSpammer.Text = "Skill Spammer";
+            this.tabPageSpammer.UseVisualStyleBackColor = true;
+            // 
             // tabPageAutobuffStuff
             // 
             this.tabPageAutobuffStuff.ImageIndex = 0;
@@ -334,15 +308,16 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
             this.tabPageAutobuffSkill.UseVisualStyleBackColor = true;
             // 
-            // tabPageSpammer
+            // tabSkillTimer
             // 
-            this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSpammer.Name = "tabPageSpammer";
-            this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(563, 274);
-            this.tabPageSpammer.TabIndex = 1;
-            this.tabPageSpammer.Text = "Skill Spammer";
-            this.tabPageSpammer.UseVisualStyleBackColor = true;
+            this.tabSkillTimer.ImageIndex = 0;
+            this.tabSkillTimer.Location = new System.Drawing.Point(4, 22);
+            this.tabSkillTimer.Name = "tabSkillTimer";
+            this.tabSkillTimer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSkillTimer.Size = new System.Drawing.Size(563, 274);
+            this.tabSkillTimer.TabIndex = 5;
+            this.tabSkillTimer.Text = "Skill timers";
+            this.tabSkillTimer.UseVisualStyleBackColor = true;
             // 
             // atkDefMode
             // 
@@ -356,7 +331,6 @@ namespace _4RTools.Forms
             this.atkDefMode.Controls.Add(this.atkDef);
             this.atkDefMode.Controls.Add(this.tabPageProfiles);
             this.atkDefMode.Controls.Add(this.tabPageServer);
-            this.atkDefMode.ImageList = this.TabControlImageList;
             this.atkDefMode.Location = new System.Drawing.Point(15, 274);
             this.atkDefMode.Name = "atkDefMode";
             this.atkDefMode.SelectedIndex = 0;
@@ -373,17 +347,6 @@ namespace _4RTools.Forms
             this.tabDebuffRecovery.TabIndex = 2;
             this.tabDebuffRecovery.Text = "Debuff";
             this.tabDebuffRecovery.UseVisualStyleBackColor = true;
-            //
-            // tabSkillTimer
-            //
-            this.tabSkillTimer.ImageIndex = 0;
-            this.tabSkillTimer.Location = new System.Drawing.Point(4, 22);
-            this.tabSkillTimer.Name = "tabSkillTimer";
-            this.tabSkillTimer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSkillTimer.Size = new System.Drawing.Size(563, 274);
-            this.tabSkillTimer.TabIndex = 5;
-            this.tabSkillTimer.Text = "Skill timers";
-            this.tabSkillTimer.UseVisualStyleBackColor = true;
             // 
             // characterName
             // 
@@ -458,9 +421,7 @@ namespace _4RTools.Forms
         private System.Windows.Forms.ComboBox processCB;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.LinkLabel lblLinkDiscord;
-        private System.Windows.Forms.LinkLabel lblLinkGithub;
         private System.Windows.Forms.Panel panelDiscImage;
-        private System.Windows.Forms.Panel panelGithubImage;
         private System.Windows.Forms.Label labelProfile;
         public System.Windows.Forms.ComboBox profileCB;
         private System.Windows.Forms.Panel panelFooter;
@@ -470,8 +431,6 @@ namespace _4RTools.Forms
         private TabControl tabControlAutopot;
         private TabPage tabPageAutopot;
         private TabPage tabPageYggAutopot;
-        private LinkLabel websiteLinkLabel;
-        private Panel panel1;
         private Panel panelAdvertisement;
         private ImageList TabControlImageList;
         private TabPage tabPageServer;
@@ -488,5 +447,6 @@ namespace _4RTools.Forms
         private TabPage tabDebuffRecovery;
         private Panel OnOffPanel;
         private TabPage tabSkillTimer;
+        private Label lbPowered;
     }
 }

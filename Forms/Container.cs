@@ -36,8 +36,7 @@ namespace _4RTools.Forms
             SetDebuffRecoveryWindow();
             SetSongMacroWindow();
             SetATKDEFWindow();
-            // SetMacroSwitchWindow();
-            SetStalkerWindow();
+            SetMacroSwitchWindow();
             SetServerWindow();
             SetAdvertisementWindow();
 
@@ -157,7 +156,7 @@ namespace _4RTools.Forms
                 catch (Exception ex)
                 {
                     Console.Error.WriteLine($"[ProfileSingleton.Load] Error Message: {ex.Message}");
-                    MessageBox.Show($"Error while loading the new profile. Please get in touch via Discord.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Error while loading the new profile. \nPlease get in touch via Discord. \nPlease send this error message to the admin: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
