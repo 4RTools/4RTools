@@ -261,6 +261,7 @@ namespace _4RTools.Utils
         EFST_JAWAII_SERENADE = 1262,
         EFST_MUSICAL_INTERLUDE = 1261,
         EFST_PRON_MARCH = 1263,
+        EFST_SWING = 429,
 
         // [Abyss Chaser](https://irowiki.org/wiki/Abyss_Chaser)
         EFST_ABYSS_SLAYER = 1245,
@@ -298,6 +299,7 @@ namespace _4RTools.Utils
         EFST_REBOUND_S = 1217,
         EFST_GUARDIAN_S = 1204,
         EFST_HOLY_S = 1220,
+        EFST_EXEEDBREAK = 400,
 
         // [Biolo](https://irowiki.org/wiki/Biolo)
         EFST_RESEARCHREPORT = 1248,
