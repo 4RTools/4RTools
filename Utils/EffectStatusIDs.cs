@@ -211,6 +211,13 @@ namespace _4RTools.Utils
         EFST_SOULSCROLL = 514,
         EFST_RESIST_PROPERTY_UNDEAD = 916,
 
+        //Scrolls ATTACK PROPERTY
+        EFST_ATTACK_PROPERTY_FIRE = 900,
+        EFST_ATTACK_PROPERTY_WIND = 901,
+        EFST_ATTACK_PROPERTY_GROUND = 899,
+        EFST_ATTACK_PROPERTY_WATER = 898,
+
+
         //3RD foods
         STR_3RD_FOOD = 491,
         INT_3RD_FOOD = 492,
