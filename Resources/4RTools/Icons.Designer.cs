@@ -2063,6 +2063,46 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PROPERTY_FIRE {
+            get {
+                object obj = ResourceManager.GetObject("PROPERTY_FIRE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PROPERTY_GROUND {
+            get {
+                object obj = ResourceManager.GetObject("PROPERTY_GROUND", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PROPERTY_WATER {
+            get {
+                object obj = ResourceManager.GetObject("PROPERTY_WATER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PROPERTY_WIND {
+            get {
+                object obj = ResourceManager.GetObject("PROPERTY_WIND", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pyroclastic {
             get {
                 object obj = ResourceManager.GetObject("pyroclastic", resourceCulture);
