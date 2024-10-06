@@ -20,35 +20,25 @@ namespace _4RTools.Forms
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void AdvertisementForm_Load(object sender, EventArgs e)
         {
-            List<Advertiser> ads = Advertiser.LoadAdvertiser();
-
             try
             {
-                Console.WriteLine(ads.Count);
-                for (int i = 0; i < ads.Count; i++)
-                {
-                    LinkLabel linkWebsite = (LinkLabel)this.Controls.Find("siteAd" + i, true)[0];
-                    LinkLabel linkDisc = (LinkLabel)this.Controls.Find("discAd" + i, true)[0];
-                    PictureBox pictureBox = (PictureBox)this.Controls.Find("pbAd" + i, true)[0];
+                this.siteAd.Tag = "https://historyreborn.net/";
+                this.pbAd0.ImageLocation = "https://4tools.historyreborn.net/site.png";
+                this.siteAd.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
 
-                    linkDisc.Tag = ads[i].discordUrl;
-                    linkWebsite.Tag = ads[i].websiteUrl;
-                    pictureBox.ImageLocation = ads[i].bannerUrl;
+                this.wikiAd.Tag = "https://wiki.historyreborn.org/index.php";
+                this.pbAd1.ImageLocation = "https://4tools.historyreborn.net/wiki.png";
+                this.wikiAd.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
 
-                    linkDisc.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
-                    linkWebsite.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
-                }
+                this.discordAd.Tag = "https://discord.gg/historyreborn";
+                this.pbAd2.ImageLocation = "https://4tools.historyreborn.net/discord.png";
+                this.discordAd.LinkClicked += new LinkLabelLinkClickedEventHandler(this.onLinkClicked);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.Error.WriteLine($"[AdvertisementForm] Error Message: {ex.Message}");
             }
 
         }

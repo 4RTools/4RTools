@@ -30,12 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdvertisementForm));
             this.groupBoxAd = new System.Windows.Forms.GroupBox();
-            this.discAd2 = new System.Windows.Forms.LinkLabel();
-            this.discAd1 = new System.Windows.Forms.LinkLabel();
-            this.discAd0 = new System.Windows.Forms.LinkLabel();
-            this.siteAd2 = new System.Windows.Forms.LinkLabel();
-            this.siteAd1 = new System.Windows.Forms.LinkLabel();
-            this.siteAd0 = new System.Windows.Forms.LinkLabel();
+            this.wikiAd = new System.Windows.Forms.LinkLabel();
+            this.discordAd = new System.Windows.Forms.LinkLabel();
+            this.siteAd = new System.Windows.Forms.LinkLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelAd2 = new System.Windows.Forms.Panel();
@@ -58,12 +55,9 @@
             this.groupBoxAd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxAd.AutoSize = true;
-            this.groupBoxAd.Controls.Add(this.discAd2);
-            this.groupBoxAd.Controls.Add(this.discAd1);
-            this.groupBoxAd.Controls.Add(this.discAd0);
-            this.groupBoxAd.Controls.Add(this.siteAd2);
-            this.groupBoxAd.Controls.Add(this.siteAd1);
-            this.groupBoxAd.Controls.Add(this.siteAd0);
+            this.groupBoxAd.Controls.Add(this.wikiAd);
+            this.groupBoxAd.Controls.Add(this.discordAd);
+            this.groupBoxAd.Controls.Add(this.siteAd);
             this.groupBoxAd.Controls.Add(this.panel4);
             this.groupBoxAd.Controls.Add(this.panel2);
             this.groupBoxAd.Controls.Add(this.panelAd2);
@@ -77,65 +71,35 @@
             this.groupBoxAd.TabStop = false;
             this.groupBoxAd.Text = "Advertisement";
             // 
-            // discAd2
+            // wikiAd
             // 
-            this.discAd2.AutoSize = true;
-            this.discAd2.Location = new System.Drawing.Point(58, 522);
-            this.discAd2.Name = "discAd2";
-            this.discAd2.Size = new System.Drawing.Size(43, 13);
-            this.discAd2.TabIndex = 11;
-            this.discAd2.TabStop = true;
-            this.discAd2.Text = "Discord";
+            this.wikiAd.AutoSize = true;
+            this.wikiAd.Location = new System.Drawing.Point(5, 326);
+            this.wikiAd.Name = "wikiAd";
+            this.wikiAd.Size = new System.Drawing.Size(31, 13);
+            this.wikiAd.TabIndex = 11;
+            this.wikiAd.TabStop = true;
+            this.wikiAd.Text = "WIKI";
             // 
-            // discAd1
+            // discordAd
             // 
-            this.discAd1.AutoSize = true;
-            this.discAd1.Location = new System.Drawing.Point(59, 337);
-            this.discAd1.Name = "discAd1";
-            this.discAd1.Size = new System.Drawing.Size(43, 13);
-            this.discAd1.TabIndex = 11;
-            this.discAd1.TabStop = true;
-            this.discAd1.Text = "Discord";
+            this.discordAd.AutoSize = true;
+            this.discordAd.Location = new System.Drawing.Point(5, 511);
+            this.discordAd.Name = "discordAd";
+            this.discordAd.Size = new System.Drawing.Size(43, 13);
+            this.discordAd.TabIndex = 11;
+            this.discordAd.TabStop = true;
+            this.discordAd.Text = "Discord";
             // 
-            // discAd0
+            // siteAd
             // 
-            this.discAd0.AutoSize = true;
-            this.discAd0.Location = new System.Drawing.Point(56, 154);
-            this.discAd0.Name = "discAd0";
-            this.discAd0.Size = new System.Drawing.Size(43, 13);
-            this.discAd0.TabIndex = 11;
-            this.discAd0.TabStop = true;
-            this.discAd0.Text = "Discord";
-            // 
-            // siteAd2
-            // 
-            this.siteAd2.AutoSize = true;
-            this.siteAd2.Location = new System.Drawing.Point(7, 522);
-            this.siteAd2.Name = "siteAd2";
-            this.siteAd2.Size = new System.Drawing.Size(46, 13);
-            this.siteAd2.TabIndex = 11;
-            this.siteAd2.TabStop = true;
-            this.siteAd2.Text = "Website";
-            // 
-            // siteAd1
-            // 
-            this.siteAd1.AutoSize = true;
-            this.siteAd1.Location = new System.Drawing.Point(8, 337);
-            this.siteAd1.Name = "siteAd1";
-            this.siteAd1.Size = new System.Drawing.Size(46, 13);
-            this.siteAd1.TabIndex = 11;
-            this.siteAd1.TabStop = true;
-            this.siteAd1.Text = "Website";
-            // 
-            // siteAd0
-            // 
-            this.siteAd0.AutoSize = true;
-            this.siteAd0.Location = new System.Drawing.Point(5, 154);
-            this.siteAd0.Name = "siteAd0";
-            this.siteAd0.Size = new System.Drawing.Size(46, 13);
-            this.siteAd0.TabIndex = 11;
-            this.siteAd0.TabStop = true;
-            this.siteAd0.Text = "Website";
+            this.siteAd.AutoSize = true;
+            this.siteAd.Location = new System.Drawing.Point(4, 143);
+            this.siteAd.Name = "siteAd";
+            this.siteAd.Size = new System.Drawing.Size(46, 13);
+            this.siteAd.TabIndex = 11;
+            this.siteAd.TabStop = true;
+            this.siteAd.Text = "Website";
             // 
             // panel4
             // 
@@ -250,12 +214,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxAd;
-        private System.Windows.Forms.LinkLabel discAd2;
-        private System.Windows.Forms.LinkLabel discAd1;
-        private System.Windows.Forms.LinkLabel discAd0;
-        private System.Windows.Forms.LinkLabel siteAd2;
-        private System.Windows.Forms.LinkLabel siteAd1;
-        private System.Windows.Forms.LinkLabel siteAd0;
+        private System.Windows.Forms.LinkLabel wikiAd;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelAd2;
@@ -264,5 +223,7 @@
         private System.Windows.Forms.PictureBox pbAd2;
         private System.Windows.Forms.PictureBox pbAd1;
         private System.Windows.Forms.PictureBox pbAd0;
+        private System.Windows.Forms.LinkLabel discordAd;
+        private System.Windows.Forms.LinkLabel siteAd;
     }
 }
