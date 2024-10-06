@@ -400,6 +400,9 @@
   <data name="eternal_chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\third_and_fourth_class\eternal_chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exceed_break" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\third_and_fourth_class\exceed_break.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fear_breeze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\fear_breeze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -849,6 +852,9 @@
   </data>
   <data name="sweets_sparfait" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\candies\sweets_sparfait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="swing_dance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\third_and_fourth_class\swing_dance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="swing_k" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\swing_k.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

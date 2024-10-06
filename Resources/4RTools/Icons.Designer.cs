@@ -1003,6 +1003,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exceed_break {
+            get {
+                object obj = ResourceManager.GetObject("exceed_break", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fear_breeze {
             get {
                 object obj = ResourceManager.GetObject("fear_breeze", resourceCulture);
@@ -2496,6 +2506,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap sweets_sparfait {
             get {
                 object obj = ResourceManager.GetObject("sweets_sparfait", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap swing_dance {
+            get {
+                object obj = ResourceManager.GetObject("swing_dance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

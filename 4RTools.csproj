@@ -700,6 +700,8 @@
     <None Include="assets\images\third_and_fourth_class\universal_stance.png" />
     <None Include="assets\images\pyroclastic.png" />
     <None Include="assets\images\homun_last.png" />
+    <None Include="assets\images\third_and_fourth_class\swing_dance.png" />
+    <None Include="assets\images\third_and_fourth_class\exceed_break.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

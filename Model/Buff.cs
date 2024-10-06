@@ -37,6 +37,7 @@ namespace _4RTools.Model
                 new Buff("Jawaii Serenade", EffectStatusIDs.EFST_JAWAII_SERENADE, Resources._4RTools.Icons.jawaii_serenade),
                 new Buff("Musical Interlude", EffectStatusIDs.EFST_MUSICAL_INTERLUDE, Resources._4RTools.Icons.musical_interlude),
                 new Buff("Prontera March", EffectStatusIDs.EFST_PRON_MARCH, Resources._4RTools.Icons.prontera_march),
+                new Buff("Swing Dance", EffectStatusIDs.EFST_SWING, Resources._4RTools.Icons.swing_dance),
                 new Buff("Calamity Gale", EffectStatusIDs.EFST_CALAMITYGALE, Resources._4RTools.Icons.calamity_gale),
                 new Buff("Fear Breeze", EffectStatusIDs.EFST_FEARBREEZE, Resources._4RTools.Icons.fear_breeze),
             };
@@ -74,6 +75,7 @@ namespace _4RTools.Model
                 new Buff("Rebound Shield", EffectStatusIDs.EFST_REBOUND_S, Resources._4RTools.Icons.rebound_shield),
                 new Buff("Guardian Shield", EffectStatusIDs.EFST_GUARDIAN_S, Resources._4RTools.Icons.guardian_shield),
                 new Buff("Holy Shield", EffectStatusIDs.EFST_HOLY_S, Resources._4RTools.Icons.holy_shield),
+                new Buff("Exceed Break", EffectStatusIDs.EFST_EXEEDBREAK, Resources._4RTools.Icons.exceed_break),
             };
 
             return skills;
