@@ -333,6 +333,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banquete {
+            get {
+                object obj = ResourceManager.GetObject("banquete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap berserk_potion {
             get {
                 object obj = ResourceManager.GetObject("berserk_potion", resourceCulture);
@@ -1853,6 +1863,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap one_hand_quicken {
+            get {
+                object obj = ResourceManager.GetObject("one_hand_quicken", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OTHILA {
             get {
                 object obj = ResourceManager.GetObject("OTHILA", resourceCulture);
@@ -2256,6 +2276,66 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap servant_weapon {
             get {
                 object obj = ResourceManager.GetObject("servant_weapon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SG_MOON_COMFORT {
+            get {
+                object obj = ResourceManager.GetObject("SG_MOON_COMFORT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SG_MOON_WARM {
+            get {
+                object obj = ResourceManager.GetObject("SG_MOON_WARM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SG_STAR_COMFORT {
+            get {
+                object obj = ResourceManager.GetObject("SG_STAR_COMFORT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SG_STAR_WARM {
+            get {
+                object obj = ResourceManager.GetObject("SG_STAR_WARM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SG_SUN_COMFORT {
+            get {
+                object obj = ResourceManager.GetObject("SG_SUN_COMFORT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SG_SUN_WARM {
+            get {
+                object obj = ResourceManager.GetObject("SG_SUN_WARM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

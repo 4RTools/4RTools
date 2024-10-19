@@ -7,10 +7,13 @@ namespace _4RTools.Utils
     [Flags]
     public enum EffectStatusIDs : uint
     {
+        IGNORE = 4294967295,
+        IGNORE_2 = 210803216,
         // Potions
         EFST_DF_FULLSWINGK = 1128,
         EFST_REUSE_LIMIT_ASPD_POTION = 712,
         EFST_L_LIFEPOTION = 294,
+
         //Status
         POISON = 883,
         SILENCE = 885,
@@ -26,6 +29,7 @@ namespace _4RTools.Utils
         MISTY_FROST = 1141,
         CRITICALWOUND = 286,
         OVERHEAT = 373,
+        // New status 3RD
         EFST_SIT = 622,
         EFST_FREEZING = 351,
         EFST_BLEEDING = 124,
@@ -33,6 +37,7 @@ namespace _4RTools.Utils
         EFST_STUN = 877,
         EFST_DEEP_SLEEP = 435,
         EFST_HANDICAPSTATE_MISFORTUNE = 1213,
+        EFST_MANDRAGORA = 470,
 
         ENDURE = 1,
         PAINKILLER = 1,
@@ -123,7 +128,8 @@ namespace _4RTools.Utils
         PROPERTYWATER = 91,
         PROPERTYWIND = 92,
         PROPERTYGROUND = 93,
-        PROPERTYDARK = 146,
+        PROPERTYDARK = 146, // OLD CURSED WATER
+        EFST_ATTACK_PROPERTY_DARKNESS = 904,
         PROPERTYTELEKINESIS = 148,
         WEAPONPROPERTY = 64,
         ASPERSIO = 17,
@@ -140,6 +146,7 @@ namespace _4RTools.Utils
         // POTIONS
         EFST_LIMIT_POWER_BOOSTER = 867,
         EFST_INFINITY_DRINK = 1065,
+        EFST_FULL_SWING_K = 486,
 
         //FOODS
         FOOD_STR = 241,
@@ -254,6 +261,14 @@ namespace _4RTools.Utils
 
         EFST_DRACULA_CARD = 865,
 
+        // [TK]
+        EFST_SG_SUN_WARM = 165,
+        EFST_SG_MOON_WARM = 166,
+        EFST_SG_STAR_WARM = 167,
+        EFST_SUN_COMFORT = 169,
+        EFST_MOON_COMFORT = 170,
+        EFST_STAR_COMFORT = 171,
+
         // Third Class
 
         // Fourth Class
@@ -294,7 +309,7 @@ namespace _4RTools.Utils
 
         // [Cardinal](https://irowiki.org/wiki/Cardinal)
         EFST_COMPETENTIA = 1201,
-        EFST_OFFERTORIUM = 16,
+        EFST_OFFERTORIUM = 716,
 
         // [Wind Hawk](https://irowiki.org/wiki/Wind_Hawk)
         EFST_CALAMITYGALE = 1252,
@@ -307,6 +322,7 @@ namespace _4RTools.Utils
         EFST_GUARDIAN_S = 1204,
         EFST_HOLY_S = 1220,
         EFST_EXEEDBREAK = 400,
+        EFST_ONEHANDQUICKEN = 161,
 
         // [Biolo](https://irowiki.org/wiki/Biolo)
         EFST_RESEARCHREPORT = 1248,

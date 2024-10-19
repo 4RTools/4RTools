@@ -76,6 +76,7 @@ namespace _4RTools.Model
                 new Buff("Guardian Shield", EffectStatusIDs.EFST_GUARDIAN_S, Resources._4RTools.Icons.guardian_shield),
                 new Buff("Holy Shield", EffectStatusIDs.EFST_HOLY_S, Resources._4RTools.Icons.holy_shield),
                 new Buff("Exceed Break", EffectStatusIDs.EFST_EXEEDBREAK, Resources._4RTools.Icons.exceed_break),
+                new Buff("One-Hand Quicken", EffectStatusIDs.EFST_ONEHANDQUICKEN, Resources._4RTools.Icons.one_hand_quicken),
             };
 
             return skills;
@@ -192,6 +193,12 @@ namespace _4RTools.Model
                 new Buff("Mild Wind (Ghost)", EffectStatusIDs.PROPERTYTELEKINESIS, Resources._4RTools.Icons.tk_mild_ghost),
                 new Buff("Mild Wind (Holy)", EffectStatusIDs.ASPERSIO, Resources._4RTools.Icons.tk_mild_holy),
                 new Buff("Mild Wind (Shadow)", EffectStatusIDs.PROPERTYDARK, Resources._4RTools.Icons.tk_mild_shadow),
+                new Buff("Calor solar", EffectStatusIDs.EFST_SG_SUN_WARM, Resources._4RTools.Icons.SG_SUN_WARM),
+                new Buff("Proteção solar", EffectStatusIDs.EFST_SUN_COMFORT, Resources._4RTools.Icons.SG_SUN_COMFORT),
+                new Buff("Calor lunar", EffectStatusIDs.EFST_SG_MOON_WARM, Resources._4RTools.Icons.SG_MOON_WARM),
+                new Buff("Proteção lunar", EffectStatusIDs.EFST_MOON_COMFORT, Resources._4RTools.Icons.SG_MOON_COMFORT),
+                new Buff("Calor estelar", EffectStatusIDs.EFST_SG_STAR_WARM, Resources._4RTools.Icons.SG_STAR_WARM),
+                new Buff("Proteção estelar", EffectStatusIDs.EFST_STAR_COMFORT, Resources._4RTools.Icons.SG_STAR_COMFORT),
                 new Buff("Tumbling", EffectStatusIDs.DODGE_ON, Resources._4RTools.Icons.tumbling),
                 new Buff("Enchanting Sky", EffectStatusIDs.EFST_SKY_ENCHANT, Resources._4RTools.Icons.enchanting_sky),
                 new Buff("Universal Stance", EffectStatusIDs.EFST_UNIVERSESTANCE, Resources._4RTools.Icons.universal_stance),
@@ -309,7 +316,7 @@ namespace _4RTools.Model
                 new Buff("Full SwingK Potion", EffectStatusIDs.FULL_SWINGK, Resources._4RTools.Icons.swing_k),
                 new Buff("Mana Plus Potion", EffectStatusIDs.MANA_PLUS, Resources._4RTools.Icons.mana_plus),
                 new Buff("Blessing Of Tyr", EffectStatusIDs.BASICHIT, Resources._4RTools.Icons.blessing_of_tyr),
-                new Buff("True Limit Power Booster", EffectStatusIDs.EFST_LIMIT_POWER_BOOSTER, Resources._4RTools.Icons.true_limit_power_booster),
+                new Buff("True Limit Power Booster (Poção Ilimitada)", EffectStatusIDs.EFST_LIMIT_POWER_BOOSTER, Resources._4RTools.Icons.true_limit_power_booster),
                 new Buff("Infinity Drink", EffectStatusIDs.EFST_INFINITY_DRINK, Resources._4RTools.Icons.infinity_drink),
                 new Buff("Red Booster (ATK +30, MATK +30)", EffectStatusIDs.RWC_2011_SCROLL, Resources._4RTools.Icons.red_booster),
                 new Buff("Poção Fantástica (Sealed Kiel Card)", EffectStatusIDs.EFST_KIEL_CARD, Resources._4RTools.Icons.pocao_fantastica),
@@ -330,7 +337,7 @@ namespace _4RTools.Model
                 new Buff("Elemental Converter (Wind)", EffectStatusIDs.EFST_ATTACK_PROPERTY_WIND, Resources._4RTools.Icons.PROPERTY_WIND),
                 new Buff("Elemental Converter (Earth)", EffectStatusIDs.EFST_ATTACK_PROPERTY_GROUND, Resources._4RTools.Icons.PROPERTY_GROUND),
                 new Buff("Elemental Converter (Water)", EffectStatusIDs.EFST_ATTACK_PROPERTY_WATER, Resources._4RTools.Icons.PROPERTY_WATER),
-                new Buff("Cursed Water", EffectStatusIDs.PROPERTYDARK, Resources._4RTools.Icons.cursed_water),
+                new Buff("Cursed Water", EffectStatusIDs.EFST_ATTACK_PROPERTY_DARKNESS, Resources._4RTools.Icons.cursed_water),
                 new Buff("Fire Conversor", EffectStatusIDs.PROPERTYFIRE, Resources._4RTools.Icons.ele_fire_converter),
                 new Buff("Wind Conversor", EffectStatusIDs.PROPERTYWIND, Resources._4RTools.Icons.ele_wind_converter),
                 new Buff("Earth Conversor", EffectStatusIDs.PROPERTYGROUND, Resources._4RTools.Icons.ele_earth_converter),
@@ -381,6 +388,7 @@ namespace _4RTools.Model
 
                 new Buff("Winter Cookie ATK ", EffectStatusIDs.EFST_ATK_POPCORN, Resources._4RTools.Icons.winter_cookie),
                 new Buff("Flora Cookie MATK", EffectStatusIDs.EFST_MATK_POPCORN, Resources._4RTools.Icons.flora_cookie),
+                new Buff("Banquete Revigorante", EffectStatusIDs.STR_3RD_FOOD, Resources._4RTools.Icons.banquete),
             };
 
             return skills;
