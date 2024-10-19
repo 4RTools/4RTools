@@ -34,6 +34,8 @@
             this.btnRemoveProfile = new System.Windows.Forms.Button();
             this.lblProfilesList = new System.Windows.Forms.Label();
             this.lbProfilesList = new System.Windows.Forms.ListBox();
+            this.btnEditProfile = new System.Windows.Forms.Button();
+            this.btnCopy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtProfileName
@@ -91,11 +93,33 @@
             this.lbProfilesList.Size = new System.Drawing.Size(238, 134);
             this.lbProfilesList.TabIndex = 8;
             // 
+            // btnEditProfile
+            // 
+            this.btnEditProfile.Location = new System.Drawing.Point(267, 106);
+            this.btnEditProfile.Name = "btnEditProfile";
+            this.btnEditProfile.Size = new System.Drawing.Size(78, 23);
+            this.btnEditProfile.TabIndex = 9;
+            this.btnEditProfile.Text = "Edit";
+            this.btnEditProfile.UseVisualStyleBackColor = true;
+            this.btnEditProfile.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnCopy
+            // 
+            this.btnCopy.Location = new System.Drawing.Point(267, 135);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(78, 23);
+            this.btnCopy.TabIndex = 10;
+            this.btnCopy.Text = "Copy";
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(374, 232);
+            this.Controls.Add(this.btnCopy);
+            this.Controls.Add(this.btnEditProfile);
             this.Controls.Add(this.lbProfilesList);
             this.Controls.Add(this.lblProfilesList);
             this.Controls.Add(this.btnRemoveProfile);
@@ -118,5 +142,7 @@
         private System.Windows.Forms.Button btnRemoveProfile;
         private System.Windows.Forms.Label lblProfilesList;
         private System.Windows.Forms.ListBox lbProfilesList;
+        private System.Windows.Forms.Button btnEditProfile;
+        private System.Windows.Forms.Button btnCopy;
     }
 }

@@ -11,10 +11,15 @@ namespace _4RTools.Forms
         {
             InitializeComponent();
             this.container = container;
+            this.RefreshProfileList();
+        }
 
+        private void RefreshProfileList()
+        {
             foreach (string profile in Profile.ListAll())
             {
-                if (profile != "Default") { this.lbProfilesList.Items.Add(profile); };
+                int profileIndex = this.lbProfilesList.Items.IndexOf(profile);
+                if (profile != "Default" && profileIndex == -1) { this.lbProfilesList.Items.Add(profile); };
             }
         }
 
@@ -24,7 +29,7 @@ namespace _4RTools.Forms
             if (string.IsNullOrEmpty(newProfileName)) { return; }
 
             ProfileSingleton.Create(newProfileName);
-            this.lbProfilesList.Items.Add(newProfileName);
+            this.RefreshProfileList();
             this.container.refreshProfileList();
             this.txtProfileName.Text = ""; // clear text box
         }
@@ -40,11 +45,58 @@ namespace _4RTools.Forms
             string selectedProfile = this.lbProfilesList.SelectedItem.ToString();
             if (selectedProfile == "Default")
             {
-                MessageBox.Show("Cannot delete a Default profile!");
+                MessageBox.Show("Cannot delete the Default profile!");
             } else
             {
                 ProfileSingleton.Delete(selectedProfile);
                 this.lbProfilesList.Items.Remove(selectedProfile);
+                this.RefreshProfileList();
+                this.container.refreshProfileList();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (this.lbProfilesList.SelectedItem == null)
+            {
+                MessageBox.Show("No profile found! To edit a profile, first select an option from the Profile list.");
+                return;
+            }
+
+            var selectedProfile = this.lbProfilesList.Items[this.lbProfilesList.SelectedIndex].ToString();
+
+            if (selectedProfile == "Default")
+            {
+                MessageBox.Show("Cannot delete the Default profile!");
+            }
+            else {
+                EditProfileName editProfileName = new EditProfileName();
+                editProfileName.SetProfileName(selectedProfile);
+                editProfileName.ShowDialog();
+
+                if (editProfileName.DialogResult == DialogResult.OK) {
+                    this.RefreshProfileList();
+                    this.container.refreshProfileList();
+                };
+            }
+        }
+
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            if (this.lbProfilesList.SelectedItem == null)
+            {
+                MessageBox.Show("No profile found! To edit a profile, first select an option from the Profile list.");
+                return;
+            }
+
+            var selectedProfile = this.lbProfilesList.Items[this.lbProfilesList.SelectedIndex].ToString();
+            if (selectedProfile == "Default")
+            {
+                MessageBox.Show("Cannot delete the Default profile!");
+            }
+            else {
+                ProfileSingleton.Copy(selectedProfile);
+                this.RefreshProfileList();
                 this.container.refreshProfileList();
             }
         }
