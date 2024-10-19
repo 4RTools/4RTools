@@ -251,6 +251,12 @@
     <Compile Include="Forms\ClientUpdaterForm.Designer.cs">
       <DependentUpon>ClientUpdaterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EditProfileName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProfileName.Designer.cs">
+      <DependentUpon>EditProfileName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MacroSongForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -385,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClientUpdaterForm.resx">
       <DependentUpon>ClientUpdaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProfileName.resx">
+      <DependentUpon>EditProfileName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MacroSongForm.resx">
       <DependentUpon>MacroSongForm.cs</DependentUpon>
@@ -706,6 +715,14 @@
     <None Include="assets\images\PROPERTY_GROUND.png" />
     <None Include="assets\images\PROPERTY_WATER.png" />
     <None Include="assets\images\PROPERTY_WIND.png" />
+    <None Include="assets\images\foods\banquete.png" />
+    <None Include="assets\images\one_hand_quicken.png" />
+    <None Include="assets\images\skills_tk\SG_MOON_COMFORT.png" />
+    <None Include="assets\images\skills_tk\SG_MOON_WARM.png" />
+    <None Include="assets\images\skills_tk\SG_STAR_COMFORT.png" />
+    <None Include="assets\images\skills_tk\SG_STAR_WARM.png" />
+    <None Include="assets\images\skills_tk\SG_SUN_COMFORT.png" />
+    <None Include="assets\images\skills_tk\SG_SUN_WARM.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

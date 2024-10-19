@@ -199,6 +199,9 @@
   <data name="awakening_potion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\awakening_potion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="banquete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\foods\banquete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="berserk_potion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\berserk_potion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -655,6 +658,9 @@
   <data name="offertorium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\offertorium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="one_hand_quicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\one_hand_quicken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="OTHILA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\OTHILA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -777,6 +783,24 @@
   </data>
   <data name="servant_weapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\servant_weapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SG_MOON_COMFORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\skills_tk\SG_MOON_COMFORT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SG_MOON_WARM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\skills_tk\SG_MOON_WARM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SG_STAR_COMFORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\skills_tk\SG_STAR_COMFORT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SG_STAR_WARM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\skills_tk\SG_STAR_WARM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SG_SUN_COMFORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\skills_tk\SG_SUN_COMFORT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SG_SUN_WARM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\assets\images\skills_tk\SG_SUN_WARM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shadow_armor_scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\assets\images\scrolls\shadow_armor_scroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

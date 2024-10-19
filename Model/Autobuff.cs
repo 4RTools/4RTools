@@ -39,6 +39,9 @@ namespace _4RTools.Model
                 {
                     uint currentStatus = c.CurrentBuffStatusCode(i);
                     EffectStatusIDs status = (EffectStatusIDs)currentStatus;
+                    
+                    if (status == EffectStatusIDs.IGNORE) { continue; };
+                    if (status == EffectStatusIDs.IGNORE_2) { continue; };
 
                     if (status == EffectStatusIDs.OVERTHRUSTMAX)
                     {

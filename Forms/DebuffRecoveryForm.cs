@@ -80,6 +80,7 @@ namespace _4RTools.Forms
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.BLOODING, k);
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.MISTY_FROST, k);
             ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.OVERHEAT, k);
+            ProfileSingleton.GetCurrent().StatusRecovery.AddKeyToBuff(EffectStatusIDs.EFST_MANDRAGORA, k);
 
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().StatusRecovery);
         }
