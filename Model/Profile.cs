@@ -71,6 +71,26 @@ namespace _4RTools.Model
             catch { }
         }
 
+        public static void Rename(string oldProfileName, string newProfileName)
+        {
+            string jsonFileName = AppConfig.ProfileFolder + newProfileName + ".json";
+            if (oldProfileName != "Default" && !File.Exists(jsonFileName)) {
+                File.Move(AppConfig.ProfileFolder + oldProfileName + ".json", jsonFileName);
+            }
+        }
+
+        public static void Copy(string profileName)
+        {
+            try
+            {
+                string jsonFileName = AppConfig.ProfileFolder + profileName + " Copy.json";
+                if (profileName != "Default" && !File.Exists(jsonFileName)) {
+                    File.Copy(AppConfig.ProfileFolder + profileName + ".json", jsonFileName);
+                }
+            }
+            catch { }
+        }
+
         public static void SetConfiguration(Action action)
         {
             if (profile != null)
