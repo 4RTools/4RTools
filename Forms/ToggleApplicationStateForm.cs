@@ -84,7 +84,8 @@ namespace _4RTools.Forms
                 this.notifyIconTray.Icon = Resources._4RTools.ETCResource.logo_4rtools_off;
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
                 this.lblStatusToggle.Text = "Press the key to start!";
-                new SoundPlayer(Resources._4RTools.ETCResource.Speech_Off).Play();
+
+                if (this.cbAudio.Checked) { new SoundPlayer(Resources._4RTools.ETCResource.Speech_Off).Play(); }
             }
             else
             {
@@ -97,7 +98,8 @@ namespace _4RTools.Forms
                     this.subject.Notify(new Utils.Message(MessageCode.TURN_ON, null));
                     this.lblStatusToggle.Text = "Press the key to stop!";
                     this.lblStatusToggle.ForeColor = Color.Black;
-                    new SoundPlayer(Resources._4RTools.ETCResource.Speech_On).Play();
+
+                    if (this.cbAudio.Checked) { new SoundPlayer(Resources._4RTools.ETCResource.Speech_On).Play(); }
                 }
                 else
                 {
