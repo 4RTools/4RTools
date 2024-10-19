@@ -37,6 +37,7 @@ namespace _4RTools.Forms
             this.lblStatusToggle = new System.Windows.Forms.Label();
             this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbAudio = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,7 @@ namespace _4RTools.Forms
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbAudio);
             this.groupBox1.Controls.Add(this.txtStatusToggleKey);
             this.groupBox1.Controls.Add(this.btnStatusToggle);
             this.groupBox1.Controls.Add(this.lblStatusToggle);
@@ -95,6 +97,16 @@ namespace _4RTools.Forms
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ON / OFF";
+            // 
+            // cbAudio
+            // 
+            this.cbAudio.AutoSize = true;
+            this.cbAudio.Location = new System.Drawing.Point(156, 23);
+            this.cbAudio.Name = "cbAudio";
+            this.cbAudio.Size = new System.Drawing.Size(57, 17);
+            this.cbAudio.TabIndex = 24;
+            this.cbAudio.Text = "Sound";
+            this.cbAudio.UseVisualStyleBackColor = true;
             // 
             // ToggleApplicationStateForm
             // 
@@ -119,5 +131,6 @@ namespace _4RTools.Forms
         private System.Windows.Forms.TextBox txtStatusToggleKey;
         private System.Windows.Forms.NotifyIcon notifyIconTray;
         private GroupBox groupBox1;
+        private CheckBox cbAudio;
     }
 }
