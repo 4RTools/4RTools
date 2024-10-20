@@ -59,7 +59,7 @@ namespace _4RTools.Forms
         {
             if (this.lbProfilesList.SelectedItem == null)
             {
-                MessageBox.Show("No profile found! To edit a profile, first select an option from the Profile list.");
+                MessageBox.Show("To edit a profile, first select one from the Profile list.");
                 return;
             }
 
@@ -85,7 +85,7 @@ namespace _4RTools.Forms
         {
             if (this.lbProfilesList.SelectedItem == null)
             {
-                MessageBox.Show("No profile found! To edit a profile, first select an option from the Profile list.");
+                MessageBox.Show("To copy a profile, first select one from the Profile list.");
                 return;
             }
 
