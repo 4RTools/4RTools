@@ -101,6 +101,8 @@ namespace _4RTools.Forms
             // cbAudio
             // 
             this.cbAudio.AutoSize = true;
+            this.cbAudio.Checked = true;
+            this.cbAudio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbAudio.Location = new System.Drawing.Point(156, 23);
             this.cbAudio.Name = "cbAudio";
             this.cbAudio.Size = new System.Drawing.Size(57, 17);
