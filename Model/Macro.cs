@@ -72,7 +72,6 @@ namespace _4RTools.Model
             for(int i = 1; i <= macroLanes; i++)
             {
                 chainConfigs.Add(new ChainConfig(i, Key.None));
-
             }
         }
 
@@ -113,19 +112,26 @@ namespace _4RTools.Model
                                 //Press instrument key if exists.
                                 Keys instrumentKey = (Keys)Enum.Parse(typeof(Keys), chainConfig.instrumentKey.ToString());
                                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, instrumentKey, 0);
-                                Thread.Sleep(30);
+                                Thread.Sleep(30); //TODO FIX IT LATER -> Remove fixed sleep (read from ui)
                             }
 
                             Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.key.ToString());
                             Thread.Sleep(macroKey.delay);
                             Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
 
+                            if (macroKey.hasClick) {
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                                Thread.Sleep(1);
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                            }
+                            
+
                             if(chainConfig.daggerKey != Key.None)
                             {
                                 //Press instrument key if exists.
                                 Keys daggerKey = (Keys)Enum.Parse(typeof(Keys), chainConfig.daggerKey.ToString());
                                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, daggerKey, 0);
-                                Thread.Sleep(30);
+                                Thread.Sleep(30); //TODO FIX IT LATER -> Remove fixed sleep (read from ui)
                             }
 
                         }
