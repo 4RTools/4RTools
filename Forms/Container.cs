@@ -334,17 +334,6 @@ namespace _4RTools.Forms
             addform(this.tabMacroSwitch, frm);
             frm.Show();
         }
-
-        public void SetStalkerWindow()
-        {
-            StalkerForm frm = new StalkerForm(subject);
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(0, 65);
-            frm.MdiParent = this;
-            addform(this.tabMacroSwitch, frm);
-            frm.Show();
-        }
-
         #endregion
     }
 }
