@@ -33,7 +33,6 @@ namespace _4RTools.Model
                     profile.SongMacro = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.SongMacro));
                     profile.AtkDefMode = JsonConvert.DeserializeObject<ATKDEFMode>(Profile.GetByAction(rawObject, profile.AtkDefMode));
                     profile.MacroSwitch = JsonConvert.DeserializeObject<Macro>(Profile.GetByAction(rawObject, profile.MacroSwitch));
-                    profile.Stalker = JsonConvert.DeserializeObject<Stalker>(Profile.GetByAction(rawObject, profile.Stalker));
                     profile.DebuffsRecovery = JsonConvert.DeserializeObject<DebuffsRecovery>(Profile.GetByAction(rawObject, profile.DebuffsRecovery));
                 }
             }
@@ -126,7 +125,6 @@ namespace _4RTools.Model
 
         public ATKDEFMode AtkDefMode { get; set; }
         public DebuffsRecovery DebuffsRecovery { get; set; }
-        public Stalker Stalker { get; set; }
 
         public Profile(string name)
         {
@@ -145,7 +143,6 @@ namespace _4RTools.Model
             this.MacroSwitch = new Macro(Macro.ACTION_NAME_MACRO_SWITCH, MacroSwitchForm.TOTAL_MACRO_LANES);
             this.AtkDefMode = new ATKDEFMode();
             this.DebuffsRecovery = new DebuffsRecovery();
-            this.Stalker = new Stalker(Stalker.ACTION_NAME, StalkerForm.TOTAL_MACRO_LANES);
         }
 
         public static object GetByAction(dynamic obj, Action action)
