@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MacroSwitchForm));
             System.Windows.Forms.TextBox in1mac4;
             System.Windows.Forms.TextBox in1mac5;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MacroSwitchForm));
             this.in1mac1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -325,6 +325,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
             this.SuspendLayout();
+            // 
+            // in1mac4
+            // 
+            in1mac4.Location = new System.Drawing.Point(63, 16);
+            in1mac4.Name = "in1mac4";
+            in1mac4.Size = new System.Drawing.Size(49, 20);
+            in1mac4.TabIndex = 182;
+            // 
+            // in1mac5
+            // 
+            in1mac5.Location = new System.Drawing.Point(63, 16);
+            in1mac5.Name = "in1mac5";
+            in1mac5.Size = new System.Drawing.Size(49, 20);
+            in1mac5.TabIndex = 182;
             // 
             // in1mac1
             // 
@@ -652,7 +666,7 @@
             this.chainGroup1.Controls.Add(this.pictureBox12);
             this.chainGroup1.Location = new System.Drawing.Point(1, 12);
             this.chainGroup1.Name = "chainGroup1";
-            this.chainGroup1.Size = new System.Drawing.Size(533, 118);
+            this.chainGroup1.Size = new System.Drawing.Size(533, 106);
             this.chainGroup1.TabIndex = 281;
             this.chainGroup1.TabStop = false;
             this.chainGroup1.Text = "Switch 1";
@@ -766,9 +780,9 @@
             this.chainGroup2.Controls.Add(this.pictureBox24);
             this.chainGroup2.Controls.Add(this.pictureBox25);
             this.chainGroup2.Controls.Add(this.pictureBox26);
-            this.chainGroup2.Location = new System.Drawing.Point(1, 136);
+            this.chainGroup2.Location = new System.Drawing.Point(1, 124);
             this.chainGroup2.Name = "chainGroup2";
-            this.chainGroup2.Size = new System.Drawing.Size(533, 104);
+            this.chainGroup2.Size = new System.Drawing.Size(533, 106);
             this.chainGroup2.TabIndex = 282;
             this.chainGroup2.TabStop = false;
             this.chainGroup2.Text = "Switch 2";
@@ -1170,9 +1184,9 @@
             this.chainGroup3.Controls.Add(this.pictureBox37);
             this.chainGroup3.Controls.Add(this.pictureBox38);
             this.chainGroup3.Controls.Add(this.pictureBox39);
-            this.chainGroup3.Location = new System.Drawing.Point(1, 246);
+            this.chainGroup3.Location = new System.Drawing.Point(1, 234);
             this.chainGroup3.Name = "chainGroup3";
-            this.chainGroup3.Size = new System.Drawing.Size(533, 102);
+            this.chainGroup3.Size = new System.Drawing.Size(533, 106);
             this.chainGroup3.TabIndex = 283;
             this.chainGroup3.TabStop = false;
             this.chainGroup3.Text = "Switch 3";
@@ -1566,9 +1580,9 @@
             this.chainGroup4.Controls.Add(this.pictureBox50);
             this.chainGroup4.Controls.Add(this.pictureBox51);
             this.chainGroup4.Controls.Add(this.pictureBox52);
-            this.chainGroup4.Location = new System.Drawing.Point(1, 354);
+            this.chainGroup4.Location = new System.Drawing.Point(1, 342);
             this.chainGroup4.Name = "chainGroup4";
-            this.chainGroup4.Size = new System.Drawing.Size(533, 102);
+            this.chainGroup4.Size = new System.Drawing.Size(533, 106);
             this.chainGroup4.TabIndex = 296;
             this.chainGroup4.TabStop = false;
             this.chainGroup4.Text = "Switch 4";
@@ -1582,13 +1596,6 @@
             this.in8mac4click.TabIndex = 295;
             this.in8mac4click.Text = "Click";
             this.in8mac4click.UseVisualStyleBackColor = true;
-            // 
-            // in1mac4
-            // 
-            in1mac4.Location = new System.Drawing.Point(63, 16);
-            in1mac4.Name = "in1mac4";
-            in1mac4.Size = new System.Drawing.Size(49, 20);
-            in1mac4.TabIndex = 182;
             // 
             // in7mac4click
             // 
@@ -1962,9 +1969,9 @@
             this.chainGroup5.Controls.Add(this.pictureBox63);
             this.chainGroup5.Controls.Add(this.pictureBox64);
             this.chainGroup5.Controls.Add(this.pictureBox65);
-            this.chainGroup5.Location = new System.Drawing.Point(1, 462);
+            this.chainGroup5.Location = new System.Drawing.Point(1, 450);
             this.chainGroup5.Name = "chainGroup5";
-            this.chainGroup5.Size = new System.Drawing.Size(533, 102);
+            this.chainGroup5.Size = new System.Drawing.Size(533, 106);
             this.chainGroup5.TabIndex = 297;
             this.chainGroup5.TabStop = false;
             this.chainGroup5.Text = "Switch 5";
@@ -1978,13 +1985,6 @@
             this.in7mac5click.TabIndex = 295;
             this.in7mac5click.Text = "Click";
             this.in7mac5click.UseVisualStyleBackColor = true;
-            // 
-            // in1mac5
-            // 
-            in1mac5.Location = new System.Drawing.Point(63, 16);
-            in1mac5.Name = "in1mac5";
-            in1mac5.Size = new System.Drawing.Size(49, 20);
-            in1mac5.TabIndex = 182;
             // 
             // in6mac5click
             // 
