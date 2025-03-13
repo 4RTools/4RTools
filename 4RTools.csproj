@@ -713,6 +713,9 @@
     <None Include="assets\images\skills_tk\SG_STAR_WARM.png" />
     <None Include="assets\images\skills_tk\SG_SUN_COMFORT.png" />
     <None Include="assets\images\skills_tk\SG_SUN_WARM.png" />
+    <None Include="assets\images\third_and_fourth_class\third_exorcism_flame.png" />
+    <None Include="assets\images\third_and_fourth_class\second_judgement.png" />
+    <None Include="assets\images\third_and_fourth_class\first_faith_power.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -330,6 +330,9 @@ namespace _4RTools.Utils
 
         // [Inquisitor](https://irowiki.org/wiki/Inquisitor)
         EFST_SINCERE_FAITH = 1161,
+        EFST_FIRST_FAITH_POWER = 1234,
+        EFST_THIRD_EXOR_FLAME = 1233,
+        EFST_SECOND_JUDGE = 1232,
 
         // [Soul Ascetic](https://wiki.historyreborn.org/index.php/Soul_Ascetic)
         EFST_HEAVEN_AND_EARTH = 1365,

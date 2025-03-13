@@ -163,6 +163,9 @@ namespace _4RTools.Model
                 new Buff("Sincere Faith", EffectStatusIDs.EFST_SINCERE_FAITH, Resources._4RTools.Icons.sincere_faith),
                 new Buff("Firm Faith", EffectStatusIDs.FIRM_FAITH, Resources._4RTools.Icons.firm_faith),
                 new Buff("Powerful Faith", EffectStatusIDs.POWERFUL_FAITH, Resources._4RTools.Icons.powerful_faith),
+                new Buff("First Faith Power", EffectStatusIDs.EFST_FIRST_FAITH_POWER, Resources._4RTools.Icons.first_faith_power),
+                new Buff("Second Judgement", EffectStatusIDs.EFST_SECOND_JUDGE, Resources._4RTools.Icons.second_judgement),
+                new Buff("Third Exorcism Flame", EffectStatusIDs.EFST_THIRD_EXOR_FLAME, Resources._4RTools.Icons.third_exorcism_flame),
             };
 
             return skills;

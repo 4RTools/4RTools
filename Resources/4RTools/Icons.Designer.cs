@@ -1053,6 +1053,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap first_faith_power {
+            get {
+                object obj = ResourceManager.GetObject("first_faith_power", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flag_br {
             get {
                 object obj = ResourceManager.GetObject("flag_br", resourceCulture);
@@ -2273,6 +2283,16 @@ namespace _4RTools.Resources._4RTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap second_judgement {
+            get {
+                object obj = ResourceManager.GetObject("second_judgement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap servant_weapon {
             get {
                 object obj = ResourceManager.GetObject("servant_weapon", resourceCulture);
@@ -2666,6 +2686,16 @@ namespace _4RTools.Resources._4RTools {
         internal static System.Drawing.Bitmap temporary_communion {
             get {
                 object obj = ResourceManager.GetObject("temporary_communion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap third_exorcism_flame {
+            get {
+                object obj = ResourceManager.GetObject("third_exorcism_flame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
