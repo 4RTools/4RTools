@@ -49,7 +49,6 @@ namespace _4RTools.Forms
             this.tabControlAutopot = new System.Windows.Forms.TabControl();
             this.tabPageAutopot = new System.Windows.Forms.TabPage();
             this.tabPageYggAutopot = new System.Windows.Forms.TabPage();
-            this.panelAdvertisement = new System.Windows.Forms.Panel();
             this.tabPageServer = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
             this.tabMacroSwitch = new System.Windows.Forms.TabPage();
@@ -214,24 +213,17 @@ namespace _4RTools.Forms
             this.tabPageYggAutopot.Location = new System.Drawing.Point(4, 22);
             this.tabPageYggAutopot.Name = "tabPageYggAutopot";
             this.tabPageYggAutopot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageYggAutopot.Size = new System.Drawing.Size(300, 139);
+            this.tabPageYggAutopot.Size = new System.Drawing.Size(481, 139);
             this.tabPageYggAutopot.TabIndex = 3;
             this.tabPageYggAutopot.Text = "Yggdrasil";
             this.tabPageYggAutopot.UseVisualStyleBackColor = true;
-            // 
-            // panelAdvertisement
-            // 
-            this.panelAdvertisement.Location = new System.Drawing.Point(596, 24);
-            this.panelAdvertisement.Name = "panelAdvertisement";
-            this.panelAdvertisement.Size = new System.Drawing.Size(292, 550);
-            this.panelAdvertisement.TabIndex = 26;
             // 
             // tabPageServer
             // 
             this.tabPageServer.Location = new System.Drawing.Point(4, 22);
             this.tabPageServer.Name = "tabPageServer";
             this.tabPageServer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageServer.Size = new System.Drawing.Size(563, 274);
+            this.tabPageServer.Size = new System.Drawing.Size(865, 274);
             this.tabPageServer.TabIndex = 9;
             this.tabPageServer.Text = "Servers";
             this.tabPageServer.UseVisualStyleBackColor = true;
@@ -241,7 +233,7 @@ namespace _4RTools.Forms
             this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
             this.tabPageProfiles.Name = "tabPageProfiles";
             this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(563, 274);
+            this.tabPageProfiles.Size = new System.Drawing.Size(865, 274);
             this.tabPageProfiles.TabIndex = 7;
             this.tabPageProfiles.Text = "Profiles";
             this.tabPageProfiles.UseVisualStyleBackColor = true;
@@ -251,7 +243,7 @@ namespace _4RTools.Forms
             this.tabMacroSwitch.Location = new System.Drawing.Point(4, 22);
             this.tabMacroSwitch.Name = "tabMacroSwitch";
             this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMacroSwitch.Size = new System.Drawing.Size(563, 274);
+            this.tabMacroSwitch.Size = new System.Drawing.Size(865, 274);
             this.tabMacroSwitch.TabIndex = 8;
             this.tabMacroSwitch.Text = "Macro Switch";
             this.tabMacroSwitch.UseVisualStyleBackColor = true;
@@ -261,7 +253,7 @@ namespace _4RTools.Forms
             this.atkDef.Location = new System.Drawing.Point(4, 22);
             this.atkDef.Name = "atkDef";
             this.atkDef.Padding = new System.Windows.Forms.Padding(3);
-            this.atkDef.Size = new System.Drawing.Size(563, 274);
+            this.atkDef.Size = new System.Drawing.Size(865, 274);
             this.atkDef.TabIndex = 5;
             this.atkDef.Text = "ATK x DEF Mode";
             this.atkDef.UseVisualStyleBackColor = true;
@@ -271,7 +263,7 @@ namespace _4RTools.Forms
             this.tabPageMacroSongs.Location = new System.Drawing.Point(4, 22);
             this.tabPageMacroSongs.Name = "tabPageMacroSongs";
             this.tabPageMacroSongs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMacroSongs.Size = new System.Drawing.Size(563, 274);
+            this.tabPageMacroSongs.Size = new System.Drawing.Size(865, 274);
             this.tabPageMacroSongs.TabIndex = 6;
             this.tabPageMacroSongs.Text = "Macro Songs";
             this.tabPageMacroSongs.UseVisualStyleBackColor = true;
@@ -292,7 +284,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
             this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(563, 274);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(865, 274);
             this.tabPageAutobuffStuff.TabIndex = 4;
             this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
             this.tabPageAutobuffStuff.UseVisualStyleBackColor = true;
@@ -303,7 +295,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill.Location = new System.Drawing.Point(4, 22);
             this.tabPageAutobuffSkill.Name = "tabPageAutobuffSkill";
             this.tabPageAutobuffSkill.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(563, 274);
+            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(865, 274);
             this.tabPageAutobuffSkill.TabIndex = 3;
             this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
             this.tabPageAutobuffSkill.UseVisualStyleBackColor = true;
@@ -314,7 +306,7 @@ namespace _4RTools.Forms
             this.tabSkillTimer.Location = new System.Drawing.Point(4, 22);
             this.tabSkillTimer.Name = "tabSkillTimer";
             this.tabSkillTimer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSkillTimer.Size = new System.Drawing.Size(563, 274);
+            this.tabSkillTimer.Size = new System.Drawing.Size(865, 274);
             this.tabSkillTimer.TabIndex = 5;
             this.tabSkillTimer.Text = "Skill timers";
             this.tabSkillTimer.UseVisualStyleBackColor = true;
@@ -343,7 +335,7 @@ namespace _4RTools.Forms
             this.tabDebuffRecovery.Location = new System.Drawing.Point(4, 22);
             this.tabDebuffRecovery.Name = "tabDebuffRecovery";
             this.tabDebuffRecovery.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDebuffRecovery.Size = new System.Drawing.Size(563, 274);
+            this.tabDebuffRecovery.Size = new System.Drawing.Size(865, 274);
             this.tabDebuffRecovery.TabIndex = 2;
             this.tabDebuffRecovery.Text = "Debuff";
             this.tabDebuffRecovery.UseVisualStyleBackColor = true;
@@ -381,11 +373,10 @@ namespace _4RTools.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 624);
+            this.ClientSize = new System.Drawing.Size(609, 624);
             this.Controls.Add(this.OnOffPanel);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.lblCharacterName);
-            this.Controls.Add(this.panelAdvertisement);
             this.Controls.Add(this.tabControlAutopot);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panel5);
@@ -431,7 +422,6 @@ namespace _4RTools.Forms
         private TabControl tabControlAutopot;
         private TabPage tabPageAutopot;
         private TabPage tabPageYggAutopot;
-        private Panel panelAdvertisement;
         private ImageList TabControlImageList;
         private TabPage tabPageServer;
         private TabPage tabPageProfiles;
